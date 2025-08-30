@@ -80,7 +80,9 @@
     <div class="savings-text">
       <span class="savings-message">
         {%- if custom_savings_message != blank -%}
-          {{ custom_savings_message | replace: '{savings}', savings_amount | money | replace: '{percentage}', savings_percentage }}
+          {%- assign formatted_savings = savings_amount | money -%}
+          {%- assign message_with_savings = custom_savings_message | replace: '{savings}', formatted_savings -%}
+          {{ message_with_savings | replace: '{percentage}', savings_percentage }}
         {%- else -%}
           You're saving {{ savings_amount | money }} → that's {{ discount_percentage }}% off!
         {%- endif -%}
