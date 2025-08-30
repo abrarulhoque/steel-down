@@ -1,0 +1,538 @@
+{%- liquid
+  assign show_shipping_meter = block.settings.show_shipping_meter
+  assign show_guarantees = block.settings.show_guarantees
+  assign guarantee_text = block.settings.guarantee_text
+  assign care_sizing_text = block.settings.care_sizing_text
+  assign size_guide_link = block.settings.size_guide_link
+  
+  assign bundle_price = product.price
+  assign free_shipping_threshold = 10000
+  assign shipping_progress = bundle_price | times: 100 | divided_by: free_shipping_threshold
+  if shipping_progress > 100
+    assign shipping_progress = 100
+  endif
+-%}
+
+<div class="bundle-perks-guarantees">
+  
+  {%- if show_shipping_meter -%}
+  <div class="shipping-meter-section">
+    <div class="shipping-meter">
+      <div class="shipping-header">
+        <div class="shipping-icon-container">
+          <svg class="shipping-truck" width="20" height="20" viewBox="0 0 20 20">
+            <path d="M13 2H3a1 1 0 00-1 1v10a1 1 0 001 1h1.5a2.5 2.5 0 005 0H13a1 1 0 001-1V3a1 1 0 00-1-1z" fill="currentColor"/>
+            <circle cx="6.5" cy="15.5" r="1.5" fill="currentColor"/>
+            <path d="M14 6h2l2 3v4a1 1 0 01-1 1h-1.5a2.5 2.5 0 00-5 0H14V6z" fill="currentColor"/>
+            <circle cx="15.5" cy="15.5" r="1.5" fill="currentColor"/>
+          </svg>
+          {%- if shipping_progress >= 100 -%}
+            <svg class="checkmark" width="16" height="16" viewBox="0 0 16 16">
+              <circle cx="8" cy="8" r="7" fill="#4caf50"/>
+              <path d="M5 8l2.5 2.5L12 6" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          {%- endif -%}
+        </div>
+        <div class="shipping-text">
+          {%- if shipping_progress >= 100 -%}
+            <span class="shipping-status unlocked">Free shipping unlocked!</span>
+          {%- else -%}
+            <span class="shipping-status">{{ free_shipping_threshold | minus: bundle_price | money }} away from free shipping</span>
+          {%- endif -%}
+        </div>
+      </div>
+      
+      <div class="shipping-progress-bar">
+        <div class="progress-fill" style="width: {{ shipping_progress }}%"></div>
+        <div class="progress-marker" style="left: {{ shipping_progress }}%">
+          <div class="progress-dot"></div>
+        </div>
+      </div>
+      
+      <div class="shipping-amounts">
+        <span class="current-amount">{{ bundle_price | money }}</span>
+        <span class="threshold-amount">{{ free_shipping_threshold | money }}</span>
+      </div>
+    </div>
+  </div>
+  {%- endif -%}
+
+  {%- if show_guarantees -%}
+  <div class="guarantees-section">
+    <div class="guarantees-strip">
+      {%- assign guarantee_items = guarantee_text | split: ' • ' -%}
+      {%- for guarantee in guarantee_items -%}
+        <div class="guarantee-item">
+          {%- case forloop.index -%}
+            {%- when 1 -%}
+              <svg class="guarantee-icon" width="16" height="16" viewBox="0 0 16 16">
+                <path d="M8 2L6 6H2l4 3-1 5 3-2 3 2-1-5 4-3h-4L8 2z" fill="currentColor"/>
+              </svg>
+            {%- when 2 -%}
+              <svg class="guarantee-icon" width="16" height="16" viewBox="0 0 16 16">
+                <path d="M8 1l2.5 1.5L13 1l.5 2.5L16 5l-2.5 1.5L14 9l-2.5-1.5L9 9l-.5-2.5L6 5l2.5-1.5L8 1z" fill="currentColor"/>
+              </svg>
+            {%- when 3 -%}
+              <svg class="guarantee-icon" width="16" height="16" viewBox="0 0 16 16">
+                <path d="M8 2a6 6 0 100 12A6 6 0 008 2zm2.5 4.5L8 9 5.5 6.5 6.5 5.5 8 7l2.5-2.5 1 1z" fill="currentColor"/>
+              </svg>
+          {%- endcase -%}
+          <span class="guarantee-text">{{ guarantee | strip }}</span>
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+  {%- endif -%}
+
+  {%- if care_sizing_text != blank -%}
+  <div class="care-sizing-section">
+    <button class="care-sizing-link" onclick="openSizeGuide()">
+      <svg class="sizing-icon" width="16" height="16" viewBox="0 0 16 16">
+        <path d="M3 2h10a1 1 0 011 1v10a1 1 0 01-1 1H3a1 1 0 01-1-1V3a1 1 0 011-1z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+        <path d="M5 6h6M5 8h4M5 10h6" stroke="currentColor" stroke-width="1.5"/>
+      </svg>
+      <span>{{ care_sizing_text }}</span>
+      <svg class="arrow-icon" width="12" height="12" viewBox="0 0 12 12">
+        <path d="M4.5 3L7.5 6L4.5 9" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+  </div>
+  {%- endif -%}
+
+  <div class="trust-badges">
+    <div class="trust-badge">
+      <svg class="trust-icon" width="20" height="20" viewBox="0 0 20 20">
+        <path d="M10 2L4 6v6c0 4 6 6 6 6s6-2 6-6V6l-6-4z" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <path d="M7 10l2 2 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+      </svg>
+      <div class="trust-content">
+        <span class="trust-title">Secure Payments</span>
+        <span class="trust-desc">SSL encrypted checkout</span>
+      </div>
+    </div>
+    
+    <div class="trust-badge">
+      <svg class="trust-icon" width="20" height="20" viewBox="0 0 20 20">
+        <path d="M10 18s8-5 8-11V3l-8-1L2 3v4c0 6 8 11 8 11z" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <path d="M7 9l2 2 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+      </svg>
+      <div class="trust-content">
+        <span class="trust-title">Authentic Gear</span>
+        <span class="trust-desc">Genuine merchandise only</span>
+      </div>
+    </div>
+
+    <div class="trust-badge">
+      <svg class="trust-icon" width="20" height="20" viewBox="0 0 20 20">
+        <circle cx="10" cy="10" r="8" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <path d="M10 6v4M10 14h.01" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+      <div class="trust-content">
+        <span class="trust-title">24/7 Support</span>
+        <span class="trust-desc">Here when you need us</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+{%- if size_guide_link != blank -%}
+<div id="size-guide-modal" class="modal-overlay hidden">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h3 class="modal-title">Size Guide</h3>
+      <button class="modal-close" onclick="closeSizeGuide()">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </div>
+    <div class="modal-body">
+      <iframe src="{{ size_guide_link }}" width="100%" height="400" frameborder="0"></iframe>
+    </div>
+  </div>
+</div>
+{%- endif -%}
+
+<style>
+.bundle-perks-guarantees {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 20px;
+}
+
+/* Shipping Meter */
+.shipping-meter-section {
+  margin-bottom: 24px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.shipping-meter {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 12px;
+  padding: 20px;
+  position: relative;
+}
+
+.shipping-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.shipping-icon-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+}
+
+.shipping-truck {
+  color: #666;
+  transition: all 0.3s ease;
+}
+
+.checkmark {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+}
+
+.shipping-status {
+  font-weight: 600;
+  font-size: 16px;
+  color: #333;
+}
+
+.shipping-status.unlocked {
+  color: #4caf50;
+}
+
+.shipping-progress-bar {
+  position: relative;
+  width: 100%;
+  height: 8px;
+  background: #ddd;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #4caf50 0%, #2e7d2e 100%);
+  border-radius: 4px;
+  transition: width 1.2s ease-out;
+}
+
+.progress-marker {
+  position: absolute;
+  top: -2px;
+  transform: translateX(-50%);
+}
+
+.progress-dot {
+  width: 12px;
+  height: 12px;
+  background: #4caf50;
+  border: 2px solid white;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.shipping-amounts {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #666;
+  font-weight: 500;
+}
+
+/* Guarantees Strip */
+.guarantees-section {
+  margin-bottom: 20px;
+}
+
+.guarantees-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: space-between;
+}
+
+.guarantee-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+  min-width: 120px;
+}
+
+.guarantee-icon {
+  color: #4caf50;
+  flex-shrink: 0;
+}
+
+.guarantee-text {
+  font-size: 13px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Care & Sizing */
+.care-sizing-section {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.care-sizing-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.care-sizing-link:hover {
+  background: #eee;
+  border-color: #999;
+  transform: translateY(-1px);
+}
+
+.sizing-icon,
+.arrow-icon {
+  color: #666;
+}
+
+/* Trust Badges */
+.trust-badges {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.trust-badge {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.trust-badge:hover {
+  background: #e9ecef;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.trust-icon {
+  color: #4caf50;
+  flex-shrink: 0;
+}
+
+.trust-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.trust-title {
+  font-weight: 600;
+  font-size: 14px;
+  color: #333;
+}
+
+.trust-desc {
+  font-size: 12px;
+  color: #666;
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.modal-overlay.hidden {
+  display: none;
+}
+
+.modal-content {
+  background: white;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 800px;
+  max-height: 90vh;
+  overflow: hidden;
+  animation: modalSlideIn 0.3s ease-out;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+  border-bottom: 1px solid #eee;
+}
+
+.modal-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.modal-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  color: #666;
+  transition: all 0.2s ease;
+}
+
+.modal-close:hover {
+  background: #f5f5f5;
+  color: #333;
+}
+
+.modal-body {
+  padding: 24px;
+}
+
+@keyframes modalSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (max-width: 768px) {
+  .bundle-perks-guarantees {
+    padding: 16px;
+  }
+  
+  .shipping-meter {
+    padding: 16px;
+  }
+  
+  .guarantees-strip {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .guarantee-item {
+    min-width: auto;
+  }
+  
+  .trust-badges {
+    gap: 12px;
+  }
+  
+  .trust-badge {
+    padding: 10px 12px;
+  }
+  
+  .modal-content {
+    margin: 10px;
+    max-height: 95vh;
+  }
+  
+  .modal-body iframe {
+    height: 300px;
+  }
+}
+
+@media (min-width: 769px) {
+  .trust-badges {
+    flex-direction: row;
+    gap: 12px;
+  }
+  
+  .trust-badge {
+    flex: 1;
+    flex-direction: column;
+    text-align: center;
+    padding: 16px;
+  }
+  
+  .trust-content {
+    align-items: center;
+  }
+}
+</style>
+
+<script>
+function openSizeGuide() {
+  const modal = document.getElementById('size-guide-modal');
+  if (modal) {
+    modal.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+  }
+}
+
+function closeSizeGuide() {
+  const modal = document.getElementById('size-guide-modal');
+  if (modal) {
+    modal.classList.add('hidden');
+    document.body.style.overflow = '';
+  }
+}
+
+// Close modal on escape key
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    closeSizeGuide();
+  }
+});
+
+// Close modal on backdrop click
+document.addEventListener('click', function(e) {
+  if (e.target.classList.contains('modal-overlay')) {
+    closeSizeGuide();
+  }
+});
+
+// Animate progress bar on load
+document.addEventListener('DOMContentLoaded', function() {
+  const progressFill = document.querySelector('.progress-fill');
+  if (progressFill) {
+    const targetWidth = progressFill.style.width;
+    progressFill.style.width = '0%';
+    
+    setTimeout(() => {
+      progressFill.style.width = targetWidth;
+    }, 500);
+  }
+});
+</script>

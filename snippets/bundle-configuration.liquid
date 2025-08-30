@@ -1,0 +1,533 @@
+{%- liquid
+  assign enable_global_size = block.settings.enable_global_size
+  assign allow_swaps = block.settings.allow_swaps
+  assign swap_options = block.settings.swap_options
+  assign item_notes = block.settings.item_notes
+-%}
+
+<div class="bundle-configuration">
+  
+  {%- if enable_global_size -%}
+  <div class="global-size-selector">
+    <h4 class="config-section-title">Size Selection</h4>
+    <div class="size-selector-wrapper">
+      <label class="global-size-label">
+        <input type="checkbox" class="global-size-toggle" checked>
+        Apply size to all apparel
+      </label>
+      
+      <div class="global-size-options">
+        <button class="size-option" data-size="XS">XS</button>
+        <button class="size-option" data-size="S">S</button>
+        <button class="size-option active" data-size="M">M</button>
+        <button class="size-option" data-size="L">L</button>
+        <button class="size-option" data-size="XL">XL</button>
+        <button class="size-option" data-size="XXL">XXL</button>
+      </div>
+    </div>
+  </div>
+  {%- endif -%}
+
+  <div class="variant-configuration">
+    <h4 class="config-section-title">Product Options</h4>
+    
+    <div class="product-variants-list">
+      {%- comment -%} Hoodie Configuration {%- endcomment -%}
+      <div class="variant-item">
+        <div class="variant-item__header">
+          <img src="https://via.placeholder.com/40x40" alt="Fast As Fuck Hoodie" class="variant-thumb">
+          <div class="variant-info">
+            <span class="variant-name">Fast As Fuck Hoodie</span>
+            <span class="variant-size">Size: <span class="current-size">LARGE</span></span>
+          </div>
+          <button class="override-size-btn" data-product="hoodie">Override</button>
+        </div>
+        
+        <div class="color-options">
+          <button class="color-chip active" data-color="yellow" style="background: #FFD700;" title="Mustard Yellow"></button>
+          <button class="color-chip" data-color="black" style="background: #000;" title="Black"></button>
+          <button class="color-chip" data-color="gray" style="background: #666;" title="Heather Gray"></button>
+        </div>
+        
+        <div class="size-override hidden">
+          <button class="size-option" data-size="XS">XS</button>
+          <button class="size-option" data-size="S">S</button>
+          <button class="size-option" data-size="M">M</button>
+          <button class="size-option active" data-size="L">L</button>
+          <button class="size-option" data-size="XL">XL</button>
+        </div>
+      </div>
+
+      {%- comment -%} Cap Configuration {%- endcomment -%}
+      <div class="variant-item">
+        <div class="variant-item__header">
+          <img src="https://via.placeholder.com/40x40" alt="Fast As Fuck Cap" class="variant-thumb">
+          <div class="variant-info">
+            <span class="variant-name">Fast As Fuck Cap</span>
+            <span class="variant-note">Adjustable—no size needed</span>
+          </div>
+          {%- if allow_swaps -%}
+          <button class="swap-btn" data-product="cap">Swap</button>
+          {%- endif -%}
+        </div>
+        
+        <div class="color-options">
+          <button class="color-chip active" data-color="black" style="background: #000;" title="Black"></button>
+          <button class="color-chip" data-color="navy" style="background: #001f3f;" title="Navy"></button>
+        </div>
+      </div>
+
+      {%- comment -%} Stickers Configuration {%- endcomment -%}
+      <div class="variant-item">
+        <div class="variant-item__header">
+          <img src="https://via.placeholder.com/40x40" alt="Sticker Pack" class="variant-thumb">
+          <div class="variant-info">
+            <span class="variant-name">3 Stickers Pack</span>
+            <span class="variant-note">Mixed designs</span>
+          </div>
+        </div>
+        
+        <div class="sticker-preview">
+          <span class="sticker-count">3 random stickers included</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {%- if allow_swaps and swap_options.count > 0 -%}
+  <div class="swap-options hidden" id="swap-modal">
+    <div class="swap-modal-content">
+      <h4 class="swap-modal-title">Choose Alternative</h4>
+      <div class="swap-products">
+        {%- for swap_product in swap_options -%}
+          <div class="swap-product" data-product-id="{{ swap_product.id }}">
+            {%- if swap_product.featured_image -%}
+              <img src="{{ swap_product.featured_image | img_url: '60x60' }}" alt="{{ swap_product.title }}">
+            {%- endif -%}
+            <span class="swap-product-name">{{ swap_product.title }}</span>
+            <span class="swap-product-price">{{ swap_product.price | money }}</span>
+          </div>
+        {%- endfor -%}
+      </div>
+      <button class="swap-cancel">Cancel</button>
+    </div>
+  </div>
+  {%- endif -%}
+
+  {%- if item_notes != blank -%}
+  <div class="configuration-notes">
+    <div class="note-item">
+      <svg class="info-icon" width="16" height="16" viewBox="0 0 16 16">
+        <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.5" fill="none"/>
+        <path d="M8 4v4m0 4h.01" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+      <span>{{ item_notes }}</span>
+    </div>
+  </div>
+  {%- endif -%}
+
+</div>
+
+<style>
+.bundle-configuration {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 20px;
+}
+
+.config-section-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 16px 0;
+  color: #333;
+}
+
+/* Global Size Selector */
+.global-size-selector {
+  margin-bottom: 24px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.size-selector-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.global-size-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.global-size-toggle {
+  accent-color: #c00000;
+}
+
+.global-size-options {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.size-option {
+  padding: 8px 16px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  background: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-width: 48px;
+}
+
+.size-option:hover {
+  border-color: #999;
+}
+
+.size-option.active {
+  border-color: #c00000;
+  background: #c00000;
+  color: white;
+}
+
+/* Variant Configuration */
+.product-variants-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.variant-item {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 16px;
+  background: #fafafa;
+}
+
+.variant-item__header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.variant-thumb {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.variant-info {
+  flex: 1;
+}
+
+.variant-name {
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+
+.variant-size {
+  font-size: 12px;
+  color: #666;
+}
+
+.variant-note {
+  font-size: 12px;
+  color: #888;
+  font-style: italic;
+}
+
+.current-size {
+  font-weight: 600;
+  color: #c00000;
+}
+
+.override-size-btn,
+.swap-btn {
+  padding: 4px 12px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.override-size-btn:hover,
+.swap-btn:hover {
+  background: #f5f5f5;
+  border-color: #999;
+}
+
+/* Color Options */
+.color-options {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.color-chip {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.color-chip.active {
+  border-color: #333;
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #333;
+}
+
+.color-chip:hover {
+  transform: scale(1.1);
+}
+
+/* Size Override */
+.size-override {
+  display: flex;
+  gap: 6px;
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid #ddd;
+}
+
+.size-override .size-option {
+  padding: 4px 12px;
+  font-size: 12px;
+  min-width: 36px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* Sticker Preview */
+.sticker-preview {
+  margin-top: 8px;
+}
+
+.sticker-count {
+  font-size: 12px;
+  color: #666;
+  padding: 4px 8px;
+  background: #f0f0f0;
+  border-radius: 12px;
+}
+
+/* Swap Modal */
+.swap-options {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.swap-modal-content {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  max-width: 400px;
+  width: 90%;
+}
+
+.swap-modal-title {
+  margin: 0 0 16px 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.swap-products {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.swap-product {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.swap-product:hover {
+  border-color: #c00000;
+  background: #fafafa;
+}
+
+.swap-product img {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.swap-product-name {
+  flex: 1;
+  font-weight: 500;
+}
+
+.swap-product-price {
+  color: #c00000;
+  font-weight: 600;
+}
+
+.swap-cancel {
+  width: 100%;
+  padding: 12px;
+  background: #f5f5f5;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Configuration Notes */
+.configuration-notes {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid #eee;
+}
+
+.note-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 14px;
+  color: #666;
+}
+
+.info-icon {
+  color: #999;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+@media (max-width: 768px) {
+  .bundle-configuration {
+    padding: 16px;
+  }
+  
+  .variant-item__header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .global-size-options {
+    justify-content: center;
+  }
+  
+  .size-override {
+    justify-content: center;
+  }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Global size toggle
+  const globalToggle = document.querySelector('.global-size-toggle');
+  const globalSizeOptions = document.querySelector('.global-size-options');
+  const overrideBtns = document.querySelectorAll('.override-size-btn');
+  
+  globalToggle?.addEventListener('change', function() {
+    if (this.checked) {
+      document.querySelectorAll('.size-override').forEach(override => {
+        override.classList.add('hidden');
+      });
+      overrideBtns.forEach(btn => btn.textContent = 'Override');
+    }
+  });
+  
+  // Size option selection
+  document.addEventListener('click', function(e) {
+    if (e.target.classList.contains('size-option')) {
+      const container = e.target.closest('.global-size-options, .size-override');
+      container.querySelectorAll('.size-option').forEach(opt => opt.classList.remove('active'));
+      e.target.classList.add('active');
+      
+      // Update current size display
+      if (container.classList.contains('global-size-options')) {
+        document.querySelectorAll('.current-size').forEach(size => {
+          size.textContent = e.target.dataset.size;
+        });
+      }
+    }
+  });
+  
+  // Color chip selection
+  document.addEventListener('click', function(e) {
+    if (e.target.classList.contains('color-chip')) {
+      const container = e.target.closest('.color-options');
+      container.querySelectorAll('.color-chip').forEach(chip => chip.classList.remove('active'));
+      e.target.classList.add('active');
+    }
+  });
+  
+  // Override size functionality
+  overrideBtns.forEach(btn => {
+    btn.addEventListener('click', function() {
+      const variantItem = this.closest('.variant-item');
+      const sizeOverride = variantItem.querySelector('.size-override');
+      
+      if (sizeOverride.classList.contains('hidden')) {
+        sizeOverride.classList.remove('hidden');
+        this.textContent = 'Use Global';
+        globalToggle.checked = false;
+      } else {
+        sizeOverride.classList.add('hidden');
+        this.textContent = 'Override';
+        globalToggle.checked = true;
+      }
+    });
+  });
+  
+  // Swap functionality
+  const swapBtns = document.querySelectorAll('.swap-btn');
+  const swapModal = document.getElementById('swap-modal');
+  const swapCancel = document.querySelector('.swap-cancel');
+  
+  swapBtns.forEach(btn => {
+    btn.addEventListener('click', function() {
+      swapModal?.classList.remove('hidden');
+    });
+  });
+  
+  swapCancel?.addEventListener('click', function() {
+    swapModal.classList.add('hidden');
+  });
+  
+  // Swap product selection
+  document.addEventListener('click', function(e) {
+    if (e.target.closest('.swap-product')) {
+      const swapProduct = e.target.closest('.swap-product');
+      console.log('Swapping to product:', swapProduct.dataset.productId);
+      swapModal?.classList.add('hidden');
+      // Here you would implement the actual swap logic
+    }
+  });
+});
+</script>

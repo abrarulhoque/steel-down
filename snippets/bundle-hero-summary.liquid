@@ -1,0 +1,220 @@
+{%- liquid
+  assign bundle_title = block.settings.bundle_title
+  assign discount_percentage = block.settings.discount_percentage
+  assign original_price = block.settings.original_price
+  assign bundle_products = block.settings.bundle_products
+  assign whats_inside = block.settings.whats_inside
+  
+  assign current_price = product.price
+  assign savings_amount = current_price | times: discount_percentage | divided_by: 100
+  assign savings_display = savings_amount | money
+-%}
+
+<div class="bundle-hero-summary" data-bundle-id="{{ product.id }}">
+  
+  {%- if bundle_title != blank -%}
+  <div class="bundle-hero__header">
+    <h2 class="bundle-hero__title">{{ bundle_title }}</h2>
+    
+    {%- if bundle_products.count > 0 -%}
+    <div class="bundle-hero__thumbs">
+      {%- for bundle_product in bundle_products limit: 5 -%}
+        {%- if bundle_product.featured_image -%}
+          <div class="bundle-thumb" 
+               title="{{ bundle_product.title }}"
+               data-product-title="{{ bundle_product.title }}">
+            <img src="{{ bundle_product.featured_image | img_url: '40x40' }}" 
+                 alt="{{ bundle_product.title }}"
+                 width="20" 
+                 height="20"
+                 loading="lazy">
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+    {%- endif -%}
+  </div>
+  {%- endif -%}
+
+  <div class="bundle-hero__price-section">
+    <div class="bundle-hero__price-pill">
+      <span class="bundle-current-price">{{ current_price | money }}</span>
+      {%- if original_price != blank -%}
+        <span class="bundle-original-price">{{ original_price }}</span>
+      {%- endif -%}
+    </div>
+    
+    {%- if discount_percentage > 0 -%}
+    <div class="bundle-hero__savings-badge">
+      <span class="savings-text">You save {{ savings_display }} ({{ discount_percentage }}%)</span>
+    </div>
+    {%- endif -%}
+  </div>
+
+  {%- if whats_inside != blank -%}
+  <div class="bundle-hero__whats-inside">
+    <button class="whats-inside-chip" onclick="scrollToElement('#bundle-breakdown-section')">
+      <span class="chip-label">What's inside</span>
+      <span class="chip-content">{{ whats_inside }}</span>
+      <svg class="chip-arrow" width="12" height="12" viewBox="0 0 12 12">
+        <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" fill="none"/>
+      </svg>
+    </button>
+  </div>
+  {%- endif -%}
+
+</div>
+
+<style>
+.bundle-hero-summary {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 20px;
+}
+
+.bundle-hero__header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.bundle-hero__title {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 0.02em;
+}
+
+.bundle-hero__thumbs {
+  display: flex;
+  gap: 4px;
+}
+
+.bundle-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.bundle-thumb:hover {
+  transform: scale(1.1);
+  z-index: 10;
+}
+
+.bundle-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bundle-hero__price-section {
+  margin-bottom: 16px;
+}
+
+.bundle-hero__price-pill {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.bundle-current-price {
+  font-size: 28px;
+  font-weight: 700;
+  color: #c00000;
+}
+
+.bundle-original-price {
+  font-size: 18px;
+  color: #666;
+  text-decoration: line-through;
+}
+
+.bundle-hero__savings-badge {
+  display: inline-block;
+  background: #c00000;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.bundle-hero__whats-inside {
+  margin-top: 16px;
+}
+
+.whats-inside-chip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.whats-inside-chip:hover {
+  background: #eee;
+  border-color: #ccc;
+}
+
+.chip-label {
+  font-weight: 600;
+  font-size: 12px;
+  color: #666;
+}
+
+.chip-content {
+  font-size: 14px;
+  color: #333;
+  flex: 1;
+  text-align: center;
+}
+
+.chip-arrow {
+  color: #666;
+  transition: transform 0.2s ease;
+}
+
+.whats-inside-chip:hover .chip-arrow {
+  transform: translateY(2px);
+}
+
+@media (max-width: 768px) {
+  .bundle-hero-summary {
+    padding: 16px;
+  }
+  
+  .bundle-hero__title {
+    font-size: 18px;
+  }
+  
+  .bundle-current-price {
+    font-size: 24px;
+  }
+}
+</style>
+
+<script>
+function scrollToElement(selector) {
+  const element = document.querySelector(selector);
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+}
+</script>

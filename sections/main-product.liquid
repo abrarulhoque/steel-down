@@ -1013,6 +1013,46 @@
                                                 {%- endif -%}
                                             {%- endif -%}
 
+                                        {%- when 'bundle-hero-summary' -%}
+                                            <div class="product-single__box__block product-single__box__block--{{ block.type }}" {{ block.shopify_attributes }}>
+                                                {% render 'bundle-hero-summary',
+                                                    block: block,
+                                                    product: product
+                                                %}
+                                            </div>
+
+                                        {%- when 'bundle-breakdown' -%}
+                                            <div class="product-single__box__block product-single__box__block--{{ block.type }}" {{ block.shopify_attributes }}>
+                                                {% render 'bundle-breakdown',
+                                                    block: block,
+                                                    product: product
+                                                %}
+                                            </div>
+
+                                        {%- when 'bundle-configuration' -%}
+                                            <div class="product-single__box__block product-single__box__block--{{ block.type }}" {{ block.shopify_attributes }}>
+                                                {% render 'bundle-configuration',
+                                                    block: block,
+                                                    product: product
+                                                %}
+                                            </div>
+
+                                        {%- when 'bundle-savings' -%}
+                                            <div class="product-single__box__block product-single__box__block--{{ block.type }}" {{ block.shopify_attributes }}>
+                                                {% render 'bundle-savings',
+                                                    block: block,
+                                                    product: product
+                                                %}
+                                            </div>
+
+                                        {%- when 'bundle-perks' -%}
+                                            <div class="product-single__box__block product-single__box__block--{{ block.type }}" {{ block.shopify_attributes }}>
+                                                {% render 'bundle-perks',
+                                                    block: block,
+                                                    product: product
+                                                %}
+                                            </div>
+
                                         {%- when 'custom-liquid' -%}
                                             <div class="product-single__box__block product-single__box__block--{{ block.type }} u-mt0 u-mb0" {{ block.shopify_attributes }}>
                                                 {{ block.settings.custom_liquid }}
@@ -1286,6 +1326,46 @@
                                                 product-image: product.featured_image
                                             %}
 
+                                        </div>
+
+                                    {%- when 'bundle-hero-summary' -%}
+                                        <div class="product-single__box__block product-single__box__block--{{ block.type }}" {{ block.shopify_attributes }}>
+                                            {% render 'bundle-hero-summary',
+                                                block: block,
+                                                product: product
+                                            %}
+                                        </div>
+
+                                    {%- when 'bundle-breakdown' -%}
+                                        <div class="product-single__box__block product-single__box__block--{{ block.type }}" {{ block.shopify_attributes }}>
+                                            {% render 'bundle-breakdown',
+                                                block: block,
+                                                product: product
+                                            %}
+                                        </div>
+
+                                    {%- when 'bundle-configuration' -%}
+                                        <div class="product-single__box__block product-single__box__block--{{ block.type }}" {{ block.shopify_attributes }}>
+                                            {% render 'bundle-configuration',
+                                                block: block,
+                                                product: product
+                                            %}
+                                        </div>
+
+                                    {%- when 'bundle-savings' -%}
+                                        <div class="product-single__box__block product-single__box__block--{{ block.type }}" {{ block.shopify_attributes }}>
+                                            {% render 'bundle-savings',
+                                                block: block,
+                                                product: product
+                                            %}
+                                        </div>
+
+                                    {%- when 'bundle-perks' -%}
+                                        <div class="product-single__box__block product-single__box__block--{{ block.type }}" {{ block.shopify_attributes }}>
+                                            {% render 'bundle-perks',
+                                                block: block,
+                                                product: product
+                                            %}
                                         </div>
 
                                     {%- when 'custom-liquid' -%}
@@ -5207,6 +5287,253 @@ new ResizeObserver(theme.setPdpHeight).observe(
                 {
                     "type": "paragraph",
                     "content": "Quick Shop settings can be adjusted in Theme settings > Quick Shop."
+                }
+            ]
+        },
+        {
+            "type": "bundle-hero-summary",
+            "name": "Bundle Hero Summary",
+            "settings": [
+                {
+                    "type": "select",
+                    "id": "column",
+                    "label": "Position (desktop)",
+                    "default": "primary",
+                    "options": [
+                        {
+                            "value": "primary",
+                            "label": "Form column"
+                        },
+                        {
+                            "value": "secondary",
+                            "label": "Gallery column"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "id": "bundle_title",
+                    "label": "Bundle Title",
+                    "default": "FAST AS FUCK BUNDLE"
+                },
+                {
+                    "type": "range",
+                    "id": "discount_percentage",
+                    "label": "Discount Percentage",
+                    "min": 0,
+                    "max": 50,
+                    "step": 1,
+                    "unit": "%",
+                    "default": 20
+                },
+                {
+                    "type": "text",
+                    "id": "original_price",
+                    "label": "Original Price (if bought separately)",
+                    "default": "$128.00"
+                },
+                {
+                    "type": "product_list",
+                    "id": "bundle_products",
+                    "label": "Bundle Products",
+                    "limit": 10
+                },
+                {
+                    "type": "textarea",
+                    "id": "whats_inside",
+                    "label": "What's Inside Text",
+                    "default": "Hoodie · Cap · 3 Stickers"
+                }
+            ]
+        },
+        {
+            "type": "bundle-breakdown",
+            "name": "Bundle Breakdown",
+            "settings": [
+                {
+                    "type": "select",
+                    "id": "column",
+                    "label": "Position (desktop)",
+                    "default": "primary",
+                    "options": [
+                        {
+                            "value": "primary",
+                            "label": "Form column"
+                        },
+                        {
+                            "value": "secondary",
+                            "label": "Gallery column"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "id": "heading",
+                    "label": "Heading",
+                    "default": "What's in the bundle"
+                },
+                {
+                    "type": "select",
+                    "id": "layout",
+                    "label": "Layout Style",
+                    "default": "receipt",
+                    "options": [
+                        {
+                            "value": "receipt",
+                            "label": "Receipt Style"
+                        },
+                        {
+                            "value": "cards",
+                            "label": "Card Stack"
+                        },
+                        {
+                            "value": "grid",
+                            "label": "Compact Grid"
+                        }
+                    ]
+                },
+                {
+                    "type": "product_list",
+                    "id": "bundle_products",
+                    "label": "Bundle Products",
+                    "limit": 10
+                }
+            ]
+        },
+        {
+            "type": "bundle-configuration",
+            "name": "Bundle Configuration",
+            "settings": [
+                {
+                    "type": "select",
+                    "id": "column",
+                    "label": "Position (desktop)",
+                    "default": "primary",
+                    "options": [
+                        {
+                            "value": "primary",
+                            "label": "Form column"
+                        },
+                        {
+                            "value": "secondary",
+                            "label": "Gallery column"
+                        }
+                    ]
+                },
+                {
+                    "type": "checkbox",
+                    "id": "enable_global_size",
+                    "label": "Enable Global Size Selector",
+                    "default": true
+                },
+                {
+                    "type": "checkbox",
+                    "id": "allow_swaps",
+                    "label": "Allow Item Swaps",
+                    "default": false
+                },
+                {
+                    "type": "product_list",
+                    "id": "swap_options",
+                    "label": "Swap Options (if enabled)",
+                    "limit": 5
+                },
+                {
+                    "type": "textarea",
+                    "id": "item_notes",
+                    "label": "Item Notes",
+                    "default": "Cap is adjustable—no size needed"
+                }
+            ]
+        },
+        {
+            "type": "bundle-savings",
+            "name": "Bundle Savings Visualization",
+            "settings": [
+                {
+                    "type": "select",
+                    "id": "column",
+                    "label": "Position (desktop)",
+                    "default": "primary",
+                    "options": [
+                        {
+                            "value": "primary",
+                            "label": "Form column"
+                        },
+                        {
+                            "value": "secondary",
+                            "label": "Gallery column"
+                        }
+                    ]
+                },
+                {
+                    "type": "checkbox",
+                    "id": "show_compare_toggle",
+                    "label": "Show Bundle vs Separate Toggle",
+                    "default": true
+                },
+                {
+                    "type": "checkbox",
+                    "id": "show_savings_bar",
+                    "label": "Show Savings Bar",
+                    "default": true
+                },
+                {
+                    "type": "checkbox",
+                    "id": "show_donut_chart",
+                    "label": "Show Savings Donut Chart",
+                    "default": true
+                }
+            ]
+        },
+        {
+            "type": "bundle-perks",
+            "name": "Bundle Perks & Guarantees",
+            "settings": [
+                {
+                    "type": "select",
+                    "id": "column",
+                    "label": "Position (desktop)",
+                    "default": "primary",
+                    "options": [
+                        {
+                            "value": "primary",
+                            "label": "Form column"
+                        },
+                        {
+                            "value": "secondary",
+                            "label": "Gallery column"
+                        }
+                    ]
+                },
+                {
+                    "type": "checkbox",
+                    "id": "show_shipping_meter",
+                    "label": "Show Free Shipping Meter",
+                    "default": true
+                },
+                {
+                    "type": "checkbox",
+                    "id": "show_guarantees",
+                    "label": "Show Guarantees Strip",
+                    "default": true
+                },
+                {
+                    "type": "text",
+                    "id": "guarantee_text",
+                    "label": "Guarantee Text",
+                    "default": "Easy returns • Secure checkout • Quality guaranteed"
+                },
+                {
+                    "type": "text",
+                    "id": "care_sizing_text",
+                    "label": "Care & Sizing Text",
+                    "default": "Hoodie fits true to size. Size guide →"
+                },
+                {
+                    "type": "url",
+                    "id": "size_guide_link",
+                    "label": "Size Guide Link"
                 }
             ]
         },

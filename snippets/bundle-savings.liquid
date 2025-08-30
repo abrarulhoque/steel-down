@@ -1,0 +1,456 @@
+{%- liquid
+  assign show_compare_toggle = block.settings.show_compare_toggle
+  assign show_savings_bar = block.settings.show_savings_bar
+  assign show_donut_chart = block.settings.show_donut_chart
+  
+  assign bundle_price = product.price
+  assign original_price = 12800  
+  assign savings_amount = original_price | minus: bundle_price
+  assign savings_percentage = savings_amount | times: 100 | divided_by: original_price
+-%}
+
+<div class="bundle-savings-visualization">
+  
+  {%- if show_compare_toggle -%}
+  <div class="compare-toggle-section">
+    <div class="toggle-switch">
+      <input type="checkbox" id="bundle-compare-toggle" class="toggle-input">
+      <label for="bundle-compare-toggle" class="toggle-label">
+        <span class="toggle-text bundle-text">Bundle</span>
+        <span class="toggle-slider"></span>
+        <span class="toggle-text separate-text">Separate</span>
+      </label>
+    </div>
+  </div>
+  {%- endif -%}
+
+  <div class="price-comparison" id="price-comparison">
+    <div class="price-display bundle-display active">
+      <div class="price-breakdown">
+        <div class="price-line">
+          <span class="price-label">Bundle Price:</span>
+          <span class="price-value bundle-price">{{ bundle_price | money }}</span>
+        </div>
+        <div class="price-line savings">
+          <span class="price-label">You Save:</span>
+          <span class="price-value savings-value">{{ savings_amount | money }} ({{ savings_percentage }}%)</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="price-display separate-display">
+      <div class="price-breakdown">
+        <div class="price-line">
+          <span class="price-label">Fast As Fuck Hoodie:</span>
+          <span class="price-value">$68.00</span>
+        </div>
+        <div class="price-line">
+          <span class="price-label">Fast As Fuck Cap:</span>
+          <span class="price-value">$32.00</span>
+        </div>
+        <div class="price-line">
+          <span class="price-label">3 Stickers:</span>
+          <span class="price-value">$28.00</span>
+        </div>
+        <div class="price-line total">
+          <span class="price-label">Total if separate:</span>
+          <span class="price-value total-separate">{{ original_price | money }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {%- if show_savings_bar -%}
+  <div class="savings-bar-section">
+    <div class="savings-bar">
+      <div class="savings-progress" style="width: {{ savings_percentage }}%"></div>
+    </div>
+    <div class="savings-text">
+      <span class="savings-message">You're saving {{ savings_amount | money }} → that's 2 stickers free!</span>
+    </div>
+  </div>
+  {%- endif -%}
+
+  {%- if show_donut_chart -%}
+  <div class="donut-chart-section">
+    <div class="donut-container">
+      <svg class="donut-chart" width="120" height="120" viewBox="0 0 120 120">
+        <circle
+          cx="60"
+          cy="60"
+          r="45"
+          fill="none"
+          stroke="#e5e5e5"
+          stroke-width="12"
+        />
+        <circle
+          cx="60"
+          cy="60"
+          r="45"
+          fill="none"
+          stroke="#c00000"
+          stroke-width="12"
+          stroke-dasharray="{{ savings_percentage | times: 2.827 | round: 2 }} 282.7"
+          stroke-dashoffset="0"
+          transform="rotate(-90 60 60)"
+          class="progress-ring"
+        />
+        <text x="60" y="55" text-anchor="middle" class="donut-percentage">{{ savings_percentage }}%</text>
+        <text x="60" y="75" text-anchor="middle" class="donut-amount">{{ savings_amount | money }}</text>
+      </svg>
+      <div class="donut-label" aria-label="You are saving {{ savings_percentage }} percent, which equals {{ savings_amount | money }}">
+        Total Savings
+      </div>
+    </div>
+  </div>
+  {%- endif -%}
+
+  <div class="value-props">
+    <div class="value-prop">
+      <svg class="value-icon" width="16" height="16" viewBox="0 0 16 16">
+        <path d="M8 2l1.5 3h3.5l-2.5 2.5L12 12l-4-2.5L4 12l1.5-4.5L3 5h3.5L8 2z" fill="currentColor"/>
+      </svg>
+      <span>Best value for premium gear</span>
+    </div>
+    <div class="value-prop">
+      <svg class="value-icon" width="16" height="16" viewBox="0 0 16 16">
+        <path d="M2 8c0-3.3 2.7-6 6-6s6 2.7 6 6-2.7 6-6 6-6-2.7-6-6zm9-1l-5 5-3-3 1.4-1.4L6 9.2l3.6-3.6L11 7z" fill="currentColor"/>
+      </svg>
+      <span>Curated by our team</span>
+    </div>
+    <div class="value-prop">
+      <svg class="value-icon" width="16" height="16" viewBox="0 0 16 16">
+        <path d="M8 1L6.5 4H3l2.5 2.5L4 11l4-2.5L12 11l-1.5-4.5L13 4H9.5L8 1z" fill="currentColor"/>
+      </svg>
+      <span>Limited time bundle</span>
+    </div>
+  </div>
+
+</div>
+
+<style>
+.bundle-savings-visualization {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 20px;
+}
+
+/* Compare Toggle */
+.compare-toggle-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+}
+
+.toggle-input {
+  display: none;
+}
+
+.toggle-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.toggle-text {
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.toggle-text.bundle-text {
+  color: #c00000;
+}
+
+.toggle-text.separate-text {
+  color: #666;
+}
+
+.toggle-input:checked + .toggle-label .bundle-text {
+  color: #666;
+}
+
+.toggle-input:checked + .toggle-label .separate-text {
+  color: #c00000;
+}
+
+.toggle-slider {
+  width: 48px;
+  height: 24px;
+  background: #ddd;
+  border-radius: 24px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.toggle-slider::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.toggle-input:checked + .toggle-label .toggle-slider {
+  background: #c00000;
+}
+
+.toggle-input:checked + .toggle-label .toggle-slider::after {
+  transform: translateX(24px);
+}
+
+/* Price Comparison */
+.price-comparison {
+  position: relative;
+  min-height: 140px;
+  margin-bottom: 20px;
+}
+
+.price-display {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transform: translateX(20px);
+  transition: all 0.4s ease;
+  pointer-events: none;
+}
+
+.price-display.active {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
+}
+
+.price-breakdown {
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.price-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.price-line:last-child {
+  margin-bottom: 0;
+}
+
+.price-line.savings {
+  color: #c00000;
+  font-weight: 600;
+}
+
+.price-line.total {
+  border-top: 1px solid #ddd;
+  padding-top: 8px;
+  margin-top: 8px;
+  font-weight: 700;
+}
+
+.price-label {
+  font-size: 14px;
+}
+
+.price-value {
+  font-weight: 600;
+}
+
+.bundle-price {
+  color: #c00000;
+  font-size: 18px;
+}
+
+.savings-value {
+  color: #c00000;
+}
+
+/* Savings Bar */
+.savings-bar-section {
+  margin-bottom: 24px;
+}
+
+.savings-bar {
+  width: 100%;
+  height: 8px;
+  background: #e5e5e5;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.savings-progress {
+  height: 100%;
+  background: linear-gradient(90deg, #ff6b35 0%, #c00000 100%);
+  border-radius: 4px;
+  transition: width 1s ease-out;
+}
+
+.savings-text {
+  text-align: center;
+}
+
+.savings-message {
+  font-size: 14px;
+  color: #666;
+  font-weight: 500;
+}
+
+/* Donut Chart */
+.donut-chart-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.donut-container {
+  text-align: center;
+}
+
+.donut-chart {
+  margin-bottom: 8px;
+}
+
+.progress-ring {
+  transition: stroke-dasharray 1s ease-out;
+}
+
+.donut-percentage {
+  font-size: 16px;
+  font-weight: 700;
+  fill: #333;
+}
+
+.donut-amount {
+  font-size: 12px;
+  fill: #666;
+  font-weight: 500;
+}
+
+.donut-label {
+  font-size: 12px;
+  color: #666;
+  font-weight: 500;
+}
+
+/* Value Props */
+.value-props {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 16px;
+  border-top: 1px solid #eee;
+}
+
+.value-prop {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+.value-icon {
+  color: #c00000;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .bundle-savings-visualization {
+    padding: 16px;
+  }
+  
+  .price-line {
+    font-size: 12px;
+  }
+  
+  .donut-chart {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .value-props {
+    gap: 8px;
+  }
+  
+  .value-prop {
+    font-size: 12px;
+  }
+}
+
+/* Animation for when component loads */
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.bundle-savings-visualization {
+  animation: slideInUp 0.6s ease-out;
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const toggle = document.getElementById('bundle-compare-toggle');
+  const bundleDisplay = document.querySelector('.bundle-display');
+  const separateDisplay = document.querySelector('.separate-display');
+  
+  if (toggle) {
+    toggle.addEventListener('change', function() {
+      if (this.checked) {
+        // Show separate pricing
+        bundleDisplay.classList.remove('active');
+        separateDisplay.classList.add('active');
+      } else {
+        // Show bundle pricing
+        separateDisplay.classList.remove('active');
+        bundleDisplay.classList.add('active');
+      }
+    });
+  }
+  
+  // Animate progress bar on load
+  const progressBar = document.querySelector('.savings-progress');
+  if (progressBar) {
+    setTimeout(() => {
+      progressBar.style.width = progressBar.style.width;
+    }, 500);
+  }
+  
+  // Animate donut chart on load
+  const progressRing = document.querySelector('.progress-ring');
+  if (progressRing) {
+    const originalDashArray = progressRing.style.strokeDasharray;
+    progressRing.style.strokeDasharray = '0 282.7';
+    
+    setTimeout(() => {
+      progressRing.style.strokeDasharray = originalDashArray;
+    }, 800);
+  }
+});
+</script>
