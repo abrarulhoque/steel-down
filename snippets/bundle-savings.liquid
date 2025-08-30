@@ -2,9 +2,12 @@
   assign show_compare_toggle = block.settings.show_compare_toggle
   assign show_savings_bar = block.settings.show_savings_bar
   assign show_donut_chart = block.settings.show_donut_chart
+  assign bundle_products = block.settings.bundle_products
+  assign original_price = block.settings.original_price | default: 12800
+  assign discount_percentage = block.settings.discount_percentage | default: 22
+  assign custom_savings_message = block.settings.custom_savings_message
   
   assign bundle_price = product.price
-  assign original_price = 12800  
   assign savings_amount = original_price | minus: bundle_price
   assign savings_percentage = savings_amount | times: 100 | divided_by: original_price
 -%}
@@ -40,18 +43,27 @@
     
     <div class="price-display separate-display">
       <div class="price-breakdown">
-        <div class="price-line">
-          <span class="price-label">Fast As Fuck Hoodie:</span>
-          <span class="price-value">$68.00</span>
-        </div>
-        <div class="price-line">
-          <span class="price-label">Fast As Fuck Cap:</span>
-          <span class="price-value">$32.00</span>
-        </div>
-        <div class="price-line">
-          <span class="price-label">3 Stickers:</span>
-          <span class="price-value">$28.00</span>
-        </div>
+        {%- if bundle_products.count > 0 -%}
+          {%- for bundle_product in bundle_products -%}
+            <div class="price-line">
+              <span class="price-label">{{ bundle_product.title }}:</span>
+              <span class="price-value">{{ bundle_product.price | money }}</span>
+            </div>
+          {%- endfor -%}
+        {%- else -%}
+          <div class="price-line">
+            <span class="price-label">Fast As Fuck Hoodie:</span>
+            <span class="price-value">$68.00</span>
+          </div>
+          <div class="price-line">
+            <span class="price-label">Fast As Fuck Cap:</span>
+            <span class="price-value">$32.00</span>
+          </div>
+          <div class="price-line">
+            <span class="price-label">3 Stickers:</span>
+            <span class="price-value">$28.00</span>
+          </div>
+        {%- endif -%}
         <div class="price-line total">
           <span class="price-label">Total if separate:</span>
           <span class="price-value total-separate">{{ original_price | money }}</span>
@@ -66,7 +78,13 @@
       <div class="savings-progress" style="width: {{ savings_percentage }}%"></div>
     </div>
     <div class="savings-text">
-      <span class="savings-message">You're saving {{ savings_amount | money }} → that's 2 stickers free!</span>
+      <span class="savings-message">
+        {%- if custom_savings_message != blank -%}
+          {{ custom_savings_message | replace: '{savings}', savings_amount | money | replace: '{percentage}', savings_percentage }}
+        {%- else -%}
+          You're saving {{ savings_amount | money }} → that's {{ discount_percentage }}% off!
+        {%- endif -%}
+      </span>
     </div>
   </div>
   {%- endif -%}
@@ -88,7 +106,7 @@
           cy="60"
           r="45"
           fill="none"
-          stroke="#c00000"
+          stroke="#059669"
           stroke-width="12"
           stroke-dasharray="{{ savings_percentage | times: 2.827 | round: 2 }} 282.7"
           stroke-dashoffset="0"
@@ -168,7 +186,7 @@
 }
 
 .toggle-text.bundle-text {
-  color: #c00000;
+  color: #2563eb;
 }
 
 .toggle-text.separate-text {
@@ -180,7 +198,7 @@
 }
 
 .toggle-input:checked + .toggle-label .separate-text {
-  color: #c00000;
+  color: #2563eb;
 }
 
 .toggle-slider {
@@ -206,7 +224,7 @@
 }
 
 .toggle-input:checked + .toggle-label .toggle-slider {
-  background: #c00000;
+  background: #2563eb;
 }
 
 .toggle-input:checked + .toggle-label .toggle-slider::after {
@@ -300,7 +318,7 @@
 
 .savings-progress {
   height: 100%;
-  background: linear-gradient(90deg, #ff6b35 0%, #c00000 100%);
+  background: linear-gradient(90deg, #10b981 0%, #059669 100%);
   border-radius: 4px;
   transition: width 1s ease-out;
 }
@@ -370,7 +388,7 @@
 }
 
 .value-icon {
-  color: #c00000;
+  color: #2563eb;
   flex-shrink: 0;
 }
 
