@@ -1,0 +1,162 @@
+{%- comment -%}
+  Render quick shop placeholder
+
+  Accepts:
+    - product_url: {String} Product URL (optional)
+    - product_image: {String} Product image (optional)
+    - product_image_bottom_padding: {String} Product image bottom padding (optional)
+    - product_title: {String} Product title (optional)
+    - product_labels: {String} Product labels (optional)
+    - notify_on_add: {Boolean} Show notification
+    - image_ratio: {String} Image ratio string. Values are "1:1", "3:4", "4:3", "16:9", "2:3", "natural" (optional)
+    - image_sizes: {String} Image sizes attribute string
+    - fit_image_to_container: {Boolean} Fit image into container, or resize (optional)
+    - load_on: {String} Loading logic. Values are "click" (default) and "proximity" (optional)
+{%- endcomment -%}
+{%- liquid
+  if notify_on_add == nil
+    assign notify_on_add = settings.quick_shop_show_cart
+  endif
+
+  if request.page_type == 'cart' and settings.cart_type == 'modal'
+    assign notify_on_add = false
+  endif
+
+  if image_ratio == nil
+    assign image_ratio = settings.product_grid_image_size
+  endif
+
+  if image_ratio == 'natural' and product_image_bottom_padding == blank
+    assign image_ratio = '1:1'
+  endif
+
+  if fit_image_to_container == null
+    assign fit_image_to_container = settings.product_grid_image_fit
+  endif
+
+  unless image_sizes
+    assign image_sizes = '(min-width: 444px) 360px, calc(100vw - 24px - 18px * 2)'
+  endunless
+
+  unless load_on
+    assign load_on = 'click'
+  endunless
+
+  assign description = false
+  if settings.quick_shop_product_description > 0
+    assign description = true
+  endif
+-%}
+<quick-shop
+  placeholder
+  load-on="{{ load_on }}"
+  class="quick-shop--drawer-{{ settings.color_drawer_style }} quick-shop--media-ratio-{{ image_ratio }}"
+  image-container-ratio="{{ image_ratio }}"
+  image-sizes="{{ image_sizes }}"
+  {% if fit_image_to_container %}image-fit{% endif %}
+  {% if product_url %}data-product-url="{{ product_url }}"{% endif %}
+  {% if notify_on_add %}notify-on-add{% endif %}
+>
+  <div class="quick-shop__wrapper">
+    <div class="quick-shop__header">
+      <div class="product-card__details">
+        <span class="product-card__link">
+          {% if settings.product_grid_vendor %}
+            <p class="product-card__vendor">
+              <span class="skeleton-text skeleton-text--small skeleton-text--1/3"></span>
+            </p>
+          {% endif %}
+          <h3 class="quick-shop__title">
+            {%- if product_title -%}
+              {{ product_title }}
+            {%- else -%}
+              <div class="skeleton-text"></div>
+            {%- endif -%}
+          </h3>
+        </span>
+      </div>
+
+      <button title="Close (Esc)" type="button" class="mfp-close mfp-close--custom js-close-mfp" aria-label="close"><i class="icon icon--close-l"></i></button>
+    </div>
+
+    <div class="quick-shop__main">
+      <div class="product-card__wrapper">
+        {{ product_labels }}
+        <div class="
+          product-card__media
+          product-card__media--modal
+          {% if fit_image_to_container %}
+            product-card__media--fit
+          {% else %}
+            product-card--crop
+          {% endif %}
+        ">
+          <div class="
+              o-ratio
+              o-ratio--{{ image_ratio }}
+            "
+            {% if product_image_bottom_padding %}
+              style="padding-bottom: {{ product_image_bottom_padding }};"
+            {% endif %}
+          >
+            <div class="o-ratio__content">
+              {%- if product_image -%}
+                {{ product_image }}
+              {%- else -%}
+                <div class="skeleton-image skeleton-image--{{ image_ratio }}"></div>
+              {%- endif -%}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card__details is-hidden-in-drawer">
+        {%- if settings.product_grid_vendor -%}
+          <p class="product-card__vendor">
+            <span class="skeleton-text skeleton-text--small skeleton-text--1/2"></span>
+          </p>
+        {%- endif -%}
+
+        {%- if product_title -%}
+          <h3 class="product-card__title f-family--{{ settings.type_grid_style }} f-caps--{{ settings.type_grid_capitalize }} f-space--{{ settings.type_grid_letterspace }}">{{ product_title }}</h3>
+        {%- else -%}
+          <div class="skeleton-text"></div>
+        {%- endif -%}
+      </div>
+
+      <div class="product-card__price">
+        <div class="price skeleton-text skeleton-text--small skeleton-text--1/4"></div>
+      </div>
+
+      <hr class="product-form__divider">
+
+      <div class="product-form__content">
+        <span class="skeleton-text skeleton-text--small skeleton-text--1/3"></span>
+        <div class="skeleton-text"></div>
+        <span class="skeleton-text skeleton-text--small skeleton-text--1/3"></span>
+        <div class="skeleton-text"></div>
+      </div>
+    </div>
+
+    <div class="quick-shop__buttons">
+      <div class="product-form__add">
+        <div class="product-form__add-btn skeleton-button">
+          <span class="skeleton-text skeleton-text--inverse skeleton-text--small skeleton-text--inline skeleton-text--1/2"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="quick-shop__footer">
+      {%- if description -%}
+        <div class="product-card__description">
+          <div class="skeleton-text"></div>
+          <div class="skeleton-text"></div>
+          <span class="skeleton-text skeleton-text--1/3"></span>
+        </div>
+      {%- endif -%}
+      <div class="product-card__more">
+        <span class="skeleton-text skeleton-text--small skeleton-text--inline skeleton-text--1/3"></span>
+      </div>
+    </div>
+  </div>
+</quick-shop>

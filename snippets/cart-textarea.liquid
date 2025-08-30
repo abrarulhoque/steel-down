@@ -1,0 +1,15 @@
+{%- comment -%}
+  Cart textarea with status updates
+
+  Accepts:
+  - message: {Srting} Gift wrapping message
+  - form_id: {String} Form id
+  - input_id: {String} Input id
+  - input_name: {String} Input name
+  - class: {String} Main class
+  - textarea_class: {String} Textarea class
+{%- endcomment -%}
+<cart-textarea {% if class %}class="{{ class }}"{% endif %}>
+  <textarea name="{{ input_name }}" class="{{ textarea_class }} input-full" id="{{ input_id }}"{%- if form_id -%} form="{{ form_id }}"{%- endif -%}>{{- message -}}</textarea>
+  <cart-textarea-status></cart-textarea-status>
+</cart-textarea>

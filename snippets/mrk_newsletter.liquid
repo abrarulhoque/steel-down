@@ -1,0 +1,30 @@
+<div class="newsletter__form-wrapper">
+    {% form 'customer', id: 'newsletter', class: 'newsletter__form-form' %}
+        {{ form.errors | default_errors }}
+        {% if form.posted_successfully? %}
+            <div class="newsletter__form-message">
+                <h3 class="newsletter__form-message__text">{{ 'general.newsletter_form.confirmation' | t }}</h3>
+            </div>
+        {% else %}
+            <div class="o-layout o-layout--flush o-layout--center">
+                <div class="o-layout__item u-1/1 u-7/8@tab u-2/3@desk">
+                    <input type="hidden" name="contact[tags]" value="newsletter">
+                    <label for="Email-{{ section.id }}" class="u-hidden-visually">Email</label>
+                    <input type="email"
+                            name="contact[email]"
+                            id="Email-{{ section.id }}"
+                            class="newsletter__input"
+                            value="{% if customer %}{{ customer.email }}{% endif %}"
+                            placeholder="{{ 'general.newsletter_form.newsletter_email' | t }}"
+                            autocorrect="off"
+                            autocapitalize="off">
+                </div>
+                <div class="o-layout__item u-1/1 u-7/8@tab u-1/3@desk">
+                    <button type="submit" class="c-btn c-btn--full c-btn--primary newsletter__btn" name="commit" id="Subscribe-Footer">
+                      {% render 'mrk-right-arrow' %}  
+                    </button>
+                </div>
+            </div>
+        {% endif %}
+    {% endform %}
+</div>

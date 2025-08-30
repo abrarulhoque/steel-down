@@ -1,0 +1,231 @@
+{% comment %}theme-check-disable NestedSnippet{% endcomment %}
+{%- liquid
+  assign dynamic_checkout_enabled = false
+  if settings.quick_shop_enabled and settings.quick_shop_payment_button
+    assign dynamic_checkout_enabled = true
+  endif
+
+  assign container_ratio = settings.product_grid_image_size
+
+  assign grid = section.settings.grid
+  assign grid_mobile = section.settings.grid_mobile | plus: 0
+
+  assign mobile_sizes = 'calc(100vw - 96px)'
+  if grid_mobile == 2
+    assign mobile_sizes = 'calc((100vw - 15px) / 2 - 96px)'
+  endif
+
+  case grid
+    when 2
+      assign sizes = '(min-width: 1600px) calc((80vw - 90px) / 2), (min-width: 981px) calc((100vw - 90px) / 2), (min-width: 768px) calc((100vw - 66px) / 2), ' | append: mobile_sizes
+    when 3
+      assign sizes = '(min-width: 1600px) calc((80vw - 120px) / 3), (min-width: 981px) calc((100vw - 120px) / 3), (min-width: 768px) calc((100vw - 66px) / 2), ' | append: mobile_sizes
+    when 4
+      assign sizes = '(min-width: 1600px) calc((80vw - 105px) / 4), (min-width: 1081px) calc((100vw - 105px) / 4), (min-width: 981px) calc((100vw - 90px) / 3), (min-width: 768px) calc((100vw - 51px) / 2), ' | append: mobile_sizes
+  endcase
+
+  assign product_limit = section.settings.maximum_products
+
+  assign small_buttons_on_mobile = false
+  if grid_mobile == 2
+    assign small_buttons_on_mobile = true
+  endif
+-%}
+
+{% render 'section-padding',
+  section-id: section.id,
+  padding-top: section.settings.padding_top,
+  padding-bottom: section.settings.padding_bottom
+%}
+
+<style>
+  .section--{{ section.id }} [data-items] {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .section--{{ section.id }} [data-items] > * {
+    flex-shrink: 0;
+    flex-grow: 0;
+  }
+</style>
+<product-recommendations
+  on-page-load
+  id="{{ section.id }}--recommended-products"
+  data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit={{ product_limit }}"
+  data-quick-shop-dynamic-checkout="{{ dynamic_checkout_enabled }}"
+>
+  {%- if recommendations.performed? -%}
+    {%- liquid
+      assign product_list = recommendations.products
+
+      assign product_count = recommendations.products.size | plus: 0
+      if product_count > product_limit
+        assign product_count = product_limit
+      endif
+
+      if product_count > grid
+        assign items_overflow = true
+      elsif product_count > grid_mobile
+        assign items_overflow_max = 'phab'
+      endif
+    -%}
+    <section
+      class="section section--{{ section.id }} section--mb-s section--recommended-products"
+      data-section-id="{{ section.id }}"
+      data-section-type="product-recommendations"
+    >
+      {%- if section.settings.related_title != blank -%}
+        <div class="container container--{{ section.settings.section_width }}">
+          <div class="section__title section__title--center">
+            <h2 class="section__title-text">{{ section.settings.related_title | escape }}</h2>
+          </div>
+        </div>
+      {%- endif -%}
+      <div class="container container--{{ section.settings.section_width }} u-ph0@mob">
+        <items-scroll
+          {% unless container_ratio == 'natural' %}
+            class="ratio-navigation"
+          {% endunless %}
+          {% if items_overflow %}
+            items-overflow
+          {% elsif items_overflow_max %}
+            items-overflow-max="{{ items_overflow_max }}"
+          {% endif %}
+          image-container-ratio="{{ container_ratio }}"
+        >
+          <div
+            class="
+              grid-layout
+              grid-layout--{{ grid }}
+              grid-layout--{{ grid_mobile }}@mob
+              {% if grid > product_count %}
+              grid-layout--align-center
+              {% endif %}
+            "
+            data-items
+          >
+            {%- liquid
+              assign quick_shop_trigger = settings.quick_shop_trigger
+              if quick_shop_trigger == 'icon-hover'
+                assign quick_shop_trigger = 'icon'
+              endif
+
+              for product in product_list limit: product_limit
+                assign unique_id = section.id | append: '--' | append: product.id | append: '--recommendation'
+
+                render 'product-card', id: unique_id, current_product: product, section_id: section.id, image_sizes: sizes, small_buttons_on_mobile: small_buttons_on_mobile, quick_shop_trigger: quick_shop_trigger, quick_shop_type: 'remote'
+              endfor
+            -%}
+          </div>
+        </items-scroll>
+      </div>
+    </section>
+  {%- endif -%}
+</product-recommendations>
+
+<script src="{{ 'product-recommendations.js' | asset_url }}" type="module"></script>
+<script src="{{ 'items-scroll.js' | asset_url }}" type="module"></script>
+
+{% schema %}
+{
+  "name": "Product recommendations",
+  "class": "js-section__product-recommendations",
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "Dynamic recommendations use order and product information to change and improve over time. Learn more [Learn more](https://help.shopify.com/en/themes/development/recommended-products)"
+    },
+    {
+      "id": "related_title",
+      "type": "text",
+      "label": "Heading",
+      "default": "You may also like"
+    },
+    {
+      "type": "select",
+      "id": "section_width",
+      "label": "Section width",
+      "default": "large",
+      "options": [
+        {
+          "label": "Default",
+          "value": "large"
+        },
+        {
+          "label": "Narrow",
+          "value": "small"
+        },
+        {
+          "label": "Wide",
+          "value": "wide"
+        }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "maximum_products",
+      "min": 1,
+      "max": 10,
+      "step": 1,
+      "default": 10,
+      "label": "Maximum products to display"
+    },
+    {
+      "type": "range",
+      "id": "grid",
+      "label": "Products per row (desktop)",
+      "min": 2,
+      "max": 4,
+      "step": 1,
+      "default": 3
+    },
+    {
+      "type": "select",
+      "id": "grid_mobile",
+      "label": "Products per row (mobile)",
+      "default": "1",
+      "options": [
+        {
+          "label": "1",
+          "value": "1"
+        },
+        {
+          "label": "2",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Section padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Top padding",
+      "unit": "px",
+      "min": 0,
+      "max": 120,
+      "step": 3,
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Bottom padding",
+      "unit": "px",
+      "min": 0,
+      "max": 120,
+      "step": 3,
+      "default": 0
+    }
+  ]
+}
+{% endschema %}

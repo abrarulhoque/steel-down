@@ -1,0 +1,32 @@
+{% comment %}
+  Renders social media link icons
+
+  Accepts:
+  - social_link: {String}
+  - icon_name: {String}
+  - svg_icon: {String}
+{% endcomment %}
+
+<li class='social-item'>
+  <a href='{{ social_link }}' class='social-link icon-fallback' target='_blank' rel='noopener'>
+    <i
+      class='icon{% unless svg_icon == blank %} icon--custom-svg{% endunless %} icon--{{ icon_name }}'
+      aria-hidden='true'
+    >
+      {% liquid
+        case icon_name
+          when 'threads'
+            render 'icon-threads'
+          when 'whatsapp'
+            render 'icon-whatsapp'
+          when 'x'
+            render 'icon-x'
+        endcase
+      %}
+      {% unless svg_icon == blank %}
+        {{ svg_icon }}
+      {% endunless %}
+    </i>
+    <span class='icon-fallback__text'>{{ icon_name | capitalize }}</span>
+  </a>
+</li>

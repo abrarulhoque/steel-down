@@ -1,0 +1,12 @@
+{%- liquid
+layout none
+assign quick_shop_trigger = settings.quick_shop_trigger
+if quick_shop_trigger == 'icon-hover'
+  assign quick_shop_trigger = 'icon'
+endif
+assign small_buttons_on_mobile = false
+assign mobile_sizes = 'calc(100vw - 96px)'
+assign sizes = '(min-width: 1600px) calc((80vw - 120px) / 3), (min-width: 981px) calc((100vw - 120px) / 3), (min-width: 768px) calc((100vw - 66px) / 2), ' | append: mobile_sizes
+assign unique_id = 'mrk-recently-viewed-products' | append: '--' | append: product.id
+render 'product-card', id: unique_id, current_product: product, section_id: 'mrk-recently-viewed-products', image_sizes: sizes, small_buttons_on_mobile: small_buttons_on_mobile, quick_shop_trigger: quick_shop_trigger, quick_shop_type: 'remote'
+-%}

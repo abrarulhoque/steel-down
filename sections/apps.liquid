@@ -1,0 +1,41 @@
+{% capture mrk_content %}
+  {%- for block in section.blocks -%}
+    {% render block %}
+  {%- endfor -%}
+{% endcapture %}
+<section class="section section--{{ section.id }}{% if mrk_content contains 'judge_me' %} mrk-judgme-review-weight{% endif %}" data-section-id="{{ section.id }}" data-section-type="section-apps">
+  {% if section.settings.include_margins %}
+    <div class="container container--large">
+  {% endif %}
+
+  {{ mrk_content }}
+  {% if section.settings.include_margins %}
+    </div>
+  {% endif %}
+</section>
+
+{% schema %}
+{
+  "name": "Apps",
+  "tag": "section",
+  "class": "js-section__apps",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "include_margins",
+      "default": true,
+      "label": "Match section width to theme width"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "@app"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Apps"
+    }
+  ]
+}
+{% endschema %}

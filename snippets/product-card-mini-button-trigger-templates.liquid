@@ -1,0 +1,30 @@
+{%- comment -%}
+  Render mini product card button trigger templates
+
+  Accepts:
+    - id: {String} Unique id
+    - notify_on_add: {Boolean} Show notification
+
+  TODO: Sync with product-card
+{%- endcomment -%}
+<template id="{{ id }}--template-sold-out-button">
+  <button type="button" class="link" disabled="disabled">{{ 'products.product.sold_out' | t }}</button>
+</template>
+<template id="{{ id }}--template-quick-shop-button">
+  <button type="button" class="link link--underline js-quickshop-trigger" aria-hidden="true" tabindex="-1">{{ 'products.product.select_options' | t }}</button>
+</template>
+<template id="{{ id }}--template-add-to-cart-form">
+  <product-form {% if notify_on_add %}notify-on-add{% endif %}>
+    <form action="{{ routes.cart_add_url }}" method="post" enctype="multipart/form-data">
+      <input type="hidden" name="form_type" value="product">
+      <input type="hidden" name="id" value="" />
+      <button type="submit" class="link link--underline" name="add" aria-hidden="true" tabindex="-1">
+        <span class="product-card-btn__text">+ {{ 'products.product.add_to_cart' | t }}</span>
+        <span class="product-card-btn__tick"><i class="icon icon--tick"></i></span>
+        <product-card-button-spinner class="product-card-btn__spinner">
+          {% render 'theme-spinner' %}
+        </product-card-button-spinner>
+      </button>
+    </form>
+  </product-form>
+</template>

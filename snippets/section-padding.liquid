@@ -1,0 +1,22 @@
+{% comment %}
+    Renders section padding styling
+
+    Accepts:
+    - section-id: {String}
+    - padding-top: {String}
+    - padding-bottom: {String}
+
+{% endcomment %}
+
+<style type="text/css">
+  .section--{{ section-id }} {
+    padding-top: {{ padding-top }}px;
+    padding-bottom: {{ padding-bottom }}px;
+  }
+  @media screen and (max-width: 767px) {
+      .section--{{ section-id }} {
+          padding-top: {{ padding-top | times: 0.75 }}px;
+          padding-bottom: {{ padding-bottom | times: 0.75 }}px;
+      }
+  }
+</style>

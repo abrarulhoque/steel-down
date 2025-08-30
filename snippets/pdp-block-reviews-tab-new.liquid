@@ -1,0 +1,47 @@
+{% comment %}
+  Renders product page block with description
+
+  Accepts:
+  - block-id: {String}
+  - block-open: {Boolean}
+  - block-title: {String}
+  - block-icon: {String}
+  - block-icon-color: {Object}
+  - block-icon-size: {String}
+  - block-icon-custom-svg: {String}
+  - description: {String}
+{% endcomment %}
+
+<details
+  {% if block-open %}
+    open
+  {% endif %}
+  id='{{ block-id }}'
+>
+  <summary>
+    {% unless block-icon == 'none' and block-icon-custom-svg == blank %}
+      <div
+        class='product-single__accordion__icon block--{{ block-id }}'
+        style='width: {{ block-icon-size | plus : 1 | times : 3 | plus : 12 }}px; height: {{ block-icon-size | plus : 1 | times : 3 | plus : 12 }}px;'
+      >
+        {% if block-icon-custom-svg != blank %}
+          {{ block-icon-custom-svg | replace: ' width=', ' ' | replace: ' height=', ' ' }}
+        {% else %}
+          {% render 'icons', icon: block-icon, icon_color: block-icon-color %}
+        {% endif %}
+      </div>
+    {% endunless %}
+    <h3 class='f-family--body u-large u-text-transform--none u-color-text'> {{ block-title | escape }} {% if block-count %}<span>({% if product-meta-rating-count %}{{ product-meta-rating-count }}{% else %}0{% endif %})</span>{% endif %}</h3>
+    <summary-icon>
+      <i class='icon icon--plus-t' aria-hidden='true'></i>
+    </summary-icon>
+  </summary>
+
+  <details-content>
+    <div class='product-single__accordion__item-wrap rte'>
+      <div class="product-single__reviews">
+          <div id="shopify-product-reviews" data-id="{{ product-id }}">{{ product-meta-reviews }}</div>
+      </div>
+    </div>
+  </details-content>
+</details>

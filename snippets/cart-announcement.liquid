@@ -1,0 +1,21 @@
+<div class="cart__announcement">
+  {%- unless settings.cart_announcement_link == blank -%}
+  <a href="{{ settings.cart_announcement_link }}">
+  {%- endunless -%}
+
+    {%- unless settings.cart_announcement_icon == "none" -%}
+      <div class="cart__announcement-icon{% if settings.cart_announcement_icon_svg-code != blank %} cart__announcement-icon--custom{% endif %}">
+        {%- if settings.cart_announcement_icon_svg-code != blank -%}
+          {{ settings.cart_announcement_icon_svg-code | replace: ' width=', ' ' | replace: ' height=', ' ' }}
+        {%-  else -%}
+          {% render 'icons', icon: settings.cart_announcement_icon %}
+        {%- endif -%}
+      </div>
+    {%- endunless -%}
+
+    <p class="cart__announcement-text">{{ settings.cart_announcement_text | escape }}</p>
+
+  {%- unless settings.cart_announcement_link == blank -%}
+  </a>
+  {%- endunless -%}
+</div>

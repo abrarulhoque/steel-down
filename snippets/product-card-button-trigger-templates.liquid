@@ -1,0 +1,31 @@
+{%- comment -%}
+  Render product card button trigger templates
+
+  Accepts:
+    - id: {String} Unique id
+    - small_buttons_on_mobile: {Boolean} Small buttons on the image grid @ mobile size
+    - notify_on_add: {Boolean} Show notification
+
+  TODO: Sync with product-card
+{%- endcomment -%}
+<template id="{{ id }}--template-sold-out-button">
+  <button type="submit" class="c-btn c-btn--full{% if settings.quick_shop_product_grid_button == 'outline' %} c-btn--hollow{% else %} c-btn--primary{% endif %} product-card-btn__btn {% if small_buttons_on_mobile %}c-btn--small@mobile{% endif %}" disabled="disabled">{{ 'products.product.sold_out' | t }}</button>
+</template>
+<template id="{{ id }}--template-quick-shop-button">
+  <a quickshop-trigger href="#" class="c-btn c-btn--full{% if settings.quick_shop_product_grid_button == 'outline' %} c-btn--hollow{% else %} c-btn--primary{% endif %} {% if small_buttons_on_mobile %}c-btn--small@mobile{% endif %} product-card-btn__btn js-quickshop-trigger" aria-hidden="true" tabindex="-1">{{ 'products.product.select_options' | t }}</a>
+</template>
+<template id="{{ id }}--template-add-to-cart-form">
+  <product-form {% if notify_on_add %}notify-on-add{% endif %}>
+    <form action="{{ routes.cart_add_url }}" method="post" enctype="multipart/form-data">
+      <input type="hidden" name="form_type" value="product">
+      <input type="hidden" name="id" value="" />
+      <button type="submit" name="add" class="c-btn c-btn--full{% if settings.quick_shop_product_grid_button == 'outline' %} c-btn--hollow{% else %} c-btn--primary{% endif %} {% if small_buttons_on_mobile %}c-btn--small@mobile{% endif %} product-card-btn__btn js-product-add" aria-hidden="true" tabindex="-1">
+        <span class="product-card-btn__text">
+          <span class="js-product-add-text">{{ 'products.product.add_to_cart' | t }}</span>
+        </span>
+        <span class="product-card-btn__tick"><i class="icon icon--tick"></i></span>
+        <product-card-button-spinner class="product-card-btn__spinner"></product-card-button-spinner>
+      </button>
+    </form>
+  </product-form>
+</template>
