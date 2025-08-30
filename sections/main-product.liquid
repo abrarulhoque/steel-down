@@ -5483,6 +5483,36 @@ new ResizeObserver(theme.setPdpHeight).observe(
                     "id": "show_donut_chart",
                     "label": "Show Savings Donut Chart",
                     "default": true
+                },
+                {
+                    "type": "product_list",
+                    "id": "bundle_products",
+                    "label": "Bundle Products",
+                    "info": "Select products to display in separate pricing breakdown"
+                },
+                {
+                    "type": "number",
+                    "id": "original_price",
+                    "label": "Original Total Price (cents)",
+                    "default": 12800,
+                    "info": "Total price if bought separately (in cents, e.g. 12800 = $128.00)"
+                },
+                {
+                    "type": "range",
+                    "id": "discount_percentage",
+                    "label": "Discount Percentage",
+                    "min": 0,
+                    "max": 50,
+                    "step": 1,
+                    "default": 22,
+                    "unit": "%"
+                },
+                {
+                    "type": "text",
+                    "id": "custom_savings_message",
+                    "label": "Custom Savings Message",
+                    "placeholder": "You're saving {savings} → that's {percentage}% off!",
+                    "info": "Use {savings} for amount and {percentage} for percentage. Leave empty for default message."
                 }
             ]
         },
