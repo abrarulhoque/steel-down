@@ -102,6 +102,20 @@
             "enable_payment_button": true
           }
         },
+        "bundle_product_details_ARb4kG": {
+          "type": "bundle-product-details",
+          "settings": {
+            "column": "primary",
+            "bundle_products": [
+              "fast-as-fuck-hoodie",
+              "fast-as-fuck-sticker",
+              "fast-as-fuck-trucker"
+            ],
+            "custom_title": "",
+            "show_product_images": true,
+            "compact_layout": false
+          }
+        },
         "share": {
           "type": "share",
           "disabled": true,
@@ -213,6 +227,7 @@
         "inventory_notice",
         "free_shipping_bar_eTUQGP",
         "buy_buttons",
+        "bundle_product_details_ARb4kG",
         "share",
         "description",
         "reviews_tab_new_f8WyCG",
