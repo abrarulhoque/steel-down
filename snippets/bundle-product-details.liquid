@@ -12,7 +12,7 @@
   {%- endif -%}
   
   {%- if bundle_products.count > 0 -%}
-  <div class="product-details-list {{ if compact_layout }}compact{{ endif }}">
+  <div class="product-details-list{% if compact_layout %} compact{% endif %}">
     {%- for product in bundle_products -%}
       <div class="product-detail-item" data-product-id="{{ product.id }}">
         
