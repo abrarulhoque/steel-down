@@ -1,0 +1,344 @@
+{%- liquid
+  assign bundle_products = block.settings.bundle_products
+  assign show_product_images = block.settings.show_product_images | default: true
+  assign compact_layout = block.settings.compact_layout | default: false
+  assign custom_title = block.settings.custom_title
+-%}
+
+<div class="bundle-product-details">
+  
+  {%- if custom_title != blank -%}
+  <h3 class="bundle-details-title">{{ custom_title }}</h3>
+  {%- endif -%}
+  
+  {%- if bundle_products.count > 0 -%}
+  <div class="product-details-list {{ if compact_layout }}compact{{ endif }}">
+    {%- for product in bundle_products -%}
+      <div class="product-detail-item" data-product-id="{{ product.id }}">
+        
+        <div class="product-detail-header">
+          {%- if show_product_images and product.featured_image -%}
+          <div class="product-image">
+            <img src="{{ product.featured_image | img_url: '60x60' }}" 
+                 alt="{{ product.title }}" 
+                 width="40" 
+                 height="40"
+                 loading="lazy">
+          </div>
+          {%- endif -%}
+          
+          <div class="product-info">
+            <h4 class="product-title">{{ product.title }}</h4>
+            <div class="product-price">{{ product.price | money }}</div>
+          </div>
+          
+          {%- if product.description != blank -%}
+          <button class="description-toggle" 
+                  aria-expanded="false" 
+                  aria-controls="desc-{{ product.id }}"
+                  data-toggle="description">
+            <span class="toggle-text">Read more</span>
+            <svg class="toggle-icon" width="12" height="12" viewBox="0 0 12 12">
+              <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" fill="none"/>
+            </svg>
+          </button>
+          {%- endif -%}
+        </div>
+        
+        {%- if product.description != blank -%}
+        <div class="product-description collapsed" id="desc-{{ product.id }}">
+          <div class="description-content">
+            {{ product.description | truncate: 200 }}
+            {%- if product.description.size > 200 -%}
+              <a href="{{ product.url }}" class="read-full-link" target="_blank">
+                View full details
+                <svg width="12" height="12" viewBox="0 0 12 12">
+                  <path d="M3.5 3h5v5M8.5 3L3 8.5" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                </svg>
+              </a>
+            {%- endif -%}
+          </div>
+        </div>
+        {%- endif -%}
+        
+      </div>
+    {%- endfor -%}
+  </div>
+  {%- else -%}
+  <div class="no-products-message">
+    <p>No products selected. Please add products to display their details.</p>
+  </div>
+  {%- endif -%}
+  
+</div>
+
+<style>
+.bundle-product-details {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 20px;
+}
+
+.bundle-details-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 20px 0;
+  color: #333;
+}
+
+.product-details-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.product-details-list.compact {
+  gap: 12px;
+}
+
+.product-detail-item {
+  border: 1px solid #f0f0f0;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+
+.product-detail-item:hover {
+  border-color: #ddd;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.product-detail-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  cursor: pointer;
+}
+
+.compact .product-detail-header {
+  padding: 12px 16px;
+}
+
+.product-image {
+  flex-shrink: 0;
+}
+
+.product-image img {
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.product-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.product-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 4px 0;
+  color: #333;
+  line-height: 1.3;
+}
+
+.compact .product-title {
+  font-size: 15px;
+}
+
+.product-price {
+  font-size: 14px;
+  font-weight: 500;
+  color: #c00000;
+}
+
+.description-toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  font-size: 12px;
+  color: #2563eb;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.description-toggle:hover {
+  background: #f8fafc;
+  color: #1d4ed8;
+}
+
+.toggle-text {
+  font-weight: 500;
+}
+
+.toggle-icon {
+  transition: transform 0.2s ease;
+}
+
+.description-toggle[aria-expanded="true"] .toggle-icon {
+  transform: rotate(180deg);
+}
+
+.description-toggle[aria-expanded="true"] .toggle-text::after {
+  content: " less";
+}
+
+.product-description {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border-top: 1px solid transparent;
+}
+
+.product-description.expanded {
+  max-height: 200px;
+  border-top-color: #f0f0f0;
+}
+
+.description-content {
+  padding: 16px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #666;
+}
+
+.compact .description-content {
+  padding: 12px 16px;
+  font-size: 13px;
+}
+
+.read-full-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 8px;
+  font-size: 12px;
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.read-full-link:hover {
+  color: #1d4ed8;
+}
+
+.read-full-link svg {
+  flex-shrink: 0;
+}
+
+.no-products-message {
+  text-align: center;
+  padding: 40px 20px;
+  color: #666;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.no-products-message p {
+  margin: 0;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .bundle-product-details {
+    padding: 16px;
+  }
+  
+  .product-detail-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .product-image {
+    align-self: flex-start;
+  }
+  
+  .product-title {
+    font-size: 15px;
+  }
+  
+  .description-toggle {
+    align-self: flex-end;
+  }
+}
+
+/* Animation for smoother expand/collapse */
+@keyframes expandDescription {
+  from {
+    max-height: 0;
+    opacity: 0;
+  }
+  to {
+    max-height: 200px;
+    opacity: 1;
+  }
+}
+
+.product-description.expanded {
+  animation: expandDescription 0.3s ease-out;
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Handle description toggle
+  const toggleButtons = document.querySelectorAll('[data-toggle="description"]');
+  
+  toggleButtons.forEach(button => {
+    button.addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      const isExpanded = this.getAttribute('aria-expanded') === 'true';
+      const descriptionId = this.getAttribute('aria-controls');
+      const description = document.getElementById(descriptionId);
+      const toggleText = this.querySelector('.toggle-text');
+      
+      if (isExpanded) {
+        // Collapse
+        this.setAttribute('aria-expanded', 'false');
+        description.classList.remove('expanded');
+        description.classList.add('collapsed');
+        toggleText.textContent = 'Read more';
+      } else {
+        // Expand
+        this.setAttribute('aria-expanded', 'true');
+        description.classList.remove('collapsed');
+        description.classList.add('expanded');
+        toggleText.textContent = 'Read';
+      }
+    });
+  });
+  
+  // Optional: Close other descriptions when opening one (accordion style)
+  // Uncomment the code below if you want accordion behavior
+  /*
+  toggleButtons.forEach(button => {
+    button.addEventListener('click', function(e) {
+      const currentDescriptionId = this.getAttribute('aria-controls');
+      
+      // Close all other descriptions
+      toggleButtons.forEach(otherButton => {
+        if (otherButton !== this) {
+          const otherDescriptionId = otherButton.getAttribute('aria-controls');
+          const otherDescription = document.getElementById(otherDescriptionId);
+          
+          otherButton.setAttribute('aria-expanded', 'false');
+          otherDescription.classList.remove('expanded');
+          otherDescription.classList.add('collapsed');
+          otherButton.querySelector('.toggle-text').textContent = 'Read more';
+        }
+      });
+    });
+  });
+  */
+});
+</script>

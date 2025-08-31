@@ -1053,6 +1053,14 @@
                                                 %}
                                             </div>
 
+                                        {%- when 'bundle-product-details' -%}
+                                            <div class="product-single__box__block product-single__box__block--{{ block.type }}" {{ block.shopify_attributes }}>
+                                                {% render 'bundle-product-details',
+                                                    block: block,
+                                                    product: product
+                                                %}
+                                            </div>
+
                                         {%- when 'custom-liquid' -%}
                                             <div class="product-single__box__block product-single__box__block--{{ block.type }} u-mt0 u-mb0" {{ block.shopify_attributes }}>
                                                 {{ block.settings.custom_liquid }}
@@ -1363,6 +1371,14 @@
                                     {%- when 'bundle-perks' -%}
                                         <div class="product-single__box__block product-single__box__block--{{ block.type }}" {{ block.shopify_attributes }}>
                                             {% render 'bundle-perks',
+                                                block: block,
+                                                product: product
+                                            %}
+                                        </div>
+
+                                    {%- when 'bundle-product-details' -%}
+                                        <div class="product-single__box__block product-single__box__block--{{ block.type }}" {{ block.shopify_attributes }}>
+                                            {% render 'bundle-product-details',
                                                 block: block,
                                                 product: product
                                             %}
@@ -5560,6 +5576,54 @@ new ResizeObserver(theme.setPdpHeight).observe(
                     "type": "url",
                     "id": "size_guide_link",
                     "label": "Size Guide Link"
+                }
+            ]
+        },
+        {
+            "type": "bundle-product-details",
+            "name": "Bundle Product Details",
+            "settings": [
+                {
+                    "type": "select",
+                    "id": "column",
+                    "label": "Position (desktop)",
+                    "default": "primary",
+                    "options": [
+                        {
+                            "value": "primary",
+                            "label": "Form column"
+                        },
+                        {
+                            "value": "secondary",
+                            "label": "Gallery column"
+                        }
+                    ]
+                },
+                {
+                    "type": "product_list",
+                    "id": "bundle_products",
+                    "label": "Bundle Products",
+                    "info": "Select products to display their titles and descriptions"
+                },
+                {
+                    "type": "text",
+                    "id": "custom_title",
+                    "label": "Custom Section Title",
+                    "placeholder": "What's Included",
+                    "info": "Optional title for the product details section"
+                },
+                {
+                    "type": "checkbox",
+                    "id": "show_product_images",
+                    "label": "Show Product Images",
+                    "default": true
+                },
+                {
+                    "type": "checkbox",
+                    "id": "compact_layout",
+                    "label": "Compact Layout",
+                    "default": false,
+                    "info": "Use smaller spacing and font sizes"
                 }
             ]
         },
