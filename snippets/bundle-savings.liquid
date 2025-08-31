@@ -3,13 +3,24 @@
   assign show_savings_bar = block.settings.show_savings_bar
   assign show_donut_chart = block.settings.show_donut_chart
   assign bundle_products = block.settings.bundle_products
-  assign original_price = block.settings.original_price | default: 12800
-  assign discount_percentage = block.settings.discount_percentage | default: 22
+  assign custom_bundle_price = block.settings.bundle_price
   assign custom_savings_message = block.settings.custom_savings_message
   
-  assign bundle_price = product.price
-  assign savings_amount = original_price | minus: bundle_price
-  assign savings_percentage = savings_amount | times: 100 | divided_by: original_price
+  # Calculate total price from selected products or use fallback
+  assign calculated_original_price = 0
+  if bundle_products.count > 0
+    for bundle_product in bundle_products
+      assign calculated_original_price = calculated_original_price | plus: bundle_product.price
+    endfor
+  else
+    assign calculated_original_price = block.settings.original_price | default: 12800
+  endif
+  
+  # Use custom bundle price or product price
+  assign bundle_price = custom_bundle_price | default: product.price
+  assign savings_amount = calculated_original_price | minus: bundle_price
+  # Use the actual calculated savings percentage for display
+  assign savings_percentage = savings_amount | times: 100 | divided_by: calculated_original_price
 -%}
 
 <div class="bundle-savings-visualization">
@@ -66,7 +77,7 @@
         {%- endif -%}
         <div class="price-line total">
           <span class="price-label">Total if separate:</span>
-          <span class="price-value total-separate">{{ original_price | money }}</span>
+          <span class="price-value total-separate">{{ calculated_original_price | money }}</span>
         </div>
       </div>
     </div>
@@ -87,7 +98,7 @@
             echo final_message
           -%}
         {%- else -%}
-          You're saving {{ savings_amount | money }} → that's {{ discount_percentage }}% off!
+          You're saving {{ savings_amount | money }} → that's {{ savings_percentage | round }}% off!
         {%- endif -%}
       </span>
     </div>

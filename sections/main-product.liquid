@@ -5492,20 +5492,16 @@ new ResizeObserver(theme.setPdpHeight).observe(
                 },
                 {
                     "type": "number",
-                    "id": "original_price",
-                    "label": "Original Total Price (cents)",
-                    "default": 12800,
-                    "info": "Total price if bought separately (in cents, e.g. 12800 = $128.00)"
+                    "id": "bundle_price",
+                    "label": "Custom Bundle Price (cents)",
+                    "info": "Override bundle price (in cents). Leave empty to use product price."
                 },
                 {
-                    "type": "range",
-                    "id": "discount_percentage",
-                    "label": "Discount Percentage",
-                    "min": 0,
-                    "max": 50,
-                    "step": 1,
-                    "default": 22,
-                    "unit": "%"
+                    "type": "number",
+                    "id": "original_price",
+                    "label": "Fallback Total Price (cents)",
+                    "default": 12800,
+                    "info": "Used only when no bundle products selected (in cents, e.g. 12800 = $128.00)"
                 },
                 {
                     "type": "text",
