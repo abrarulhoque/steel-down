@@ -102,6 +102,20 @@
             "enable_payment_button": true
           }
         },
+        "bundle_product_details_nCzhcU": {
+          "type": "bundle-product-details",
+          "settings": {
+            "column": "secondary",
+            "bundle_products": [
+              "working-class-stiff-blue-collar-hoodie",
+              "working-class-stiff-sticker",
+              "working-class-stiff-tee"
+            ],
+            "custom_title": "",
+            "show_product_images": true,
+            "compact_layout": true
+          }
+        },
         "share": {
           "type": "share",
           "disabled": true,
@@ -213,6 +227,7 @@
         "inventory_notice",
         "free_shipping_bar_eTUQGP",
         "buy_buttons",
+        "bundle_product_details_nCzhcU",
         "share",
         "description",
         "reviews_tab_new_f8WyCG",
