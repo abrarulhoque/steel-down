@@ -3,9 +3,49 @@
   assign show_product_images = block.settings.show_product_images | default: true
   assign compact_layout = block.settings.compact_layout | default: false
   assign custom_title = block.settings.custom_title
+  assign show_main_product = block.settings.show_main_product | default: true
+  assign main_product_title = block.settings.main_product_title | default: product.title
 -%}
 
 <div class="bundle-product-details">
+
+{%- if show_main_product -%}
+<div class="bundle-main-container">
+  <div class="bundle-main-header" 
+       role="button" 
+       tabindex="0"
+       aria-expanded="false" 
+       aria-controls="bundle-details-content"
+       data-toggle="bundle-details">
+    
+    {%- if product.featured_image -%}
+    <div class="main-product-image">
+      <img src="{{ product.featured_image | img_url: '60x60' }}" 
+           alt="{{ main_product_title }}" 
+           width="40" 
+           height="40"
+           loading="lazy">
+    </div>
+    {%- endif -%}
+    
+    <div class="main-product-info">
+      <h4 class="main-product-title">{{ main_product_title }}</h4>
+      <div class="main-product-price">{{ product.price | money }}</div>
+    </div>
+    
+    <button class="bundle-details-toggle" 
+            aria-expanded="false" 
+            aria-controls="bundle-details-content">
+      <span class="toggle-text">View bundle details</span>
+      <svg class="toggle-icon" width="12" height="12" viewBox="0 0 12 12">
+        <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" fill="none"/>
+      </svg>
+    </button>
+    
+  </div>
+
+  <div class="bundle-details-content collapsed" id="bundle-details-content">
+{%- endif -%}
   
   {%- if custom_title != blank -%}
   <h3 class="bundle-details-title">{{ custom_title }}</h3>
@@ -69,6 +109,11 @@
     <p>No products selected. Please add products to display their details.</p>
   </div>
   {%- endif -%}
+
+{%- if show_main_product -%}
+  </div> <!-- end bundle-details-content -->
+</div> <!-- end bundle-main-container -->
+{%- endif -%}
   
 </div>
 
@@ -79,6 +124,106 @@
   border-radius: 12px;
   padding: 24px;
   margin-bottom: 20px;
+}
+
+/* Main Product Collapsible Container */
+.bundle-main-container {
+  margin-bottom: 16px;
+}
+
+.bundle-main-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  padding: 16px;
+  border: 1px solid #f0f0f0;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  background: #fafafa;
+}
+
+.bundle-main-header:hover {
+  border-color: #ddd;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.main-product-image {
+  flex-shrink: 0;
+}
+
+.main-product-image img {
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.main-product-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.main-product-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 4px 0;
+  color: #333;
+  line-height: 1.3;
+}
+
+.main-product-price {
+  font-size: 14px;
+  font-weight: 500;
+  color: #c00000;
+}
+
+.bundle-details-toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  font-size: 12px;
+  color: #2563eb;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.bundle-details-toggle:hover {
+  background: #f8fafc;
+  color: #1d4ed8;
+}
+
+.bundle-details-toggle .toggle-text {
+  font-weight: 500;
+}
+
+.bundle-details-toggle .toggle-icon {
+  transition: transform 0.2s ease;
+}
+
+.bundle-details-toggle[aria-expanded="true"] .toggle-icon {
+  transform: rotate(180deg);
+}
+
+.bundle-details-toggle[aria-expanded="true"] .toggle-text::after {
+  content: " less";
+}
+
+.bundle-details-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  margin-top: 16px;
+  border-top: 1px solid transparent;
+}
+
+.bundle-details-content.expanded {
+  max-height: 1000px;
+  border-top-color: #f0f0f0;
+  padding-top: 16px;
 }
 
 .bundle-details-title {
@@ -290,6 +435,48 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
+  // Handle main bundle details toggle
+  const bundleToggle = document.querySelector('[data-toggle="bundle-details"]');
+  const bundleToggleButton = document.querySelector('.bundle-details-toggle');
+  
+  if (bundleToggle && bundleToggleButton) {
+    const toggleContent = () => {
+      const isExpanded = bundleToggleButton.getAttribute('aria-expanded') === 'true';
+      const content = document.getElementById('bundle-details-content');
+      const toggleText = bundleToggleButton.querySelector('.toggle-text');
+      
+      if (isExpanded) {
+        // Collapse
+        bundleToggleButton.setAttribute('aria-expanded', 'false');
+        bundleToggle.setAttribute('aria-expanded', 'false');
+        content.classList.remove('expanded');
+        content.classList.add('collapsed');
+        toggleText.textContent = 'View bundle details';
+      } else {
+        // Expand
+        bundleToggleButton.setAttribute('aria-expanded', 'true');
+        bundleToggle.setAttribute('aria-expanded', 'true');
+        content.classList.remove('collapsed');
+        content.classList.add('expanded');
+        toggleText.textContent = 'Hide bundle details';
+      }
+    };
+    
+    bundleToggle.addEventListener('click', toggleContent);
+    bundleToggleButton.addEventListener('click', function(e) {
+      e.stopPropagation();
+      toggleContent();
+    });
+    
+    // Handle keyboard navigation
+    bundleToggle.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        toggleContent();
+      }
+    });
+  }
+
   // Handle description toggle
   const toggleButtons = document.querySelectorAll('[data-toggle="description"]');
   

@@ -5624,6 +5624,19 @@ new ResizeObserver(theme.setPdpHeight).observe(
                     "label": "Compact Layout",
                     "default": false,
                     "info": "Use smaller spacing and font sizes"
+                },
+                {
+                    "type": "checkbox",
+                    "id": "show_main_product",
+                    "label": "Show Main Product Header",
+                    "default": true,
+                    "info": "Display collapsible header with main product info"
+                },
+                {
+                    "type": "text",
+                    "id": "main_product_title",
+                    "label": "Main Product Title Override",
+                    "info": "Optional custom title for main product (uses product title if empty)"
                 }
             ]
         },
