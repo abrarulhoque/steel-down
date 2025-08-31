@@ -105,7 +105,7 @@
         "bundle_product_details_ARb4kG": {
           "type": "bundle-product-details",
           "settings": {
-            "column": "primary",
+            "column": "secondary",
             "bundle_products": [
               "fast-as-fuck-hoodie",
               "fast-as-fuck-sticker",
@@ -113,7 +113,7 @@
             ],
             "custom_title": "",
             "show_product_images": true,
-            "compact_layout": false
+            "compact_layout": true
           }
         },
         "share": {
