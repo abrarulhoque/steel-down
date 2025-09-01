@@ -1,1 +1,219 @@
-{"name":"Header group","type":"header","sections":{"section_announcement_bar_7HB49j":{"type":"section-announcement-bar","blocks":{"announcement_VAzQXd":{"type":"announcement","settings":{"icon":"icon-megaphone","svg-code":"","text":"BUY 2 GET 1 FREE SITEWIDE","text_link":"Shop Now","link":"https:\/\/steeltowngarage.com\/collections\/all"}}},"block_order":["announcement_VAzQXd"],"settings":{"divider_top":false,"divider_bottom":false,"text_size_desktop":2,"text_size_mobile":2,"text_style":"body","message_color_bg":"#c00000","message_color_text":"#ffffff","text_letter_spacing":0,"text_bold":false,"text_capitalize":false,"close_icon":false,"carousel_desktop":false,"auto_carousel":true,"carousel_speed":8,"padding_top":0,"padding_bottom":0,"section-bottom-margin":true}},"announcement-bar":{"type":"section-announcement-bar","blocks":{"f752cf03-1fbc-4be1-a3cc-171a071687d2":{"type":"announcement","settings":{"icon":"icon-delivery-truck-3","svg-code":"","text":"FREE SHIPPING over $100 USD in USA & Canada","text_link":"","link":""}},"539fad8b-91eb-4f52-8e5a-4d3ec8358e38":{"type":"announcement","settings":{"icon":"icon-currency-dollar-circle","svg-code":"","text":"Get 10% OFF your first order","text_link":"click here","link":"shopify:\/\/pages\/how-to-get-10-off-your-first-order"}}},"block_order":["f752cf03-1fbc-4be1-a3cc-171a071687d2","539fad8b-91eb-4f52-8e5a-4d3ec8358e38"],"settings":{"divider_top":false,"divider_bottom":false,"text_size_desktop":2,"text_size_mobile":1,"text_style":"body","message_color_bg":"#212121","message_color_text":"#ffffff","text_letter_spacing":0,"text_bold":false,"text_capitalize":false,"close_icon":false,"carousel_desktop":false,"auto_carousel":true,"carousel_speed":7,"padding_top":0,"padding_bottom":0,"section-bottom-margin":true}},"header":{"type":"header","blocks":{"collection_menu_JPkji3":{"type":"collection-menu","settings":{"triggers":"COLLECTIONS","layout_width":"wide","layout_alignment":"center","layout_content_priority":"additional_content","enable_navigations":true,"linklist_width":60,"links_per_row":3,"links_columns_spacing":30,"linklist_alignment":"left","enable_additional_content":true,"additional_content_width":100,"additional_content_per_row":5,"additional_content_spacing":60,"additional_content_alignment":"left","image_ratio":"1:1","collections":["best-sellers","t-shirts-tops","hats-beanies-1","riding","fast-as-fuck"],"sidebar_additional_content_per_row":"1","sidebar_additional_content_enable_carousel":true}},"image_menu_rRhNqh":{"type":"image-menu","settings":{"triggers":"SHOP ONLINE","layout_width":"wide","layout_alignment":"center","layout_content_priority":"navigation","enable_navigations":true,"linklist_width":75,"links_per_row":4,"links_columns_spacing":42,"linklist_alignment":"left","enable_additional_content":true,"additional_content_title":"","additional_content_width":25,"additional_content_per_row":1,"additional_content_spacing":0,"additional_content_alignment":"center","image_ratio":"1:1","sidebar_additional_content_per_row":"1","sidebar_additional_content_enable_carousel":true,"image_1":"shopify:\/\/shop_images\/Steeltown-Mega-Menu-Free-Shipping-1.jpg","image_1_title":"","image_1_text":"","image_1_link":"","image_2_title":"","image_2_text":"","image_2_link":"","image_3_title":"","image_3_text":"","image_3_link":"","image_4_title":"","image_4_text":"","image_4_link":"","image_5_title":"","image_5_text":"","image_5_link":"","image_6_title":"","image_6_text":"","image_6_link":""}}},"block_order":["collection_menu_JPkji3","image_menu_rRhNqh"],"settings":{"menu":"2019-main-menu","layout":"left","style":"sticky","link_style":"icon","enable_chevrons":false,"header_divider":false,"header_bg":"#ffffff","header_text":"#111111","logo":"shopify:\/\/shop_images\/Steeltown-Garage-Co-Header-Logo-2021.jpg","header_transparent":false,"header_transparent_collection":false,"header_transparent_divider":true,"header_transparent_text":"#ffffff","special_link_triggers":"","special_link_color":"#c00000","special_link_disable_on_transparent_header":false,"logo_size":40,"logo_spacing":5,"logo_size_mobile":35,"logo_spacing_mobile":5,"sidebar_main_menu":"","sidebar_secondary_menu":"","sidebar_show_borders":true,"sidebar_show_collection_images_in_submenu":true,"sidebar_show_view_all_in_submenu":true,"sidebar_view_all_style":"outline","sidebar_show_contact_number":false,"sidebar_show_contact_email":true,"sidebar_show_social":true,"enable_country_selector":true,"enable_language_selector":false}}},"order":["section_announcement_bar_7HB49j","announcement-bar","header"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "Header group",
+  "type": "header",
+  "sections": {
+    "section_announcement_bar_7HB49j": {
+      "type": "section-announcement-bar",
+      "blocks": {
+        "announcement_VAzQXd": {
+          "type": "announcement",
+          "settings": {
+            "icon": "icon-megaphone",
+            "svg-code": "",
+            "text": "BUY 2 GET 1 FREE SITEWIDE",
+            "text_link": "Shop Now",
+            "link": "https://steeltowngarage.com/collections/all"
+          }
+        }
+      },
+      "block_order": [
+        "announcement_VAzQXd"
+      ],
+      "disabled": true,
+      "settings": {
+        "divider_top": false,
+        "divider_bottom": false,
+        "text_size_desktop": 2,
+        "text_size_mobile": 2,
+        "text_style": "body",
+        "message_color_bg": "#c00000",
+        "message_color_text": "#ffffff",
+        "text_letter_spacing": 0,
+        "text_bold": false,
+        "text_capitalize": false,
+        "close_icon": false,
+        "carousel_desktop": false,
+        "auto_carousel": true,
+        "carousel_speed": 8,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "section-bottom-margin": true
+      }
+    },
+    "announcement-bar": {
+      "type": "section-announcement-bar",
+      "blocks": {
+        "f752cf03-1fbc-4be1-a3cc-171a071687d2": {
+          "type": "announcement",
+          "settings": {
+            "icon": "icon-delivery-truck-3",
+            "svg-code": "",
+            "text": "FREE SHIPPING over $100 USD in USA & Canada",
+            "text_link": "",
+            "link": ""
+          }
+        },
+        "539fad8b-91eb-4f52-8e5a-4d3ec8358e38": {
+          "type": "announcement",
+          "settings": {
+            "icon": "icon-currency-dollar-circle",
+            "svg-code": "",
+            "text": "Get 10% OFF your first order",
+            "text_link": "click here",
+            "link": "shopify://pages/how-to-get-10-off-your-first-order"
+          }
+        }
+      },
+      "block_order": [
+        "f752cf03-1fbc-4be1-a3cc-171a071687d2",
+        "539fad8b-91eb-4f52-8e5a-4d3ec8358e38"
+      ],
+      "settings": {
+        "divider_top": false,
+        "divider_bottom": false,
+        "text_size_desktop": 2,
+        "text_size_mobile": 1,
+        "text_style": "body",
+        "message_color_bg": "#212121",
+        "message_color_text": "#ffffff",
+        "text_letter_spacing": 0,
+        "text_bold": false,
+        "text_capitalize": false,
+        "close_icon": false,
+        "carousel_desktop": false,
+        "auto_carousel": true,
+        "carousel_speed": 7,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "section-bottom-margin": true
+      }
+    },
+    "header": {
+      "type": "header",
+      "blocks": {
+        "collection_menu_JPkji3": {
+          "type": "collection-menu",
+          "settings": {
+            "triggers": "COLLECTIONS",
+            "layout_width": "wide",
+            "layout_alignment": "center",
+            "layout_content_priority": "additional_content",
+            "enable_navigations": true,
+            "linklist_width": 60,
+            "links_per_row": 3,
+            "links_columns_spacing": 30,
+            "linklist_alignment": "left",
+            "enable_additional_content": true,
+            "additional_content_width": 100,
+            "additional_content_per_row": 5,
+            "additional_content_spacing": 60,
+            "additional_content_alignment": "left",
+            "image_ratio": "1:1",
+            "collections": [
+              "best-sellers",
+              "t-shirts-tops",
+              "hats-beanies-1",
+              "riding",
+              "fast-as-fuck"
+            ],
+            "sidebar_additional_content_per_row": "1",
+            "sidebar_additional_content_enable_carousel": true
+          }
+        },
+        "image_menu_rRhNqh": {
+          "type": "image-menu",
+          "settings": {
+            "triggers": "SHOP ONLINE",
+            "layout_width": "wide",
+            "layout_alignment": "center",
+            "layout_content_priority": "navigation",
+            "enable_navigations": true,
+            "linklist_width": 75,
+            "links_per_row": 4,
+            "links_columns_spacing": 42,
+            "linklist_alignment": "left",
+            "enable_additional_content": true,
+            "additional_content_title": "",
+            "additional_content_width": 25,
+            "additional_content_per_row": 1,
+            "additional_content_spacing": 0,
+            "additional_content_alignment": "center",
+            "image_ratio": "1:1",
+            "sidebar_additional_content_per_row": "1",
+            "sidebar_additional_content_enable_carousel": true,
+            "image_1": "shopify://shop_images/Steeltown-Mega-Menu-Free-Shipping-1.jpg",
+            "image_1_title": "",
+            "image_1_text": "",
+            "image_1_link": "",
+            "image_2_title": "",
+            "image_2_text": "",
+            "image_2_link": "",
+            "image_3_title": "",
+            "image_3_text": "",
+            "image_3_link": "",
+            "image_4_title": "",
+            "image_4_text": "",
+            "image_4_link": "",
+            "image_5_title": "",
+            "image_5_text": "",
+            "image_5_link": "",
+            "image_6_title": "",
+            "image_6_text": "",
+            "image_6_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_menu_JPkji3",
+        "image_menu_rRhNqh"
+      ],
+      "settings": {
+        "menu": "2019-main-menu",
+        "layout": "left",
+        "style": "sticky",
+        "link_style": "icon",
+        "enable_chevrons": false,
+        "header_divider": false,
+        "header_bg": "#ffffff",
+        "header_text": "#111111",
+        "logo": "shopify://shop_images/Steeltown-Garage-Co-Header-Logo-2021.jpg",
+        "header_transparent": false,
+        "header_transparent_collection": false,
+        "header_transparent_divider": true,
+        "header_transparent_text": "#ffffff",
+        "special_link_triggers": "",
+        "special_link_color": "#c00000",
+        "special_link_disable_on_transparent_header": false,
+        "logo_size": 40,
+        "logo_spacing": 5,
+        "logo_size_mobile": 35,
+        "logo_spacing_mobile": 5,
+        "sidebar_main_menu": "",
+        "sidebar_secondary_menu": "",
+        "sidebar_show_borders": true,
+        "sidebar_show_collection_images_in_submenu": true,
+        "sidebar_show_view_all_in_submenu": true,
+        "sidebar_view_all_style": "outline",
+        "sidebar_show_contact_number": false,
+        "sidebar_show_contact_email": true,
+        "sidebar_show_social": true,
+        "enable_country_selector": true,
+        "enable_language_selector": false
+      }
+    }
+  },
+  "order": [
+    "section_announcement_bar_7HB49j",
+    "announcement-bar",
+    "header"
+  ]
+}

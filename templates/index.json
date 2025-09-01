@@ -1,1 +1,687 @@
-{"sections":{"section_collection_list_cYqpdg":{"type":"section-collection-list","blocks":{"collection_DeJ8yW":{"type":"collection","settings":{"collection":"","heading":"Tiger Crewneck","description":"","button_label":"SHOP NOW","link":"shopify:\/\/products\/retro-tigers-crewneck-sweater","image":"shopify:\/\/shop_images\/Steeltown-Tigers-Crewneck-Retro-Spencer1.jpg"}},"collection_ELdXcL":{"type":"collection","settings":{"collection":"","heading":"Built For The Road","description":"","button_label":"Shop Now","link":"shopify:\/\/products\/retro-tigers-crewneck-sweater","video":"shopify:\/\/files\/videos\/Tigercrew480-2.mov"}},"collection_JjaynA":{"type":"collection","settings":{"collection":"","heading":"Unisex As Always","description":"","button_label":"SHOP NOW","link":"shopify:\/\/products\/retro-tigers-crewneck-sweater","image":"shopify:\/\/shop_images\/Steeltown-Tigers-Crewneck-Retro-Karli1.jpg"}}},"block_order":["collection_DeJ8yW","collection_ELdXcL","collection_JjaynA"],"disabled":true,"settings":{"title":"","desc":"","divider":false,"heading_alignment":"center","section_width":"wide","grid":3,"spacing":2,"enable_carousel_desktop":true,"enable_carousel_mobile":true,"title_size":1,"image_ratio":"2:3","button_style":"link link--arrow","alignment":"bottom-left","text_alignment":"left","visibility_heading":true,"visibility_border":true,"visibility_count":false,"visibility_description":false,"visibility_button":true,"hover_options":"hover-button","color_text":"#ffffff","color_overlay":"#000000","color_overlay_strength":0,"color_default_heading":false,"color_default_border":true,"link_title":"View all","link":"","section_link_style":"link link--arrow","padding_top":0,"padding_bottom":18}},"section-slideshow":{"type":"section-slideshow","blocks":{"video_CNzJ9n":{"type":"video","disabled":true,"settings":{"video_link":"https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/cde7b968769c4982b3d6822741c34e19.mp4","yt_link":"","alignment":"right","title":"quality goods for free spirits","text":"","link_style":"c-btn c-btn--hollow","link_title":"about us","link":"shopify:\/\/pages\/about-steeltown-garage-co","link_style_2":"c-btn c-btn--primary","link_title_2":"Shop Now","link_2":"shopify:\/\/collections\/all"}},"image_aKL9qY":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/Steeltown-Graphic-Tee-BOGO-Header-b.jpg","alignment":"center","title":"BUY 2 GET 1 FREE","text":"<p>Our massive site wide BOGO sale is on now! Buy any two items and automatically get a third for free. <\/p>","link_style":"c-btn c-btn--mono","link_title":"GET FREE STUFF","link":"","link_style_2":"c-btn c-btn--primary","link_title_2":"","link_2":""}}},"block_order":["video_CNzJ9n","image_aKL9qY"],"settings":{"style":"transparent","title_size":5,"autoplay":true,"autoplay_speed":8,"nav_style":"solid-brand","nav_arrows":false,"slideshow_height":"medium","slideshow_width":"full","text_color":"#ffffff","text_heading_color":false,"text_border_color":true,"text_bg_color":"#ffffff","overlay_color":"#000000","overlay_strength":40,"section-bottom-margin":false}},"ac7829e3-f3f8-4fbb-8aaf-dc6c93046065":{"type":"section-multi-column-icons","blocks":{"template--16580692541694__ac7829e3-f3f8-4fbb-8aaf-dc6c93046065-1666783782ba78525d-0":{"type":"text","settings":{"icon":"icon-delivery-truck-3","color_icon":"rgba(0,0,0,0)","svg-code":"","title":"FREE SHIPPING","sub_title":"","desc":"<p>Any order over $100 USD ships free anywhere in the USA and Canada.<strong> No strings attached.<\/strong><\/p>","link_title":"Learn more","link":""}},"template--16580692541694__ac7829e3-f3f8-4fbb-8aaf-dc6c93046065-1666783782ba78525d-1":{"type":"text","settings":{"icon":"icon-keyboard-arrow-return","color_icon":"rgba(0,0,0,0)","svg-code":"","title":"EASY 30 DAY RETURNS","sub_title":"","desc":"<p>If you're not happy with your order, just send it back to us for an exchange or a full refund.<\/p>","link_title":"Learn more","link":""}},"template--16580692541694__ac7829e3-f3f8-4fbb-8aaf-dc6c93046065-1666783782ba78525d-2":{"type":"text","settings":{"icon":"icon-award-medal","color_icon":"#212121","svg-code":"","title":"QUALITY PRODUCTION","sub_title":"","desc":"<p>We take pride in designing and producing high quality goods that are built to last.<\/p>","link_title":"Learn more","link":""}}},"block_order":["template--16580692541694__ac7829e3-f3f8-4fbb-8aaf-dc6c93046065-1666783782ba78525d-0","template--16580692541694__ac7829e3-f3f8-4fbb-8aaf-dc6c93046065-1666783782ba78525d-1","template--16580692541694__ac7829e3-f3f8-4fbb-8aaf-dc6c93046065-1666783782ba78525d-2"],"settings":{"title":"","container":"large","link_title":"Learn more","link":"","divider":false,"grid":3,"spacing":5,"alignment":"center","link_style":"hollow","heading_size":3,"icon_size":30,"icon_padding":0,"bg_color":"rgba(0,0,0,0)","color_text":"#353535","text_heading_color":false,"text_border_color":true,"grid_mobile":"1","mobile_layout":"grid","padding_top":0,"padding_bottom":0,"section-bottom-margin":false}},"section_newsletter_a99iEM":{"type":"section-newsletter","settings":{"divider":false,"section_width":"contained","newsletter_bg":"#212121","newsletter_style":"light","default_title_color":false,"text_border_color":true,"section_newsletter_title":"10% OFF YOUR FIRST ORDER","section_newsletter_desc":"<p>Join our email family to receive exclusive offers and discounts - <strong>like 10% OFF your first order<br\/><\/strong>(Discount code will be emailed to you. Check your junk mail.)<\/p>","padding_top":0,"padding_bottom":0,"section-bottom-margin":false}},"0436301d-0018-4b49-8493-36629494c103":{"type":"section-collection","blocks":{"template--16630217933054__0436301d-0018-4b49-8493-36629494c103-16732704286083a762-0":{"type":"collection","settings":{"heading":"Tees & Tops","heading_color":"rgba(0,0,0,0)","collection":"t-shirts-tops","link":""}}},"block_order":["template--16630217933054__0436301d-0018-4b49-8493-36629494c103-16732704286083a762-0"],"settings":{"title":"Latest Drops","text_alignment":"center","section_width":"large","link_title":"View all","link":"","divider":false,"maximum_products":9,"grid":3,"enable_carousel_desktop":true,"grid_mobile":"1","enable_carousel_mobile":true,"padding_top":0,"padding_bottom":0}},"e7564c21-6be8-45b8-a2ff-9dbd3e39175a":{"type":"section-collection-list","blocks":{"media_RARHeb":{"type":"media","settings":{"heading":"Working Class Stiff","text":"A collection with a bit of dirt under it's fingernails.","link_text":"","link":"shopify:\/\/collections\/working-class-stiff-collection","button_style":"c-btn c-btn--hollow","video":"shopify:\/\/files\/videos\/Working-Class-Stiff-Story-Ad-Plain.mov","alignment":"bottom-left","text_alignment":"left","color_text":"#ffffff","color_overlay":"#000000","color_overlay_strength":20,"color_default_heading":false,"color_default_border":false}},"media_UT4gzq":{"type":"media","disabled":true,"settings":{"heading":"The House Of Free Spirits","text":"We take things slow and have fun along the way.","link_text":"","link":"","button_style":"c-btn c-btn--hollow","video":"shopify:\/\/files\/videos\/Steeltown_Homepage_Video_Small.mp4","alignment":"bottom-left","text_alignment":"left","color_text":"#ffffff","color_overlay":"#000000","color_overlay_strength":20,"color_default_heading":false,"color_default_border":false}},"text_EWVPXn":{"type":"text","settings":{"heading":"FREE SHIPPING","text":"<p>ALL NORTH AMERICAN ORDERS OVER $100 QUALIFY FOR FREE SHIPPING.<\/p><p>NO STRINGS ATTACHED.<\/p>","link_text":"","link":"","button_style":"c-btn c-btn--hollow","alignment":"middle-center","text_alignment":"center","color_text":"#ffffff","color_bg":"#212121","color_default_heading":false,"color_default_border":false,"pattern_style":"none","color_pattern":"#212121","pattern_size":20,"pattern_opacity":20}},"media_DWmCYq":{"type":"media","settings":{"heading":"Shop Riding Gear","text":"Premium gear with a classic style. Shop helmets, gloves and riding glasses.","link_text":"","link":"shopify:\/\/collections\/riding","button_style":"c-btn c-btn--hollow","image":"shopify:\/\/shop_images\/Hoodie-Steeltown-Garage-Cycles-Product-1_30daae4d-5de4-4447-b389-d54cfe66d1c9.jpg","alignment":"bottom-left","text_alignment":"left","color_text":"#ffffff","color_overlay":"#000000","color_overlay_strength":20,"color_default_heading":false,"color_default_border":false}}},"block_order":["media_RARHeb","media_UT4gzq","text_EWVPXn","media_DWmCYq"],"settings":{"title":"","desc":"","divider":false,"heading_alignment":"center","section_width":"wide","grid":3,"spacing":2,"enable_carousel_desktop":true,"enable_carousel_mobile":true,"title_size":1,"image_ratio":"3:4","button_style":"c-btn c-btn--mono","alignment":"middle-center","text_alignment":"center","visibility_heading":true,"visibility_border":false,"visibility_count":false,"visibility_description":false,"visibility_button":true,"hover_options":"hover-button","color_text":"#ffffff","color_overlay":"#000000","color_overlay_strength":10,"color_default_heading":false,"color_default_border":true,"link_title":"View all","link":"","section_link_style":"link link--arrow","padding_top":0,"padding_bottom":30}},"section_collection_list_mQrEmV":{"type":"section-collection-list","blocks":{"collection_kVUP9d":{"type":"collection","settings":{"collection":"","heading":"WINTER SALE","description":"Up to 40% OFF","button_label":"SHOP NOW","link":"shopify:\/\/collections\/sale-stuff","image":"shopify:\/\/shop_images\/black_brick_background_texture_by_llexandro_dbqqea3-pre.jpg"}},"collection_pCNkgb":{"type":"collection","settings":{"collection":"","heading":"RIDING GEAR","description":"","button_label":"View Collection","link":"shopify:\/\/collections\/riding","image":"shopify:\/\/shop_images\/Steeltown-Riding-Gloves-Motorcycle-Gear-1.jpg"}}},"block_order":["collection_kVUP9d","collection_pCNkgb"],"disabled":true,"settings":{"title":"","desc":"","divider":false,"heading_alignment":"center","section_width":"large","grid":2,"spacing":3,"enable_carousel_desktop":true,"enable_carousel_mobile":true,"title_size":3,"image_ratio":"1:1","button_style":"c-btn c-btn--hollow","alignment":"middle-center","text_alignment":"center","visibility_heading":true,"visibility_border":true,"visibility_count":false,"visibility_description":false,"visibility_button":true,"hover_options":"hover-button","color_text":"#ffffff","color_overlay":"#000000","color_overlay_strength":10,"color_default_heading":false,"color_default_border":true,"link_title":"View all","link":"","section_link_style":"link link--arrow","padding_top":0,"padding_bottom":60}},"section_collection_tjeLzb":{"type":"section-collection","blocks":{"collection_6r96BX":{"type":"collection","settings":{"heading":"BEST SELLERS","heading_color":"rgba(0,0,0,0)","collection":"best-sellers","link":""}}},"block_order":["collection_6r96BX"],"settings":{"title":"BEST SELLERS","text_alignment":"center","section_width":"large","link_title":"SHOP BEST SELLERS","link":"shopify:\/\/collections\/best-sellers","divider":false,"maximum_products":9,"grid":3,"enable_carousel_desktop":true,"grid_mobile":"1","enable_carousel_mobile":true,"padding_top":0,"padding_bottom":0}},"section_image_text_banner_e7C8EL":{"type":"section-image-text-banner","blocks":{"image_3ELfGp":{"type":"image","settings":{"inline_image":"shopify:\/\/shop_images\/small-brand-steeltown-garage.png","inline_image_width":420,"inline_image_radius":0}},"text_tGHbJi":{"type":"text","settings":{"text":"<p>We are a small town team with a big city vibe. And we keep things simple. We cut right to the point. No investors. No boardroom. No backup plan.<\/p>","text_size":4,"text_width":55,"text_size_mobile":3,"text_style":"body"}},"link_wkatyp":{"type":"link","settings":{"link_title":"FIND OUT MORE","link":"shopify:\/\/pages\/about-steeltown-garage-co","link_style":"link link--arrow"}}},"block_order":["image_3ELfGp","text_tGHbJi","link_wkatyp"],"settings":{"section_height":"medium","section_height_mobile":"medium","section_width":"contained","content_alignment":"center","content_color":"#ffffff","content_heading_color":false,"bg_color":"rgba(0,0,0,0)","bg_image":"shopify:\/\/shop_images\/steeltown-sale-header-home-1.jpg","overlay_color":"#000000","overlay_strength":10,"section-bottom-margin":false}},"section_collection_jPmqkU":{"type":"section-collection","blocks":{"collection_jptnzK":{"type":"collection","settings":{"heading":"","heading_color":"rgba(0,0,0,0)","collection":"riding","link":""}}},"block_order":["collection_jptnzK"],"settings":{"title":"Premium riding gear","text_alignment":"center","section_width":"large","link_title":"View all","link":"","divider":false,"maximum_products":6,"grid":3,"enable_carousel_desktop":true,"grid_mobile":"1","enable_carousel_mobile":true,"padding_top":0,"padding_bottom":0}},"section_image_with_text_overlap_HDBRw9":{"type":"section-image-with-text-overlap","blocks":{"image_e4fcUA":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/Coffee-Grind-Grinding-Guide-101-Steeltown-1b_0d70aa85-5b5e-4af9-8ec2-98a372872fda.jpg","title":"Caffeine & Gasoline","desc":"<p>It takes some high grade fuel to maintain a lifestyle of post-modern rebellion. Grab some of our local roasted specialty grade coffee beans and our infamous Death Before Decaf mug.<\/p>","horizontal_align":"left","link_title":"Shop Coffee","link":"shopify:\/\/products\/steeltown-coffee","bg_color_block":"rgba(0,0,0,0)","bg_color_content":"#ffffff","color_text":"#212121","text_heading_color":false,"text_border_color":true}}},"block_order":["image_e4fcUA"],"settings":{"container":"large","block_spacing":5,"image_ratio":"4:3","block_layout":"2\/3","block_align":"left","heading_size":1,"link_style":"hollow","text_style":"solid","padding_top":0,"padding_bottom":0,"section-bottom-margin":false}},"section_collection_YPxYh6":{"type":"section-collection","blocks":{"collection_tVxjfH":{"type":"collection","settings":{"heading":"","heading_color":"rgba(0,0,0,0)","collection":"hats-beanies-1","link":""}}},"block_order":["collection_tVxjfH"],"settings":{"title":"HATS & TRUCKERS","text_alignment":"center","section_width":"large","link_title":"SHOP HEADWEAR","link":"shopify:\/\/collections\/hats-beanies-1","divider":false,"maximum_products":9,"grid":3,"enable_carousel_desktop":true,"grid_mobile":"1","enable_carousel_mobile":true,"padding_top":0,"padding_bottom":0}},"section_recently_viewed_rjNxTQ":{"type":"section-recently-viewed","name":"Recently Viewed","settings":{"related_title":"Recently Viewed Items","section_width":"large","maximum_products":10,"grid":3,"grid_mobile":"1","padding_top":0,"padding_bottom":0}},"deed0c7d-a6b2-434e-8882-2a7cba84c982":{"type":"section-map","blocks":{"template--16580692541694__deed0c7d-a6b2-434e-8882-2a7cba84c982-16667837825ddf24c3-0":{"type":"map","settings":{"title":"Come Visit The Shop","desc":"<p><strong>Steeltown Garage Co.<br\/><\/strong>8 Barton Street East<br\/>Hamilton, Ontario <br\/>L8L2V5<\/p>","sub_desc":"<p><strong>Mon\/Tues CLOSED<\/strong><br\/><strong>Wednesday 11-5<br\/>Thursday 11-5<br\/>Friday 11-6<br\/>Saturday 10-6<br\/>Sunday 10-5<\/strong><\/p>","address":"8 Barton Street East, Hamilton, Ontario, Canada"}}},"block_order":["template--16580692541694__deed0c7d-a6b2-434e-8882-2a7cba84c982-16667837825ddf24c3-0"],"disabled":true,"settings":{"show_directions_btn":false,"bg_color":"rgba(0,0,0,0)","google_api_key":"AIzaSyCEpWe5N5pNhou_m7FFh7UGLV2wMsQFwJQ","map_style":"light","padding_top":0,"padding_bottom":0,"section-bottom-margin":false}}},"order":["section_collection_list_cYqpdg","section-slideshow","ac7829e3-f3f8-4fbb-8aaf-dc6c93046065","section_newsletter_a99iEM","0436301d-0018-4b49-8493-36629494c103","e7564c21-6be8-45b8-a2ff-9dbd3e39175a","section_collection_list_mQrEmV","section_collection_tjeLzb","section_image_text_banner_e7C8EL","section_collection_jPmqkU","section_image_with_text_overlap_HDBRw9","section_collection_YPxYh6","section_recently_viewed_rjNxTQ","deed0c7d-a6b2-434e-8882-2a7cba84c982"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "section_collection_list_cYqpdg": {
+      "type": "section-collection-list",
+      "blocks": {
+        "collection_DeJ8yW": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "heading": "Tiger Crewneck",
+            "description": "",
+            "button_label": "SHOP NOW",
+            "link": "shopify://products/retro-tigers-crewneck-sweater",
+            "image": "shopify://shop_images/Steeltown-Tigers-Crewneck-Retro-Spencer1.jpg"
+          }
+        },
+        "collection_ELdXcL": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "heading": "Built For The Road",
+            "description": "",
+            "button_label": "Shop Now",
+            "link": "shopify://products/retro-tigers-crewneck-sweater",
+            "video": "shopify://files/videos/Tigercrew480-2.mov"
+          }
+        },
+        "collection_JjaynA": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "heading": "Unisex As Always",
+            "description": "",
+            "button_label": "SHOP NOW",
+            "link": "shopify://products/retro-tigers-crewneck-sweater",
+            "image": "shopify://shop_images/Steeltown-Tigers-Crewneck-Retro-Karli1.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "collection_DeJ8yW",
+        "collection_ELdXcL",
+        "collection_JjaynA"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "desc": "",
+        "divider": false,
+        "heading_alignment": "center",
+        "section_width": "wide",
+        "grid": 3,
+        "spacing": 2,
+        "enable_carousel_desktop": true,
+        "enable_carousel_mobile": true,
+        "title_size": 1,
+        "image_ratio": "2:3",
+        "button_style": "link link--arrow",
+        "alignment": "bottom-left",
+        "text_alignment": "left",
+        "visibility_heading": true,
+        "visibility_border": true,
+        "visibility_count": false,
+        "visibility_description": false,
+        "visibility_button": true,
+        "hover_options": "hover-button",
+        "color_text": "#ffffff",
+        "color_overlay": "#000000",
+        "color_overlay_strength": 0,
+        "color_default_heading": false,
+        "color_default_border": true,
+        "link_title": "View all",
+        "link": "",
+        "section_link_style": "link link--arrow",
+        "padding_top": 0,
+        "padding_bottom": 18
+      }
+    },
+    "section-slideshow": {
+      "type": "section-slideshow",
+      "blocks": {
+        "video_CNzJ9n": {
+          "type": "video",
+          "disabled": true,
+          "settings": {
+            "video_link": "https://cdn.shopify.com/videos/c/o/v/cde7b968769c4982b3d6822741c34e19.mp4",
+            "yt_link": "",
+            "alignment": "right",
+            "title": "quality goods for free spirits",
+            "text": "",
+            "link_style": "c-btn c-btn--hollow",
+            "link_title": "about us",
+            "link": "shopify://pages/about-steeltown-garage-co",
+            "link_style_2": "c-btn c-btn--primary",
+            "link_title_2": "Shop Now",
+            "link_2": "shopify://collections/all"
+          }
+        },
+        "image_aKL9qY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Steeltown-Two-Tees-Sale-Web-Header.jpg",
+            "alignment": "right",
+            "title": "BUY 1 GET 1 FREE",
+            "text": "<p>Huge sale of Graphic Tees right now! Buy one and get a second totally FREE.</p>",
+            "link_style": "c-btn c-btn--mono",
+            "link_title": "GET FREE STUFF",
+            "link": "shopify://collections/graphic-tees-at-steeltown-garage-co",
+            "link_style_2": "c-btn c-btn--primary",
+            "link_title_2": "",
+            "link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "video_CNzJ9n",
+        "image_aKL9qY"
+      ],
+      "settings": {
+        "style": "transparent",
+        "title_size": 5,
+        "autoplay": true,
+        "autoplay_speed": 8,
+        "nav_style": "solid-brand",
+        "nav_arrows": false,
+        "slideshow_height": "medium",
+        "slideshow_width": "full",
+        "text_color": "#ffffff",
+        "text_heading_color": false,
+        "text_border_color": true,
+        "text_bg_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_strength": 10,
+        "section-bottom-margin": false
+      }
+    },
+    "ac7829e3-f3f8-4fbb-8aaf-dc6c93046065": {
+      "type": "section-multi-column-icons",
+      "blocks": {
+        "template--16580692541694__ac7829e3-f3f8-4fbb-8aaf-dc6c93046065-1666783782ba78525d-0": {
+          "type": "text",
+          "settings": {
+            "icon": "icon-delivery-truck-3",
+            "color_icon": "rgba(0,0,0,0)",
+            "svg-code": "",
+            "title": "FREE SHIPPING",
+            "sub_title": "",
+            "desc": "<p>Any order over $100 USD ships free anywhere in the USA and Canada.<strong> No strings attached.</strong></p>",
+            "link_title": "Learn more",
+            "link": ""
+          }
+        },
+        "template--16580692541694__ac7829e3-f3f8-4fbb-8aaf-dc6c93046065-1666783782ba78525d-1": {
+          "type": "text",
+          "settings": {
+            "icon": "icon-keyboard-arrow-return",
+            "color_icon": "rgba(0,0,0,0)",
+            "svg-code": "",
+            "title": "EASY 30 DAY RETURNS",
+            "sub_title": "",
+            "desc": "<p>If you're not happy with your order, just send it back to us for an exchange or a full refund.</p>",
+            "link_title": "Learn more",
+            "link": ""
+          }
+        },
+        "template--16580692541694__ac7829e3-f3f8-4fbb-8aaf-dc6c93046065-1666783782ba78525d-2": {
+          "type": "text",
+          "settings": {
+            "icon": "icon-award-medal",
+            "color_icon": "#212121",
+            "svg-code": "",
+            "title": "QUALITY PRODUCTION",
+            "sub_title": "",
+            "desc": "<p>We take pride in designing and producing high quality goods that are built to last.</p>",
+            "link_title": "Learn more",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16580692541694__ac7829e3-f3f8-4fbb-8aaf-dc6c93046065-1666783782ba78525d-0",
+        "template--16580692541694__ac7829e3-f3f8-4fbb-8aaf-dc6c93046065-1666783782ba78525d-1",
+        "template--16580692541694__ac7829e3-f3f8-4fbb-8aaf-dc6c93046065-1666783782ba78525d-2"
+      ],
+      "settings": {
+        "title": "",
+        "container": "large",
+        "link_title": "Learn more",
+        "link": "",
+        "divider": false,
+        "grid": 3,
+        "spacing": 5,
+        "alignment": "center",
+        "link_style": "hollow",
+        "heading_size": 3,
+        "icon_size": 30,
+        "icon_padding": 0,
+        "bg_color": "rgba(0,0,0,0)",
+        "color_text": "#353535",
+        "text_heading_color": false,
+        "text_border_color": true,
+        "grid_mobile": "1",
+        "mobile_layout": "grid",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "section-bottom-margin": false
+      }
+    },
+    "section_newsletter_a99iEM": {
+      "type": "section-newsletter",
+      "settings": {
+        "divider": false,
+        "section_width": "contained",
+        "newsletter_bg": "#212121",
+        "newsletter_style": "light",
+        "default_title_color": false,
+        "text_border_color": true,
+        "section_newsletter_title": "10% OFF YOUR FIRST ORDER",
+        "section_newsletter_desc": "<p>Join our email family to receive exclusive offers and discounts - <strong>like 10% OFF your first order<br/></strong>(Discount code will be emailed to you. Check your junk mail.)</p>",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "section-bottom-margin": false
+      }
+    },
+    "0436301d-0018-4b49-8493-36629494c103": {
+      "type": "section-collection",
+      "blocks": {
+        "template--16630217933054__0436301d-0018-4b49-8493-36629494c103-16732704286083a762-0": {
+          "type": "collection",
+          "settings": {
+            "heading": "Tees & Tops",
+            "heading_color": "rgba(0,0,0,0)",
+            "collection": "t-shirts-tops",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16630217933054__0436301d-0018-4b49-8493-36629494c103-16732704286083a762-0"
+      ],
+      "settings": {
+        "title": "Latest Drops",
+        "text_alignment": "center",
+        "section_width": "large",
+        "link_title": "View all",
+        "link": "",
+        "divider": false,
+        "maximum_products": 9,
+        "grid": 3,
+        "enable_carousel_desktop": true,
+        "grid_mobile": "1",
+        "enable_carousel_mobile": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "e7564c21-6be8-45b8-a2ff-9dbd3e39175a": {
+      "type": "section-collection-list",
+      "blocks": {
+        "media_RARHeb": {
+          "type": "media",
+          "settings": {
+            "heading": "Working Class Stiff",
+            "text": "A collection with a bit of dirt under it's fingernails.",
+            "link_text": "",
+            "link": "shopify://collections/working-class-stiff-collection",
+            "button_style": "c-btn c-btn--hollow",
+            "video": "shopify://files/videos/Working-Class-Stiff-Story-Ad-Plain.mov",
+            "alignment": "bottom-left",
+            "text_alignment": "left",
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "color_overlay_strength": 20,
+            "color_default_heading": false,
+            "color_default_border": false
+          }
+        },
+        "media_UT4gzq": {
+          "type": "media",
+          "disabled": true,
+          "settings": {
+            "heading": "The House Of Free Spirits",
+            "text": "We take things slow and have fun along the way.",
+            "link_text": "",
+            "link": "",
+            "button_style": "c-btn c-btn--hollow",
+            "video": "shopify://files/videos/Steeltown_Homepage_Video_Small.mp4",
+            "alignment": "bottom-left",
+            "text_alignment": "left",
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "color_overlay_strength": 20,
+            "color_default_heading": false,
+            "color_default_border": false
+          }
+        },
+        "text_EWVPXn": {
+          "type": "text",
+          "settings": {
+            "heading": "FREE SHIPPING",
+            "text": "<p>ALL NORTH AMERICAN ORDERS OVER $100 QUALIFY FOR FREE SHIPPING.</p><p>NO STRINGS ATTACHED.</p>",
+            "link_text": "",
+            "link": "",
+            "button_style": "c-btn c-btn--hollow",
+            "alignment": "middle-center",
+            "text_alignment": "center",
+            "color_text": "#ffffff",
+            "color_bg": "#212121",
+            "color_default_heading": false,
+            "color_default_border": false,
+            "pattern_style": "none",
+            "color_pattern": "#212121",
+            "pattern_size": 20,
+            "pattern_opacity": 20
+          }
+        },
+        "media_DWmCYq": {
+          "type": "media",
+          "settings": {
+            "heading": "Shop Riding Gear",
+            "text": "Premium gear with a classic style. Shop helmets, gloves and riding glasses.",
+            "link_text": "",
+            "link": "shopify://collections/riding",
+            "button_style": "c-btn c-btn--hollow",
+            "image": "shopify://shop_images/Hoodie-Steeltown-Garage-Cycles-Product-1_30daae4d-5de4-4447-b389-d54cfe66d1c9.jpg",
+            "alignment": "bottom-left",
+            "text_alignment": "left",
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "color_overlay_strength": 20,
+            "color_default_heading": false,
+            "color_default_border": false
+          }
+        }
+      },
+      "block_order": [
+        "media_RARHeb",
+        "media_UT4gzq",
+        "text_EWVPXn",
+        "media_DWmCYq"
+      ],
+      "settings": {
+        "title": "",
+        "desc": "",
+        "divider": false,
+        "heading_alignment": "center",
+        "section_width": "wide",
+        "grid": 3,
+        "spacing": 2,
+        "enable_carousel_desktop": true,
+        "enable_carousel_mobile": true,
+        "title_size": 1,
+        "image_ratio": "3:4",
+        "button_style": "c-btn c-btn--mono",
+        "alignment": "middle-center",
+        "text_alignment": "center",
+        "visibility_heading": true,
+        "visibility_border": false,
+        "visibility_count": false,
+        "visibility_description": false,
+        "visibility_button": true,
+        "hover_options": "hover-button",
+        "color_text": "#ffffff",
+        "color_overlay": "#000000",
+        "color_overlay_strength": 10,
+        "color_default_heading": false,
+        "color_default_border": true,
+        "link_title": "View all",
+        "link": "",
+        "section_link_style": "link link--arrow",
+        "padding_top": 0,
+        "padding_bottom": 30
+      }
+    },
+    "section_collection_list_mQrEmV": {
+      "type": "section-collection-list",
+      "blocks": {
+        "collection_kVUP9d": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "heading": "WINTER SALE",
+            "description": "Up to 40% OFF",
+            "button_label": "SHOP NOW",
+            "link": "shopify://collections/sale-stuff",
+            "image": "shopify://shop_images/black_brick_background_texture_by_llexandro_dbqqea3-pre.jpg"
+          }
+        },
+        "collection_pCNkgb": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "heading": "RIDING GEAR",
+            "description": "",
+            "button_label": "View Collection",
+            "link": "shopify://collections/riding",
+            "image": "shopify://shop_images/Steeltown-Riding-Gloves-Motorcycle-Gear-1.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "collection_kVUP9d",
+        "collection_pCNkgb"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "desc": "",
+        "divider": false,
+        "heading_alignment": "center",
+        "section_width": "large",
+        "grid": 2,
+        "spacing": 3,
+        "enable_carousel_desktop": true,
+        "enable_carousel_mobile": true,
+        "title_size": 3,
+        "image_ratio": "1:1",
+        "button_style": "c-btn c-btn--hollow",
+        "alignment": "middle-center",
+        "text_alignment": "center",
+        "visibility_heading": true,
+        "visibility_border": true,
+        "visibility_count": false,
+        "visibility_description": false,
+        "visibility_button": true,
+        "hover_options": "hover-button",
+        "color_text": "#ffffff",
+        "color_overlay": "#000000",
+        "color_overlay_strength": 10,
+        "color_default_heading": false,
+        "color_default_border": true,
+        "link_title": "View all",
+        "link": "",
+        "section_link_style": "link link--arrow",
+        "padding_top": 0,
+        "padding_bottom": 60
+      }
+    },
+    "section_collection_tjeLzb": {
+      "type": "section-collection",
+      "blocks": {
+        "collection_6r96BX": {
+          "type": "collection",
+          "settings": {
+            "heading": "BEST SELLERS",
+            "heading_color": "rgba(0,0,0,0)",
+            "collection": "best-sellers",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_6r96BX"
+      ],
+      "settings": {
+        "title": "BEST SELLERS",
+        "text_alignment": "center",
+        "section_width": "large",
+        "link_title": "SHOP BEST SELLERS",
+        "link": "shopify://collections/best-sellers",
+        "divider": false,
+        "maximum_products": 9,
+        "grid": 3,
+        "enable_carousel_desktop": true,
+        "grid_mobile": "1",
+        "enable_carousel_mobile": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_image_text_banner_e7C8EL": {
+      "type": "section-image-text-banner",
+      "blocks": {
+        "image_3ELfGp": {
+          "type": "image",
+          "settings": {
+            "inline_image": "shopify://shop_images/small-brand-steeltown-garage.png",
+            "inline_image_width": 420,
+            "inline_image_radius": 0
+          }
+        },
+        "text_tGHbJi": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We are a small town team with a big city vibe. And we keep things simple. We cut right to the point. No investors. No boardroom. No backup plan.</p>",
+            "text_size": 4,
+            "text_width": 55,
+            "text_size_mobile": 3,
+            "text_style": "body"
+          }
+        },
+        "link_wkatyp": {
+          "type": "link",
+          "settings": {
+            "link_title": "FIND OUT MORE",
+            "link": "shopify://pages/about-steeltown-garage-co",
+            "link_style": "link link--arrow"
+          }
+        }
+      },
+      "block_order": [
+        "image_3ELfGp",
+        "text_tGHbJi",
+        "link_wkatyp"
+      ],
+      "settings": {
+        "section_height": "medium",
+        "section_height_mobile": "medium",
+        "section_width": "contained",
+        "content_alignment": "center",
+        "content_color": "#ffffff",
+        "content_heading_color": false,
+        "bg_color": "rgba(0,0,0,0)",
+        "bg_image": "shopify://shop_images/steeltown-sale-header-home-1.jpg",
+        "overlay_color": "#000000",
+        "overlay_strength": 10,
+        "section-bottom-margin": false
+      }
+    },
+    "section_collection_jPmqkU": {
+      "type": "section-collection",
+      "blocks": {
+        "collection_jptnzK": {
+          "type": "collection",
+          "settings": {
+            "heading": "",
+            "heading_color": "rgba(0,0,0,0)",
+            "collection": "riding",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_jptnzK"
+      ],
+      "settings": {
+        "title": "Premium riding gear",
+        "text_alignment": "center",
+        "section_width": "large",
+        "link_title": "View all",
+        "link": "",
+        "divider": false,
+        "maximum_products": 6,
+        "grid": 3,
+        "enable_carousel_desktop": true,
+        "grid_mobile": "1",
+        "enable_carousel_mobile": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_image_with_text_overlap_HDBRw9": {
+      "type": "section-image-with-text-overlap",
+      "blocks": {
+        "image_e4fcUA": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Coffee-Grind-Grinding-Guide-101-Steeltown-1b_0d70aa85-5b5e-4af9-8ec2-98a372872fda.jpg",
+            "title": "Caffeine & Gasoline",
+            "desc": "<p>It takes some high grade fuel to maintain a lifestyle of post-modern rebellion. Grab some of our local roasted specialty grade coffee beans and our infamous Death Before Decaf mug.</p>",
+            "horizontal_align": "left",
+            "link_title": "Shop Coffee",
+            "link": "shopify://products/steeltown-coffee",
+            "bg_color_block": "rgba(0,0,0,0)",
+            "bg_color_content": "#ffffff",
+            "color_text": "#212121",
+            "text_heading_color": false,
+            "text_border_color": true
+          }
+        }
+      },
+      "block_order": [
+        "image_e4fcUA"
+      ],
+      "settings": {
+        "container": "large",
+        "block_spacing": 5,
+        "image_ratio": "4:3",
+        "block_layout": "2/3",
+        "block_align": "left",
+        "heading_size": 1,
+        "link_style": "hollow",
+        "text_style": "solid",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "section-bottom-margin": false
+      }
+    },
+    "section_collection_YPxYh6": {
+      "type": "section-collection",
+      "blocks": {
+        "collection_tVxjfH": {
+          "type": "collection",
+          "settings": {
+            "heading": "",
+            "heading_color": "rgba(0,0,0,0)",
+            "collection": "hats-beanies-1",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_tVxjfH"
+      ],
+      "settings": {
+        "title": "HATS & TRUCKERS",
+        "text_alignment": "center",
+        "section_width": "large",
+        "link_title": "SHOP HEADWEAR",
+        "link": "shopify://collections/hats-beanies-1",
+        "divider": false,
+        "maximum_products": 9,
+        "grid": 3,
+        "enable_carousel_desktop": true,
+        "grid_mobile": "1",
+        "enable_carousel_mobile": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_recently_viewed_rjNxTQ": {
+      "type": "section-recently-viewed",
+      "name": "Recently Viewed",
+      "settings": {
+        "related_title": "Recently Viewed Items",
+        "section_width": "large",
+        "maximum_products": 10,
+        "grid": 3,
+        "grid_mobile": "1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "deed0c7d-a6b2-434e-8882-2a7cba84c982": {
+      "type": "section-map",
+      "blocks": {
+        "template--16580692541694__deed0c7d-a6b2-434e-8882-2a7cba84c982-16667837825ddf24c3-0": {
+          "type": "map",
+          "settings": {
+            "title": "Come Visit The Shop",
+            "desc": "<p><strong>Steeltown Garage Co.<br/></strong>8 Barton Street East<br/>Hamilton, Ontario <br/>L8L2V5</p>",
+            "sub_desc": "<p><strong>Mon/Tues CLOSED</strong><br/><strong>Wednesday 11-5<br/>Thursday 11-5<br/>Friday 11-6<br/>Saturday 10-6<br/>Sunday 10-5</strong></p>",
+            "address": "8 Barton Street East, Hamilton, Ontario, Canada"
+          }
+        }
+      },
+      "block_order": [
+        "template--16580692541694__deed0c7d-a6b2-434e-8882-2a7cba84c982-16667837825ddf24c3-0"
+      ],
+      "disabled": true,
+      "settings": {
+        "show_directions_btn": false,
+        "bg_color": "rgba(0,0,0,0)",
+        "google_api_key": "AIzaSyCEpWe5N5pNhou_m7FFh7UGLV2wMsQFwJQ",
+        "map_style": "light",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "section-bottom-margin": false
+      }
+    }
+  },
+  "order": [
+    "section_collection_list_cYqpdg",
+    "section-slideshow",
+    "ac7829e3-f3f8-4fbb-8aaf-dc6c93046065",
+    "section_newsletter_a99iEM",
+    "0436301d-0018-4b49-8493-36629494c103",
+    "e7564c21-6be8-45b8-a2ff-9dbd3e39175a",
+    "section_collection_list_mQrEmV",
+    "section_collection_tjeLzb",
+    "section_image_text_banner_e7C8EL",
+    "section_collection_jPmqkU",
+    "section_image_with_text_overlap_HDBRw9",
+    "section_collection_YPxYh6",
+    "section_recently_viewed_rjNxTQ",
+    "deed0c7d-a6b2-434e-8882-2a7cba84c982"
+  ]
+}
