@@ -110,10 +110,10 @@
           "settings": {
             "image": "shopify://shop_images/Steeltown-Two-Tees-Sale-Web-Header.jpg",
             "alignment": "right",
-            "title": "BUY 1 GET 1 FREE",
-            "text": "<p>Huge sale of Graphic Tees right now! Buy one and get a second totally FREE.</p>",
+            "title": "Two TEES for $50",
+            "text": "<p>Get any two of our locally printed graphic tees for just $50 flat. No strings attached.</p>",
             "link_style": "c-btn c-btn--mono",
-            "link_title": "GET a FREE Tee",
+            "link_title": "Shop Sale",
             "link": "shopify://collections/graphic-tees-at-steeltown-garage-co",
             "link_style_2": "c-btn c-btn--primary",
             "link_title_2": "",
