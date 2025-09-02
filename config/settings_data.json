@@ -140,6 +140,11 @@
         "type": "shopify://apps/aov-ai-bundle/blocks/aov-offer/0335d423-143c-4ad7-b224-99a1db74a9ee",
         "disabled": false,
         "settings": {}
+      },
+      "14652898158514659544": {
+        "type": "shopify://apps/fly-bundles-qty-breaks/blocks/app-embed/26807bdc-c2ed-4a25-afb2-06e6b1ebf843",
+        "disabled": false,
+        "settings": {}
       }
     }
   },
