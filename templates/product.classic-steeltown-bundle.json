@@ -39,9 +39,9 @@
             "show_savings_bar": true,
             "show_donut_chart": true,
             "bundle_products": [
-              "fast-as-fuck-hoodie",
-              "fast-as-fuck-sticker",
-              "fast-as-fuck-trucker"
+              "trophy-trucker",
+              "steeltown-address-tee-unisex",
+              "steeltown-socks-1"
             ],
             "original_price": 12800,
             "custom_savings_message": ""
@@ -113,7 +113,9 @@
             ],
             "custom_title": "",
             "show_product_images": true,
-            "compact_layout": true
+            "compact_layout": true,
+            "show_main_product": true,
+            "main_product_title": ""
           }
         },
         "share": {
