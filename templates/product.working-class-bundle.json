@@ -113,7 +113,9 @@
             ],
             "custom_title": "",
             "show_product_images": true,
-            "compact_layout": true
+            "compact_layout": true,
+            "show_main_product": true,
+            "main_product_title": ""
           }
         },
         "share": {
@@ -239,7 +241,8 @@
       ],
       "custom_css": [
         ".js-section__product-single .hypervisual__container {margin-top: -60px;}",
-        ".js-section__product-single .hypervisual__container {margin-bottom: 50px;}"
+        ".js-section__product-single .hypervisual__container {margin-bottom: 50px;}",
+        ".product-form__add--dynamic .product-form__add-btn {margin-bottom: 12px; display: none;}"
       ],
       "settings": {
         "style": "classic-border",
