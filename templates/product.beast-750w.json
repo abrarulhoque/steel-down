@@ -448,23 +448,6 @@
     "175696330699633405": {
       "type": "_blocks",
       "blocks": {
-        "ai_gen_block_6e28cb4_HBcU3E": {
-          "type": "ai_gen_block_6e28cb4",
-          "settings": {
-            "title": "Image Gallery",
-            "description": "<p>Showcase your favorite images in this beautiful carousel</p>",
-            "section_width": "contained",
-            "columns_desktop": 4,
-            "columns_tablet": 3,
-            "columns_mobile": "1",
-            "autoplay_enabled": false,
-            "autoplay_speed": 4,
-            "arrow_color": "#dcb244",
-            "padding_top": 40,
-            "padding_bottom": 40
-          },
-          "blocks": {}
-        },
         "ai_gen_block_6e28cb4_kXBdHK": {
           "type": "ai_gen_block_6e28cb4",
           "settings": {
@@ -484,7 +467,6 @@
         }
       },
       "block_order": [
-        "ai_gen_block_6e28cb4_HBcU3E",
         "ai_gen_block_6e28cb4_kXBdHK"
       ],
       "settings": {}
