@@ -300,6 +300,105 @@
         "section-bottom-margin": false
       }
     },
+    "product_specifications_4gHEhM": {
+      "type": "product-specifications",
+      "blocks": {
+        "specification_WfqhxU": {
+          "type": "specification",
+          "settings": {
+            "icon": "icon-stopwatch",
+            "svg-code": "",
+            "value": "20 MPH",
+            "label": "TOP SPEED"
+          }
+        },
+        "specification_Bcqtta": {
+          "type": "specification",
+          "settings": {
+            "icon": "icon-flash",
+            "svg-code": "",
+            "value": "750W 48V",
+            "label": "REAR HUB MOTOR"
+          }
+        },
+        "specification_Py78PQ": {
+          "type": "specification",
+          "settings": {
+            "icon": "icon-pin",
+            "svg-code": "",
+            "value": "35-50+",
+            "label": "MILE RANGE"
+          }
+        },
+        "specification_QyFBTm": {
+          "type": "specification",
+          "settings": {
+            "icon": "icon-flash",
+            "svg-code": "",
+            "value": "20Ah 48V",
+            "label": "LITHIUM-ION BATTERY"
+          }
+        }
+      },
+      "block_order": [
+        "specification_WfqhxU",
+        "specification_Bcqtta",
+        "specification_Py78PQ",
+        "specification_QyFBTm"
+      ],
+      "name": "Product Specifications",
+      "settings": {
+        "title": "Specifications",
+        "desc": "",
+        "container": "small",
+        "divider": false,
+        "bg_color": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "text_heading_color": false,
+        "text_border_color": true,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "section-bottom-margin": false
+      }
+    },
+    "section_image_with_text_overlap_EzpCcb": {
+      "type": "section-image-with-text-overlap",
+      "blocks": {
+        "image_J6gjVn": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/wildsyde-beast-fat-tire-01_c7251218-5532-4a1a-bf98-fb295fd1256f.webp",
+            "title": "BIG CRUISER EXPERIENCE",
+            "desc": "<p>Evoking the timeless appeal of a retro cruiser motorcycle, with a distinctive high-center 'gas' tank, ingeniously concealing the battery.<br/><br/></p>",
+            "horizontal_align": "left",
+            "link_title": "",
+            "link": "",
+            "bg_color_block": "rgba(0,0,0,0)",
+            "bg_color_content": "#ffffff",
+            "color_text": "#212121",
+            "text_heading_color": false,
+            "text_border_color": true
+          }
+        }
+      },
+      "block_order": [
+        "image_J6gjVn"
+      ],
+      "name": "Image with text overlap",
+      "settings": {
+        "container": "full",
+        "block_spacing": 5,
+        "image_ratio": "4:3",
+        "block_layout": "2/3",
+        "block_align": "left",
+        "heading_size": 3,
+        "link_style": "hollow",
+        "text_style": "solid",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "section-bottom-margin": false
+      }
+    },
     "9904a28f-6381-41fe-96eb-d4a73d60f0a0": {
       "type": "section-testimonials",
       "blocks": {
@@ -465,73 +564,13 @@
         "padding_bottom": 0,
         "section-bottom-margin": true
       }
-    },
-    "product_specifications_4gHEhM": {
-      "type": "product-specifications",
-      "blocks": {
-        "specification_WfqhxU": {
-          "type": "specification",
-          "settings": {
-            "icon": "icon-stopwatch",
-            "svg-code": "",
-            "value": "20 MPH",
-            "label": "TOP SPEED"
-          }
-        },
-        "specification_Bcqtta": {
-          "type": "specification",
-          "settings": {
-            "icon": "icon-flash",
-            "svg-code": "",
-            "value": "750W 48V",
-            "label": "REAR HUB MOTOR"
-          }
-        },
-        "specification_Py78PQ": {
-          "type": "specification",
-          "settings": {
-            "icon": "icon-pin",
-            "svg-code": "",
-            "value": "35-50+",
-            "label": "MILE RANGE"
-          }
-        },
-        "specification_QyFBTm": {
-          "type": "specification",
-          "settings": {
-            "icon": "icon-flash",
-            "svg-code": "",
-            "value": "20Ah 48V",
-            "label": "LITHIUM-ION BATTERY"
-          }
-        }
-      },
-      "block_order": [
-        "specification_WfqhxU",
-        "specification_Bcqtta",
-        "specification_Py78PQ",
-        "specification_QyFBTm"
-      ],
-      "name": "Product Specifications",
-      "settings": {
-        "title": "Specifications",
-        "desc": "",
-        "container": "small",
-        "divider": false,
-        "bg_color": "rgba(0,0,0,0)",
-        "color_text": "rgba(0,0,0,0)",
-        "text_heading_color": false,
-        "text_border_color": true,
-        "padding_top": 60,
-        "padding_bottom": 60,
-        "section-bottom-margin": false
-      }
     }
   },
   "order": [
     "main",
     "af1e6c23-5338-467c-bee9-b9d9b3d9c22a",
     "product_specifications_4gHEhM",
+    "section_image_with_text_overlap_EzpCcb",
     "9904a28f-6381-41fe-96eb-d4a73d60f0a0",
     "5a818a60-e694-4eac-a33f-5ce701e894b0",
     "product-recommendations",
