@@ -451,8 +451,8 @@
         "ai_gen_block_6e28cb4_kXBdHK": {
           "type": "ai_gen_block_6e28cb4",
           "settings": {
-            "title": "Image Gallery",
-            "description": "<p>Showcase your favorite images in this beautiful carousel</p>",
+            "title": "",
+            "description": "",
             "section_width": "contained",
             "columns_desktop": 4,
             "columns_tablet": 3,
