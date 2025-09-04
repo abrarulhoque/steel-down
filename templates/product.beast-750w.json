@@ -361,6 +361,18 @@
         "section-bottom-margin": false
       }
     },
+    "section_rich_text_6nFxHX": {
+      "type": "section-rich-text",
+      "name": "Rich text",
+      "settings": {
+        "full_width": false,
+        "section_title": "",
+        "text": "<p>Built for those who don't just ride, they own the road. With a retro moto-inspired frame that's as tough as it look sand fat tires that aren't just for show, they make all the difference on rough streets and uneven terrain. Whether you're cruising solo or leading the pack, every ride becomes an experience on the Beast.<br/><br/></p>",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "section-bottom-margin": false
+      }
+    },
     "section_image_with_text_overlap_EzpCcb": {
       "type": "section-image-with-text-overlap",
       "blocks": {
@@ -395,11 +407,28 @@
             "text_heading_color": false,
             "text_border_color": true
           }
+        },
+        "image_YnMbag": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/wildsyde-beast-action-01.webp",
+            "title": "SMOOTH, COMFORTABLE RIDE",
+            "desc": "<p>A relaxed geometry, premium faux leather grips, and a wide cushioned seat create an effortless, upright ride for maximum comfort.<br/><br/></p>",
+            "horizontal_align": "left",
+            "link_title": "",
+            "link": "",
+            "bg_color_block": "rgba(0,0,0,0)",
+            "bg_color_content": "#ffffff",
+            "color_text": "#212121",
+            "text_heading_color": false,
+            "text_border_color": true
+          }
         }
       },
       "block_order": [
         "image_J6gjVn",
-        "image_iNQMPF"
+        "image_iNQMPF",
+        "image_YnMbag"
       ],
       "name": "Image with text overlap",
       "settings": {
@@ -587,6 +616,7 @@
     "main",
     "af1e6c23-5338-467c-bee9-b9d9b3d9c22a",
     "product_specifications_4gHEhM",
+    "section_rich_text_6nFxHX",
     "section_image_with_text_overlap_EzpCcb",
     "9904a28f-6381-41fe-96eb-d4a73d60f0a0",
     "5a818a60-e694-4eac-a33f-5ce701e894b0",
