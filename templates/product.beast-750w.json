@@ -461,7 +461,13 @@
             "autoplay_speed": 4,
             "arrow_color": "#dcb244",
             "padding_top": 40,
-            "padding_bottom": 40
+            "padding_bottom": 40,
+            "image_1": "shopify://shop_images/wildsyde-beast-action-02.webp",
+            "image_2": "shopify://shop_images/wildsyde-beast-action-03.webp",
+            "image_3": "shopify://shop_images/wildsyde-beast-action-04.webp",
+            "image_4": "shopify://shop_images/wildsyde-beast-orange-park-02.webp",
+            "image_5": "shopify://shop_images/wildsyde-beast-action-06.webp",
+            "image_6": "shopify://shop_images/wildsyde-beast-orange-park.webp"
           },
           "blocks": {}
         }
