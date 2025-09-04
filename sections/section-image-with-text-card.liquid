@@ -1,0 +1,391 @@
+{%- liquid
+  assign sizes = '100vw'
+-%}
+
+{% render 'section-padding',
+  section-id: section.id,
+  padding-top: section.settings.padding_top,
+  padding-bottom: section.settings.padding_bottom
+%}
+
+<style>
+  .section--{{ section.id }} .image-text-card {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .section--{{ section.id }} .image-text-card__image {
+    width: 100%;
+    height: {{ section.settings.section_height }}px;
+    object-fit: cover;
+  }
+  
+  .section--{{ section.id }} .image-text-card__content {
+    position: absolute;
+    background: {{ section.settings.text_bg_color }};
+    padding: 24px 32px;
+    max-width: 320px;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Text positioning based on settings */
+  {% case section.settings.text_position %}
+    {% when 'top_left' %}
+      .section--{{ section.id }} .image-text-card__content {
+        top: 32px;
+        left: 32px;
+      }
+    {% when 'top_right' %}
+      .section--{{ section.id }} .image-text-card__content {
+        top: 32px;
+        right: 32px;
+      }
+    {% when 'bottom_left' %}
+      .section--{{ section.id }} .image-text-card__content {
+        bottom: 32px;
+        left: 32px;
+      }
+    {% when 'bottom_right' %}
+      .section--{{ section.id }} .image-text-card__content {
+        bottom: 32px;
+        right: 32px;
+      }
+    {% when 'center_left' %}
+      .section--{{ section.id }} .image-text-card__content {
+        top: 50%;
+        left: 32px;
+        transform: translateY(-50%);
+      }
+    {% when 'center_right' %}
+      .section--{{ section.id }} .image-text-card__content {
+        top: 50%;
+        right: 32px;
+        transform: translateY(-50%);
+      }
+  {% endcase %}
+  
+  .section--{{ section.id }} .image-text-card__title {
+    font-family: Oswald, sans-serif;
+    font-size: {{ section.settings.heading_size | times: 0.25 | plus: 1.25 }}rem;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 0 0 12px 0;
+    color: {{ section.settings.text_color }};
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  .section--{{ section.id }} .image-text-card__text {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0 0 16px 0;
+    color: {{ section.settings.text_color }};
+  }
+  
+  .section--{{ section.id }} .image-text-card__button {
+    display: inline-block;
+    padding: 8px 16px;
+    background: {{ section.settings.button_bg_color | default: '#48c0da' }};
+    color: {{ section.settings.button_text_color | default: '#ffffff' }};
+    text-decoration: none;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  .section--{{ section.id }} .image-text-card__button:hover {
+    background: {{ section.settings.button_bg_color | default: '#48c0da' | color_darken: 10 }};
+    color: {{ section.settings.button_text_color | default: '#ffffff' }};
+  }
+  
+  /* Mobile responsive */
+  @media screen and (max-width: 768px) {
+    .section--{{ section.id }} .image-text-card {
+      height: {{ section.settings.mobile_height }}px;
+    }
+    
+    .section--{{ section.id }} .image-text-card__content {
+      position: static;
+      margin-top: 20px;
+      max-width: none;
+      transform: none !important;
+    }
+    
+    .section--{{ section.id }} .image-text-card__title {
+      font-size: 1.5rem;
+    }
+    
+    .section--{{ section.id }} .image-text-card__text {
+      font-size: 16px;
+    }
+  }
+</style>
+
+{% if section.settings.image != blank %}
+  <section
+    class="section section--{{ section.id }} section--full{% if section.settings.section_bottom_margin %} section--mb-0{% endif %}"
+    data-section-id="{{ section.id }}"
+    data-section-type="image-with-text-card"
+  >
+    <div class="{% unless section.settings.container == 'full' %}container container--{{ section.settings.container }}{% endunless %}">
+      <div class="image-text-card">
+        <img
+          class="image-text-card__image"
+          src="{{ section.settings.image | image_url: width: 1200 }}"
+          srcset="
+            {{ section.settings.image | image_url: width: 400 }} 400w,
+            {{ section.settings.image | image_url: width: 600 }} 600w,
+            {{ section.settings.image | image_url: width: 800 }} 800w,
+            {{ section.settings.image | image_url: width: 1200 }} 1200w,
+            {{ section.settings.image | image_url: width: 1600 }} 1600w
+          "
+          sizes="{{ sizes }}"
+          width="1200"
+          height="{{ 1200 | divided_by: section.settings.image.aspect_ratio | round }}"
+          alt="{{ section.settings.image.alt | escape }}"
+          loading="lazy"
+          style="object-position: {{ section.settings.image.presentation.focal_point }}"
+        >
+        
+        <div class="image-text-card__content">
+          {% unless section.settings.title == blank %}
+            <h2 class="image-text-card__title">
+              {{ section.settings.title | escape }}
+            </h2>
+          {% endunless %}
+          
+          {% unless section.settings.text == blank %}
+            <p class="image-text-card__text">
+              {{ section.settings.text }}
+            </p>
+          {% endunless %}
+          
+          {% unless section.settings.button_label == blank %}
+            <a 
+              href="{{ section.settings.button_link }}" 
+              class="image-text-card__button"
+              {% if section.settings.button_link == blank %}onclick="return false;"{% endif %}
+            >
+              {{ section.settings.button_label | escape }}
+            </a>
+          {% endunless %}
+        </div>
+      </div>
+    </div>
+  </section>
+{% else %}
+  <div class="placeholder-noblocks">
+    {{ 'homepage.onboarding.no_content' | t }}
+  </div>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Image with text card",
+  "class": "js-section__image-with-text-card",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Background image"
+    },
+    {
+      "type": "range",
+      "id": "section_height",
+      "label": "Section height (desktop)",
+      "unit": "px",
+      "min": 300,
+      "max": 800,
+      "step": 50,
+      "default": 500
+    },
+    {
+      "type": "range",
+      "id": "mobile_height",
+      "label": "Section height (mobile)",
+      "unit": "px",
+      "min": 200,
+      "max": 600,
+      "step": 50,
+      "default": 300
+    },
+    {
+      "type": "header",
+      "content": "Text content"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Big Cruiser Experience"
+    },
+    {
+      "type": "textarea",
+      "id": "text",
+      "label": "Text",
+      "default": "Amazing rides call for extraordinary adventures. Get yours started today."
+    },
+    {
+      "type": "select",
+      "id": "text_position",
+      "label": "Text position",
+      "default": "center_right",
+      "options": [
+        {
+          "value": "top_left",
+          "label": "Top left"
+        },
+        {
+          "value": "top_right",
+          "label": "Top right"
+        },
+        {
+          "value": "center_left",
+          "label": "Center left"
+        },
+        {
+          "value": "center_right",
+          "label": "Center right"
+        },
+        {
+          "value": "bottom_left",
+          "label": "Bottom left"
+        },
+        {
+          "value": "bottom_right",
+          "label": "Bottom right"
+        }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "label": "Heading size",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "default": 3
+    },
+    {
+      "type": "header",
+      "content": "Button"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button label",
+      "default": "Learn more"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "text_bg_color",
+      "label": "Text background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#212121"
+    },
+    {
+      "type": "color",
+      "id": "button_bg_color",
+      "label": "Button background",
+      "default": "#48c0da"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Button text",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "select",
+      "id": "container",
+      "label": "Section width",
+      "default": "full",
+      "options": [
+        {
+          "label": "Default",
+          "value": "large"
+        },
+        {
+          "label": "Narrow",
+          "value": "small"
+        },
+        {
+          "label": "Wide",
+          "value": "full"
+        },
+        {
+          "label": "Full width",
+          "value": "full-width"
+        }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Section padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Top padding",
+      "unit": "px",
+      "min": 0,
+      "max": 120,
+      "step": 3,
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Bottom padding",
+      "unit": "px",
+      "min": 0,
+      "max": 120,
+      "step": 3,
+      "default": 0
+    },
+    {
+      "type": "checkbox",
+      "id": "section_bottom_margin",
+      "label": "Reduce bottom margin",
+      "default": false
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image with text card"
+    }
+  ],
+  "enabled_on": {
+    "templates": ["*"],
+    "groups": ["footer"]
+  }
+}
+{% endschema %}
