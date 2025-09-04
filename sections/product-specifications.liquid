@@ -1,0 +1,447 @@
+{%- liquid
+  if section.settings.bg_color.alpha == 0 or section.settings.bg_color == settings.color_bg
+    assign section_bg = false
+  else
+    assign section_bg = true
+  endif
+
+  if section.settings['section-bottom-margin']
+    assign margin_class = 'section--mb-0'
+  else
+    if section_bg == false and section.settings.link == blank
+      assign margin_class = 'section--mb-m'
+    endif
+  endif
+
+  if section.settings.color_text.alpha > 0
+    assign color_text = section.settings.color_text
+  else
+    assign color_text = settings.color_text
+  endif
+-%}
+
+{% render 'section-padding',
+  section-id: section.id,
+  padding-top: section.settings.padding_top,
+  padding-bottom: section.settings.padding_bottom
+%}
+
+<style>
+  .section--{{ section.id }} {
+      background: {{ section.settings.bg_color }};
+  }
+  
+  .section--{{ section.id }} .product-specs {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+  }
+  
+  @media screen and (min-width: 768px) {
+      .section--{{ section.id }} .product-specs {
+          grid-template-columns: repeat(4, 1fr);
+          gap: 3rem;
+      }
+  }
+  
+  .section--{{ section.id }} .spec-item {
+      text-align: center;
+      padding: 1.5rem;
+      border-radius: 8px;
+      background: rgba(72, 192, 218, 0.05);
+      border: 1px solid rgba(72, 192, 218, 0.1);
+  }
+  
+  .section--{{ section.id }} .spec-icon {
+      width: 48px;
+      height: 48px;
+      margin: 0 auto 1rem;
+      color: {{ settings.color_brand }};
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  .section--{{ section.id }} .spec-icon svg {
+      width: 100%;
+      height: 100%;
+      fill: currentColor;
+  }
+  
+  .section--{{ section.id }} .spec-value {
+      font-family: var(--font--title);
+      font-weight: var(--font--title-weight);
+      font-size: 1.75rem;
+      line-height: 1.2;
+      color: {{ settings.color_headings }};
+      margin: 0 0 0.25rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+  }
+  
+  .section--{{ section.id }} .spec-label {
+      font-family: var(--font--body);
+      font-size: 0.875rem;
+      line-height: 1.3;
+      color: {{ color_text }};
+      margin: 0;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      opacity: 0.8;
+  }
+  
+  .section--{{ section.id }} .section__title-text {
+      color: {{ color_text }};
+  }
+  
+  {% if section.settings.text_heading_color %}
+      .section--{{ section.id }} .section__title-text {
+        color: {{ settings.color_headings }};
+      }
+  {% endif %}
+  
+  {% unless section.settings.text_border_color %}
+      .section--{{ section.id }} .section__title-text.section__title-text:after {
+          background: {{ color_text }};
+      }
+  {% endunless %}
+</style>
+
+<section
+  class="section section--{{ section.id }} {{ margin_class }} {% if section_bg %}section--has-bg{% else %}section--no-bg{% endif %}{% if section.settings.divider == true %} section--divider{% if section_bg == false %} section--divider-p{% endif %}{% endif %}"
+  data-section-id="{{ section.id }}"
+  data-section-type="product-specifications"
+>
+  <div class="container container--{{ section.settings.container }}">
+    {% if section.settings.title != blank %}
+      <div class="section__title section__title--center{% unless section.settings.desc == blank %} section__title--desc{% endunless %}">
+        <h2 class="section__title-text">{{ section.settings.title | escape }}</h2>
+        {% if section.settings.desc != blank %}
+          <div class="section__desc">
+            <div class="rte">{{ section.settings.desc }}</div>
+          </div>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    <ul class="product-specs">
+      {% for block in section.blocks %}
+        <li class="spec-item" {{ block.shopify_attributes }}>
+          {% unless block.settings.icon == 'none' %}
+            <div class="spec-icon">
+              {%- if block.settings['svg-code'] != blank -%}
+                {{ block.settings['svg-code'] | replace: ' width=', ' ' | replace: ' height=', ' ' }}
+              {% else %}
+                {% render 'icons', icon: block.settings.icon, icon_color: settings.color_brand %}
+              {% endif %}
+            </div>
+          {% endunless %}
+          
+          {% if block.settings.value != blank %}
+            <h3 class="spec-value">{{ block.settings.value | escape }}</h3>
+          {% endif %}
+          
+          {% if block.settings.label != blank %}
+            <p class="spec-label">{{ block.settings.label | escape }}</p>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+{% if section.blocks.size == 0 %}
+  <div class="placeholder-noblocks">
+    {{ 'homepage.onboarding.no_content' | t }}
+  </div>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Product Specifications",
+  "class": "js-section__product-specifications",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Specifications"
+    },
+    {
+      "type": "richtext",
+      "id": "desc",
+      "label": "Description"
+    },
+    {
+      "type": "select",
+      "id": "container",
+      "label": "Layout width",
+      "default": "small",
+      "options": [
+        {
+          "label": "Default",
+          "value": "large"
+        },
+        {
+          "label": "Narrow",
+          "value": "small"
+        },
+        {
+          "label": "Wide",
+          "value": "full"
+        }
+      ]
+    },
+    {
+      "type": "checkbox",
+      "id": "divider",
+      "label": "Show dividing line",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Section background",
+      "default": "rgba(0,0,0,0)"
+    },
+    {
+      "type": "color",
+      "id": "color_text",
+      "label": "Text and headings",
+      "default": "rgba(0,0,0,0)"
+    },
+    {
+      "type": "checkbox",
+      "id": "text_heading_color",
+      "label": "Use default heading color",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "text_border_color",
+      "label": "Use default brand border color",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Section padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Top padding",
+      "unit": "px",
+      "min": 0,
+      "max": 120,
+      "step": 3,
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Bottom padding",
+      "unit": "px",
+      "min": 0,
+      "max": 120,
+      "step": 3,
+      "default": 60
+    },
+    {
+      "type": "checkbox",
+      "id": "section-bottom-margin",
+      "label": "Reduce bottom margin",
+      "default": false
+    }
+  ],
+  "blocks": [
+    {
+      "type": "specification",
+      "name": "Specification",
+      "settings": [
+        {
+          "type": "select",
+          "id": "icon",
+          "label": "Icon",
+          "default": "icon-flash",
+          "options": [
+            {
+              "value": "none",
+              "label": "none"
+            },
+            {
+              "group": "General",
+              "value": "icon-flash",
+              "label": "lightning"
+            },
+            {
+              "group": "General",
+              "value": "icon-pin",
+              "label": "map pin"
+            },
+            {
+              "group": "General",
+              "value": "icon-stopwatch",
+              "label": "stopwatch"
+            },
+            {
+              "group": "Product",
+              "value": "icon-hammer-wrench",
+              "label": "tools"
+            },
+            {
+              "group": "Trust",
+              "value": "icon-shield-check",
+              "label": "checkmark in shield"
+            },
+            {
+              "group": "Commerce",
+              "value": "icon-crypto-currency-bitcoin-circle",
+              "label": "bitcoin in circle"
+            },
+            {
+              "group": "Commerce",
+              "value": "icon-accounting-coins-stack",
+              "label": "coin stack"
+            },
+            {
+              "group": "Commerce",
+              "value": "icon-credit-card",
+              "label": "credit cards"
+            },
+            {
+              "group": "Commerce",
+              "value": "icon-discount-circle",
+              "label": "discount in circle"
+            },
+            {
+              "group": "Commerce",
+              "value": "icon-currency-dollar-circle",
+              "label": "dollar in circle"
+            },
+            {
+              "group": "Commerce",
+              "value": "icon-currency-euro-circle",
+              "label": "euro in circle"
+            },
+            {
+              "group": "Commerce",
+              "value": "icon-gift-box",
+              "label": "gift box"
+            },
+            {
+              "group": "Commerce",
+              "value": "icon-saving-piggy-bank",
+              "label": "piggy-bank"
+            },
+            {
+              "group": "Commerce",
+              "value": "icon-currency-pound-circle",
+              "label": "pound in circle"
+            },
+            {
+              "group": "Commerce",
+              "value": "icon-shopping-bag",
+              "label": "shopping bag"
+            },
+            {
+              "group": "Commerce",
+              "value": "icon-shopping-basket",
+              "label": "shopping basket"
+            },
+            {
+              "group": "Commerce",
+              "value": "icon-shopping-cart-empty-1",
+              "label": "shopping cart"
+            },
+            {
+              "group": "Commerce",
+              "value": "icon-tags-1",
+              "label": "shopping label"
+            },
+            {
+              "group": "Commerce",
+              "value": "icon-shop",
+              "label": "store"
+            },
+            {
+              "group": "Commerce",
+              "value": "icon-currency-yuan-circle",
+              "label": "yuan in circle"
+            }
+          ]
+        },
+        {
+          "type": "html",
+          "id": "svg-code",
+          "label": "SVG icon code",
+          "info": "Learn more about adding your own SVG icons [here](https://support.safeasmilk.co/article/236-general-add-custom-svg-icons-to-your-theme)."
+        },
+        {
+          "type": "text",
+          "id": "value",
+          "label": "Specification Value",
+          "default": "750W 48V",
+          "info": "The main specification value (e.g., '20 MPH', '750W 48V')"
+        },
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Specification Label",
+          "default": "REAR HUB MOTOR",
+          "info": "The descriptive label for the specification"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product Specifications",
+      "blocks": [
+        {
+          "type": "specification",
+          "settings": {
+            "icon": "icon-stopwatch",
+            "value": "20 MPH",
+            "label": "TOP SPEED"
+          }
+        },
+        {
+          "type": "specification",
+          "settings": {
+            "icon": "icon-flash",
+            "value": "750W 48V",
+            "label": "REAR HUB MOTOR"
+          }
+        },
+        {
+          "type": "specification",
+          "settings": {
+            "icon": "icon-pin",
+            "value": "35-50+",
+            "label": "MILE RANGE"
+          }
+        },
+        {
+          "type": "specification",
+          "settings": {
+            "icon": "icon-flash",
+            "value": "20Ah 48V",
+            "label": "LITHIUM-ION BATTERY"
+          }
+        }
+      ]
+    }
+  ],
+  "enabled_on": {
+    "templates": ["*"],
+    "groups": ["header", "footer"]
+  }
+}
+{% endschema %}
