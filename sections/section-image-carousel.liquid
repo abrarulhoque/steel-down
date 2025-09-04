@@ -1,0 +1,423 @@
+{% if section.blocks.size > 0 %}
+<style>
+.section--{{ section.id }} .image-carousel__nav-arrows .slick-arrow {
+  {% if section.settings.arrow_color == 'white' %}
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+  {% elsif section.settings.arrow_color == 'black' %}
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+  {% else %}
+    background: {{ settings.color_brand }};
+    color: #fff;
+  {% endif %}
+}
+
+.section--{{ section.id }} .image-carousel__nav-arrows .slick-arrow:hover {
+  {% if section.settings.arrow_color == 'white' %}
+    background: rgba(255, 255, 255, 1);
+  {% elsif section.settings.arrow_color == 'black' %}
+    background: rgba(0, 0, 0, 0.9);
+  {% else %}
+    background: {{ settings.color_brand | color_modify: 'alpha', 0.8 }};
+  {% endif %}
+}
+
+/* Loading states */
+body[data-editor-mode="false"] .image-carousel--loading {
+  position: relative;
+  overflow: hidden;
+}
+
+body[data-editor-mode="false"] .image-carousel--loading .image-carousel__track {
+  display: flex;
+  overflow-x: hidden;
+}
+
+body[data-editor-mode="false"] .image-carousel--loading .image-carousel__item:not(:first-child) {
+  display: none;
+}
+
+{% if request.design_mode %}
+/* Fixing loading scroll when new slide is added in the editor */
+.image-carousel--loading .image-carousel__item:not(:first-child) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+{% endif %}
+</style>
+
+<noscript>
+  <style>
+    .image-carousel--loading .image-carousel__track {
+      display: flex;
+      overflow-x: auto;
+    }
+    .image-carousel--loading .image-carousel__item:not(:first-child) {
+      display: block;
+    }
+  </style>
+</noscript>
+
+<section class="section section--{{ section.id }} {% if section.settings.section_width == 'full' %}section--full section--full-mobile{% endif %}{% if section.settings.section_padding_top %}section--pt-{{ section.settings.section_padding_top }}{% endif %}{% if section.settings.section_padding_bottom %}section--pb-{{ section.settings.section_padding_bottom }}{% endif %}" data-section-id="{{ section.id }}" data-section-type="image-carousel">
+  {% if section.settings.section_width == 'contained' %}<div class="container">{% endif %}
+
+  {% unless section.settings.title == blank %}
+    <div class="section__header">
+      <h2 class="section__title h3">{{ section.settings.title | escape }}</h2>
+      {% unless section.settings.description == blank %}
+        <div class="section__description rte">
+          {{ section.settings.description }}
+        </div>
+      {% endunless %}
+    </div>
+  {% endunless %}
+
+  <div class="image-carousel-wrapper">
+    <div class="image-carousel js-image-carousel image-carousel--loading" 
+         data-slides-desktop="{{ section.settings.slides_desktop }}"
+         data-slides-tablet="{{ section.settings.slides_tablet }}" 
+         data-slides-mobile="{{ section.settings.slides_mobile }}"
+         data-autoplay="{{ section.settings.autoplay }}"
+         data-autoplay-speed="{{ section.settings.autoplay_speed }}">
+      
+      <div class="image-carousel__track">
+        {% for block in section.blocks %}
+          <div class="image-carousel__item" {{ block.shopify_attributes }}>
+            {% unless block.settings.link == blank %}
+              <a href="{{ block.settings.link }}" class="image-carousel__link">
+            {% endunless %}
+            
+            <div class="image-carousel__image-wrapper">
+              {% unless block.settings.image == blank %}
+                {%- assign img_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                <img
+                  class="image-carousel__image"
+                  src="{{ block.settings.image | img_url: '600x' }}"
+                  srcset="{% render 'bgset', image: block.settings.image %}"
+                  width="600"
+                  height="{{ 600 | divided_by: block.settings.image.aspect_ratio | round }}"
+                  alt="{{ block.settings.image.alt | default: block.settings.title }}"
+                  loading="lazy"
+                />
+              {% else %}
+                {% capture current %}{% cycle 1, 2 %}{% endcapture %}
+                {{ 'product-' | append: current | placeholder_svg_tag: 'placeholder-svg image-carousel__image' }}
+              {% endunless %}
+            </div>
+
+            {% unless block.settings.title == blank %}
+              <div class="image-carousel__content">
+                <h3 class="image-carousel__title h6">{{ block.settings.title | escape }}</h3>
+                {% unless block.settings.description == blank %}
+                  <p class="image-carousel__description">{{ block.settings.description | escape }}</p>
+                {% endunless %}
+              </div>
+            {% endunless %}
+
+            {% unless block.settings.link == blank %}
+              </a>
+            {% endunless %}
+          </div>
+        {% endfor %}
+      </div>
+
+      {%- if section.blocks.size > 1 -%}
+        <div class="image-carousel__nav-arrows js-image-carousel-nav"></div>
+      {%- endif -%}
+
+    </div>
+  </div>
+
+  {% if section.settings.section_width == 'contained' %}</div>{% endif %}
+</section>
+
+<script>
+theme.imageCarouselInit = function(carouselElement) {
+  var $carousel = $(carouselElement);
+  var slidesDesktop = parseInt($carousel.data('slides-desktop')) || 4;
+  var slidesTablet = parseInt($carousel.data('slides-tablet')) || 3;
+  var slidesMobile = parseInt($carousel.data('slides-mobile')) || 1;
+  var autoplay = $carousel.data('autoplay') || false;
+  var autoplaySpeed = parseInt($carousel.data('autoplay-speed')) || 3000;
+
+  $carousel.on('init', function(event, slick) {
+    $carousel.removeClass('image-carousel--loading');
+  });
+
+  $carousel.not('.slick-initialized').slick({
+    accessibility: true,
+    ariaPolite: false,
+    slidesToShow: slidesDesktop,
+    slidesToScroll: 1,
+    infinite: true,
+    autoplay: autoplay,
+    autoplaySpeed: autoplaySpeed,
+    swipe: true,
+    swipeToSlide: true,
+    arrows: true,
+    dots: false,
+    prevArrow: '<button class="image-carousel__arrow image-carousel__arrow--prev slick-arrow" aria-label="Previous"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
+    nextArrow: '<button class="image-carousel__arrow image-carousel__arrow--next slick-arrow" aria-label="Next"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
+    appendArrows: $carousel.parent().find('.js-image-carousel-nav'),
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: slidesTablet,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: slidesMobile,
+          slidesToScroll: 1,
+          arrows: false
+        }
+      }
+    ]
+  });
+};
+
+theme.imageCarousel = function() {
+  var $carousels = $('.js-image-carousel');
+  var imageCarouselObserver = generateFireOnViewObserver(theme.imageCarouselInit);
+
+  if ($carousels.length) {
+    $carousels.each(function() {
+      imageCarouselObserver.observe(this);
+    });
+  }
+
+  $(window).on('resize', function() {
+    clearTimeout(window.imageCarouselResizeTimer);
+    window.imageCarouselResizeTimer = setTimeout(function() {
+      $carousels.each(function() {
+        if ($(this).hasClass('slick-initialized')) {
+          $(this).slick('refresh');
+        }
+      });
+    }, 300);
+  });
+};
+
+$(document).ready(function() {
+  theme.imageCarousel();
+});
+</script>
+
+{% endif %}
+
+{% if section.blocks.size == 0 %}
+  <div class="placeholder-noblocks">
+    {{ 'homepage.onboarding.no_content' | t }}
+  </div>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Image carousel",
+  "class": "js-section__image-carousel",
+  "max_blocks": 20,
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section title"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Section description"
+    },
+    {
+      "type": "select",
+      "id": "section_width",
+      "label": "Section width",
+      "default": "contained",
+      "options": [
+        {
+          "label": "Contained",
+          "value": "contained"
+        },
+        {
+          "label": "Full width",
+          "value": "full"
+        }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "slides_desktop",
+      "label": "Images per row (desktop)",
+      "min": 1,
+      "max": 6,
+      "step": 1,
+      "default": 4
+    },
+    {
+      "type": "range",
+      "id": "slides_tablet",
+      "label": "Images per row (tablet)",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "default": 3
+    },
+    {
+      "type": "range",
+      "id": "slides_mobile",
+      "label": "Images per row (mobile)",
+      "min": 1,
+      "max": 2,
+      "step": 1,
+      "default": 1
+    },
+    {
+      "type": "checkbox",
+      "id": "autoplay",
+      "label": "Auto-rotate images",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "autoplay_speed",
+      "label": "Auto-rotate speed",
+      "unit": "ms",
+      "min": 2000,
+      "max": 8000,
+      "step": 500,
+      "default": 3000
+    },
+    {
+      "type": "select",
+      "id": "arrow_color",
+      "label": "Arrow color",
+      "default": "brand",
+      "options": [
+        {
+          "value": "brand",
+          "label": "Brand color"
+        },
+        {
+          "value": "black",
+          "label": "Black"
+        },
+        {
+          "value": "white",
+          "label": "White"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "section_padding_top",
+      "label": "Top padding",
+      "default": "m",
+      "options": [
+        {
+          "value": "0",
+          "label": "None"
+        },
+        {
+          "value": "s",
+          "label": "Small"
+        },
+        {
+          "value": "m",
+          "label": "Medium"
+        },
+        {
+          "value": "l",
+          "label": "Large"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "section_padding_bottom",
+      "label": "Bottom padding",
+      "default": "m",
+      "options": [
+        {
+          "value": "0",
+          "label": "None"
+        },
+        {
+          "value": "s",
+          "label": "Small"
+        },
+        {
+          "value": "m",
+          "label": "Medium"
+        },
+        {
+          "value": "l",
+          "label": "Large"
+        }
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image",
+          "info": "800px width recommended"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "text",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image carousel",
+      "settings": {
+        "title": "Image Gallery",
+        "slides_desktop": 4,
+        "slides_tablet": 3,
+        "slides_mobile": 1
+      },
+      "blocks": [
+        {
+          "type": "image"
+        },
+        {
+          "type": "image"
+        },
+        {
+          "type": "image"
+        },
+        {
+          "type": "image"
+        }
+      ]
+    }
+  ],
+  "enabled_on": {
+    "templates": ["*"],
+    "groups": ["footer"]
+  }
+}
+{% endschema %}
