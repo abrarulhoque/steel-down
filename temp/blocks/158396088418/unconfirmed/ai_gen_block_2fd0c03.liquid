@@ -1,6 +1,646 @@
+{% doc %}
+  @prompt
+    Image carousel section 
+    
+      Features:
+      - Desktop: Arrow navigation buttons for scrolling through images
+      - Mobile: Touch/swipe functionality (arrows automatically hidden)
+      - Responsive: 4 images on desktop, 3 on tablet, 1 on mobile
+      - Theme Editor: Fully configurable through Shopify's theme customizer
+    
+      Customization Options:
+      - Section title and description
+      - Number of images per row for each device
+      - Auto-play functionality with speed control
+      - Arrow color options (brand, black, white)
+      - Section width (contained or full-width)
+      - Padding controls
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-image-carousel-{{ ai_gen_id }} {
+    width: 100%;
+    {% if block.settings.section_width == 'contained' %}
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    {% endif %}
+    padding-top: {{ block.settings.padding_top }}px;
+    padding-bottom: {{ block.settings.padding_bottom }}px;
+  }
+
+  .ai-image-carousel-header-{{ ai_gen_id }} {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .ai-image-carousel-title-{{ ai_gen_id }} {
+    color: {{ settings.color_headings }};
+    font-family: {{ settings.type_header_font.family }}, {{ settings.type_header_font.fallback_families }};
+    font-weight: {{ settings.type_header_font.weight }};
+    font-size: calc({{ settings.type_header_scale }}% * 2rem / 100);
+    margin: 0 0 16px;
+    {% if settings.type_header_capitalize %}
+      text-transform: uppercase;
+    {% endif %}
+    letter-spacing: {{ settings.type_header_letterspace }}px;
+  }
+
+  .ai-image-carousel-description-{{ ai_gen_id }} {
+    color: {{ settings.color_text }};
+    font-family: {{ settings.type_base_font.family }}, {{ settings.type_base_font.fallback_families }};
+    font-size: calc({{ settings.type_base_scale }}% * 1rem / 100);
+    margin: 0;
+  }
+
+  .ai-image-carousel-container-{{ ai_gen_id }} {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .ai-image-carousel-track-{{ ai_gen_id }} {
+    display: flex;
+    transition: transform 0.3s ease;
+    gap: 20px;
+  }
+
+  .ai-image-carousel-slide-{{ ai_gen_id }} {
+    flex: 0 0 auto;
+    width: calc((100% - 60px) / {{ block.settings.columns_desktop }});
+  }
+
+  .ai-image-carousel-image-{{ ai_gen_id }} {
+    width: 100%;
+    height: {{ block.settings.image_height }}px;
+    object-fit: cover;
+    border-radius: {{ block.settings.image_border_radius }}px;
+    display: block;
+  }
+
+  .ai-image-carousel-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    height: {{ block.settings.image_height }}px;
+    background-color: #f4f4f4;
+    border-radius: {{ block.settings.image_border_radius }}px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai-image-carousel-placeholder-{{ ai_gen_id }} svg {
+    width: 60px;
+    height: 60px;
+    opacity: 0.3;
+  }
+
+  .ai-image-carousel-nav-{{ ai_gen_id }} {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: {{ block.settings.arrow_color }};
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    transition: opacity 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .ai-image-carousel-nav-{{ ai_gen_id }}:hover {
+    transform: translateY(-50%) scale(1.1);
+  }
+
+  .ai-image-carousel-nav-{{ ai_gen_id }}:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+    transform: translateY(-50%) scale(1);
+  }
+
+  .ai-image-carousel-nav-{{ ai_gen_id }} svg {
+    width: 20px;
+    height: 20px;
+    fill: white;
+  }
+
+  .ai-image-carousel-nav-prev-{{ ai_gen_id }} {
+    left: -25px;
+  }
+
+  .ai-image-carousel-nav-next-{{ ai_gen_id }} {
+    right: -25px;
+  }
+
+  .ai-image-carousel-dots-{{ ai_gen_id }} {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 30px;
+  }
+
+  .ai-image-carousel-dot-{{ ai_gen_id }} {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: none;
+    background: #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .ai-image-carousel-dot-{{ ai_gen_id }}.active {
+    background: {{ block.settings.arrow_color }};
+  }
+
+  @media screen and (max-width: 990px) {
+    .ai-image-carousel-slide-{{ ai_gen_id }} {
+      width: calc((100% - 40px) / {{ block.settings.columns_tablet }});
+    }
+
+    .ai-image-carousel-nav-{{ ai_gen_id }} {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-image-carousel-slide-{{ ai_gen_id }} {
+      width: calc((100% - 0px) / {{ block.settings.columns_mobile }});
+    }
+
+    .ai-image-carousel-track-{{ ai_gen_id }} {
+      gap: 10px;
+    }
+
+    .ai-image-carousel-container-{{ ai_gen_id }} {
+      touch-action: pan-y;
+    }
+  }
+{% endstyle %}
+
+<image-carousel-{{ ai_gen_id }}
+  class="ai-image-carousel-{{ ai_gen_id }}"
+  data-autoplay="{{ block.settings.autoplay_enabled }}"
+  data-autoplay-speed="{{ block.settings.autoplay_speed }}"
+  data-columns-desktop="{{ block.settings.columns_desktop }}"
+  data-columns-tablet="{{ block.settings.columns_tablet }}"
+  data-columns-mobile="{{ block.settings.columns_mobile }}"
+  {{ block.shopify_attributes }}
+>
+  {% if block.settings.title != blank or block.settings.description != blank %}
+    <div class="ai-image-carousel-header-{{ ai_gen_id }}">
+      {% if block.settings.title != blank %}
+        <h2 class="ai-image-carousel-title-{{ ai_gen_id }}">{{ block.settings.title }}</h2>
+      {% endif %}
+      {% if block.settings.description != blank %}
+        <div class="ai-image-carousel-description-{{ ai_gen_id }}">{{ block.settings.description }}</div>
+      {% endif %}
+    </div>
+  {% endif %}
+
+  <div class="ai-image-carousel-container-{{ ai_gen_id }}">
+    <div class="ai-image-carousel-track-{{ ai_gen_id }}">
+      {% for i in (1..12) %}
+        {% liquid
+          assign image_key = 'image_' | append: i
+          assign image = block.settings[image_key]
+        %}
+        {% if image != blank %}
+          <div class="ai-image-carousel-slide-{{ ai_gen_id }}">
+            <img
+              src="{{ image | image_url: width: 800 }}"
+              alt="{{ image.alt | escape }}"
+              class="ai-image-carousel-image-{{ ai_gen_id }}"
+              loading="lazy"
+              width="{{ image.width }}"
+              height="{{ image.height }}"
+            >
+          </div>
+        {% elsif forloop.index <= 6 %}
+          <div class="ai-image-carousel-slide-{{ ai_gen_id }}">
+            <div class="ai-image-carousel-placeholder-{{ ai_gen_id }}">
+              {{ 'image' | placeholder_svg_tag }}
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    <button
+      class="ai-image-carousel-nav-{{ ai_gen_id }} ai-image-carousel-nav-prev-{{ ai_gen_id }}"
+      aria-label="Previous images"
+    >
+      <svg viewBox="0 0 24 24">
+        <path d="M15 18l-6-6 6-6"/>
+      </svg>
+    </button>
+
+    <button
+      class="ai-image-carousel-nav-{{ ai_gen_id }} ai-image-carousel-nav-next-{{ ai_gen_id }}"
+      aria-label="Next images"
+    >
+      <svg viewBox="0 0 24 24">
+        <path d="M9 18l6-6-6-6"/>
+      </svg>
+    </button>
+  </div>
+
+  <div class="ai-image-carousel-dots-{{ ai_gen_id }}"></div>
+</image-carousel-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class ImageCarousel{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+        this.currentIndex = 0;
+        this.autoplayInterval = null;
+        this.isAutoplayEnabled = this.dataset.autoplay === 'true';
+        this.autoplaySpeed = parseInt(this.dataset.autoplaySpeed) * 1000;
+        this.columnsDesktop = parseInt(this.dataset.columnsDesktop);
+        this.columnsTablet = parseInt(this.dataset.columnsTablet);
+        this.columnsMobile = parseInt(this.dataset.columnsMobile);
+      }
+
+      connectedCallback() {
+        this.track = this.querySelector('.ai-image-carousel-track-{{ ai_gen_id }}');
+        this.slides = this.querySelectorAll('.ai-image-carousel-slide-{{ ai_gen_id }}');
+        this.prevButton = this.querySelector('.ai-image-carousel-nav-prev-{{ ai_gen_id }}');
+        this.nextButton = this.querySelector('.ai-image-carousel-nav-next-{{ ai_gen_id }}');
+        this.dotsContainer = this.querySelector('.ai-image-carousel-dots-{{ ai_gen_id }}');
+
+        if (this.slides.length === 0) return;
+
+        this.setupEventListeners();
+        this.createDots();
+        this.updateCarousel();
+        this.setupTouchEvents();
+
+        if (this.isAutoplayEnabled) {
+          this.startAutoplay();
+          this.addEventListener('mouseenter', () => this.stopAutoplay());
+          this.addEventListener('mouseleave', () => this.startAutoplay());
+        }
+      }
+
+      disconnectedCallback() {
+        this.stopAutoplay();
+      }
+
+      setupEventListeners() {
+        this.prevButton.addEventListener('click', () => this.goToPrevious());
+        this.nextButton.addEventListener('click', () => this.goToNext());
+        
+        window.addEventListener('resize', () => {
+          this.updateCarousel();
+          this.createDots();
+        });
+      }
+
+      setupTouchEvents() {
+        let startX = 0;
+        let currentX = 0;
+        let isDragging = false;
+
+        this.track.addEventListener('touchstart', (e) => {
+          startX = e.touches[0].clientX;
+          isDragging = true;
+          this.stopAutoplay();
+        });
+
+        this.track.addEventListener('touchmove', (e) => {
+          if (!isDragging) return;
+          currentX = e.touches[0].clientX;
+        });
+
+        this.track.addEventListener('touchend', () => {
+          if (!isDragging) return;
+          isDragging = false;
+
+          const diff = startX - currentX;
+          const threshold = 50;
+
+          if (Math.abs(diff) > threshold) {
+            if (diff > 0) {
+              this.goToNext();
+            } else {
+              this.goToPrevious();
+            }
+          }
+
+          if (this.isAutoplayEnabled) {
+            this.startAutoplay();
+          }
+        });
+      }
+
+      getCurrentColumns() {
+        const width = window.innerWidth;
+        if (width <= 749) return this.columnsMobile;
+        if (width <= 990) return this.columnsTablet;
+        return this.columnsDesktop;
+      }
+
+      getTotalPages() {
+        const columns = this.getCurrentColumns();
+        return Math.ceil(this.slides.length / columns);
+      }
+
+      goToNext() {
+        const totalPages = this.getTotalPages();
+        this.currentIndex = (this.currentIndex + 1) % totalPages;
+        this.updateCarousel();
+      }
+
+      goToPrevious() {
+        const totalPages = this.getTotalPages();
+        this.currentIndex = (this.currentIndex - 1 + totalPages) % totalPages;
+        this.updateCarousel();
+      }
+
+      goToPage(pageIndex) {
+        this.currentIndex = pageIndex;
+        this.updateCarousel();
+      }
+
+      updateCarousel() {
+        const columns = this.getCurrentColumns();
+        const slideWidth = 100 / columns;
+        const translateX = -this.currentIndex * 100;
+        
+        this.track.style.transform = `translateX(${translateX}%)`;
+        
+        const totalPages = this.getTotalPages();
+        this.prevButton.disabled = this.currentIndex === 0;
+        this.nextButton.disabled = this.currentIndex === totalPages - 1;
+        
+        this.updateDots();
+      }
+
+      createDots() {
+        const totalPages = this.getTotalPages();
+        this.dotsContainer.innerHTML = '';
+        
+        for (let i = 0; i < totalPages; i++) {
+          const dot = document.createElement('button');
+          dot.className = 'ai-image-carousel-dot-{{ ai_gen_id }}';
+          dot.setAttribute('aria-label', `Go to page ${i + 1}`);
+          dot.addEventListener('click', () => this.goToPage(i));
+          this.dotsContainer.appendChild(dot);
+        }
+        
+        this.updateDots();
+      }
+
+      updateDots() {
+        const dots = this.dotsContainer.querySelectorAll('.ai-image-carousel-dot-{{ ai_gen_id }}');
+        dots.forEach((dot, index) => {
+          dot.classList.toggle('active', index === this.currentIndex);
+        });
+      }
+
+      startAutoplay() {
+        if (!this.isAutoplayEnabled) return;
+        this.stopAutoplay();
+        this.autoplayInterval = setInterval(() => {
+          this.goToNext();
+        }, this.autoplaySpeed);
+      }
+
+      stopAutoplay() {
+        if (this.autoplayInterval) {
+          clearInterval(this.autoplayInterval);
+          this.autoplayInterval = null;
+        }
+      }
+    }
+
+    customElements.define('image-carousel-{{ ai_gen_id }}', ImageCarousel{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Image carousel",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Image Gallery"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description",
+      "default": "<p>Showcase your favorite images in this beautiful carousel</p>"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "select",
+      "id": "section_width",
+      "label": "Section width",
+      "options": [
+        {
+          "value": "contained",
+          "label": "Contained"
+        },
+        {
+          "value": "full_width",
+          "label": "Full width"
+        }
+      ],
+      "default": "contained"
+    },
+    {
+      "type": "range",
+      "id": "columns_desktop",
+      "min": 1,
+      "max": 6,
+      "step": 1,
+      "label": "Images per row (desktop)",
+      "default": 4
+    },
+    {
+      "type": "range",
+      "id": "columns_tablet",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "label": "Images per row (tablet)",
+      "default": 3
+    },
+    {
+      "type": "select",
+      "id": "columns_mobile",
+      "label": "Images per row (mobile)",
+      "options": [
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        }
+      ],
+      "default": "1"
+    },
+    {
+      "type": "header",
+      "content": "Autoplay"
+    },
+    {
+      "type": "checkbox",
+      "id": "autoplay_enabled",
+      "label": "Enable autoplay",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "autoplay_speed",
+      "min": 2,
+      "max": 10,
+      "step": 1,
+      "unit": "s",
+      "label": "Autoplay speed",
+      "default": 4
+    },
+    {
+      "type": "header",
+      "content": "Style"
+    },
+    {
+      "type": "color",
+      "id": "arrow_color",
+      "label": "Arrow color",
+      "default": "#dcb244"
+    },
+    {
+      "type": "range",
+      "id": "image_height",
+      "min": 200,
+      "max": 600,
+      "step": 20,
+      "unit": "px",
+      "label": "Image height",
+      "default": 300
+    },
+    {
+      "type": "range",
+      "id": "image_border_radius",
+      "min": 0,
+      "max": 20,
+      "step": 2,
+      "unit": "px",
+      "label": "Image border radius",
+      "default": 8
+    },
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 40
+    },
+    {
+      "type": "header",
+      "content": "Images"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_1",
+      "label": "Image 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_2",
+      "label": "Image 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_3",
+      "label": "Image 3"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_4",
+      "label": "Image 4"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_5",
+      "label": "Image 5"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_6",
+      "label": "Image 6"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_7",
+      "label": "Image 7"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_8",
+      "label": "Image 8"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_9",
+      "label": "Image 9"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_10",
+      "label": "Image 10"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_11",
+      "label": "Image 11"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_12",
+      "label": "Image 12"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image carousel"
+    }
+  ]
+}
 {% endschema %}
