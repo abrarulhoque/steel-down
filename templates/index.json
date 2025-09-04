@@ -11,30 +11,6 @@
   "sections": {
     "1756963052097d3731": {
       "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_2fd0c03_A3Df6h": {
-          "type": "ai_gen_block_2fd0c03",
-          "settings": {
-            "title": "Image Gallery",
-            "description": "<p>Showcase your favorite images in this beautiful carousel</p>",
-            "section_width": "contained",
-            "columns_desktop": 4,
-            "columns_tablet": 3,
-            "columns_mobile": "1",
-            "autoplay_enabled": false,
-            "autoplay_speed": 4,
-            "arrow_color": "#dcb244",
-            "image_height": 300,
-            "image_border_radius": 8,
-            "padding_top": 40,
-            "padding_bottom": 40
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_2fd0c03_A3Df6h"
-      ],
       "settings": {}
     },
     "section_collection_list_cYqpdg": {
