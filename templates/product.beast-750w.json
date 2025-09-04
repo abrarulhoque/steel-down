@@ -379,10 +379,27 @@
             "text_heading_color": false,
             "text_border_color": true
           }
+        },
+        "image_iNQMPF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/wildsyde-beast-fat-tire-02_fe82790a-902d-487c-8d50-a18b3e95fb95.jpg",
+            "title": "FAT-TIRE STABILITY",
+            "desc": "<p>The 4” wide cross-terrain tires, built for both streets and trails, provide an unwavering, stable ride from asphalt and forest, to beach and snow.<br/><br/></p>",
+            "horizontal_align": "left",
+            "link_title": "Learn more",
+            "link": "",
+            "bg_color_block": "rgba(0,0,0,0)",
+            "bg_color_content": "#ffffff",
+            "color_text": "#212121",
+            "text_heading_color": false,
+            "text_border_color": true
+          }
         }
       },
       "block_order": [
-        "image_J6gjVn"
+        "image_J6gjVn",
+        "image_iNQMPF"
       ],
       "name": "Image with text overlap",
       "settings": {
