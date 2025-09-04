@@ -465,11 +465,73 @@
         "padding_bottom": 0,
         "section-bottom-margin": true
       }
+    },
+    "product_specifications_4gHEhM": {
+      "type": "product-specifications",
+      "blocks": {
+        "specification_WfqhxU": {
+          "type": "specification",
+          "settings": {
+            "icon": "icon-stopwatch",
+            "svg-code": "",
+            "value": "20 MPH",
+            "label": "TOP SPEED"
+          }
+        },
+        "specification_Bcqtta": {
+          "type": "specification",
+          "settings": {
+            "icon": "icon-flash",
+            "svg-code": "",
+            "value": "750W 48V",
+            "label": "REAR HUB MOTOR"
+          }
+        },
+        "specification_Py78PQ": {
+          "type": "specification",
+          "settings": {
+            "icon": "icon-pin",
+            "svg-code": "",
+            "value": "35-50+",
+            "label": "MILE RANGE"
+          }
+        },
+        "specification_QyFBTm": {
+          "type": "specification",
+          "settings": {
+            "icon": "icon-flash",
+            "svg-code": "",
+            "value": "20Ah 48V",
+            "label": "LITHIUM-ION BATTERY"
+          }
+        }
+      },
+      "block_order": [
+        "specification_WfqhxU",
+        "specification_Bcqtta",
+        "specification_Py78PQ",
+        "specification_QyFBTm"
+      ],
+      "name": "Product Specifications",
+      "settings": {
+        "title": "Specifications",
+        "desc": "",
+        "container": "small",
+        "divider": false,
+        "bg_color": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "text_heading_color": false,
+        "text_border_color": true,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "section-bottom-margin": false
+      }
     }
   },
   "order": [
     "main",
     "af1e6c23-5338-467c-bee9-b9d9b3d9c22a",
+    "product_specifications_4gHEhM",
     "9904a28f-6381-41fe-96eb-d4a73d60f0a0",
     "5a818a60-e694-4eac-a33f-5ce701e894b0",
     "product-recommendations",
