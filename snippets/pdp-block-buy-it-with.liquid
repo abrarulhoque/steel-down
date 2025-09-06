@@ -1,5 +1,5 @@
 {%- liquid
-  assign products = block.settings.recommended_products
+  assign product_handles = block.settings.recommended_products
   assign heading = block.settings.heading | default: 'Buy it With'
   assign add_to_cart_text = block.settings.add_to_cart_text | default: 'ADD TO CART'
   assign show_price = block.settings.show_price | default: true
@@ -7,16 +7,22 @@
   assign unique_id = block.id | append: '-buy-it-with'
 -%}
 
-{%- if products.size > 0 -%}
+{%- if product_handles.size > 0 -%}
   <div class="buy-it-with" data-buy-it-with="{{ unique_id }}">
     {%- if heading != blank -%}
       <h3 class="buy-it-with__heading">{{ heading | escape }}</h3>
     {%- endif -%}
     
+    {%- comment -%} Debug info - remove in production {%- endcomment -%}
+    {%- if product_handles.size == 0 -%}
+      <p style="color: red; font-size: 12px;">No products selected</p>
+    {%- endif -%}
+    
     <div class="buy-it-with__carousel" data-carousel>
       <div class="buy-it-with__slides" data-slides>
-        {%- for recommended_product in products -%}
-          {%- if recommended_product.available -%}
+        {%- for product_handle in product_handles -%}
+          {%- assign recommended_product = all_products[product_handle] -%}
+          {%- if recommended_product and recommended_product.available -%}
             <div class="buy-it-with__slide{% if forloop.first %} is-active{% endif %}" data-slide="{{ forloop.index0 }}">
               <div class="buy-it-with__product">
                 {%- if recommended_product.featured_image -%}
@@ -60,10 +66,11 @@
         {%- endfor -%}
       </div>
       
-      {%- if show_navigation_dots and products.size > 1 -%}
+      {%- if show_navigation_dots and product_handles.size > 1 -%}
         <div class="buy-it-with__navigation">
-          {%- for recommended_product in products -%}
-            {%- if recommended_product.available -%}
+          {%- for product_handle in product_handles -%}
+            {%- assign recommended_product = all_products[product_handle] -%}
+            {%- if recommended_product and recommended_product.available -%}
               <button 
                 class="buy-it-with__dot{% if forloop.first %} is-active{% endif %}" 
                 data-dot="{{ forloop.index0 }}"
@@ -244,4 +251,11 @@
       }
     });
   </script>
+{%- else -%}
+  {%- if heading != blank -%}
+    <div class="buy-it-with">
+      <h3 class="buy-it-with__heading">{{ heading | escape }}</h3>
+      <p style="color: #666; font-style: italic;">Please select products to display in the theme editor.</p>
+    </div>
+  {%- endif -%}
 {%- endif -%}
