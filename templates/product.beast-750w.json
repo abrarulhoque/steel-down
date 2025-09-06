@@ -102,21 +102,6 @@
             "show_disclaimer": true
           }
         },
-        "buy_it_with_eUmh3b": {
-          "type": "buy-it-with",
-          "settings": {
-            "column": "primary",
-            "heading": "Buy it With",
-            "recommended_products": [
-              "american-graffiti-poster",
-              "all-choked-up-carburetor-sticker",
-              "100-barstow-goggles"
-            ],
-            "add_to_cart_text": "ADD TO CART",
-            "show_price": true,
-            "show_navigation_dots": true
-          }
-        },
         "share": {
           "type": "share",
           "disabled": true,
@@ -232,7 +217,6 @@
         "free_shipping_bar_eTUQGP",
         "buy_buttons",
         "guarantee_badges_iDHPqL",
-        "buy_it_with_eUmh3b",
         "share",
         "description",
         "reviews_tab_new_f8WyCG",
