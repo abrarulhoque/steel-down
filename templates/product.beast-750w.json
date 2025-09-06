@@ -445,42 +445,25 @@
         "section-bottom-margin": false
       }
     },
-    "section_lifestyle_carousel_e6g9hk": {
-      "type": "section-lifestyle-carousel",
-      "blocks": {
-        "image_Q7CPfP": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/wildsyde-beast-action-02.webp"
-          }
-        },
-        "image_mrptbV": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/wildsyde-beast-action-03.webp"
-          }
-        },
-        "image_nBNUge": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/wildsyde-beast-action-04.webp"
-          }
-        },
-        "image_Qrhyfq": {
-          "type": "image",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "image_Q7CPfP",
-        "image_mrptbV",
-        "image_nBNUge",
-        "image_Qrhyfq"
-      ],
-      "name": "Lifestyle Carousel",
+    "section_lifestyle_gallery_TTbqxt": {
+      "type": "section-lifestyle-gallery",
+      "name": "Lifestyle Gallery",
       "settings": {
-        "title": "Lifestyle Gallery",
-        "above_fold": false
+        "heading": "Lifestyle Gallery",
+        "above_fold": false,
+        "section_width": "contained",
+        "image_1": "shopify://shop_images/wildsyde-beast-action-02.webp",
+        "image_2": "shopify://shop_images/wildsyde-beast-action-03.webp",
+        "image_3": "shopify://shop_images/wildsyde-beast-action-04.webp",
+        "image_4": "shopify://shop_images/wildsyde-beast-orange-park-02.webp",
+        "image_5": "shopify://shop_images/wildsyde-beast-action-06.webp",
+        "image_6": "shopify://shop_images/wildsyde-beast-orange-park.webp",
+        "image_border_radius": 8,
+        "nav_button_color": "#ffffff",
+        "nav_button_hover_color": "#f5f5f5",
+        "nav_button_icon_color": "#353535",
+        "section_padding_top": "medium",
+        "section_padding_bottom": "medium"
       }
     },
     "9904a28f-6381-41fe-96eb-d4a73d60f0a0": {
@@ -656,7 +639,7 @@
     "product_specifications_4gHEhM",
     "section_rich_text_6nFxHX",
     "section_image_with_text_overlap_EzpCcb",
-    "section_lifestyle_carousel_e6g9hk",
+    "section_lifestyle_gallery_TTbqxt",
     "9904a28f-6381-41fe-96eb-d4a73d60f0a0",
     "5a818a60-e694-4eac-a33f-5ce701e894b0",
     "product-recommendations",
