@@ -1,6 +1,428 @@
+{% doc %}
+  @prompt
+    Goal: a clean, fast, accessible image carousel that shows lifestyle shots of the bike. It’s 3-up on desktop, 2-up on tablet, 1-up on mobile, with equal gutters and subtle “peek” of the next card on smaller screens.
+    
+    Layout & sizing (exact)
+    
+    Max content width: 1440px.
+    
+    Page padding: 60px left/right ≥1024px; 20px left/right <1024px.
+    
+    Gutter between cards: 20px.
+    
+    Card (cell) widths:
+    
+    ≥1024px: width = ((1440 - 120) - 40) / 3 → 3 columns with two 20px gaps.
+    
+    768–1023px: width = (((100vw - 40) * 0.9) - 20) / 2 → 2 columns within a 90% container to leave a small peek of the next card.
+    
+    <768px: width = (100vw - 40) - 20 → 1 column, still leaving a 20px right peek.
+    
+    Card aspect ratio: 5:4 (CSS uses --aspect-ratio: 80%). Use aspect-ratio: 5 / 4; and object-fit: cover to match current cropping.
+    
+    Carousel behavior
+    
+    Use Flickity (already used) with:
+    
+    cellAlign: 'left', contain: true
+    
+    prevNextButtons: true, no dots
+    
+    draggable: true (swipe on touch)
+    
+    wrapAround: false (arrows disable at ends; matches current UX)
+    
+    groupCells: false
+    
+    imagesLoaded: true, setGallerySize: true
+    
+    Navigation buttons: vertically centered, outside the reading order; hide the previous button on first frame (disabled state), same for next on last frame.
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-image-carousel-{{ ai_gen_id }} {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 60px;
+    position: relative;
+  }
+
+  @media screen and (max-width: 1023px) {
+    .ai-image-carousel-{{ ai_gen_id }} {
+      padding: 0 20px;
+    }
+  }
+
+  .ai-carousel-container-{{ ai_gen_id }} {
+    position: relative;
+  }
+
+  .ai-carousel-{{ ai_gen_id }} {
+    overflow: hidden;
+  }
+
+  .ai-carousel-{{ ai_gen_id }} .flickity-viewport {
+    overflow: visible;
+  }
+
+  .ai-carousel-cell-{{ ai_gen_id }} {
+    margin-right: 20px;
+    aspect-ratio: 5 / 4;
+    position: relative;
+  }
+
+  .ai-carousel-cell-{{ ai_gen_id }}:last-child {
+    margin-right: 0;
+  }
+
+  .ai-carousel-cell-{{ ai_gen_id }} img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: {{ block.settings.image_border_radius }}px;
+  }
+
+  .ai-carousel-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: {{ block.settings.image_border_radius }}px;
+    position: relative;
+  }
+
+  .ai-carousel-placeholder-{{ ai_gen_id }} svg {
+    width: 60px;
+    height: 60px;
+    opacity: 0.3;
+  }
+
+  .ai-carousel-empty-state-{{ ai_gen_id }} {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    pointer-events: none;
+  }
+
+  .ai-carousel-nav-{{ ai_gen_id }} {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: {{ block.settings.nav_button_color }};
+    border: none;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 2;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  .ai-carousel-nav-{{ ai_gen_id }}:hover {
+    background: {{ block.settings.nav_button_hover_color }};
+    transform: translateY(-50%) scale(1.05);
+  }
+
+  .ai-carousel-nav-{{ ai_gen_id }}:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+    transform: translateY(-50%) scale(1);
+  }
+
+  .ai-carousel-nav-{{ ai_gen_id }} svg {
+    width: 20px;
+    height: 20px;
+    color: {{ block.settings.nav_button_icon_color }};
+  }
+
+  .ai-carousel-nav-prev-{{ ai_gen_id }} {
+    left: -24px;
+  }
+
+  .ai-carousel-nav-next-{{ ai_gen_id }} {
+    right: -24px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    .ai-carousel-cell-{{ ai_gen_id }} {
+      width: calc(((1440px - 120px) - 40px) / 3);
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .ai-carousel-cell-{{ ai_gen_id }} {
+      width: calc((((100vw - 40px) * 0.9) - 20px) / 2);
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .ai-carousel-cell-{{ ai_gen_id }} {
+      width: calc((100vw - 40px) - 20px);
+    }
+    
+    .ai-carousel-nav-prev-{{ ai_gen_id }} {
+      left: -16px;
+    }
+
+    .ai-carousel-nav-next-{{ ai_gen_id }} {
+      right: -16px;
+    }
+  }
+
+  .ai-carousel-heading-{{ ai_gen_id }} {
+    margin-bottom: 30px;
+    color: {{ settings.color_headings }};
+    font-family: {{ settings.type_header_font.family }}, {{ settings.type_header_font.fallback_families }};
+    font-weight: {{ settings.type_header_font.weight }};
+    font-size: calc({{ settings.type_header_scale }}% * 2rem / 100);
+    letter-spacing: {{ settings.type_header_letterspace }}px;
+    {% if settings.type_header_capitalize %}text-transform: uppercase;{% endif %}
+  }
+
+  {% if settings.type_header_border %}
+    .ai-carousel-heading-{{ ai_gen_id }}::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: {{ settings.type_header_border_size }}px;
+      background-color: {{ settings.color_header_border }};
+      margin-top: 10px;
+    }
+  {% endif %}
+{% endstyle %}
+
+<image-carousel-{{ ai_gen_id }}
+  class="ai-image-carousel-{{ ai_gen_id }}"
+  {{ block.shopify_attributes }}
+>
+  {% if block.settings.heading != blank %}
+    <h2 class="ai-carousel-heading-{{ ai_gen_id }}">{{ block.settings.heading }}</h2>
+  {% endif %}
+
+  <div class="ai-carousel-container-{{ ai_gen_id }}">
+    <div class="ai-carousel-{{ ai_gen_id }}" data-flickity='{"cellAlign": "left", "contain": true, "prevNextButtons": false, "pageDots": false, "draggable": true, "wrapAround": false, "groupCells": false, "imagesLoaded": true, "setGallerySize": true}'>
+      {% for i in (1..6) %}
+        {% liquid
+          assign image_key = 'image_' | append: i
+          assign image = block.settings[image_key]
+        %}
+        
+        {% if image != blank %}
+          <div class="ai-carousel-cell-{{ ai_gen_id }}">
+            <img
+              src="{{ image | image_url: width: 800 }}"
+              alt="{{ image.alt | escape }}"
+              loading="lazy"
+              width="{{ image.width }}"
+              height="{{ image.height }}"
+            >
+          </div>
+        {% elsif i == 1 %}
+          <div class="ai-carousel-cell-{{ ai_gen_id }}">
+            <div class="ai-carousel-placeholder-{{ ai_gen_id }}">
+              {{ 'image' | placeholder_svg_tag }}
+              <div class="ai-carousel-empty-state-{{ ai_gen_id }}">
+                Add lifestyle images
+              </div>
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    <button
+      class="ai-carousel-nav-{{ ai_gen_id }} ai-carousel-nav-prev-{{ ai_gen_id }}"
+      type="button"
+      aria-label="Previous image"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="15,18 9,12 15,6"></polyline>
+      </svg>
+    </button>
+
+    <button
+      class="ai-carousel-nav-{{ ai_gen_id }} ai-carousel-nav-next-{{ ai_gen_id }}"
+      type="button"
+      aria-label="Next image"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="9,18 15,12 9,6"></polyline>
+      </svg>
+    </button>
+  </div>
+</image-carousel-{{ ai_gen_id }}>
+
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+<script>
+  (function() {
+    class ImageCarousel{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+        this.flickity = null;
+      }
+
+      connectedCallback() {
+        this.initCarousel();
+        this.setupNavigation();
+      }
+
+      initCarousel() {
+        const carousel = this.querySelector('.ai-carousel-{{ ai_gen_id }}');
+        
+        if (typeof Flickity !== 'undefined') {
+          this.flickity = new Flickity(carousel, {
+            cellAlign: 'left',
+            contain: true,
+            prevNextButtons: false,
+            pageDots: false,
+            draggable: true,
+            wrapAround: false,
+            groupCells: false,
+            imagesLoaded: true,
+            setGallerySize: true
+          });
+
+          this.flickity.on('change', () => {
+            this.updateNavButtons();
+          });
+
+          this.updateNavButtons();
+        }
+      }
+
+      setupNavigation() {
+        const prevButton = this.querySelector('.ai-carousel-nav-prev-{{ ai_gen_id }}');
+        const nextButton = this.querySelector('.ai-carousel-nav-next-{{ ai_gen_id }}');
+
+        prevButton.addEventListener('click', () => {
+          if (this.flickity) {
+            this.flickity.previous();
+          }
+        });
+
+        nextButton.addEventListener('click', () => {
+          if (this.flickity) {
+            this.flickity.next();
+          }
+        });
+      }
+
+      updateNavButtons() {
+        if (!this.flickity) return;
+
+        const prevButton = this.querySelector('.ai-carousel-nav-prev-{{ ai_gen_id }}');
+        const nextButton = this.querySelector('.ai-carousel-nav-next-{{ ai_gen_id }}');
+
+        prevButton.disabled = this.flickity.selectedIndex === 0;
+        nextButton.disabled = this.flickity.selectedIndex === this.flickity.slides.length - 1;
+      }
+
+      disconnectedCallback() {
+        if (this.flickity) {
+          this.flickity.destroy();
+        }
+      }
+    }
+
+    customElements.define('image-carousel-{{ ai_gen_id }}', ImageCarousel{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Lifestyle image carousel",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Lifestyle shots"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_1",
+      "label": "Image 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_2",
+      "label": "Image 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_3",
+      "label": "Image 3"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_4",
+      "label": "Image 4"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_5",
+      "label": "Image 5"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_6",
+      "label": "Image 6"
+    },
+    {
+      "type": "header",
+      "content": "Style"
+    },
+    {
+      "type": "range",
+      "id": "image_border_radius",
+      "min": 0,
+      "max": 20,
+      "step": 2,
+      "unit": "px",
+      "label": "Image border radius",
+      "default": 8
+    },
+    {
+      "type": "color",
+      "id": "nav_button_color",
+      "label": "Navigation button color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "nav_button_hover_color",
+      "label": "Navigation button hover color",
+      "default": "#f5f5f5"
+    },
+    {
+      "type": "color",
+      "id": "nav_button_icon_color",
+      "label": "Navigation button icon color",
+      "default": "#353535"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Lifestyle image carousel"
+    }
+  ]
+}
 {% endschema %}
