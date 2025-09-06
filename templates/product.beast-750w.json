@@ -477,6 +477,28 @@
       ],
       "settings": {}
     },
+    "1757126185d72d9daa": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_b130c44_gqb4XE": {
+          "type": "ai_gen_block_b130c44",
+          "settings": {
+            "heading": "Lifestyle shots",
+            "image_1": "shopify://shop_images/wildsyde-beast-action-02.webp",
+            "image_3": "shopify://shop_images/wildsyde-beast-action-03.webp",
+            "image_border_radius": 8,
+            "nav_button_color": "#ffffff",
+            "nav_button_hover_color": "#f5f5f5",
+            "nav_button_icon_color": "#353535"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_b130c44_gqb4XE"
+      ],
+      "settings": {}
+    },
     "9904a28f-6381-41fe-96eb-d4a73d60f0a0": {
       "type": "section-testimonials",
       "blocks": {
@@ -651,6 +673,7 @@
     "section_rich_text_6nFxHX",
     "section_image_with_text_overlap_EzpCcb",
     "175696330699633405",
+    "1757126185d72d9daa",
     "9904a28f-6381-41fe-96eb-d4a73d60f0a0",
     "5a818a60-e694-4eac-a33f-5ce701e894b0",
     "product-recommendations",
