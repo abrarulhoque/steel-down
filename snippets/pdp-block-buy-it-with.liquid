@@ -13,17 +13,17 @@
   but Product objects when configured via theme editor. We need to handle both cases.
 {%- endcomment -%}
 
-{%- if recommended_products.size > 0 -%}
+{%- if recommended_products | size > 0 -%}
   <div class="buy-it-with" data-buy-it-with="{{ unique_id }}">
     {%- if heading != blank -%}
       <h3 class="buy-it-with__heading">{{ heading | escape }}</h3>
     {%- endif -%}
     
     {%- comment -%} Debug info - remove in production {%- endcomment -%}
-    {%- if recommended_products.size == 0 -%}
+    {%- if recommended_products | size == 0 -%}
       <p style="color: red; font-size: 12px;">No products selected</p>
     {%- else -%}
-      <p style="color: green; font-size: 12px;">{{ recommended_products.size }} product(s) configured</p>
+      <p style="color: green; font-size: 12px;">{{ recommended_products | size }} product(s) configured</p>
     {%- endif -%}
     
     <div class="buy-it-with__carousel" data-carousel>
@@ -82,7 +82,7 @@
         {%- endfor -%}
       </div>
       
-      {%- if show_navigation_dots and recommended_products.size > 1 -%}
+      {%- if show_navigation_dots and recommended_products | size > 1 -%}
         <div class="buy-it-with__navigation">
           {%- for recommended_item in recommended_products -%}
             {%- liquid
