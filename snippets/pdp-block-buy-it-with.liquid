@@ -9,11 +9,8 @@
 
 {%- comment -%}
   NOTE:
-  `product_list` settings (used by `recommended_products`) return an array of
-  Product objects, not handles. Previously this snippet treated the values as
-  handles and tried to resolve them via `all_products[handle]`, which always
-  failed and resulted in nothing rendering. We now iterate the Product objects
-  directly.
+  `product_list` settings return handles when configured in templates,
+  but Product objects when configured via theme editor. We need to handle both cases.
 {%- endcomment -%}
 
 {%- if recommended_products.size > 0 -%}
@@ -25,44 +22,55 @@
     {%- comment -%} Debug info - remove in production {%- endcomment -%}
     {%- if recommended_products.size == 0 -%}
       <p style="color: red; font-size: 12px;">No products selected</p>
+    {%- else -%}
+      <p style="color: green; font-size: 12px;">{{ recommended_products.size }} product(s) configured</p>
     {%- endif -%}
     
     <div class="buy-it-with__carousel" data-carousel>
       <div class="buy-it-with__slides" data-slides>
-        {%- for recommended_product in recommended_products -%}
-          {%- if recommended_product -%}
+        {%- for recommended_item in recommended_products -%}
+          {%- liquid
+            # Handle both Product objects (from theme editor) and handles (from templates)
+            if recommended_item.id
+              assign current_product = recommended_item
+            else
+              assign current_product = all_products[recommended_item]
+            endif
+          -%}
+          
+          {%- if current_product -%}
             <div class="buy-it-with__slide{% if forloop.first %} is-active{% endif %}" data-slide="{{ forloop.index0 }}">
               <div class="buy-it-with__product">
-                {%- if recommended_product.featured_image -%}
+                {%- if current_product.featured_image -%}
                   <div class="buy-it-with__image">
                     <img 
-                      src="{{ recommended_product.featured_image | image_url: width: 200 }}"
-                      alt="{{ recommended_product.featured_image.alt | escape }}"
+                      src="{{ current_product.featured_image | image_url: width: 200 }}"
+                      alt="{{ current_product.featured_image.alt | escape }}"
                       width="200"
-                      height="{{ 200 | divided_by: recommended_product.featured_image.aspect_ratio | round }}"
+                      height="{{ 200 | divided_by: current_product.featured_image.aspect_ratio | round }}"
                       loading="lazy"
                     >
                   </div>
                 {%- endif -%}
                 
                 <div class="buy-it-with__content">
-                  <h4 class="buy-it-with__product-title">{{ recommended_product.title | escape }}</h4>
+                  <h4 class="buy-it-with__product-title">{{ current_product.title | escape }}</h4>
                   
                   {%- if show_price -%}
                     <div class="buy-it-with__price">
-                      {%- if recommended_product.compare_at_price > recommended_product.price -%}
-                        <span class="buy-it-with__price--compare">{{ recommended_product.compare_at_price | money }}</span>
+                      {%- if current_product.compare_at_price > current_product.price -%}
+                        <span class="buy-it-with__price--compare">{{ current_product.compare_at_price | money }}</span>
                       {%- endif -%}
-                      <span class="buy-it-with__price--current">{{ recommended_product.price | money }}</span>
+                      <span class="buy-it-with__price--current">{{ current_product.price | money }}</span>
                     </div>
                   {%- endif -%}
                   
                   <form class="buy-it-with__form" action="{{ routes.cart_add_url }}" method="post" enctype="multipart/form-data">
-                    <input type="hidden" name="id" value="{{ recommended_product.selected_or_first_available_variant.id }}">
+                    <input type="hidden" name="id" value="{{ current_product.selected_or_first_available_variant.id }}">
                     <button 
                       type="submit" 
                       class="buy-it-with__add-to-cart btn btn--primary"
-                      {% unless recommended_product.available %}disabled{% endunless %}
+                      {% unless current_product.available %}disabled{% endunless %}
                     >
                       {{ add_to_cart_text | escape }}
                     </button>
@@ -76,8 +84,17 @@
       
       {%- if show_navigation_dots and recommended_products.size > 1 -%}
         <div class="buy-it-with__navigation">
-          {%- for recommended_product in recommended_products -%}
-            {%- if recommended_product -%}
+          {%- for recommended_item in recommended_products -%}
+            {%- liquid
+              # Handle both Product objects (from theme editor) and handles (from templates)
+              if recommended_item.id
+                assign current_product = recommended_item
+              else
+                assign current_product = all_products[recommended_item]
+              endif
+            -%}
+            
+            {%- if current_product -%}
               <button 
                 class="buy-it-with__dot{% if forloop.first %} is-active{% endif %}" 
                 data-dot="{{ forloop.index0 }}"
