@@ -1,0 +1,348 @@
+{%- liquid
+  if section.settings.bg_color.alpha == 0 or section.settings.bg_color == settings.color_bg
+    assign section_bg = false
+  else
+    assign section_bg = true
+  endif
+
+  if section.settings['section-bottom-margin']
+    assign margin_class = 'section--mb-0'
+  else
+    if section_bg == false
+      assign margin_class = 'section--mb-m'
+    endif
+  endif
+
+  if section.settings.color_text.alpha > 0
+    assign color_text = section.settings.color_text
+  else
+    assign color_text = settings.color_text
+  endif
+-%}
+
+{% render 'section-padding',
+  section-id: section.id,
+  padding-top: section.settings.padding_top,
+  padding-bottom: section.settings.padding_bottom
+%}
+
+<style>
+  .section--{{ section.id }} {
+      background: {{ section.settings.bg_color }};
+      border-top: 1px solid var(--color--text-lightest);
+  }
+  .section--{{ section.id }} .feature-benefits__icon {
+      max-width: 100%;
+      min-width: 20px;
+      width: 48px;
+      height: 48px;
+      margin: 0 auto 16px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  .section--{{ section.id }} .feature-benefits__icon svg {
+      width: 100%;
+      height: 100%;
+  }
+  .section--{{ section.id }} .feature-benefits__title,
+  .section--{{ section.id }} .feature-benefits__subtitle {
+      color: {{ color_text }};
+      text-align: center;
+  }
+  .section--{{ section.id }} .feature-benefits__title {
+      font-size: 1.125rem;
+      font-weight: 600;
+      margin: 0 0 4px 0;
+      line-height: 1.4;
+  }
+  .section--{{ section.id }} .feature-benefits__subtitle {
+      font-size: 0.875rem;
+      margin: 0;
+      opacity: 0.7;
+      line-height: 1.4;
+  }
+  .section--{{ section.id }} .feature-benefits__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 12px;
+  }
+  @media screen and (max-width: 767px) {
+    .section--{{ section.id }} .feature-benefits__item {
+        padding: 20px 16px;
+    }
+    .section--{{ section.id }} .feature-benefits__title {
+        font-size: 1rem;
+    }
+    .section--{{ section.id }} .feature-benefits__subtitle {
+        font-size: 0.8125rem;
+    }
+  }
+  .section--{{ section.id }} .feature-benefits__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0;
+      position: relative;
+  }
+  @media screen and (max-width: 767px) {
+    .section--{{ section.id }} .feature-benefits__grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+  }
+  .section--{{ section.id }} .feature-benefits__item:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 1px;
+      height: 60%;
+      background: var(--color--text-lightest);
+  }
+  @media screen and (max-width: 767px) {
+    .section--{{ section.id }} .feature-benefits__item::after {
+        display: none;
+    }
+    .section--{{ section.id }} .feature-benefits__item:not(:last-child) {
+        border-bottom: 1px solid var(--color--text-lightest);
+    }
+  }
+</style>
+
+<section
+  class="section section--{{ section.id }} {{ margin_class }} {% if section_bg %}section--has-bg{% else %}section--no-bg{% endif %}"
+  data-section-id="{{ section.id }}"
+  data-section-type="feature-benefits"
+>
+  <div class="container container--{{ section.settings.container }}">
+    <div class="feature-benefits__grid">
+      {% for block in section.blocks %}
+        <div class="feature-benefits__item" style="position: relative;">
+          {% unless block.settings.icon == 'none' %}
+            <div class="feature-benefits__icon">
+              {%- liquid
+                if block.settings.color_icon.alpha > 0
+                  assign icon_color = block.settings.color_icon
+                else
+                  assign icon_color = color_text
+                endif
+              -%}
+              {%- if block.settings['svg-code'] != blank -%}
+                {{ block.settings['svg-code'] | replace: ' width=', ' ' | replace: ' height=', ' ' }}
+              {% else %}
+                {% render 'icons', icon: block.settings.icon, icon_color: icon_color %}
+              {% endif %}
+            </div>
+          {% endunless %}
+          
+          {% unless block.settings.title == blank %}
+            <h3 class="feature-benefits__title">{{ block.settings.title | escape }}</h3>
+          {% endunless %}
+          
+          {% unless block.settings.subtitle == blank %}
+            <p class="feature-benefits__subtitle">{{ block.settings.subtitle | escape }}</p>
+          {% endunless %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% if section.blocks.size == 0 %}
+  <div class="placeholder-noblocks">
+    {{ 'homepage.onboarding.no_content' | t }}
+  </div>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Feature Benefits",
+  "class": "js-section__feature-benefits",
+  "settings": [
+    {
+      "type": "select",
+      "id": "container",
+      "label": "Layout width",
+      "default": "large",
+      "options": [
+        {
+          "label": "Default",
+          "value": "large"
+        },
+        {
+          "label": "Narrow",
+          "value": "small"
+        },
+        {
+          "label": "Wide",
+          "value": "full"
+        }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Section background",
+      "default": "rgba(0,0,0,0)"
+    },
+    {
+      "type": "color",
+      "id": "color_text",
+      "label": "Text color",
+      "default": "rgba(0,0,0,0)"
+    },
+    {
+      "type": "header",
+      "content": "Section padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Top padding",
+      "unit": "px",
+      "min": 0,
+      "max": 120,
+      "step": 3,
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Bottom padding",
+      "unit": "px",
+      "min": 0,
+      "max": 120,
+      "step": 3,
+      "default": 24
+    },
+    {
+      "type": "checkbox",
+      "id": "section-bottom-margin",
+      "label": "Reduce bottom margin",
+      "default": false
+    }
+  ],
+  "blocks": [
+    {
+      "type": "benefit",
+      "name": "Benefit Item",
+      "settings": [
+        {
+          "type": "select",
+          "id": "icon",
+          "label": "Icon",
+          "default": "icon-delivery-truck-3",
+          "options": [
+            {
+              "value": "none",
+              "label": "none"
+            },
+            {
+              "value": "icon-delivery-truck-3",
+              "label": "delivery truck"
+            },
+            {
+              "value": "icon-shield-check",
+              "label": "checkmark in shield"
+            },
+            {
+              "value": "icon-lock-2",
+              "label": "lock"
+            },
+            {
+              "value": "icon-keyboard-arrow-return",
+              "label": "return"
+            },
+            {
+              "value": "icon-stopwatch",
+              "label": "stopwatch"
+            },
+            {
+              "value": "icon-award-medal",
+              "label": "award medal"
+            },
+            {
+              "value": "icon-check-circle-1",
+              "label": "checkmark in circle"
+            },
+            {
+              "value": "icon-headphones-customer-support",
+              "label": "customer support"
+            },
+            {
+              "value": "icon-calendar-date",
+              "label": "calendar"
+            }
+          ]
+        },
+        {
+          "type": "color",
+          "id": "color_icon",
+          "label": "Icon color",
+          "default": "rgba(0,0,0,0)"
+        },
+        {
+          "type": "html",
+          "id": "svg-code",
+          "label": "SVG icon code",
+          "info": "Learn more about adding your own SVG icons [here](https://support.safeasmilk.co/article/236-general-add-custom-svg-icons-to-your-theme)."
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Free Shipping"
+        },
+        {
+          "type": "text",
+          "id": "subtitle",
+          "label": "Subtitle",
+          "default": "on all eBikes"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Feature Benefits",
+      "blocks": [
+        {
+          "type": "benefit",
+          "settings": {
+            "icon": "icon-delivery-truck-3",
+            "title": "Free Shipping",
+            "subtitle": "on all eBikes"
+          }
+        },
+        {
+          "type": "benefit",
+          "settings": {
+            "icon": "icon-shield-check",
+            "title": "1-Year Warranty",
+            "subtitle": "to protect your purchase"
+          }
+        },
+        {
+          "type": "benefit",
+          "settings": {
+            "icon": "icon-shield-check",
+            "title": "14-Day Trial",
+            "subtitle": "Terms & Conditions apply"
+          }
+        }
+      ]
+    }
+  ],
+  "enabled_on": {
+    "templates": ["*"],
+    "groups": ["header", "footer"]
+  }
+}
+{% endschema %}
