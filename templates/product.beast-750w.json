@@ -449,7 +449,7 @@
       "type": "section-lifestyle-gallery",
       "name": "Lifestyle Gallery",
       "settings": {
-        "heading": "Lifestyle Gallery",
+        "heading": "",
         "above_fold": false,
         "section_width": "contained",
         "image_1": "shopify://shop_images/wildsyde-beast-action-02.webp",
