@@ -1,0 +1,56 @@
+{%- liquid
+  assign heading = block.settings.heading | default: 'Recommended Rider Height'
+  assign description = block.settings.description | default: 'Fits riders 5\'6" to 6\'5"+ thanks to the extra long extendable seat post and easy adjustable handlebars.'
+-%}
+
+<div class="recommended-specs">
+  {%- if heading != blank -%}
+    <h3 class="recommended-specs__heading">{{ heading | escape }}</h3>
+  {%- endif -%}
+  
+  {%- if description != blank -%}
+    <div class="recommended-specs__description">
+      {{ description | escape }}
+    </div>
+  {%- endif -%}
+</div>
+
+<style>
+  .recommended-specs {
+    margin: 1.5rem 0;
+    padding: 1.25rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #4a9b8f;
+  }
+  
+  .recommended-specs__heading {
+    margin: 0 0 0.75rem 0;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .recommended-specs__description {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #555;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .recommended-specs {
+      margin: 1rem 0;
+      padding: 1rem;
+    }
+    
+    .recommended-specs__heading {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .recommended-specs__description {
+      font-size: 0.85rem;
+    }
+  }
+</style>

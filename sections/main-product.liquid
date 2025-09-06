@@ -1061,6 +1061,18 @@
                                                 %}
                                             </div>
 
+                                        {%- when 'buy-it-with' -%}
+                                            <div class="product-single__box__block product-single__box__block--{{ block.type }}" {{ block.shopify_attributes }}>
+                                                {% render 'pdp-block-buy-it-with', block: block, product: product %}
+                                            </div>
+                                        {%- when 'guarantee-badges' -%}
+                                            <div class="product-single__box__block product-single__box__block--{{ block.type }}" {{ block.shopify_attributes }}>
+                                                {% render 'pdp-block-guarantee-badges', block: block %}
+                                            </div>
+                                        {%- when 'recommended-specs' -%}
+                                            <div class="product-single__box__block product-single__box__block--{{ block.type }}" {{ block.shopify_attributes }}>
+                                                {% render 'pdp-block-recommended-specs', block: block %}
+                                            </div>
                                         {%- when 'custom-liquid' -%}
                                             <div class="product-single__box__block product-single__box__block--{{ block.type }} u-mt0 u-mb0" {{ block.shopify_attributes }}>
                                                 {{ block.settings.custom_liquid }}
@@ -1384,6 +1396,18 @@
                                             %}
                                         </div>
 
+                                    {%- when 'buy-it-with' -%}
+                                        <div class="product-single__box__block product-single__box__block--{{ block.type }}" {{ block.shopify_attributes }}>
+                                            {% render 'pdp-block-buy-it-with', block: block, product: product %}
+                                        </div>
+                                    {%- when 'guarantee-badges' -%}
+                                        <div class="product-single__box__block product-single__box__block--{{ block.type }}" {{ block.shopify_attributes }}>
+                                            {% render 'pdp-block-guarantee-badges', block: block %}
+                                        </div>
+                                    {%- when 'recommended-specs' -%}
+                                        <div class="product-single__box__block product-single__box__block--{{ block.type }}" {{ block.shopify_attributes }}>
+                                            {% render 'pdp-block-recommended-specs', block: block %}
+                                        </div>
                                     {%- when 'custom-liquid' -%}
                                         <div class="product-single__box__block product-single__box__block--{{ block.type }} u-mt0 u-mb0" {{ block.shopify_attributes }}>
                                             {{ block.settings.custom_liquid }}
@@ -5637,6 +5661,174 @@ new ResizeObserver(theme.setPdpHeight).observe(
                     "id": "main_product_title",
                     "label": "Main Product Title Override",
                     "info": "Optional custom title for main product (uses product title if empty)"
+                }
+            ]
+        },
+        {
+            "type": "buy-it-with",
+            "name": "Buy it With",
+            "settings": [
+                {
+                    "type": "select",
+                    "id": "column",
+                    "label": "Position (desktop)",
+                    "default": "primary",
+                    "options": [
+                        {
+                            "value": "primary",
+                            "label": "Form column"
+                        },
+                        {
+                            "value": "secondary",
+                            "label": "Gallery column"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "id": "heading",
+                    "label": "Heading",
+                    "default": "Buy it With"
+                },
+                {
+                    "type": "product_list",
+                    "id": "recommended_products",
+                    "label": "Recommended Products",
+                    "info": "Select products to recommend with the current product"
+                },
+                {
+                    "type": "text",
+                    "id": "add_to_cart_text",
+                    "label": "Add to Cart Button Text",
+                    "default": "ADD TO CART"
+                },
+                {
+                    "type": "checkbox",
+                    "id": "show_price",
+                    "label": "Show Price",
+                    "default": true
+                },
+                {
+                    "type": "checkbox",
+                    "id": "show_navigation_dots",
+                    "label": "Show Navigation Dots",
+                    "default": true
+                }
+            ]
+        },
+        {
+            "type": "guarantee-badges",
+            "name": "Guarantee Badges",
+            "settings": [
+                {
+                    "type": "select",
+                    "id": "column",
+                    "label": "Position (desktop)",
+                    "default": "primary",
+                    "options": [
+                        {
+                            "value": "primary",
+                            "label": "Form column"
+                        },
+                        {
+                            "value": "secondary",
+                            "label": "Gallery column"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "id": "trial_text",
+                    "label": "Trial Period Text",
+                    "default": "14-Day Trial"
+                },
+                {
+                    "type": "text",
+                    "id": "shipping_text",
+                    "label": "Shipping Text",
+                    "default": "Free Shipping*"
+                },
+                {
+                    "type": "text",
+                    "id": "warranty_text",
+                    "label": "Warranty Text",
+                    "default": "1-Year Warranty"
+                },
+                {
+                    "type": "text",
+                    "id": "processing_text",
+                    "label": "Processing Text",
+                    "default": "24-48hr Processing"
+                },
+                {
+                    "type": "text",
+                    "id": "disclaimer_text",
+                    "label": "Disclaimer Text",
+                    "default": "*to contiguous USA"
+                },
+                {
+                    "type": "checkbox",
+                    "id": "show_trial",
+                    "label": "Show Trial Badge",
+                    "default": true
+                },
+                {
+                    "type": "checkbox",
+                    "id": "show_shipping",
+                    "label": "Show Shipping Badge",
+                    "default": true
+                },
+                {
+                    "type": "checkbox",
+                    "id": "show_warranty",
+                    "label": "Show Warranty Badge",
+                    "default": true
+                },
+                {
+                    "type": "checkbox",
+                    "id": "show_processing",
+                    "label": "Show Processing Badge",
+                    "default": true
+                },
+                {
+                    "type": "checkbox",
+                    "id": "show_disclaimer",
+                    "label": "Show Disclaimer",
+                    "default": true
+                }
+            ]
+        },
+        {
+            "type": "recommended-specs",
+            "name": "Recommended Specifications",
+            "settings": [
+                {
+                    "type": "select",
+                    "id": "column",
+                    "label": "Position (desktop)",
+                    "default": "primary",
+                    "options": [
+                        {
+                            "value": "primary",
+                            "label": "Form column"
+                        },
+                        {
+                            "value": "secondary",
+                            "label": "Gallery column"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "id": "heading",
+                    "label": "Heading",
+                    "default": "Recommended Rider Height"
+                },
+                {
+                    "type": "text",
+                    "id": "description",
+                    "label": "Description",
+                    "default": "Fits riders 5'6\" to 6'5\"+ thanks to the extra long extendable seat post and easy adjustable handlebars."
                 }
             ]
         },

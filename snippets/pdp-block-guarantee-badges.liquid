@@ -1,0 +1,123 @@
+{%- liquid
+  assign trial_text = block.settings.trial_text | default: '14-Day Trial'
+  assign shipping_text = block.settings.shipping_text | default: 'Free Shipping*'
+  assign warranty_text = block.settings.warranty_text | default: '1-Year Warranty'
+  assign processing_text = block.settings.processing_text | default: '24-48hr Processing'
+  assign disclaimer_text = block.settings.disclaimer_text | default: '*to contiguous USA'
+  
+  assign show_trial = block.settings.show_trial | default: true
+  assign show_shipping = block.settings.show_shipping | default: true
+  assign show_warranty = block.settings.show_warranty | default: true
+  assign show_processing = block.settings.show_processing | default: true
+  assign show_disclaimer = block.settings.show_disclaimer | default: true
+-%}
+
+<div class="guarantee-badges">
+  <div class="guarantee-badges__grid">
+    {%- if show_trial -%}
+      <div class="guarantee-badges__item">
+        <div class="guarantee-badges__icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 100-16 8 8 0 000 16zm-1-5h2v2h-2v-2zm0-8h2v6h-2V7z" fill="currentColor"/>
+          </svg>
+        </div>
+        <span class="guarantee-badges__text">{{ trial_text | escape }}</span>
+      </div>
+    {%- endif -%}
+    
+    {%- if show_shipping -%}
+      <div class="guarantee-badges__item">
+        <div class="guarantee-badges__icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8.965 18a3.5 3.5 0 00-6.93 0H1a1 1 0 01-1-1V4a1 1 0 011-1h14a1 1 0 011 1v10h3l3 4.5V20a1 1 0 01-1 1h-2.035a3.5 3.5 0 00-6.93 0h-5.07zM15 5H2v8h13V5zm1 6.5V15h4.5L19 13.5H16zM5.5 19a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm12 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" fill="currentColor"/>
+          </svg>
+        </div>
+        <span class="guarantee-badges__text">{{ shipping_text | escape }}</span>
+      </div>
+    {%- endif -%}
+    
+    {%- if show_warranty -%}
+      <div class="guarantee-badges__item">
+        <div class="guarantee-badges__icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3.783 2.826L12 1l8.217 1.826a1 1 0 01.783.976v9.987a6 6 0 01-2.672 4.992L12 23l-6.328-4.219A6 6 0 013 13.79V3.802a1 1 0 01.783-.976zM5 4.604v9.185a4 4 0 001.781 3.328L12 20.597l5.219-3.48A4 4 0 0019 13.79V4.604L12 3.05 5 4.604zM13 12h3l-4 5-4-5h3V8h2v4z" fill="currentColor"/>
+          </svg>
+        </div>
+        <span class="guarantee-badges__text">{{ warranty_text | escape }}</span>
+      </div>
+    {%- endif -%}
+    
+    {%- if show_processing -%}
+      <div class="guarantee-badges__item">
+        <div class="guarantee-badges__icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 100-16 8 8 0 000 16zm1-8h3l-4-4-4 4h3v4h2v-4z" fill="currentColor"/>
+          </svg>
+        </div>
+        <span class="guarantee-badges__text">{{ processing_text | escape }}</span>
+      </div>
+    {%- endif -%}
+  </div>
+  
+  {%- if show_disclaimer and disclaimer_text != blank -%}
+    <div class="guarantee-badges__disclaimer">
+      {{ disclaimer_text | escape }}
+    </div>
+  {%- endif -%}
+</div>
+
+<style>
+  .guarantee-badges {
+    margin: 1.5rem 0;
+  }
+  
+  .guarantee-badges__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .guarantee-badges__item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+  
+  .guarantee-badges__icon {
+    width: 24px;
+    height: 24px;
+    color: #4a9b8f;
+    flex-shrink: 0;
+  }
+  
+  .guarantee-badges__text {
+    line-height: 1.3;
+  }
+  
+  .guarantee-badges__disclaimer {
+    font-size: 0.75rem;
+    color: #666;
+    font-style: italic;
+    text-align: left;
+    margin-top: 0.5rem;
+  }
+  
+  @media screen and (max-width: 480px) {
+    .guarantee-badges__grid {
+      grid-template-columns: 1fr;
+      gap: 0.75rem;
+    }
+    
+    .guarantee-badges__item {
+      font-size: 0.8rem;
+    }
+    
+    .guarantee-badges__icon {
+      width: 20px;
+      height: 20px;
+    }
+  }
+</style>
