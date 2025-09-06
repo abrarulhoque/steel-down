@@ -608,6 +608,37 @@
         "padding_bottom": 64
       }
     },
+    "section_geometry_specifications_NbqTRF": {
+      "type": "section-geometry-specifications",
+      "blocks": {
+        "accordion_item_gEnUHx": {
+          "type": "accordion_item",
+          "settings": {
+            "title": "Geometry",
+            "content": "<p><strong>A: </strong>Top tube length = 24\"/62.63cm </p><p><strong>B: </strong>Adjustable seat to ground height = Low: 33.5\"/85cm | High: 42 .5\"/105cm </p><p><strong>C: </strong>Seat to pedal at low to high point = Low: 31\"/79cm | High: 39\"/99cm </p><p><strong>D: </strong>Standover height = 31\"/78.74cm </p><p><strong>E: </strong>Handlebar height from ground to stem attachment = 42\"/106.68cm </p><p><strong>F: </strong>Total length of complete bike = 76\"/193.04cm </p><p><strong>G: </strong>Handlebar distance from grip to grip = 25\"/63.5cm </p>"
+          }
+        },
+        "accordion_item_QPFttR": {
+          "type": "accordion_item",
+          "settings": {
+            "title": "Specifications",
+            "content": "<p><strong>Battery Weight: </strong>9lbs (4kg)  </p><p><strong>Bicycle Weight:</strong> 79lbs (34kg), including battery  </p><p><strong>Charging Time: </strong>8 hours from empty  </p><p><strong>Class 2 Electric Bicycle:</strong> governed at 20mph to meet Class 2 specifications (with 5 speed PAS and thumb activated throttle) </p><p><strong>Distance/Cruising Range:</strong> 35-50 miles on a single charge, with many riders experiencing even greater distances under optimal conditions </p><p><strong>Max load:</strong> 300lb/136Kg </p><p><strong>Motor:</strong> 750W 48V latest generation hub gear brushless BAFANG motor producing 80Nm power </p><p><strong>Size Range:</strong> one size (5’ 6” and above)  </p><p><strong>Standover Height: </strong>31” </p>"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_item_gEnUHx",
+        "accordion_item_QPFttR"
+      ],
+      "name": "Geometry & Specifications",
+      "settings": {
+        "title": "Geometry & Specifications",
+        "heading_size": 3,
+        "image": "shopify://shop_images/wildsyde-ebikes-beast-geometry.webp",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
     "9904a28f-6381-41fe-96eb-d4a73d60f0a0": {
       "type": "section-testimonials",
       "blocks": {
@@ -784,6 +815,7 @@
     "section_lifestyle_gallery_TTbqxt",
     "section_rider_height_qktdTB",
     "section_key_features_gLDH7A",
+    "section_geometry_specifications_NbqTRF",
     "9904a28f-6381-41fe-96eb-d4a73d60f0a0",
     "5a818a60-e694-4eac-a33f-5ce701e894b0",
     "product-recommendations",
