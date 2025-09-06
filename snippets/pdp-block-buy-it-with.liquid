@@ -1,27 +1,36 @@
 {%- liquid
-  assign product_handles = block.settings.recommended_products
+  assign recommended_products = block.settings.recommended_products
   assign heading = block.settings.heading | default: 'Buy it With'
   assign add_to_cart_text = block.settings.add_to_cart_text | default: 'ADD TO CART'
   assign show_price = block.settings.show_price | default: true
   assign show_navigation_dots = block.settings.show_navigation_dots | default: true
   assign unique_id = block.id | append: '-buy-it-with'
 -%}
+-%}
 
-{%- if product_handles.size > 0 -%}
+{%- comment -%}
+  NOTE:
+  `product_list` settings (used by `recommended_products`) return an array of
+  Product objects, not handles. Previously this snippet treated the values as
+  handles and tried to resolve them via `all_products[handle]`, which always
+  failed and resulted in nothing rendering. We now iterate the Product objects
+  directly.
+{%- endcomment -%}
+
+{%- if recommended_products.size > 0 -%}
   <div class="buy-it-with" data-buy-it-with="{{ unique_id }}">
     {%- if heading != blank -%}
       <h3 class="buy-it-with__heading">{{ heading | escape }}</h3>
     {%- endif -%}
     
     {%- comment -%} Debug info - remove in production {%- endcomment -%}
-    {%- if product_handles.size == 0 -%}
+    {%- if recommended_products.size == 0 -%}
       <p style="color: red; font-size: 12px;">No products selected</p>
     {%- endif -%}
     
     <div class="buy-it-with__carousel" data-carousel>
       <div class="buy-it-with__slides" data-slides>
-        {%- for product_handle in product_handles -%}
-          {%- assign recommended_product = all_products[product_handle] -%}
+        {%- for recommended_product in recommended_products -%}
           {%- if recommended_product and recommended_product.available -%}
             <div class="buy-it-with__slide{% if forloop.first %} is-active{% endif %}" data-slide="{{ forloop.index0 }}">
               <div class="buy-it-with__product">
@@ -66,10 +75,9 @@
         {%- endfor -%}
       </div>
       
-      {%- if show_navigation_dots and product_handles.size > 1 -%}
+      {%- if show_navigation_dots and recommended_products.size > 1 -%}
         <div class="buy-it-with__navigation">
-          {%- for product_handle in product_handles -%}
-            {%- assign recommended_product = all_products[product_handle] -%}
+          {%- for recommended_product in recommended_products -%}
             {%- if recommended_product and recommended_product.available -%}
               <button 
                 class="buy-it-with__dot{% if forloop.first %} is-active{% endif %}" 
