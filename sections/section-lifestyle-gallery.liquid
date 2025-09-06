@@ -1,0 +1,501 @@
+{% assign section_id = section.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .lifestyle-gallery-{{ section_id }} {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 60px;
+    position: relative;
+  }
+
+  @media screen and (max-width: 1023px) {
+    .lifestyle-gallery-{{ section_id }} {
+      padding: 0 20px;
+    }
+  }
+
+  .lifestyle-carousel-container-{{ section_id }} {
+    position: relative;
+  }
+
+  .lifestyle-carousel-{{ section_id }} {
+    overflow: hidden;
+  }
+
+  .lifestyle-carousel-{{ section_id }} .flickity-viewport {
+    overflow: visible;
+  }
+
+  .lifestyle-carousel-cell-{{ section_id }} {
+    margin-right: 20px;
+    aspect-ratio: 5 / 4;
+    position: relative;
+  }
+
+  .lifestyle-carousel-cell-{{ section_id }}:last-child {
+    margin-right: 0;
+  }
+
+  .lifestyle-carousel-cell-{{ section_id }} img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: {{ section.settings.image_border_radius }}px;
+  }
+
+  .lifestyle-carousel-placeholder-{{ section_id }} {
+    width: 100%;
+    height: 100%;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: {{ section.settings.image_border_radius }}px;
+    position: relative;
+  }
+
+  .lifestyle-carousel-placeholder-{{ section_id }} svg {
+    width: 60px;
+    height: 60px;
+    opacity: 0.3;
+  }
+
+  .lifestyle-carousel-empty-state-{{ section_id }} {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    pointer-events: none;
+  }
+
+  .lifestyle-carousel-nav-{{ section_id }} {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: {{ section.settings.nav_button_color }};
+    border: none;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 2;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  .lifestyle-carousel-nav-{{ section_id }}:hover {
+    background: {{ section.settings.nav_button_hover_color }};
+    transform: translateY(-50%) scale(1.05);
+  }
+
+  .lifestyle-carousel-nav-{{ section_id }}:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+    transform: translateY(-50%) scale(1);
+  }
+
+  .lifestyle-carousel-nav-{{ section_id }}:focus {
+    outline: 2px solid {{ settings.color_accent }};
+    outline-offset: 2px;
+  }
+
+  .lifestyle-carousel-nav-{{ section_id }} svg {
+    width: 20px;
+    height: 20px;
+    color: {{ section.settings.nav_button_icon_color }};
+  }
+
+  .lifestyle-carousel-nav-prev-{{ section_id }} {
+    left: -24px;
+  }
+
+  .lifestyle-carousel-nav-next-{{ section_id }} {
+    right: -24px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    .lifestyle-carousel-cell-{{ section_id }} {
+      width: calc(((1440px - 120px) - 40px) / 3);
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .lifestyle-carousel-cell-{{ section_id }} {
+      width: calc((((100vw - 40px) * 0.9) - 20px) / 2);
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .lifestyle-carousel-cell-{{ section_id }} {
+      width: calc((100vw - 40px) - 20px);
+    }
+    
+    .lifestyle-carousel-nav-prev-{{ section_id }} {
+      left: -16px;
+    }
+
+    .lifestyle-carousel-nav-next-{{ section_id }} {
+      right: -16px;
+    }
+  }
+
+  .lifestyle-carousel-heading-{{ section_id }} {
+    margin-bottom: 30px;
+    color: {{ settings.color_headings }};
+    font-family: {{ settings.type_header_font.family }}, {{ settings.type_header_font.fallback_families }};
+    font-weight: {{ settings.type_header_font.weight }};
+    font-size: calc({{ settings.type_header_scale }}% * 2rem / 100);
+    letter-spacing: {{ settings.type_header_letterspace }}px;
+    {% if settings.type_header_capitalize %}text-transform: uppercase;{% endif %}
+  }
+
+  {% if settings.type_header_border %}
+    .lifestyle-carousel-heading-{{ section_id }}::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: {{ settings.type_header_border_size }}px;
+      background-color: {{ settings.color_header_border }};
+      margin-top: 10px;
+    }
+  {% endif %}
+
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{% endstyle %}
+
+<div class="section-{{ section.id }}-padding">
+  <lifestyle-gallery-{{ section_id }}
+    class="lifestyle-gallery-{{ section_id }}"
+    {{ section.shopify_attributes }}
+    role="group"
+    tabindex="0"
+    aria-label="Lifestyle gallery"
+  >
+    {% if section.settings.heading != blank %}
+      <h2 class="lifestyle-carousel-heading-{{ section_id }}">{{ section.settings.heading }}</h2>
+    {% endif %}
+
+    <div class="lifestyle-carousel-container-{{ section_id }}">
+      <div class="lifestyle-carousel-{{ section_id }}" data-flickity='{"cellAlign": "left", "contain": true, "prevNextButtons": false, "pageDots": false, "draggable": true, "wrapAround": false, "groupCells": false, "imagesLoaded": true, "setGallerySize": true}'>
+        {% assign has_images = false %}
+        {% for i in (1..8) %}
+          {% liquid
+            assign image_key = 'image_' | append: i
+            assign image = section.settings[image_key]
+          %}
+          
+          {% if image != blank %}
+            {% assign has_images = true %}
+            <div class="lifestyle-carousel-cell-{{ section_id }}">
+              <img
+                src="{{ image | image_url: width: 800 }}"
+                srcset="{{ image | image_url: width: 400 }} 400w,
+                        {{ image | image_url: width: 600 }} 600w,
+                        {{ image | image_url: width: 800 }} 800w,
+                        {{ image | image_url: width: 1000 }} 1000w"
+                sizes="(min-width: 1024px) calc(((1440px - 120px) - 40px) / 3),
+                       (min-width: 768px) calc((((100vw - 40px) * 0.9) - 20px) / 2),
+                       calc((100vw - 40px) - 20px)"
+                alt="{% if image.alt != blank %}{{ image.alt | escape }}{% else %}Lifestyle image {{ i }}{% endif %}"
+                {% if i == 1 and section.settings.above_fold %}loading="eager" fetchpriority="high"{% else %}loading="lazy"{% endif %}
+                width="{{ image.width }}"
+                height="{{ image.height }}"
+              >
+            </div>
+          {% endif %}
+        {% endfor %}
+
+        {% unless has_images %}
+          <div class="lifestyle-carousel-cell-{{ section_id }}">
+            <div class="lifestyle-carousel-placeholder-{{ section_id }}">
+              {{ 'image' | placeholder_svg_tag }}
+              <div class="lifestyle-carousel-empty-state-{{ section_id }}">
+                Add lifestyle images
+              </div>
+            </div>
+          </div>
+        {% endunless %}
+      </div>
+
+      {% if has_images %}
+        <button
+          class="lifestyle-carousel-nav-{{ section_id }} lifestyle-carousel-nav-prev-{{ section_id }}"
+          type="button"
+          aria-label="Previous image"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15,18 9,12 15,6"></polyline>
+          </svg>
+        </button>
+
+        <button
+          class="lifestyle-carousel-nav-{{ section_id }} lifestyle-carousel-nav-next-{{ section_id }}"
+          type="button"
+          aria-label="Next image"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9,18 15,12 9,6"></polyline>
+          </svg>
+        </button>
+      {% endif %}
+    </div>
+  </lifestyle-gallery-{{ section_id }}>
+</div>
+
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+<script>
+  (function() {
+    class LifestyleGallery{{ section_id }} extends HTMLElement {
+      constructor() {
+        super();
+        this.flickity = null;
+      }
+
+      connectedCallback() {
+        this.initCarousel();
+        this.setupNavigation();
+        this.setupKeyboardNavigation();
+      }
+
+      initCarousel() {
+        const carousel = this.querySelector('.lifestyle-carousel-{{ section_id }}');
+        const cells = carousel.querySelectorAll('.lifestyle-carousel-cell-{{ section_id }}');
+        
+        if (cells.length <= 1) {
+          // Hide navigation if only one or no images
+          const navButtons = this.querySelectorAll('.lifestyle-carousel-nav-{{ section_id }}');
+          navButtons.forEach(btn => btn.style.display = 'none');
+          return;
+        }
+        
+        if (typeof Flickity !== 'undefined') {
+          this.flickity = new Flickity(carousel, {
+            cellAlign: 'left',
+            contain: true,
+            prevNextButtons: false,
+            pageDots: false,
+            draggable: true,
+            wrapAround: false,
+            groupCells: false,
+            imagesLoaded: true,
+            setGallerySize: true
+          });
+
+          this.flickity.on('change', () => {
+            this.updateNavButtons();
+          });
+
+          this.updateNavButtons();
+        }
+      }
+
+      setupNavigation() {
+        const prevButton = this.querySelector('.lifestyle-carousel-nav-prev-{{ section_id }}');
+        const nextButton = this.querySelector('.lifestyle-carousel-nav-next-{{ section_id }}');
+
+        if (prevButton) {
+          prevButton.addEventListener('click', () => {
+            if (this.flickity) {
+              this.flickity.previous();
+            }
+          });
+        }
+
+        if (nextButton) {
+          nextButton.addEventListener('click', () => {
+            if (this.flickity) {
+              this.flickity.next();
+            }
+          });
+        }
+      }
+
+      setupKeyboardNavigation() {
+        this.addEventListener('keydown', (e) => {
+          if (!this.flickity) return;
+          
+          if (e.key === 'ArrowLeft') {
+            e.preventDefault();
+            this.flickity.previous();
+          } else if (e.key === 'ArrowRight') {
+            e.preventDefault();
+            this.flickity.next();
+          }
+        });
+      }
+
+      updateNavButtons() {
+        if (!this.flickity) return;
+
+        const prevButton = this.querySelector('.lifestyle-carousel-nav-prev-{{ section_id }}');
+        const nextButton = this.querySelector('.lifestyle-carousel-nav-next-{{ section_id }}');
+
+        if (prevButton) {
+          prevButton.disabled = this.flickity.selectedIndex === 0;
+        }
+
+        if (nextButton) {
+          nextButton.disabled = this.flickity.selectedIndex === this.flickity.slides.length - 1;
+        }
+      }
+
+      disconnectedCallback() {
+        if (this.flickity) {
+          this.flickity.destroy();
+        }
+      }
+    }
+
+    customElements.define('lifestyle-gallery-{{ section_id }}', LifestyleGallery{{ section_id }});
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Lifestyle Gallery",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Lifestyle Gallery"
+    },
+    {
+      "type": "checkbox",
+      "id": "above_fold",
+      "label": "This section is above the fold",
+      "info": "Enable for better performance if this section appears above the fold",
+      "default": false
+    },
+    {
+      "type": "image_picker",
+      "id": "image_1",
+      "label": "Image 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_2",
+      "label": "Image 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_3",
+      "label": "Image 3"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_4",
+      "label": "Image 4"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_5",
+      "label": "Image 5"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_6",
+      "label": "Image 6"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_7",
+      "label": "Image 7"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_8",
+      "label": "Image 8"
+    },
+    {
+      "type": "header",
+      "content": "Style"
+    },
+    {
+      "type": "range",
+      "id": "image_border_radius",
+      "min": 0,
+      "max": 20,
+      "step": 2,
+      "unit": "px",
+      "label": "Image border radius",
+      "default": 8
+    },
+    {
+      "type": "color",
+      "id": "nav_button_color",
+      "label": "Navigation button color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "nav_button_hover_color",
+      "label": "Navigation button hover color",
+      "default": "#f5f5f5"
+    },
+    {
+      "type": "color",
+      "id": "nav_button_icon_color",
+      "label": "Navigation button icon color",
+      "default": "#353535"
+    },
+    {
+      "type": "header",
+      "content": "Section padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 36
+    }
+  ],
+  "presets": [
+    {
+      "name": "Lifestyle Gallery"
+    }
+  ]
+}
+{% endschema %}
