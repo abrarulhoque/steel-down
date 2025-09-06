@@ -112,10 +112,11 @@
   .accordion__text-wrapper {
     overflow: hidden;
     transition: height 0.25s ease;
+    height: 0;
   }
   
-  .accordion__text-wrapper:not(.is-expanded) {
-    height: 0;
+  .accordion__text-wrapper.is-expanded {
+    height: auto;
   }
   
   .accordion__text {
@@ -222,14 +223,21 @@ document.addEventListener('DOMContentLoaded', function() {
           targetDetail.open = true;
           targetSummary.classList.add('is-expanded');
           targetSummary.setAttribute('aria-expanded', 'true');
-          targetWrapper.classList.add('is-expanded');
-          targetWrapper.setAttribute('aria-expanded', 'true');
           
-          // Animate height
+          // Animate height before adding expanded class
           const content = targetWrapper.querySelector('.accordion__text');
           if (content) {
-            const contentHeight = content.offsetHeight;
-            targetWrapper.style.height = contentHeight + 'px';
+            // Get the natural height of the content
+            targetWrapper.style.height = 'auto';
+            const contentHeight = targetWrapper.offsetHeight;
+            targetWrapper.style.height = '0px';
+            
+            // Force reflow then animate to full height
+            requestAnimationFrame(() => {
+              targetWrapper.style.height = contentHeight + 'px';
+              targetWrapper.classList.add('is-expanded');
+              targetWrapper.setAttribute('aria-expanded', 'true');
+            });
             
             // Set to auto after animation completes
             setTimeout(() => {
