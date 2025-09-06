@@ -1,0 +1,605 @@
+{% render 'section-padding',
+  section-id: section.id,
+  padding-top: section.settings.padding_top,
+  padding-bottom: section.settings.padding_bottom
+%}
+
+{% style %}
+  .key-features-{{ section.id }} {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 60px;
+  }
+
+  @media screen and (max-width: 1023px) {
+    .key-features-{{ section.id }} {
+      padding: 0 20px;
+    }
+  }
+
+  .key-features-{{ section.id }} .section__title {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .key-features-carousel-container-{{ section.id }} {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .key-features-carousel-{{ section.id }} {
+    display: flex;
+    transition: transform 0.3s ease;
+    overflow: visible;
+  }
+
+  .key-features-carousel-cell-{{ section.id }} {
+    flex: 0 0 auto;
+    margin-right: 20px;
+    text-align: center;
+    position: relative;
+  }
+
+  .key-features-carousel-cell-{{ section.id }}:last-child {
+    margin-right: 0;
+  }
+
+  .key-features-carousel-cell-{{ section.id }} .feature-image {
+    position: relative;
+    border-radius: 14px;
+    overflow: hidden;
+    background: var(--color--background-lightest, #f8f8f8);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  }
+
+  @media screen and (min-width: 768px) {
+    .key-features-carousel-cell-{{ section.id }} .feature-image {
+      --aspect-ratio: 70%;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .key-features-carousel-cell-{{ section.id }} .feature-image {
+      --aspect-ratio: 80%;
+    }
+  }
+
+  .key-features-carousel-cell-{{ section.id }} .feature-image::before {
+    content: '';
+    display: block;
+    width: 100%;
+    padding-top: var(--aspect-ratio);
+  }
+
+  .key-features-carousel-cell-{{ section.id }} .feature-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+
+  .key-features-carousel-cell-{{ section.id }} .feature-content {
+    padding-top: 16px;
+  }
+
+  .key-features-carousel-cell-{{ section.id }} .feature-title {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 8px;
+    color: var(--color--text, #212121);
+    min-height: 2.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .key-features-carousel-cell-{{ section.id }} .feature-description {
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: var(--color--text, #666);
+    margin: 0;
+  }
+
+  .key-features-placeholder-{{ section.id }} {
+    width: 100%;
+    height: 100%;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .key-features-placeholder-{{ section.id }} svg {
+    width: 60px;
+    height: 60px;
+    opacity: 0.3;
+  }
+
+  .key-features-nav-{{ section.id }} {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #ffffff;
+    border: none;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 2;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .key-features-carousel-container-{{ section.id }}:hover .key-features-nav-{{ section.id }},
+  .key-features-carousel-container-{{ section.id }}:focus-within .key-features-nav-{{ section.id }} {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .key-features-nav-{{ section.id }}:hover {
+    background: #f5f5f5;
+    transform: translateY(-50%) scale(1.05);
+  }
+
+  .key-features-nav-{{ section.id }}:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+    transform: translateY(-50%) scale(1);
+  }
+
+  .key-features-nav-{{ section.id }}:focus {
+    opacity: 1;
+    pointer-events: auto;
+    outline: 2px solid {{ settings.color_accent }};
+    outline-offset: 2px;
+  }
+
+  .key-features-nav-{{ section.id }} svg {
+    width: 20px;
+    height: 20px;
+    color: #353535;
+  }
+
+  .key-features-nav-prev-{{ section.id }} {
+    left: 10px;
+  }
+
+  .key-features-nav-next-{{ section.id }} {
+    right: 10px;
+  }
+
+  @media (pointer: coarse) {
+    .key-features-nav-{{ section.id }} {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .key-features-carousel-cell-{{ section.id }} {
+      width: calc(((100vw - 120px) - 40px) / 3);
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .key-features-carousel-cell-{{ section.id }} {
+      width: calc(((100vw - 40px) * 0.9 - 20px) / 2);
+    }
+    
+    .key-features-nav-prev-{{ section.id }} {
+      left: 8px;
+    }
+
+    .key-features-nav-next-{{ section.id }} {
+      right: 8px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .key-features-carousel-cell-{{ section.id }} {
+      width: calc((100vw - 40px) - 20px);
+    }
+    
+    .key-features-nav-prev-{{ section.id }} {
+      left: 5px;
+    }
+
+    .key-features-nav-next-{{ section.id }} {
+      right: 5px;
+    }
+  }
+
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{% endstyle %}
+
+<section class="section section--{{ section.id }} section-{{ section.id }}-padding" data-section-id="{{ section.id }}" data-section-type="key-features">
+  <div class="key-features-{{ section.id }}">
+    {% unless section.settings.title == blank %}
+      <h2 class="section__title">
+        <span class="section__title-text">{{ section.settings.title | escape }}</span>
+      </h2>
+    {% endunless %}
+
+    <div class="key-features-carousel-container-{{ section.id }}" 
+         data-section-id="{{ section.id }}"
+         role="group" 
+         aria-label="Key features carousel">
+      <div class="key-features-carousel-{{ section.id }}" data-carousel>
+        {% assign has_features = false %}
+        
+        {% for block in section.blocks %}
+          {% if block.type == 'feature' %}
+            {% assign has_features = true %}
+            <div class="key-features-carousel-cell-{{ section.id }}" {{ block.shopify_attributes }}>
+              <div class="feature-image">
+                {% if block.settings.image != blank %}
+                  <img
+                    src="{{ block.settings.image | image_url: width: 600 }}"
+                    srcset="
+                      {{ block.settings.image | image_url: width: 300 }} 300w,
+                      {{ block.settings.image | image_url: width: 600 }} 600w,
+                      {{ block.settings.image | image_url: width: 800 }} 800w,
+                      {{ block.settings.image | image_url: width: 1200 }} 1200w
+                    "
+                    sizes="(min-width: 1024px) calc(((100vw - 120px) - 40px) / 3),
+                           (min-width: 768px) calc(((100vw - 40px) * 0.9 - 20px) / 2),
+                           calc((100vw - 40px) - 20px)"
+                    alt="{{ block.settings.title | escape }}"
+                    loading="lazy"
+                    width="600"
+                    height="{% if section.settings.mobile_first %}480{% else %}420{% endif %}"
+                  >
+                {% else %}
+                  <div class="key-features-placeholder-{{ section.id }}">
+                    {{ 'image' | placeholder_svg_tag }}
+                  </div>
+                {% endif %}
+              </div>
+              
+              <div class="feature-content">
+                {% unless block.settings.title == blank %}
+                  <h6 class="feature-title">{{ block.settings.title | escape }}</h6>
+                {% endunless %}
+                
+                {% unless block.settings.description == blank %}
+                  <p class="feature-description">{{ block.settings.description | escape }}</p>
+                {% endunless %}
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+
+        {% unless has_features %}
+          <div class="key-features-carousel-cell-{{ section.id }}">
+            <div class="feature-image">
+              <div class="key-features-placeholder-{{ section.id }}">
+                {{ 'image' | placeholder_svg_tag }}
+              </div>
+            </div>
+            <div class="feature-content">
+              <h6 class="feature-title">Feature Title</h6>
+              <p class="feature-description">Add features using the theme editor.</p>
+            </div>
+          </div>
+        {% endunless %}
+      </div>
+
+      {% if has_features and section.blocks.size > 1 %}
+        <button
+          class="key-features-nav-{{ section.id }} key-features-nav-prev-{{ section.id }}"
+          type="button"
+          aria-label="Previous feature"
+          data-nav="prev"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15,18 9,12 15,6"></polyline>
+          </svg>
+        </button>
+
+        <button
+          class="key-features-nav-{{ section.id }} key-features-nav-next-{{ section.id }}"
+          type="button"
+          aria-label="Next feature"
+          data-nav="next"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9,18 15,12 9,6"></polyline>
+          </svg>
+        </button>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+<script>
+(function() {
+  'use strict';
+  
+  function KeyFeaturesCarousel(container) {
+    this.container = container;
+    this.carousel = container.querySelector('[data-carousel]');
+    this.cells = this.carousel.querySelectorAll('.key-features-carousel-cell-{{ section.id }}');
+    this.prevBtn = container.querySelector('[data-nav="prev"]');
+    this.nextBtn = container.querySelector('[data-nav="next"]');
+    
+    this.currentIndex = 0;
+    this.cellWidth = 0;
+    this.visibleCells = 1;
+    this.totalCells = this.cells.length;
+    this.maxIndex = 0;
+    
+    if (this.totalCells <= 1) {
+      this.hideNavigation();
+      return;
+    }
+    
+    this.init();
+  }
+  
+  KeyFeaturesCarousel.prototype.init = function() {
+    this.calculateDimensions();
+    this.bindEvents();
+    this.updateNavigation();
+    
+    var self = this;
+    var resizeTimeout;
+    window.addEventListener('resize', function() {
+      clearTimeout(resizeTimeout);
+      resizeTimeout = setTimeout(function() {
+        self.calculateDimensions();
+        self.updatePosition(false);
+        self.updateNavigation();
+      }, 200);
+    });
+  };
+  
+  KeyFeaturesCarousel.prototype.calculateDimensions = function() {
+    var containerWidth = this.container.offsetWidth;
+    var windowWidth = window.innerWidth;
+    
+    if (windowWidth >= 1024) {
+      this.visibleCells = 3;
+      this.cellWidth = Math.floor(((windowWidth - 120) - 40) / 3);
+    } else if (windowWidth >= 768) {
+      this.visibleCells = 2;
+      this.cellWidth = Math.floor((((windowWidth - 40) * 0.9) - 20) / 2);
+    } else {
+      this.visibleCells = 1;
+      this.cellWidth = Math.floor((windowWidth - 40) - 20);
+    }
+    
+    this.maxIndex = Math.max(0, this.totalCells - this.visibleCells);
+    
+    for (var i = 0; i < this.cells.length; i++) {
+      this.cells[i].style.width = this.cellWidth + 'px';
+    }
+  };
+  
+  KeyFeaturesCarousel.prototype.bindEvents = function() {
+    var self = this;
+    
+    if (this.prevBtn) {
+      this.prevBtn.addEventListener('click', function() {
+        self.prev();
+      });
+    }
+    
+    if (this.nextBtn) {
+      this.nextBtn.addEventListener('click', function() {
+        self.next();
+      });
+    }
+    
+    var startX = 0;
+    var currentX = 0;
+    var isDragging = false;
+    
+    this.carousel.addEventListener('touchstart', function(e) {
+      startX = e.touches[0].clientX;
+      isDragging = true;
+    });
+    
+    this.carousel.addEventListener('touchmove', function(e) {
+      if (!isDragging) return;
+      currentX = e.touches[0].clientX;
+    });
+    
+    this.carousel.addEventListener('touchend', function(e) {
+      if (!isDragging) return;
+      isDragging = false;
+      
+      var diff = startX - currentX;
+      if (Math.abs(diff) > 50) {
+        if (diff > 0) {
+          self.next();
+        } else {
+          self.prev();
+        }
+      }
+    });
+    
+    this.carousel.addEventListener('keydown', function(e) {
+      if (e.key === 'ArrowLeft') {
+        e.preventDefault();
+        self.prev();
+      } else if (e.key === 'ArrowRight') {
+        e.preventDefault();
+        self.next();
+      }
+    });
+  };
+  
+  KeyFeaturesCarousel.prototype.prev = function() {
+    if (this.currentIndex > 0) {
+      this.currentIndex--;
+      this.updatePosition();
+      this.updateNavigation();
+    }
+  };
+  
+  KeyFeaturesCarousel.prototype.next = function() {
+    if (this.currentIndex < this.maxIndex) {
+      this.currentIndex++;
+      this.updatePosition();
+      this.updateNavigation();
+    }
+  };
+  
+  KeyFeaturesCarousel.prototype.updatePosition = function(animate) {
+    animate = animate !== false;
+    var offset = -(this.currentIndex * (this.cellWidth + 20));
+    
+    this.carousel.style.transform = 'translateX(' + offset + 'px)';
+    
+    if (!animate) {
+      this.carousel.style.transition = 'none';
+      this.carousel.offsetHeight;
+      this.carousel.style.transition = '';
+    }
+  };
+  
+  KeyFeaturesCarousel.prototype.updateNavigation = function() {
+    if (this.prevBtn) {
+      this.prevBtn.disabled = this.currentIndex === 0;
+    }
+    
+    if (this.nextBtn) {
+      this.nextBtn.disabled = this.currentIndex >= this.maxIndex;
+    }
+  };
+  
+  KeyFeaturesCarousel.prototype.hideNavigation = function() {
+    if (this.prevBtn) this.prevBtn.style.display = 'none';
+    if (this.nextBtn) this.nextBtn.style.display = 'none';
+  };
+  
+  var container = document.querySelector('[data-section-id="{{ section.id }}"]');
+  if (container) {
+    new KeyFeaturesCarousel(container);
+  }
+})();
+</script>
+
+{% schema %}
+{
+  "name": "Key Features & Components",
+  "class": "section--key-features",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Key Features & Components"
+    },
+    {
+      "type": "header",
+      "content": "Section padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Top padding",
+      "unit": "px",
+      "min": 28,
+      "max": 120,
+      "step": 4,
+      "default": 64
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Bottom padding",
+      "unit": "px",
+      "min": 28,
+      "max": 120,
+      "step": 4,
+      "default": 64
+    }
+  ],
+  "blocks": [
+    {
+      "type": "feature",
+      "name": "Feature",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image",
+          "info": "Recommended: 600x420px for desktop/tablet, 600x480px for mobile"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Feature title",
+          "default": "Feature Name"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Feature description",
+          "default": "Describe this feature's benefits and functionality."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Key Features & Components",
+      "blocks": [
+        {
+          "type": "feature",
+          "settings": {
+            "title": "Cross-Terrain 4\" Fat-Tires",
+            "description": "Experience a stable, cushioned ride and superior traction with 4\" fat-tires, enhanced by fenders for wet-weather protection."
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "title": "Wide Cruiser Handlebars",
+            "description": "Wide, ergonomic cruiser handlebars provide a comfortable, upright position for better visibility, control and manoeuvrability."
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "title": "Full-Color LCD Display",
+            "description": "The full-color LCD display keeps you informed with speed, battery level and assist mode, all in one easy-to-read screen."
+          }
+        }
+      ]
+    }
+  ],
+  "enabled_on": {
+    "templates": ["*"]
+  }
+}
+{% endschema %}
