@@ -86,6 +86,22 @@
             "enable_payment_button": true
           }
         },
+        "guarantee_badges_iDHPqL": {
+          "type": "guarantee-badges",
+          "settings": {
+            "column": "primary",
+            "trial_text": "14-Day Trial",
+            "shipping_text": "Free Shipping*",
+            "warranty_text": "1-Year Warranty",
+            "processing_text": "24-48hr Processing",
+            "disclaimer_text": "*to contiguous USA",
+            "show_trial": true,
+            "show_shipping": true,
+            "show_warranty": true,
+            "show_processing": true,
+            "show_disclaimer": true
+          }
+        },
         "buy_it_with_eUmh3b": {
           "type": "buy-it-with",
           "settings": {
@@ -214,6 +230,7 @@
         "inventory_notice",
         "free_shipping_bar_eTUQGP",
         "buy_buttons",
+        "guarantee_badges_iDHPqL",
         "buy_it_with_eUmh3b",
         "share",
         "description",
