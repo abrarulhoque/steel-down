@@ -86,6 +86,15 @@
             "enable_payment_button": true
           }
         },
+        "text_Acec79": {
+          "type": "text",
+          "settings": {
+            "column": "primary",
+            "title": "",
+            "style": "h3",
+            "text": "<p>Power,presenceand pure muscle—meet the Beast™, ourburliestbike yet. For those who want to own the road, this fat-tireeBikeis the ultimate in stability and control. With a 750W motor and 20Ah batteryyou’llget 35-50+ miles of range, so you can ride longer and farther. Cruise up to 20mph whetheryou’rein the city or on the scenic route. The Beast’s tough design andbig powermeansit’sfor confident riders who want style and substance. </p>"
+          }
+        },
         "share": {
           "type": "share",
           "disabled": true,
@@ -200,6 +209,7 @@
         "inventory_notice",
         "free_shipping_bar_eTUQGP",
         "buy_buttons",
+        "text_Acec79",
         "share",
         "description",
         "reviews_tab_new_f8WyCG",
