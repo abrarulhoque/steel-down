@@ -184,25 +184,20 @@
             {%- for block in section.blocks -%}
               <div class="accordion__item">
                 <details id="components-{{ section.id }}-{{ forloop.index }}" {{ block.shopify_attributes }}>
-                  <summary class="accordion__title" aria-expanded="false" aria-controls="content-{{ section.id }}-{{ forloop.index }}">
+                  <summary class="accordion__title">
                     <span class="accordion__title-text">{{ block.settings.title | escape }}</span>
-                    <div class="accordion__icons">
-                      <svg class="icon-toggle-plus" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
-                      </svg>
-                      <svg class="icon-toggle-minus" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6"/>
-                      </svg>
-                    </div>
+                    <summary-icon>
+                      <i class="icon icon--plus-t" aria-hidden="true"></i>
+                    </summary-icon>
                   </summary>
-                  
-                  <div class="accordion__text-wrapper" id="content-{{ section.id }}-{{ forloop.index }}" aria-expanded="false">
+
+                  <details-content>
                     {% unless block.settings.content == blank %}
                       <div class="accordion__text rte">
                         {{ block.settings.content }}
                       </div>
                     {% endunless %}
-                  </div>
+                  </details-content>
                 </details>
               </div>
             {%- endfor -%}
@@ -214,47 +209,7 @@
   </div>
 </section>
 
-<script>
-(function () {
-  function init(root = document) {
-    const groups = root.querySelectorAll('[data-collapsible-single]');
-    groups.forEach(group => {
-      const items = group.querySelectorAll('details');
-      items.forEach(detail => {
-        const summary = detail.querySelector('summary');
-        const wrap = detail.querySelector('.accordion__text-wrapper');
-        if (!summary || !wrap) return;
-
-        // set starting height
-        wrap.style.height = detail.open ? wrap.scrollHeight + 'px' : '0px';
-
-        detail.addEventListener('toggle', () => {
-          // single-open behavior
-          if (detail.open) {
-            items.forEach(d => d !== detail && (d.open = false));
-          }
-
-          if (detail.open) {
-            summary.classList.add('is-expanded');
-            wrap.style.height = wrap.scrollHeight + 'px';
-            setTimeout(() => { wrap.style.height = 'auto'; }, 250);
-          } else {
-            summary.classList.remove('is-expanded');
-            wrap.style.height = wrap.scrollHeight + 'px';
-            requestAnimationFrame(() => { wrap.style.height = '0px'; });
-          }
-        });
-      });
-    });
-  }
-
-  // run now
-  init();
-
-  // run when sections are (re)loaded in the editor / dynamically
-  document.addEventListener('shopify:section:load', e => init(e.target));
-})();
-</script>
+<!-- Using theme's AccordionGroup behavior; no custom script needed here. -->
 
 {% schema %}
 {
