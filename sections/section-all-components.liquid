@@ -149,6 +149,23 @@
   .accordion__text.rte a:hover {
     text-decoration: none;
   }
+  
+  /* Fallback for native details and custom elements */
+  accordion-group, details-content { 
+    display: block; 
+  }
+
+  details[open] .accordion__text-wrapper { 
+    height: auto; 
+  }
+
+  details[open] .accordion__title .icon-toggle-plus { 
+    opacity: 0; 
+  }
+  
+  details[open] .accordion__title .icon-toggle-minus { 
+    opacity: 1; 
+  }
 </style>
 
 <section class="section section--{{ section.id }} all-components" data-collapsible-single>
@@ -163,8 +180,8 @@
 
       <div class="accordion__content">
         <accordion-group>
-          {%- for block in section.blocks -%}
-            <div class="accordion__list">
+          <div class="accordion__list">
+            {%- for block in section.blocks -%}
               <div class="accordion__item">
                 <details id="components-{{ section.id }}-{{ forloop.index }}" {{ block.shopify_attributes }}>
                   <summary class="accordion__title" aria-expanded="false" aria-controls="content-{{ section.id }}-{{ forloop.index }}">
@@ -179,19 +196,17 @@
                     </div>
                   </summary>
                   
-                  <details-content>
-                    <div class="accordion__text-wrapper" id="content-{{ section.id }}-{{ forloop.index }}" aria-expanded="false">
-                      {% unless block.settings.content == blank %}
-                        <div class="accordion__text rte">
-                          {{ block.settings.content }}
-                        </div>
-                      {% endunless %}
-                    </div>
-                  </details-content>
+                  <div class="accordion__text-wrapper" id="content-{{ section.id }}-{{ forloop.index }}" aria-expanded="false">
+                    {% unless block.settings.content == blank %}
+                      <div class="accordion__text rte">
+                        {{ block.settings.content }}
+                      </div>
+                    {% endunless %}
+                  </div>
                 </details>
               </div>
-            </div>
-          {%- endfor -%}
+            {%- endfor -%}
+          </div>
         </accordion-group>
       </div>
       
@@ -200,108 +215,45 @@
 </section>
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-  // Handle All Components accordion functionality
-  const accordionGroups = document.querySelectorAll('[data-collapsible-single]');
-  
-  accordionGroups.forEach(function(group) {
-    const details = group.querySelectorAll('details');
-    
-    details.forEach(function(detail, index) {
-      const summary = detail.querySelector('summary');
-      const textWrapper = detail.querySelector('.accordion__text-wrapper');
-      
-      if (!summary || !textWrapper) return;
-      
-      // Enhanced toggle function with height animation
-      function toggleAccordion(targetDetail, shouldOpen) {
-        const targetSummary = targetDetail.querySelector('summary');
-        const targetWrapper = targetDetail.querySelector('.accordion__text-wrapper');
-        
-        if (shouldOpen) {
-          // Open the accordion
-          targetDetail.open = true;
-          targetSummary.classList.add('is-expanded');
-          targetSummary.setAttribute('aria-expanded', 'true');
-          
-          // Animate height before adding expanded class
-          const content = targetWrapper.querySelector('.accordion__text');
-          if (content) {
-            // Get the natural height of the content
-            targetWrapper.style.height = 'auto';
-            const contentHeight = targetWrapper.offsetHeight;
-            targetWrapper.style.height = '0px';
-            
-            // Force reflow then animate to full height
-            requestAnimationFrame(() => {
-              targetWrapper.style.height = contentHeight + 'px';
-              targetWrapper.classList.add('is-expanded');
-              targetWrapper.setAttribute('aria-expanded', 'true');
-            });
-            
-            // Set to auto after animation completes
-            setTimeout(() => {
-              if (targetWrapper.classList.contains('is-expanded')) {
-                targetWrapper.style.height = 'auto';
-              }
-            }, 250);
+(function () {
+  function init(root = document) {
+    const groups = root.querySelectorAll('[data-collapsible-single]');
+    groups.forEach(group => {
+      const items = group.querySelectorAll('details');
+      items.forEach(detail => {
+        const summary = detail.querySelector('summary');
+        const wrap = detail.querySelector('.accordion__text-wrapper');
+        if (!summary || !wrap) return;
+
+        // set starting height
+        wrap.style.height = detail.open ? wrap.scrollHeight + 'px' : '0px';
+
+        detail.addEventListener('toggle', () => {
+          // single-open behavior
+          if (detail.open) {
+            items.forEach(d => d !== detail && (d.open = false));
           }
-        } else {
-          // Close the accordion
-          const content = targetWrapper.querySelector('.accordion__text');
-          if (content) {
-            // Set explicit height before closing
-            targetWrapper.style.height = content.offsetHeight + 'px';
-            
-            // Force reflow then animate to 0
-            requestAnimationFrame(() => {
-              targetWrapper.style.height = '0px';
-            });
-          }
-          
-          targetSummary.classList.remove('is-expanded');
-          targetSummary.setAttribute('aria-expanded', 'false');
-          targetWrapper.classList.remove('is-expanded');
-          targetWrapper.setAttribute('aria-expanded', 'false');
-          
-          // Close details after animation
-          setTimeout(() => {
-            if (!targetWrapper.classList.contains('is-expanded')) {
-              targetDetail.open = false;
-            }
-          }, 250);
-        }
-      }
-      
-      // Click handler for accordion toggle
-      summary.addEventListener('click', function(e) {
-        e.preventDefault();
-        
-        const isCurrentlyOpen = detail.hasAttribute('open') || detail.open;
-        
-        // Close all other accordions in single-open mode
-        details.forEach(function(otherDetail) {
-          if (otherDetail !== detail && otherDetail.open) {
-            toggleAccordion(otherDetail, false);
+
+          if (detail.open) {
+            summary.classList.add('is-expanded');
+            wrap.style.height = wrap.scrollHeight + 'px';
+            setTimeout(() => { wrap.style.height = 'auto'; }, 250);
+          } else {
+            summary.classList.remove('is-expanded');
+            wrap.style.height = wrap.scrollHeight + 'px';
+            requestAnimationFrame(() => { wrap.style.height = '0px'; });
           }
         });
-        
-        // Toggle current accordion
-        toggleAccordion(detail, !isCurrentlyOpen);
       });
-      
-      // Keyboard support
-      summary.addEventListener('keydown', function(e) {
-        if (e.key === 'Enter' || e.key === ' ') {
-          e.preventDefault();
-          summary.click();
-        }
-      });
-      
-      // All items start collapsed by default - no initialization needed
     });
-  });
-});
+  }
+
+  // run now
+  init();
+
+  // run when sections are (re)loaded in the editor / dynamically
+  document.addEventListener('shopify:section:load', e => init(e.target));
+})();
 </script>
 
 {% schema %}
