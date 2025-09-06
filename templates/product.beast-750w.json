@@ -86,6 +86,20 @@
             "enable_payment_button": true
           }
         },
+        "buy_it_with_eUmh3b": {
+          "type": "buy-it-with",
+          "settings": {
+            "column": "primary",
+            "heading": "Buy it With",
+            "recommended_products": [
+              "canvas-double-panniers",
+              "stash-panniers"
+            ],
+            "add_to_cart_text": "ADD TO CART",
+            "show_price": true,
+            "show_navigation_dots": true
+          }
+        },
         "share": {
           "type": "share",
           "disabled": true,
@@ -200,6 +214,7 @@
         "inventory_notice",
         "free_shipping_bar_eTUQGP",
         "buy_buttons",
+        "buy_it_with_eUmh3b",
         "share",
         "description",
         "reviews_tab_new_f8WyCG",
