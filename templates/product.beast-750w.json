@@ -445,70 +445,37 @@
         "section-bottom-margin": false
       }
     },
-    "section_lifestyle_carousel_PJAtPt": {
+    "section_lifestyle_carousel_e6g9hk": {
       "type": "section-lifestyle-carousel",
       "blocks": {
-        "image_Y8ADae": {
+        "image_Q7CPfP": {
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/wildsyde-beast-action-02.webp"
           }
         },
-        "image_PLwTKW": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/wildsyde-beast-action-03.webp"
-          }
-        }
-      },
-      "block_order": [
-        "image_Y8ADae",
-        "image_PLwTKW"
-      ],
-      "name": "Lifestyle Carousel",
-      "settings": {
-        "title": "Lifestyle Gallery",
-        "above_fold": false
-      }
-    },
-    "section_lifestyle_carousel_Czn87K": {
-      "type": "section-lifestyle-carousel",
-      "blocks": {
-        "image_UX4x6t": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/wildsyde-beast-action-02.webp"
-          }
-        },
-        "image_8xFzAr": {
+        "image_mrptbV": {
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/wildsyde-beast-action-03.webp"
           }
         },
-        "image_UdJzHa": {
+        "image_nBNUge": {
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/wildsyde-beast-action-04.webp"
           }
         },
-        "image_LDYL3h": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/wildsyde-beast-orange-park-02.webp"
-          }
-        },
-        "image_zRnKwT": {
+        "image_Qrhyfq": {
           "type": "image",
           "settings": {}
         }
       },
       "block_order": [
-        "image_UX4x6t",
-        "image_8xFzAr",
-        "image_UdJzHa",
-        "image_LDYL3h",
-        "image_zRnKwT"
+        "image_Q7CPfP",
+        "image_mrptbV",
+        "image_nBNUge",
+        "image_Qrhyfq"
       ],
       "name": "Lifestyle Carousel",
       "settings": {
@@ -689,8 +656,7 @@
     "product_specifications_4gHEhM",
     "section_rich_text_6nFxHX",
     "section_image_with_text_overlap_EzpCcb",
-    "section_lifestyle_carousel_PJAtPt",
-    "section_lifestyle_carousel_Czn87K",
+    "section_lifestyle_carousel_e6g9hk",
     "9904a28f-6381-41fe-96eb-d4a73d60f0a0",
     "5a818a60-e694-4eac-a33f-5ce701e894b0",
     "product-recommendations",
