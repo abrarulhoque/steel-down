@@ -1,50 +1,48 @@
-{% assign section_id = section.id | replace: '_', '' | downcase %}
-
 {% style %}
-  .lifestyle-gallery-{{ section_id }} {
+  .lifestyle-gallery-{{ section.id }} {
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 60px;
-    position: relative;
   }
 
   @media screen and (max-width: 1023px) {
-    .lifestyle-gallery-{{ section_id }} {
+    .lifestyle-gallery-{{ section.id }} {
       padding: 0 20px;
     }
   }
 
-  .lifestyle-carousel-container-{{ section_id }} {
+  .lifestyle-carousel-container-{{ section.id }} {
     position: relative;
-  }
-
-  .lifestyle-carousel-{{ section_id }} {
     overflow: hidden;
   }
 
-  .lifestyle-carousel-{{ section_id }} .flickity-viewport {
+  .lifestyle-carousel-{{ section.id }} {
+    display: flex;
+    transition: transform 0.3s ease;
     overflow: visible;
   }
 
-  .lifestyle-carousel-cell-{{ section_id }} {
+  .lifestyle-carousel-cell-{{ section.id }} {
+    flex: 0 0 auto;
     margin-right: 20px;
     aspect-ratio: 5 / 4;
     position: relative;
   }
 
-  .lifestyle-carousel-cell-{{ section_id }}:last-child {
+  .lifestyle-carousel-cell-{{ section.id }}:last-child {
     margin-right: 0;
   }
 
-  .lifestyle-carousel-cell-{{ section_id }} img {
+  .lifestyle-carousel-cell-{{ section.id }} img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
     border-radius: {{ section.settings.image_border_radius }}px;
+    display: block;
   }
 
-  .lifestyle-carousel-placeholder-{{ section_id }} {
+  .lifestyle-carousel-placeholder-{{ section.id }} {
     width: 100%;
     height: 100%;
     background-color: #f4f4f4;
@@ -55,13 +53,13 @@
     position: relative;
   }
 
-  .lifestyle-carousel-placeholder-{{ section_id }} svg {
+  .lifestyle-carousel-placeholder-{{ section.id }} svg {
     width: 60px;
     height: 60px;
     opacity: 0.3;
   }
 
-  .lifestyle-carousel-empty-state-{{ section_id }} {
+  .lifestyle-carousel-empty-state-{{ section.id }} {
     position: absolute;
     bottom: 20px;
     left: 50%;
@@ -72,7 +70,7 @@
     pointer-events: none;
   }
 
-  .lifestyle-carousel-nav-{{ section_id }} {
+  .lifestyle-carousel-nav-{{ section.id }} {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -90,63 +88,63 @@
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   }
 
-  .lifestyle-carousel-nav-{{ section_id }}:hover {
+  .lifestyle-carousel-nav-{{ section.id }}:hover {
     background: {{ section.settings.nav_button_hover_color }};
     transform: translateY(-50%) scale(1.05);
   }
 
-  .lifestyle-carousel-nav-{{ section_id }}:disabled {
+  .lifestyle-carousel-nav-{{ section.id }}:disabled {
     opacity: 0.3;
     cursor: not-allowed;
     transform: translateY(-50%) scale(1);
   }
 
-  .lifestyle-carousel-nav-{{ section_id }}:focus {
+  .lifestyle-carousel-nav-{{ section.id }}:focus {
     outline: 2px solid {{ settings.color_accent }};
     outline-offset: 2px;
   }
 
-  .lifestyle-carousel-nav-{{ section_id }} svg {
+  .lifestyle-carousel-nav-{{ section.id }} svg {
     width: 20px;
     height: 20px;
     color: {{ section.settings.nav_button_icon_color }};
   }
 
-  .lifestyle-carousel-nav-prev-{{ section_id }} {
+  .lifestyle-carousel-nav-prev-{{ section.id }} {
     left: -24px;
   }
 
-  .lifestyle-carousel-nav-next-{{ section_id }} {
+  .lifestyle-carousel-nav-next-{{ section.id }} {
     right: -24px;
   }
 
   @media screen and (min-width: 1024px) {
-    .lifestyle-carousel-cell-{{ section_id }} {
+    .lifestyle-carousel-cell-{{ section.id }} {
       width: calc(((1440px - 120px) - 40px) / 3);
     }
   }
 
   @media screen and (min-width: 768px) and (max-width: 1023px) {
-    .lifestyle-carousel-cell-{{ section_id }} {
+    .lifestyle-carousel-cell-{{ section.id }} {
       width: calc((((100vw - 40px) * 0.9) - 20px) / 2);
     }
   }
 
   @media screen and (max-width: 767px) {
-    .lifestyle-carousel-cell-{{ section_id }} {
+    .lifestyle-carousel-cell-{{ section.id }} {
       width: calc((100vw - 40px) - 20px);
     }
     
-    .lifestyle-carousel-nav-prev-{{ section_id }} {
+    .lifestyle-carousel-nav-prev-{{ section.id }} {
       left: -16px;
     }
 
-    .lifestyle-carousel-nav-next-{{ section_id }} {
+    .lifestyle-carousel-nav-next-{{ section.id }} {
       right: -16px;
     }
   }
 
-  .lifestyle-carousel-heading-{{ section_id }} {
+  .lifestyle-carousel-heading-{{ section.id }} {
     margin-bottom: 30px;
     color: {{ settings.color_headings }};
     font-family: {{ settings.type_header_font.family }}, {{ settings.type_header_font.fallback_families }};
@@ -157,7 +155,7 @@
   }
 
   {% if settings.type_header_border %}
-    .lifestyle-carousel-heading-{{ section_id }}::after {
+    .lifestyle-carousel-heading-{{ section.id }}::after {
       content: '';
       display: block;
       width: 60px;
@@ -180,20 +178,17 @@
   }
 {% endstyle %}
 
-<div class="section-{{ section.id }}-padding">
-  <lifestyle-gallery-{{ section_id }}
-    class="lifestyle-gallery-{{ section_id }}"
-    {{ section.shopify_attributes }}
-    role="group"
-    tabindex="0"
-    aria-label="Lifestyle gallery"
-  >
+<section class="section section--{{ section.id }} {% if section.settings.section_width == 'full' %}section--full section--full-mobile{% endif %}{% if section.settings.section_padding_top %}section--pt-{{ section.settings.section_padding_top }}{% endif %}{% if section.settings.section_padding_bottom %}section--pb-{{ section.settings.section_padding_bottom }}{% endif %}" data-section-id="{{ section.id }}" data-section-type="lifestyle-gallery">
+  <div class="lifestyle-gallery-{{ section.id }}">
     {% if section.settings.heading != blank %}
-      <h2 class="lifestyle-carousel-heading-{{ section_id }}">{{ section.settings.heading }}</h2>
+      <h2 class="lifestyle-carousel-heading-{{ section.id }}">{{ section.settings.heading }}</h2>
     {% endif %}
 
-    <div class="lifestyle-carousel-container-{{ section_id }}">
-      <div class="lifestyle-carousel-{{ section_id }}" data-flickity='{"cellAlign": "left", "contain": true, "prevNextButtons": false, "pageDots": false, "draggable": true, "wrapAround": false, "groupCells": false, "imagesLoaded": true, "setGallerySize": true}'>
+    <div class="lifestyle-carousel-container-{{ section.id }}" 
+         data-section-id="{{ section.id }}"
+         role="group" 
+         aria-label="Lifestyle gallery carousel">
+      <div class="lifestyle-carousel-{{ section.id }}" data-carousel>
         {% assign has_images = false %}
         {% for i in (1..8) %}
           {% liquid
@@ -203,30 +198,31 @@
           
           {% if image != blank %}
             {% assign has_images = true %}
-            <div class="lifestyle-carousel-cell-{{ section_id }}">
+            <div class="lifestyle-carousel-cell-{{ section.id }}">
+              {%- assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
               <img
-                src="{{ image | image_url: width: 800 }}"
-                srcset="{{ image | image_url: width: 400 }} 400w,
-                        {{ image | image_url: width: 600 }} 600w,
-                        {{ image | image_url: width: 800 }} 800w,
-                        {{ image | image_url: width: 1000 }} 1000w"
-                sizes="(min-width: 1024px) calc(((1440px - 120px) - 40px) / 3),
-                       (min-width: 768px) calc((((100vw - 40px) * 0.9) - 20px) / 2),
-                       calc((100vw - 40px) - 20px)"
+                src="{{ image | img_url: '600x' }}"
+                srcset="{{ image | img_url: '400x' }} 400w,
+                        {{ image | img_url: '600x' }} 600w,
+                        {{ image | img_url: '800x' }} 800w,
+                        {{ image | img_url: '1200x' }} 1200w"
+                sizes="(min-width: 1024px) 420px,
+                       (min-width: 768px) 320px,
+                       280px"
                 alt="{% if image.alt != blank %}{{ image.alt | escape }}{% else %}Lifestyle image {{ i }}{% endif %}"
                 {% if i == 1 and section.settings.above_fold %}loading="eager" fetchpriority="high"{% else %}loading="lazy"{% endif %}
-                width="{{ image.width }}"
-                height="{{ image.height }}"
+                width="600"
+                height="480"
               >
             </div>
           {% endif %}
         {% endfor %}
 
         {% unless has_images %}
-          <div class="lifestyle-carousel-cell-{{ section_id }}">
-            <div class="lifestyle-carousel-placeholder-{{ section_id }}">
+          <div class="lifestyle-carousel-cell-{{ section.id }}">
+            <div class="lifestyle-carousel-placeholder-{{ section.id }}">
               {{ 'image' | placeholder_svg_tag }}
-              <div class="lifestyle-carousel-empty-state-{{ section_id }}">
+              <div class="lifestyle-carousel-empty-state-{{ section.id }}">
                 Add lifestyle images
               </div>
             </div>
@@ -236,9 +232,10 @@
 
       {% if has_images %}
         <button
-          class="lifestyle-carousel-nav-{{ section_id }} lifestyle-carousel-nav-prev-{{ section_id }}"
+          class="lifestyle-carousel-nav-{{ section.id }} lifestyle-carousel-nav-prev-{{ section.id }}"
           type="button"
           aria-label="Previous image"
+          data-nav="prev"
         >
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <polyline points="15,18 9,12 15,6"></polyline>
@@ -246,9 +243,10 @@
         </button>
 
         <button
-          class="lifestyle-carousel-nav-{{ section_id }} lifestyle-carousel-nav-next-{{ section_id }}"
+          class="lifestyle-carousel-nav-{{ section.id }} lifestyle-carousel-nav-next-{{ section.id }}"
           type="button"
           aria-label="Next image"
+          data-nav="next"
         >
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <polyline points="9,18 15,12 9,6"></polyline>
@@ -256,117 +254,171 @@
         </button>
       {% endif %}
     </div>
-  </lifestyle-gallery-{{ section_id }}>
-</div>
-
-<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  </div>
+</section>
 
 <script>
-  (function() {
-    class LifestyleGallery{{ section_id }} extends HTMLElement {
-      constructor() {
-        super();
-        this.flickity = null;
-      }
-
-      connectedCallback() {
-        this.initCarousel();
-        this.setupNavigation();
-        this.setupKeyboardNavigation();
-      }
-
-      initCarousel() {
-        const carousel = this.querySelector('.lifestyle-carousel-{{ section_id }}');
-        const cells = carousel.querySelectorAll('.lifestyle-carousel-cell-{{ section_id }}');
-        
-        if (cells.length <= 1) {
-          // Hide navigation if only one or no images
-          const navButtons = this.querySelectorAll('.lifestyle-carousel-nav-{{ section_id }}');
-          navButtons.forEach(btn => btn.style.display = 'none');
-          return;
-        }
-        
-        if (typeof Flickity !== 'undefined') {
-          this.flickity = new Flickity(carousel, {
-            cellAlign: 'left',
-            contain: true,
-            prevNextButtons: false,
-            pageDots: false,
-            draggable: true,
-            wrapAround: false,
-            groupCells: false,
-            imagesLoaded: true,
-            setGallerySize: true
-          });
-
-          this.flickity.on('change', () => {
-            this.updateNavButtons();
-          });
-
-          this.updateNavButtons();
-        }
-      }
-
-      setupNavigation() {
-        const prevButton = this.querySelector('.lifestyle-carousel-nav-prev-{{ section_id }}');
-        const nextButton = this.querySelector('.lifestyle-carousel-nav-next-{{ section_id }}');
-
-        if (prevButton) {
-          prevButton.addEventListener('click', () => {
-            if (this.flickity) {
-              this.flickity.previous();
-            }
-          });
-        }
-
-        if (nextButton) {
-          nextButton.addEventListener('click', () => {
-            if (this.flickity) {
-              this.flickity.next();
-            }
-          });
-        }
-      }
-
-      setupKeyboardNavigation() {
-        this.addEventListener('keydown', (e) => {
-          if (!this.flickity) return;
-          
-          if (e.key === 'ArrowLeft') {
-            e.preventDefault();
-            this.flickity.previous();
-          } else if (e.key === 'ArrowRight') {
-            e.preventDefault();
-            this.flickity.next();
-          }
-        });
-      }
-
-      updateNavButtons() {
-        if (!this.flickity) return;
-
-        const prevButton = this.querySelector('.lifestyle-carousel-nav-prev-{{ section_id }}');
-        const nextButton = this.querySelector('.lifestyle-carousel-nav-next-{{ section_id }}');
-
-        if (prevButton) {
-          prevButton.disabled = this.flickity.selectedIndex === 0;
-        }
-
-        if (nextButton) {
-          nextButton.disabled = this.flickity.selectedIndex === this.flickity.slides.length - 1;
-        }
-      }
-
-      disconnectedCallback() {
-        if (this.flickity) {
-          this.flickity.destroy();
-        }
-      }
+(function() {
+  'use strict';
+  
+  function LifestyleCarousel(container) {
+    this.container = container;
+    this.carousel = container.querySelector('[data-carousel]');
+    this.cells = this.carousel.querySelectorAll('.lifestyle-carousel-cell-{{ section.id }}');
+    this.prevBtn = container.querySelector('[data-nav="prev"]');
+    this.nextBtn = container.querySelector('[data-nav="next"]');
+    
+    this.currentIndex = 0;
+    this.cellWidth = 0;
+    this.visibleCells = 1;
+    this.totalCells = this.cells.length;
+    this.maxIndex = 0;
+    
+    if (this.totalCells <= 1) {
+      this.hideNavigation();
+      return;
     }
-
-    customElements.define('lifestyle-gallery-{{ section_id }}', LifestyleGallery{{ section_id }});
-  })();
+    
+    this.init();
+  }
+  
+  LifestyleCarousel.prototype.init = function() {
+    this.calculateDimensions();
+    this.bindEvents();
+    this.updateNavigation();
+    
+    // Handle resize
+    var self = this;
+    var resizeTimeout;
+    window.addEventListener('resize', function() {
+      clearTimeout(resizeTimeout);
+      resizeTimeout = setTimeout(function() {
+        self.calculateDimensions();
+        self.updatePosition(false);
+        self.updateNavigation();
+      }, 200);
+    });
+  };
+  
+  LifestyleCarousel.prototype.calculateDimensions = function() {
+    var containerWidth = this.container.offsetWidth;
+    var windowWidth = window.innerWidth;
+    
+    if (windowWidth >= 1024) {
+      this.visibleCells = 3;
+      this.cellWidth = Math.floor(((1440 - 120) - 40) / 3);
+    } else if (windowWidth >= 768) {
+      this.visibleCells = 2;
+      this.cellWidth = Math.floor((((containerWidth - 40) * 0.9) - 20) / 2);
+    } else {
+      this.visibleCells = 1;
+      this.cellWidth = Math.floor((containerWidth - 40) - 20);
+    }
+    
+    this.maxIndex = Math.max(0, this.totalCells - this.visibleCells);
+    
+    // Set cell widths
+    for (var i = 0; i < this.cells.length; i++) {
+      this.cells[i].style.width = this.cellWidth + 'px';
+    }
+  };
+  
+  LifestyleCarousel.prototype.bindEvents = function() {
+    var self = this;
+    
+    if (this.prevBtn) {
+      this.prevBtn.addEventListener('click', function() {
+        self.prev();
+      });
+    }
+    
+    if (this.nextBtn) {
+      this.nextBtn.addEventListener('click', function() {
+        self.next();
+      });
+    }
+    
+    // Touch/swipe support
+    var startX = 0;
+    var currentX = 0;
+    var isDragging = false;
+    
+    this.carousel.addEventListener('touchstart', function(e) {
+      startX = e.touches[0].clientX;
+      isDragging = true;
+    });
+    
+    this.carousel.addEventListener('touchmove', function(e) {
+      if (!isDragging) return;
+      currentX = e.touches[0].clientX;
+    });
+    
+    this.carousel.addEventListener('touchend', function(e) {
+      if (!isDragging) return;
+      isDragging = false;
+      
+      var diff = startX - currentX;
+      if (Math.abs(diff) > 50) {
+        if (diff > 0) {
+          self.next();
+        } else {
+          self.prev();
+        }
+      }
+    });
+  };
+  
+  LifestyleCarousel.prototype.prev = function() {
+    if (this.currentIndex > 0) {
+      this.currentIndex--;
+      this.updatePosition();
+      this.updateNavigation();
+    }
+  };
+  
+  LifestyleCarousel.prototype.next = function() {
+    if (this.currentIndex < this.maxIndex) {
+      this.currentIndex++;
+      this.updatePosition();
+      this.updateNavigation();
+    }
+  };
+  
+  LifestyleCarousel.prototype.updatePosition = function(animate) {
+    animate = animate !== false;
+    var offset = -(this.currentIndex * (this.cellWidth + 20));
+    
+    this.carousel.style.transform = 'translateX(' + offset + 'px)';
+    
+    if (!animate) {
+      this.carousel.style.transition = 'none';
+      // Force reflow
+      this.carousel.offsetHeight;
+      this.carousel.style.transition = '';
+    }
+  };
+  
+  LifestyleCarousel.prototype.updateNavigation = function() {
+    if (this.prevBtn) {
+      this.prevBtn.disabled = this.currentIndex === 0;
+    }
+    
+    if (this.nextBtn) {
+      this.nextBtn.disabled = this.currentIndex >= this.maxIndex;
+    }
+  };
+  
+  LifestyleCarousel.prototype.hideNavigation = function() {
+    if (this.prevBtn) this.prevBtn.style.display = 'none';
+    if (this.nextBtn) this.nextBtn.style.display = 'none';
+  };
+  
+  // Initialize carousel
+  var container = document.querySelector('[data-section-id="{{ section.id }}"]');
+  if (container) {
+    new LifestyleCarousel(container);
+  }
+})();
 </script>
 
 {% schema %}
@@ -394,6 +446,22 @@
       "label": "This section is above the fold",
       "info": "Enable for better performance if this section appears above the fold",
       "default": false
+    },
+    {
+      "type": "select",
+      "id": "section_width",
+      "label": "Section width",
+      "options": [
+        {
+          "value": "contained",
+          "label": "Contained"
+        },
+        {
+          "value": "full",
+          "label": "Full width"
+        }
+      ],
+      "default": "contained"
     },
     {
       "type": "image_picker",
@@ -472,24 +540,52 @@
       "content": "Section padding"
     },
     {
-      "type": "range",
-      "id": "padding_top",
-      "min": 0,
-      "max": 100,
-      "step": 4,
-      "unit": "px",
+      "type": "select",
+      "id": "section_padding_top",
       "label": "Top padding",
-      "default": 36
+      "options": [
+        {
+          "value": "none",
+          "label": "None"
+        },
+        {
+          "value": "small",
+          "label": "Small"
+        },
+        {
+          "value": "medium",
+          "label": "Medium"
+        },
+        {
+          "value": "large",
+          "label": "Large"
+        }
+      ],
+      "default": "medium"
     },
     {
-      "type": "range",
-      "id": "padding_bottom",
-      "min": 0,
-      "max": 100,
-      "step": 4,
-      "unit": "px",
+      "type": "select",
+      "id": "section_padding_bottom",
       "label": "Bottom padding",
-      "default": 36
+      "options": [
+        {
+          "value": "none",
+          "label": "None"
+        },
+        {
+          "value": "small",
+          "label": "Small"
+        },
+        {
+          "value": "medium",
+          "label": "Medium"
+        },
+        {
+          "value": "large",
+          "label": "Large"
+        }
+      ],
+      "default": "medium"
     }
   ],
   "presets": [
