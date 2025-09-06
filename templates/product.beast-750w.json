@@ -474,7 +474,73 @@
         "description": "<p>All BEAST 750W models and colorways fit riders from 5'6\" to 6'5\"+ thanks to the extra long extendable seat post and easy adjustable handlebars.</p>",
         "primary_image": "shopify://shop_images/Beast-Rider-Height-5-6.webp",
         "secondary_image": "shopify://shop_images/Beast-Rider-Height-6-5.webp",
-        "enable_parallax": false,
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
+    },
+    "section_key_features_gLDH7A": {
+      "type": "section-key-features",
+      "blocks": {
+        "feature_6HbUhi": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/wildsyde-ebikes-beast-tire.webp",
+            "title": "Cross-Terrain 4\" Fat-Tires",
+            "description": "Experience a stable, cushioned ride and superior traction with 4\" fat-tires, enhanced by fenders for wet-weather protection."
+          }
+        },
+        "feature_E4jftr": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/wildsyde-ebikes-beast-cruiser-handlebarsjpg.webp",
+            "title": "Wide Cruiser Handlebars",
+            "description": "Wide, ergonomic cruiser handlebars provide a comfortable, upright position for better visibility, control and manoeuvrability."
+          }
+        },
+        "feature_cziJ8C": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/wildsyde-ebikes-beast-display_92d41730-93f1-4a9f-80aa-ebf087e57406.webp",
+            "title": "Full-Color LCD Display",
+            "description": "The full-color LCD display keeps you informed with speed, battery level and assist mode, all in one easy-to-read screen."
+          }
+        },
+        "feature_zLzgBT": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/wildsyde-ebikes-controller.webp",
+            "title": "Display Controller",
+            "description": "Intuitive display controller lets you power on, change assist levels, toggle ride settings, and includes a USB charging port."
+          }
+        },
+        "feature_krUr4G": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/wildsyde-ebikes-beast-tank_69d65dc0-e14e-47a8-addd-a82cd3380df1.webp",
+            "title": "Battery 'Gas' Tank",
+            "description": "The retro-inspired gas tank design cleverly conceals the battery while adding the signature, classic look."
+          }
+        },
+        "feature_jwafNf": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/wildsyde-ebikes-beast-brakes.webp",
+            "title": "Hydraulic Disc Brakes",
+            "description": "Responsive hydraulic disc brakes deliver smooth, controlled stopping power for confident riding in all conditions."
+          }
+        }
+      },
+      "block_order": [
+        "feature_6HbUhi",
+        "feature_E4jftr",
+        "feature_cziJ8C",
+        "feature_zLzgBT",
+        "feature_krUr4G",
+        "feature_jwafNf"
+      ],
+      "name": "Key Features & Components",
+      "settings": {
+        "title": "Key Features & Components",
         "padding_top": 64,
         "padding_bottom": 64
       }
@@ -654,6 +720,7 @@
     "section_image_with_text_overlap_EzpCcb",
     "section_lifestyle_gallery_TTbqxt",
     "section_rider_height_qktdTB",
+    "section_key_features_gLDH7A",
     "9904a28f-6381-41fe-96eb-d4a73d60f0a0",
     "5a818a60-e694-4eac-a33f-5ce701e894b0",
     "product-recommendations",
