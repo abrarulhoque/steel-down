@@ -66,27 +66,33 @@
   
   .rider-height-{{ section.id }} .rider-height__image--secondary {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -20px;
+    right: -32px;
     z-index: 1;
-    transform: translate(32px, -20px);
+    width: 85%;
   }
   
   @media (min-width: 768px) {
     .rider-height-{{ section.id }} .rider-height__image--secondary {
-      transform: translate(80px, -40px);
+      top: -40px;
+      right: -80px;
+      width: 80%;
     }
   }
   
   @media (min-width: 1024px) {
     .rider-height-{{ section.id }} .rider-height__image--secondary {
-      transform: translate(120px, -60px);
+      top: -60px;
+      right: -120px;
+      width: 75%;
     }
   }
   
   @media (min-width: 1280px) {
     .rider-height-{{ section.id }} .rider-height__image--secondary {
-      transform: translate(160px, -80px);
+      top: -80px;
+      right: -160px;
+      width: 70%;
     }
   }
   
@@ -223,24 +229,8 @@
       }
       
       if (secondaryImage) {
-        // Keep the original transform and add parallax
-        const baseTransforms = {
-          mobile: 'translate(32px, -20px)',
-          tablet: 'translate(80px, -40px)',
-          desktop: 'translate(120px, -60px)',
-          large: 'translate(160px, -80px)'
-        };
-        
-        let baseTransform = baseTransforms.mobile;
-        if (window.innerWidth >= 1280) {
-          baseTransform = baseTransforms.large;
-        } else if (window.innerWidth >= 1024) {
-          baseTransform = baseTransforms.desktop;
-        } else if (window.innerWidth >= 768) {
-          baseTransform = baseTransforms.tablet;
-        }
-        
-        secondaryImage.style.transform = `${baseTransform} translateY(${secondaryOffset}%)`;
+        // Add parallax to the secondary image
+        secondaryImage.style.transform = `translateY(${secondaryOffset}%)`;
       }
     }
     
