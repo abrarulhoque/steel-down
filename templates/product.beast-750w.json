@@ -86,15 +86,6 @@
             "enable_payment_button": true
           }
         },
-        "text_Acec79": {
-          "type": "text",
-          "settings": {
-            "column": "primary",
-            "title": "",
-            "style": "h3",
-            "text": "<p>Power,presenceand pure muscle—meet the Beast™, ourburliestbike yet. For those who want to own the road, this fat-tireeBikeis the ultimate in stability and control. With a 750W motor and 20Ah batteryyou’llget 35-50+ miles of range, so you can ride longer and farther. Cruise up to 20mph whetheryou’rein the city or on the scenic route. The Beast’s tough design andbig powermeansit’sfor confident riders who want style and substance. </p>"
-          }
-        },
         "share": {
           "type": "share",
           "disabled": true,
@@ -209,7 +200,6 @@
         "inventory_notice",
         "free_shipping_bar_eTUQGP",
         "buy_buttons",
-        "text_Acec79",
         "share",
         "description",
         "reviews_tab_new_f8WyCG",
@@ -649,6 +639,55 @@
         "padding_bottom": 60
       }
     },
+    "section_feature_benefits_AkTQUR": {
+      "type": "section-feature-benefits",
+      "blocks": {
+        "benefit_EgMmWt": {
+          "type": "benefit",
+          "settings": {
+            "icon": "icon-delivery-truck-3",
+            "color_icon": "rgba(0,0,0,0)",
+            "svg-code": "",
+            "title": "Free Shipping",
+            "subtitle": "on all eBikes"
+          }
+        },
+        "benefit_7aTddb": {
+          "type": "benefit",
+          "settings": {
+            "icon": "icon-shield-check",
+            "color_icon": "rgba(0,0,0,0)",
+            "svg-code": "",
+            "title": "1-Year Warranty",
+            "subtitle": "to protect your purchase"
+          }
+        },
+        "benefit_kaUqKr": {
+          "type": "benefit",
+          "settings": {
+            "icon": "icon-shield-check",
+            "color_icon": "rgba(0,0,0,0)",
+            "svg-code": "",
+            "title": "14-Day Trial",
+            "subtitle": "Terms & Conditions apply"
+          }
+        }
+      },
+      "block_order": [
+        "benefit_EgMmWt",
+        "benefit_7aTddb",
+        "benefit_kaUqKr"
+      ],
+      "name": "Feature Benefits",
+      "settings": {
+        "container": "large",
+        "bg_color": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "padding_top": 24,
+        "padding_bottom": 24,
+        "section-bottom-margin": false
+      }
+    },
     "9904a28f-6381-41fe-96eb-d4a73d60f0a0": {
       "type": "section-testimonials",
       "blocks": {
@@ -826,6 +865,7 @@
     "section_rider_height_qktdTB",
     "section_key_features_gLDH7A",
     "section_geometry_specifications_NbqTRF",
+    "section_feature_benefits_AkTQUR",
     "9904a28f-6381-41fe-96eb-d4a73d60f0a0",
     "5a818a60-e694-4eac-a33f-5ce701e894b0",
     "product-recommendations",
