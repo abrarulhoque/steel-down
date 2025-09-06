@@ -33,7 +33,7 @@
   
   @media (min-width: 1024px) {
     .rider-height-{{ section.id }} .rider-height__grid {
-      grid-template-columns: minmax(0, 750px) 1fr;
+      grid-template-columns: minmax(0, 750px) minmax(0, 1fr);
       gap: var(--column-gap-desktop);
     }
   }
@@ -41,6 +41,8 @@
   .rider-height-{{ section.id }} .rider-height__images {
     position: relative;
     width: 100%;
+    max-width: 750px;
+    isolation: isolate;
   }
   
   .rider-height-{{ section.id }} .rider-height__image {
@@ -66,37 +68,39 @@
   
   .rider-height-{{ section.id }} .rider-height__image--secondary {
     position: absolute;
-    top: -20px;
-    right: -32px;
+    right: 0;
     z-index: 1;
-    width: 85%;
+    width: 78%;
+    top: -20px;
   }
   
   @media (min-width: 768px) {
     .rider-height-{{ section.id }} .rider-height__image--secondary {
+      right: 0;
+      width: 76%;
       top: -40px;
-      right: -80px;
-      width: 80%;
     }
   }
   
   @media (min-width: 1024px) {
     .rider-height-{{ section.id }} .rider-height__image--secondary {
+      right: 0;
+      width: 74%;
       top: -60px;
-      right: -120px;
-      width: 75%;
     }
   }
   
   @media (min-width: 1280px) {
     .rider-height-{{ section.id }} .rider-height__image--secondary {
+      right: 0;
+      width: 72%;
       top: -80px;
-      right: -160px;
-      width: 70%;
     }
   }
   
   .rider-height-{{ section.id }} .rider-height__content {
+    position: relative;
+    z-index: 3;
     text-align: left;
   }
   
