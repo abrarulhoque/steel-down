@@ -5,13 +5,6 @@
 %}
 
 <style>
-  .rider-height-{{ section.id }} {
-    --column-gap-desktop: 60px;
-    --column-gap-tablet: 30px;
-    --column-gap-mobile: 20px;
-    --image-radius: 12px;
-  }
-  
   .rider-height-{{ section.id }} .rider-height__container {
     max-width: 1200px;
     margin: 0 auto;
@@ -21,34 +14,38 @@
   .rider-height-{{ section.id }} .rider-height__grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: var(--column-gap-mobile);
+    gap: 40px;
     align-items: center;
   }
   
   @media (min-width: 768px) {
     .rider-height-{{ section.id }} .rider-height__grid {
-      gap: var(--column-gap-tablet);
+      gap: 60px;
     }
   }
   
   @media (min-width: 1024px) {
     .rider-height-{{ section.id }} .rider-height__grid {
-      grid-template-columns: minmax(0, 750px) minmax(0, 1fr);
-      gap: var(--column-gap-desktop);
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
     }
   }
   
   .rider-height-{{ section.id }} .rider-height__images {
-    position: relative;
-    width: 100%;
-    max-width: 750px;
-    isolation: isolate;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  @media (min-width: 768px) {
+    .rider-height-{{ section.id }} .rider-height__images {
+      gap: 30px;
+    }
   }
   
   .rider-height-{{ section.id }} .rider-height__image {
-    position: relative;
     aspect-ratio: 0.96;
-    border-radius: var(--image-radius);
+    border-radius: 12px;
     overflow: hidden;
     background: var(--color--background-lightest, #f8f8f8);
   }
@@ -60,54 +57,8 @@
     object-position: center;
   }
   
-  .rider-height-{{ section.id }} .rider-height__image--primary {
-    position: relative;
-    z-index: 2;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  }
-  
-  .rider-height-{{ section.id }} .rider-height__image--secondary {
-    position: absolute;
-    right: 0;
-    z-index: 1;
-    width: 78%;
-    top: -20px;
-  }
-  
-  @media (min-width: 768px) {
-    .rider-height-{{ section.id }} .rider-height__image--secondary {
-      right: 0;
-      width: 76%;
-      top: -40px;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    .rider-height-{{ section.id }} .rider-height__image--secondary {
-      right: 0;
-      width: 74%;
-      top: -60px;
-    }
-  }
-  
-  @media (min-width: 1280px) {
-    .rider-height-{{ section.id }} .rider-height__image--secondary {
-      right: 0;
-      width: 72%;
-      top: -80px;
-    }
-  }
-  
   .rider-height-{{ section.id }} .rider-height__content {
-    position: relative;
-    z-index: 3;
     text-align: left;
-  }
-  
-  @media (max-width: 1023px) {
-    .rider-height-{{ section.id }} .rider-height__content {
-      margin-top: 24px;
-    }
   }
   
   .rider-height-{{ section.id }} .rider-height__title {
@@ -124,64 +75,54 @@
     line-height: 1.6;
     color: var(--color--text, #212121);
   }
-  
-  .rider-height-{{ section.id }}.rider-height--parallax .rider-height__image--primary {
-    transition: transform 0.1s ease-out;
-  }
-  
-  .rider-height-{{ section.id }}.rider-height--parallax .rider-height__image--secondary {
-    transition: transform 0.1s ease-out;
-  }
 </style>
 
-<section class="section section--{{ section.id }} rider-height-{{ section.id }}{% if section.settings.enable_parallax %} rider-height--parallax{% endif %}" data-section-id="{{ section.id }}" data-section-type="rider-height">
+<section class="section section--{{ section.id }} rider-height-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="rider-height">
   <div class="rider-height__container">
     <div class="rider-height__grid">
-      <div class="rider-height__images" data-parallax-images>
+      <div class="rider-height__images">
         {% if section.settings.primary_image %}
-          <div class="rider-height__image rider-height__image--primary" data-parallax-primary>
+          <div class="rider-height__image">
             <img
-              src="{{ section.settings.primary_image | image_url: width: 405 }}"
+              src="{{ section.settings.primary_image | image_url: width: 600 }}"
               srcset="
-                {{ section.settings.primary_image | image_url: width: 200 }} 200w,
-                {{ section.settings.primary_image | image_url: width: 405 }} 405w,
+                {{ section.settings.primary_image | image_url: width: 300 }} 300w,
                 {{ section.settings.primary_image | image_url: width: 600 }} 600w,
-                {{ section.settings.primary_image | image_url: width: 810 }} 810w,
+                {{ section.settings.primary_image | image_url: width: 900 }} 900w,
                 {{ section.settings.primary_image | image_url: width: 1200 }} 1200w
               "
-              sizes="(min-width: 1024px) 405px, (min-width: 768px) 50vw, calc(50vw - 16px)"
-              width="405"
-              height="{{ 405 | divided_by: section.settings.primary_image.aspect_ratio | round }}"
+              sizes="(min-width: 1024px) 50vw, 100vw"
+              width="600"
+              height="{{ 600 | divided_by: section.settings.primary_image.aspect_ratio | round }}"
               alt="{{ section.settings.primary_image.alt | escape }}"
               loading="lazy"
             >
           </div>
         {% else %}
-          <div class="rider-height__image rider-height__image--primary" data-parallax-primary>
+          <div class="rider-height__image">
             {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder-svg--light' }}
           </div>
         {% endif %}
         
         {% if section.settings.secondary_image %}
-          <div class="rider-height__image rider-height__image--secondary" data-parallax-secondary>
+          <div class="rider-height__image">
             <img
-              src="{{ section.settings.secondary_image | image_url: width: 405 }}"
+              src="{{ section.settings.secondary_image | image_url: width: 600 }}"
               srcset="
-                {{ section.settings.secondary_image | image_url: width: 200 }} 200w,
-                {{ section.settings.secondary_image | image_url: width: 405 }} 405w,
+                {{ section.settings.secondary_image | image_url: width: 300 }} 300w,
                 {{ section.settings.secondary_image | image_url: width: 600 }} 600w,
-                {{ section.settings.secondary_image | image_url: width: 810 }} 810w,
+                {{ section.settings.secondary_image | image_url: width: 900 }} 900w,
                 {{ section.settings.secondary_image | image_url: width: 1200 }} 1200w
               "
-              sizes="(min-width: 1024px) 405px, (min-width: 768px) 50vw, calc(50vw - 16px)"
-              width="405"
-              height="{{ 405 | divided_by: section.settings.secondary_image.aspect_ratio | round }}"
+              sizes="(min-width: 1024px) 50vw, 100vw"
+              width="600"
+              height="{{ 600 | divided_by: section.settings.secondary_image.aspect_ratio | round }}"
               alt="{{ section.settings.secondary_image.alt | escape }}"
               loading="lazy"
             >
           </div>
         {% else %}
-          <div class="rider-height__image rider-height__image--secondary" data-parallax-secondary>
+          <div class="rider-height__image">
             {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder-svg--light' }}
           </div>
         {% endif %}
@@ -204,67 +145,6 @@
   </div>
 </section>
 
-{% if section.settings.enable_parallax %}
-<script>
-(function() {
-  const section = document.querySelector('[data-section-id="{{ section.id }}"]');
-  if (!section) return;
-  
-  const primaryImage = section.querySelector('[data-parallax-primary]');
-  const secondaryImage = section.querySelector('[data-parallax-secondary]');
-  
-  let ticking = false;
-  
-  function updateParallax() {
-    const rect = section.getBoundingClientRect();
-    const viewportHeight = window.innerHeight;
-    
-    // Check if section is in viewport
-    if (rect.bottom >= 0 && rect.top <= viewportHeight) {
-      const sectionHeight = rect.height;
-      const scrollProgress = Math.max(0, Math.min(1, (viewportHeight - rect.top) / (viewportHeight + sectionHeight)));
-      
-      // Move primary up 2% and secondary down 2%
-      const primaryOffset = scrollProgress * -2;
-      const secondaryOffset = scrollProgress * 2;
-      
-      if (primaryImage) {
-        primaryImage.style.transform = `translateY(${primaryOffset}%)`;
-      }
-      
-      if (secondaryImage) {
-        // Add parallax to the secondary image
-        secondaryImage.style.transform = `translateY(${secondaryOffset}%)`;
-      }
-    }
-    
-    ticking = false;
-  }
-  
-  function onScroll() {
-    if (!ticking) {
-      requestAnimationFrame(updateParallax);
-      ticking = true;
-    }
-  }
-  
-  // Initial call
-  updateParallax();
-  
-  // Listen for scroll events
-  window.addEventListener('scroll', onScroll, { passive: true });
-  window.addEventListener('resize', updateParallax, { passive: true });
-  
-  // Cleanup on section unload (for theme customizer)
-  document.addEventListener('shopify:section:unload', function(event) {
-    if (event.detail.sectionId === '{{ section.id }}') {
-      window.removeEventListener('scroll', onScroll);
-      window.removeEventListener('resize', updateParallax);
-    }
-  });
-})();
-</script>
-{% endif %}
 
 {% schema %}
 {
@@ -302,16 +182,6 @@
       "id": "secondary_image",
       "label": "Secondary image (back)",
       "info": "Shows behind, offset to top-right. Recommended size: 796×829px"
-    },
-    {
-      "type": "header",
-      "content": "Effects"
-    },
-    {
-      "type": "checkbox",
-      "id": "enable_parallax",
-      "label": "Enable parallax scroll effect",
-      "default": true
     },
     {
       "type": "header",
