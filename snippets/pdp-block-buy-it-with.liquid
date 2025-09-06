@@ -6,7 +6,6 @@
   assign show_navigation_dots = block.settings.show_navigation_dots | default: true
   assign unique_id = block.id | append: '-buy-it-with'
 -%}
--%}
 
 {%- comment -%}
   NOTE:
@@ -31,7 +30,7 @@
     <div class="buy-it-with__carousel" data-carousel>
       <div class="buy-it-with__slides" data-slides>
         {%- for recommended_product in recommended_products -%}
-          {%- if recommended_product and recommended_product.available -%}
+          {%- if recommended_product -%}
             <div class="buy-it-with__slide{% if forloop.first %} is-active{% endif %}" data-slide="{{ forloop.index0 }}">
               <div class="buy-it-with__product">
                 {%- if recommended_product.featured_image -%}
@@ -78,7 +77,7 @@
       {%- if show_navigation_dots and recommended_products.size > 1 -%}
         <div class="buy-it-with__navigation">
           {%- for recommended_product in recommended_products -%}
-            {%- if recommended_product and recommended_product.available -%}
+            {%- if recommended_product -%}
               <button 
                 class="buy-it-with__dot{% if forloop.first %} is-active{% endif %}" 
                 data-dot="{{ forloop.index0 }}"
