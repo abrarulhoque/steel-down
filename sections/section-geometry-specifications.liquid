@@ -151,17 +151,16 @@
   }
 
   .section--{{ section.id }} .accordion__text-wrapper {
-    display: grid;
-    grid-template-rows: 0fr;
-    transition: grid-template-rows 150ms ease;
+    overflow: hidden;
+    height: 0;
+    transition: height 150ms ease;
   }
 
   .section--{{ section.id }} .accordion__text-wrapper[aria-expanded="true"] {
-    grid-template-rows: 1fr;
+    height: auto;
   }
 
   .section--{{ section.id }} .accordion__text {
-    overflow: hidden;
     padding: 12px 0 20px;
     font-size: calc(var(--adjust-body, 1) * 0.95rem);
   }
