@@ -528,6 +528,62 @@
             "title": "Hydraulic Disc Brakes",
             "description": "Responsive hydraulic disc brakes deliver smooth, controlled stopping power for confident riding in all conditions."
           }
+        },
+        "feature_eedbMj": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/wildsyde-ebikes-beast-seat_post.webp",
+            "title": "Shock-Absorbing Seat Post & Saddle",
+            "description": "A wide, cushioned saddle and shock-absorbing seat post smooth bumps for a more comfortable ride."
+          }
+        },
+        "feature_aFLrgV": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/wildsyde-ebikes-beast-gears-thumb-throttle.webp",
+            "title": "Gears & Thumb Throttle",
+            "description": "Smooth acceleration with the thumb throttle and precise Shimano gear changes for effortless control and a relaxed ride."
+          }
+        },
+        "feature_qGfMMW": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/wildsyde-ebikes-beast-rack.webp",
+            "title": "Rear Cargo Rack and Integrated Taillight",
+            "description": "The integrated rear rack offers reliable cargo support, while the built-in taillight improves visibility for added safety."
+          }
+        },
+        "feature_iYeEEh": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/wildsyde-ebikes-beast-headlight_73c7b387-4064-46c4-8d04-e7b77960d0a9.webp",
+            "title": "Retro Headlight",
+            "description": "Vintage-style headlight for timeless style, enhanced visibility and improved presence."
+          }
+        },
+        "feature_y4Taw4": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/wildsyde-ebikes-beast-grips.webp",
+            "title": "Stitched Leatherette Handlbar Grips",
+            "description": "Ergonomically designed faux leather grips provide comfort and a secure hold, reducing hand fatigue for a more enjoyable ride."
+          }
+        },
+        "feature_T39zwz": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/wildsyde-ebikes-tank-battery.webp",
+            "title": "20Ah Integrated Tank-Style Battery",
+            "description": "Ride up to 50+ miles on a single charge with the 20Ah battery discreetly tucked inside the retro-inspired gas-tank frame."
+          }
+        },
+        "feature_hmWMtk": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/wildsyde-ebikes-beast-motor_03f42f41-c40a-4ed3-bd2e-924f0742fb4d.webp",
+            "title": "750W Rear Hub Motor",
+            "description": "Powerful and reliable 750W rear hub motor for smooth acceleration, confident hill climbing and cruising."
+          }
         }
       },
       "block_order": [
@@ -536,7 +592,14 @@
         "feature_cziJ8C",
         "feature_zLzgBT",
         "feature_krUr4G",
-        "feature_jwafNf"
+        "feature_jwafNf",
+        "feature_eedbMj",
+        "feature_aFLrgV",
+        "feature_qGfMMW",
+        "feature_iYeEEh",
+        "feature_y4Taw4",
+        "feature_T39zwz",
+        "feature_hmWMtk"
       ],
       "name": "Key Features & Components",
       "settings": {
