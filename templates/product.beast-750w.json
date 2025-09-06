@@ -432,7 +432,7 @@
       ],
       "name": "Image with text overlap",
       "settings": {
-        "container": "full",
+        "container": "large",
         "block_spacing": 5,
         "image_ratio": "4:3",
         "block_layout": "2/3",
@@ -445,59 +445,76 @@
         "section-bottom-margin": false
       }
     },
-    "175696330699633405": {
-      "type": "_blocks",
+    "section_lifestyle_carousel_PJAtPt": {
+      "type": "section-lifestyle-carousel",
       "blocks": {
-        "ai_gen_block_6e28cb4_kXBdHK": {
-          "type": "ai_gen_block_6e28cb4",
+        "image_Y8ADae": {
+          "type": "image",
           "settings": {
-            "title": "",
-            "description": "",
-            "section_width": "contained",
-            "columns_desktop": 4,
-            "columns_tablet": 3,
-            "columns_mobile": "1",
-            "autoplay_enabled": false,
-            "autoplay_speed": 4,
-            "arrow_color": "#ffffff",
-            "padding_top": 40,
-            "padding_bottom": 40,
-            "image_1": "shopify://shop_images/wildsyde-beast-action-02.webp",
-            "image_2": "shopify://shop_images/wildsyde-beast-action-03.webp",
-            "image_3": "shopify://shop_images/wildsyde-beast-action-04.webp",
-            "image_4": "shopify://shop_images/wildsyde-beast-orange-park-02.webp",
-            "image_5": "shopify://shop_images/wildsyde-beast-action-06.webp",
-            "image_6": "shopify://shop_images/wildsyde-beast-orange-park.webp"
-          },
-          "blocks": {}
+            "image": "shopify://shop_images/wildsyde-beast-action-02.webp"
+          }
+        },
+        "image_PLwTKW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/wildsyde-beast-action-03.webp"
+          }
         }
       },
       "block_order": [
-        "ai_gen_block_6e28cb4_kXBdHK"
+        "image_Y8ADae",
+        "image_PLwTKW"
       ],
-      "settings": {}
+      "name": "Lifestyle Carousel",
+      "settings": {
+        "title": "Lifestyle Gallery",
+        "above_fold": false
+      }
     },
-    "1757126185d72d9daa": {
-      "type": "_blocks",
+    "section_lifestyle_carousel_Czn87K": {
+      "type": "section-lifestyle-carousel",
       "blocks": {
-        "ai_gen_block_b130c44_gqb4XE": {
-          "type": "ai_gen_block_b130c44",
+        "image_UX4x6t": {
+          "type": "image",
           "settings": {
-            "heading": "Lifestyle shots",
-            "image_1": "shopify://shop_images/wildsyde-beast-action-02.webp",
-            "image_3": "shopify://shop_images/wildsyde-beast-action-03.webp",
-            "image_border_radius": 8,
-            "nav_button_color": "#ffffff",
-            "nav_button_hover_color": "#f5f5f5",
-            "nav_button_icon_color": "#353535"
-          },
-          "blocks": {}
+            "image": "shopify://shop_images/wildsyde-beast-action-02.webp"
+          }
+        },
+        "image_8xFzAr": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/wildsyde-beast-action-03.webp"
+          }
+        },
+        "image_UdJzHa": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/wildsyde-beast-action-04.webp"
+          }
+        },
+        "image_LDYL3h": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/wildsyde-beast-orange-park-02.webp"
+          }
+        },
+        "image_zRnKwT": {
+          "type": "image",
+          "settings": {}
         }
       },
       "block_order": [
-        "ai_gen_block_b130c44_gqb4XE"
+        "image_UX4x6t",
+        "image_8xFzAr",
+        "image_UdJzHa",
+        "image_LDYL3h",
+        "image_zRnKwT"
       ],
-      "settings": {}
+      "name": "Lifestyle Carousel",
+      "settings": {
+        "title": "Lifestyle Gallery",
+        "above_fold": false
+      }
     },
     "9904a28f-6381-41fe-96eb-d4a73d60f0a0": {
       "type": "section-testimonials",
@@ -672,8 +689,8 @@
     "product_specifications_4gHEhM",
     "section_rich_text_6nFxHX",
     "section_image_with_text_overlap_EzpCcb",
-    "175696330699633405",
-    "1757126185d72d9daa",
+    "section_lifestyle_carousel_PJAtPt",
+    "section_lifestyle_carousel_Czn87K",
     "9904a28f-6381-41fe-96eb-d4a73d60f0a0",
     "5a818a60-e694-4eac-a33f-5ce701e894b0",
     "product-recommendations",

@@ -1,0 +1,344 @@
+{% if section.blocks.size > 0 %}
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+{% assign section_id = section.id | replace: '_', '' | downcase %}
+
+<style>
+.lifestyle-carousel-{{ section_id }} {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 60px;
+  position: relative;
+}
+
+@media screen and (max-width: 1023px) {
+  .lifestyle-carousel-{{ section_id }} {
+    padding: 0 20px;
+  }
+}
+
+.carousel-container-{{ section_id }} {
+  position: relative;
+}
+
+.carousel-{{ section_id }} {
+  overflow: hidden;
+}
+
+.carousel-{{ section_id }} .flickity-viewport {
+  overflow: visible;
+}
+
+.carousel-cell-{{ section_id }} {
+  margin-right: 20px;
+  aspect-ratio: 5 / 4;
+  position: relative;
+}
+
+.carousel-cell-{{ section_id }}:last-child {
+  margin-right: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .carousel-cell-{{ section_id }} {
+    width: calc(((1440px - 120px) - 40px) / 3);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .carousel-cell-{{ section_id }} {
+    width: calc((((100vw - 40px) * 0.9) - 20px) / 2);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .carousel-cell-{{ section_id }} {
+    width: calc((100vw - 40px) - 20px);
+  }
+}
+
+.carousel-cell-{{ section_id }} img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.carousel-placeholder-{{ section_id }} {
+  width: 100%;
+  height: 100%;
+  background-color: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  position: relative;
+}
+
+.carousel-placeholder-{{ section_id }} svg {
+  width: 60px;
+  height: 60px;
+  opacity: 0.3;
+}
+
+.carousel-nav-{{ section_id }} {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.7);
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.carousel-nav-{{ section_id }}:hover:not(:disabled) {
+  background: rgba(0, 0, 0, 0.9);
+  transform: translateY(-50%) scale(1.05);
+}
+
+.carousel-nav-{{ section_id }}:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+  transform: translateY(-50%) scale(1);
+}
+
+.carousel-nav-{{ section_id }} svg {
+  width: 20px;
+  height: 20px;
+  color: white;
+}
+
+.carousel-nav-prev-{{ section_id }} {
+  left: -24px;
+}
+
+.carousel-nav-next-{{ section_id }} {
+  right: -24px;
+}
+
+@media screen and (max-width: 767px) {
+  .carousel-nav-prev-{{ section_id }} {
+    left: -16px;
+  }
+
+  .carousel-nav-next-{{ section_id }} {
+    right: -16px;
+  }
+}
+
+.carousel-heading-{{ section_id }} {
+  margin-bottom: 30px;
+  color: var(--color--text);
+  text-align: center;
+}
+</style>
+
+<lifestyle-carousel-{{ section_id }}
+  class="lifestyle-carousel-{{ section_id }}"
+  data-section-id="{{ section.id }}"
+  data-section-type="lifestyle-carousel"
+>
+  {% unless section.settings.title == blank %}
+    <h2 class="carousel-heading-{{ section_id }}">{{ section.settings.title | escape }}</h2>
+  {% endunless %}
+
+  <div class="carousel-container-{{ section_id }}">
+    <div class="carousel-{{ section_id }}" data-flickity='{"cellAlign": "left", "contain": true, "prevNextButtons": false, "pageDots": false, "draggable": true, "wrapAround": false, "groupCells": false, "imagesLoaded": true, "setGallerySize": true}'>
+      {% for block in section.blocks %}
+        {% if block.settings.image != blank %}
+          <div class="carousel-cell-{{ section_id }}" {{ block.shopify_attributes }}>
+            {% assign loading_priority = 'lazy' %}
+            {% if forloop.first and section.settings.above_fold %}
+              {% assign loading_priority = 'eager' %}
+            {% endif %}
+            
+            <img
+              src="{{ block.settings.image | img_url: width: 800 }}"
+              alt="{{ block.settings.image.alt | default: 'Lifestyle image showing bike usage' | escape }}"
+              loading="{{ loading_priority }}"
+              width="{{ block.settings.image.width }}"
+              height="{{ block.settings.image.height }}"
+            >
+          </div>
+        {% endif %}
+      {% endfor %}
+      
+      {% if section.blocks.size == 0 %}
+        <div class="carousel-cell-{{ section_id }}">
+          <div class="carousel-placeholder-{{ section_id }}">
+            {{ 'image' | placeholder_svg_tag }}
+          </div>
+        </div>
+      {% endif %}
+    </div>
+
+    <button
+      class="carousel-nav-{{ section_id }} carousel-nav-prev-{{ section_id }}"
+      type="button"
+      aria-label="Previous image"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="15,18 9,12 15,6"></polyline>
+      </svg>
+    </button>
+
+    <button
+      class="carousel-nav-{{ section_id }} carousel-nav-next-{{ section_id }}"
+      type="button"
+      aria-label="Next image"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="9,18 15,12 9,6"></polyline>
+      </svg>
+    </button>
+  </div>
+</lifestyle-carousel-{{ section_id }}>
+
+<script>
+  (function() {
+    class LifestyleCarousel{{ section_id }} extends HTMLElement {
+      constructor() {
+        super();
+        this.flickity = null;
+      }
+
+      connectedCallback() {
+        this.initCarousel();
+        this.setupNavigation();
+      }
+
+      initCarousel() {
+        const carousel = this.querySelector('.carousel-{{ section_id }}');
+        
+        if (typeof Flickity !== 'undefined') {
+          this.flickity = new Flickity(carousel, {
+            cellAlign: 'left',
+            contain: true,
+            prevNextButtons: false,
+            pageDots: false,
+            draggable: true,
+            wrapAround: false,
+            groupCells: false,
+            imagesLoaded: true,
+            setGallerySize: true
+          });
+
+          this.flickity.on('change', () => {
+            this.updateNavButtons();
+          });
+
+          this.updateNavButtons();
+        }
+      }
+
+      setupNavigation() {
+        const prevButton = this.querySelector('.carousel-nav-prev-{{ section_id }}');
+        const nextButton = this.querySelector('.carousel-nav-next-{{ section_id }}');
+
+        prevButton.addEventListener('click', () => {
+          if (this.flickity) {
+            this.flickity.previous();
+          }
+        });
+
+        nextButton.addEventListener('click', () => {
+          if (this.flickity) {
+            this.flickity.next();
+          }
+        });
+      }
+
+      updateNavButtons() {
+        if (!this.flickity) return;
+
+        const prevButton = this.querySelector('.carousel-nav-prev-{{ section_id }}');
+        const nextButton = this.querySelector('.carousel-nav-next-{{ section_id }}');
+
+        prevButton.disabled = this.flickity.selectedIndex === 0;
+        nextButton.disabled = this.flickity.selectedIndex === this.flickity.slides.length - 1;
+      }
+
+      disconnectedCallback() {
+        if (this.flickity) {
+          this.flickity.destroy();
+        }
+      }
+    }
+
+    customElements.define('lifestyle-carousel-{{ section_id }}', LifestyleCarousel{{ section_id }});
+  })();
+</script>
+
+{% endif %}
+
+{% schema %}
+{
+  "name": "Lifestyle Carousel",
+  "class": "js-section__lifestyle-carousel",
+  "max_blocks": 12,
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section title",
+      "default": "Lifestyle Gallery"
+    },
+    {
+      "type": "checkbox",
+      "id": "above_fold",
+      "label": "Above the fold",
+      "info": "Check if this section appears above the fold for better performance",
+      "default": false
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Lifestyle Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Lifestyle Image",
+          "info": "Recommended: 800x640px (5:4 aspect ratio). Images will be cropped to fit."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Lifestyle Carousel",
+      "settings": {
+        "title": "Lifestyle Gallery",
+        "above_fold": false
+      },
+      "blocks": [
+        {
+          "type": "image"
+        },
+        {
+          "type": "image"
+        },
+        {
+          "type": "image"
+        },
+        {
+          "type": "image"
+        }
+      ]
+    }
+  ],
+  "enabled_on": {
+    "templates": ["*"]
+  }
+}
+{% endschema %}
