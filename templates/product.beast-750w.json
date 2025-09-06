@@ -466,6 +466,19 @@
         "section_padding_bottom": "medium"
       }
     },
+    "section_rider_height_qktdTB": {
+      "type": "section-rider-height",
+      "name": "Rider Height",
+      "settings": {
+        "title": "Rider Height",
+        "description": "<p>All BEAST 750W models and colorways fit riders from 5'6\" to 6'5\"+ thanks to the extra long extendable seat post and easy adjustable handlebars.</p>",
+        "primary_image": "shopify://shop_images/Beast-Rider-Height-5-6.webp",
+        "secondary_image": "shopify://shop_images/Beast-Rider-Height-6-5.webp",
+        "enable_parallax": false,
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
+    },
     "9904a28f-6381-41fe-96eb-d4a73d60f0a0": {
       "type": "section-testimonials",
       "blocks": {
@@ -640,6 +653,7 @@
     "section_rich_text_6nFxHX",
     "section_image_with_text_overlap_EzpCcb",
     "section_lifestyle_gallery_TTbqxt",
+    "section_rider_height_qktdTB",
     "9904a28f-6381-41fe-96eb-d4a73d60f0a0",
     "5a818a60-e694-4eac-a33f-5ce701e894b0",
     "product-recommendations",
