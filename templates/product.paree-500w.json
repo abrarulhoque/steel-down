@@ -1,0 +1,893 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "vendor",
+          "disabled": true,
+          "settings": {
+            "vendor_size": 2,
+            "vendor_style": "body"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": 2,
+            "title_size_mobile": 3
+          }
+        },
+        "judge_me_reviews_preview_badge_mFErDk": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "emphasize": false,
+            "price_label_discount": true,
+            "price_label_discount_type": "percentage",
+            "price_label_discount_color": "#c00000"
+          }
+        },
+        "db48bf56-e904-4604-9f21-89d04e9bf249": {
+          "type": "spacer",
+          "settings": {
+            "column": "primary",
+            "top": "small",
+            "bottom": "small",
+            "border": true
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "product_variant_style": "buttons",
+            "popup_enable": false,
+            "popup_trigger": "Size\nGröße\nTaille\nTaglia\nTalla",
+            "popup_label": "Size guide",
+            "popup_content": ""
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "inventory_notice": {
+          "type": "inventory_notice",
+          "settings": {
+            "inventory_limit": 7,
+            "align": "left",
+            "show_qty": true
+          }
+        },
+        "free_shipping_bar_eTUQGP": {
+          "type": "free-shipping-bar",
+          "settings": {
+            "align_left": true,
+            "hide_icon": false
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_gift_card_recipient": true,
+            "enable_payment_button": true
+          }
+        },
+        "guarantee_badges_iDHPqL": {
+          "type": "guarantee-badges",
+          "settings": {
+            "column": "primary",
+            "trial_text": "14-Day Trial",
+            "shipping_text": "Free Shipping*",
+            "warranty_text": "1-Year Warranty",
+            "processing_text": "24-48hr Processing",
+            "disclaimer_text": "*to contiguous USA",
+            "show_trial": true,
+            "show_shipping": true,
+            "show_warranty": true,
+            "show_processing": true,
+            "show_disclaimer": true
+          }
+        },
+        "share": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "column": "primary",
+            "align": "center"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "column": "secondary",
+            "title": "DESCRIPTION",
+            "description_collapsible_tab": false,
+            "open": true,
+            "icon": "icon-tags-1",
+            "icon_size": 2,
+            "color_icon": "#212121",
+            "svg-code": ""
+          }
+        },
+        "reviews_tab_new_f8WyCG": {
+          "type": "reviews-tab-new",
+          "disabled": true,
+          "settings": {
+            "column": "secondary",
+            "title": "Reviews",
+            "icon": "icon-shield-check",
+            "icon_size": 2,
+            "color_icon": "#212121",
+            "svg-code": "",
+            "count": true,
+            "open": false
+          }
+        },
+        "c13717d6-5def-40f5-9684-68f8f103b0d4": {
+          "type": "tab",
+          "settings": {
+            "column": "secondary",
+            "title": "Easy 30 Day Returns",
+            "icon": "icon-keyboard-arrow-return",
+            "icon_size": 2,
+            "color_icon": "#212121",
+            "svg-code": "",
+            "text": "<p><span style=\"text-decoration:underline\">RETURNS & EXCHANGES</span></p><p>Exchange or returns welcome within 30 days of purchase with recipes or order confirmation. Items must be unworn, unwashed, unused and have the original tags intact. Please note customer is responsible for shipping costs of online returns.</p><p>Helmets, headwear, grooming products, drinkware and sale items are final sale.</p>",
+            "image_width": 1000,
+            "align": "center",
+            "link": "shopify://policies/refund-policy",
+            "tab_content": "",
+            "open": false
+          }
+        },
+        "663a3435-b014-41e0-916d-1ed9505f5691": {
+          "type": "tab",
+          "settings": {
+            "column": "secondary",
+            "title": "Fast Shipping Info",
+            "icon": "icon-stopwatch",
+            "icon_size": 2,
+            "color_icon": "#212121",
+            "svg-code": "",
+            "text": "<p><strong>This product ships from our new US warehouse in Denver, Colorado. </strong></p><p>All online orders are processed within 2-3 days after the order was placed. You will get a tracking number as soon as we pack it up and put a shipping label on it.</p><p>We still have a warehouse in Ontario, Canada from which our 3/4 Low Profile Helmets ship out of. If you are buying a helmet in addition to other products they will ship and arrive separately.</p><p><strong>CUSTOMS, DUTIES & ADDRESS CHANGES<br/></strong>All packages imported to your country may be subject to customs, taxes or other fees. You are responsible for all applicable customs, duties, taxes and fees charged by your government.</p>",
+            "image_width": 1000,
+            "align": "center",
+            "link": "",
+            "tab_content": "",
+            "open": false
+          }
+        },
+        "pickup_Ac6Tgw": {
+          "type": "pickup",
+          "settings": {}
+        },
+        "complementary_products_xiznrY": {
+          "type": "complementary-products",
+          "settings": {
+            "heading": "Rad Pairing:",
+            "heading_size": 1,
+            "display_collapsible_tab": true,
+            "collapsible_tab_open": true,
+            "product_list_limit": 6,
+            "image_size": "1:1",
+            "image_fit": true,
+            "hide_labels": true,
+            "enable_quick_shop": true
+          }
+        },
+        "image_CQJLEE": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "column": "primary",
+            "image": "shopify://shop_images/Credit-Card-Image-6.jpg",
+            "image_width": 1000,
+            "align": "center",
+            "link": ""
+          }
+        },
+        "bundler_bundler_target_element_QPEt3E": {
+          "type": "shopify://apps/bundler/blocks/bundler-target-element/7a6ae1b8-3b16-449b-8429-8bb89a62c664",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "judge_me_reviews_preview_badge_mFErDk",
+        "price",
+        "db48bf56-e904-4604-9f21-89d04e9bf249",
+        "variant_picker",
+        "quantity_selector",
+        "inventory_notice",
+        "free_shipping_bar_eTUQGP",
+        "buy_buttons",
+        "guarantee_badges_iDHPqL",
+        "share",
+        "description",
+        "reviews_tab_new_f8WyCG",
+        "c13717d6-5def-40f5-9684-68f8f103b0d4",
+        "663a3435-b014-41e0-916d-1ed9505f5691",
+        "pickup_Ac6Tgw",
+        "complementary_products_xiznrY",
+        "image_CQJLEE",
+        "bundler_bundler_target_element_QPEt3E"
+      ],
+      "custom_css": [
+        ".js-section__product-single .hypervisual__container {margin-top: -60px;}",
+        ".js-section__product-single .hypervisual__container {margin-bottom: 50px;}"
+      ],
+      "settings": {
+        "style": "classic-border",
+        "bg_color": "#f5f5f5",
+        "style_clean_mobile": true,
+        "layout-order": "media-left",
+        "enable_sticky_content": true,
+        "container": "large",
+        "show_breadcrumbs": true,
+        "breadcrumbs_align": "left",
+        "enable_zoom": true,
+        "enable_video_looping": false,
+        "product_image_ratio": "1:1",
+        "enable_gallery_arrows": true,
+        "thumbnails_position": "left",
+        "thumbnails_ratio": "1:1",
+        "thumbnails_show_border": false
+      }
+    },
+    "af1e6c23-5338-467c-bee9-b9d9b3d9c22a": {
+      "type": "section-image-grid",
+      "blocks": {
+        "template--14778633322581__af1e6c23-5338-467c-bee9-b9d9b3d9c22a-1680270173f8db9315-0": {
+          "type": "image",
+          "settings": {
+            "text_alignment": "bottom",
+            "text_border_color": false,
+            "title": "Image block",
+            "text": "Use these image blocks to tell your story, promote your products or create a beautiful gallery.",
+            "link": ""
+          }
+        },
+        "template--14778633322581__af1e6c23-5338-467c-bee9-b9d9b3d9c22a-1680270173f8db9315-1": {
+          "type": "text",
+          "settings": {
+            "bg_color": "#f0f0f0",
+            "text_color": "dark",
+            "text_heading_color": false,
+            "text_border_color": true,
+            "title": "Text block",
+            "text": "<p>Use these text blocks to promote seasonal sales, store events or to tell your brand's story.</p>",
+            "link_text": "Learn more",
+            "link": ""
+          }
+        },
+        "template--14778633322581__af1e6c23-5338-467c-bee9-b9d9b3d9c22a-1680270173f8db9315-2": {
+          "type": "text",
+          "settings": {
+            "bg_color": "#f0f0f0",
+            "text_color": "dark",
+            "text_heading_color": false,
+            "text_border_color": true,
+            "title": "Text block",
+            "text": "<p>Use these text blocks to promote seasonal sales, store events or to tell your brand's story.</p>",
+            "link_text": "Learn more",
+            "link": ""
+          }
+        },
+        "template--14778633322581__af1e6c23-5338-467c-bee9-b9d9b3d9c22a-1680270173f8db9315-3": {
+          "type": "image",
+          "settings": {
+            "text_alignment": "bottom",
+            "text_border_color": false,
+            "title": "Image block",
+            "text": "Use these image blocks to tell your story, promote your products or create a beautiful gallery.",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14778633322581__af1e6c23-5338-467c-bee9-b9d9b3d9c22a-1680270173f8db9315-0",
+        "template--14778633322581__af1e6c23-5338-467c-bee9-b9d9b3d9c22a-1680270173f8db9315-1",
+        "template--14778633322581__af1e6c23-5338-467c-bee9-b9d9b3d9c22a-1680270173f8db9315-2",
+        "template--14778633322581__af1e6c23-5338-467c-bee9-b9d9b3d9c22a-1680270173f8db9315-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "featured": true,
+        "height": "medium",
+        "width": "full",
+        "button_style": "hollow",
+        "overlay_strength": 10,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "section-bottom-margin": false
+      }
+    },
+    "product_specifications_4gHEhM": {
+      "type": "product-specifications",
+      "blocks": {
+        "specification_WfqhxU": {
+          "type": "specification",
+          "settings": {
+            "icon": "icon-stopwatch",
+            "svg-code": "",
+            "value": "20 MPH",
+            "label": "TOP SPEED"
+          }
+        },
+        "specification_Bcqtta": {
+          "type": "specification",
+          "settings": {
+            "icon": "icon-flash",
+            "svg-code": "",
+            "value": "750W 48V",
+            "label": "REAR HUB MOTOR"
+          }
+        },
+        "specification_Py78PQ": {
+          "type": "specification",
+          "settings": {
+            "icon": "icon-pin",
+            "svg-code": "",
+            "value": "35-50+",
+            "label": "MILE RANGE"
+          }
+        },
+        "specification_QyFBTm": {
+          "type": "specification",
+          "settings": {
+            "icon": "icon-flash",
+            "svg-code": "",
+            "value": "20Ah 48V",
+            "label": "LITHIUM-ION BATTERY"
+          }
+        }
+      },
+      "block_order": [
+        "specification_WfqhxU",
+        "specification_Bcqtta",
+        "specification_Py78PQ",
+        "specification_QyFBTm"
+      ],
+      "name": "Product Specifications",
+      "settings": {
+        "title": "Specifications",
+        "desc": "",
+        "container": "small",
+        "divider": false,
+        "bg_color": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "text_heading_color": false,
+        "text_border_color": true,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "section-bottom-margin": false
+      }
+    },
+    "section_rich_text_6nFxHX": {
+      "type": "section-rich-text",
+      "name": "Rich text",
+      "settings": {
+        "full_width": false,
+        "section_title": "",
+        "text": "<p>Built for those who don't just ride, they own the road. With a retro moto-inspired frame that's as tough as it look sand fat tires that aren't just for show, they make all the difference on rough streets and uneven terrain. Whether you're cruising solo or leading the pack, every ride becomes an experience on the Beast.<br/><br/></p>",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "section-bottom-margin": false
+      }
+    },
+    "section_image_with_text_overlap_EzpCcb": {
+      "type": "section-image-with-text-overlap",
+      "blocks": {
+        "image_J6gjVn": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/wildsyde-beast-fat-tire-01_c7251218-5532-4a1a-bf98-fb295fd1256f.webp",
+            "title": "BIG CRUISER EXPERIENCE",
+            "desc": "<p>Evoking the timeless appeal of a retro cruiser motorcycle, with a distinctive high-center 'gas' tank, ingeniously concealing the battery.<br/><br/></p>",
+            "horizontal_align": "left",
+            "link_title": "",
+            "link": "",
+            "bg_color_block": "rgba(0,0,0,0)",
+            "bg_color_content": "#ffffff",
+            "color_text": "#212121",
+            "text_heading_color": false,
+            "text_border_color": true
+          }
+        },
+        "image_iNQMPF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/wildsyde-beast-fat-tire-02_fe82790a-902d-487c-8d50-a18b3e95fb95.jpg",
+            "title": "FAT-TIRE STABILITY",
+            "desc": "<p>The 4” wide cross-terrain tires, built for both streets and trails, provide an unwavering, stable ride from asphalt and forest, to beach and snow.<br/><br/></p>",
+            "horizontal_align": "left",
+            "link_title": "",
+            "link": "",
+            "bg_color_block": "rgba(0,0,0,0)",
+            "bg_color_content": "#ffffff",
+            "color_text": "#212121",
+            "text_heading_color": false,
+            "text_border_color": true
+          }
+        },
+        "image_YnMbag": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/wildsyde-beast-action-01.webp",
+            "title": "SMOOTH, COMFORTABLE RIDE",
+            "desc": "<p>A relaxed geometry, premium faux leather grips, and a wide cushioned seat create an effortless, upright ride for maximum comfort.<br/><br/></p>",
+            "horizontal_align": "left",
+            "link_title": "",
+            "link": "",
+            "bg_color_block": "rgba(0,0,0,0)",
+            "bg_color_content": "#ffffff",
+            "color_text": "#212121",
+            "text_heading_color": false,
+            "text_border_color": true
+          }
+        }
+      },
+      "block_order": [
+        "image_J6gjVn",
+        "image_iNQMPF",
+        "image_YnMbag"
+      ],
+      "name": "Image with text overlap",
+      "settings": {
+        "container": "large",
+        "block_spacing": 5,
+        "image_ratio": "4:3",
+        "block_layout": "2/3",
+        "block_align": "left",
+        "heading_size": 3,
+        "link_style": "hollow",
+        "text_style": "solid",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "section-bottom-margin": false
+      }
+    },
+    "section_lifestyle_gallery_TTbqxt": {
+      "type": "section-lifestyle-gallery",
+      "name": "Lifestyle Gallery",
+      "settings": {
+        "heading": "",
+        "above_fold": false,
+        "section_width": "contained",
+        "image_1": "shopify://shop_images/wildsyde-beast-action-02.webp",
+        "image_2": "shopify://shop_images/wildsyde-beast-action-03.webp",
+        "image_3": "shopify://shop_images/wildsyde-beast-action-04.webp",
+        "image_4": "shopify://shop_images/wildsyde-beast-orange-park-02.webp",
+        "image_5": "shopify://shop_images/wildsyde-beast-action-06.webp",
+        "image_6": "shopify://shop_images/wildsyde-beast-orange-park.webp",
+        "image_border_radius": 8,
+        "nav_button_color": "#ffffff",
+        "nav_button_hover_color": "#f5f5f5",
+        "nav_button_icon_color": "#353535",
+        "section_padding_top": "medium",
+        "section_padding_bottom": "medium"
+      }
+    },
+    "section_rider_height_qktdTB": {
+      "type": "section-rider-height",
+      "name": "Rider Height",
+      "settings": {
+        "title": "Rider Height",
+        "description": "<p>All BEAST 750W models and colorways fit riders from 5'6\" to 6'5\"+ thanks to the extra long extendable seat post and easy adjustable handlebars.</p>",
+        "primary_image": "shopify://shop_images/Beast-Rider-Height-5-6.webp",
+        "secondary_image": "shopify://shop_images/Beast-Rider-Height-6-5.webp",
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
+    },
+    "section_key_features_gLDH7A": {
+      "type": "section-key-features",
+      "blocks": {
+        "feature_6HbUhi": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/wildsyde-ebikes-beast-tire.webp",
+            "title": "Cross-Terrain 4\" Fat-Tires",
+            "description": "Experience a stable, cushioned ride and superior traction with 4\" fat-tires, enhanced by fenders for wet-weather protection."
+          }
+        },
+        "feature_E4jftr": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/wildsyde-ebikes-beast-cruiser-handlebarsjpg.webp",
+            "title": "Wide Cruiser Handlebars",
+            "description": "Wide, ergonomic cruiser handlebars provide a comfortable, upright position for better visibility, control and manoeuvrability."
+          }
+        },
+        "feature_cziJ8C": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/wildsyde-ebikes-beast-display_92d41730-93f1-4a9f-80aa-ebf087e57406.webp",
+            "title": "Full-Color LCD Display",
+            "description": "The full-color LCD display keeps you informed with speed, battery level and assist mode, all in one easy-to-read screen."
+          }
+        },
+        "feature_zLzgBT": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/wildsyde-ebikes-controller.webp",
+            "title": "Display Controller",
+            "description": "Intuitive display controller lets you power on, change assist levels, toggle ride settings, and includes a USB charging port."
+          }
+        },
+        "feature_krUr4G": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/wildsyde-ebikes-beast-tank_69d65dc0-e14e-47a8-addd-a82cd3380df1.webp",
+            "title": "Battery 'Gas' Tank",
+            "description": "The retro-inspired gas tank design cleverly conceals the battery while adding the signature, classic look."
+          }
+        },
+        "feature_jwafNf": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/wildsyde-ebikes-beast-brakes.webp",
+            "title": "Hydraulic Disc Brakes",
+            "description": "Responsive hydraulic disc brakes deliver smooth, controlled stopping power for confident riding in all conditions."
+          }
+        },
+        "feature_eedbMj": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/wildsyde-ebikes-beast-seat_post.webp",
+            "title": "Shock-Absorbing Seat Post & Saddle",
+            "description": "A wide, cushioned saddle and shock-absorbing seat post smooth bumps for a more comfortable ride."
+          }
+        },
+        "feature_aFLrgV": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/wildsyde-ebikes-beast-gears-thumb-throttle.webp",
+            "title": "Gears & Thumb Throttle",
+            "description": "Smooth acceleration with the thumb throttle and precise Shimano gear changes for effortless control and a relaxed ride."
+          }
+        },
+        "feature_qGfMMW": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/wildsyde-ebikes-beast-rack.webp",
+            "title": "Rear Cargo Rack and Integrated Taillight",
+            "description": "The integrated rear rack offers reliable cargo support, while the built-in taillight improves visibility for added safety."
+          }
+        },
+        "feature_iYeEEh": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/wildsyde-ebikes-beast-headlight_73c7b387-4064-46c4-8d04-e7b77960d0a9.webp",
+            "title": "Retro Headlight",
+            "description": "Vintage-style headlight for timeless style, enhanced visibility and improved presence."
+          }
+        },
+        "feature_y4Taw4": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/wildsyde-ebikes-beast-grips.webp",
+            "title": "Stitched Leatherette Handlbar Grips",
+            "description": "Ergonomically designed faux leather grips provide comfort and a secure hold, reducing hand fatigue for a more enjoyable ride."
+          }
+        },
+        "feature_T39zwz": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/wildsyde-ebikes-tank-battery.webp",
+            "title": "20Ah Integrated Tank-Style Battery",
+            "description": "Ride up to 50+ miles on a single charge with the 20Ah battery discreetly tucked inside the retro-inspired gas-tank frame."
+          }
+        },
+        "feature_hmWMtk": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/wildsyde-ebikes-beast-motor_03f42f41-c40a-4ed3-bd2e-924f0742fb4d.webp",
+            "title": "750W Rear Hub Motor",
+            "description": "Powerful and reliable 750W rear hub motor for smooth acceleration, confident hill climbing and cruising."
+          }
+        }
+      },
+      "block_order": [
+        "feature_6HbUhi",
+        "feature_E4jftr",
+        "feature_cziJ8C",
+        "feature_zLzgBT",
+        "feature_krUr4G",
+        "feature_jwafNf",
+        "feature_eedbMj",
+        "feature_aFLrgV",
+        "feature_qGfMMW",
+        "feature_iYeEEh",
+        "feature_y4Taw4",
+        "feature_T39zwz",
+        "feature_hmWMtk"
+      ],
+      "name": "Key Features & Components",
+      "settings": {
+        "title": "Key Features & Components",
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
+    },
+    "section_geometry_specifications_NbqTRF": {
+      "type": "section-geometry-specifications",
+      "blocks": {
+        "accordion_item_gEnUHx": {
+          "type": "accordion_item",
+          "settings": {
+            "title": "Geometry",
+            "content": "<p><strong>A: </strong>Top tube length = 24\"/62.63cm </p><p><strong>B: </strong>Adjustable seat to ground height = Low: 33.5\"/85cm | High: 42 .5\"/105cm </p><p><strong>C: </strong>Seat to pedal at low to high point = Low: 31\"/79cm | High: 39\"/99cm </p><p><strong>D: </strong>Standover height = 31\"/78.74cm </p><p><strong>E: </strong>Handlebar height from ground to stem attachment = 42\"/106.68cm </p><p><strong>F: </strong>Total length of complete bike = 76\"/193.04cm </p><p><strong>G: </strong>Handlebar distance from grip to grip = 25\"/63.5cm </p>"
+          }
+        },
+        "accordion_item_QPFttR": {
+          "type": "accordion_item",
+          "settings": {
+            "title": "Specifications",
+            "content": "<p><strong>Battery Weight: </strong>9lbs (4kg)  </p><p><strong>Bicycle Weight:</strong> 79lbs (34kg), including battery  </p><p><strong>Charging Time: </strong>8 hours from empty  </p><p><strong>Class 2 Electric Bicycle:</strong> governed at 20mph to meet Class 2 specifications (with 5 speed PAS and thumb activated throttle) </p><p><strong>Distance/Cruising Range:</strong> 35-50 miles on a single charge, with many riders experiencing even greater distances under optimal conditions </p><p><strong>Max load:</strong> 300lb/136Kg </p><p><strong>Motor:</strong> 750W 48V latest generation hub gear brushless BAFANG motor producing 80Nm power </p><p><strong>Size Range:</strong> one size (5’ 6” and above)  </p><p><strong>Standover Height: </strong>31” </p>"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_item_gEnUHx",
+        "accordion_item_QPFttR"
+      ],
+      "name": "Geometry & Specifications",
+      "settings": {
+        "title": "Geometry & Specifications",
+        "heading_size": 3,
+        "image": "shopify://shop_images/wildsyde-ebikes-beast-geometry.webp",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section_feature_benefits_AkTQUR": {
+      "type": "section-feature-benefits",
+      "blocks": {
+        "benefit_EgMmWt": {
+          "type": "benefit",
+          "settings": {
+            "icon": "icon-delivery-truck-3",
+            "color_icon": "rgba(0,0,0,0)",
+            "svg-code": "",
+            "title": "Free Shipping",
+            "subtitle": "on all eBikes"
+          }
+        },
+        "benefit_7aTddb": {
+          "type": "benefit",
+          "settings": {
+            "icon": "icon-shield-check",
+            "color_icon": "rgba(0,0,0,0)",
+            "svg-code": "",
+            "title": "1-Year Warranty",
+            "subtitle": "to protect your purchase"
+          }
+        },
+        "benefit_kaUqKr": {
+          "type": "benefit",
+          "settings": {
+            "icon": "icon-shield-check",
+            "color_icon": "rgba(0,0,0,0)",
+            "svg-code": "",
+            "title": "14-Day Trial",
+            "subtitle": "Terms & Conditions apply"
+          }
+        }
+      },
+      "block_order": [
+        "benefit_EgMmWt",
+        "benefit_7aTddb",
+        "benefit_kaUqKr"
+      ],
+      "name": "Feature Benefits",
+      "settings": {
+        "container": "large",
+        "bg_color": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "padding_top": 24,
+        "padding_bottom": 24,
+        "section-bottom-margin": false
+      }
+    },
+    "9904a28f-6381-41fe-96eb-d4a73d60f0a0": {
+      "type": "section-testimonials",
+      "blocks": {
+        "text_TGRkzY": {
+          "type": "text",
+          "settings": {
+            "media": "stars-brand",
+            "svg-code": "",
+            "image_round": true,
+            "text": "<p>Buying online was an awesome experience. Quick shipping and came with a hand written note which was nice.</p>",
+            "name": "Tristan Adamson",
+            "source": "Google Review"
+          }
+        },
+        "template--16580692508926__9904a28f-6381-41fe-96eb-d4a73d60f0a0-1666784019a14d8867-1": {
+          "type": "text",
+          "settings": {
+            "media": "stars-brand",
+            "svg-code": "",
+            "image_round": true,
+            "text": "<p>The quality and sheer coolness of their gear is unmatched. I bought way too much stuff. Will be back to buy more. Highly recommend.</p>",
+            "name": "Ryan Hails",
+            "source": "Google Review"
+          }
+        },
+        "template--16580692508926__9904a28f-6381-41fe-96eb-d4a73d60f0a0-1666784019a14d8867-0": {
+          "type": "text",
+          "settings": {
+            "media": "stars-brand",
+            "svg-code": "",
+            "image_round": true,
+            "text": "<p>Amazing and genuine customer service. You can tell the Steeltown team is super passionate about everything they do.</p>",
+            "name": "Jess X",
+            "source": "Google Review"
+          }
+        }
+      },
+      "block_order": [
+        "text_TGRkzY",
+        "template--16580692508926__9904a28f-6381-41fe-96eb-d4a73d60f0a0-1666784019a14d8867-1",
+        "template--16580692508926__9904a28f-6381-41fe-96eb-d4a73d60f0a0-1666784019a14d8867-0"
+      ],
+      "settings": {
+        "title": "CUSTOMER FEEDBACK",
+        "style_desktop": "grid",
+        "style_mobile": "carousel",
+        "link_title": "Shop now",
+        "link": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "5a818a60-e694-4eac-a33f-5ce701e894b0": {
+      "type": "section-image-with-text",
+      "blocks": {
+        "template--16580692508926__5a818a60-e694-4eac-a33f-5ce701e894b0-1666784018a0003e2f-0": {
+          "type": "image",
+          "settings": {
+            "title": "Image with text",
+            "desc": "<p>Use these blocks to share your brand's story. You can focus on a particular collection, a product detail, or even embed a video.</p>",
+            "horizontal_align": "left",
+            "link_title": "Learn more",
+            "link": "",
+            "bg_color_block": "rgba(0,0,0,0)",
+            "bg_color_content": "rgba(0,0,0,0)",
+            "color_text": "#212121",
+            "text_heading_color": false,
+            "text_border_color": true
+          }
+        },
+        "template--16580692508926__5a818a60-e694-4eac-a33f-5ce701e894b0-1666784018a0003e2f-1": {
+          "type": "image",
+          "settings": {
+            "title": "Image with text",
+            "desc": "<p>Use these blocks to share your brand's story. You can focus on a particular collection, a product detail, or even embed a video.</p>",
+            "horizontal_align": "left",
+            "link_title": "Learn more",
+            "link": "",
+            "bg_color_block": "rgba(0,0,0,0)",
+            "bg_color_content": "rgba(0,0,0,0)",
+            "color_text": "#212121",
+            "text_heading_color": false,
+            "text_border_color": true
+          }
+        }
+      },
+      "block_order": [
+        "template--16580692508926__5a818a60-e694-4eac-a33f-5ce701e894b0-1666784018a0003e2f-0",
+        "template--16580692508926__5a818a60-e694-4eac-a33f-5ce701e894b0-1666784018a0003e2f-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "container": "large",
+        "block_spacing": 2,
+        "image_ratio": "4:3",
+        "block_layout": "2/3",
+        "block_align": "left",
+        "vertical_align": "top",
+        "heading_size": 2,
+        "link_style": "chevron",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "section-bottom-margin": false
+      }
+    },
+    "product-recommendations": {
+      "type": "section-product-recommendations",
+      "settings": {
+        "related_title": "Other Stuff You'll Love",
+        "section_width": "large",
+        "maximum_products": 6,
+        "grid": 3,
+        "grid_mobile": "1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "1756439511148f4dec": {
+      "type": "apps",
+      "blocks": {
+        "bundler_bundler_target_element_88pJaU": {
+          "type": "shopify://apps/bundler/blocks/bundler-target-element/7a6ae1b8-3b16-449b-8429-8bb89a62c664",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "bundler_bundler_target_element_88pJaU"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "17489570774e959c00": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_RaJM8z": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_RaJM8z"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "section_newsletter_8BGBaX": {
+      "type": "section-newsletter",
+      "settings": {
+        "divider": false,
+        "section_width": "contained",
+        "newsletter_bg": "#f2f2f2",
+        "newsletter_style": "dark",
+        "default_title_color": false,
+        "text_border_color": true,
+        "section_newsletter_title": "GET 10% OFF YOUR FIRST ORDER",
+        "section_newsletter_desc": "<p>Join our email family to receive exclusive offers and discounts - <strong>like 10% OFF your first order<br/></strong>(Discount code will be emailed to you. Check your junk mail.)</p>",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "section-bottom-margin": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "af1e6c23-5338-467c-bee9-b9d9b3d9c22a",
+    "product_specifications_4gHEhM",
+    "section_rich_text_6nFxHX",
+    "section_image_with_text_overlap_EzpCcb",
+    "section_lifestyle_gallery_TTbqxt",
+    "section_rider_height_qktdTB",
+    "section_key_features_gLDH7A",
+    "section_geometry_specifications_NbqTRF",
+    "section_feature_benefits_AkTQUR",
+    "9904a28f-6381-41fe-96eb-d4a73d60f0a0",
+    "5a818a60-e694-4eac-a33f-5ce701e894b0",
+    "product-recommendations",
+    "1756439511148f4dec",
+    "17489570774e959c00",
+    "section_newsletter_8BGBaX"
+  ]
+}
