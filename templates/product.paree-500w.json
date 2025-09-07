@@ -598,6 +598,27 @@
         "padding_bottom": 64
       }
     },
+    "section_all_components_kY97pA": {
+      "type": "section-all-components",
+      "blocks": {
+        "component_item_Q9aLLr": {
+          "type": "component_item",
+          "settings": {
+            "title": "All Components",
+            "content": "<p><strong>Battery: </strong>Large, powerful Samsung 48V 20Ah Silver Fish battery producing 960 watt-hours </p><p><strong>Bell</strong>: Integrated brake level bell </p><p><strong>Brakes</strong>: Tektro M300 mechanical disc brakes with motor inhibitors F/R disc brake rotor Dia 180/160MM </p><p> <strong>Chain</strong>: Stainless steel from KMC Z51 series </p><p><strong>Chain Guard</strong>: Color matched aluminum  </p><p><strong>Controller</strong>: Nanjing Lishui Electronics </p><p><strong>Crank</strong>: Prowheel front crank 44 tooth </p><p><strong>Display</strong>: King Meter SW-LCD display with USB port for charging phone, showing battery life, speed, mileage, trip, PAS (power assist level) and real time wattage output </p><p><strong>Fender</strong>: Long metal fenders to reduce tire spray </p><p><strong>Frame</strong>: 6061 Aluminum alloy frame </p><p><strong>Front Fork</strong>: 6061 Aluminum Alloy </p><p><strong>Gear Set</strong>: Shimano MF TZ500-7 speed MegaRange, Shimano Tourney with super-low 14-34 tooth climbing gear with Shimano Altus derailleur </p><p><strong>Grips</strong>: Stitched leatherette handlebar grips with wider base for added comfort </p><p><strong>Handlebars:</strong> Comfort cruiser style handlebar </p><p><strong>Kickstand:</strong> Adjustable wide platform </p><p> <strong>Lights:</strong> Front, hard-wired 4” wide, LED ‘light up the road’ headlight, and integrated rear taillight with brake light </p><p><strong>Motor:</strong> Bafang H610 - 500W Rear hub Max Torque 65Nm <br/><br/><strong>Pedals:</strong> Wellgo M248DJ platform, aluminum with reflectors </p><p><strong>Rear Rack:</strong> Integrated, rear rack with spring loaded cargo retainer and elastic tie down </p><p><strong>Rims:</strong> 26” Contrast color Aluminum, double wall 31mm wide (1.2”) </p><p><strong>Seat Post:</strong> Promax Alloy shock Seat Post </p><p><strong>Saddle:</strong> Selle Royal Free Way comfort cruiser saddle </p><p><strong>Spokes:</strong> Taiwan SLE </p><p><strong>Stem:</strong> Zoom Adjustable stem  </p><p><strong>Throttle:</strong> Lever style thumb throttle <br/><br/><strong>Tire Size:</strong> Kenda BMF 26” x 2.40” Balloon Cruiser tire </p>"
+          }
+        }
+      },
+      "block_order": [
+        "component_item_Q9aLLr"
+      ],
+      "name": "All Components",
+      "settings": {
+        "title": "",
+        "padding_top": 24,
+        "padding_bottom": 30
+      }
+    },
     "section_geometry_specifications_NbqTRF": {
       "type": "section-geometry-specifications",
       "blocks": {
@@ -854,6 +875,7 @@
     "section_lifestyle_gallery_TTbqxt",
     "section_rider_height_qktdTB",
     "section_key_features_gLDH7A",
+    "section_all_components_kY97pA",
     "section_geometry_specifications_NbqTRF",
     "section_feature_benefits_AkTQUR",
     "9904a28f-6381-41fe-96eb-d4a73d60f0a0",
