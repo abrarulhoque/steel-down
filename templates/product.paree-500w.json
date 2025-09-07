@@ -334,7 +334,7 @@
           "settings": {
             "icon": "icon-flash",
             "svg-code": "",
-            "value": "750W 48V",
+            "value": "500W 48V",
             "label": "REAR HUB MOTOR"
           }
         },
@@ -343,7 +343,7 @@
           "settings": {
             "icon": "icon-pin",
             "svg-code": "",
-            "value": "35-50+",
+            "value": "40-50",
             "label": "MILE RANGE"
           }
         },
@@ -384,7 +384,7 @@
       "settings": {
         "full_width": false,
         "section_title": "",
-        "text": "<p>Built for those who don't just ride, they own the road. With a retro moto-inspired frame that's as tough as it look sand fat tires that aren't just for show, they make all the difference on rough streets and uneven terrain. Whether you're cruising solo or leading the pack, every ride becomes an experience on the Beast.<br/><br/></p>",
+        "text": "<p>Made for riders who want an easy, enjoyable way to cruise. Its lighter weight and approachable frame make it ideal for newer riders, those who prefer a more relaxed pace, or anyone who just wants a breezy, graceful ride. From morning errands to sunset spins, the Paree blends retro-inspired charm with modern convenience for a ride that feels as good as it looks.</p>",
         "padding_top": 0,
         "padding_bottom": 0,
         "section-bottom-margin": false
