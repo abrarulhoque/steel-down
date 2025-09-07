@@ -488,9 +488,9 @@
       "name": "Rider Height",
       "settings": {
         "title": "Rider Height",
-        "description": "<p>All BEAST 750W models and colorways fit riders from 5'6\" to 6'5\"+ thanks to the extra long extendable seat post and easy adjustable handlebars.</p>",
-        "primary_image": "shopify://shop_images/Beast-Rider-Height-5-6.webp",
-        "secondary_image": "shopify://shop_images/Beast-Rider-Height-6-5.webp",
+        "description": "<p>All PAREE 500W models and colorways fit riders from 5'2\" to 6'3\"+ thanks to the extendable seat post and easy adjustable handlebars.</p>",
+        "primary_image": "shopify://shop_images/wildsyde-paree-rider-height-5-2.webp",
+        "secondary_image": "shopify://shop_images/wildsyde-paree-rider-height-6-3.webp",
         "padding_top": 64,
         "padding_bottom": 64
       }
@@ -498,58 +498,50 @@
     "section_key_features_gLDH7A": {
       "type": "section-key-features",
       "blocks": {
+        "feature_qQXaVi": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/wildsyde-ebikes-paree-fenders.webp",
+            "title": "Kenda BMF 26” Tire",
+            "description": "Experience a stable, cushioned ride with balloon cruiser tires, enhanced by fenders for wet-weather protection."
+          }
+        },
         "feature_6HbUhi": {
           "type": "feature",
           "settings": {
-            "image": "shopify://shop_images/wildsyde-ebikes-beast-tire.webp",
-            "title": "Cross-Terrain 4\" Fat-Tires",
-            "description": "Experience a stable, cushioned ride and superior traction with 4\" fat-tires, enhanced by fenders for wet-weather protection."
+            "image": "shopify://shop_images/wildsyde-ebikes-paree-cruiser-handlebars.webp",
+            "title": "Ergonomic Cruiser Handlebars",
+            "description": "Slightly narrower, ergonomic handlebars suit smaller riders and offer an upright position for better control, comfort and nimble handling."
           }
         },
         "feature_E4jftr": {
           "type": "feature",
           "settings": {
-            "image": "shopify://shop_images/wildsyde-ebikes-beast-cruiser-handlebarsjpg.webp",
-            "title": "Wide Cruiser Handlebars",
-            "description": "Wide, ergonomic cruiser handlebars provide a comfortable, upright position for better visibility, control and manoeuvrability."
+            "image": "shopify://shop_images/wildsyde-ebikes-paree-display.webp",
+            "title": "King Meter SW-LCD Display",
+            "description": "The easy-to-read LCD displays speed, battery, assist mode and features a USB port for convenient phone charging."
           }
         },
         "feature_cziJ8C": {
           "type": "feature",
           "settings": {
-            "image": "shopify://shop_images/wildsyde-ebikes-beast-display_92d41730-93f1-4a9f-80aa-ebf087e57406.webp",
-            "title": "Full-Color LCD Display",
-            "description": "The full-color LCD display keeps you informed with speed, battery level and assist mode, all in one easy-to-read screen."
+            "image": "shopify://shop_images/wildsyde-ebikes-paree-battery.webp",
+            "title": "20Ah Color-Matched Battery",
+            "description": "The powerful 20Ah battery offers 50+ miles on a single charge, with neat, easily accessible storage."
           }
         },
         "feature_zLzgBT": {
           "type": "feature",
           "settings": {
-            "image": "shopify://shop_images/wildsyde-ebikes-controller.webp",
-            "title": "Display Controller",
-            "description": "Intuitive display controller lets you power on, change assist levels, toggle ride settings, and includes a USB charging port."
+            "image": "shopify://shop_images/wildsyde-ebikes-paree-brakes.webp",
+            "title": "Mechanical Disc Brakes",
+            "description": "Responsive mechanical disc brakes deliver smooth, controlled stopping power for confident riding in all conditions."
           }
         },
         "feature_krUr4G": {
           "type": "feature",
           "settings": {
-            "image": "shopify://shop_images/wildsyde-ebikes-beast-tank_69d65dc0-e14e-47a8-addd-a82cd3380df1.webp",
-            "title": "Battery 'Gas' Tank",
-            "description": "The retro-inspired gas tank design cleverly conceals the battery while adding the signature, classic look."
-          }
-        },
-        "feature_jwafNf": {
-          "type": "feature",
-          "settings": {
-            "image": "shopify://shop_images/wildsyde-ebikes-beast-brakes.webp",
-            "title": "Hydraulic Disc Brakes",
-            "description": "Responsive hydraulic disc brakes deliver smooth, controlled stopping power for confident riding in all conditions."
-          }
-        },
-        "feature_eedbMj": {
-          "type": "feature",
-          "settings": {
-            "image": "shopify://shop_images/wildsyde-ebikes-beast-seat_post.webp",
+            "image": "shopify://shop_images/wildsyde-ebikes-paree-saddle-post.webp",
             "title": "Shock-Absorbing Seat Post & Saddle",
             "description": "A wide, cushioned saddle and shock-absorbing seat post smooth bumps for a more comfortable ride."
           }
@@ -562,60 +554,41 @@
             "description": "Smooth acceleration with the thumb throttle and precise Shimano gear changes for effortless control and a relaxed ride."
           }
         },
-        "feature_qGfMMW": {
+        "feature_eedbMj": {
           "type": "feature",
           "settings": {
-            "image": "shopify://shop_images/wildsyde-ebikes-beast-rack.webp",
+            "image": "shopify://shop_images/wildsyde-ebikes-paree-rack_cab6b375-3ce5-4418-9ebd-0328c9a28c74.webp",
             "title": "Rear Cargo Rack and Integrated Taillight",
             "description": "The integrated rear rack offers reliable cargo support, while the built-in taillight improves visibility for added safety."
           }
         },
-        "feature_iYeEEh": {
+        "feature_qGfMMW": {
           "type": "feature",
           "settings": {
-            "image": "shopify://shop_images/wildsyde-ebikes-beast-headlight_73c7b387-4064-46c4-8d04-e7b77960d0a9.webp",
-            "title": "Retro Headlight",
-            "description": "Vintage-style headlight for timeless style, enhanced visibility and improved presence."
-          }
-        },
-        "feature_y4Taw4": {
-          "type": "feature",
-          "settings": {
-            "image": "shopify://shop_images/wildsyde-ebikes-beast-grips.webp",
-            "title": "Stitched Leatherette Handlbar Grips",
-            "description": "Ergonomically designed faux leather grips provide comfort and a secure hold, reducing hand fatigue for a more enjoyable ride."
-          }
-        },
-        "feature_T39zwz": {
-          "type": "feature",
-          "settings": {
-            "image": "shopify://shop_images/wildsyde-ebikes-tank-battery.webp",
-            "title": "20Ah Integrated Tank-Style Battery",
-            "description": "Ride up to 50+ miles on a single charge with the 20Ah battery discreetly tucked inside the retro-inspired gas-tank frame."
+            "image": "shopify://shop_images/wildsyde-ebikes-paree-retro-headlight_9ea2dd3c-83d3-4d7d-9450-827265f1ac4e.webp",
+            "title": "Classic Headlight",
+            "description": "Classic-style headlight for clean looks, bright visibility and everyday function."
           }
         },
         "feature_hmWMtk": {
           "type": "feature",
           "settings": {
             "image": "shopify://shop_images/wildsyde-ebikes-beast-motor_03f42f41-c40a-4ed3-bd2e-924f0742fb4d.webp",
-            "title": "750W Rear Hub Motor",
-            "description": "Powerful and reliable 750W rear hub motor for smooth acceleration, confident hill climbing and cruising."
+            "title": "500W Rear Hub Motor",
+            "description": "Powerful and reliable 500W rear hub motor for smooth acceleration, confident hill climbing and cruising."
           }
         }
       },
       "block_order": [
+        "feature_qQXaVi",
         "feature_6HbUhi",
         "feature_E4jftr",
         "feature_cziJ8C",
         "feature_zLzgBT",
         "feature_krUr4G",
-        "feature_jwafNf",
-        "feature_eedbMj",
         "feature_aFLrgV",
+        "feature_eedbMj",
         "feature_qGfMMW",
-        "feature_iYeEEh",
-        "feature_y4Taw4",
-        "feature_T39zwz",
         "feature_hmWMtk"
       ],
       "name": "Key Features & Components",
