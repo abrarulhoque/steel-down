@@ -258,12 +258,30 @@
             "title": "Active Ventilation",
             "description": "Re-engineered internal channelling for cooler riding."
           }
+        },
+        "feature_fkCVyf": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/thousand-helmet-heritage2-studio-phantom-black-6.webp",
+            "title": "Inclusive Fit",
+            "description": "Re-designed head shape and new internal padding configuration."
+          }
+        },
+        "feature_bwn6Je": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/wildsyde-thousand-features-helmet-h2-tail-light-OldSkoolBlue.webp",
+            "title": "Optional Magnetic Helmet Taillight",
+            "description": "Compatible with magnetic helmet taillight – sold separately."
+          }
         }
       },
       "block_order": [
         "feature_rMNQLr",
         "feature_mqXxDM",
-        "feature_CUdRia"
+        "feature_CUdRia",
+        "feature_fkCVyf",
+        "feature_bwn6Je"
       ],
       "name": "Key Features & Components",
       "settings": {
