@@ -232,6 +232,46 @@
         "thumbnails_show_border": false
       }
     },
+    "section_key_features_iexhJq": {
+      "type": "section-key-features",
+      "blocks": {
+        "feature_rMNQLr": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/wildsyde-thousand-features-helmet-h2-pop-lock-old-skool-blue.webp",
+            "title": "PopLock Security",
+            "description": "Patented PopLock for securing your helmet with your bike lock, backed by Thousand's Anti-Theft Guarantee."
+          }
+        },
+        "feature_mqXxDM": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/thousand-helmet-heritage2-studio-super-bloom-details-fit-system.webp",
+            "title": "Premium Details",
+            "description": "Vegan leather straps and a one-handed magnetic fastener."
+          }
+        },
+        "feature_CUdRia": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/thousand-helmet-heritage2-studio-speedway-creme-details-vents.webp",
+            "title": "Active Ventilation",
+            "description": "Re-engineered internal channelling for cooler riding."
+          }
+        }
+      },
+      "block_order": [
+        "feature_rMNQLr",
+        "feature_mqXxDM",
+        "feature_CUdRia"
+      ],
+      "name": "Key Features & Components",
+      "settings": {
+        "title": "Key Features & Components",
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
+    },
     "af1e6c23-5338-467c-bee9-b9d9b3d9c22a": {
       "type": "section-image-grid",
       "blocks": {
@@ -469,6 +509,7 @@
   },
   "order": [
     "main",
+    "section_key_features_iexhJq",
     "af1e6c23-5338-467c-bee9-b9d9b3d9c22a",
     "9904a28f-6381-41fe-96eb-d4a73d60f0a0",
     "5a818a60-e694-4eac-a33f-5ce701e894b0",
