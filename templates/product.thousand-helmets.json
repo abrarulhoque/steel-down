@@ -52,7 +52,7 @@
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
-            "product_variant_style": "swatches-dropdowns",
+            "product_variant_style": "buttons",
             "popup_enable": false,
             "popup_trigger": "Size\nGröße\nTaille\nTaglia\nTalla",
             "popup_label": "Size guide",
