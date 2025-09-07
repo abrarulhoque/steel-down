@@ -632,14 +632,14 @@
           "type": "accordion_item",
           "settings": {
             "title": "Geometry",
-            "content": "<p><strong>A: </strong>Top tube length = 24\"/62.63cm </p><p><strong>B: </strong>Adjustable seat to ground height = Low: 33.5\"/85cm | High: 42 .5\"/105cm </p><p><strong>C: </strong>Seat to pedal at low to high point = Low: 31\"/79cm | High: 39\"/99cm </p><p><strong>D: </strong>Standover height = 31\"/78.74cm </p><p><strong>E: </strong>Handlebar height from ground to stem attachment = 42\"/106.68cm </p><p><strong>F: </strong>Total length of complete bike = 76\"/193.04cm </p><p><strong>G: </strong>Handlebar distance from grip to grip = 25\"/63.5cm </p>"
+            "content": "<p><strong>A: </strong>Top tube length = 24.5\"/62.23cm </p><p><strong>B: </strong>Adjustable seat to ground height = Low: 32.5\"/82.55cm | High: 42 .5\"/107.95cm </p><p><strong>C: </strong>Seat to pedal at low to high point = Low: 31\"/79cm | High: 39\"/99cm </p><p><strong>D: </strong>Standover height = 28\"/71.12cm </p><p><strong>E: </strong>Handlebar height from ground to stem attachment = 42\"/106.68cm </p><p><strong>F: </strong>Total length of complete bike = 76\"/193.04cm 79\"/200.66cm </p><p><strong>G: </strong>Handlebar distance from grip to grip = 25\"/63.5cm  </p>"
           }
         },
         "accordion_item_QPFttR": {
           "type": "accordion_item",
           "settings": {
             "title": "Specifications",
-            "content": "<p><strong>Battery Weight: </strong>9lbs (4kg)  </p><p><strong>Bicycle Weight:</strong> 79lbs (34kg), including battery  </p><p><strong>Charging Time: </strong>8 hours from empty  </p><p><strong>Class 2 Electric Bicycle:</strong> governed at 20mph to meet Class 2 specifications (with 5 speed PAS and thumb activated throttle) </p><p><strong>Distance/Cruising Range:</strong> 35-50 miles on a single charge, with many riders experiencing even greater distances under optimal conditions </p><p><strong>Max load:</strong> 300lb/136Kg </p><p><strong>Motor:</strong> 750W 48V latest generation hub gear brushless BAFANG motor producing 80Nm power </p><p><strong>Size Range:</strong> one size (5’ 6” and above)  </p><p><strong>Standover Height: </strong>31” </p>"
+            "content": "<p><strong>Battery Weight</strong>: 9 lbs (4kg)</p><p><strong>Bicycle Weight</strong>: 71lbs (34kg), including Battery</p><p><strong>Charging Time</strong>: 8 hours from empty</p><p><strong>Class 2 Electric Bicycle</strong>: governed at 20mph to meet Class 2 specifications (with 5 speed PAS, and thumb activated throttle)</p><p><strong>Distance/Cruising Range</strong>: 35-50 miles on a single charge, with many riders experiencing even greater distances under optimal conditions</p><p><strong>Max Load</strong>: 300lb/136Kg</p><p><strong>Motor</strong>: 750W 48V latest generation hub gear brushless BAFANG motor producing 90Nm power</p><p><strong>Size Range</strong>: one size (5’ 4” and above)</p><p><strong>Standover Height</strong>: 28”</p>"
           }
         }
       },
@@ -651,7 +651,7 @@
       "settings": {
         "title": "Geometry & Specifications",
         "heading_size": 3,
-        "image": "shopify://shop_images/wildsyde-ebikes-beast-geometry.webp",
+        "image": "shopify://shop_images/wildsyde-ebikes-hunni-bunni-geometry.webp",
         "padding_top": 60,
         "padding_bottom": 60
       }
