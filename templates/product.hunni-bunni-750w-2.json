@@ -469,12 +469,12 @@
         "heading": "",
         "above_fold": false,
         "section_width": "contained",
-        "image_1": "shopify://shop_images/wildsyde-beast-action-02.webp",
-        "image_2": "shopify://shop_images/wildsyde-beast-action-03.webp",
-        "image_3": "shopify://shop_images/wildsyde-beast-action-04.webp",
-        "image_4": "shopify://shop_images/wildsyde-beast-orange-park-02.webp",
-        "image_5": "shopify://shop_images/wildsyde-beast-action-06.webp",
-        "image_6": "shopify://shop_images/wildsyde-beast-orange-park.webp",
+        "image_1": "shopify://shop_images/wildsyde-hunni-bunni-gallery-08.webp",
+        "image_2": "shopify://shop_images/wildsyde-hunni-bunni-gallery-07_f3b4f115-6f20-4ffd-8f09-8cd20cd7cdc3.webp",
+        "image_3": "shopify://shop_images/wildsyde-hunni-bunni-gallery-02_4f6f8139-4ada-4dec-bac0-498a2d6cdb2c.webp",
+        "image_4": "shopify://shop_images/wildsyde-hunni-bunni-gallery-03.webp",
+        "image_5": "shopify://shop_images/wildsyde-hunni-bunni-gallery-09.webp",
+        "image_6": "shopify://shop_images/wildsyde-hunni-bunni-gallery-04.webp",
         "image_border_radius": 8,
         "nav_button_color": "#ffffff",
         "nav_button_hover_color": "#f5f5f5",
@@ -488,9 +488,9 @@
       "name": "Rider Height",
       "settings": {
         "title": "Rider Height",
-        "description": "<p>All BEAST 750W models and colorways fit riders from 5'6\" to 6'5\"+ thanks to the extra long extendable seat post and easy adjustable handlebars.</p>",
-        "primary_image": "shopify://shop_images/Beast-Rider-Height-5-6.webp",
-        "secondary_image": "shopify://shop_images/Beast-Rider-Height-6-5.webp",
+        "description": "<p>All HUNNI BUNNI 750W models and colorways fit riders from 5'4\" to 6'5\"+ thanks to the extra long extendable seat post and easy adjustable handlebars.</p>",
+        "primary_image": "shopify://shop_images/wildsyde-hunni-bunni-rider-height-5-4_1b6476b7-8308-4fc2-a8e9-30daa4118ccf.webp",
+        "secondary_image": "shopify://shop_images/wildsyde-hunni-bunni-rider-height-6-5.webp",
         "padding_top": 64,
         "padding_bottom": 64
       }
@@ -573,7 +573,7 @@
         "feature_iYeEEh": {
           "type": "feature",
           "settings": {
-            "image": "shopify://shop_images/wildsyde-ebikes-beast-headlight_73c7b387-4064-46c4-8d04-e7b77960d0a9.webp",
+            "image": "shopify://shop_images/wildsyde-ebikes-hunni-bunni-retro-headlight.webp",
             "title": "Retro Headlight",
             "description": "Vintage-style headlight for timeless style, enhanced visibility and improved presence."
           }
