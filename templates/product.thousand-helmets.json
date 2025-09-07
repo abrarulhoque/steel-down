@@ -1,0 +1,480 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "vendor",
+          "disabled": true,
+          "settings": {
+            "vendor_size": 2,
+            "vendor_style": "body"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": 2,
+            "title_size_mobile": 3
+          }
+        },
+        "judge_me_reviews_preview_badge_mFErDk": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "emphasize": false,
+            "price_label_discount": true,
+            "price_label_discount_type": "percentage",
+            "price_label_discount_color": "#c00000"
+          }
+        },
+        "db48bf56-e904-4604-9f21-89d04e9bf249": {
+          "type": "spacer",
+          "settings": {
+            "column": "primary",
+            "top": "small",
+            "bottom": "small",
+            "border": true
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "product_variant_style": "swatches-dropdowns",
+            "popup_enable": false,
+            "popup_trigger": "Size\nGröße\nTaille\nTaglia\nTalla",
+            "popup_label": "Size guide",
+            "popup_content": ""
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "inventory_notice": {
+          "type": "inventory_notice",
+          "settings": {
+            "inventory_limit": 7,
+            "align": "left",
+            "show_qty": true
+          }
+        },
+        "free_shipping_bar_eTUQGP": {
+          "type": "free-shipping-bar",
+          "settings": {
+            "align_left": true,
+            "hide_icon": false
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_gift_card_recipient": true,
+            "enable_payment_button": true
+          }
+        },
+        "share": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "column": "primary",
+            "align": "center"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "column": "secondary",
+            "title": "DESCRIPTION",
+            "description_collapsible_tab": false,
+            "open": true,
+            "icon": "icon-tags-1",
+            "icon_size": 2,
+            "color_icon": "#212121",
+            "svg-code": ""
+          }
+        },
+        "reviews_tab_new_f8WyCG": {
+          "type": "reviews-tab-new",
+          "disabled": true,
+          "settings": {
+            "column": "secondary",
+            "title": "Reviews",
+            "icon": "icon-shield-check",
+            "icon_size": 2,
+            "color_icon": "#212121",
+            "svg-code": "",
+            "count": true,
+            "open": false
+          }
+        },
+        "c13717d6-5def-40f5-9684-68f8f103b0d4": {
+          "type": "tab",
+          "settings": {
+            "column": "secondary",
+            "title": "Easy 30 Day Returns",
+            "icon": "icon-keyboard-arrow-return",
+            "icon_size": 2,
+            "color_icon": "#212121",
+            "svg-code": "",
+            "text": "<p><span style=\"text-decoration:underline\">RETURNS & EXCHANGES</span></p><p>Exchange or returns welcome within 30 days of purchase with recipes or order confirmation. Items must be unworn, unwashed, unused and have the original tags intact. Please note customer is responsible for shipping costs of online returns.</p><p>Helmets, headwear, grooming products, drinkware and sale items are final sale.</p>",
+            "image_width": 1000,
+            "align": "center",
+            "link": "shopify://policies/refund-policy",
+            "tab_content": "",
+            "open": false
+          }
+        },
+        "663a3435-b014-41e0-916d-1ed9505f5691": {
+          "type": "tab",
+          "settings": {
+            "column": "secondary",
+            "title": "Fast Shipping Info",
+            "icon": "icon-stopwatch",
+            "icon_size": 2,
+            "color_icon": "#212121",
+            "svg-code": "",
+            "text": "<p><strong>This product ships from our new US warehouse in Denver, Colorado. </strong></p><p>All online orders are processed within 2-3 days after the order was placed. You will get a tracking number as soon as we pack it up and put a shipping label on it.</p><p>We still have a warehouse in Ontario, Canada from which our 3/4 Low Profile Helmets ship out of. If you are buying a helmet in addition to other products they will ship and arrive separately.</p><p><strong>CUSTOMS, DUTIES & ADDRESS CHANGES<br/></strong>All packages imported to your country may be subject to customs, taxes or other fees. You are responsible for all applicable customs, duties, taxes and fees charged by your government.</p>",
+            "image_width": 1000,
+            "align": "center",
+            "link": "",
+            "tab_content": "",
+            "open": false
+          }
+        },
+        "pickup_Ac6Tgw": {
+          "type": "pickup",
+          "settings": {}
+        },
+        "complementary_products_xiznrY": {
+          "type": "complementary-products",
+          "settings": {
+            "heading": "Rad Pairing:",
+            "heading_size": 1,
+            "display_collapsible_tab": true,
+            "collapsible_tab_open": true,
+            "product_list_limit": 6,
+            "image_size": "1:1",
+            "image_fit": true,
+            "hide_labels": true,
+            "enable_quick_shop": true
+          }
+        },
+        "image_CQJLEE": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "column": "primary",
+            "image": "shopify://shop_images/Credit-Card-Image-6.jpg",
+            "image_width": 1000,
+            "align": "center",
+            "link": ""
+          }
+        },
+        "bundler_bundler_target_element_QPEt3E": {
+          "type": "shopify://apps/bundler/blocks/bundler-target-element/7a6ae1b8-3b16-449b-8429-8bb89a62c664",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "judge_me_reviews_preview_badge_mFErDk",
+        "price",
+        "db48bf56-e904-4604-9f21-89d04e9bf249",
+        "variant_picker",
+        "quantity_selector",
+        "inventory_notice",
+        "free_shipping_bar_eTUQGP",
+        "buy_buttons",
+        "share",
+        "description",
+        "reviews_tab_new_f8WyCG",
+        "c13717d6-5def-40f5-9684-68f8f103b0d4",
+        "663a3435-b014-41e0-916d-1ed9505f5691",
+        "pickup_Ac6Tgw",
+        "complementary_products_xiznrY",
+        "image_CQJLEE",
+        "bundler_bundler_target_element_QPEt3E"
+      ],
+      "custom_css": [
+        ".js-section__product-single .hypervisual__container {margin-top: -60px;}",
+        ".js-section__product-single .hypervisual__container {margin-bottom: 50px;}"
+      ],
+      "settings": {
+        "style": "classic-border",
+        "bg_color": "#f5f5f5",
+        "style_clean_mobile": true,
+        "layout-order": "media-left",
+        "enable_sticky_content": true,
+        "container": "large",
+        "show_breadcrumbs": true,
+        "breadcrumbs_align": "left",
+        "enable_zoom": true,
+        "enable_video_looping": false,
+        "product_image_ratio": "1:1",
+        "enable_gallery_arrows": true,
+        "thumbnails_position": "left",
+        "thumbnails_ratio": "1:1",
+        "thumbnails_show_border": false
+      }
+    },
+    "af1e6c23-5338-467c-bee9-b9d9b3d9c22a": {
+      "type": "section-image-grid",
+      "blocks": {
+        "template--14778633322581__af1e6c23-5338-467c-bee9-b9d9b3d9c22a-1680270173f8db9315-0": {
+          "type": "image",
+          "settings": {
+            "text_alignment": "bottom",
+            "text_border_color": false,
+            "title": "Image block",
+            "text": "Use these image blocks to tell your story, promote your products or create a beautiful gallery.",
+            "link": ""
+          }
+        },
+        "template--14778633322581__af1e6c23-5338-467c-bee9-b9d9b3d9c22a-1680270173f8db9315-1": {
+          "type": "text",
+          "settings": {
+            "bg_color": "#f0f0f0",
+            "text_color": "dark",
+            "text_heading_color": false,
+            "text_border_color": true,
+            "title": "Text block",
+            "text": "<p>Use these text blocks to promote seasonal sales, store events or to tell your brand's story.</p>",
+            "link_text": "Learn more",
+            "link": ""
+          }
+        },
+        "template--14778633322581__af1e6c23-5338-467c-bee9-b9d9b3d9c22a-1680270173f8db9315-2": {
+          "type": "text",
+          "settings": {
+            "bg_color": "#f0f0f0",
+            "text_color": "dark",
+            "text_heading_color": false,
+            "text_border_color": true,
+            "title": "Text block",
+            "text": "<p>Use these text blocks to promote seasonal sales, store events or to tell your brand's story.</p>",
+            "link_text": "Learn more",
+            "link": ""
+          }
+        },
+        "template--14778633322581__af1e6c23-5338-467c-bee9-b9d9b3d9c22a-1680270173f8db9315-3": {
+          "type": "image",
+          "settings": {
+            "text_alignment": "bottom",
+            "text_border_color": false,
+            "title": "Image block",
+            "text": "Use these image blocks to tell your story, promote your products or create a beautiful gallery.",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14778633322581__af1e6c23-5338-467c-bee9-b9d9b3d9c22a-1680270173f8db9315-0",
+        "template--14778633322581__af1e6c23-5338-467c-bee9-b9d9b3d9c22a-1680270173f8db9315-1",
+        "template--14778633322581__af1e6c23-5338-467c-bee9-b9d9b3d9c22a-1680270173f8db9315-2",
+        "template--14778633322581__af1e6c23-5338-467c-bee9-b9d9b3d9c22a-1680270173f8db9315-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "featured": true,
+        "height": "medium",
+        "width": "full",
+        "button_style": "hollow",
+        "overlay_strength": 10,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "section-bottom-margin": false
+      }
+    },
+    "9904a28f-6381-41fe-96eb-d4a73d60f0a0": {
+      "type": "section-testimonials",
+      "blocks": {
+        "text_TGRkzY": {
+          "type": "text",
+          "settings": {
+            "media": "stars-brand",
+            "svg-code": "",
+            "image_round": true,
+            "text": "<p>Buying online was an awesome experience. Quick shipping and came with a hand written note which was nice.</p>",
+            "name": "Tristan Adamson",
+            "source": "Google Review"
+          }
+        },
+        "template--16580692508926__9904a28f-6381-41fe-96eb-d4a73d60f0a0-1666784019a14d8867-1": {
+          "type": "text",
+          "settings": {
+            "media": "stars-brand",
+            "svg-code": "",
+            "image_round": true,
+            "text": "<p>The quality and sheer coolness of their gear is unmatched. I bought way too much stuff. Will be back to buy more. Highly recommend.</p>",
+            "name": "Ryan Hails",
+            "source": "Google Review"
+          }
+        },
+        "template--16580692508926__9904a28f-6381-41fe-96eb-d4a73d60f0a0-1666784019a14d8867-0": {
+          "type": "text",
+          "settings": {
+            "media": "stars-brand",
+            "svg-code": "",
+            "image_round": true,
+            "text": "<p>Amazing and genuine customer service. You can tell the Steeltown team is super passionate about everything they do.</p>",
+            "name": "Jess X",
+            "source": "Google Review"
+          }
+        }
+      },
+      "block_order": [
+        "text_TGRkzY",
+        "template--16580692508926__9904a28f-6381-41fe-96eb-d4a73d60f0a0-1666784019a14d8867-1",
+        "template--16580692508926__9904a28f-6381-41fe-96eb-d4a73d60f0a0-1666784019a14d8867-0"
+      ],
+      "settings": {
+        "title": "CUSTOMER FEEDBACK",
+        "style_desktop": "grid",
+        "style_mobile": "carousel",
+        "link_title": "Shop now",
+        "link": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "5a818a60-e694-4eac-a33f-5ce701e894b0": {
+      "type": "section-image-with-text",
+      "blocks": {
+        "template--16580692508926__5a818a60-e694-4eac-a33f-5ce701e894b0-1666784018a0003e2f-0": {
+          "type": "image",
+          "settings": {
+            "title": "Image with text",
+            "desc": "<p>Use these blocks to share your brand's story. You can focus on a particular collection, a product detail, or even embed a video.</p>",
+            "horizontal_align": "left",
+            "link_title": "Learn more",
+            "link": "",
+            "bg_color_block": "rgba(0,0,0,0)",
+            "bg_color_content": "rgba(0,0,0,0)",
+            "color_text": "#212121",
+            "text_heading_color": false,
+            "text_border_color": true
+          }
+        },
+        "template--16580692508926__5a818a60-e694-4eac-a33f-5ce701e894b0-1666784018a0003e2f-1": {
+          "type": "image",
+          "settings": {
+            "title": "Image with text",
+            "desc": "<p>Use these blocks to share your brand's story. You can focus on a particular collection, a product detail, or even embed a video.</p>",
+            "horizontal_align": "left",
+            "link_title": "Learn more",
+            "link": "",
+            "bg_color_block": "rgba(0,0,0,0)",
+            "bg_color_content": "rgba(0,0,0,0)",
+            "color_text": "#212121",
+            "text_heading_color": false,
+            "text_border_color": true
+          }
+        }
+      },
+      "block_order": [
+        "template--16580692508926__5a818a60-e694-4eac-a33f-5ce701e894b0-1666784018a0003e2f-0",
+        "template--16580692508926__5a818a60-e694-4eac-a33f-5ce701e894b0-1666784018a0003e2f-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "container": "large",
+        "block_spacing": 2,
+        "image_ratio": "4:3",
+        "block_layout": "2/3",
+        "block_align": "left",
+        "vertical_align": "top",
+        "heading_size": 2,
+        "link_style": "chevron",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "section-bottom-margin": false
+      }
+    },
+    "product-recommendations": {
+      "type": "section-product-recommendations",
+      "settings": {
+        "related_title": "Other Stuff You'll Love",
+        "section_width": "large",
+        "maximum_products": 6,
+        "grid": 3,
+        "grid_mobile": "1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "1756439511148f4dec": {
+      "type": "apps",
+      "blocks": {
+        "bundler_bundler_target_element_88pJaU": {
+          "type": "shopify://apps/bundler/blocks/bundler-target-element/7a6ae1b8-3b16-449b-8429-8bb89a62c664",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "bundler_bundler_target_element_88pJaU"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "17489570774e959c00": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_RaJM8z": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_RaJM8z"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "section_newsletter_8BGBaX": {
+      "type": "section-newsletter",
+      "settings": {
+        "divider": false,
+        "section_width": "contained",
+        "newsletter_bg": "#f2f2f2",
+        "newsletter_style": "dark",
+        "default_title_color": false,
+        "text_border_color": true,
+        "section_newsletter_title": "GET 10% OFF YOUR FIRST ORDER",
+        "section_newsletter_desc": "<p>Join our email family to receive exclusive offers and discounts - <strong>like 10% OFF your first order<br/></strong>(Discount code will be emailed to you. Check your junk mail.)</p>",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "section-bottom-margin": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "af1e6c23-5338-467c-bee9-b9d9b3d9c22a",
+    "9904a28f-6381-41fe-96eb-d4a73d60f0a0",
+    "5a818a60-e694-4eac-a33f-5ce701e894b0",
+    "product-recommendations",
+    "1756439511148f4dec",
+    "17489570774e959c00",
+    "section_newsletter_8BGBaX"
+  ]
+}
