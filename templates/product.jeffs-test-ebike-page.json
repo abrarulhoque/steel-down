@@ -34,7 +34,7 @@
       "name": "Slideshow",
       "settings": {
         "style": "transparent",
-        "title_size": 4,
+        "title_size": 5,
         "autoplay": true,
         "autoplay_speed": 8,
         "nav_style": "solid-brand",
