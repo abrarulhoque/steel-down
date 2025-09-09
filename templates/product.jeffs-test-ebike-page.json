@@ -9,6 +9,454 @@
  */
 {
   "sections": {
+    "section_slideshow_JXBFby": {
+      "type": "section-slideshow",
+      "blocks": {
+        "image_AafhRB": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/test-beast-header-white.jpg",
+            "alignment": "right",
+            "title": "UNLEASH THE BEAST",
+            "text": "<p>750 WATTS OF UNBRIDLED GOOD TIMES</p>",
+            "link_style": "c-btn c-btn--hollow",
+            "link_title": "",
+            "link": "",
+            "link_style_2": "c-btn c-btn--primary",
+            "link_title_2": "",
+            "link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_AafhRB"
+      ],
+      "name": "Slideshow",
+      "settings": {
+        "style": "transparent",
+        "title_size": 3,
+        "autoplay": true,
+        "autoplay_speed": 8,
+        "nav_style": "solid-brand",
+        "nav_arrows": true,
+        "slideshow_height": "full-screen",
+        "slideshow_width": "full",
+        "text_color": "#111111",
+        "text_heading_color": false,
+        "text_border_color": true,
+        "text_bg_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_strength": 0,
+        "section-bottom-margin": true
+      }
+    },
+    "af1e6c23-5338-467c-bee9-b9d9b3d9c22a": {
+      "type": "section-image-grid",
+      "blocks": {
+        "template--14778633322581__af1e6c23-5338-467c-bee9-b9d9b3d9c22a-1680270173f8db9315-0": {
+          "type": "image",
+          "settings": {
+            "text_alignment": "bottom",
+            "text_border_color": false,
+            "title": "Image block",
+            "text": "Use these image blocks to tell your story, promote your products or create a beautiful gallery.",
+            "link": ""
+          }
+        },
+        "template--14778633322581__af1e6c23-5338-467c-bee9-b9d9b3d9c22a-1680270173f8db9315-1": {
+          "type": "text",
+          "settings": {
+            "bg_color": "#f0f0f0",
+            "text_color": "dark",
+            "text_heading_color": false,
+            "text_border_color": true,
+            "title": "Text block",
+            "text": "<p>Use these text blocks to promote seasonal sales, store events or to tell your brand's story.</p>",
+            "link_text": "Learn more",
+            "link": ""
+          }
+        },
+        "template--14778633322581__af1e6c23-5338-467c-bee9-b9d9b3d9c22a-1680270173f8db9315-2": {
+          "type": "text",
+          "settings": {
+            "bg_color": "#f0f0f0",
+            "text_color": "dark",
+            "text_heading_color": false,
+            "text_border_color": true,
+            "title": "Text block",
+            "text": "<p>Use these text blocks to promote seasonal sales, store events or to tell your brand's story.</p>",
+            "link_text": "Learn more",
+            "link": ""
+          }
+        },
+        "template--14778633322581__af1e6c23-5338-467c-bee9-b9d9b3d9c22a-1680270173f8db9315-3": {
+          "type": "image",
+          "settings": {
+            "text_alignment": "bottom",
+            "text_border_color": false,
+            "title": "Image block",
+            "text": "Use these image blocks to tell your story, promote your products or create a beautiful gallery.",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14778633322581__af1e6c23-5338-467c-bee9-b9d9b3d9c22a-1680270173f8db9315-0",
+        "template--14778633322581__af1e6c23-5338-467c-bee9-b9d9b3d9c22a-1680270173f8db9315-1",
+        "template--14778633322581__af1e6c23-5338-467c-bee9-b9d9b3d9c22a-1680270173f8db9315-2",
+        "template--14778633322581__af1e6c23-5338-467c-bee9-b9d9b3d9c22a-1680270173f8db9315-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "featured": true,
+        "height": "medium",
+        "width": "full",
+        "button_style": "hollow",
+        "overlay_strength": 10,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "section-bottom-margin": false
+      }
+    },
+    "section_rich_text_6nFxHX": {
+      "type": "section-rich-text",
+      "name": "Rich text",
+      "settings": {
+        "full_width": false,
+        "section_title": "",
+        "text": "<p><strong>Built for those who don't just ride, they own the road. With a retro moto-inspired frame that's as tough as it look sand fat tires that aren't just for show, they make all the difference on rough streets and uneven terrain. Whether you're cruising solo or leading the pack, every ride becomes an experience on the Beast.<br/><br/></strong></p>",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "section-bottom-margin": true
+      }
+    },
+    "product_specifications_4gHEhM": {
+      "type": "product-specifications",
+      "blocks": {
+        "specification_WfqhxU": {
+          "type": "specification",
+          "settings": {
+            "icon": "icon-stopwatch",
+            "svg-code": "",
+            "value": "20 MPH",
+            "label": "TOP SPEED"
+          }
+        },
+        "specification_Bcqtta": {
+          "type": "specification",
+          "settings": {
+            "icon": "icon-flash",
+            "svg-code": "",
+            "value": "750W 48V",
+            "label": "REAR HUB MOTOR"
+          }
+        },
+        "specification_Py78PQ": {
+          "type": "specification",
+          "settings": {
+            "icon": "icon-pin",
+            "svg-code": "",
+            "value": "35-50+",
+            "label": "MILE RANGE"
+          }
+        },
+        "specification_QyFBTm": {
+          "type": "specification",
+          "settings": {
+            "icon": "icon-flash",
+            "svg-code": "",
+            "value": "20Ah 48V",
+            "label": "LITHIUM-ION BATTERY"
+          }
+        }
+      },
+      "block_order": [
+        "specification_WfqhxU",
+        "specification_Bcqtta",
+        "specification_Py78PQ",
+        "specification_QyFBTm"
+      ],
+      "name": "Product Specifications",
+      "settings": {
+        "title": "Specifications",
+        "desc": "",
+        "container": "small",
+        "divider": false,
+        "bg_color": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "text_heading_color": false,
+        "text_border_color": true,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "section-bottom-margin": false
+      }
+    },
+    "section_image_with_text_overlap_EzpCcb": {
+      "type": "section-image-with-text-overlap",
+      "blocks": {
+        "image_J6gjVn": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/wildsyde-beast-fat-tire-01_c7251218-5532-4a1a-bf98-fb295fd1256f.webp",
+            "title": "BIG CRUISER EXPERIENCE",
+            "desc": "<p>Evoking the timeless appeal of a retro cruiser motorcycle, with a distinctive high-center 'gas' tank, ingeniously concealing the battery.<br/><br/></p>",
+            "horizontal_align": "left",
+            "link_title": "",
+            "link": "",
+            "bg_color_block": "rgba(0,0,0,0)",
+            "bg_color_content": "#ffffff",
+            "color_text": "#212121",
+            "text_heading_color": false,
+            "text_border_color": true
+          }
+        },
+        "image_iNQMPF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/wildsyde-beast-fat-tire-02_fe82790a-902d-487c-8d50-a18b3e95fb95.jpg",
+            "title": "FAT-TIRE STABILITY",
+            "desc": "<p>The 4” wide cross-terrain tires, built for both streets and trails, provide an unwavering, stable ride from asphalt and forest, to beach and snow.<br/><br/></p>",
+            "horizontal_align": "left",
+            "link_title": "",
+            "link": "",
+            "bg_color_block": "#f2f2f2",
+            "bg_color_content": "#ffffff",
+            "color_text": "#212121",
+            "text_heading_color": false,
+            "text_border_color": true
+          }
+        },
+        "image_YnMbag": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/wildsyde-beast-action-01.webp",
+            "title": "SMOOTH, COMFORTABLE RIDE",
+            "desc": "<p>A relaxed geometry, premium faux leather grips, and a wide cushioned seat create an effortless, upright ride for maximum comfort.<br/><br/></p>",
+            "horizontal_align": "left",
+            "link_title": "",
+            "link": "",
+            "bg_color_block": "rgba(0,0,0,0)",
+            "bg_color_content": "#ffffff",
+            "color_text": "#212121",
+            "text_heading_color": false,
+            "text_border_color": true
+          }
+        }
+      },
+      "block_order": [
+        "image_J6gjVn",
+        "image_iNQMPF",
+        "image_YnMbag"
+      ],
+      "name": "Image with text overlap",
+      "settings": {
+        "container": "large",
+        "block_spacing": 5,
+        "image_ratio": "4:3",
+        "block_layout": "2/3",
+        "block_align": "left",
+        "heading_size": 3,
+        "link_style": "hollow",
+        "text_style": "solid",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "section-bottom-margin": false
+      }
+    },
+    "section_lifestyle_gallery_TTbqxt": {
+      "type": "section-lifestyle-gallery",
+      "name": "Lifestyle Gallery",
+      "settings": {
+        "heading": "",
+        "above_fold": false,
+        "section_width": "contained",
+        "image_1": "shopify://shop_images/wildsyde-beast-action-02.webp",
+        "image_2": "shopify://shop_images/wildsyde-beast-action-03.webp",
+        "image_3": "shopify://shop_images/wildsyde-beast-action-04.webp",
+        "image_4": "shopify://shop_images/wildsyde-beast-orange-park-02.webp",
+        "image_5": "shopify://shop_images/wildsyde-beast-action-06.webp",
+        "image_6": "shopify://shop_images/wildsyde-beast-orange-park.webp",
+        "image_border_radius": 8,
+        "nav_button_color": "#ffffff",
+        "nav_button_hover_color": "#f5f5f5",
+        "nav_button_icon_color": "#353535",
+        "section_padding_top": "medium",
+        "section_padding_bottom": "medium"
+      }
+    },
+    "section_rider_height_qktdTB": {
+      "type": "section-rider-height",
+      "name": "Rider Height",
+      "settings": {
+        "title": "Rider Height",
+        "description": "<p>All BEAST 750W models and colorways fit riders from 5'6\" to 6'5\"+ thanks to the extra long extendable seat post and easy adjustable handlebars.</p>",
+        "primary_image": "shopify://shop_images/Beast-Rider-Height-5-6.webp",
+        "secondary_image": "shopify://shop_images/Beast-Rider-Height-6-5.webp",
+        "padding_top": 64,
+        "padding_bottom": 28
+      }
+    },
+    "section_key_features_gLDH7A": {
+      "type": "section-key-features",
+      "blocks": {
+        "feature_6HbUhi": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/wildsyde-ebikes-beast-tire.webp",
+            "title": "Cross-Terrain 4\" Fat-Tires",
+            "description": "Experience a stable, cushioned ride and superior traction with 4\" fat-tires, enhanced by fenders for wet-weather protection."
+          }
+        },
+        "feature_E4jftr": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/wildsyde-ebikes-beast-cruiser-handlebarsjpg.webp",
+            "title": "Wide Cruiser Handlebars",
+            "description": "Wide, ergonomic cruiser handlebars provide a comfortable, upright position for better visibility, control and manoeuvrability."
+          }
+        },
+        "feature_cziJ8C": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/wildsyde-ebikes-beast-display_92d41730-93f1-4a9f-80aa-ebf087e57406.webp",
+            "title": "Full-Color LCD Display",
+            "description": "The full-color LCD display keeps you informed with speed, battery level and assist mode, all in one easy-to-read screen."
+          }
+        },
+        "feature_zLzgBT": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/wildsyde-ebikes-controller.webp",
+            "title": "Display Controller",
+            "description": "Intuitive display controller lets you power on, change assist levels, toggle ride settings, and includes a USB charging port."
+          }
+        },
+        "feature_krUr4G": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/wildsyde-ebikes-beast-tank_69d65dc0-e14e-47a8-addd-a82cd3380df1.webp",
+            "title": "Battery 'Gas' Tank",
+            "description": "The retro-inspired gas tank design cleverly conceals the battery while adding the signature, classic look."
+          }
+        },
+        "feature_jwafNf": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/wildsyde-ebikes-beast-brakes.webp",
+            "title": "Hydraulic Disc Brakes",
+            "description": "Responsive hydraulic disc brakes deliver smooth, controlled stopping power for confident riding in all conditions."
+          }
+        },
+        "feature_eedbMj": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/wildsyde-ebikes-beast-seat_post.webp",
+            "title": "Shock-Absorbing Seat Post & Saddle",
+            "description": "A wide, cushioned saddle and shock-absorbing seat post smooth bumps for a more comfortable ride."
+          }
+        },
+        "feature_aFLrgV": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/wildsyde-ebikes-beast-gears-thumb-throttle.webp",
+            "title": "Gears & Thumb Throttle",
+            "description": "Smooth acceleration with the thumb throttle and precise Shimano gear changes for effortless control and a relaxed ride."
+          }
+        },
+        "feature_qGfMMW": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/wildsyde-ebikes-beast-rack.webp",
+            "title": "Rear Cargo Rack and Integrated Taillight",
+            "description": "The integrated rear rack offers reliable cargo support, while the built-in taillight improves visibility for added safety."
+          }
+        },
+        "feature_iYeEEh": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/wildsyde-ebikes-beast-headlight_73c7b387-4064-46c4-8d04-e7b77960d0a9.webp",
+            "title": "Retro Headlight",
+            "description": "Vintage-style headlight for timeless style, enhanced visibility and improved presence."
+          }
+        },
+        "feature_y4Taw4": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/wildsyde-ebikes-beast-grips.webp",
+            "title": "Stitched Leatherette Handlbar Grips",
+            "description": "Ergonomically designed faux leather grips provide comfort and a secure hold, reducing hand fatigue for a more enjoyable ride."
+          }
+        },
+        "feature_T39zwz": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/wildsyde-ebikes-tank-battery.webp",
+            "title": "20Ah Integrated Tank-Style Battery",
+            "description": "Ride up to 50+ miles on a single charge with the 20Ah battery discreetly tucked inside the retro-inspired gas-tank frame."
+          }
+        },
+        "feature_hmWMtk": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/wildsyde-ebikes-beast-motor_03f42f41-c40a-4ed3-bd2e-924f0742fb4d.webp",
+            "title": "750W Rear Hub Motor",
+            "description": "Powerful and reliable 750W rear hub motor for smooth acceleration, confident hill climbing and cruising."
+          }
+        }
+      },
+      "block_order": [
+        "feature_6HbUhi",
+        "feature_E4jftr",
+        "feature_cziJ8C",
+        "feature_zLzgBT",
+        "feature_krUr4G",
+        "feature_jwafNf",
+        "feature_eedbMj",
+        "feature_aFLrgV",
+        "feature_qGfMMW",
+        "feature_iYeEEh",
+        "feature_y4Taw4",
+        "feature_T39zwz",
+        "feature_hmWMtk"
+      ],
+      "name": "Key Features & Components",
+      "settings": {
+        "title": "Key Features & Components",
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "section_geometry_specifications_NbqTRF": {
+      "type": "section-geometry-specifications",
+      "blocks": {
+        "accordion_item_gEnUHx": {
+          "type": "accordion_item",
+          "settings": {
+            "title": "Geometry",
+            "content": "<p><strong>A: </strong>Top tube length = 24\"/62.63cm </p><p><strong>B: </strong>Adjustable seat to ground height = Low: 33.5\"/85cm | High: 42 .5\"/105cm </p><p><strong>C: </strong>Seat to pedal at low to high point = Low: 31\"/79cm | High: 39\"/99cm </p><p><strong>D: </strong>Standover height = 31\"/78.74cm </p><p><strong>E: </strong>Handlebar height from ground to stem attachment = 42\"/106.68cm </p><p><strong>F: </strong>Total length of complete bike = 76\"/193.04cm </p><p><strong>G: </strong>Handlebar distance from grip to grip = 25\"/63.5cm </p>"
+          }
+        },
+        "accordion_item_QPFttR": {
+          "type": "accordion_item",
+          "settings": {
+            "title": "Specifications",
+            "content": "<p><strong>Battery Weight: </strong>9lbs (4kg)  </p><p><strong>Bicycle Weight:</strong> 79lbs (34kg), including battery  </p><p><strong>Charging Time: </strong>8 hours from empty  </p><p><strong>Class 2 Electric Bicycle:</strong> governed at 20mph to meet Class 2 specifications (with 5 speed PAS and thumb activated throttle) </p><p><strong>Distance/Cruising Range:</strong> 35-50 miles on a single charge, with many riders experiencing even greater distances under optimal conditions </p><p><strong>Max load:</strong> 300lb/136Kg </p><p><strong>Motor:</strong> 750W 48V latest generation hub gear brushless BAFANG motor producing 80Nm power </p><p><strong>Size Range:</strong> one size (5’ 6” and above)  </p><p><strong>Standover Height: </strong>31” </p>"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_item_gEnUHx",
+        "accordion_item_QPFttR"
+      ],
+      "name": "Geometry & Specifications",
+      "settings": {
+        "title": "Geometry & Specifications",
+        "heading_size": 3,
+        "image": "shopify://shop_images/wildsyde-ebikes-beast-geometry.webp",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -233,12 +681,12 @@
       ],
       "settings": {
         "style": "classic-border",
-        "bg_color": "#f5f5f5",
+        "bg_color": "#ffffff",
         "style_clean_mobile": true,
         "layout-order": "media-left",
         "enable_sticky_content": true,
         "container": "large",
-        "show_breadcrumbs": true,
+        "show_breadcrumbs": false,
         "breadcrumbs_align": "left",
         "enable_zoom": true,
         "enable_video_looping": false,
@@ -247,413 +695,6 @@
         "thumbnails_position": "left",
         "thumbnails_ratio": "1:1",
         "thumbnails_show_border": false
-      }
-    },
-    "af1e6c23-5338-467c-bee9-b9d9b3d9c22a": {
-      "type": "section-image-grid",
-      "blocks": {
-        "template--14778633322581__af1e6c23-5338-467c-bee9-b9d9b3d9c22a-1680270173f8db9315-0": {
-          "type": "image",
-          "settings": {
-            "text_alignment": "bottom",
-            "text_border_color": false,
-            "title": "Image block",
-            "text": "Use these image blocks to tell your story, promote your products or create a beautiful gallery.",
-            "link": ""
-          }
-        },
-        "template--14778633322581__af1e6c23-5338-467c-bee9-b9d9b3d9c22a-1680270173f8db9315-1": {
-          "type": "text",
-          "settings": {
-            "bg_color": "#f0f0f0",
-            "text_color": "dark",
-            "text_heading_color": false,
-            "text_border_color": true,
-            "title": "Text block",
-            "text": "<p>Use these text blocks to promote seasonal sales, store events or to tell your brand's story.</p>",
-            "link_text": "Learn more",
-            "link": ""
-          }
-        },
-        "template--14778633322581__af1e6c23-5338-467c-bee9-b9d9b3d9c22a-1680270173f8db9315-2": {
-          "type": "text",
-          "settings": {
-            "bg_color": "#f0f0f0",
-            "text_color": "dark",
-            "text_heading_color": false,
-            "text_border_color": true,
-            "title": "Text block",
-            "text": "<p>Use these text blocks to promote seasonal sales, store events or to tell your brand's story.</p>",
-            "link_text": "Learn more",
-            "link": ""
-          }
-        },
-        "template--14778633322581__af1e6c23-5338-467c-bee9-b9d9b3d9c22a-1680270173f8db9315-3": {
-          "type": "image",
-          "settings": {
-            "text_alignment": "bottom",
-            "text_border_color": false,
-            "title": "Image block",
-            "text": "Use these image blocks to tell your story, promote your products or create a beautiful gallery.",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--14778633322581__af1e6c23-5338-467c-bee9-b9d9b3d9c22a-1680270173f8db9315-0",
-        "template--14778633322581__af1e6c23-5338-467c-bee9-b9d9b3d9c22a-1680270173f8db9315-1",
-        "template--14778633322581__af1e6c23-5338-467c-bee9-b9d9b3d9c22a-1680270173f8db9315-2",
-        "template--14778633322581__af1e6c23-5338-467c-bee9-b9d9b3d9c22a-1680270173f8db9315-3"
-      ],
-      "disabled": true,
-      "settings": {
-        "featured": true,
-        "height": "medium",
-        "width": "full",
-        "button_style": "hollow",
-        "overlay_strength": 10,
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "section-bottom-margin": false
-      }
-    },
-    "product_specifications_4gHEhM": {
-      "type": "product-specifications",
-      "blocks": {
-        "specification_WfqhxU": {
-          "type": "specification",
-          "settings": {
-            "icon": "icon-stopwatch",
-            "svg-code": "",
-            "value": "20 MPH",
-            "label": "TOP SPEED"
-          }
-        },
-        "specification_Bcqtta": {
-          "type": "specification",
-          "settings": {
-            "icon": "icon-flash",
-            "svg-code": "",
-            "value": "750W 48V",
-            "label": "REAR HUB MOTOR"
-          }
-        },
-        "specification_Py78PQ": {
-          "type": "specification",
-          "settings": {
-            "icon": "icon-pin",
-            "svg-code": "",
-            "value": "35-50+",
-            "label": "MILE RANGE"
-          }
-        },
-        "specification_QyFBTm": {
-          "type": "specification",
-          "settings": {
-            "icon": "icon-flash",
-            "svg-code": "",
-            "value": "20Ah 48V",
-            "label": "LITHIUM-ION BATTERY"
-          }
-        }
-      },
-      "block_order": [
-        "specification_WfqhxU",
-        "specification_Bcqtta",
-        "specification_Py78PQ",
-        "specification_QyFBTm"
-      ],
-      "name": "Product Specifications",
-      "settings": {
-        "title": "Specifications",
-        "desc": "",
-        "container": "small",
-        "divider": false,
-        "bg_color": "rgba(0,0,0,0)",
-        "color_text": "rgba(0,0,0,0)",
-        "text_heading_color": false,
-        "text_border_color": true,
-        "padding_top": 60,
-        "padding_bottom": 60,
-        "section-bottom-margin": false
-      }
-    },
-    "section_rich_text_6nFxHX": {
-      "type": "section-rich-text",
-      "name": "Rich text",
-      "settings": {
-        "full_width": false,
-        "section_title": "",
-        "text": "<p>Built for those who don't just ride, they own the road. With a retro moto-inspired frame that's as tough as it look sand fat tires that aren't just for show, they make all the difference on rough streets and uneven terrain. Whether you're cruising solo or leading the pack, every ride becomes an experience on the Beast.<br/><br/></p>",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "section-bottom-margin": false
-      }
-    },
-    "section_image_with_text_overlap_EzpCcb": {
-      "type": "section-image-with-text-overlap",
-      "blocks": {
-        "image_J6gjVn": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/wildsyde-beast-fat-tire-01_c7251218-5532-4a1a-bf98-fb295fd1256f.webp",
-            "title": "BIG CRUISER EXPERIENCE",
-            "desc": "<p>Evoking the timeless appeal of a retro cruiser motorcycle, with a distinctive high-center 'gas' tank, ingeniously concealing the battery.<br/><br/></p>",
-            "horizontal_align": "left",
-            "link_title": "",
-            "link": "",
-            "bg_color_block": "rgba(0,0,0,0)",
-            "bg_color_content": "#ffffff",
-            "color_text": "#212121",
-            "text_heading_color": false,
-            "text_border_color": true
-          }
-        },
-        "image_iNQMPF": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/wildsyde-beast-fat-tire-02_fe82790a-902d-487c-8d50-a18b3e95fb95.jpg",
-            "title": "FAT-TIRE STABILITY",
-            "desc": "<p>The 4” wide cross-terrain tires, built for both streets and trails, provide an unwavering, stable ride from asphalt and forest, to beach and snow.<br/><br/></p>",
-            "horizontal_align": "left",
-            "link_title": "",
-            "link": "",
-            "bg_color_block": "rgba(0,0,0,0)",
-            "bg_color_content": "#ffffff",
-            "color_text": "#212121",
-            "text_heading_color": false,
-            "text_border_color": true
-          }
-        },
-        "image_YnMbag": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/wildsyde-beast-action-01.webp",
-            "title": "SMOOTH, COMFORTABLE RIDE",
-            "desc": "<p>A relaxed geometry, premium faux leather grips, and a wide cushioned seat create an effortless, upright ride for maximum comfort.<br/><br/></p>",
-            "horizontal_align": "left",
-            "link_title": "",
-            "link": "",
-            "bg_color_block": "rgba(0,0,0,0)",
-            "bg_color_content": "#ffffff",
-            "color_text": "#212121",
-            "text_heading_color": false,
-            "text_border_color": true
-          }
-        }
-      },
-      "block_order": [
-        "image_J6gjVn",
-        "image_iNQMPF",
-        "image_YnMbag"
-      ],
-      "name": "Image with text overlap",
-      "settings": {
-        "container": "large",
-        "block_spacing": 5,
-        "image_ratio": "4:3",
-        "block_layout": "2/3",
-        "block_align": "left",
-        "heading_size": 3,
-        "link_style": "hollow",
-        "text_style": "solid",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "section-bottom-margin": false
-      }
-    },
-    "section_lifestyle_gallery_TTbqxt": {
-      "type": "section-lifestyle-gallery",
-      "name": "Lifestyle Gallery",
-      "settings": {
-        "heading": "",
-        "above_fold": false,
-        "section_width": "contained",
-        "image_1": "shopify://shop_images/wildsyde-beast-action-02.webp",
-        "image_2": "shopify://shop_images/wildsyde-beast-action-03.webp",
-        "image_3": "shopify://shop_images/wildsyde-beast-action-04.webp",
-        "image_4": "shopify://shop_images/wildsyde-beast-orange-park-02.webp",
-        "image_5": "shopify://shop_images/wildsyde-beast-action-06.webp",
-        "image_6": "shopify://shop_images/wildsyde-beast-orange-park.webp",
-        "image_border_radius": 8,
-        "nav_button_color": "#ffffff",
-        "nav_button_hover_color": "#f5f5f5",
-        "nav_button_icon_color": "#353535",
-        "section_padding_top": "medium",
-        "section_padding_bottom": "medium"
-      }
-    },
-    "section_rider_height_qktdTB": {
-      "type": "section-rider-height",
-      "name": "Rider Height",
-      "settings": {
-        "title": "Rider Height",
-        "description": "<p>All BEAST 750W models and colorways fit riders from 5'6\" to 6'5\"+ thanks to the extra long extendable seat post and easy adjustable handlebars.</p>",
-        "primary_image": "shopify://shop_images/Beast-Rider-Height-5-6.webp",
-        "secondary_image": "shopify://shop_images/Beast-Rider-Height-6-5.webp",
-        "padding_top": 64,
-        "padding_bottom": 64
-      }
-    },
-    "section_key_features_gLDH7A": {
-      "type": "section-key-features",
-      "blocks": {
-        "feature_6HbUhi": {
-          "type": "feature",
-          "settings": {
-            "image": "shopify://shop_images/wildsyde-ebikes-beast-tire.webp",
-            "title": "Cross-Terrain 4\" Fat-Tires",
-            "description": "Experience a stable, cushioned ride and superior traction with 4\" fat-tires, enhanced by fenders for wet-weather protection."
-          }
-        },
-        "feature_E4jftr": {
-          "type": "feature",
-          "settings": {
-            "image": "shopify://shop_images/wildsyde-ebikes-beast-cruiser-handlebarsjpg.webp",
-            "title": "Wide Cruiser Handlebars",
-            "description": "Wide, ergonomic cruiser handlebars provide a comfortable, upright position for better visibility, control and manoeuvrability."
-          }
-        },
-        "feature_cziJ8C": {
-          "type": "feature",
-          "settings": {
-            "image": "shopify://shop_images/wildsyde-ebikes-beast-display_92d41730-93f1-4a9f-80aa-ebf087e57406.webp",
-            "title": "Full-Color LCD Display",
-            "description": "The full-color LCD display keeps you informed with speed, battery level and assist mode, all in one easy-to-read screen."
-          }
-        },
-        "feature_zLzgBT": {
-          "type": "feature",
-          "settings": {
-            "image": "shopify://shop_images/wildsyde-ebikes-controller.webp",
-            "title": "Display Controller",
-            "description": "Intuitive display controller lets you power on, change assist levels, toggle ride settings, and includes a USB charging port."
-          }
-        },
-        "feature_krUr4G": {
-          "type": "feature",
-          "settings": {
-            "image": "shopify://shop_images/wildsyde-ebikes-beast-tank_69d65dc0-e14e-47a8-addd-a82cd3380df1.webp",
-            "title": "Battery 'Gas' Tank",
-            "description": "The retro-inspired gas tank design cleverly conceals the battery while adding the signature, classic look."
-          }
-        },
-        "feature_jwafNf": {
-          "type": "feature",
-          "settings": {
-            "image": "shopify://shop_images/wildsyde-ebikes-beast-brakes.webp",
-            "title": "Hydraulic Disc Brakes",
-            "description": "Responsive hydraulic disc brakes deliver smooth, controlled stopping power for confident riding in all conditions."
-          }
-        },
-        "feature_eedbMj": {
-          "type": "feature",
-          "settings": {
-            "image": "shopify://shop_images/wildsyde-ebikes-beast-seat_post.webp",
-            "title": "Shock-Absorbing Seat Post & Saddle",
-            "description": "A wide, cushioned saddle and shock-absorbing seat post smooth bumps for a more comfortable ride."
-          }
-        },
-        "feature_aFLrgV": {
-          "type": "feature",
-          "settings": {
-            "image": "shopify://shop_images/wildsyde-ebikes-beast-gears-thumb-throttle.webp",
-            "title": "Gears & Thumb Throttle",
-            "description": "Smooth acceleration with the thumb throttle and precise Shimano gear changes for effortless control and a relaxed ride."
-          }
-        },
-        "feature_qGfMMW": {
-          "type": "feature",
-          "settings": {
-            "image": "shopify://shop_images/wildsyde-ebikes-beast-rack.webp",
-            "title": "Rear Cargo Rack and Integrated Taillight",
-            "description": "The integrated rear rack offers reliable cargo support, while the built-in taillight improves visibility for added safety."
-          }
-        },
-        "feature_iYeEEh": {
-          "type": "feature",
-          "settings": {
-            "image": "shopify://shop_images/wildsyde-ebikes-beast-headlight_73c7b387-4064-46c4-8d04-e7b77960d0a9.webp",
-            "title": "Retro Headlight",
-            "description": "Vintage-style headlight for timeless style, enhanced visibility and improved presence."
-          }
-        },
-        "feature_y4Taw4": {
-          "type": "feature",
-          "settings": {
-            "image": "shopify://shop_images/wildsyde-ebikes-beast-grips.webp",
-            "title": "Stitched Leatherette Handlbar Grips",
-            "description": "Ergonomically designed faux leather grips provide comfort and a secure hold, reducing hand fatigue for a more enjoyable ride."
-          }
-        },
-        "feature_T39zwz": {
-          "type": "feature",
-          "settings": {
-            "image": "shopify://shop_images/wildsyde-ebikes-tank-battery.webp",
-            "title": "20Ah Integrated Tank-Style Battery",
-            "description": "Ride up to 50+ miles on a single charge with the 20Ah battery discreetly tucked inside the retro-inspired gas-tank frame."
-          }
-        },
-        "feature_hmWMtk": {
-          "type": "feature",
-          "settings": {
-            "image": "shopify://shop_images/wildsyde-ebikes-beast-motor_03f42f41-c40a-4ed3-bd2e-924f0742fb4d.webp",
-            "title": "750W Rear Hub Motor",
-            "description": "Powerful and reliable 750W rear hub motor for smooth acceleration, confident hill climbing and cruising."
-          }
-        }
-      },
-      "block_order": [
-        "feature_6HbUhi",
-        "feature_E4jftr",
-        "feature_cziJ8C",
-        "feature_zLzgBT",
-        "feature_krUr4G",
-        "feature_jwafNf",
-        "feature_eedbMj",
-        "feature_aFLrgV",
-        "feature_qGfMMW",
-        "feature_iYeEEh",
-        "feature_y4Taw4",
-        "feature_T39zwz",
-        "feature_hmWMtk"
-      ],
-      "name": "Key Features & Components",
-      "settings": {
-        "title": "Key Features & Components",
-        "padding_top": 64,
-        "padding_bottom": 64
-      }
-    },
-    "section_geometry_specifications_NbqTRF": {
-      "type": "section-geometry-specifications",
-      "blocks": {
-        "accordion_item_gEnUHx": {
-          "type": "accordion_item",
-          "settings": {
-            "title": "Geometry",
-            "content": "<p><strong>A: </strong>Top tube length = 24\"/62.63cm </p><p><strong>B: </strong>Adjustable seat to ground height = Low: 33.5\"/85cm | High: 42 .5\"/105cm </p><p><strong>C: </strong>Seat to pedal at low to high point = Low: 31\"/79cm | High: 39\"/99cm </p><p><strong>D: </strong>Standover height = 31\"/78.74cm </p><p><strong>E: </strong>Handlebar height from ground to stem attachment = 42\"/106.68cm </p><p><strong>F: </strong>Total length of complete bike = 76\"/193.04cm </p><p><strong>G: </strong>Handlebar distance from grip to grip = 25\"/63.5cm </p>"
-          }
-        },
-        "accordion_item_QPFttR": {
-          "type": "accordion_item",
-          "settings": {
-            "title": "Specifications",
-            "content": "<p><strong>Battery Weight: </strong>9lbs (4kg)  </p><p><strong>Bicycle Weight:</strong> 79lbs (34kg), including battery  </p><p><strong>Charging Time: </strong>8 hours from empty  </p><p><strong>Class 2 Electric Bicycle:</strong> governed at 20mph to meet Class 2 specifications (with 5 speed PAS and thumb activated throttle) </p><p><strong>Distance/Cruising Range:</strong> 35-50 miles on a single charge, with many riders experiencing even greater distances under optimal conditions </p><p><strong>Max load:</strong> 300lb/136Kg </p><p><strong>Motor:</strong> 750W 48V latest generation hub gear brushless BAFANG motor producing 80Nm power </p><p><strong>Size Range:</strong> one size (5’ 6” and above)  </p><p><strong>Standover Height: </strong>31” </p>"
-          }
-        }
-      },
-      "block_order": [
-        "accordion_item_gEnUHx",
-        "accordion_item_QPFttR"
-      ],
-      "name": "Geometry & Specifications",
-      "settings": {
-        "title": "Geometry & Specifications",
-        "heading_size": 3,
-        "image": "shopify://shop_images/wildsyde-ebikes-beast-geometry.webp",
-        "padding_top": 60,
-        "padding_bottom": 60
       }
     },
     "section_feature_benefits_AkTQUR": {
@@ -873,15 +914,16 @@
     }
   },
   "order": [
-    "main",
+    "section_slideshow_JXBFby",
     "af1e6c23-5338-467c-bee9-b9d9b3d9c22a",
-    "product_specifications_4gHEhM",
     "section_rich_text_6nFxHX",
+    "product_specifications_4gHEhM",
     "section_image_with_text_overlap_EzpCcb",
     "section_lifestyle_gallery_TTbqxt",
     "section_rider_height_qktdTB",
     "section_key_features_gLDH7A",
     "section_geometry_specifications_NbqTRF",
+    "main",
     "section_feature_benefits_AkTQUR",
     "9904a28f-6381-41fe-96eb-d4a73d60f0a0",
     "5a818a60-e694-4eac-a33f-5ce701e894b0",
