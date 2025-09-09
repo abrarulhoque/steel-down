@@ -34,7 +34,7 @@
       "name": "Slideshow",
       "settings": {
         "style": "transparent",
-        "title_size": 3,
+        "title_size": 4,
         "autoplay": true,
         "autoplay_speed": 8,
         "nav_style": "solid-brand",
@@ -125,7 +125,7 @@
         "full_width": false,
         "section_title": "",
         "text": "<p><strong>Built for those who don't just ride, they own the road. With a retro moto-inspired frame that's as tough as it look sand fat tires that aren't just for show, they make all the difference on rough streets and uneven terrain. Whether you're cruising solo or leading the pack, every ride becomes an experience on the Beast.<br/><br/></strong></p>",
-        "padding_top": 0,
+        "padding_top": 39,
         "padding_bottom": 0,
         "section-bottom-margin": true
       }
