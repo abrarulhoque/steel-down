@@ -53,7 +53,7 @@
     "quick_shop_trigger": "button-hover",
     "quick_shop_product_grid_button": "solid",
     "quick_shop_show_cart": true,
-    "quick_shop_variant_style": "buttons",
+    "quick_shop_variant_style": "swatches-buttons",
     "quick_shop_quantity_selector": false,
     "quick_shop_payment_button": false,
     "quick_shop_inventory_notice": true,
