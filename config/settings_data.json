@@ -80,6 +80,7 @@
     "product_grid_label_collection_2": "low-stock",
     "product_grid_label_title_custom_2": "Low Stock",
     "color_label_custom_two": "#212121",
+    "swatches_enabled": false,
     "swatches_colors_override": "Dull Black: #252525\nGloss Black: #000000\nAsh: #d9d9d9\nVintage Brown: #9A6324\nKhaki: #9c8c6a\nSmoked: #000000\nClear: #ffffff\nCampaign: #9c0013\nGold Star: #d79131\nStripe: #146fe2\nFast As Fuck: #d79131\nFree Spirits: #000000",
     "swatches_images_override": "2-Pack: 2-pack.jpg\n3-Pack: 3-pack.jpg\nBuffalo Check: buffalocheck.jpg\nClassic: buffalocheck.jpg\nCheckered: buffalocheck.jpg\nBest Seller Pack: 3-pack-socks-best.jpg\nSS24 Pack: 3-pack-socks-ss24.jpg\nBlack/White: buffalocheck.jpg",
     "use_square_swatch": false,
@@ -133,11 +134,6 @@
       },
       "14060646107696862457": {
         "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-        "disabled": false,
-        "settings": {}
-      },
-      "16605207545338212596": {
-        "type": "shopify://apps/aov-ai-bundle/blocks/aov-offer/0335d423-143c-4ad7-b224-99a1db74a9ee",
         "disabled": false,
         "settings": {}
       },
