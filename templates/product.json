@@ -52,7 +52,7 @@
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
-            "product_variant_style": "buttons",
+            "product_variant_style": "dropdowns",
             "popup_enable": false,
             "popup_trigger": "Size\nGröße\nTaille\nTaglia\nTalla",
             "popup_label": "Size guide",
@@ -183,10 +183,6 @@
             "align": "center",
             "link": ""
           }
-        },
-        "bundler_bundler_target_element_QPEt3E": {
-          "type": "shopify://apps/bundler/blocks/bundler-target-element/7a6ae1b8-3b16-449b-8429-8bb89a62c664",
-          "settings": {}
         }
       },
       "block_order": [
@@ -207,8 +203,7 @@
         "663a3435-b014-41e0-916d-1ed9505f5691",
         "pickup_Ac6Tgw",
         "complementary_products_xiznrY",
-        "image_CQJLEE",
-        "bundler_bundler_target_element_QPEt3E"
+        "image_CQJLEE"
       ],
       "custom_css": [
         ".js-section__product-single .hypervisual__container {margin-top: -60px;}",
@@ -419,15 +414,6 @@
     },
     "1756439511148f4dec": {
       "type": "apps",
-      "blocks": {
-        "bundler_bundler_target_element_88pJaU": {
-          "type": "shopify://apps/bundler/blocks/bundler-target-element/7a6ae1b8-3b16-449b-8429-8bb89a62c664",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "bundler_bundler_target_element_88pJaU"
-      ],
       "settings": {
         "include_margins": true
       }
