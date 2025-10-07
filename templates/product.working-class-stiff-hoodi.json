@@ -222,7 +222,7 @@
           "settings": {
             "icon": "icon-award-medal",
             "svg-code": "",
-            "text": "Our Best Selling T-Shirt",
+            "text": "Our NOW FAMOUS WORKING CLASS STIFF GRAPHIC",
             "text_link": "",
             "link": ""
           }
@@ -246,8 +246,8 @@
       "settings": {
         "divider_top": false,
         "divider_bottom": false,
-        "text_size_desktop": 9,
-        "text_size_mobile": 5,
+        "text_size_desktop": 7,
+        "text_size_mobile": 3,
         "text_style": "body",
         "message_color_bg": "#212121",
         "message_color_text": "#ffffff",
@@ -305,6 +305,7 @@
         "text_j4TTUr",
         "text_fGgPRG"
       ],
+      "disabled": true,
       "settings": {
         "title": "",
         "style_desktop": "grid",
@@ -321,10 +322,10 @@
         "text_yX9zY9": {
           "type": "text",
           "settings": {
-            "image": "shopify://shop_images/Working-Class-Stiff-Motorcycle-T-Shirt-Steeltown-2.jpg",
+            "image": "shopify://shop_images/Working-Class-Stiff-Hoodie-Steeltown-Garage-Zane-1.jpg",
             "title": "",
             "sub_title": "",
-            "desc": "<ul><li>True to size</li><li>Unisex (XS - 3XL)</li><li>100% 6 oz ringspun cotton</li><li>Wash cold, hang dry</li></ul>",
+            "desc": "<ul><li>True to size</li><li>Unisex (XS - 3XL)</li><li>Heavyweight Cotton/Poly</li><li>Wash cold, hang dry</li></ul>",
             "link_title": "",
             "link": ""
           }
@@ -332,10 +333,10 @@
         "text_6tn3HA": {
           "type": "text",
           "settings": {
-            "image": "shopify://shop_images/Working-Class-Stiff-Motorcycle-T-Shirt-Steeltown-1.jpg",
+            "image": "shopify://shop_images/Working-Class-Stiff-Hoodie-Steeltown-Garage-Zane-4.jpg",
             "title": "",
             "sub_title": "",
-            "desc": "<ul><li>Classic fit</li><li>Wide body, wide sleeves</li><li>Shorter length</li><li><a href=\"https://steeltowngarage.com/blogs/news/regular-fit-size-chart\" target=\"_blank\" title=\"https://steeltowngarage.com/blogs/news/regular-fit-size-chart\">Click For Size Chart</a></li></ul>",
+            "desc": "<ul><li>Classic fit</li><li>Small Batch Made</li><li>Printed Locally</li><li><a href=\"https://steeltowngarage.com/blogs/news/regular-fit-size-chart\" target=\"_blank\" title=\"https://steeltowngarage.com/blogs/news/regular-fit-size-chart\">Click For Size Chart</a></li></ul>",
             "link_title": "",
             "link": ""
           }
@@ -344,7 +345,7 @@
           "type": "text",
           "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/Address-Tee-Steeltown-Garage-Back_2b78aebe-9f7d-42ef-866e-3df7492f878f.jpg",
+            "image": "shopify://shop_images/Working-Class-Stiff-Hoodie-Steeltown-Garage-Zane-4.jpg",
             "title": "",
             "sub_title": "",
             "desc": "",
@@ -394,7 +395,7 @@
         "text_border_color": true,
         "grid_mobile": "1",
         "mobile_layout": "carousel",
-        "padding_top": 0,
+        "padding_top": 21,
         "padding_bottom": 0,
         "section-bottom-margin": true
       }
@@ -405,9 +406,9 @@
         "image_QXj9fa": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Working-Class-Stiff-Motorcycle-T-Shirt-Steeltown-3.jpg",
-            "title": "Classic, Unisex, Wild",
-            "desc": "<p>A unisex classic fit t-shirt that feels like an old school band tee. </p><p>The Working Class Stiff Tee is made from 100% 6oz pre shrunk cotton and features a side seamed, lightweight regular fit with soft shoulder taping and a thin, vintage style crew neckline.</p><p>We make this tee from premium 6oz ringspun cotton which gives it a thick, rugged feel that is perfect for a base layer during cool spring nights but is still soft enough to fall perfectly on the shape of your upper body.</p>",
+            "image": "shopify://shop_images/Working-Class-Stiff-Hoodie-Steeltown-Garage-Zane-3.jpg",
+            "title": "BLUE COLLAR PROUD",
+            "desc": "<p>Our famous Working Class Stiff now has a new job: keeping you warm! This 13.8 oz heavy pullover has a double fleece lined hood and sports our now iconic Working Class Stiff graphic. Available in unisex sizes XS - 3XL.</p><p>We're from a blue collar town. Where grease under your fingernails isn't frowned upon. Where a hard days work feeds the soul. Where it doesn't matter what your job is, all that matters is that you give it your all every day. We're working class stiffs. Our clothes may have holes in them and our boots may have steel toes. <strong>But we're proud of it.</strong></p>",
             "horizontal_align": "left",
             "link_title": "",
             "link": "https://steeltowngarage.com/search?q=steeltown+cycles",
@@ -551,7 +552,10 @@
       "blocks": {
         "judge_me_reviews_review_widget_CVFaBf": {
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200
+          }
         }
       },
       "block_order": [
