@@ -23,17 +23,17 @@
         "text_size_mobile": 5,
         "text_style": "heading",
         "message_color_bg": "#f5f5f5",
-        "message_color_text": "#C00000",
+        "message_color_text": "#c00000",
         "text_letter_spacing": 0,
         "text_bold": true,
         "text_capitalize": true,
-        "header-3e5dcc440d183cf2d23540d915c871c9": null,
+        "header-ca17f698e514f23d8763a33e200ea9a8": null,
         "close_icon": false,
-        "header-308339601f7c817a1c01c80e9fee04e9": null,
+        "header-35f2576baa2cf40362d079ffcaa592ef": null,
         "carousel_desktop": false,
         "auto_carousel": true,
         "carousel_speed": 8,
-        "header-8324c5ad3ee9ff253334f4b7ccaee524": null,
+        "header-a8c03c88f6bc5b576a65915762edea15": null,
         "padding_top": 0,
         "padding_bottom": 0,
         "section-bottom-margin": true
@@ -67,6 +67,29 @@
         "announcement_pWFBR"
       ],
       "name": "Announcement bar"
+    },
+    "section_faq_KXUDp7": {
+      "settings": {},
+      "blocks": {
+        "article_PhffM": {
+          "type": "article",
+          "disabled": false,
+          "settings": {
+            "title": "Where do the glasses ship from? Will I have to pay customs?",
+            "text": "<p>Our Riding Glasses are warehoused and ship from our primary warehouse in Denver, Colorado. So you won't have to pay a cent in import fees or tariffs. </p>",
+            "image": null
+          }
+        }
+      },
+      "block_order": [
+        "category_yRDbdA",
+        "article_PhffM",
+        "article_VjMMPF",
+        "article_Qzni8j",
+        "article_M4dUz7",
+        "article_ygWHCV",
+        "article_Wr6GiT"
+      ]
     }
   },
   "order": [
