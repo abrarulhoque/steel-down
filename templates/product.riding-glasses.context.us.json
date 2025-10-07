@@ -12,5 +12,76 @@
   "context": {
     "market": "us"
   },
-  "sections": {}
+  "sections": {
+    "section_announcement_bar_xdgnQ": {
+      "type": "section-announcement-bar",
+      "disabled": false,
+      "settings": {
+        "divider_top": false,
+        "divider_bottom": false,
+        "text_size_desktop": 8,
+        "text_size_mobile": 5,
+        "text_style": "heading",
+        "message_color_bg": "#f5f5f5",
+        "message_color_text": "#C00000",
+        "text_letter_spacing": 0,
+        "text_bold": true,
+        "text_capitalize": true,
+        "header-3e5dcc440d183cf2d23540d915c871c9": null,
+        "close_icon": false,
+        "header-308339601f7c817a1c01c80e9fee04e9": null,
+        "carousel_desktop": false,
+        "auto_carousel": true,
+        "carousel_speed": 8,
+        "header-8324c5ad3ee9ff253334f4b7ccaee524": null,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "section-bottom-margin": true
+      },
+      "blocks": {
+        "announcement_h9pDF": {
+          "type": "announcement",
+          "disabled": false,
+          "settings": {
+            "icon": "icon-pin",
+            "svg-code": "",
+            "text": "Ships from COLORADO. zero tariffs or import charges.",
+            "text_link": "",
+            "link": ""
+          }
+        },
+        "announcement_pWFBR": {
+          "type": "announcement",
+          "disabled": true,
+          "settings": {
+            "icon": "icon-delivery-truck-3",
+            "svg-code": "",
+            "text": "Store updates and announcements",
+            "text_link": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement_h9pDF",
+        "announcement_pWFBR"
+      ],
+      "name": "Announcement bar"
+    }
+  },
+  "order": [
+    "main",
+    "section_announcement_bar_xdgnQ",
+    "section_rich_text_CpAjDJ",
+    "section_multi_column_images_EG9LPA",
+    "9904a28f-6381-41fe-96eb-d4a73d60f0a0",
+    "section_multi_column_images_mJJGiY",
+    "section_collection_list_WnmPhK",
+    "product-recommendations",
+    "section_multi_column_images_iLAMfy",
+    "section_image_text_banner_nacHHJ",
+    "section_faq_KXUDp7",
+    "17489570774e959c00",
+    "section_newsletter_8BGBaX"
+  ]
 }
