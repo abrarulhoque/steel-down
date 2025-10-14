@@ -311,7 +311,7 @@
           "type": "text",
           "settings": {
             "heading": "FREE SHIPPING",
-            "text": "<p>ALL NORTH AMERICAN ORDERS OVER $100 QUALIFY FOR FREE SHIPPING.</p><p>NO STRINGS ATTACHED.</p>",
+            "text": "<p>ALL NORTH AMERICAN ORDERS OVER $75 NOW QUALIFY FOR FREE SHIPPING.</p><p>NO STRINGS ATTACHED.</p>",
             "link_text": "",
             "link": "",
             "button_style": "c-btn c-btn--hollow",
