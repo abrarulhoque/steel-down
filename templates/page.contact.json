@@ -11,6 +11,7 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {}
     },
     "section_faq_aatAje": {
@@ -26,21 +27,22 @@
           "type": "article",
           "settings": {
             "title": "Why is UPS asking me for money?",
-            "text": "<p>Use these articles to answer questions that customers have about your products and services. You can use text, links and images and also group articles into categories.</p>"
+            "text": "<p>The cost you've been asked to pay by UPS has nothing to do with shipping and nothing to do with us. It is due to the USA government’s removal of the <em>De Minimis</em> duty exemption. </p><p>As of August 29th, all packages coming into the US are now subject to duty and tariffs. So shipping carriers (we use UPS) now have to collect duty and tariff payments from US customers and remit that money to the USA government.</p><p>We try to make this very clear with a big red banner on the helmet product page as well as in your order confirmation email that we sent you.</p><p>You can refuse delivery, but as it's mentioned in the big red banner on the website, as well as in our Refund Policy, refusing delivery because of duty and tariff fees <span style=\"text-decoration:underline\">will not</span> result in a refund of your order. </p>"
           }
         },
         "article_8t93h4": {
           "type": "article",
           "settings": {
             "title": "When are you restocking helmets?",
-            "text": "<p>Use these articles to answer questions that customers have about your products and services. You can use text, links and images and also group articles into categories.</p>"
+            "text": "<p>We restock our super low profile 3/4 helmets every week, sometimes every other week.</p><p>Just make sure you’re signed up for a restock notification on the product page. They sell out super fast. So this way you’ll be one of the first to know about the restock. </p>"
           }
         },
         "article_66yeHU": {
           "type": "article",
           "settings": {
             "title": "How do I know what helmet size I am?",
-            "text": "<p>Use these articles to answer questions that customers have about your products and services. You can use text, links and images and also group articles into categories.</p>"
+            "text": "<p>We find the super low profile 3/4 helmets fit pretty similar to Bell and Biltwell. Our creative director Jeff wears a medium Bell Moto 3, a medium Gringo and also a medium super low profile 3/4.</p><p>His medium 3/4 isn't a very snug fit though. It's more of a comfortable and a relaxed fit. But at highway speeds, he does feel a little pullback because it's not super snug.</p><p>So it kind of depends on what sort of fit you want. If people don't want a relaxed fit, and don't want one super snug either, they sometimes go with the size in the middle. </p><p>Below is a size guide for our super low profile 3/4 helmets depending on if you want a snug fit or a loose fit.</p><p></p>",
+            "image": "shopify://shop_images/Classic-Helmet-Motorcycle-Sizing-Chart-New_d68faa28-d9c8-422d-b9c5-36263099ffde.jpg"
           }
         },
         "article_86RKT7": {
@@ -82,7 +84,6 @@
         "article_PqwPp9",
         "article_PCA7AV"
       ],
-      "disabled": true,
       "name": "FAQs",
       "settings": {
         "enable_sidebar": false,
