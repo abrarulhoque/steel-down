@@ -26,7 +26,7 @@
         "category_9yTm7b": {
           "type": "category",
           "settings": {
-            "title": "Low Profile Helmets"
+            "title": "Helmet FAQ"
           }
         },
         "article_UFDn7x": {
@@ -68,7 +68,7 @@
         "category_VHxQFJ": {
           "type": "category",
           "settings": {
-            "title": "Your Steeltown Order"
+            "title": "Order FAQ"
           }
         },
         "article_PqwPp9": {
@@ -83,6 +83,13 @@
           "settings": {
             "title": "How do I track my order?",
             "text": "<p>We have an order tracking center where you can view in depth details about where your order is and when it will arrive.</p><p><a href=\"https://infoaftershipwl8u.aftership.com/\" target=\"_blank\" title=\"https://infoaftershipwl8u.aftership.com/\">Click here to Track Your Order </a></p>"
+          }
+        },
+        "article_MJWKxc": {
+          "type": "article",
+          "settings": {
+            "title": "When will my order ship?",
+            "text": "<p>We are usually in the warehouse on Tuesdays and Thursdays. So depending on when you placed your order, you can expect to receive a shipping notification on those days. </p>"
           }
         },
         "category_J3WqHn": {
@@ -110,6 +117,7 @@
         "category_VHxQFJ",
         "article_PqwPp9",
         "article_PCA7AV",
+        "article_MJWKxc",
         "category_J3WqHn",
         "article_LFRCj9"
       ],
