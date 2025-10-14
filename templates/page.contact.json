@@ -23,6 +23,12 @@
             "title": "Frequently Asked Questions"
           }
         },
+        "category_9yTm7b": {
+          "type": "category",
+          "settings": {
+            "title": "Low Profile Helmets"
+          }
+        },
         "article_UFDn7x": {
           "type": "article",
           "settings": {
@@ -49,40 +55,63 @@
           "type": "article",
           "settings": {
             "title": "Can I try on a helmet?",
-            "text": "<p>Use these articles to answer questions that customers have about your products and services. You can use text, links and images and also group articles into categories.</p>"
+            "text": "<p>Currently, no. Our super low profile helmets are online only. We don't have a physical store where you can try them on.</p>"
           }
         },
-        "article_LFRCj9": {
+        "article_HiYAUJ": {
           "type": "article",
           "settings": {
-            "title": "Is your Hamilton store still open?",
-            "text": "<p>Use these articles to answer questions that customers have about your products and services. You can use text, links and images and also group articles into categories.</p>"
+            "title": "Can I exchange or return a helmet I ordered?",
+            "text": "<p>For safety and compliance purposes our helmets are always final sale.</p><p>Once a helmet leaves our warehouse facility and arrives at the customer, we can no longer guarantee the helmet's safety and composition.</p><p>We're riders too. The last thing we want to do is have a customer receive a helmet, drop it by accident, return it to us and then we sell a now unsafe helmet to another customer.</p>"
+          }
+        },
+        "category_VHxQFJ": {
+          "type": "category",
+          "settings": {
+            "title": "Your Steeltown Order"
           }
         },
         "article_PqwPp9": {
           "type": "article",
           "settings": {
             "title": "How do I process a return or exchange?",
-            "text": "<p>Use these articles to answer questions that customers have about your products and services. You can use text, links and images and also group articles into categories.</p>"
+            "text": "<p>We have a return and exchange center where you can look up your order and request a return or exchange. </p><p><a href=\"https://infoaftershipwl8u.returnscenter.com/\" target=\"_blank\" title=\"https://infoaftershipwl8u.returnscenter.com/\">Click here for our return and exchange center.</a></p>"
           }
         },
         "article_PCA7AV": {
           "type": "article",
           "settings": {
             "title": "How do I track my order?",
-            "text": "<p>Use these articles to answer questions that customers have about your products and services. You can use text, links and images and also group articles into categories.</p>"
+            "text": "<p>We have an order tracking center where you can view in depth details about where your order is and when it will arrive.</p><p><a href=\"https://infoaftershipwl8u.aftership.com/\" target=\"_blank\" title=\"https://infoaftershipwl8u.aftership.com/\">Click here to Track Your Order </a></p>"
+          }
+        },
+        "category_J3WqHn": {
+          "type": "category",
+          "settings": {
+            "title": "Random"
+          }
+        },
+        "article_LFRCj9": {
+          "type": "article",
+          "settings": {
+            "title": "Is your Hamilton store still open?",
+            "text": "<p>We had to shut our Hamilton store down due to economic challenges and raising operating costs. It was a major bummer but we're still fighting the good fight trying to keep the brand alive and independent.</p>"
           }
         }
       },
       "block_order": [
         "category_9QLcDR",
+        "category_9yTm7b",
         "article_UFDn7x",
         "article_8t93h4",
         "article_66yeHU",
         "article_86RKT7",
-        "article_LFRCj9",
+        "article_HiYAUJ",
+        "category_VHxQFJ",
         "article_PqwPp9",
-        "article_PCA7AV"
+        "article_PCA7AV",
+        "category_J3WqHn",
+        "article_LFRCj9"
       ],
       "name": "FAQs",
       "settings": {
