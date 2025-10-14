@@ -92,14 +92,30 @@
             "text": "<p>We are usually in the warehouse on Tuesdays and Thursdays. So depending on when you placed your order, you can expect to receive a shipping notification on those days. </p>"
           }
         },
+        "article_R4aCX4": {
+          "type": "article",
+          "settings": {
+            "title": "How do I get Free Shipping?",
+            "text": "<p>For your order to qualify for Free Shipping you have to spend a minimum of $75 USD before tax.</p>"
+          }
+        },
+        "article_tC9aDC": {
+          "type": "article",
+          "settings": {
+            "title": "How do I get 10% off my first order?",
+            "text": "<p>If you sign up for our newsletter or SMS list, we'll send a coupon code your way that will knock 10% off your first order.</p><p><a href=\"https://steeltowngarage.com/pages/how-to-get-10-off-your-first-order\" title=\"https://steeltowngarage.com/pages/how-to-get-10-off-your-first-order\">Click here to sign up for our newsletter.</a></p>"
+          }
+        },
         "category_J3WqHn": {
           "type": "category",
+          "disabled": true,
           "settings": {
             "title": "Random"
           }
         },
         "article_LFRCj9": {
           "type": "article",
+          "disabled": true,
           "settings": {
             "title": "Is your Hamilton store still open?",
             "text": "<p>We had to shut our Hamilton store down due to economic challenges and raising operating costs. It was a major bummer but we're still fighting the good fight trying to keep the brand alive and independent.</p>"
@@ -118,6 +134,8 @@
         "article_PqwPp9",
         "article_PCA7AV",
         "article_MJWKxc",
+        "article_R4aCX4",
+        "article_tC9aDC",
         "category_J3WqHn",
         "article_LFRCj9"
       ],
