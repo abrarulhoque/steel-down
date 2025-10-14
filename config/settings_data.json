@@ -93,7 +93,7 @@
     "cart_recommendations_type": "complementary",
     "cart_announcement_text": "Announce discount codes, free shipping etc",
     "cart_announcement_icon": "icon-alarm-bell-1",
-    "free_shipping_value": 100,
+    "free_shipping_value": 75,
     "free_shipping_icon": "icon-award-trophy-star-1",
     "share_X": false,
     "share_pinterest": false,
