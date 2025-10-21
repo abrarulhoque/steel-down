@@ -20,33 +20,33 @@
           "type": "collection",
           "settings": {
             "collection": "",
-            "heading": "Tiger Crewneck",
-            "description": "",
+            "heading": "Fast As Fuck",
+            "description": "Hoodies Restocked",
             "button_label": "SHOP NOW",
-            "link": "shopify://products/retro-tigers-crewneck-sweater",
-            "image": "shopify://shop_images/Steeltown-Tigers-Crewneck-Retro-Spencer1.jpg"
+            "link": "shopify://products/fast-as-fuck-hoodie",
+            "image": "shopify://shop_images/Fast-As-Fuck-Pullover-Hoodie-Motorcycle.jpg"
           }
         },
         "collection_ELdXcL": {
           "type": "collection",
           "settings": {
             "collection": "",
-            "heading": "Built For The Road",
-            "description": "",
+            "heading": "20% OFF FAST AS FUCK",
+            "description": "Save 20% when you buy the bundle",
             "button_label": "Shop Now",
-            "link": "shopify://products/retro-tigers-crewneck-sweater",
-            "video": "shopify://files/videos/Tigercrew480-2.mov"
+            "link": "shopify://products/fast-as-fuck-bundle-1",
+            "image": "shopify://shop_images/Fast-As-Fuck-Hoodie-Motorcycle-Sweater-Steeltown-Triumph.jpg"
           }
         },
         "collection_JjaynA": {
           "type": "collection",
           "settings": {
             "collection": "",
-            "heading": "Unisex As Always",
-            "description": "",
+            "heading": "Retro Truckers",
+            "description": "Old school cool.",
             "button_label": "SHOP NOW",
-            "link": "shopify://products/retro-tigers-crewneck-sweater",
-            "image": "shopify://shop_images/Steeltown-Tigers-Crewneck-Retro-Karli1.jpg"
+            "link": "shopify://products/fast-as-fuck-trucker",
+            "image": "shopify://shop_images/Fast-As-Fuck-Hat-Trucker-Steeltown-Hotrod.jpg"
           }
         }
       },
@@ -55,7 +55,6 @@
         "collection_ELdXcL",
         "collection_JjaynA"
       ],
-      "disabled": true,
       "settings": {
         "title": "",
         "desc": "",
@@ -74,7 +73,7 @@
         "visibility_heading": true,
         "visibility_border": true,
         "visibility_count": false,
-        "visibility_description": false,
+        "visibility_description": true,
         "visibility_button": true,
         "hover_options": "hover-button",
         "color_text": "#ffffff",
@@ -129,6 +128,7 @@
         "video_CNzJ9n",
         "image_aKL9qY"
       ],
+      "disabled": true,
       "settings": {
         "style": "transparent",
         "title_size": 5,
