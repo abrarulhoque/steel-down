@@ -330,6 +330,131 @@
         "section-bottom-margin": false
       }
     },
+    "section_multi_column_images_GyjpPE": {
+      "type": "section-multi-column-images",
+      "blocks": {
+        "text_cVqzcN": {
+          "type": "text",
+          "settings": {
+            "image": "shopify://shop_images/Fast-As-Fuck-Pullover-Hoodie-Motorcycle.jpg",
+            "title": "Heavyweight Cotton",
+            "sub_title": "",
+            "desc": "<p>Our Fast As Fuck hoodies are a heavy cotton/poly blend perfect for layering and high speed hi jinx.</p>",
+            "link_title": "",
+            "link": ""
+          }
+        },
+        "text_68JFcV": {
+          "type": "text",
+          "settings": {
+            "image": "shopify://shop_images/Fast-As-Fuck-Hat-Trucker-Steeltown-Hotrod.jpg",
+            "title": "Old School Cool",
+            "sub_title": "",
+            "desc": "<p>There's just something about golden oak leaves and a matching rope on an old school foam trucker. </p>",
+            "link_title": "",
+            "link": ""
+          }
+        },
+        "text_3AWdDC": {
+          "type": "text",
+          "settings": {
+            "image": "shopify://shop_images/Fast-As-Fuck-Hoodie-Motorcycle-Sweater-Steeltown-Sleeve.jpg",
+            "title": "",
+            "sub_title": "",
+            "desc": "<ul><li>True to size</li><li>Unisex (XS - 3XL)</li><li>Cotton/Poly Blend</li><li>Wash Cold, Hang Dry</li></ul><p></p>",
+            "link_title": "",
+            "link": ""
+          }
+        },
+        "text_cbteRD": {
+          "type": "text",
+          "settings": {
+            "image": "shopify://shop_images/Fast-As-Fuck-Trucker-Karli-1_e611a54b-715c-4df4-921a-4f3cea850ed3.jpg",
+            "title": "",
+            "sub_title": "",
+            "desc": "<ul><li>5 Panel</li><li>Plastic Adjustable Snap</li><li>Size: OSFM - Adult (58cm/22.8\")</li><li>Pre-curved Visor</li></ul>",
+            "link_title": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_cVqzcN",
+        "text_68JFcV",
+        "text_3AWdDC",
+        "text_cbteRD"
+      ],
+      "name": "Multicolumn with images",
+      "settings": {
+        "title": "",
+        "container": "large",
+        "link_title": "",
+        "link": "",
+        "divider": false,
+        "grid": 2,
+        "spacing": 3,
+        "alignment": "left",
+        "link_style": "hollow",
+        "heading_size": 3,
+        "image_toggle": true,
+        "image_size": 100,
+        "image_padding": 0,
+        "image_ratio": "1:1",
+        "image_fit": false,
+        "bg_color": "rgba(0,0,0,0)",
+        "color_image": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "text_heading_color": false,
+        "text_border_color": true,
+        "grid_mobile": "1",
+        "mobile_layout": "carousel",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "section-bottom-margin": true
+      }
+    },
+    "section_image_text_banner_f68rDa": {
+      "type": "section-image-text-banner",
+      "blocks": {
+        "text_Lymcix": {
+          "type": "text",
+          "settings": {
+            "text": "<p>QUALITY GOODS FOR FREE SPIRITS</p>",
+            "text_size": 4,
+            "text_width": 45,
+            "text_size_mobile": 2,
+            "text_style": "heading"
+          }
+        },
+        "link_z7fJzG": {
+          "type": "link",
+          "disabled": true,
+          "settings": {
+            "link_title": "Shop all",
+            "link": "",
+            "link_style": "c-btn c-btn--hollow"
+          }
+        }
+      },
+      "block_order": [
+        "text_Lymcix",
+        "link_z7fJzG"
+      ],
+      "name": "Image and text banner",
+      "settings": {
+        "section_height": "medium",
+        "section_height_mobile": "medium",
+        "section_width": "contained",
+        "content_alignment": "center",
+        "content_color": "#ffffff",
+        "content_heading_color": false,
+        "bg_color": "rgba(0,0,0,0)",
+        "bg_image": "shopify://shop_images/Fast-As-Fuck-Hoodie-Motorcycle-Sweater-Steeltown-Triumph.jpg",
+        "overlay_color": "#000000",
+        "overlay_strength": 10,
+        "section-bottom-margin": false
+      }
+    },
     "9904a28f-6381-41fe-96eb-d4a73d60f0a0": {
       "type": "section-testimonials",
       "blocks": {
@@ -341,7 +466,7 @@
             "image_round": true,
             "text": "<p>Buying online was an awesome experience. Quick shipping and came with a hand written note which was nice.</p>",
             "name": "Tristan Adamson",
-            "source": "Google Review"
+            "source": "Verified Buyer"
           }
         },
         "template--16580692508926__9904a28f-6381-41fe-96eb-d4a73d60f0a0-1666784019a14d8867-1": {
@@ -352,7 +477,7 @@
             "image_round": true,
             "text": "<p>The quality and sheer coolness of their gear is unmatched. I bought way too much stuff. Will be back to buy more. Highly recommend.</p>",
             "name": "Ryan Hails",
-            "source": "Google Review"
+            "source": "Verified Buyer"
           }
         },
         "template--16580692508926__9904a28f-6381-41fe-96eb-d4a73d60f0a0-1666784019a14d8867-0": {
@@ -363,7 +488,7 @@
             "image_round": true,
             "text": "<p>Amazing and genuine customer service. You can tell the Steeltown team is super passionate about everything they do.</p>",
             "name": "Jess X",
-            "source": "Google Review"
+            "source": "Verified Buyer"
           }
         }
       },
@@ -380,6 +505,22 @@
         "link": "",
         "padding_top": 0,
         "padding_bottom": 0
+      }
+    },
+    "section_newsletter_8BGBaX": {
+      "type": "section-newsletter",
+      "settings": {
+        "divider": false,
+        "section_width": "contained",
+        "newsletter_bg": "#f2f2f2",
+        "newsletter_style": "dark",
+        "default_title_color": false,
+        "text_border_color": true,
+        "section_newsletter_title": "GET 10% OFF YOUR FIRST ORDER",
+        "section_newsletter_desc": "<p>Join our email family to receive exclusive offers and discounts - <strong>like 10% OFF your first order<br/></strong>(Discount code will be emailed to you. Check your junk mail.)</p>",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "section-bottom-margin": true
       }
     },
     "5a818a60-e694-4eac-a33f-5ce701e894b0": {
@@ -460,6 +601,8 @@
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
             "review_data": "sample_data",
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget",
             "max_width": 1200
           }
         }
@@ -470,32 +613,18 @@
       "settings": {
         "include_margins": true
       }
-    },
-    "section_newsletter_8BGBaX": {
-      "type": "section-newsletter",
-      "settings": {
-        "divider": false,
-        "section_width": "contained",
-        "newsletter_bg": "#f2f2f2",
-        "newsletter_style": "dark",
-        "default_title_color": false,
-        "text_border_color": true,
-        "section_newsletter_title": "GET 10% OFF YOUR FIRST ORDER",
-        "section_newsletter_desc": "<p>Join our email family to receive exclusive offers and discounts - <strong>like 10% OFF your first order<br/></strong>(Discount code will be emailed to you. Check your junk mail.)</p>",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "section-bottom-margin": true
-      }
     }
   },
   "order": [
     "main",
     "af1e6c23-5338-467c-bee9-b9d9b3d9c22a",
+    "section_multi_column_images_GyjpPE",
+    "section_image_text_banner_f68rDa",
     "9904a28f-6381-41fe-96eb-d4a73d60f0a0",
+    "section_newsletter_8BGBaX",
     "5a818a60-e694-4eac-a33f-5ce701e894b0",
     "product-recommendations",
     "1756439511148f4dec",
-    "17489570774e959c00",
-    "section_newsletter_8BGBaX"
+    "17489570774e959c00"
   ]
 }
