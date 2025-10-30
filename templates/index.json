@@ -136,7 +136,7 @@
         "autoplay_speed": 8,
         "nav_style": "solid-brand",
         "nav_arrows": false,
-        "slideshow_height": "medium",
+        "slideshow_height": "small",
         "slideshow_width": "full",
         "text_color": "#ffffff",
         "text_heading_color": false,
