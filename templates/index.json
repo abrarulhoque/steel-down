@@ -93,7 +93,6 @@
       "blocks": {
         "video_CNzJ9n": {
           "type": "video",
-          "disabled": true,
           "settings": {
             "video_link": "https://cdn.shopify.com/videos/c/o/v/fc1590c44f3e4f0a9a4caa80b5ef155d.mp4",
             "yt_link": "",
@@ -101,8 +100,8 @@
             "title": "BLACK FRIDAY IS LIVE",
             "text": "<p><strong>GET 25% OFF SITEWIDE</strong></p>",
             "link_style": "c-btn c-btn--mono",
-            "link_title": "SHOP NOW",
-            "link": "shopify://pages/about-steeltown-garage-co",
+            "link_title": "SIGN UP NOW",
+            "link": "shopify://pages/sms-sign-up",
             "link_style_2": "c-btn c-btn--primary",
             "link_title_2": "",
             "link_2": "shopify://collections/all"
@@ -129,7 +128,6 @@
         "video_CNzJ9n",
         "image_aKL9qY"
       ],
-      "disabled": true,
       "settings": {
         "style": "transparent",
         "title_size": 5,
@@ -196,6 +194,7 @@
         "template--16580692541694__ac7829e3-f3f8-4fbb-8aaf-dc6c93046065-1666783782ba78525d-1",
         "template--16580692541694__ac7829e3-f3f8-4fbb-8aaf-dc6c93046065-1666783782ba78525d-2"
       ],
+      "disabled": true,
       "settings": {
         "title": "",
         "container": "large",
