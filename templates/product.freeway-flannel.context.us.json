@@ -12,5 +12,64 @@
   "context": {
     "market": "us"
   },
-  "sections": {}
+  "sections": {
+    "section_announcement_bar_z9Fqt": {
+      "type": "section-announcement-bar",
+      "disabled": false,
+      "settings": {
+        "divider_top": false,
+        "divider_bottom": false,
+        "text_size_desktop": 8,
+        "text_size_mobile": 5,
+        "text_style": "heading",
+        "message_color_bg": "#f5f5f5",
+        "message_color_text": "#C00000",
+        "text_letter_spacing": 0,
+        "text_bold": true,
+        "text_capitalize": true,
+        "header-e9530d4f3e4963c03bab9013d77224c7": null,
+        "close_icon": false,
+        "header-af229a04d6cc69e026bb500e385a6415": null,
+        "carousel_desktop": false,
+        "auto_carousel": true,
+        "carousel_speed": 8,
+        "header-56b68eeafac7d1310d7948f3bc383d3a": null,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "section-bottom-margin": true
+      },
+      "blocks": {
+        "announcement_7PWpg": {
+          "type": "announcement",
+          "disabled": false,
+          "settings": {
+            "icon": "icon-pin",
+            "svg-code": "",
+            "text": "Ships from COLORADO. zero tariffs or import charges.",
+            "text_link": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement_7PWpg"
+      ],
+      "name": "Announcement bar"
+    }
+  },
+  "order": [
+    "main",
+    "section_announcement_bar_z9Fqt",
+    "section_announcement_bar_YcjdUU",
+    "9904a28f-6381-41fe-96eb-d4a73d60f0a0",
+    "section_multi_column_images_MEeL3w",
+    "section_multi_column_images_4JmaTQ",
+    "section_image_text_banner_7EB698",
+    "section_multi_column_images_mJJGiY",
+    "section_faq_KXUDp7",
+    "17489570774e959c00",
+    "section_newsletter_8BGBaX",
+    "product-recommendations",
+    "section_collection_tjkYBi"
+  ]
 }
