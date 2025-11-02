@@ -17,25 +17,24 @@
         "announcement_VAzQXd": {
           "type": "announcement",
           "settings": {
-            "icon": "icon-megaphone",
+            "icon": "icon-saving-piggy-bank",
             "svg-code": "",
-            "text": "BUY 2 GET 1 FREE SITEWIDE",
-            "text_link": "Shop Now",
-            "link": "https://steeltowngarage.com/collections/all"
+            "text": "SIGN UP FOR EARLY BLACK FRIDAY ACCESS",
+            "text_link": "Get 25% OFF Now",
+            "link": "shopify://pages/sms-sign-up"
           }
         }
       },
       "block_order": [
         "announcement_VAzQXd"
       ],
-      "disabled": true,
       "settings": {
         "divider_top": false,
         "divider_bottom": false,
         "text_size_desktop": 2,
         "text_size_mobile": 2,
-        "text_style": "body",
-        "message_color_bg": "#c00000",
+        "text_style": "heading",
+        "message_color_bg": "#212121",
         "message_color_text": "#ffffff",
         "text_letter_spacing": 0,
         "text_bold": false,
@@ -77,6 +76,7 @@
         "f752cf03-1fbc-4be1-a3cc-171a071687d2",
         "539fad8b-91eb-4f52-8e5a-4d3ec8358e38"
       ],
+      "disabled": true,
       "settings": {
         "divider_top": false,
         "divider_bottom": false,
