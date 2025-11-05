@@ -279,7 +279,7 @@
             "link": "shopify://products/freeway-heavy-flannel",
             "button_style": "c-btn c-btn--hollow",
             "image": "shopify://shop_images/Freeway-Flannel-Homepage-Ad-3.jpg",
-            "alignment": "bottom-left",
+            "alignment": "bottom-right",
             "text_alignment": "left",
             "color_text": "#ffffff",
             "color_overlay": "#000000",
@@ -330,8 +330,8 @@
         "media_DWmCYq": {
           "type": "media",
           "settings": {
-            "heading": "",
-            "text": "",
+            "heading": "True Heavyweight",
+            "text": "These aren't your boring shopping mall flannels....",
             "link_text": "",
             "link": "shopify://products/freeway-heavy-flannel",
             "button_style": "c-btn c-btn--hollow",
