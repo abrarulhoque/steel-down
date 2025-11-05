@@ -273,8 +273,8 @@
         "media_RARHeb": {
           "type": "media",
           "settings": {
-            "heading": "RESTOCKED: FREEWAY FLANNELS",
-            "text": "Our best-selling heavyweight flannels are back in stock and shipping FOR FREE IN NORTH AMERICA.",
+            "heading": "FREEWAY FLANNELS",
+            "text": "Our best-selling heavyweight flannels are back in stock!",
             "link_text": "",
             "link": "shopify://products/freeway-heavy-flannel",
             "button_style": "c-btn c-btn--hollow",
@@ -329,19 +329,18 @@
         },
         "media_DWmCYq": {
           "type": "media",
-          "disabled": true,
           "settings": {
-            "heading": "Shop Riding Gear",
-            "text": "Premium gear with a classic style. Shop helmets, gloves and riding glasses.",
+            "heading": "",
+            "text": "",
             "link_text": "",
-            "link": "shopify://collections/riding",
+            "link": "shopify://products/freeway-heavy-flannel",
             "button_style": "c-btn c-btn--hollow",
-            "image": "shopify://shop_images/Hoodie-Steeltown-Garage-Cycles-Product-1_30daae4d-5de4-4447-b389-d54cfe66d1c9.jpg",
+            "video": "shopify://files/videos/flannel video web header 3.mp4",
             "alignment": "bottom-left",
             "text_alignment": "left",
             "color_text": "#ffffff",
             "color_overlay": "#000000",
-            "color_overlay_strength": 20,
+            "color_overlay_strength": 0,
             "color_default_heading": false,
             "color_default_border": false
           }
@@ -359,7 +358,7 @@
         "divider": false,
         "heading_alignment": "center",
         "section_width": "wide",
-        "grid": 2,
+        "grid": 3,
         "spacing": 2,
         "enable_carousel_desktop": true,
         "enable_carousel_mobile": true,
