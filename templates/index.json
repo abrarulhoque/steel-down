@@ -279,7 +279,7 @@
             "link": "shopify://products/freeway-heavy-flannel",
             "button_style": "c-btn c-btn--hollow",
             "image": "shopify://shop_images/Freeway-Flannel-Homepage-Ad-3.jpg",
-            "alignment": "bottom-right",
+            "alignment": "bottom-left",
             "text_alignment": "left",
             "color_text": "#ffffff",
             "color_overlay": "#000000",
