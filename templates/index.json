@@ -273,17 +273,17 @@
         "media_RARHeb": {
           "type": "media",
           "settings": {
-            "heading": "Working Class Stiff",
-            "text": "A collection with a bit of dirt under it's fingernails.",
+            "heading": "RESTOCKED: FREEWAY FLANNELS",
+            "text": "Our best-selling heavyweight flannels are back in stock and shipping FOR FREE IN NORTH AMERICA.",
             "link_text": "",
-            "link": "shopify://collections/working-class-stiff-collection",
+            "link": "shopify://products/freeway-heavy-flannel",
             "button_style": "c-btn c-btn--hollow",
-            "video": "shopify://files/videos/Working-Class-Stiff-Story-Ad-Plain.mov",
+            "image": "shopify://shop_images/Freeway-Flannel-Homepage-Ad-3.jpg",
             "alignment": "bottom-left",
             "text_alignment": "left",
             "color_text": "#ffffff",
             "color_overlay": "#000000",
-            "color_overlay_strength": 20,
+            "color_overlay_strength": 10,
             "color_default_heading": false,
             "color_default_border": false
           }
@@ -329,6 +329,7 @@
         },
         "media_DWmCYq": {
           "type": "media",
+          "disabled": true,
           "settings": {
             "heading": "Shop Riding Gear",
             "text": "Premium gear with a classic style. Shop helmets, gloves and riding glasses.",
@@ -358,7 +359,7 @@
         "divider": false,
         "heading_alignment": "center",
         "section_width": "wide",
-        "grid": 3,
+        "grid": 2,
         "spacing": 2,
         "enable_carousel_desktop": true,
         "enable_carousel_mobile": true,
