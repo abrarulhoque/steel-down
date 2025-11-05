@@ -362,7 +362,7 @@
         "spacing": 2,
         "enable_carousel_desktop": true,
         "enable_carousel_mobile": true,
-        "title_size": 2,
+        "title_size": 3,
         "image_ratio": "3:4",
         "button_style": "c-btn c-btn--mono",
         "alignment": "middle-center",
