@@ -381,9 +381,64 @@
         "text_border_color": false,
         "grid_mobile": "1",
         "mobile_layout": "carousel",
-        "padding_top": 0,
+        "padding_top": 24,
         "padding_bottom": 0,
         "section-bottom-margin": true
+      }
+    },
+    "section_image_with_text_LwCE3G": {
+      "type": "section-image-with-text",
+      "blocks": {
+        "image_VnKNGk": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Light-Henley-Far-Steeltown-Ad.jpg",
+            "title": "A CLASSIC COMEBACK STORY",
+            "desc": "<p>When we first launched our Heavyweight Henleys back in 2020, they were an instant hit. But we only made a small batch of them. It was our first foray into design and manufacturing, so we were being cautious.<br/><br/>After they sold out, we immediately reached out to our small batch facility to green light another run. But there was one big problem. COVID-19. And our small-batch facility had shut down.<br/><br/><em>Weeks turned into months. Months turned into years. </em>When it was clear that our small batch facility wasn't actually going to re-open at all, we set about finding a new manufacturing partner. We were determined to get these Henleys back on the shelf.</p>",
+            "horizontal_align": "left",
+            "link_title": "",
+            "link": "",
+            "bg_color_block": "rgba(0,0,0,0)",
+            "bg_color_content": "#ffffff",
+            "color_text": "#212121",
+            "text_heading_color": false,
+            "text_border_color": true
+          }
+        },
+        "image_gnJq4A": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Heavyweight-Henley-Black-Steeltown-Details-3.jpg",
+            "title": "CRAFTED FOR DURABILITY",
+            "desc": "<p>We spent a lot of time getting the reproduction of our Heavyweight Henley just right. First, we started with the fabric. Once, again, we had the 13oz heavyweight cotton knit just for us.Only this time, we skipped the enzyme washing stage. We just loved the ruggedness of the unwashed heavyweight cotton. It's a perfect layering piece. And it's still 100% cotton. It's thick enough to keep you warm in cooler temps, but it breathes amazingly when the temps start to rise.</p>",
+            "horizontal_align": "left",
+            "link_title": "",
+            "link": "",
+            "bg_color_block": "rgba(0,0,0,0)",
+            "bg_color_content": "#ffffff",
+            "color_text": "#212121",
+            "text_heading_color": false,
+            "text_border_color": true
+          }
+        }
+      },
+      "block_order": [
+        "image_VnKNGk",
+        "image_gnJq4A"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "container": "large",
+        "block_spacing": 2,
+        "image_ratio": "1:1",
+        "block_layout": "2/3",
+        "block_align": "left",
+        "vertical_align": "top",
+        "heading_size": 3,
+        "link_style": "hollow",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "section-bottom-margin": false
       }
     },
     "section_multi_column_images_4JmaTQ": {
@@ -395,7 +450,7 @@
             "image": "shopify://shop_images/Steeltown-Garage-Henley-Black-Hobbs-2.jpg",
             "title": "",
             "sub_title": "",
-            "desc": "<ul><li>100% Heavyweight 300gsm/9oz brushed cotton</li><li>Two button-down flap chest pockets</li><li>Rounded bottom hem for extra coverage while riding</li><li>Split side-seams for better range of motion</li></ul>",
+            "desc": "<ul><li>Unisex and true to size</li><li>100% heavyweight 13oz cotton</li><li>Unwashed for maximum ruggedness</li><li>Raw, rounded collar</li></ul>",
             "link_title": "",
             "link": ""
           }
@@ -406,13 +461,14 @@
             "image": "shopify://shop_images/Steeltown-Garage-Henley-Black-Hobbs-1.jpg",
             "title": "",
             "sub_title": "",
-            "desc": "<ul><li>True to size</li><li>Size guide in product shots (above)</li><li>Western yolk detail on the back for the helluva it</li></ul>",
+            "desc": "<ul><li>Three-button placket</li><li>Front chest embroidery </li><li>STLTWN tag on bottom hem</li><li>WASH COLD & HANG DRY</li></ul>",
             "link_title": "",
             "link": ""
           }
         },
         "text_pC6aUF": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Steeltown-Garage-Henley-White-Margo-1.jpg",
             "title": "",
@@ -448,6 +504,7 @@
         },
         "text_gVpnAY": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Heavyweight-Henley-Black-Steeltown-Paige-3.jpg",
             "title": "",
@@ -551,9 +608,9 @@
         "content_color": "#ffffff",
         "content_heading_color": false,
         "bg_color": "rgba(0,0,0,0)",
-        "bg_image": "shopify://shop_images/Steeltown-Black-Henley-Chevelle.jpg",
+        "bg_image": "shopify://shop_images/heavy-henley-shirt-steeltown-garage-white-history.jpg",
         "overlay_color": "#000000",
-        "overlay_strength": 50,
+        "overlay_strength": 60,
         "section-bottom-margin": false
       }
     },
@@ -764,61 +821,6 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
-    },
-    "section_image_with_text_LwCE3G": {
-      "type": "section-image-with-text",
-      "blocks": {
-        "image_VnKNGk": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/heavy-henley-shirt-steeltown-garage-dirt-bike-1_0ff2ad80-51b5-4451-92f7-82ca6f923b91.jpg",
-            "title": "A CLASSIC COMEBACK STORY",
-            "desc": "<p>When we first launched our Heavyweight Henleys back in 2020, they were an instant hit. But we only made a small batch of them. It was our first foray into design and manufacturing, so we were being cautious.<br/><br/>After they sold out, we immediately reached out to our small batch facility to green light another run. But there was one big problem. COVID-19. And our small-batch facility had shut down.<br/><br/><em>Weeks turned into months. Months turned into years. </em>When it was clear that our small batch facility wasn't actually going to re-open at all, we set about finding a new manufacturing partner. We were determined to get these Henleys back on the shelf.</p>",
-            "horizontal_align": "left",
-            "link_title": "",
-            "link": "",
-            "bg_color_block": "rgba(0,0,0,0)",
-            "bg_color_content": "#ffffff",
-            "color_text": "#212121",
-            "text_heading_color": false,
-            "text_border_color": true
-          }
-        },
-        "image_gnJq4A": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Heavyweight-Henley-Black-Steeltown-Details-2.jpg",
-            "title": "CRAFTED FOR DURABILITY",
-            "desc": "<p>We spent a lot of time getting the reproduction of our Heavyweight Henley just right. First, we started with the fabric. Once, again, we had the 13oz heavyweight cotton knit just for us.Only this time, we skipped the enzyme washing stage. We just loved the ruggedness of the unwashed heavyweight cotton. It's a perfect layering piece. And it's still 100% cotton. It's thick enough to keep you warm in cooler temps, but it breathes amazingly when the temps start to rise.</p>",
-            "horizontal_align": "left",
-            "link_title": "",
-            "link": "",
-            "bg_color_block": "rgba(0,0,0,0)",
-            "bg_color_content": "#ffffff",
-            "color_text": "#212121",
-            "text_heading_color": false,
-            "text_border_color": true
-          }
-        }
-      },
-      "block_order": [
-        "image_VnKNGk",
-        "image_gnJq4A"
-      ],
-      "name": "Image with text",
-      "settings": {
-        "container": "large",
-        "block_spacing": 2,
-        "image_ratio": "1:1",
-        "block_layout": "2/3",
-        "block_align": "left",
-        "vertical_align": "top",
-        "heading_size": 3,
-        "link_style": "hollow",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "section-bottom-margin": false
-      }
     }
   },
   "order": [
@@ -826,8 +828,8 @@
     "section_announcement_bar_YcjdUU",
     "9904a28f-6381-41fe-96eb-d4a73d60f0a0",
     "section_multi_column_images_MEeL3w",
-    "section_multi_column_images_4JmaTQ",
     "section_image_with_text_LwCE3G",
+    "section_multi_column_images_4JmaTQ",
     "section_image_text_banner_7EB698",
     "section_multi_column_images_mJJGiY",
     "section_faq_KXUDp7",
