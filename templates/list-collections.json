@@ -213,12 +213,30 @@
         "link": "",
         "section_link_style": "link link--arrow",
         "padding_top": 0,
-        "padding_bottom": 60
+        "padding_bottom": 36
+      }
+    },
+    "section_newsletter_zgnHKK": {
+      "type": "section-newsletter",
+      "name": "Newsletter",
+      "settings": {
+        "divider": false,
+        "section_width": "contained",
+        "newsletter_bg": "#F2F2F2",
+        "newsletter_style": "dark",
+        "default_title_color": false,
+        "text_border_color": true,
+        "section_newsletter_title": "10% OFF YOUR FIRST ORDER",
+        "section_newsletter_desc": "<p>Join our email family to receive exclusive offers and discounts -<strong>like 10% OFF your first order</strong>(Discount code will be emailed to you. Check your junk mail.)</p>",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "section-bottom-margin": true
       }
     }
   },
   "order": [
     "main",
-    "section_collection_list_8tPbaM"
+    "section_collection_list_8tPbaM",
+    "section_newsletter_zgnHKK"
   ]
 }
