@@ -1,1 +1,224 @@
-{"sections":{"main":{"type":"main-list-collections","settings":{}}},"order":["main"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-list-collections",
+      "disabled": true,
+      "settings": {
+        "display_type": "all",
+        "sort": "alphabetical",
+        "grid": 3,
+        "title_size": 3,
+        "image_ratio": "3:4",
+        "button_style": "c-btn c-btn--hollow",
+        "alignment": "middle-center",
+        "text_alignment": "center",
+        "visibility_heading": true,
+        "visibility_border": true,
+        "visibility_count": false,
+        "visibility_description": false,
+        "visibility_button": true,
+        "hover_options": "hover-button",
+        "color_text": "#ffffff",
+        "color_overlay": "#000000",
+        "color_overlay_strength": 20,
+        "color_default_heading": false,
+        "color_default_border": true
+      }
+    },
+    "section_collection_list_8tPbaM": {
+      "type": "section-collection-list",
+      "blocks": {
+        "collection_7GfedM": {
+          "type": "collection",
+          "settings": {
+            "collection": "fast-as-fuck",
+            "heading": "",
+            "description": "",
+            "button_label": "SHOP",
+            "link": "shopify://collections/fast-as-fuck"
+          }
+        },
+        "collection_8JUHRG": {
+          "type": "collection",
+          "settings": {
+            "collection": "riding",
+            "heading": "Riding Gear",
+            "description": "",
+            "button_label": "SHOP",
+            "link": "shopify://collections/riding",
+            "video": "shopify://files/videos/flannel video web header 3.mp4"
+          }
+        },
+        "collection_WaCzM8": {
+          "type": "collection",
+          "settings": {
+            "collection": "t-shirts-tops",
+            "heading": "T-SHIRTS",
+            "description": "",
+            "button_label": "SHOP",
+            "link": "shopify://collections/t-shirts-tops",
+            "image": "shopify://shop_images/Steeltown-Address-Tee-Black-Liam-Plane.jpg"
+          }
+        },
+        "collection_g8UPWK": {
+          "type": "collection",
+          "settings": {
+            "collection": "hats-beanies-1",
+            "heading": "Hats",
+            "description": "",
+            "button_label": "SHOP",
+            "link": "shopify://collections/hats-beanies-1"
+          }
+        },
+        "collection_Bx3NCL": {
+          "type": "collection",
+          "settings": {
+            "collection": "working-class-stiff-collection",
+            "heading": "Working Class",
+            "description": "",
+            "button_label": "SHOP",
+            "link": "shopify://collections/working-class-stiff-collection",
+            "image": "shopify://shop_images/Working-Class-Stiff-Motorcycle-T-Shirt-Steeltown-2.jpg"
+          }
+        },
+        "collection_iDRt6H": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "heading": "JACKETS",
+            "description": "",
+            "button_label": "SHOP",
+            "link": "shopify://products/steeltown-shop-coat",
+            "image": "shopify://shop_images/Steeltown-Garage-shop-coat-Hamilton-2.jpg"
+          }
+        },
+        "collection_QH9xxw": {
+          "type": "collection",
+          "settings": {
+            "collection": "t-shirts-tops",
+            "heading": "Sweaters",
+            "description": "",
+            "button_label": "SHOP",
+            "link": "shopify://collections/t-shirts-tops",
+            "video": "shopify://files/videos/Tigercrew480-2.mov"
+          }
+        },
+        "collection_3BqM9X": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "heading": "Flannels",
+            "description": "",
+            "button_label": "SHOP",
+            "link": "shopify://products/freeway-heavy-flannel",
+            "image": "shopify://shop_images/Freeway-Flannel-Homepage-Ad-3.jpg"
+          }
+        },
+        "collection_meRUgX": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "heading": "Long Sleeves",
+            "description": "",
+            "button_label": "SHOP",
+            "link": "shopify://collections/long-sleeves",
+            "image": "shopify://shop_images/Racer-Steeltown-Black-Long-Sleeve-Dirtbike.jpg"
+          }
+        },
+        "collection_LrwUBY": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "heading": "MX Jerseys",
+            "description": "",
+            "button_label": "SHOP",
+            "link": "shopify://products/tokyo-stgc-moto-mx-jersey",
+            "image": "shopify://shop_images/Tokyo-Motocross-Dirtbike-Jersey-Steeltown-Rob-1.jpg"
+          }
+        },
+        "collection_8Fdzqp": {
+          "type": "collection",
+          "settings": {
+            "collection": "stickers-pins-patches",
+            "heading": "Patches",
+            "description": "",
+            "button_label": "SHOP",
+            "link": "",
+            "image": "shopify://shop_images/Fast-As-Fuck-Motorcycle-Steeltown-Patch-Garage.jpg"
+          }
+        },
+        "collection_XiRpmT": {
+          "type": "collection",
+          "settings": {
+            "collection": "socks",
+            "heading": "Socks",
+            "description": "",
+            "button_label": "SHOP",
+            "link": "shopify://collections/boots-footwear",
+            "image": "shopify://shop_images/Steeltown-Socks-Steeltown-Basketball-3.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "collection_7GfedM",
+        "collection_8JUHRG",
+        "collection_WaCzM8",
+        "collection_g8UPWK",
+        "collection_Bx3NCL",
+        "collection_iDRt6H",
+        "collection_QH9xxw",
+        "collection_3BqM9X",
+        "collection_meRUgX",
+        "collection_LrwUBY",
+        "collection_8Fdzqp",
+        "collection_XiRpmT"
+      ],
+      "name": "Collection list",
+      "settings": {
+        "title": "",
+        "desc": "",
+        "divider": false,
+        "heading_alignment": "center",
+        "section_width": "large",
+        "grid": 4,
+        "spacing": 2,
+        "enable_carousel_desktop": false,
+        "enable_carousel_mobile": true,
+        "title_size": 1,
+        "image_ratio": "3:4",
+        "button_style": "c-btn c-btn--hollow",
+        "alignment": "bottom-left",
+        "text_alignment": "left",
+        "visibility_heading": true,
+        "visibility_border": false,
+        "visibility_count": false,
+        "visibility_description": false,
+        "visibility_button": true,
+        "hover_options": "hover-button",
+        "color_text": "#ffffff",
+        "color_overlay": "#000000",
+        "color_overlay_strength": 10,
+        "color_default_heading": false,
+        "color_default_border": true,
+        "link_title": "View all",
+        "link": "",
+        "section_link_style": "link link--arrow",
+        "padding_top": 0,
+        "padding_bottom": 60
+      }
+    }
+  },
+  "order": [
+    "main",
+    "section_collection_list_8tPbaM"
+  ]
+}
