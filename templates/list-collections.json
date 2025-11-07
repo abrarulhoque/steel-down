@@ -61,11 +61,11 @@
         "collection_WaCzM8": {
           "type": "collection",
           "settings": {
-            "collection": "t-shirts-tops",
+            "collection": "graphic-t-shirts",
             "heading": "T-SHIRTS",
             "description": "",
             "button_label": "SHOP",
-            "link": "shopify://collections/t-shirts-tops",
+            "link": "shopify://collections/graphic-t-shirts",
             "image": "shopify://shop_images/Steeltown-Address-Tee-Black-Liam-Plane.jpg"
           }
         },
