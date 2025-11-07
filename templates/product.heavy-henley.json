@@ -317,6 +317,7 @@
         "text_j4TTUr",
         "text_fGgPRG"
       ],
+      "disabled": true,
       "settings": {
         "title": "",
         "style_desktop": "featured-grid",
@@ -333,7 +334,7 @@
         "text_xefrpb": {
           "type": "text",
           "settings": {
-            "image": "shopify://shop_images/Freeway-Heavy-Flannel-Steeltown-Garage-Buffalo-Jeff-2.jpg",
+            "image": "shopify://shop_images/heavy-henley-shirt-steeltown-garage-jeff-volvo-1_cd19be8a-bdb7-4994-be3a-cdc5d212c7e1.jpg",
             "title": "",
             "sub_title": "",
             "desc": "",
@@ -344,7 +345,7 @@
         "text_mF7YPF": {
           "type": "text",
           "settings": {
-            "image": "shopify://shop_images/Email-Freeway-Heavy-Flannel-Steeltown-Garage-Ship.jpg",
+            "image": "shopify://shop_images/heavy-henley-shirt-steeltown-garage-dirt-bike-1_0ff2ad80-51b5-4451-92f7-82ca6f923b91.jpg",
             "title": "",
             "sub_title": "",
             "desc": "",
@@ -391,7 +392,7 @@
         "text_yX9zY9": {
           "type": "text",
           "settings": {
-            "image": "shopify://shop_images/Email-Freeway-Heavy-Flannel-Steeltown-Garage-Landing-1.jpg",
+            "image": "shopify://shop_images/Steeltown-Garage-Henley-Black-Hobbs-2.jpg",
             "title": "",
             "sub_title": "",
             "desc": "<ul><li>100% Heavyweight 300gsm/9oz brushed cotton</li><li>Two button-down flap chest pockets</li><li>Rounded bottom hem for extra coverage while riding</li><li>Split side-seams for better range of motion</li></ul>",
@@ -402,7 +403,7 @@
         "text_6tn3HA": {
           "type": "text",
           "settings": {
-            "image": "shopify://shop_images/Email-Freeway-Heavy-Flannel-Steeltown-Garage-Landing-4.jpg",
+            "image": "shopify://shop_images/Steeltown-Garage-Henley-Black-Hobbs-1.jpg",
             "title": "",
             "sub_title": "",
             "desc": "<ul><li>True to size</li><li>Size guide in product shots (above)</li><li>Western yolk detail on the back for the helluva it</li></ul>",
@@ -413,7 +414,7 @@
         "text_pC6aUF": {
           "type": "text",
           "settings": {
-            "image": "shopify://shop_images/Email-Freeway-Heavy-Flannel-Steeltown-Garage-Landing-2.jpg",
+            "image": "shopify://shop_images/Steeltown-Garage-Henley-White-Margo-1.jpg",
             "title": "",
             "sub_title": "",
             "desc": "",
@@ -423,6 +424,7 @@
         },
         "text_7NV9Nb": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Email-Freeway-Heavy-Flannel-Steeltown-Garage-Landing-3.jpg",
             "title": "",
@@ -434,6 +436,7 @@
         },
         "text_JPrVdy": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Freeway-Heavy-Flannel-Steeltown-Garage-Black-Mike-2.jpg",
             "title": "",
@@ -446,7 +449,7 @@
         "text_gVpnAY": {
           "type": "text",
           "settings": {
-            "image": "shopify://shop_images/Freeway-Heavy-Flannel-Steeltown-Garage-Black-Mike-1.jpg",
+            "image": "shopify://shop_images/Heavyweight-Henley-Black-Steeltown-Paige-3.jpg",
             "title": "",
             "sub_title": "",
             "desc": "",
@@ -507,8 +510,8 @@
         "text_6eRCiC": {
           "type": "text",
           "settings": {
-            "text": "<p>We got tired of cheap shopping mall flannels that felt like tissue paper. And high-priced big brand flannels that cost as much as a new exhaust. So we wanted to make a premium quality, feature-rich heavyweight flannel that was also easy on the bank account.</p>",
-            "text_size": 4,
+            "text": "<p>Henley's have been a well-loved staple of menswear and sportswear for over a hundred years. And we didn't change much when it came to our Steeltown Henleys. A raw banded collar, a three-button placket and a classic rugged cotton make this hard-wearing henley true to its heritage and ready for whatever you're going to throw at it.</p>",
+            "text_size": 3,
             "text_width": 55,
             "text_size_mobile": 3,
             "text_style": "body"
@@ -548,7 +551,7 @@
         "content_color": "#ffffff",
         "content_heading_color": false,
         "bg_color": "rgba(0,0,0,0)",
-        "bg_image": "shopify://shop_images/freeway-flannel-steeltown-garage-home.jpg",
+        "bg_image": "shopify://shop_images/Steeltown-Black-Henley-Chevelle.jpg",
         "overlay_color": "#000000",
         "overlay_strength": 50,
         "section-bottom-margin": false
@@ -670,6 +673,7 @@
         "article_xUQNLj",
         "article_iiKCm6"
       ],
+      "disabled": true,
       "settings": {
         "enable_sidebar": false,
         "cta_link_title": "Contact us",
@@ -708,7 +712,7 @@
         "newsletter_style": "dark",
         "default_title_color": false,
         "text_border_color": true,
-        "section_newsletter_title": "GET 10% OFF YOUR FREEWAY FLANNEL",
+        "section_newsletter_title": "GET 10% OFF YOUR HENLEY",
         "section_newsletter_desc": "<p>Join our email family to receive exclusive offers - <strong>like 10% OFF your first order<br/></strong>(Discount code will be emailed to you. Check your junk mail.)</p>",
         "padding_top": 0,
         "padding_bottom": 0,
