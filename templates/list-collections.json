@@ -104,11 +104,11 @@
         "collection_QH9xxw": {
           "type": "collection",
           "settings": {
-            "collection": "t-shirts-tops",
+            "collection": "sweaters",
             "heading": "Sweaters",
             "description": "",
             "button_label": "SHOP",
-            "link": "shopify://collections/t-shirts-tops",
+            "link": "shopify://collections/sweaters",
             "video": "shopify://files/videos/Tigercrew480-2.mov"
           }
         },
