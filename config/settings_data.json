@@ -477,7 +477,8 @@
   "platform_customizations": {
     "custom_css": [
       ".multi-column__title {color: #dcb244 !important;}",
-      ".price__note:last-child {margin-left: 0; display: none;}"
+      ".price__note:last-child {margin-left: 0; display: none;}",
+      ".product-card__swatch__item:only-of-type {display: none;}"
     ]
   }
 }
