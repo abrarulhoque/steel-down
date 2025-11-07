@@ -756,6 +756,7 @@
       "block_order": [
         "judge_me_reviews_review_widget_Y49xmB"
       ],
+      "disabled": true,
       "settings": {
         "include_margins": true
       }
