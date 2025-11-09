@@ -40,6 +40,22 @@
             "price_label_discount_color": "#c00000"
           }
         },
+        "kite_discount_free_gift_app_block_strikethrough_price_PKtjda": {
+          "type": "shopify://apps/kite-discount-free-gift/blocks/app-block-strikethrough-price/2c7302c4-455d-4078-a829-48563ba26089",
+          "settings": {
+            "blockId": "kite-strikethrough-pricing",
+            "showSavings": false,
+            "showOriginalPrice": true,
+            "hideIfNoDiscount": false,
+            "discountColor": "#C00000",
+            "savingsColor": "#28a745",
+            "strikethroughColor": "#212121",
+            "primaryFontSize": 17,
+            "primaryFontWeight": "600",
+            "secondaryFontSize": 14,
+            "secondaryFontWeight": "400"
+          }
+        },
         "db48bf56-e904-4604-9f21-89d04e9bf249": {
           "type": "spacer",
           "settings": {
@@ -190,6 +206,7 @@
         "title",
         "judge_me_reviews_preview_badge_mFErDk",
         "price",
+        "kite_discount_free_gift_app_block_strikethrough_price_PKtjda",
         "db48bf56-e904-4604-9f21-89d04e9bf249",
         "variant_picker",
         "quantity_selector",
@@ -425,7 +442,9 @@
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
             "review_data": "sample_data",
-            "max_width": 1200
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
           }
         }
       },
