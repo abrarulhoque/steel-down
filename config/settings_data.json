@@ -141,6 +141,11 @@
         "type": "shopify://apps/b4b-variants-products/blocks/variable_init/4b5ec290-6de8-4c3d-b99f-b8721f30ea87",
         "disabled": true,
         "settings": {}
+      },
+      "8218531531362863771": {
+        "type": "shopify://apps/kite-discount-free-gift/blocks/app-embed/2c7302c4-455d-4078-a829-48563ba26089",
+        "disabled": false,
+        "settings": {}
       }
     }
   },
