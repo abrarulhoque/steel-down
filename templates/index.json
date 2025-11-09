@@ -101,8 +101,8 @@
             "title": "BLACK FRIDAY DEALS ARE LIVE",
             "text": "<p><strong>GET 25% OFF SITEWIDE NOW</strong></p>",
             "link_style": "c-btn c-btn--mono",
-            "link_title": "SHOP NOW",
-            "link": "shopify://collections/best-sellers",
+            "link_title": "SIGN UP FOR ACCESS",
+            "link": "shopify://pages/sms-sign-up",
             "link_style_2": "c-btn c-btn--primary",
             "link_title_2": "",
             "link_2": "shopify://collections/all"
