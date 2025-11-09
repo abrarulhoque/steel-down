@@ -42,6 +42,7 @@
         },
         "kite_discount_free_gift_app_block_strikethrough_price_PKtjda": {
           "type": "shopify://apps/kite-discount-free-gift/blocks/app-block-strikethrough-price/2c7302c4-455d-4078-a829-48563ba26089",
+          "disabled": true,
           "settings": {
             "blockId": "kite-strikethrough-pricing",
             "showSavings": false,

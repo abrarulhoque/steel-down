@@ -16,11 +16,12 @@
       "blocks": {
         "announcement_VAzQXd": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "icon": "icon-flash",
             "svg-code": "",
-            "text": "SIGN UP FOR EARLY BLACK FRIDAY ACCESS",
-            "text_link": "Get 25% OFF Now",
+            "text": "BLACK FRIDAY DEALS ARE LIVE",
+            "text_link": "",
             "link": "shopify://pages/sms-sign-up"
           }
         }
