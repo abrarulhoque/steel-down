@@ -16,7 +16,6 @@
       "blocks": {
         "announcement_VAzQXd": {
           "type": "announcement",
-          "disabled": true,
           "settings": {
             "icon": "icon-flash",
             "svg-code": "",
@@ -24,10 +23,21 @@
             "text_link": "",
             "link": "shopify://pages/sms-sign-up"
           }
+        },
+        "announcement_MnVnUR": {
+          "type": "announcement",
+          "settings": {
+            "icon": "none",
+            "svg-code": "",
+            "text": "Get 25% OFF FOR A LIMITED TIME",
+            "text_link": "",
+            "link": ""
+          }
         }
       },
       "block_order": [
-        "announcement_VAzQXd"
+        "announcement_VAzQXd",
+        "announcement_MnVnUR"
       ],
       "settings": {
         "divider_top": false,
@@ -78,6 +88,7 @@
         "f752cf03-1fbc-4be1-a3cc-171a071687d2",
         "539fad8b-91eb-4f52-8e5a-4d3ec8358e38"
       ],
+      "disabled": true,
       "settings": {
         "divider_top": false,
         "divider_bottom": false,
