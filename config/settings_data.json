@@ -71,7 +71,7 @@
     "product_grid_label_opacity": 100,
     "product_grid_label_hide_all": true,
     "color_label_sold_out": "#f2f2f2",
-    "product_grid_label_discount_type": "text",
+    "product_grid_label_discount_type": "currency",
     "color_label_discount": "#c00000",
     "product_grid_label_new_days": 60,
     "product_grid_label_collection_1": "best-sellers",
@@ -140,11 +140,6 @@
       "18356332299842544250": {
         "type": "shopify://apps/b4b-variants-products/blocks/variable_init/4b5ec290-6de8-4c3d-b99f-b8721f30ea87",
         "disabled": true,
-        "settings": {}
-      },
-      "8218531531362863771": {
-        "type": "shopify://apps/kite-discount-free-gift/blocks/app-embed/2c7302c4-455d-4078-a829-48563ba26089",
-        "disabled": false,
         "settings": {}
       }
     }
