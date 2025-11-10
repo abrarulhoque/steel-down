@@ -62,7 +62,7 @@
     "product_grid_vendor": false,
     "product_grid_price": true,
     "product_grid_reviews": false,
-    "product_grid_swatch_size": 2,
+    "product_grid_swatch_size": 3,
     "product_grid_image_size": "1:1",
     "product_grid_image_fit": false,
     "product_grid_hover": "image",
