@@ -99,10 +99,10 @@
             "yt_link": "",
             "alignment": "center",
             "title": "BLACK FRIDAY IS LIVE",
-            "text": "<p>GET 25% OFF FOR A LIMITED TIME</p>",
+            "text": "<p>GET 25% OFF SITE WIDE FOR A LIMITED TIME</p>",
             "link_style": "c-btn c-btn--mono",
-            "link_title": "SHOP NOW",
-            "link": "shopify://collections",
+            "link_title": "SHOP THE BEST DEALS",
+            "link": "shopify://collections/best-deals",
             "link_style_2": "c-btn c-btn--primary",
             "link_title_2": "",
             "link_2": "shopify://collections/all"
