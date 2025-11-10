@@ -20,24 +20,13 @@
             "icon": "icon-flash",
             "svg-code": "",
             "text": "BLACK FRIDAY DEALS ARE LIVE",
-            "text_link": "",
-            "link": "shopify://pages/sms-sign-up"
-          }
-        },
-        "announcement_MnVnUR": {
-          "type": "announcement",
-          "settings": {
-            "icon": "none",
-            "svg-code": "",
-            "text": "Get 25% OFF FOR A LIMITED TIME",
-            "text_link": "",
-            "link": ""
+            "text_link": "Get 25% OFF FOR A LIMITED TIME",
+            "link": "shopify://collections"
           }
         }
       },
       "block_order": [
-        "announcement_VAzQXd",
-        "announcement_MnVnUR"
+        "announcement_VAzQXd"
       ],
       "settings": {
         "divider_top": false,
