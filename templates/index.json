@@ -585,6 +585,7 @@
       "block_order": [
         "image_e4fcUA"
       ],
+      "disabled": true,
       "settings": {
         "container": "large",
         "block_spacing": 5,
@@ -615,6 +616,7 @@
       "block_order": [
         "collection_tVxjfH"
       ],
+      "disabled": true,
       "settings": {
         "title": "HATS & TRUCKERS",
         "text_alignment": "center",
