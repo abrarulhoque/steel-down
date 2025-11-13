@@ -649,7 +649,7 @@
         "block_align": "left",
         "vertical_align": "top",
         "heading_size": 3,
-        "link_style": "primary",
+        "link_style": "hollow",
         "padding_top": 0,
         "padding_bottom": 0,
         "section-bottom-margin": false
