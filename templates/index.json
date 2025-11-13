@@ -608,9 +608,9 @@
           "settings": {
             "image": "shopify://shop_images/Fast-As-Fuck-Pullover-Hoodie-Bundle.jpg",
             "title": "SAVE $$$ WITH BUNDLES",
-            "desc": "<p>We've recently launched a Bundles Collection which means the more you buy, the more you save.</p><p>Featuring our best-sellers like Fast As Fuck, Working Class Stiff and our Premium Riding Gear, our Bundles take the heavy lifting out of the decision-making process and save you some money at the same time.</p>",
+            "desc": "<p>We've recently launched a Bundles Collection which means the more you buy, the more you save.</p><p>Featuring our best-sellers like Fast As Fuck, Working Class Stiff and our Premium Riding Gear, our Bundles take the heavy lifting out of the decision-making process and save you some money at the same time.</p><p>Fast As Fuck Bundle</p><p>Working Class Stiff Bundle</p><p>Premium Riding Gear Bundle</p><p>Classic Steeltown Bundle</p>",
             "horizontal_align": "left",
-            "link_title": "SHOP BUNDLES",
+            "link_title": "SHOP ALL BUNDLES",
             "link": "shopify://collections/bundles",
             "bg_color_block": "#f5f5f5",
             "bg_color_content": "#f5f5f5",
