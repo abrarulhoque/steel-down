@@ -539,7 +539,7 @@
             "heading": "",
             "heading_color": "rgba(0,0,0,0)",
             "collection": "riding",
-            "link": ""
+            "link": "https://steeltowngarage.com/collections/all"
           }
         }
       },
@@ -550,8 +550,8 @@
         "title": "Premium riding gear",
         "text_alignment": "center",
         "section_width": "large",
-        "link_title": "View all",
-        "link": "",
+        "link_title": "SHOP ALL ITEMS",
+        "link": "https://steeltowngarage.com/collections/all",
         "divider": false,
         "maximum_products": 48,
         "grid": 3,
