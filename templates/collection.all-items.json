@@ -26,7 +26,6 @@
       "blocks": {
         "filter": {
           "type": "filter",
-          "disabled": true,
           "settings": {
             "count": true,
             "show_swatches": true,
