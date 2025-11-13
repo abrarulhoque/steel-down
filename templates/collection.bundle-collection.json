@@ -38,6 +38,7 @@
       "block_order": [
         "filter"
       ],
+      "disabled": true,
       "settings": {
         "grid": 3,
         "grid_mobile": "1",
@@ -172,11 +173,45 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "section_collection_GetTJX": {
+      "type": "section-collection",
+      "blocks": {
+        "collection_KBBQ7H": {
+          "type": "collection",
+          "settings": {
+            "heading": "",
+            "heading_color": "rgba(0,0,0,0)",
+            "collection": "bundles",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_KBBQ7H"
+      ],
+      "name": "Featured collections",
+      "settings": {
+        "title": "",
+        "text_alignment": "center",
+        "section_width": "large",
+        "link_title": "View all",
+        "link": "",
+        "divider": false,
+        "maximum_products": 18,
+        "grid": 2,
+        "enable_carousel_desktop": false,
+        "grid_mobile": "1",
+        "enable_carousel_mobile": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
     "banner",
     "product-grid",
+    "section_collection_GetTJX",
     "section_collection_list_t6BEMt",
     "section_image_with_text_EbyXwN",
     "section_recently_viewed_QXNgmA"
