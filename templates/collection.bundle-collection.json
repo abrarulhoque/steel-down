@@ -1,0 +1,184 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "center_title": false,
+        "show_collection_image": true,
+        "collection_image_height": "4:1",
+        "collection_image_mobile_height": true,
+        "overlay_color": "#000000",
+        "overlay_strength": 30
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "blocks": {
+        "filter": {
+          "type": "filter",
+          "disabled": true,
+          "settings": {
+            "count": true,
+            "show_swatches": true,
+            "square_check": true,
+            "filter_visibility": "three"
+          }
+        }
+      },
+      "block_order": [
+        "filter"
+      ],
+      "settings": {
+        "grid": 3,
+        "grid_mobile": "1",
+        "rows": 7,
+        "show_count": true,
+        "sort_enable": true,
+        "filter_style": "sidebar"
+      }
+    },
+    "section_collection_list_t6BEMt": {
+      "type": "section-collection-list",
+      "blocks": {
+        "collection_mhCQg9": {
+          "type": "collection",
+          "settings": {
+            "collection": "working-class-stiff-collection",
+            "heading": "Working Class Stiff",
+            "description": "",
+            "button_label": "",
+            "link": "",
+            "image": "shopify://shop_images/Working-Class-Stiff-Motorcycle-T-Shirt-Steeltown-2.jpg"
+          }
+        },
+        "collection_hXy8mK": {
+          "type": "collection",
+          "settings": {
+            "collection": "riding",
+            "heading": "Riding Gear",
+            "description": "",
+            "button_label": "",
+            "link": "",
+            "video": "shopify://files/videos/flannel video web header 2.mp4"
+          }
+        },
+        "collection_HciD3c": {
+          "type": "collection",
+          "settings": {
+            "collection": "graphic-t-shirts",
+            "heading": "Graphic Tees",
+            "description": "",
+            "button_label": "",
+            "link": "",
+            "image": "shopify://shop_images/Steeltown-Address-Tee-Black-Liam-Plane.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "collection_mhCQg9",
+        "collection_hXy8mK",
+        "collection_HciD3c"
+      ],
+      "name": "Collection list",
+      "settings": {
+        "title": "BEST SELLING COLLECTONS",
+        "desc": "",
+        "divider": false,
+        "heading_alignment": "center",
+        "section_width": "large",
+        "grid": 3,
+        "spacing": 3,
+        "enable_carousel_desktop": true,
+        "enable_carousel_mobile": true,
+        "title_size": 2,
+        "image_ratio": "3:4",
+        "button_style": "c-btn c-btn--hollow",
+        "alignment": "bottom-left",
+        "text_alignment": "left",
+        "visibility_heading": true,
+        "visibility_border": false,
+        "visibility_count": false,
+        "visibility_description": false,
+        "visibility_button": true,
+        "hover_options": "hover-button",
+        "color_text": "#ffffff",
+        "color_overlay": "#000000",
+        "color_overlay_strength": 10,
+        "color_default_heading": false,
+        "color_default_border": true,
+        "link_title": "View all",
+        "link": "",
+        "section_link_style": "link link--arrow",
+        "padding_top": 0,
+        "padding_bottom": 60
+      }
+    },
+    "section_image_with_text_EbyXwN": {
+      "type": "section-image-with-text",
+      "blocks": {
+        "image_9Bx4jB": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Transfer-Sticker-Black-Steeltown-Garage-Cycles-Product-1.jpg",
+            "title": "Shop Rad",
+            "desc": "<p>There's a lot of talk about shopping small these days. And boy are we small. Lol. We're a team of five people committed to quality and product and service. But more than that, we're committed to living a rad lifestyle. </p><p>Thanks for shopping with us.</p>",
+            "horizontal_align": "left",
+            "link_title": "Learn more",
+            "link": "shopify://pages/about-steeltown-garage-co",
+            "bg_color_block": "rgba(0,0,0,0)",
+            "bg_color_content": "#ffffff",
+            "color_text": "#212121",
+            "text_heading_color": false,
+            "text_border_color": true
+          }
+        }
+      },
+      "block_order": [
+        "image_9Bx4jB"
+      ],
+      "settings": {
+        "container": "large",
+        "block_spacing": 2,
+        "image_ratio": "4:3",
+        "block_layout": "2/3",
+        "block_align": "left",
+        "vertical_align": "top",
+        "heading_size": 3,
+        "link_style": "hollow",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "section-bottom-margin": false
+      }
+    },
+    "section_recently_viewed_QXNgmA": {
+      "type": "section-recently-viewed",
+      "name": "Recently Viewed",
+      "settings": {
+        "related_title": "Recently Viewed",
+        "section_width": "large",
+        "maximum_products": 3,
+        "grid": 3,
+        "grid_mobile": "1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "product-grid",
+    "section_collection_list_t6BEMt",
+    "section_image_with_text_EbyXwN",
+    "section_recently_viewed_QXNgmA"
+  ]
+}
