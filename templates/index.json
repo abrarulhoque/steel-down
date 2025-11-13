@@ -470,7 +470,7 @@
         "text_alignment": "center",
         "section_width": "large",
         "link_title": "SHOP ALL ITEMS",
-        "link": "shopify://collections/best-sellers",
+        "link": "https://steeltowngarage.com/collections/all",
         "divider": false,
         "maximum_products": 31,
         "grid": 3,
