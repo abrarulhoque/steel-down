@@ -38,6 +38,7 @@
       "block_order": [
         "filter"
       ],
+      "disabled": true,
       "settings": {
         "grid": 3,
         "grid_mobile": "1",
@@ -45,6 +46,39 @@
         "show_count": true,
         "sort_enable": true,
         "filter_style": "sidebar"
+      }
+    },
+    "section_collection_TxXMg9": {
+      "type": "section-collection",
+      "blocks": {
+        "collection_xxpXtB": {
+          "type": "collection",
+          "settings": {
+            "heading": "",
+            "heading_color": "rgba(0,0,0,0)",
+            "collection": "all-1",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_xxpXtB"
+      ],
+      "name": "Featured collections",
+      "settings": {
+        "title": "All Products",
+        "text_alignment": "center",
+        "section_width": "large",
+        "link_title": "View all",
+        "link": "",
+        "divider": false,
+        "maximum_products": 33,
+        "grid": 3,
+        "enable_carousel_desktop": false,
+        "grid_mobile": "1",
+        "enable_carousel_mobile": true,
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "section_collection_list_t6BEMt": {
@@ -177,6 +211,7 @@
   "order": [
     "banner",
     "product-grid",
+    "section_collection_TxXMg9",
     "section_collection_list_t6BEMt",
     "section_image_with_text_EbyXwN",
     "section_recently_viewed_QXNgmA"
