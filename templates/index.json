@@ -624,7 +624,7 @@
         "link_title": "SHOP HEADWEAR",
         "link": "shopify://collections/hats-beanies-1",
         "divider": false,
-        "maximum_products": 9,
+        "maximum_products": 29,
         "grid": 3,
         "enable_carousel_desktop": true,
         "grid_mobile": "1",
