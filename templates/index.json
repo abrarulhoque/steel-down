@@ -530,61 +530,6 @@
         "section-bottom-margin": false
       }
     },
-    "section_image_with_text_7ArqR6": {
-      "type": "section-image-with-text",
-      "blocks": {
-        "image_HhdMf3": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Fast-As-Fuck-Pullover-Hoodie-Bundle.jpg",
-            "title": "SAVE $$$ WITH BUNDLES",
-            "desc": "<p>We've recently launched a Bundles Collection which means the more you buy, the more you save.</p><p>Featuring our best-sellers like Fast As Fuck, Working Class Stiff and our Premium Riding Gear, our Bundles take the heavy lifting out of the decision-making process and save you some money at the same time.</p>",
-            "horizontal_align": "left",
-            "link_title": "SHOP BUNDLES",
-            "link": "shopify://collections/bundles",
-            "bg_color_block": "#f5f5f5",
-            "bg_color_content": "#f5f5f5",
-            "color_text": "#212121",
-            "text_heading_color": false,
-            "text_border_color": true
-          }
-        },
-        "image_4jUXUm": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "title": "Image with text",
-            "desc": "<p>Use these blocks to share your brand's story. You can focus on a particular collection, a product detail, or even embed a video.</p>",
-            "horizontal_align": "left",
-            "link_title": "Learn more",
-            "link": "",
-            "bg_color_block": "rgba(0,0,0,0)",
-            "bg_color_content": "#ffffff",
-            "color_text": "#212121",
-            "text_heading_color": false,
-            "text_border_color": true
-          }
-        }
-      },
-      "block_order": [
-        "image_HhdMf3",
-        "image_4jUXUm"
-      ],
-      "name": "Image with text",
-      "settings": {
-        "container": "large",
-        "block_spacing": 2,
-        "image_ratio": "1:1",
-        "block_layout": "1/2",
-        "block_align": "left",
-        "vertical_align": "top",
-        "heading_size": 3,
-        "link_style": "hollow",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "section-bottom-margin": false
-      }
-    },
     "section_collection_jPmqkU": {
       "type": "section-collection",
       "blocks": {
@@ -650,6 +595,61 @@
         "heading_size": 1,
         "link_style": "hollow",
         "text_style": "solid",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "section-bottom-margin": false
+      }
+    },
+    "section_image_with_text_7ArqR6": {
+      "type": "section-image-with-text",
+      "blocks": {
+        "image_HhdMf3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Fast-As-Fuck-Pullover-Hoodie-Bundle.jpg",
+            "title": "SAVE $$$ WITH BUNDLES",
+            "desc": "<p>We've recently launched a Bundles Collection which means the more you buy, the more you save.</p><p>Featuring our best-sellers like Fast As Fuck, Working Class Stiff and our Premium Riding Gear, our Bundles take the heavy lifting out of the decision-making process and save you some money at the same time.</p>",
+            "horizontal_align": "left",
+            "link_title": "SHOP BUNDLES",
+            "link": "shopify://collections/bundles",
+            "bg_color_block": "#f5f5f5",
+            "bg_color_content": "#f5f5f5",
+            "color_text": "#212121",
+            "text_heading_color": false,
+            "text_border_color": true
+          }
+        },
+        "image_4jUXUm": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "title": "Image with text",
+            "desc": "<p>Use these blocks to share your brand's story. You can focus on a particular collection, a product detail, or even embed a video.</p>",
+            "horizontal_align": "left",
+            "link_title": "Learn more",
+            "link": "",
+            "bg_color_block": "rgba(0,0,0,0)",
+            "bg_color_content": "#ffffff",
+            "color_text": "#212121",
+            "text_heading_color": false,
+            "text_border_color": true
+          }
+        }
+      },
+      "block_order": [
+        "image_HhdMf3",
+        "image_4jUXUm"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "container": "small",
+        "block_spacing": 2,
+        "image_ratio": "1:1",
+        "block_layout": "1/2",
+        "block_align": "left",
+        "vertical_align": "top",
+        "heading_size": 3,
+        "link_style": "hollow",
         "padding_top": 0,
         "padding_bottom": 0,
         "section-bottom-margin": false
@@ -740,9 +740,9 @@
     "section_collection_list_mQrEmV",
     "section_collection_tjeLzb",
     "section_image_text_banner_e7C8EL",
-    "section_image_with_text_7ArqR6",
     "section_collection_jPmqkU",
     "section_image_with_text_overlap_HDBRw9",
+    "section_image_with_text_7ArqR6",
     "section_collection_YPxYh6",
     "section_recently_viewed_rjNxTQ",
     "deed0c7d-a6b2-434e-8882-2a7cba84c982"
