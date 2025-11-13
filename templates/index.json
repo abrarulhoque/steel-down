@@ -642,7 +642,7 @@
       ],
       "name": "Image with text",
       "settings": {
-        "container": "small",
+        "container": "large",
         "block_spacing": 2,
         "image_ratio": "1:1",
         "block_layout": "1/2",
