@@ -244,7 +244,7 @@
             "heading": "",
             "heading_color": "rgba(0,0,0,0)",
             "collection": "t-shirts-tops",
-            "link": ""
+            "link": "https://steeltowngarage.com/collections/all"
           }
         }
       },
@@ -255,8 +255,8 @@
         "title": "Latest Drops",
         "text_alignment": "center",
         "section_width": "large",
-        "link_title": "View all",
-        "link": "",
+        "link_title": "SHOP ALL ITEMS",
+        "link": "https://steeltowngarage.com/collections/all",
         "divider": false,
         "maximum_products": 46,
         "grid": 3,
