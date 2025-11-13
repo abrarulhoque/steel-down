@@ -469,7 +469,7 @@
         "title": "BEST SELLERS",
         "text_alignment": "center",
         "section_width": "large",
-        "link_title": "SHOP BEST SELLERS",
+        "link_title": "SHOP ALL ITEMS",
         "link": "shopify://collections/best-sellers",
         "divider": false,
         "maximum_products": 31,
