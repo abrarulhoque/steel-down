@@ -19,21 +19,32 @@
           "settings": {
             "icon": "icon-flash",
             "svg-code": "",
-            "text": "Limited time black Friday pricing is live",
+            "text": "LIMITED TIME BLACK FRIDAY PRICING IS LIVE",
             "text_link": "",
             "link": "shopify://collections"
+          }
+        },
+        "announcement_x7wrKB": {
+          "type": "announcement",
+          "settings": {
+            "icon": "icon-delivery-truck-3",
+            "svg-code": "",
+            "text": "FREE SHIPPING over $75 USD in USA & Canada",
+            "text_link": "",
+            "link": ""
           }
         }
       },
       "block_order": [
-        "announcement_VAzQXd"
+        "announcement_VAzQXd",
+        "announcement_x7wrKB"
       ],
       "settings": {
         "divider_top": false,
         "divider_bottom": false,
         "text_size_desktop": 2,
         "text_size_mobile": 2,
-        "text_style": "heading",
+        "text_style": "body",
         "message_color_bg": "#c00000",
         "message_color_text": "#ffffff",
         "text_letter_spacing": 0,
