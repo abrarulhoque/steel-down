@@ -457,7 +457,7 @@
           "settings": {
             "heading": "BEST SELLERS",
             "heading_color": "rgba(0,0,0,0)",
-            "collection": "best-sellers",
+            "collection": "best-sellers-1",
             "link": "https://steeltowngarage.com/collections/all"
           }
         }
@@ -470,7 +470,7 @@
         "text_alignment": "center",
         "section_width": "large",
         "link_title": "SHOP ALL ITEMS",
-        "link": "https://steeltowngarage.com/collections/all",
+        "link": "shopify://collections/best-sellers-1",
         "divider": false,
         "maximum_products": 31,
         "grid": 3,
