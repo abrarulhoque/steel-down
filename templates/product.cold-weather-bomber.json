@@ -317,6 +317,7 @@
         "text_TGRkzY",
         "text_j4TTUr"
       ],
+      "disabled": true,
       "settings": {
         "title": "",
         "style_desktop": "featured-grid",
@@ -377,6 +378,7 @@
         "link_iMii8y",
         "text_pBkNhp"
       ],
+      "disabled": true,
       "settings": {
         "section_height": "small",
         "section_height_mobile": "small",
@@ -393,6 +395,7 @@
     },
     "section_rich_text_6A4tTi": {
       "type": "section-rich-text",
+      "disabled": true,
       "settings": {
         "full_width": false,
         "section_title": "",
@@ -432,6 +435,7 @@
         "text_xefrpb",
         "text_mF7YPF"
       ],
+      "disabled": true,
       "settings": {
         "title": "",
         "container": "large",
@@ -466,9 +470,9 @@
         "image_GnXbMj": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Steeltown-Built-To-Blast-Shop-Coat-Front-1.jpg",
-            "title": "BUILT TO BLAST",
-            "desc": "<p>With the Shop Coat, we tried our best to strike that perfect balance between form and function. We wanted it to be reminiscent of the no-frills, hard-wearing car club jackets of the 50s. But we also wanted to focus on the details to make sure it looks and feels great.</p><p>For our improved 2024 Shop Coat, we milled an even heavier weight 410 GSM duck cotton that's rugged but also comfortable just over a tee shirt. Metal buttons on the cuffs and waist mean you can adjust the fit to your liking. Chore coat style pockets on the front allow easy access without adding any bulk to the jacket. The antique metal YKK zipper and pull are built to last.</p><p>And we've included our popular Brass Piston Pin on the collar for that extra flare.</p>",
+            "image": "shopify://shop_images/Steeltown-Built-To-Blast-Bomber-Jacket-Bronco-2.jpg",
+            "title": "BUILT FOR THE COLD",
+            "desc": "<p>Steeltown as a brand was born in the cold, so we know a thing or two about chilly weather. We know what it feels like when the moisture from your breath turns to ice on your moustache, when the skin on your face feels as tight as a bongo drum, and your bones feel so brittle from the chill they could just snap.</p><p>That's why we built our MA-1 Bomber Jackets for the cold. Made with a heavyweight 100% sage nylon shell, double thick filling throughout, and a wind flap that sits behind the main zipper to block the wind, it's basically an advanced thermal outer-layer that looks like a piece of vintage fashion.</p>",
             "horizontal_align": "left",
             "link_title": "",
             "link": "",
@@ -482,9 +486,9 @@
         "image_mMyYpe": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Steeltown-Built-To-Blast-Shop-Coat-Back-Detail.jpg",
-            "title": "THE DYING ART OF CHAIN STITCH",
-            "desc": "<p>A chain stitch is a type of stitching where one continuous thread is looped back on itself. Because of this, chain stitches are stretchier than standard lock stitches, which is why it's common to find them in places such as the waistband and leg seams of jeans. </p><p>The first chain stitching machine was invented and patented in 1857. But it’s the Union Special 43200G, first manufactured in 1939, that has become synonymous with the desirable roping effect.</p><p>Throughout the 50s and 60s it was common to see chain stitching on workwear, western wear and, as it happens, on the backs of classic car club jackets. In the 80s, chain stitching machines went out of production. Since then, chain stitching has become an elusive art form.</p>",
+            "image": "shopify://shop_images/Steeltown-Garage-Bomber-Jacket-2.jpg",
+            "title": "PERIOD CORRECT",
+            "desc": "<p>The most period-correct feature of our bomber is the high-vis quilted Safety Orange liner. Traditionally, when fighter pilots were downed in enemy territory, they would reverse their jacket to be better spotted by rescue aircraft from above. </p><p>We chose to stay true to this history. Adding to the jacket's authenticity, the over-sized embroidered <em>Never Tamed</em> chest patch harkens back to the days of white knuckled-dogfights and high speed patriotism.</p>",
             "horizontal_align": "left",
             "link_title": "",
             "link": "",
@@ -506,10 +510,10 @@
         "image_ratio": "1:1",
         "block_layout": "1/2",
         "block_align": "left",
-        "vertical_align": "middle",
+        "vertical_align": "top",
         "heading_size": 3,
         "link_style": "hollow",
-        "padding_top": 0,
+        "padding_top": 33,
         "padding_bottom": 0,
         "section-bottom-margin": false
       }
@@ -520,10 +524,10 @@
         "text_yX9zY9": {
           "type": "text",
           "settings": {
-            "image": "shopify://shop_images/Steeltown-Built-To-Blast-Shop-Coat-Pin-Detail.jpg",
+            "image": "shopify://shop_images/Steeltown-Built-To-Blast-Bomber-Jacket-Front-1.jpg",
             "title": "",
             "sub_title": "",
-            "desc": "<ul><li>100% Heavy Duck Cotton</li><li>Fabric weight: 410 GSM</li><li>True to size (S-3XL)</li><li>Chain Stitch Back Graphic</li><li>Front Embroidered Chest Patch</li><li>Double Post Piston Pin on Collar</li><li>Metal YKK Zipper</li><li>Adjustable Cuffs & Waist Hem</li><li>Unlined</li></ul>",
+            "desc": "<ul><li>Unisex and true to size</li><li>Heavyweight 100% Sage Nylon Shell</li><li>Heritage Inspired WWII Chest Patch on left chest</li><li>Standard issue velcro name patch on right chest</li><li>Safety Orange Quilted Liner</li><li>Double Thick Poly Fill</li><li>Main Zipper Wind Flap</li></ul>",
             "link_title": "",
             "link": ""
           }
@@ -531,10 +535,10 @@
         "text_6tn3HA": {
           "type": "text",
           "settings": {
-            "image": "shopify://shop_images/Steeltown-Built-To-Blast-Shop-Coat-Shipping-Free.jpg",
+            "image": "shopify://shop_images/Steeltown-Bomber-Jacket-Back-1.jpg",
             "title": "",
             "sub_title": "",
-            "desc": "<p><strong>GET YOUR PERFECT FIT</strong></p><p>The Shop Coat fits true to size. It's wide through the body and sleeves like a classic car club jacket. There is a size guide in the photos at the top of the page for your reference.</p>",
+            "desc": "<ul><li>Main Zipper Wind Flap</li><li>Parachute Cord Zipper Pulls</li><li>Two Button SnapFront Pocket</li><li>Right Arm Zip Stash Pocket</li><li>Inside Discreet Zip Pocket</li><li>Metal Zips Throughout</li></ul>",
             "link_title": "",
             "link": ""
           }
@@ -542,7 +546,7 @@
         "text_pC6aUF": {
           "type": "text",
           "settings": {
-            "image": "shopify://shop_images/Steeltown-Built-To-Blast-Shop-Coat-Zipper-Detail.jpg",
+            "image": "shopify://shop_images/Steeltown-Bomber-Jacket-Detail-3.jpg",
             "title": "",
             "sub_title": "",
             "desc": "",
@@ -553,7 +557,7 @@
         "text_7NV9Nb": {
           "type": "text",
           "settings": {
-            "image": "shopify://shop_images/Steeltown-Built-To-Blast-Shop-Coat-Patch-Detail.jpg",
+            "image": "shopify://shop_images/Steeltown-Bomber-Jacket-Detail-2.jpg",
             "title": "",
             "sub_title": "",
             "desc": "",
@@ -649,6 +653,7 @@
         "article_iiKCm6",
         "article_zH7EW7"
       ],
+      "disabled": true,
       "settings": {
         "enable_sidebar": false,
         "cta_link_title": "Contact us",
@@ -663,7 +668,12 @@
       "blocks": {
         "judge_me_reviews_review_widget_qahYAK": {
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
         }
       },
       "block_order": [
