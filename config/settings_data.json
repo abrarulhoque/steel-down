@@ -69,7 +69,7 @@
     "product_grid_align": false,
     "product_grid_label_position_left": false,
     "product_grid_label_opacity": 100,
-    "product_grid_label_hide_all": true,
+    "product_grid_label_hide_all": false,
     "color_label_sold_out": "#f2f2f2",
     "product_grid_label_discount_type": "currency",
     "color_label_discount": "#c00000",
@@ -478,7 +478,8 @@
     "custom_css": [
       ".multi-column__title {color: #dcb244 !important;}",
       ".price__note:last-child {margin-left: 0; display: none;}",
-      ".product-card__swatch__item:only-of-type {display: none;}"
+      ".product-card__swatch__item:only-of-type {display: none;}",
+      ".mega-panel__item .list-menu__item:last-child .list-menu__text {font-weight: bold;}"
     ]
   }
 }
