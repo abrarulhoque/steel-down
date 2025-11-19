@@ -14,6 +14,7 @@
       "blocks": {
         "image_AafhRB": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/test-beast-header-white.jpg",
             "alignment": "right",
@@ -26,10 +27,27 @@
             "link_title_2": "",
             "link_2": ""
           }
+        },
+        "video_4XjHdT": {
+          "type": "video",
+          "settings": {
+            "video_link": "https://cdn.shopify.com/videos/c/o/v/9bf22607d3e3493e9f67b6caff26f525.mp4",
+            "yt_link": "",
+            "alignment": "center",
+            "title": "UNLEASH THE BEAST",
+            "text": "<p>750 WATTS OF UNBRIDLED GOOD TIMES</p>",
+            "link_style": "c-btn c-btn--hollow",
+            "link_title": "",
+            "link": "",
+            "link_style_2": "c-btn c-btn--primary",
+            "link_title_2": "",
+            "link_2": ""
+          }
         }
       },
       "block_order": [
-        "image_AafhRB"
+        "image_AafhRB",
+        "video_4XjHdT"
       ],
       "name": "Slideshow",
       "settings": {
@@ -41,7 +59,7 @@
         "nav_arrows": true,
         "slideshow_height": "full-screen",
         "slideshow_width": "full",
-        "text_color": "#111111",
+        "text_color": "#ffffff",
         "text_heading_color": false,
         "text_border_color": true,
         "text_bg_color": "#ffffff",
@@ -454,7 +472,7 @@
         "heading_size": 3,
         "image": "shopify://shop_images/wildsyde-ebikes-beast-geometry.webp",
         "padding_top": 60,
-        "padding_bottom": 60
+        "padding_bottom": 0
       }
     },
     "main": {
@@ -647,10 +665,6 @@
             "align": "center",
             "link": ""
           }
-        },
-        "bundler_bundler_target_element_QPEt3E": {
-          "type": "shopify://apps/bundler/blocks/bundler-target-element/7a6ae1b8-3b16-449b-8429-8bb89a62c664",
-          "settings": {}
         }
       },
       "block_order": [
@@ -672,8 +686,7 @@
         "663a3435-b014-41e0-916d-1ed9505f5691",
         "pickup_Ac6Tgw",
         "complementary_products_xiznrY",
-        "image_CQJLEE",
-        "bundler_bundler_target_element_QPEt3E"
+        "image_CQJLEE"
       ],
       "custom_css": [
         ".js-section__product-single .hypervisual__container {margin-top: -60px;}",
@@ -865,15 +878,6 @@
     },
     "1756439511148f4dec": {
       "type": "apps",
-      "blocks": {
-        "bundler_bundler_target_element_88pJaU": {
-          "type": "shopify://apps/bundler/blocks/bundler-target-element/7a6ae1b8-3b16-449b-8429-8bb89a62c664",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "bundler_bundler_target_element_88pJaU"
-      ],
       "settings": {
         "include_margins": true
       }
@@ -885,7 +889,9 @@
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
             "review_data": "sample_data",
-            "max_width": 1200
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
           }
         }
       },
@@ -922,9 +928,9 @@
     "section_lifestyle_gallery_TTbqxt",
     "section_rider_height_qktdTB",
     "section_key_features_gLDH7A",
-    "section_geometry_specifications_NbqTRF",
     "main",
     "section_feature_benefits_AkTQUR",
+    "section_geometry_specifications_NbqTRF",
     "9904a28f-6381-41fe-96eb-d4a73d60f0a0",
     "5a818a60-e694-4eac-a33f-5ce701e894b0",
     "product-recommendations",
