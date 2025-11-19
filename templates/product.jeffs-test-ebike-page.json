@@ -64,7 +64,7 @@
         "text_border_color": true,
         "text_bg_color": "#ffffff",
         "overlay_color": "#000000",
-        "overlay_strength": 0,
+        "overlay_strength": 20,
         "section-bottom-margin": true
       }
     },
