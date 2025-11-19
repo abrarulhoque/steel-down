@@ -136,6 +136,62 @@
         "section-bottom-margin": false
       }
     },
+    "section_custom_UAa6LK": {
+      "type": "section-custom",
+      "blocks": {
+        "text_EJQHR8": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "Text",
+            "text": "<p>Promote your brand by using a powerful combination of buttons, custom text, page content and images.</p>",
+            "link_title": "Learn more",
+            "link": "",
+            "align": "center",
+            "width": "1/2"
+          }
+        },
+        "image_ADyYqf": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/wildsyde-beast-main_cac5f76a-0a8a-46f7-80b9-45356b787322.jpg",
+            "link": "",
+            "width": "2/3"
+          }
+        },
+        "spacer_iwLRzq": {
+          "type": "spacer",
+          "disabled": true,
+          "settings": {
+            "space": "none"
+          }
+        },
+        "button_Y4JhUB": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "title": "Button",
+            "link": "",
+            "color": "primary",
+            "size": "big",
+            "width": "1/3"
+          }
+        }
+      },
+      "block_order": [
+        "text_EJQHR8",
+        "image_ADyYqf",
+        "spacer_iwLRzq",
+        "button_Y4JhUB"
+      ],
+      "disabled": true,
+      "name": "Custom content",
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "section-bottom-margin": false
+      }
+    },
     "section_rich_text_6nFxHX": {
       "type": "section-rich-text",
       "name": "Rich text",
@@ -444,37 +500,6 @@
         "padding_bottom": 28
       }
     },
-    "section_geometry_specifications_NbqTRF": {
-      "type": "section-geometry-specifications",
-      "blocks": {
-        "accordion_item_gEnUHx": {
-          "type": "accordion_item",
-          "settings": {
-            "title": "Geometry",
-            "content": "<p><strong>A: </strong>Top tube length = 24\"/62.63cm </p><p><strong>B: </strong>Adjustable seat to ground height = Low: 33.5\"/85cm | High: 42 .5\"/105cm </p><p><strong>C: </strong>Seat to pedal at low to high point = Low: 31\"/79cm | High: 39\"/99cm </p><p><strong>D: </strong>Standover height = 31\"/78.74cm </p><p><strong>E: </strong>Handlebar height from ground to stem attachment = 42\"/106.68cm </p><p><strong>F: </strong>Total length of complete bike = 76\"/193.04cm </p><p><strong>G: </strong>Handlebar distance from grip to grip = 25\"/63.5cm </p>"
-          }
-        },
-        "accordion_item_QPFttR": {
-          "type": "accordion_item",
-          "settings": {
-            "title": "Specifications",
-            "content": "<p><strong>Battery Weight: </strong>9lbs (4kg)  </p><p><strong>Bicycle Weight:</strong> 79lbs (34kg), including battery  </p><p><strong>Charging Time: </strong>8 hours from empty  </p><p><strong>Class 2 Electric Bicycle:</strong> governed at 20mph to meet Class 2 specifications (with 5 speed PAS and thumb activated throttle) </p><p><strong>Distance/Cruising Range:</strong> 35-50 miles on a single charge, with many riders experiencing even greater distances under optimal conditions </p><p><strong>Max load:</strong> 300lb/136Kg </p><p><strong>Motor:</strong> 750W 48V latest generation hub gear brushless BAFANG motor producing 80Nm power </p><p><strong>Size Range:</strong> one size (5’ 6” and above)  </p><p><strong>Standover Height: </strong>31” </p>"
-          }
-        }
-      },
-      "block_order": [
-        "accordion_item_gEnUHx",
-        "accordion_item_QPFttR"
-      ],
-      "name": "Geometry & Specifications",
-      "settings": {
-        "title": "Geometry & Specifications",
-        "heading_size": 3,
-        "image": "shopify://shop_images/wildsyde-ebikes-beast-geometry.webp",
-        "padding_top": 60,
-        "padding_bottom": 0
-      }
-    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -759,6 +784,37 @@
         "section-bottom-margin": false
       }
     },
+    "section_geometry_specifications_NbqTRF": {
+      "type": "section-geometry-specifications",
+      "blocks": {
+        "accordion_item_gEnUHx": {
+          "type": "accordion_item",
+          "settings": {
+            "title": "Geometry",
+            "content": "<p><strong>A: </strong>Top tube length = 24\"/62.63cm </p><p><strong>B: </strong>Adjustable seat to ground height = Low: 33.5\"/85cm | High: 42 .5\"/105cm </p><p><strong>C: </strong>Seat to pedal at low to high point = Low: 31\"/79cm | High: 39\"/99cm </p><p><strong>D: </strong>Standover height = 31\"/78.74cm </p><p><strong>E: </strong>Handlebar height from ground to stem attachment = 42\"/106.68cm </p><p><strong>F: </strong>Total length of complete bike = 76\"/193.04cm </p><p><strong>G: </strong>Handlebar distance from grip to grip = 25\"/63.5cm </p>"
+          }
+        },
+        "accordion_item_QPFttR": {
+          "type": "accordion_item",
+          "settings": {
+            "title": "Specifications",
+            "content": "<p><strong>Battery Weight: </strong>9lbs (4kg)  </p><p><strong>Bicycle Weight:</strong> 79lbs (34kg), including battery  </p><p><strong>Charging Time: </strong>8 hours from empty  </p><p><strong>Class 2 Electric Bicycle:</strong> governed at 20mph to meet Class 2 specifications (with 5 speed PAS and thumb activated throttle) </p><p><strong>Distance/Cruising Range:</strong> 35-50 miles on a single charge, with many riders experiencing even greater distances under optimal conditions </p><p><strong>Max load:</strong> 300lb/136Kg </p><p><strong>Motor:</strong> 750W 48V latest generation hub gear brushless BAFANG motor producing 80Nm power </p><p><strong>Size Range:</strong> one size (5’ 6” and above)  </p><p><strong>Standover Height: </strong>31” </p>"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_item_gEnUHx",
+        "accordion_item_QPFttR"
+      ],
+      "name": "Geometry & Specifications",
+      "settings": {
+        "title": "Geometry & Specifications",
+        "heading_size": 3,
+        "image": "shopify://shop_images/wildsyde-ebikes-beast-geometry.webp",
+        "padding_top": 60,
+        "padding_bottom": 0
+      }
+    },
     "9904a28f-6381-41fe-96eb-d4a73d60f0a0": {
       "type": "section-testimonials",
       "blocks": {
@@ -922,6 +978,7 @@
   "order": [
     "section_slideshow_JXBFby",
     "af1e6c23-5338-467c-bee9-b9d9b3d9c22a",
+    "section_custom_UAa6LK",
     "section_rich_text_6nFxHX",
     "product_specifications_4gHEhM",
     "section_image_with_text_overlap_EzpCcb",
