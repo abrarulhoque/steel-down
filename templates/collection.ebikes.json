@@ -21,6 +21,48 @@
         "overlay_strength": 30
       }
     },
+    "section_slideshow_pjjwte": {
+      "type": "section-slideshow",
+      "blocks": {
+        "video_9TnnrN": {
+          "type": "video",
+          "settings": {
+            "video_link": "https://cdn.shopify.com/videos/c/o/v/9bf22607d3e3493e9f67b6caff26f525.mp4",
+            "yt_link": "",
+            "alignment": "center",
+            "title": "UNLEASH THE BEAST",
+            "text": "<p>A wide range of electric bikes and accessories built for the pursuit of post-modern freedom.</p>",
+            "link_style": "c-btn c-btn--hollow",
+            "link_title": "",
+            "link": "",
+            "link_style_2": "c-btn c-btn--primary",
+            "link_title_2": "",
+            "link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "video_9TnnrN"
+      ],
+      "name": "Slideshow",
+      "settings": {
+        "style": "transparent",
+        "title_size": 4,
+        "autoplay": true,
+        "autoplay_speed": 8,
+        "nav_style": "solid-brand",
+        "nav_arrows": false,
+        "slideshow_height": "full-screen",
+        "slideshow_width": "full",
+        "text_color": "#ffffff",
+        "text_heading_color": false,
+        "text_border_color": true,
+        "text_bg_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_strength": 10,
+        "section-bottom-margin": false
+      }
+    },
     "product-grid": {
       "type": "main-collection-product-grid",
       "blocks": {
@@ -39,7 +81,7 @@
         "filter"
       ],
       "settings": {
-        "grid": 3,
+        "grid": 2,
         "grid_mobile": "1",
         "rows": 7,
         "show_count": true,
@@ -89,6 +131,7 @@
         "collection_hXy8mK",
         "collection_HciD3c"
       ],
+      "disabled": true,
       "name": "Collection list",
       "settings": {
         "title": "BEST SELLING COLLECTONS",
@@ -146,6 +189,7 @@
       "block_order": [
         "image_9Bx4jB"
       ],
+      "disabled": true,
       "settings": {
         "container": "large",
         "block_spacing": 2,
@@ -155,6 +199,125 @@
         "vertical_align": "top",
         "heading_size": 3,
         "link_style": "hollow",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "section-bottom-margin": false
+      }
+    },
+    "section_testimonials_hreRNC": {
+      "type": "section-testimonials",
+      "blocks": {
+        "text_cAK6Ug": {
+          "type": "text",
+          "settings": {
+            "media": "stars-brand",
+            "svg-code": "",
+            "image_round": true,
+            "text": "<p><strong>The Wildsyde Paree E-Bike is a great fit for me. I love riding  to the tennis courts where parking can sometimes be problematic. It's easy to use and super stylish! Thank you for making biking a blast!</strong></p>",
+            "name": "Stephanie Hart",
+            "source": "Verified Buyer"
+          }
+        },
+        "text_9FkKA3": {
+          "type": "text",
+          "settings": {
+            "media": "stars-brand",
+            "svg-code": "",
+            "image_round": true,
+            "text": "<p><strong>Love my Wildsyde, ride it almost daily, best bike I have ever owned! Plenty of power and battery for full weekend rides at the beach, the fat tires are great for all kinds of terrain. Highly recommend the Wildsyde E bike!</strong></p>",
+            "name": "Wesley Hornung",
+            "source": "Verified Buyer"
+          }
+        },
+        "text_7cmM3k": {
+          "type": "text",
+          "settings": {
+            "media": "stars-brand",
+            "svg-code": "",
+            "image_round": true,
+            "text": "<p><strong>I purchased a Beast and frankly didn’t know what to expect. Once I started riding my Beast e-bike it was a joyous experience to say the least. I live in the mountains and my bike made climbing 2,000 ft vertical a no-brainer.</strong></p>",
+            "name": "Steven Michael",
+            "source": "Verified Buyer"
+          }
+        }
+      },
+      "block_order": [
+        "text_cAK6Ug",
+        "text_9FkKA3",
+        "text_7cmM3k"
+      ],
+      "name": "Testimonials",
+      "settings": {
+        "title": "",
+        "style_desktop": "grid",
+        "style_mobile": "carousel",
+        "link_title": "Shop now",
+        "link": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_feature_benefits_QDHGX7": {
+      "type": "section-feature-benefits",
+      "blocks": {
+        "benefit_CxagFL": {
+          "type": "benefit",
+          "settings": {
+            "icon": "icon-delivery-truck-3",
+            "color_icon": "rgba(0,0,0,0)",
+            "svg-code": "",
+            "title": "Free Shipping",
+            "subtitle": "on all eBikes"
+          }
+        },
+        "benefit_wKmw7J": {
+          "type": "benefit",
+          "settings": {
+            "icon": "icon-shield-check",
+            "color_icon": "rgba(0,0,0,0)",
+            "svg-code": "",
+            "title": "1-Year Warranty",
+            "subtitle": "to protect your purchase"
+          }
+        },
+        "benefit_gwjMaQ": {
+          "type": "benefit",
+          "settings": {
+            "icon": "icon-shield-check",
+            "color_icon": "rgba(0,0,0,0)",
+            "svg-code": "",
+            "title": "14-Day Trial",
+            "subtitle": "Terms & Conditions apply"
+          }
+        }
+      },
+      "block_order": [
+        "benefit_CxagFL",
+        "benefit_wKmw7J",
+        "benefit_gwjMaQ"
+      ],
+      "name": "Feature Benefits",
+      "settings": {
+        "container": "large",
+        "bg_color": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "padding_top": 24,
+        "padding_bottom": 24,
+        "section-bottom-margin": false
+      }
+    },
+    "section_newsletter_cHPkAR": {
+      "type": "section-newsletter",
+      "name": "Newsletter",
+      "settings": {
+        "divider": false,
+        "section_width": "contained",
+        "newsletter_bg": "#F2F2F2",
+        "newsletter_style": "dark",
+        "default_title_color": false,
+        "text_border_color": true,
+        "section_newsletter_title": "GET 10% OFF YOUR ebike",
+        "section_newsletter_desc": "<p>Join our email family to receive exclusive offers and discounts -<strong>like 10% OFF your eBike </strong>(Discount code will be emailed to you. Check your junk mail.)</p>",
         "padding_top": 0,
         "padding_bottom": 0,
         "section-bottom-margin": false
@@ -176,9 +339,13 @@
   },
   "order": [
     "banner",
+    "section_slideshow_pjjwte",
     "product-grid",
     "section_collection_list_t6BEMt",
     "section_image_with_text_EbyXwN",
+    "section_testimonials_hreRNC",
+    "section_feature_benefits_QDHGX7",
+    "section_newsletter_cHPkAR",
     "section_recently_viewed_QXNgmA"
   ]
 }
