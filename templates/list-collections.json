@@ -166,6 +166,17 @@
             "link": "shopify://collections/boots-footwear",
             "image": "shopify://shop_images/Steeltown-Socks-Steeltown-Basketball-3.jpg"
           }
+        },
+        "collection_hAWg94": {
+          "type": "collection",
+          "settings": {
+            "collection": "ebikes",
+            "heading": "",
+            "description": "",
+            "button_label": "",
+            "link": "",
+            "video": "shopify://files/videos/Ebike Half Clips 480.mp4"
+          }
         }
       },
       "block_order": [
@@ -180,7 +191,8 @@
         "collection_meRUgX",
         "collection_LrwUBY",
         "collection_8Fdzqp",
-        "collection_XiRpmT"
+        "collection_XiRpmT",
+        "collection_hAWg94"
       ],
       "name": "Collection list",
       "settings": {
@@ -222,7 +234,7 @@
       "settings": {
         "divider": false,
         "section_width": "contained",
-        "newsletter_bg": "#F2F2F2",
+        "newsletter_bg": "#f2f2f2",
         "newsletter_style": "dark",
         "default_title_color": false,
         "text_border_color": true,
