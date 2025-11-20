@@ -79,6 +79,26 @@
             "link": "shopify://collections/hats-beanies-1"
           }
         },
+        "text_KCMkLK": {
+          "type": "text",
+          "settings": {
+            "heading": "FREE SHIPPING",
+            "text": "<p><strong>ALL NORTH AMERICAN ORDERS OVER $75 NOW QUALIFY FOR FREE SHIPPING.</strong></p><p><strong>NO STRINGS ATTACHED.</strong></p>",
+            "link_text": "",
+            "link": "",
+            "button_style": "c-btn c-btn--hollow",
+            "alignment": "middle-center",
+            "text_alignment": "center",
+            "color_text": "#111111",
+            "color_bg": "#f0f0f0",
+            "color_default_heading": false,
+            "color_default_border": false,
+            "pattern_style": "none",
+            "color_pattern": "#212121",
+            "pattern_size": 20,
+            "pattern_opacity": 20
+          }
+        },
         "collection_Bx3NCL": {
           "type": "collection",
           "settings": {
@@ -101,15 +121,15 @@
             "image": "shopify://shop_images/Steeltown-Garage-shop-coat-Hamilton-2.jpg"
           }
         },
-        "collection_QH9xxw": {
+        "collection_hAWg94": {
           "type": "collection",
           "settings": {
-            "collection": "sweaters",
-            "heading": "Sweaters",
+            "collection": "ebikes",
+            "heading": "e-bikes",
             "description": "",
-            "button_label": "SHOP",
-            "link": "shopify://collections/sweaters",
-            "video": "shopify://files/videos/Tigercrew480-2.mov"
+            "button_label": "Shop",
+            "link": "",
+            "video": "shopify://files/videos/Ebike Half Clips 480.mp4"
           }
         },
         "collection_3BqM9X": {
@@ -156,6 +176,17 @@
             "image": "shopify://shop_images/Fast-As-Fuck-Motorcycle-Steeltown-Patch-Garage.jpg"
           }
         },
+        "collection_QH9xxw": {
+          "type": "collection",
+          "settings": {
+            "collection": "sweaters",
+            "heading": "Sweaters",
+            "description": "",
+            "button_label": "SHOP",
+            "link": "shopify://collections/sweaters",
+            "video": "shopify://files/videos/Tigercrew480-2.mov"
+          }
+        },
         "collection_XiRpmT": {
           "type": "collection",
           "settings": {
@@ -166,17 +197,6 @@
             "link": "shopify://collections/boots-footwear",
             "image": "shopify://shop_images/Steeltown-Socks-Steeltown-Basketball-3.jpg"
           }
-        },
-        "collection_hAWg94": {
-          "type": "collection",
-          "settings": {
-            "collection": "ebikes",
-            "heading": "",
-            "description": "",
-            "button_label": "",
-            "link": "",
-            "video": "shopify://files/videos/Ebike Half Clips 480.mp4"
-          }
         }
       },
       "block_order": [
@@ -184,15 +204,16 @@
         "collection_8JUHRG",
         "collection_WaCzM8",
         "collection_g8UPWK",
+        "text_KCMkLK",
         "collection_Bx3NCL",
         "collection_iDRt6H",
-        "collection_QH9xxw",
+        "collection_hAWg94",
         "collection_3BqM9X",
         "collection_meRUgX",
         "collection_LrwUBY",
         "collection_8Fdzqp",
-        "collection_XiRpmT",
-        "collection_hAWg94"
+        "collection_QH9xxw",
+        "collection_XiRpmT"
       ],
       "name": "Collection list",
       "settings": {
