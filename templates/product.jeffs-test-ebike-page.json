@@ -804,7 +804,7 @@
         "accordion_item_fyr6KX": {
           "type": "accordion_item",
           "settings": {
-            "title": "Geometry",
+            "title": "Dimensions",
             "content": "<p><strong>A:</strong> Frame length - 1800mm</p><p><strong>B:</strong> Wheelbase - 1200mm</p><p><strong>C:</strong> Handle height - 1100mm</p><p><strong>D:</strong> Seat height - 850mm</p>"
           }
         },
