@@ -260,8 +260,8 @@
         "color_text": "rgba(0,0,0,0)",
         "text_heading_color": false,
         "text_border_color": true,
-        "padding_top": 60,
-        "padding_bottom": 60,
+        "padding_top": 0,
+        "padding_bottom": 21,
         "section-bottom-margin": false
       }
     },
@@ -798,20 +798,36 @@
           "type": "accordion_item",
           "settings": {
             "title": "Specifications",
-            "content": "<p><strong>Battery Weight: </strong>9lbs (4kg)  </p><p><strong>Bicycle Weight:</strong> 79lbs (34kg), including battery  </p><p><strong>Charging Time: </strong>8 hours from empty  </p><p><strong>Class 2 Electric Bicycle:</strong> governed at 20mph to meet Class 2 specifications (with 5 speed PAS and thumb activated throttle) </p><p><strong>Distance/Cruising Range:</strong> 35-50 miles on a single charge, with many riders experiencing even greater distances under optimal conditions </p><p><strong>Max load:</strong> 300lb/136Kg </p><p><strong>Motor:</strong> 750W 48V latest generation hub gear brushless BAFANG motor producing 80Nm power </p><p><strong>Size Range:</strong> one size (5’ 6” and above)  </p><p><strong>Standover Height: </strong>31” </p>"
+            "content": "<p><strong>Battery Weight: </strong>9lbs (4kg)  </p><p><strong>Bicycle Weight:</strong> 79lbs (34kg), including battery  </p><p><strong>Charging Time: </strong>8 hours from empty </p><p><strong>Class 2 Electric Bicycle:</strong> governed at 20mph to meet Class 2 specifications (with 5 speed PAS and thumb activated throttle) </p><p><strong>Distance/Cruising Range:</strong> 35-50 miles on a single charge, with many riders experiencing even greater distances under optimal conditions </p><p><strong>Max load:</strong> 300lb/136Kg </p><p><strong>Motor:</strong> 750W 48V latest generation hub gear brushless BAFANG motor producing 80Nm power </p><p><strong>Size Range:</strong> one size (5’ 6” and above)  </p><p><strong>Standover Height: </strong>31” </p>"
+          }
+        },
+        "accordion_item_fyr6KX": {
+          "type": "accordion_item",
+          "settings": {
+            "title": "Geometry",
+            "content": "<p><strong>A:</strong> Frame length - 1800mm</p><p><strong>B:</strong> Wheelbase - 1200mm</p><p><strong>C:</strong> Handle height - 1100mm</p><p><strong>D:</strong> Seat height - 850mm</p>"
+          }
+        },
+        "accordion_item_3XczBt": {
+          "type": "accordion_item",
+          "settings": {
+            "title": "Some assembly required",
+            "content": "<p>Wildsyde eBikes come in a box. And some assembly will be required before you get on the road. If you're handy with a wrench you'll be able to handle it on your own inside of an hour. If you a total newb in the home garage, you can take it to your heart eBike shop and they'll sort ya out.</p><p>For the full assembly video <a href=\"https://www.youtube.com/watch?v=pCjWJrB0Ur8&t=45s\" target=\"_blank\" title=\"https://www.youtube.com/watch?v=pCjWJrB0Ur8&t=45s\">click here</a></p>"
           }
         }
       },
       "block_order": [
         "accordion_item_gEnUHx",
-        "accordion_item_QPFttR"
+        "accordion_item_QPFttR",
+        "accordion_item_fyr6KX",
+        "accordion_item_3XczBt"
       ],
       "name": "Geometry & Specifications",
       "settings": {
-        "title": "Geometry & Specifications",
+        "title": "Geometry & Specs",
         "heading_size": 3,
         "image": "shopify://shop_images/wildsyde-ebikes-beast-geometry.webp",
-        "padding_top": 60,
+        "padding_top": 0,
         "padding_bottom": 0
       }
     },
