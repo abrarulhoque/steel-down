@@ -141,6 +141,11 @@
         "type": "shopify://apps/b4b-variants-products/blocks/variable_init/4b5ec290-6de8-4c3d-b99f-b8721f30ea87",
         "disabled": false,
         "settings": {}
+      },
+      "12657775114333427046": {
+        "type": "shopify://apps/essential-countdown-timer/blocks/app_embed/722378e8-5a70-4eae-aa89-9e44e8e9f6de",
+        "disabled": false,
+        "settings": {}
       }
     }
   },
