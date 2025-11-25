@@ -1,1 +1,722 @@
-{"sections":{"main":{"type":"main-product","blocks":{"vendor":{"type":"vendor","disabled":true,"settings":{"vendor_size":2,"vendor_style":"body"}},"title":{"type":"title","settings":{"title_size":2,"title_size_mobile":3}},"judge_me_reviews_preview_badge_FgXi6h":{"type":"shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8","settings":{}},"price":{"type":"price","settings":{"emphasize":false,"price_label_discount":true,"price_label_discount_type":"percentage","price_label_discount_color":"#c00000"}},"db48bf56-e904-4604-9f21-89d04e9bf249":{"type":"spacer","settings":{"column":"primary","top":"small","bottom":"small","border":true}},"variant_picker":{"type":"variant_picker","settings":{"product_variant_style":"dropdowns","popup_enable":false,"popup_trigger":"Size\nGröße\nTaille\nTaglia\nTalla","popup_label":"Size guide","popup_content":""}},"quantity_selector":{"type":"quantity_selector","disabled":true,"settings":{}},"inventory_notice":{"type":"inventory_notice","settings":{"inventory_limit":7,"align":"left","show_qty":true}},"free_shipping_bar_eTUQGP":{"type":"free-shipping-bar","settings":{"align_left":true,"hide_icon":false}},"buy_buttons":{"type":"buy_buttons","settings":{"show_gift_card_recipient":true,"enable_payment_button":true}},"share":{"type":"share","disabled":true,"settings":{"column":"primary","align":"center"}},"description":{"type":"description","settings":{"column":"secondary","title":"DESCRIPTION","description_collapsible_tab":false,"open":true,"icon":"icon-tags-1","icon_size":2,"color_icon":"#212121","svg-code":""}},"reviews_tab_new_f8WyCG":{"type":"reviews-tab-new","disabled":true,"settings":{"column":"secondary","title":"Reviews","icon":"icon-shield-check","icon_size":2,"color_icon":"#212121","svg-code":"","count":true,"open":false}},"c13717d6-5def-40f5-9684-68f8f103b0d4":{"type":"tab","disabled":true,"settings":{"column":"secondary","title":"Easy 30 Day Returns","icon":"icon-keyboard-arrow-return","icon_size":2,"color_icon":"#212121","svg-code":"","text":"<p><span style=\"text-decoration:underline\">RETURNS & EXCHANGES<\/span><\/p><p>Exchange or returns welcome within 30 days of purchase with recipes or order confirmation. Items must be unworn, unwashed, unused and have the original tags intact. Please note customer is responsible for shipping costs of online returns.<\/p><p>Helmets, headwear, grooming products, drinkware and sale items are final sale.<\/p>","image_width":1000,"align":"center","link":"shopify:\/\/policies\/refund-policy","tab_content":"","open":false}},"663a3435-b014-41e0-916d-1ed9505f5691":{"type":"tab","settings":{"column":"secondary","title":"Fast Shipping Info","icon":"icon-stopwatch","icon_size":2,"color_icon":"#212121","svg-code":"","text":"<p><strong>This product ships from our new US warehouse in Denver, Colorado. <\/strong><\/p><p>All online orders are processed within 2-3 days after the order was placed. You will get a tracking number as soon as we pack it up and put a shipping label on it.<\/p><p>We still have a warehouse in Ontario, Canada from which our 3\/4 Low Profile Helmets ship out of. If you are buying a helmet in addition to other products they will ship and arrive separately.<\/p><p><strong>CUSTOMS, DUTIES & ADDRESS CHANGES<br\/><\/strong>All packages imported to your country may be subject to customs, taxes or other fees. You are responsible for all applicable customs, duties, taxes and fees charged by your government.<\/p>","image_width":1000,"align":"center","link":"","tab_content":"","open":false}},"pickup_Ac6Tgw":{"type":"pickup","settings":{}},"complementary_products_r3xpbM":{"type":"complementary-products","settings":{"heading":"Goes well with","heading_size":3,"display_collapsible_tab":false,"collapsible_tab_open":false,"product_list_limit":10,"image_size":"1:1","image_fit":true,"hide_labels":true,"enable_quick_shop":true}}},"block_order":["vendor","title","judge_me_reviews_preview_badge_FgXi6h","price","db48bf56-e904-4604-9f21-89d04e9bf249","variant_picker","quantity_selector","inventory_notice","free_shipping_bar_eTUQGP","buy_buttons","share","description","reviews_tab_new_f8WyCG","c13717d6-5def-40f5-9684-68f8f103b0d4","663a3435-b014-41e0-916d-1ed9505f5691","pickup_Ac6Tgw","complementary_products_r3xpbM"],"custom_css":[".js-section__product-single {margin-bottom: -60px;}"],"settings":{"style":"classic-border","bg_color":"#f5f5f5","style_clean_mobile":true,"layout-order":"media-left","enable_sticky_content":true,"container":"large","show_breadcrumbs":true,"breadcrumbs_align":"left","enable_zoom":true,"enable_video_looping":false,"product_image_ratio":"1:1","enable_gallery_arrows":true,"thumbnails_position":"left","thumbnails_ratio":"1:1","thumbnails_show_border":false}},"17489570774e959c00":{"type":"apps","blocks":{"judge_me_reviews_review_widget_r3JLgg":{"type":"shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8","settings":{}}},"block_order":["judge_me_reviews_review_widget_r3JLgg"],"settings":{"include_margins":true}},"section_announcement_bar_YcjdUU":{"type":"section-announcement-bar","blocks":{"announcement_HnNgKf":{"type":"announcement","settings":{"icon":"icon-clothes-design-sewing-machine","svg-code":"","text":"Small Batch Made","text_link":"","link":""}},"announcement_6xKVjE":{"type":"announcement","disabled":true,"settings":{"icon":"icon-delivery-truck-3","svg-code":"","text":"Store updates and announcements","text_link":"","link":""}}},"block_order":["announcement_HnNgKf","announcement_6xKVjE"],"settings":{"divider_top":false,"divider_bottom":false,"text_size_desktop":9,"text_size_mobile":5,"text_style":"body","message_color_bg":"#212121","message_color_text":"#ffffff","text_letter_spacing":0,"text_bold":true,"text_capitalize":true,"close_icon":false,"carousel_desktop":false,"auto_carousel":true,"carousel_speed":8,"padding_top":6,"padding_bottom":6,"section-bottom-margin":true}},"9904a28f-6381-41fe-96eb-d4a73d60f0a0":{"type":"section-testimonials","blocks":{"text_KqMMVG":{"type":"text","settings":{"media":"stars-brand","svg-code":"","image_round":true,"text":"<p>I love the super low profile of this helmet. It removed the bobblehead look. The helmet looks awesome, and I plan on getting the white one, too. Great customer service and price. <\/p>","name":"Ron Dinogan","source":"Website Review"}},"text_TGRkzY":{"type":"text","settings":{"media":"stars-brand","svg-code":"","image_round":true,"text":"<p>Sizing chart is on point, arrived safely and fits amazing. No more bobble head, thank you steeltown!! <\/p>","name":"Kyle McGeary","source":"Website Review"}},"template--16580692508926__9904a28f-6381-41fe-96eb-d4a73d60f0a0-1666784019a14d8867-1":{"type":"text","settings":{"media":"stars-brand","svg-code":"","image_round":true,"text":"<p>Finally got the helmet I was looking for, it is truly low profile and classic in style. Perfect fitment and the most important it feel very well when you are riding<\/p>","name":"Lenin","source":"Website Review"}},"template--16580692508926__9904a28f-6381-41fe-96eb-d4a73d60f0a0-1666784019a14d8867-0":{"type":"text","settings":{"media":"stars-brand","svg-code":"","image_round":true,"text":"<p>Much more low profile than anything else I’ve tried. Sizing guide was spot on as well.<\/p>","name":"Brad J","source":"Website Review"}}},"block_order":["text_KqMMVG","text_TGRkzY","template--16580692508926__9904a28f-6381-41fe-96eb-d4a73d60f0a0-1666784019a14d8867-1","template--16580692508926__9904a28f-6381-41fe-96eb-d4a73d60f0a0-1666784019a14d8867-0"],"disabled":true,"settings":{"title":"","style_desktop":"featured-grid","style_mobile":"carousel","link_title":"Shop now","link":"","padding_top":0,"padding_bottom":0}},"section_multi_column_images_mJJGiY":{"type":"section-multi-column-images","blocks":{"text_H6UJaW":{"type":"text","settings":{"image":"shopify:\/\/shop_images\/Classic-3-4-Super-Low-Profile-Motorcycle-Helmet-DOT-Gloss-Black.jpg","title":"Gloss Black","sub_title":"","desc":"","link_title":"BUY GLOSS","link":"https:\/\/steeltowngarage.com\/products\/classic-3-4-motorcycle-helmet?variant=40349400432738"}},"text_dVLDcj":{"type":"text","settings":{"image":"shopify:\/\/shop_images\/Classic-3-4-Super-Low-Profile-Motorcycle-Helmet-DOT.jpg","title":"Dull Black","sub_title":"","desc":"","link_title":"BUY DULL BLACK","link":"https:\/\/steeltowngarage.com\/products\/classic-3-4-motorcycle-helmet?variant=39777907408994"}},"text_6LrK7D":{"type":"text","settings":{"image":"shopify:\/\/shop_images\/Classic-3-4-Super-Low-Profile-Motorcycle-Helmet-DOT-White.jpg","title":"Gloss White","sub_title":"","desc":"","link_title":"BUY WHITE","link":"https:\/\/steeltowngarage.com\/products\/classic-3-4-motorcycle-helmet?variant=39777909637218"}}},"block_order":["text_H6UJaW","text_dVLDcj","text_6LrK7D"],"disabled":true,"settings":{"title":"in stock colours","container":"large","link_title":"","link":"","divider":false,"grid":3,"spacing":3,"alignment":"center","link_style":"hollow","heading_size":3,"image_toggle":true,"image_size":100,"image_padding":0,"image_ratio":"1:1","image_fit":false,"bg_color":"rgba(0,0,0,0)","color_image":"rgba(0,0,0,0)","color_text":"rgba(0,0,0,0)","text_heading_color":false,"text_border_color":true,"grid_mobile":"1","mobile_layout":"carousel","padding_top":0,"padding_bottom":0,"section-bottom-margin":false}},"section_multi_column_images_EUUzbj":{"type":"section-multi-column-images","blocks":{"text_ftLMMg":{"type":"text","settings":{"image":"shopify:\/\/shop_images\/Steeltown-Socks-Steeltown-Basketball-3.jpg","title":"","sub_title":"","desc":"<p>Our super soft yet durable proprietary blend of cotton, spandex and elastane will give you all-day comfort.<\/p>","link_title":"","link":""}},"text_LUWPEd":{"type":"text","settings":{"image":"shopify:\/\/shop_images\/Free-Spirits-Never-Die-Black-Socks-Steeltown-Tattoo.jpg","title":"","sub_title":"","desc":"<p>70% Cotton 20% Spandex 10% Elastane<br\/>One Size Fits Most<\/p>","link_title":"","link":""}},"text_wcLe8D":{"type":"text","settings":{"image":"shopify:\/\/shop_images\/Gold-Star-Socks-Steeltown-Skate-1.jpg","title":"","sub_title":"","desc":"","link_title":"","link":""}},"text_yhKJT8":{"type":"text","settings":{"image":"shopify:\/\/shop_images\/Fast-As-Fuck-Socks-Steeltown-Skate-5.jpg","title":"","sub_title":"","desc":"","link_title":"","link":""}}},"block_order":["text_ftLMMg","text_LUWPEd","text_wcLe8D","text_yhKJT8"],"settings":{"title":"","container":"large","link_title":"Learn more","link":"","divider":false,"grid":2,"spacing":3,"alignment":"left","link_style":"hollow","heading_size":2,"image_toggle":true,"image_size":100,"image_padding":0,"image_ratio":"1:1","image_fit":false,"bg_color":"rgba(0,0,0,0)","color_image":"rgba(0,0,0,0)","color_text":"rgba(0,0,0,0)","text_heading_color":false,"text_border_color":true,"grid_mobile":"1","mobile_layout":"carousel","padding_top":30,"padding_bottom":0,"section-bottom-margin":false}},"section_image_text_banner_WTNGiA":{"type":"section-image-text-banner","blocks":{"text_4hMgm4":{"type":"text","settings":{"text":"<p>HEAVY COTTON. BUILT TO LAST.<\/p>","text_size":6,"text_width":80,"text_size_mobile":3,"text_style":"heading"}}},"block_order":["text_4hMgm4"],"settings":{"section_height":"small","section_height_mobile":"small","section_width":"contained","content_alignment":"center","content_color":"#ffffff","content_heading_color":false,"bg_color":"rgba(0,0,0,0)","bg_image":"shopify:\/\/shop_images\/Gold-Star-Socks-Steeltown-Skate-3.jpg","overlay_color":"#000000","overlay_strength":30,"section-bottom-margin":false}},"section_image_with_text_pXQ4Hq":{"type":"section-image-with-text","blocks":{"image_yeQcEd":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/Socks-best-Pack-Landing.jpg","title":"Best Seller 3 Pack","desc":"<p>These are our all time Best Selling socks. So we've compiled into a handy 3-pack to save you a couple bucks and make online shopping even easier.<\/p>","horizontal_align":"left","link_title":"Buy Now","link":"https:\/\/steeltowngarage.com\/products\/steeltown-socks-1?variant=40854708256866","bg_color_block":"#f5f5f5","bg_color_content":"#f5f5f5","color_text":"#212121","text_heading_color":false,"text_border_color":true}},"image_NFmd9x":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/Socks-ss24-Pack-Landing.jpg","title":"SS24 3-Pack","desc":"<p>These are our brand new socks for this spring \/ summer season. Buy them as a 3-pack and save $5.<\/p>","horizontal_align":"left","link_title":"BUY NOW","link":"https:\/\/steeltowngarage.com\/products\/steeltown-socks-1?variant=40854708420706","bg_color_block":"rgba(0,0,0,0)","bg_color_content":"#ffffff","color_text":"#212121","text_heading_color":false,"text_border_color":true}}},"block_order":["image_yeQcEd","image_NFmd9x"],"settings":{"container":"large","block_spacing":2,"image_ratio":"1:1","block_layout":"2\/3","block_align":"left","vertical_align":"middle","heading_size":2,"link_style":"hollow","padding_top":0,"padding_bottom":0,"section-bottom-margin":false}},"section_collection_list_WnmPhK":{"type":"section-collection-list","blocks":{"media_RGdb78":{"type":"media","settings":{"heading":"Premium Riding Gear","text":"Designed for free spirits","link_text":"","link":"","button_style":"c-btn c-btn--hollow","video":"shopify:\/\/files\/videos\/Cycles-Web-Vid-720-1.mp4","alignment":"bottom-left","text_alignment":"left","color_text":"#ffffff","color_overlay":"#000000","color_overlay_strength":10,"color_default_heading":false,"color_default_border":false}},"collection_3Hi3mg":{"type":"collection","settings":{"collection":"","heading":"Riding Glasses","description":"","button_label":"Shop Now","link":"shopify:\/\/products\/motorcycle-riding-glasses","image":"shopify:\/\/shop_images\/Steeltown-Motorcycle-Riding-Glasses-Tinted-Smoked-Lansplitter-2.jpg"}},"collection_cmkAV7":{"type":"collection","settings":{"collection":"","heading":"Riding Gloves","description":"","button_label":"Shop Now","link":"shopify:\/\/products\/steeltown-garage-co-armoured-gloves","image":"shopify:\/\/shop_images\/steeltown-riding-gloves-homepage.jpg"}}},"block_order":["media_RGdb78","collection_3Hi3mg","collection_cmkAV7"],"settings":{"title":"","desc":"","divider":false,"heading_alignment":"center","section_width":"large","grid":3,"spacing":3,"enable_carousel_desktop":true,"enable_carousel_mobile":true,"title_size":1,"image_ratio":"3:4","button_style":"c-btn c-btn--hollow","alignment":"bottom-left","text_alignment":"center","visibility_heading":true,"visibility_border":false,"visibility_count":false,"visibility_description":false,"visibility_button":true,"hover_options":"hover-button","color_text":"#ffffff","color_overlay":"#000000","color_overlay_strength":10,"color_default_heading":false,"color_default_border":true,"link_title":"View all","link":"","section_link_style":"link link--arrow","padding_top":0,"padding_bottom":60}},"section_newsletter_8BGBaX":{"type":"section-newsletter","settings":{"divider":false,"section_width":"contained","newsletter_bg":"#f2f2f2","newsletter_style":"dark","default_title_color":false,"text_border_color":true,"section_newsletter_title":"GET 10% OFF YOUR SOCKS","section_newsletter_desc":"<p>Join our email family to receive exclusive offers - <strong>like 10% OFF your first socks order<br\/><\/strong>(Discount code will be emailed to you. Check your junk mail.)<\/p>","padding_top":0,"padding_bottom":0,"section-bottom-margin":true}},"product-recommendations":{"type":"section-product-recommendations","disabled":true,"settings":{"related_title":"Other Stuff You'll Love","section_width":"large","maximum_products":6,"grid":3,"grid_mobile":"1","padding_top":0,"padding_bottom":0}}},"order":["main","17489570774e959c00","section_announcement_bar_YcjdUU","9904a28f-6381-41fe-96eb-d4a73d60f0a0","section_multi_column_images_mJJGiY","section_multi_column_images_EUUzbj","section_image_text_banner_WTNGiA","section_image_with_text_pXQ4Hq","section_collection_list_WnmPhK","section_newsletter_8BGBaX","product-recommendations"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "vendor",
+          "disabled": true,
+          "settings": {
+            "vendor_size": 2,
+            "vendor_style": "body"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": 2,
+            "title_size_mobile": 3
+          }
+        },
+        "judge_me_reviews_preview_badge_FgXi6h": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "emphasize": false,
+            "price_label_discount": true,
+            "price_label_discount_type": "percentage",
+            "price_label_discount_color": "#c00000"
+          }
+        },
+        "essential_countdown_timer_app_block_63dVdh": {
+          "type": "shopify://apps/essential-countdown-timer/blocks/app-block/722378e8-5a70-4eae-aa89-9e44e8e9f6de",
+          "settings": {
+            "id": "cmidt0hbx00m83tjbd5nrzuoa"
+          }
+        },
+        "db48bf56-e904-4604-9f21-89d04e9bf249": {
+          "type": "spacer",
+          "settings": {
+            "column": "primary",
+            "top": "small",
+            "bottom": "small",
+            "border": true
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "product_variant_style": "dropdowns",
+            "popup_enable": false,
+            "popup_trigger": "Size\nGröße\nTaille\nTaglia\nTalla",
+            "popup_label": "Size guide",
+            "popup_content": ""
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "inventory_notice": {
+          "type": "inventory_notice",
+          "settings": {
+            "inventory_limit": 7,
+            "align": "left",
+            "show_qty": true
+          }
+        },
+        "free_shipping_bar_eTUQGP": {
+          "type": "free-shipping-bar",
+          "settings": {
+            "align_left": true,
+            "hide_icon": false
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_gift_card_recipient": true,
+            "enable_payment_button": true
+          }
+        },
+        "share": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "column": "primary",
+            "align": "center"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "column": "secondary",
+            "title": "DESCRIPTION",
+            "description_collapsible_tab": false,
+            "open": true,
+            "icon": "icon-tags-1",
+            "icon_size": 2,
+            "color_icon": "#212121",
+            "svg-code": ""
+          }
+        },
+        "reviews_tab_new_f8WyCG": {
+          "type": "reviews-tab-new",
+          "disabled": true,
+          "settings": {
+            "column": "secondary",
+            "title": "Reviews",
+            "icon": "icon-shield-check",
+            "icon_size": 2,
+            "color_icon": "#212121",
+            "svg-code": "",
+            "count": true,
+            "open": false
+          }
+        },
+        "c13717d6-5def-40f5-9684-68f8f103b0d4": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "column": "secondary",
+            "title": "Easy 30 Day Returns",
+            "icon": "icon-keyboard-arrow-return",
+            "icon_size": 2,
+            "color_icon": "#212121",
+            "svg-code": "",
+            "text": "<p><span style=\"text-decoration:underline\">RETURNS & EXCHANGES</span></p><p>Exchange or returns welcome within 30 days of purchase with recipes or order confirmation. Items must be unworn, unwashed, unused and have the original tags intact. Please note customer is responsible for shipping costs of online returns.</p><p>Helmets, headwear, grooming products, drinkware and sale items are final sale.</p>",
+            "image_width": 1000,
+            "align": "center",
+            "link": "shopify://policies/refund-policy",
+            "tab_content": "",
+            "open": false
+          }
+        },
+        "663a3435-b014-41e0-916d-1ed9505f5691": {
+          "type": "tab",
+          "settings": {
+            "column": "secondary",
+            "title": "Fast Shipping Info",
+            "icon": "icon-stopwatch",
+            "icon_size": 2,
+            "color_icon": "#212121",
+            "svg-code": "",
+            "text": "<p><strong>This product ships from our new US warehouse in Denver, Colorado. </strong></p><p>All online orders are processed within 2-3 days after the order was placed. You will get a tracking number as soon as we pack it up and put a shipping label on it.</p><p>We still have a warehouse in Ontario, Canada from which our 3/4 Low Profile Helmets ship out of. If you are buying a helmet in addition to other products they will ship and arrive separately.</p><p><strong>CUSTOMS, DUTIES & ADDRESS CHANGES<br/></strong>All packages imported to your country may be subject to customs, taxes or other fees. You are responsible for all applicable customs, duties, taxes and fees charged by your government.</p>",
+            "image_width": 1000,
+            "align": "center",
+            "link": "",
+            "tab_content": "",
+            "open": false
+          }
+        },
+        "pickup_Ac6Tgw": {
+          "type": "pickup",
+          "settings": {}
+        },
+        "complementary_products_r3xpbM": {
+          "type": "complementary-products",
+          "settings": {
+            "heading": "Goes well with",
+            "heading_size": 3,
+            "display_collapsible_tab": false,
+            "collapsible_tab_open": false,
+            "product_list_limit": 10,
+            "image_size": "1:1",
+            "image_fit": true,
+            "hide_labels": true,
+            "enable_quick_shop": true
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "judge_me_reviews_preview_badge_FgXi6h",
+        "price",
+        "essential_countdown_timer_app_block_63dVdh",
+        "db48bf56-e904-4604-9f21-89d04e9bf249",
+        "variant_picker",
+        "quantity_selector",
+        "inventory_notice",
+        "free_shipping_bar_eTUQGP",
+        "buy_buttons",
+        "share",
+        "description",
+        "reviews_tab_new_f8WyCG",
+        "c13717d6-5def-40f5-9684-68f8f103b0d4",
+        "663a3435-b014-41e0-916d-1ed9505f5691",
+        "pickup_Ac6Tgw",
+        "complementary_products_r3xpbM"
+      ],
+      "custom_css": [
+        ".js-section__product-single {margin-bottom: -60px;}"
+      ],
+      "settings": {
+        "style": "classic-border",
+        "bg_color": "#f5f5f5",
+        "style_clean_mobile": true,
+        "layout-order": "media-left",
+        "enable_sticky_content": true,
+        "container": "large",
+        "show_breadcrumbs": true,
+        "breadcrumbs_align": "left",
+        "enable_zoom": true,
+        "enable_video_looping": false,
+        "product_image_ratio": "1:1",
+        "enable_gallery_arrows": true,
+        "thumbnails_position": "left",
+        "thumbnails_ratio": "1:1",
+        "thumbnails_show_border": false
+      }
+    },
+    "17489570774e959c00": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_r3JLgg": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_r3JLgg"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "section_announcement_bar_YcjdUU": {
+      "type": "section-announcement-bar",
+      "blocks": {
+        "announcement_HnNgKf": {
+          "type": "announcement",
+          "settings": {
+            "icon": "icon-clothes-design-sewing-machine",
+            "svg-code": "",
+            "text": "Small Batch Made",
+            "text_link": "",
+            "link": ""
+          }
+        },
+        "announcement_6xKVjE": {
+          "type": "announcement",
+          "disabled": true,
+          "settings": {
+            "icon": "icon-delivery-truck-3",
+            "svg-code": "",
+            "text": "Store updates and announcements",
+            "text_link": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement_HnNgKf",
+        "announcement_6xKVjE"
+      ],
+      "settings": {
+        "divider_top": false,
+        "divider_bottom": false,
+        "text_size_desktop": 9,
+        "text_size_mobile": 5,
+        "text_style": "body",
+        "message_color_bg": "#212121",
+        "message_color_text": "#ffffff",
+        "text_letter_spacing": 0,
+        "text_bold": true,
+        "text_capitalize": true,
+        "close_icon": false,
+        "carousel_desktop": false,
+        "auto_carousel": true,
+        "carousel_speed": 8,
+        "padding_top": 6,
+        "padding_bottom": 6,
+        "section-bottom-margin": true
+      }
+    },
+    "9904a28f-6381-41fe-96eb-d4a73d60f0a0": {
+      "type": "section-testimonials",
+      "blocks": {
+        "text_KqMMVG": {
+          "type": "text",
+          "settings": {
+            "media": "stars-brand",
+            "svg-code": "",
+            "image_round": true,
+            "text": "<p>I love the super low profile of this helmet. It removed the bobblehead look. The helmet looks awesome, and I plan on getting the white one, too. Great customer service and price. </p>",
+            "name": "Ron Dinogan",
+            "source": "Website Review"
+          }
+        },
+        "text_TGRkzY": {
+          "type": "text",
+          "settings": {
+            "media": "stars-brand",
+            "svg-code": "",
+            "image_round": true,
+            "text": "<p>Sizing chart is on point, arrived safely and fits amazing. No more bobble head, thank you steeltown!! </p>",
+            "name": "Kyle McGeary",
+            "source": "Website Review"
+          }
+        },
+        "template--16580692508926__9904a28f-6381-41fe-96eb-d4a73d60f0a0-1666784019a14d8867-1": {
+          "type": "text",
+          "settings": {
+            "media": "stars-brand",
+            "svg-code": "",
+            "image_round": true,
+            "text": "<p>Finally got the helmet I was looking for, it is truly low profile and classic in style. Perfect fitment and the most important it feel very well when you are riding</p>",
+            "name": "Lenin",
+            "source": "Website Review"
+          }
+        },
+        "template--16580692508926__9904a28f-6381-41fe-96eb-d4a73d60f0a0-1666784019a14d8867-0": {
+          "type": "text",
+          "settings": {
+            "media": "stars-brand",
+            "svg-code": "",
+            "image_round": true,
+            "text": "<p>Much more low profile than anything else I’ve tried. Sizing guide was spot on as well.</p>",
+            "name": "Brad J",
+            "source": "Website Review"
+          }
+        }
+      },
+      "block_order": [
+        "text_KqMMVG",
+        "text_TGRkzY",
+        "template--16580692508926__9904a28f-6381-41fe-96eb-d4a73d60f0a0-1666784019a14d8867-1",
+        "template--16580692508926__9904a28f-6381-41fe-96eb-d4a73d60f0a0-1666784019a14d8867-0"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "style_desktop": "featured-grid",
+        "style_mobile": "carousel",
+        "link_title": "Shop now",
+        "link": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_multi_column_images_mJJGiY": {
+      "type": "section-multi-column-images",
+      "blocks": {
+        "text_H6UJaW": {
+          "type": "text",
+          "settings": {
+            "image": "shopify://shop_images/Classic-3-4-Super-Low-Profile-Motorcycle-Helmet-DOT-Gloss-Black.jpg",
+            "title": "Gloss Black",
+            "sub_title": "",
+            "desc": "",
+            "link_title": "BUY GLOSS",
+            "link": "https://steeltowngarage.com/products/classic-3-4-motorcycle-helmet?variant=40349400432738"
+          }
+        },
+        "text_dVLDcj": {
+          "type": "text",
+          "settings": {
+            "image": "shopify://shop_images/Classic-3-4-Super-Low-Profile-Motorcycle-Helmet-DOT.jpg",
+            "title": "Dull Black",
+            "sub_title": "",
+            "desc": "",
+            "link_title": "BUY DULL BLACK",
+            "link": "https://steeltowngarage.com/products/classic-3-4-motorcycle-helmet?variant=39777907408994"
+          }
+        },
+        "text_6LrK7D": {
+          "type": "text",
+          "settings": {
+            "image": "shopify://shop_images/Classic-3-4-Super-Low-Profile-Motorcycle-Helmet-DOT-White.jpg",
+            "title": "Gloss White",
+            "sub_title": "",
+            "desc": "",
+            "link_title": "BUY WHITE",
+            "link": "https://steeltowngarage.com/products/classic-3-4-motorcycle-helmet?variant=39777909637218"
+          }
+        }
+      },
+      "block_order": [
+        "text_H6UJaW",
+        "text_dVLDcj",
+        "text_6LrK7D"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "in stock colours",
+        "container": "large",
+        "link_title": "",
+        "link": "",
+        "divider": false,
+        "grid": 3,
+        "spacing": 3,
+        "alignment": "center",
+        "link_style": "hollow",
+        "heading_size": 3,
+        "image_toggle": true,
+        "image_size": 100,
+        "image_padding": 0,
+        "image_ratio": "1:1",
+        "image_fit": false,
+        "bg_color": "rgba(0,0,0,0)",
+        "color_image": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "text_heading_color": false,
+        "text_border_color": true,
+        "grid_mobile": "1",
+        "mobile_layout": "carousel",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "section-bottom-margin": false
+      }
+    },
+    "section_multi_column_images_EUUzbj": {
+      "type": "section-multi-column-images",
+      "blocks": {
+        "text_ftLMMg": {
+          "type": "text",
+          "settings": {
+            "image": "shopify://shop_images/Steeltown-Socks-Steeltown-Basketball-3.jpg",
+            "title": "",
+            "sub_title": "",
+            "desc": "<p>Our super soft yet durable proprietary blend of cotton, spandex and elastane will give you all-day comfort.</p>",
+            "link_title": "",
+            "link": ""
+          }
+        },
+        "text_LUWPEd": {
+          "type": "text",
+          "settings": {
+            "image": "shopify://shop_images/Free-Spirits-Never-Die-Black-Socks-Steeltown-Tattoo.jpg",
+            "title": "",
+            "sub_title": "",
+            "desc": "<p>70% Cotton 20% Spandex 10% Elastane<br/>One Size Fits Most</p>",
+            "link_title": "",
+            "link": ""
+          }
+        },
+        "text_wcLe8D": {
+          "type": "text",
+          "settings": {
+            "image": "shopify://shop_images/Gold-Star-Socks-Steeltown-Skate-1.jpg",
+            "title": "",
+            "sub_title": "",
+            "desc": "",
+            "link_title": "",
+            "link": ""
+          }
+        },
+        "text_yhKJT8": {
+          "type": "text",
+          "settings": {
+            "image": "shopify://shop_images/Fast-As-Fuck-Socks-Steeltown-Skate-5.jpg",
+            "title": "",
+            "sub_title": "",
+            "desc": "",
+            "link_title": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_ftLMMg",
+        "text_LUWPEd",
+        "text_wcLe8D",
+        "text_yhKJT8"
+      ],
+      "settings": {
+        "title": "",
+        "container": "large",
+        "link_title": "Learn more",
+        "link": "",
+        "divider": false,
+        "grid": 2,
+        "spacing": 3,
+        "alignment": "left",
+        "link_style": "hollow",
+        "heading_size": 2,
+        "image_toggle": true,
+        "image_size": 100,
+        "image_padding": 0,
+        "image_ratio": "1:1",
+        "image_fit": false,
+        "bg_color": "rgba(0,0,0,0)",
+        "color_image": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "text_heading_color": false,
+        "text_border_color": true,
+        "grid_mobile": "1",
+        "mobile_layout": "carousel",
+        "padding_top": 30,
+        "padding_bottom": 0,
+        "section-bottom-margin": false
+      }
+    },
+    "section_image_text_banner_WTNGiA": {
+      "type": "section-image-text-banner",
+      "blocks": {
+        "text_4hMgm4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>HEAVY COTTON. BUILT TO LAST.</p>",
+            "text_size": 6,
+            "text_width": 80,
+            "text_size_mobile": 3,
+            "text_style": "heading"
+          }
+        }
+      },
+      "block_order": [
+        "text_4hMgm4"
+      ],
+      "settings": {
+        "section_height": "small",
+        "section_height_mobile": "small",
+        "section_width": "contained",
+        "content_alignment": "center",
+        "content_color": "#ffffff",
+        "content_heading_color": false,
+        "bg_color": "rgba(0,0,0,0)",
+        "bg_image": "shopify://shop_images/Gold-Star-Socks-Steeltown-Skate-3.jpg",
+        "overlay_color": "#000000",
+        "overlay_strength": 30,
+        "section-bottom-margin": false
+      }
+    },
+    "section_image_with_text_pXQ4Hq": {
+      "type": "section-image-with-text",
+      "blocks": {
+        "image_yeQcEd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Socks-best-Pack-Landing.jpg",
+            "title": "Best Seller 3 Pack",
+            "desc": "<p>These are our all time Best Selling socks. So we've compiled into a handy 3-pack to save you a couple bucks and make online shopping even easier.</p>",
+            "horizontal_align": "left",
+            "link_title": "Buy Now",
+            "link": "https://steeltowngarage.com/products/steeltown-socks-1?variant=40854708256866",
+            "bg_color_block": "#f5f5f5",
+            "bg_color_content": "#f5f5f5",
+            "color_text": "#212121",
+            "text_heading_color": false,
+            "text_border_color": true
+          }
+        },
+        "image_NFmd9x": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Socks-ss24-Pack-Landing.jpg",
+            "title": "SS24 3-Pack",
+            "desc": "<p>These are our brand new socks for this spring / summer season. Buy them as a 3-pack and save $5.</p>",
+            "horizontal_align": "left",
+            "link_title": "BUY NOW",
+            "link": "https://steeltowngarage.com/products/steeltown-socks-1?variant=40854708420706",
+            "bg_color_block": "rgba(0,0,0,0)",
+            "bg_color_content": "#ffffff",
+            "color_text": "#212121",
+            "text_heading_color": false,
+            "text_border_color": true
+          }
+        }
+      },
+      "block_order": [
+        "image_yeQcEd",
+        "image_NFmd9x"
+      ],
+      "settings": {
+        "container": "large",
+        "block_spacing": 2,
+        "image_ratio": "1:1",
+        "block_layout": "2/3",
+        "block_align": "left",
+        "vertical_align": "middle",
+        "heading_size": 2,
+        "link_style": "hollow",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "section-bottom-margin": false
+      }
+    },
+    "section_collection_list_WnmPhK": {
+      "type": "section-collection-list",
+      "blocks": {
+        "media_RGdb78": {
+          "type": "media",
+          "settings": {
+            "heading": "Premium Riding Gear",
+            "text": "Designed for free spirits",
+            "link_text": "",
+            "link": "",
+            "button_style": "c-btn c-btn--hollow",
+            "video": "shopify://files/videos/Cycles-Web-Vid-720-1.mp4",
+            "alignment": "bottom-left",
+            "text_alignment": "left",
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "color_overlay_strength": 10,
+            "color_default_heading": false,
+            "color_default_border": false
+          }
+        },
+        "collection_3Hi3mg": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "heading": "Riding Glasses",
+            "description": "",
+            "button_label": "Shop Now",
+            "link": "shopify://products/motorcycle-riding-glasses",
+            "image": "shopify://shop_images/Steeltown-Motorcycle-Riding-Glasses-Tinted-Smoked-Lansplitter-2.jpg"
+          }
+        },
+        "collection_cmkAV7": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "heading": "Riding Gloves",
+            "description": "",
+            "button_label": "Shop Now",
+            "link": "shopify://products/steeltown-garage-co-armoured-gloves",
+            "image": "shopify://shop_images/steeltown-riding-gloves-homepage.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "media_RGdb78",
+        "collection_3Hi3mg",
+        "collection_cmkAV7"
+      ],
+      "settings": {
+        "title": "",
+        "desc": "",
+        "divider": false,
+        "heading_alignment": "center",
+        "section_width": "large",
+        "grid": 3,
+        "spacing": 3,
+        "enable_carousel_desktop": true,
+        "enable_carousel_mobile": true,
+        "title_size": 1,
+        "image_ratio": "3:4",
+        "button_style": "c-btn c-btn--hollow",
+        "alignment": "bottom-left",
+        "text_alignment": "center",
+        "visibility_heading": true,
+        "visibility_border": false,
+        "visibility_count": false,
+        "visibility_description": false,
+        "visibility_button": true,
+        "hover_options": "hover-button",
+        "color_text": "#ffffff",
+        "color_overlay": "#000000",
+        "color_overlay_strength": 10,
+        "color_default_heading": false,
+        "color_default_border": true,
+        "link_title": "View all",
+        "link": "",
+        "section_link_style": "link link--arrow",
+        "padding_top": 0,
+        "padding_bottom": 60
+      }
+    },
+    "section_newsletter_8BGBaX": {
+      "type": "section-newsletter",
+      "settings": {
+        "divider": false,
+        "section_width": "contained",
+        "newsletter_bg": "#f2f2f2",
+        "newsletter_style": "dark",
+        "default_title_color": false,
+        "text_border_color": true,
+        "section_newsletter_title": "GET 10% OFF YOUR SOCKS",
+        "section_newsletter_desc": "<p>Join our email family to receive exclusive offers - <strong>like 10% OFF your first socks order<br/></strong>(Discount code will be emailed to you. Check your junk mail.)</p>",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "section-bottom-margin": true
+      }
+    },
+    "product-recommendations": {
+      "type": "section-product-recommendations",
+      "disabled": true,
+      "settings": {
+        "related_title": "Other Stuff You'll Love",
+        "section_width": "large",
+        "maximum_products": 6,
+        "grid": 3,
+        "grid_mobile": "1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "17489570774e959c00",
+    "section_announcement_bar_YcjdUU",
+    "9904a28f-6381-41fe-96eb-d4a73d60f0a0",
+    "section_multi_column_images_mJJGiY",
+    "section_multi_column_images_EUUzbj",
+    "section_image_text_banner_WTNGiA",
+    "section_image_with_text_pXQ4Hq",
+    "section_collection_list_WnmPhK",
+    "section_newsletter_8BGBaX",
+    "product-recommendations"
+  ]
+}
