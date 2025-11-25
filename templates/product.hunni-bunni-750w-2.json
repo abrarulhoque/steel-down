@@ -620,6 +620,58 @@
         "padding_bottom": 64
       }
     },
+    "9904a28f-6381-41fe-96eb-d4a73d60f0a0": {
+      "type": "section-testimonials",
+      "blocks": {
+        "text_TGRkzY": {
+          "type": "text",
+          "settings": {
+            "media": "stars-brand",
+            "svg-code": "",
+            "image_round": true,
+            "text": "<p>Wildsyde Hunni Bunni is SO fun for my mountain town lifestyle. Modern-day beach cruiser takes simplicity to the next level and beyond. It is perfect for the coasting roads and paths as well as the more challenging mountainside streets here in Park City.</p>",
+            "name": "Merilee Johnson",
+            "source": "Verified Buyer"
+          }
+        },
+        "template--16580692508926__9904a28f-6381-41fe-96eb-d4a73d60f0a0-1666784019a14d8867-1": {
+          "type": "text",
+          "settings": {
+            "media": "stars-brand",
+            "svg-code": "",
+            "image_round": true,
+            "text": "<p>The bikes are so fun. I got the Hunni Bunni and husband got the Shadow. Love them and looking forward to pedaling - or not pedaling ;-) all over the valley!</p>",
+            "name": "Lori",
+            "source": "Verified Buyer"
+          }
+        },
+        "template--16580692508926__9904a28f-6381-41fe-96eb-d4a73d60f0a0-1666784019a14d8867-0": {
+          "type": "text",
+          "settings": {
+            "media": "stars-brand",
+            "svg-code": "",
+            "image_round": true,
+            "text": "<p>I purchased the Wildsyde Hunni Bunni for my wife and she absolutely loves it....now we can finally ride together. We've enjoyed taking trail rides and simply packing a picnic and riding down to the James River. Every time we're out she always gets compliments on the bike.</p>",
+            "name": "Michael Pelletier",
+            "source": "Verified Buyer"
+          }
+        }
+      },
+      "block_order": [
+        "text_TGRkzY",
+        "template--16580692508926__9904a28f-6381-41fe-96eb-d4a73d60f0a0-1666784019a14d8867-1",
+        "template--16580692508926__9904a28f-6381-41fe-96eb-d4a73d60f0a0-1666784019a14d8867-0"
+      ],
+      "settings": {
+        "title": "CUSTOMER FEEDBACK",
+        "style_desktop": "grid",
+        "style_mobile": "carousel",
+        "link_title": "Shop now",
+        "link": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "section_geometry_specifications_NbqTRF": {
       "type": "section-geometry-specifications",
       "blocks": {
@@ -706,58 +758,6 @@
         "padding_top": 24,
         "padding_bottom": 24,
         "section-bottom-margin": false
-      }
-    },
-    "9904a28f-6381-41fe-96eb-d4a73d60f0a0": {
-      "type": "section-testimonials",
-      "blocks": {
-        "text_TGRkzY": {
-          "type": "text",
-          "settings": {
-            "media": "stars-brand",
-            "svg-code": "",
-            "image_round": true,
-            "text": "<p>Wildsyde Hunni Bunni is SO fun for my mountain town lifestyle. Modern-day beach cruiser takes simplicity to the next level and beyond. It is perfect for the coasting roads and paths as well as the more challenging mountainside streets here in Park City.</p>",
-            "name": "Merilee Johnson",
-            "source": "Verified Buyer"
-          }
-        },
-        "template--16580692508926__9904a28f-6381-41fe-96eb-d4a73d60f0a0-1666784019a14d8867-1": {
-          "type": "text",
-          "settings": {
-            "media": "stars-brand",
-            "svg-code": "",
-            "image_round": true,
-            "text": "<p>The bikes are so fun. I got the Hunni Bunni and husband got the Shadow. Love them and looking forward to pedaling - or not pedaling ;-) all over the valley!</p>",
-            "name": "Lori",
-            "source": "Verified Buyer"
-          }
-        },
-        "template--16580692508926__9904a28f-6381-41fe-96eb-d4a73d60f0a0-1666784019a14d8867-0": {
-          "type": "text",
-          "settings": {
-            "media": "stars-brand",
-            "svg-code": "",
-            "image_round": true,
-            "text": "<p>I purchased the Wildsyde Hunni Bunni for my wife and she absolutely loves it....now we can finally ride together. We've enjoyed taking trail rides and simply packing a picnic and riding down to the James River. Every time we're out she always gets compliments on the bike.</p>",
-            "name": "Michael Pelletier",
-            "source": "Verified Buyer"
-          }
-        }
-      },
-      "block_order": [
-        "text_TGRkzY",
-        "template--16580692508926__9904a28f-6381-41fe-96eb-d4a73d60f0a0-1666784019a14d8867-1",
-        "template--16580692508926__9904a28f-6381-41fe-96eb-d4a73d60f0a0-1666784019a14d8867-0"
-      ],
-      "settings": {
-        "title": "CUSTOMER FEEDBACK",
-        "style_desktop": "grid",
-        "style_mobile": "carousel",
-        "link_title": "Shop now",
-        "link": "",
-        "padding_top": 0,
-        "padding_bottom": 0
       }
     },
     "5a818a60-e694-4eac-a33f-5ce701e894b0": {
@@ -877,9 +877,9 @@
     "section_lifestyle_gallery_TTbqxt",
     "section_rider_height_qktdTB",
     "section_key_features_gLDH7A",
+    "9904a28f-6381-41fe-96eb-d4a73d60f0a0",
     "section_geometry_specifications_NbqTRF",
     "section_feature_benefits_AkTQUR",
-    "9904a28f-6381-41fe-96eb-d4a73d60f0a0",
     "5a818a60-e694-4eac-a33f-5ce701e894b0",
     "product-recommendations",
     "1756439511148f4dec",
