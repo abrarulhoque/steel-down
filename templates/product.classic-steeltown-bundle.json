@@ -57,6 +57,12 @@
             "price_label_discount_color": "#c00000"
           }
         },
+        "essential_countdown_timer_app_block_PywPHL": {
+          "type": "shopify://apps/essential-countdown-timer/blocks/app-block/722378e8-5a70-4eae-aa89-9e44e8e9f6de",
+          "settings": {
+            "id": "cmidt0hbx00m83tjbd5nrzuoa"
+          }
+        },
         "db48bf56-e904-4604-9f21-89d04e9bf249": {
           "type": "spacer",
           "settings": {
@@ -224,6 +230,7 @@
         "judge_me_reviews_preview_badge_mFErDk",
         "bundle_savings_9n7cDq",
         "price",
+        "essential_countdown_timer_app_block_PywPHL",
         "db48bf56-e904-4604-9f21-89d04e9bf249",
         "variant_picker",
         "quantity_selector",
