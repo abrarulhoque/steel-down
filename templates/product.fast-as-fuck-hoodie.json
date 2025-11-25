@@ -40,6 +40,12 @@
             "price_label_discount_color": "#c00000"
           }
         },
+        "essential_countdown_timer_app_block_6GHtzP": {
+          "type": "shopify://apps/essential-countdown-timer/blocks/app-block/722378e8-5a70-4eae-aa89-9e44e8e9f6de",
+          "settings": {
+            "id": "cmidt0hbx00m83tjbd5nrzuoa"
+          }
+        },
         "db48bf56-e904-4604-9f21-89d04e9bf249": {
           "type": "spacer",
           "settings": {
@@ -179,6 +185,7 @@
         "title",
         "judge_me_reviews_preview_badge_68fPkD",
         "price",
+        "essential_countdown_timer_app_block_6GHtzP",
         "db48bf56-e904-4604-9f21-89d04e9bf249",
         "variant_picker",
         "quantity_selector",
@@ -518,6 +525,93 @@
         "section-bottom-margin": true
       }
     },
+    "section_product_mbC6aw": {
+      "type": "section-product",
+      "blocks": {
+        "vendor_nkVzNe": {
+          "type": "vendor",
+          "disabled": true,
+          "settings": {
+            "vendor_size": 2,
+            "vendor_style": "body"
+          }
+        },
+        "title_cFJqba": {
+          "type": "title",
+          "settings": {
+            "title_size": 3,
+            "title_size_mobile": 3
+          }
+        },
+        "price_mc3CdG": {
+          "type": "price",
+          "settings": {
+            "price_label_discount": true,
+            "price_label_discount_type": "text",
+            "price_label_discount_color": "#c00000"
+          }
+        },
+        "spacer_La63hF": {
+          "type": "spacer",
+          "settings": {
+            "top": "small",
+            "bottom": "small",
+            "border": true
+          }
+        },
+        "description_CtYxPj": {
+          "type": "description",
+          "settings": {
+            "desc_text": "<p>Save over 20% when you buy the Fast As Fuck Bundle. You get a Heavyweight Hoodie, an old school Trucker hat and a sticker to throw anywhere you'd like.</p><p><strong>FREE SHIPPING IN NORTH AMERICA</strong></p>"
+          }
+        },
+        "variant_picker_VYqQDh": {
+          "type": "variant_picker",
+          "disabled": true,
+          "settings": {
+            "product_variant_style": "swatches-buttons",
+            "popup_enable": false,
+            "popup_trigger": "Size\nGröße\nTaille\nTaglia\nTalla",
+            "popup_label": "Size guide",
+            "popup_content": ""
+          }
+        },
+        "quantity_selector_nmfzzg": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "buy_buttons_PhhAHR": {
+          "type": "buy_buttons",
+          "settings": {
+            "enable_payment_button": true
+          }
+        }
+      },
+      "block_order": [
+        "vendor_nkVzNe",
+        "title_cFJqba",
+        "price_mc3CdG",
+        "spacer_La63hF",
+        "description_CtYxPj",
+        "variant_picker_VYqQDh",
+        "quantity_selector_nmfzzg",
+        "buy_buttons_PhhAHR"
+      ],
+      "name": "Featured product",
+      "settings": {
+        "featured_product": "fast-as-fuck-bundle-1",
+        "content_align": "reverse",
+        "enable_video_looping": false,
+        "product_image_ratio": "1:1",
+        "enable_gallery_arrows": true,
+        "thumbnails_position": "bottom",
+        "thumbnails_ratio": "1:1",
+        "thumbnails_show_border": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "section_image_text_banner_7EB698": {
       "type": "section-image-text-banner",
       "blocks": {
@@ -590,9 +684,9 @@
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
             "review_data": "sample_data",
+            "max_width": 1200,
             "show_shop_reviews": false,
-            "empty_state": "empty_widget",
-            "max_width": 1200
+            "empty_state": "empty_widget"
           }
         }
       },
@@ -660,93 +754,6 @@
         "enable_carousel_desktop": true,
         "grid_mobile": "1",
         "enable_carousel_mobile": true,
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "section_product_mbC6aw": {
-      "type": "section-product",
-      "blocks": {
-        "vendor_nkVzNe": {
-          "type": "vendor",
-          "disabled": true,
-          "settings": {
-            "vendor_size": 2,
-            "vendor_style": "body"
-          }
-        },
-        "title_cFJqba": {
-          "type": "title",
-          "settings": {
-            "title_size": 3,
-            "title_size_mobile": 3
-          }
-        },
-        "price_mc3CdG": {
-          "type": "price",
-          "settings": {
-            "price_label_discount": true,
-            "price_label_discount_type": "text",
-            "price_label_discount_color": "#C00000"
-          }
-        },
-        "spacer_La63hF": {
-          "type": "spacer",
-          "settings": {
-            "top": "small",
-            "bottom": "small",
-            "border": true
-          }
-        },
-        "description_CtYxPj": {
-          "type": "description",
-          "settings": {
-            "desc_text": "<p>Save over 20% when you buy the Fast As Fuck Bundle. You get a Heavyweight Hoodie, an old school Trucker hat and a sticker to throw anywhere you'd like.</p><p><strong>FREE SHIPPING IN NORTH AMERICA</strong></p>"
-          }
-        },
-        "variant_picker_VYqQDh": {
-          "type": "variant_picker",
-          "disabled": true,
-          "settings": {
-            "product_variant_style": "swatches-buttons",
-            "popup_enable": false,
-            "popup_trigger": "Size\nGröße\nTaille\nTaglia\nTalla",
-            "popup_label": "Size guide",
-            "popup_content": ""
-          }
-        },
-        "quantity_selector_nmfzzg": {
-          "type": "quantity_selector",
-          "disabled": true,
-          "settings": {}
-        },
-        "buy_buttons_PhhAHR": {
-          "type": "buy_buttons",
-          "settings": {
-            "enable_payment_button": true
-          }
-        }
-      },
-      "block_order": [
-        "vendor_nkVzNe",
-        "title_cFJqba",
-        "price_mc3CdG",
-        "spacer_La63hF",
-        "description_CtYxPj",
-        "variant_picker_VYqQDh",
-        "quantity_selector_nmfzzg",
-        "buy_buttons_PhhAHR"
-      ],
-      "name": "Featured product",
-      "settings": {
-        "featured_product": "fast-as-fuck-bundle-1",
-        "content_align": "reverse",
-        "enable_video_looping": false,
-        "product_image_ratio": "1:1",
-        "enable_gallery_arrows": true,
-        "thumbnails_position": "bottom",
-        "thumbnails_ratio": "1:1",
-        "thumbnails_show_border": false,
         "padding_top": 0,
         "padding_bottom": 0
       }
