@@ -141,12 +141,12 @@
           "type": "tab",
           "settings": {
             "column": "secondary",
-            "title": "Easy 30 Day Returns",
-            "icon": "icon-keyboard-arrow-return",
+            "title": "14 Day Home Trial",
+            "icon": "icon-check-circle-1",
             "icon_size": 2,
             "color_icon": "#212121",
             "svg-code": "",
-            "text": "<p><span style=\"text-decoration:underline\">RETURNS & EXCHANGES</span></p><p>Exchange or returns welcome within 30 days of purchase with recipes or order confirmation. Items must be unworn, unwashed, unused and have the original tags intact. Please note customer is responsible for shipping costs of online returns.</p><p>Helmets, headwear, grooming products, drinkware and sale items are final sale.</p>",
+            "text": "<p>Wildsyde  believes finding your perfect ride should feel as good as cruising down an open road. That’s why they offer a 14-Day Home Trial to test ride at your leisure. </p><p>Wildsyde will accept returns for undamaged, unaltered bikes with under 20 miles on the odometer within 14 days from the delivery date. Any bike exceeding 20 miles will be assessed a fee.  All returns must be properly or professionally packaged in the original packaging. If original packaging is not used, return will not be accepted or a 25% re-stocking fee will be applied. </p><p>All return shipping charges are the responsibility of the customer.  Wildsyde can help facilitate a return shipping label if needed.  Refunds will be issued to the original form of payment. </p><p>To begin the return process, please follow these steps: </p><p>1. Contact Wildsyde customer service by phone at 970-949-3261 or via email at info@wildsyde.com. </p><p>2. Detail reason for return including submitting images. If accepted Wildsyde will issue a Return Authorization (RA) #. </p><p>3. In an effort to minimize your cost of shipping, Wildsyde can provide a shipping label for the return. Shipping costs will be deducted from the original purchase amount.   </p><p>4. It is the customer’s responsibility to ensure the return package for the full value. </p><p>Once we receive the returned bike, Wildsyde representatives will assess its condition. Additional fees may apply for: mileage exceeding 20 miles, damage to the bike and components, missing components </p><p>A credit statement will be issued to the customer, and the remaining amount of the purchase, less shipping and any applicable fees, will be refunded to the original payment method.  </p>",
             "image_width": 1000,
             "align": "center",
             "link": "shopify://policies/refund-policy",
@@ -199,10 +199,6 @@
             "align": "center",
             "link": ""
           }
-        },
-        "bundler_bundler_target_element_QPEt3E": {
-          "type": "shopify://apps/bundler/blocks/bundler-target-element/7a6ae1b8-3b16-449b-8429-8bb89a62c664",
-          "settings": {}
         }
       },
       "block_order": [
@@ -224,8 +220,7 @@
         "663a3435-b014-41e0-916d-1ed9505f5691",
         "pickup_Ac6Tgw",
         "complementary_products_xiznrY",
-        "image_CQJLEE",
-        "bundler_bundler_target_element_QPEt3E"
+        "image_CQJLEE"
       ],
       "custom_css": [
         ".js-section__product-single .hypervisual__container {margin-top: -60px;}",
@@ -641,11 +636,19 @@
             "title": "Specifications",
             "content": "<p><strong>Battery Weight</strong>: 9 lbs (4kg)</p><p><strong>Bicycle Weight</strong>: 71lbs (34kg), including Battery</p><p><strong>Charging Time</strong>: 8 hours from empty</p><p><strong>Class 2 Electric Bicycle</strong>: governed at 20mph to meet Class 2 specifications (with 5 speed PAS, and thumb activated throttle)</p><p><strong>Distance/Cruising Range</strong>: 35-50 miles on a single charge, with many riders experiencing even greater distances under optimal conditions</p><p><strong>Max Load</strong>: 300lb/136Kg</p><p><strong>Motor</strong>: 750W 48V latest generation hub gear brushless BAFANG motor producing 90Nm power</p><p><strong>Size Range</strong>: one size (5’ 4” and above)</p><p><strong>Standover Height</strong>: 28”</p>"
           }
+        },
+        "accordion_item_Q66JV4": {
+          "type": "accordion_item",
+          "settings": {
+            "title": "Some assembly required",
+            "content": "<p>Wildsyde eBikes come in a box. And some assembly will be required before you get on the road. If you're handy with a wrench you'll be able to handle it on your own inside of an hour. If you a total newb in the home garage, you can take it to your heart eBike shop and they'll sort ya out.</p><p>For the full assembly video <a href=\"https://www.youtube.com/watch?v=pCjWJrB0Ur8&t=45s\" target=\"_blank\" title=\"https://www.youtube.com/watch?v=pCjWJrB0Ur8&t=45s\">click here</a></p>"
+          }
         }
       },
       "block_order": [
         "accordion_item_gEnUHx",
-        "accordion_item_QPFttR"
+        "accordion_item_QPFttR",
+        "accordion_item_Q66JV4"
       ],
       "name": "Geometry & Specifications",
       "settings": {
@@ -714,9 +717,9 @@
             "media": "stars-brand",
             "svg-code": "",
             "image_round": true,
-            "text": "<p>Buying online was an awesome experience. Quick shipping and came with a hand written note which was nice.</p>",
-            "name": "Tristan Adamson",
-            "source": "Google Review"
+            "text": "<p>Wildsyde Hunni Bunni is SO fun for my mountain town lifestyle. Modern-day beach cruiser takes simplicity to the next level and beyond. It is perfect for the coasting roads and paths as well as the more challenging mountainside streets here in Park City.</p>",
+            "name": "Merilee Johnson",
+            "source": "Verified Buyer"
           }
         },
         "template--16580692508926__9904a28f-6381-41fe-96eb-d4a73d60f0a0-1666784019a14d8867-1": {
@@ -725,9 +728,9 @@
             "media": "stars-brand",
             "svg-code": "",
             "image_round": true,
-            "text": "<p>The quality and sheer coolness of their gear is unmatched. I bought way too much stuff. Will be back to buy more. Highly recommend.</p>",
-            "name": "Ryan Hails",
-            "source": "Google Review"
+            "text": "<p>The bikes are so fun. I got the Hunni Bunni and husband got the Shadow. Love them and looking forward to pedaling - or not pedaling ;-) all over the valley!</p>",
+            "name": "Lori",
+            "source": "Verified Buyer"
           }
         },
         "template--16580692508926__9904a28f-6381-41fe-96eb-d4a73d60f0a0-1666784019a14d8867-0": {
@@ -736,9 +739,9 @@
             "media": "stars-brand",
             "svg-code": "",
             "image_round": true,
-            "text": "<p>Amazing and genuine customer service. You can tell the Steeltown team is super passionate about everything they do.</p>",
-            "name": "Jess X",
-            "source": "Google Review"
+            "text": "<p>I purchased the Wildsyde Hunni Bunni for my wife and she absolutely loves it....now we can finally ride together. We've enjoyed taking trail rides and simply packing a picnic and riding down to the James River. Every time we're out she always gets compliments on the bike.</p>",
+            "name": "Michael Pelletier",
+            "source": "Verified Buyer"
           }
         }
       },
@@ -824,15 +827,6 @@
     },
     "1756439511148f4dec": {
       "type": "apps",
-      "blocks": {
-        "bundler_bundler_target_element_88pJaU": {
-          "type": "shopify://apps/bundler/blocks/bundler-target-element/7a6ae1b8-3b16-449b-8429-8bb89a62c664",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "bundler_bundler_target_element_88pJaU"
-      ],
       "settings": {
         "include_margins": true
       }
@@ -844,7 +838,9 @@
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
             "review_data": "sample_data",
-            "max_width": 1200
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
           }
         }
       },
