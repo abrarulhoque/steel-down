@@ -1,1 +1,750 @@
-{"sections":{"main":{"type":"main-product","blocks":{"vendor":{"type":"vendor","disabled":true,"settings":{"vendor_size":2,"vendor_style":"body"}},"title":{"type":"title","settings":{"title_size":2,"title_size_mobile":3}},"judge_me_reviews_preview_badge_ztXmpq":{"type":"shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8","settings":{}},"price":{"type":"price","settings":{"emphasize":false,"price_label_discount":true,"price_label_discount_type":"percentage","price_label_discount_color":"#c00000"}},"db48bf56-e904-4604-9f21-89d04e9bf249":{"type":"spacer","settings":{"column":"primary","top":"small","bottom":"small","border":true}},"variant_picker":{"type":"variant_picker","settings":{"product_variant_style":"swatches-dropdowns","popup_enable":false,"popup_trigger":"Size\nGröße\nTaille\nTaglia\nTalla","popup_label":"Size guide","popup_content":""}},"quantity_selector":{"type":"quantity_selector","disabled":true,"settings":{}},"inventory_notice":{"type":"inventory_notice","settings":{"inventory_limit":7,"align":"left","show_qty":true}},"free_shipping_bar_eTUQGP":{"type":"free-shipping-bar","settings":{"align_left":true,"hide_icon":false}},"buy_buttons":{"type":"buy_buttons","settings":{"show_gift_card_recipient":true,"enable_payment_button":true}},"share":{"type":"share","disabled":true,"settings":{"column":"primary","align":"center"}},"description":{"type":"description","settings":{"column":"secondary","title":"DESCRIPTION","description_collapsible_tab":false,"open":true,"icon":"icon-tags-1","icon_size":2,"color_icon":"#212121","svg-code":""}},"reviews_tab_new_f8WyCG":{"type":"reviews-tab-new","disabled":true,"settings":{"column":"secondary","title":"Reviews","icon":"icon-shield-check","icon_size":2,"color_icon":"#212121","svg-code":"","count":true,"open":false}},"c13717d6-5def-40f5-9684-68f8f103b0d4":{"type":"tab","disabled":true,"settings":{"column":"secondary","title":"Easy 30 Day Returns","icon":"icon-keyboard-arrow-return","icon_size":2,"color_icon":"#212121","svg-code":"","text":"<p><span style=\"text-decoration:underline\">RETURNS & EXCHANGES<\/span><\/p><p>Exchange or returns welcome within 30 days of purchase with recipes or order confirmation. Items must be unworn, unwashed, unused and have the original tags intact. Please note customer is responsible for shipping costs of online returns.<\/p><p>Helmets, headwear, grooming products, drinkware and sale items are final sale.<\/p>","image_width":1000,"align":"center","link":"shopify:\/\/policies\/refund-policy","tab_content":"","open":false}},"663a3435-b014-41e0-916d-1ed9505f5691":{"type":"tab","settings":{"column":"secondary","title":"Fast Shipping Info","icon":"icon-stopwatch","icon_size":2,"color_icon":"#212121","svg-code":"","text":"<p><strong>This product ships from our new US warehouse in Denver, Colorado. <\/strong><\/p><p>All online orders are processed within 2-3 days after the order was placed. You will get a tracking number as soon as we pack it up and put a shipping label on it.<\/p><p>We still have a warehouse in Ontario, Canada from which our 3\/4 Low Profile Helmets ship out of. If you are buying a helmet in addition to other products they will ship and arrive separately.<\/p><p><strong>CUSTOMS, DUTIES & ADDRESS CHANGES<br\/><\/strong>All packages imported to your country may be subject to customs, taxes or other fees. You are responsible for all applicable customs, duties, taxes and fees charged by your government.<\/p>","image_width":1000,"align":"center","link":"","tab_content":"","open":false}},"pickup_Ac6Tgw":{"type":"pickup","settings":{}},"complementary_products_wQQTPg":{"type":"complementary-products","settings":{"heading":"Goes well with:","heading_size":1,"display_collapsible_tab":false,"collapsible_tab_open":false,"product_list_limit":10,"image_size":"1:1","image_fit":true,"hide_labels":true,"enable_quick_shop":true}}},"block_order":["vendor","title","judge_me_reviews_preview_badge_ztXmpq","price","db48bf56-e904-4604-9f21-89d04e9bf249","variant_picker","quantity_selector","inventory_notice","free_shipping_bar_eTUQGP","buy_buttons","share","description","reviews_tab_new_f8WyCG","c13717d6-5def-40f5-9684-68f8f103b0d4","663a3435-b014-41e0-916d-1ed9505f5691","pickup_Ac6Tgw","complementary_products_wQQTPg"],"custom_css":[".js-section__product-single {margin-bottom: -60px;}"],"settings":{"style":"classic-border","bg_color":"#f5f5f5","style_clean_mobile":true,"layout-order":"media-left","enable_sticky_content":true,"container":"large","show_breadcrumbs":true,"breadcrumbs_align":"left","enable_zoom":true,"enable_video_looping":false,"product_image_ratio":"1:1","enable_gallery_arrows":true,"thumbnails_position":"left","thumbnails_ratio":"1:1","thumbnails_show_border":false}},"17489570774e959c00":{"type":"apps","blocks":{"judge_me_reviews_review_widget_8VVWjd":{"type":"shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8","settings":{}}},"block_order":["judge_me_reviews_review_widget_8VVWjd"],"settings":{"include_margins":true}},"section_announcement_bar_cAfKXA":{"type":"section-announcement-bar","blocks":{"announcement_anynWN":{"type":"announcement","settings":{"icon":"icon-megaphone","svg-code":"","text":"Best seller since day 1","text_link":"","link":""}}},"block_order":["announcement_anynWN"],"disabled":true,"settings":{"divider_top":false,"divider_bottom":false,"text_size_desktop":7,"text_size_mobile":2,"text_style":"body","message_color_bg":"#212121","message_color_text":"#ffffff","text_letter_spacing":0,"text_bold":false,"text_capitalize":true,"close_icon":false,"carousel_desktop":false,"auto_carousel":true,"carousel_speed":8,"padding_top":0,"padding_bottom":0,"section-bottom-margin":false}},"section_image_text_banner_39De3E":{"type":"section-image-text-banner","settings":{"section_height":"large","section_height_mobile":"medium","section_width":"full","content_alignment":"center","content_color":"#ffffff","content_heading_color":false,"bg_color":"rgba(0,0,0,0)","bg_image":"shopify:\/\/shop_images\/Steeltown-Field-Thermos-Wide-1.jpg","overlay_color":"#000000","overlay_strength":0,"section-bottom-margin":true}},"9904a28f-6381-41fe-96eb-d4a73d60f0a0":{"type":"section-testimonials","blocks":{"text_AkGKLt":{"type":"text","settings":{"media":"stars-brand","svg-code":"","image_round":true,"text":"<p>I was on my roof fixing my shingles and I had my Field Thermos with me. I dropped it, it rolled down the roof fell on to my interlock driveway rolled into the street and bounced off the curb on the other size of the road. I thought it would be a goner for sure. Lo and behold, it barley had a scratch on it. It's not hype. These things are beasts.<\/p>","name":"Mike Sully","source":"Website Review"}},"template--16580692508926__9904a28f-6381-41fe-96eb-d4a73d60f0a0-1666784019a14d8867-1":{"type":"text","settings":{"media":"stars-brand","svg-code":"","image_round":true,"text":"<p>The thing's a beast - and helps keep cool drinks cool and hot drinks hot. Haven't had a spill yet and is worth every dollar you spend on it.<\/p>","name":"Brian Lee","source":"Website Review"}},"text_KqMMVG":{"type":"text","settings":{"media":"stars-brand","svg-code":"","image_round":true,"text":"<p>All these people are right. This thing is the best. I can't live without it anymore. In fact, I thought I lost mine a few weeks ago so I bought another one and shipped it out to AB.<\/p>","name":"Jelly","source":"Website Review"}},"text_TGRkzY":{"type":"text","settings":{"media":"stars-brand","svg-code":"","image_round":true,"text":"<p>I've had mine for a few months now and I've been very, very hard on it. lol. These things really are tough as nails. If you beat your stuff up, this thermos is for you.<\/p>","name":"Hardeep","source":"Website Review"}},"template--16580692508926__9904a28f-6381-41fe-96eb-d4a73d60f0a0-1666784019a14d8867-0":{"type":"text","disabled":true,"settings":{"media":"stars-brand","svg-code":"","image_round":true,"text":"<p>Much more low profile than anything else I’ve tried. Sizing guide was spot on as well.<\/p>","name":"Brad J","source":"Website Review"}}},"block_order":["text_AkGKLt","template--16580692508926__9904a28f-6381-41fe-96eb-d4a73d60f0a0-1666784019a14d8867-1","text_KqMMVG","text_TGRkzY","template--16580692508926__9904a28f-6381-41fe-96eb-d4a73d60f0a0-1666784019a14d8867-0"],"settings":{"title":"","style_desktop":"featured-grid","style_mobile":"carousel","link_title":"Shop now","link":"","padding_top":30,"padding_bottom":0}},"section_image_with_text_HxH9qx":{"type":"section-image-with-text","blocks":{"image_8784PT":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/Field-Thermos-Outdoors-Steeltown-Garage-1.jpg","title":"YOUR NEW GO-TO BOTTLE ","desc":"<p>The double wall construction prevents condensation from building up on the outside of the bottle. <\/p><p>The wide-but-not-too-wide opening is large enough for ice cubes and easy pouring but small enough to drink out of comfortably. <\/p><p>And it will fit almost every cup holder.<\/p>","horizontal_align":"left","link_title":"","link":"","bg_color_block":"rgba(0,0,0,0)","bg_color_content":"#ffffff","color_text":"#212121","text_heading_color":false,"text_border_color":true}},"image_WtgCWf":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/Field-Thermos-Outdoors-Steeltown-Garage-2.jpg","title":"BUILT TO LAST","desc":"<p>With durable, semi-gloss powder coating and a premium stainless steel screw on, spill resistant lid with a handy-dandy stainless steel carrying loop, the Field Thermos can go anywhere you can go, and will take pretty much everything you throw at it.<\/p>","horizontal_align":"left","link_title":"","link":"","bg_color_block":"rgba(0,0,0,0)","bg_color_content":"#ffffff","color_text":"#212121","text_heading_color":false,"text_border_color":true}}},"block_order":["image_8784PT","image_WtgCWf"],"settings":{"container":"large","block_spacing":2,"image_ratio":"1:1","block_layout":"2\/3","block_align":"left","vertical_align":"middle","heading_size":3,"link_style":"hollow","padding_top":0,"padding_bottom":30,"section-bottom-margin":true}},"section_collection_list_WnmPhK":{"type":"section-collection-list","blocks":{"media_RGdb78":{"type":"media","settings":{"heading":"Premium Riding Gear","text":"Designed for free spirits","link_text":"","link":"","button_style":"c-btn c-btn--hollow","video":"shopify:\/\/files\/videos\/Cycles-Web-Vid-720-1.mp4","alignment":"bottom-left","text_alignment":"left","color_text":"#ffffff","color_overlay":"#000000","color_overlay_strength":10,"color_default_heading":false,"color_default_border":false}},"collection_3Hi3mg":{"type":"collection","settings":{"collection":"","heading":"Riding Glasses","description":"","button_label":"Shop Now","link":"shopify:\/\/products\/motorcycle-riding-glasses","image":"shopify:\/\/shop_images\/Steeltown-Motorcycle-Riding-Glasses-Tinted-Smoked-Lansplitter-2.jpg"}},"collection_cmkAV7":{"type":"collection","settings":{"collection":"","heading":"Riding Gloves","description":"","button_label":"Shop Now","link":"shopify:\/\/products\/steeltown-garage-co-armoured-gloves","image":"shopify:\/\/shop_images\/steeltown-riding-gloves-homepage.jpg"}}},"block_order":["media_RGdb78","collection_3Hi3mg","collection_cmkAV7"],"disabled":true,"settings":{"title":"","desc":"","divider":false,"heading_alignment":"center","section_width":"large","grid":3,"spacing":3,"enable_carousel_desktop":true,"enable_carousel_mobile":true,"title_size":1,"image_ratio":"3:4","button_style":"c-btn c-btn--hollow","alignment":"bottom-left","text_alignment":"center","visibility_heading":true,"visibility_border":false,"visibility_count":false,"visibility_description":false,"visibility_button":true,"hover_options":"hover-button","color_text":"#ffffff","color_overlay":"#000000","color_overlay_strength":10,"color_default_heading":false,"color_default_border":true,"link_title":"View all","link":"","section_link_style":"link link--arrow","padding_top":0,"padding_bottom":60}},"product-recommendations":{"type":"section-product-recommendations","disabled":true,"settings":{"related_title":"Other Stuff You'll Love","section_width":"large","maximum_products":6,"grid":3,"grid_mobile":"1","padding_top":0,"padding_bottom":0}},"section_multi_column_images_iLAMfy":{"type":"section-multi-column-images","blocks":{"text_iPPhdk":{"type":"text","settings":{"image":"shopify:\/\/shop_images\/Address-Tee-White-Red-Steeltown-Subby.jpg","title":"","sub_title":"","desc":"<ul><li>22oz capacity<\/li><li>Double walled stainless steel<\/li><li>Cold for 48 hours<\/li><li>Hot for 12 hours<\/li><\/ul>","link_title":"","link":""}},"text_yPAYx3":{"type":"text","settings":{"image":"shopify:\/\/shop_images\/steeltown-field-thermos-heavy-duty-copper.jpg","title":"","sub_title":"","desc":"<ul><li>Copper insulated<\/li><li>Fits most cup holders<\/li><li>Opening large enough for ice<\/li><li>Spill resistant screw cap<\/li><\/ul>","link_title":"","link":""}}},"block_order":["text_iPPhdk","text_yPAYx3"],"settings":{"title":"","container":"large","link_title":"Learn more","link":"","divider":false,"grid":2,"spacing":3,"alignment":"left","link_style":"hollow","heading_size":3,"image_toggle":true,"image_size":100,"image_padding":0,"image_ratio":"1:1","image_fit":false,"bg_color":"rgba(0,0,0,0)","color_image":"rgba(0,0,0,0)","color_text":"rgba(0,0,0,0)","text_heading_color":false,"text_border_color":true,"grid_mobile":"1","mobile_layout":"carousel","padding_top":0,"padding_bottom":0,"section-bottom-margin":true}},"section_image_text_banner_nacHHJ":{"type":"section-image-text-banner","blocks":{"text_cp9NNQ":{"type":"text","settings":{"text":"<p>WHY WE MADE THESE<\/p>","text_size":4,"text_width":30,"text_size_mobile":3,"text_style":"heading"}},"text_zrin4H":{"type":"text","settings":{"text":"<p>A million plastic bottles are bought around the world every minute - that's <strong>25,000 <\/strong>plastic bottles a second - and that number will jump another <strong>20% <\/strong>by 2025. In Ontario alone, one billion plastic water bottles are sent to landfill every year. Plastic water bottles are ruining the planet.<\/p><p>We wanted to make a rugged, everyday thermos that keep your beer cold for 48 hours and your coffee hot for 12 hours. But we also wanted to make a thermos that would literally last for years and years. <\/p><p><strong>Scroll up to read the reviews about how durable our Field Thermos really is.<\/strong><\/p>","text_size":3,"text_width":65,"text_size_mobile":3,"text_style":"body"}}},"block_order":["text_cp9NNQ","text_zrin4H"],"settings":{"section_height":"medium","section_height_mobile":"medium","section_width":"contained","content_alignment":"center","content_color":"#ffffff","content_heading_color":false,"bg_color":"rgba(0,0,0,0)","bg_image":"shopify:\/\/shop_images\/Steeltown-Garage-Company-Hamilton-Lifestyle-Thermos.jpg","overlay_color":"#000000","overlay_strength":60,"section-bottom-margin":true}},"section_image_with_text_jj3hyQ":{"type":"section-image-with-text","blocks":{"image_RhRALU":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/red-christmas-thermos-steeltown.jpg","title":"Limited Edition: RED","desc":"<p>We only made 50 of these Limited Edition Red Field Thermoses. And lucky you, we've got a handful left. <\/p><p>If you want the rugged durability of our Field Thermos but you wanna stand out a little more, this Limited Edition Red Thermos is for you.<\/p>","horizontal_align":"left","link_title":"BUY NOW","link":"https:\/\/steeltowngarage.com\/products\/heavy-duty-field-thermos?variant=40532680736866","bg_color_block":"rgba(0,0,0,0)","bg_color_content":"#ffffff","color_text":"#212121","text_heading_color":false,"text_border_color":true}}},"block_order":["image_RhRALU"],"disabled":true,"settings":{"container":"large","block_spacing":2,"image_ratio":"1:1","block_layout":"2\/3","block_align":"left","vertical_align":"middle","heading_size":3,"link_style":"hollow","padding_top":0,"padding_bottom":0,"section-bottom-margin":false}},"section_faq_KXUDp7":{"type":"section-faq","blocks":{"category_yRDbdA":{"type":"category","settings":{"title":"Field Thermos FAQ's"}},"article_VjMMPF":{"type":"article","settings":{"title":"Is the Field Thermo really heavy duty?","text":"<p>Um. Yes. We've driven over them. They rolled off roofs. They've survived steel factory floors. They have been on mountain peaks and rolled around the bottom of the Grand Canyon. They are stainless steel and power coated just like a motorcycle part.<\/p>"}},"article_Qzni8j":{"type":"article","settings":{"title":"How long will the Field Thermos keep liquid cold for?","text":"<p>48 hours. Don't belive us? Try it out for yourself.<\/p>"}},"article_M4dUz7":{"type":"article","settings":{"title":"How long will the Field Thermos keep liquid hot for?","text":"<p>12 hours. We had a customer put hot tea inside while at the peak of Mount Kilimanjaro. The Thermos stayed outside in the snow over night. When he woke up, his tea was still hot.<\/p>"}},"article_ygWHCV":{"type":"article","settings":{"title":"Will the Field Thermos fit my cup holder?","text":"<p>Yep. We designed the Field Thermos to fit almost any cup holder. And we've never met a cup holder that didn't like the Field Thermos.<\/p>"}}},"block_order":["category_yRDbdA","article_VjMMPF","article_Qzni8j","article_M4dUz7","article_ygWHCV"],"settings":{"enable_sidebar":false,"cta_link_title":"Contact us","cta_link":"","cta_style":"link","padding_top":0,"padding_bottom":0}},"section_newsletter_8BGBaX":{"type":"section-newsletter","settings":{"divider":false,"section_width":"contained","newsletter_bg":"#212121","newsletter_style":"light","default_title_color":false,"text_border_color":true,"section_newsletter_title":"GET 10% OFF YOUR FIRST ORDER","section_newsletter_desc":"<p>Join our email family to receive exclusive offers - <strong>like 10% OFF your first order<br\/><\/strong>(Discount code will be emailed to you. Check your junk mail.)<\/p>","padding_top":0,"padding_bottom":0,"section-bottom-margin":true}}},"order":["main","17489570774e959c00","section_announcement_bar_cAfKXA","section_image_text_banner_39De3E","9904a28f-6381-41fe-96eb-d4a73d60f0a0","section_image_with_text_HxH9qx","section_collection_list_WnmPhK","product-recommendations","section_multi_column_images_iLAMfy","section_image_text_banner_nacHHJ","section_image_with_text_jj3hyQ","section_faq_KXUDp7","section_newsletter_8BGBaX"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "vendor",
+          "disabled": true,
+          "settings": {
+            "vendor_size": 2,
+            "vendor_style": "body"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": 2,
+            "title_size_mobile": 3
+          }
+        },
+        "judge_me_reviews_preview_badge_ztXmpq": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "emphasize": false,
+            "price_label_discount": true,
+            "price_label_discount_type": "percentage",
+            "price_label_discount_color": "#c00000"
+          }
+        },
+        "essential_countdown_timer_app_block_8D9BaH": {
+          "type": "shopify://apps/essential-countdown-timer/blocks/app-block/722378e8-5a70-4eae-aa89-9e44e8e9f6de",
+          "settings": {
+            "id": "cmidt0hbx00m83tjbd5nrzuoa"
+          }
+        },
+        "db48bf56-e904-4604-9f21-89d04e9bf249": {
+          "type": "spacer",
+          "settings": {
+            "column": "primary",
+            "top": "small",
+            "bottom": "small",
+            "border": true
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "product_variant_style": "swatches-dropdowns",
+            "popup_enable": false,
+            "popup_trigger": "Size\nGröße\nTaille\nTaglia\nTalla",
+            "popup_label": "Size guide",
+            "popup_content": ""
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "inventory_notice": {
+          "type": "inventory_notice",
+          "settings": {
+            "inventory_limit": 7,
+            "align": "left",
+            "show_qty": true
+          }
+        },
+        "free_shipping_bar_eTUQGP": {
+          "type": "free-shipping-bar",
+          "settings": {
+            "align_left": true,
+            "hide_icon": false
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_gift_card_recipient": true,
+            "enable_payment_button": true
+          }
+        },
+        "share": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "column": "primary",
+            "align": "center"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "column": "secondary",
+            "title": "DESCRIPTION",
+            "description_collapsible_tab": false,
+            "open": true,
+            "icon": "icon-tags-1",
+            "icon_size": 2,
+            "color_icon": "#212121",
+            "svg-code": ""
+          }
+        },
+        "reviews_tab_new_f8WyCG": {
+          "type": "reviews-tab-new",
+          "disabled": true,
+          "settings": {
+            "column": "secondary",
+            "title": "Reviews",
+            "icon": "icon-shield-check",
+            "icon_size": 2,
+            "color_icon": "#212121",
+            "svg-code": "",
+            "count": true,
+            "open": false
+          }
+        },
+        "c13717d6-5def-40f5-9684-68f8f103b0d4": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "column": "secondary",
+            "title": "Easy 30 Day Returns",
+            "icon": "icon-keyboard-arrow-return",
+            "icon_size": 2,
+            "color_icon": "#212121",
+            "svg-code": "",
+            "text": "<p><span style=\"text-decoration:underline\">RETURNS & EXCHANGES</span></p><p>Exchange or returns welcome within 30 days of purchase with recipes or order confirmation. Items must be unworn, unwashed, unused and have the original tags intact. Please note customer is responsible for shipping costs of online returns.</p><p>Helmets, headwear, grooming products, drinkware and sale items are final sale.</p>",
+            "image_width": 1000,
+            "align": "center",
+            "link": "shopify://policies/refund-policy",
+            "tab_content": "",
+            "open": false
+          }
+        },
+        "663a3435-b014-41e0-916d-1ed9505f5691": {
+          "type": "tab",
+          "settings": {
+            "column": "secondary",
+            "title": "Fast Shipping Info",
+            "icon": "icon-stopwatch",
+            "icon_size": 2,
+            "color_icon": "#212121",
+            "svg-code": "",
+            "text": "<p><strong>This product ships from our new US warehouse in Denver, Colorado. </strong></p><p>All online orders are processed within 2-3 days after the order was placed. You will get a tracking number as soon as we pack it up and put a shipping label on it.</p><p>We still have a warehouse in Ontario, Canada from which our 3/4 Low Profile Helmets ship out of. If you are buying a helmet in addition to other products they will ship and arrive separately.</p><p><strong>CUSTOMS, DUTIES & ADDRESS CHANGES<br/></strong>All packages imported to your country may be subject to customs, taxes or other fees. You are responsible for all applicable customs, duties, taxes and fees charged by your government.</p>",
+            "image_width": 1000,
+            "align": "center",
+            "link": "",
+            "tab_content": "",
+            "open": false
+          }
+        },
+        "pickup_Ac6Tgw": {
+          "type": "pickup",
+          "settings": {}
+        },
+        "complementary_products_wQQTPg": {
+          "type": "complementary-products",
+          "settings": {
+            "heading": "Goes well with:",
+            "heading_size": 1,
+            "display_collapsible_tab": false,
+            "collapsible_tab_open": false,
+            "product_list_limit": 10,
+            "image_size": "1:1",
+            "image_fit": true,
+            "hide_labels": true,
+            "enable_quick_shop": true
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "judge_me_reviews_preview_badge_ztXmpq",
+        "price",
+        "essential_countdown_timer_app_block_8D9BaH",
+        "db48bf56-e904-4604-9f21-89d04e9bf249",
+        "variant_picker",
+        "quantity_selector",
+        "inventory_notice",
+        "free_shipping_bar_eTUQGP",
+        "buy_buttons",
+        "share",
+        "description",
+        "reviews_tab_new_f8WyCG",
+        "c13717d6-5def-40f5-9684-68f8f103b0d4",
+        "663a3435-b014-41e0-916d-1ed9505f5691",
+        "pickup_Ac6Tgw",
+        "complementary_products_wQQTPg"
+      ],
+      "custom_css": [
+        ".js-section__product-single {margin-bottom: -60px;}"
+      ],
+      "settings": {
+        "style": "classic-border",
+        "bg_color": "#f5f5f5",
+        "style_clean_mobile": true,
+        "layout-order": "media-left",
+        "enable_sticky_content": true,
+        "container": "large",
+        "show_breadcrumbs": true,
+        "breadcrumbs_align": "left",
+        "enable_zoom": true,
+        "enable_video_looping": false,
+        "product_image_ratio": "1:1",
+        "enable_gallery_arrows": true,
+        "thumbnails_position": "left",
+        "thumbnails_ratio": "1:1",
+        "thumbnails_show_border": false
+      }
+    },
+    "17489570774e959c00": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_8VVWjd": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_8VVWjd"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "section_announcement_bar_cAfKXA": {
+      "type": "section-announcement-bar",
+      "blocks": {
+        "announcement_anynWN": {
+          "type": "announcement",
+          "settings": {
+            "icon": "icon-megaphone",
+            "svg-code": "",
+            "text": "Best seller since day 1",
+            "text_link": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement_anynWN"
+      ],
+      "disabled": true,
+      "settings": {
+        "divider_top": false,
+        "divider_bottom": false,
+        "text_size_desktop": 7,
+        "text_size_mobile": 2,
+        "text_style": "body",
+        "message_color_bg": "#212121",
+        "message_color_text": "#ffffff",
+        "text_letter_spacing": 0,
+        "text_bold": false,
+        "text_capitalize": true,
+        "close_icon": false,
+        "carousel_desktop": false,
+        "auto_carousel": true,
+        "carousel_speed": 8,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "section-bottom-margin": false
+      }
+    },
+    "section_image_text_banner_39De3E": {
+      "type": "section-image-text-banner",
+      "settings": {
+        "section_height": "large",
+        "section_height_mobile": "medium",
+        "section_width": "full",
+        "content_alignment": "center",
+        "content_color": "#ffffff",
+        "content_heading_color": false,
+        "bg_color": "rgba(0,0,0,0)",
+        "bg_image": "shopify://shop_images/Steeltown-Field-Thermos-Wide-1.jpg",
+        "overlay_color": "#000000",
+        "overlay_strength": 0,
+        "section-bottom-margin": true
+      }
+    },
+    "9904a28f-6381-41fe-96eb-d4a73d60f0a0": {
+      "type": "section-testimonials",
+      "blocks": {
+        "text_AkGKLt": {
+          "type": "text",
+          "settings": {
+            "media": "stars-brand",
+            "svg-code": "",
+            "image_round": true,
+            "text": "<p>I was on my roof fixing my shingles and I had my Field Thermos with me. I dropped it, it rolled down the roof fell on to my interlock driveway rolled into the street and bounced off the curb on the other size of the road. I thought it would be a goner for sure. Lo and behold, it barley had a scratch on it. It's not hype. These things are beasts.</p>",
+            "name": "Mike Sully",
+            "source": "Website Review"
+          }
+        },
+        "template--16580692508926__9904a28f-6381-41fe-96eb-d4a73d60f0a0-1666784019a14d8867-1": {
+          "type": "text",
+          "settings": {
+            "media": "stars-brand",
+            "svg-code": "",
+            "image_round": true,
+            "text": "<p>The thing's a beast - and helps keep cool drinks cool and hot drinks hot. Haven't had a spill yet and is worth every dollar you spend on it.</p>",
+            "name": "Brian Lee",
+            "source": "Website Review"
+          }
+        },
+        "text_KqMMVG": {
+          "type": "text",
+          "settings": {
+            "media": "stars-brand",
+            "svg-code": "",
+            "image_round": true,
+            "text": "<p>All these people are right. This thing is the best. I can't live without it anymore. In fact, I thought I lost mine a few weeks ago so I bought another one and shipped it out to AB.</p>",
+            "name": "Jelly",
+            "source": "Website Review"
+          }
+        },
+        "text_TGRkzY": {
+          "type": "text",
+          "settings": {
+            "media": "stars-brand",
+            "svg-code": "",
+            "image_round": true,
+            "text": "<p>I've had mine for a few months now and I've been very, very hard on it. lol. These things really are tough as nails. If you beat your stuff up, this thermos is for you.</p>",
+            "name": "Hardeep",
+            "source": "Website Review"
+          }
+        },
+        "template--16580692508926__9904a28f-6381-41fe-96eb-d4a73d60f0a0-1666784019a14d8867-0": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "media": "stars-brand",
+            "svg-code": "",
+            "image_round": true,
+            "text": "<p>Much more low profile than anything else I’ve tried. Sizing guide was spot on as well.</p>",
+            "name": "Brad J",
+            "source": "Website Review"
+          }
+        }
+      },
+      "block_order": [
+        "text_AkGKLt",
+        "template--16580692508926__9904a28f-6381-41fe-96eb-d4a73d60f0a0-1666784019a14d8867-1",
+        "text_KqMMVG",
+        "text_TGRkzY",
+        "template--16580692508926__9904a28f-6381-41fe-96eb-d4a73d60f0a0-1666784019a14d8867-0"
+      ],
+      "settings": {
+        "title": "",
+        "style_desktop": "featured-grid",
+        "style_mobile": "carousel",
+        "link_title": "Shop now",
+        "link": "",
+        "padding_top": 30,
+        "padding_bottom": 0
+      }
+    },
+    "section_image_with_text_HxH9qx": {
+      "type": "section-image-with-text",
+      "blocks": {
+        "image_8784PT": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Field-Thermos-Outdoors-Steeltown-Garage-1.jpg",
+            "title": "YOUR NEW GO-TO BOTTLE ",
+            "desc": "<p>The double wall construction prevents condensation from building up on the outside of the bottle. </p><p>The wide-but-not-too-wide opening is large enough for ice cubes and easy pouring but small enough to drink out of comfortably. </p><p>And it will fit almost every cup holder.</p>",
+            "horizontal_align": "left",
+            "link_title": "",
+            "link": "",
+            "bg_color_block": "rgba(0,0,0,0)",
+            "bg_color_content": "#ffffff",
+            "color_text": "#212121",
+            "text_heading_color": false,
+            "text_border_color": true
+          }
+        },
+        "image_WtgCWf": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Field-Thermos-Outdoors-Steeltown-Garage-2.jpg",
+            "title": "BUILT TO LAST",
+            "desc": "<p>With durable, semi-gloss powder coating and a premium stainless steel screw on, spill resistant lid with a handy-dandy stainless steel carrying loop, the Field Thermos can go anywhere you can go, and will take pretty much everything you throw at it.</p>",
+            "horizontal_align": "left",
+            "link_title": "",
+            "link": "",
+            "bg_color_block": "rgba(0,0,0,0)",
+            "bg_color_content": "#ffffff",
+            "color_text": "#212121",
+            "text_heading_color": false,
+            "text_border_color": true
+          }
+        }
+      },
+      "block_order": [
+        "image_8784PT",
+        "image_WtgCWf"
+      ],
+      "settings": {
+        "container": "large",
+        "block_spacing": 2,
+        "image_ratio": "1:1",
+        "block_layout": "2/3",
+        "block_align": "left",
+        "vertical_align": "middle",
+        "heading_size": 3,
+        "link_style": "hollow",
+        "padding_top": 0,
+        "padding_bottom": 30,
+        "section-bottom-margin": true
+      }
+    },
+    "section_collection_list_WnmPhK": {
+      "type": "section-collection-list",
+      "blocks": {
+        "media_RGdb78": {
+          "type": "media",
+          "settings": {
+            "heading": "Premium Riding Gear",
+            "text": "Designed for free spirits",
+            "link_text": "",
+            "link": "",
+            "button_style": "c-btn c-btn--hollow",
+            "video": "shopify://files/videos/Cycles-Web-Vid-720-1.mp4",
+            "alignment": "bottom-left",
+            "text_alignment": "left",
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "color_overlay_strength": 10,
+            "color_default_heading": false,
+            "color_default_border": false
+          }
+        },
+        "collection_3Hi3mg": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "heading": "Riding Glasses",
+            "description": "",
+            "button_label": "Shop Now",
+            "link": "shopify://products/motorcycle-riding-glasses",
+            "image": "shopify://shop_images/Steeltown-Motorcycle-Riding-Glasses-Tinted-Smoked-Lansplitter-2.jpg"
+          }
+        },
+        "collection_cmkAV7": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "heading": "Riding Gloves",
+            "description": "",
+            "button_label": "Shop Now",
+            "link": "shopify://products/steeltown-garage-co-armoured-gloves",
+            "image": "shopify://shop_images/steeltown-riding-gloves-homepage.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "media_RGdb78",
+        "collection_3Hi3mg",
+        "collection_cmkAV7"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "desc": "",
+        "divider": false,
+        "heading_alignment": "center",
+        "section_width": "large",
+        "grid": 3,
+        "spacing": 3,
+        "enable_carousel_desktop": true,
+        "enable_carousel_mobile": true,
+        "title_size": 1,
+        "image_ratio": "3:4",
+        "button_style": "c-btn c-btn--hollow",
+        "alignment": "bottom-left",
+        "text_alignment": "center",
+        "visibility_heading": true,
+        "visibility_border": false,
+        "visibility_count": false,
+        "visibility_description": false,
+        "visibility_button": true,
+        "hover_options": "hover-button",
+        "color_text": "#ffffff",
+        "color_overlay": "#000000",
+        "color_overlay_strength": 10,
+        "color_default_heading": false,
+        "color_default_border": true,
+        "link_title": "View all",
+        "link": "",
+        "section_link_style": "link link--arrow",
+        "padding_top": 0,
+        "padding_bottom": 60
+      }
+    },
+    "product-recommendations": {
+      "type": "section-product-recommendations",
+      "disabled": true,
+      "settings": {
+        "related_title": "Other Stuff You'll Love",
+        "section_width": "large",
+        "maximum_products": 6,
+        "grid": 3,
+        "grid_mobile": "1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_multi_column_images_iLAMfy": {
+      "type": "section-multi-column-images",
+      "blocks": {
+        "text_iPPhdk": {
+          "type": "text",
+          "settings": {
+            "image": "shopify://shop_images/Address-Tee-White-Red-Steeltown-Subby.jpg",
+            "title": "",
+            "sub_title": "",
+            "desc": "<ul><li>22oz capacity</li><li>Double walled stainless steel</li><li>Cold for 48 hours</li><li>Hot for 12 hours</li></ul>",
+            "link_title": "",
+            "link": ""
+          }
+        },
+        "text_yPAYx3": {
+          "type": "text",
+          "settings": {
+            "image": "shopify://shop_images/steeltown-field-thermos-heavy-duty-copper.jpg",
+            "title": "",
+            "sub_title": "",
+            "desc": "<ul><li>Copper insulated</li><li>Fits most cup holders</li><li>Opening large enough for ice</li><li>Spill resistant screw cap</li></ul>",
+            "link_title": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_iPPhdk",
+        "text_yPAYx3"
+      ],
+      "settings": {
+        "title": "",
+        "container": "large",
+        "link_title": "Learn more",
+        "link": "",
+        "divider": false,
+        "grid": 2,
+        "spacing": 3,
+        "alignment": "left",
+        "link_style": "hollow",
+        "heading_size": 3,
+        "image_toggle": true,
+        "image_size": 100,
+        "image_padding": 0,
+        "image_ratio": "1:1",
+        "image_fit": false,
+        "bg_color": "rgba(0,0,0,0)",
+        "color_image": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "text_heading_color": false,
+        "text_border_color": true,
+        "grid_mobile": "1",
+        "mobile_layout": "carousel",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "section-bottom-margin": true
+      }
+    },
+    "section_image_text_banner_nacHHJ": {
+      "type": "section-image-text-banner",
+      "blocks": {
+        "text_cp9NNQ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>WHY WE MADE THESE</p>",
+            "text_size": 4,
+            "text_width": 30,
+            "text_size_mobile": 3,
+            "text_style": "heading"
+          }
+        },
+        "text_zrin4H": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A million plastic bottles are bought around the world every minute - that's <strong>25,000 </strong>plastic bottles a second - and that number will jump another <strong>20% </strong>by 2025. In Ontario alone, one billion plastic water bottles are sent to landfill every year. Plastic water bottles are ruining the planet.</p><p>We wanted to make a rugged, everyday thermos that keep your beer cold for 48 hours and your coffee hot for 12 hours. But we also wanted to make a thermos that would literally last for years and years. </p><p><strong>Scroll up to read the reviews about how durable our Field Thermos really is.</strong></p>",
+            "text_size": 3,
+            "text_width": 65,
+            "text_size_mobile": 3,
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "text_cp9NNQ",
+        "text_zrin4H"
+      ],
+      "settings": {
+        "section_height": "medium",
+        "section_height_mobile": "medium",
+        "section_width": "contained",
+        "content_alignment": "center",
+        "content_color": "#ffffff",
+        "content_heading_color": false,
+        "bg_color": "rgba(0,0,0,0)",
+        "bg_image": "shopify://shop_images/Steeltown-Garage-Company-Hamilton-Lifestyle-Thermos.jpg",
+        "overlay_color": "#000000",
+        "overlay_strength": 60,
+        "section-bottom-margin": true
+      }
+    },
+    "section_image_with_text_jj3hyQ": {
+      "type": "section-image-with-text",
+      "blocks": {
+        "image_RhRALU": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/red-christmas-thermos-steeltown.jpg",
+            "title": "Limited Edition: RED",
+            "desc": "<p>We only made 50 of these Limited Edition Red Field Thermoses. And lucky you, we've got a handful left. </p><p>If you want the rugged durability of our Field Thermos but you wanna stand out a little more, this Limited Edition Red Thermos is for you.</p>",
+            "horizontal_align": "left",
+            "link_title": "BUY NOW",
+            "link": "https://steeltowngarage.com/products/heavy-duty-field-thermos?variant=40532680736866",
+            "bg_color_block": "rgba(0,0,0,0)",
+            "bg_color_content": "#ffffff",
+            "color_text": "#212121",
+            "text_heading_color": false,
+            "text_border_color": true
+          }
+        }
+      },
+      "block_order": [
+        "image_RhRALU"
+      ],
+      "disabled": true,
+      "settings": {
+        "container": "large",
+        "block_spacing": 2,
+        "image_ratio": "1:1",
+        "block_layout": "2/3",
+        "block_align": "left",
+        "vertical_align": "middle",
+        "heading_size": 3,
+        "link_style": "hollow",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "section-bottom-margin": false
+      }
+    },
+    "section_faq_KXUDp7": {
+      "type": "section-faq",
+      "blocks": {
+        "category_yRDbdA": {
+          "type": "category",
+          "settings": {
+            "title": "Field Thermos FAQ's"
+          }
+        },
+        "article_VjMMPF": {
+          "type": "article",
+          "settings": {
+            "title": "Is the Field Thermo really heavy duty?",
+            "text": "<p>Um. Yes. We've driven over them. They rolled off roofs. They've survived steel factory floors. They have been on mountain peaks and rolled around the bottom of the Grand Canyon. They are stainless steel and power coated just like a motorcycle part.</p>"
+          }
+        },
+        "article_Qzni8j": {
+          "type": "article",
+          "settings": {
+            "title": "How long will the Field Thermos keep liquid cold for?",
+            "text": "<p>48 hours. Don't belive us? Try it out for yourself.</p>"
+          }
+        },
+        "article_M4dUz7": {
+          "type": "article",
+          "settings": {
+            "title": "How long will the Field Thermos keep liquid hot for?",
+            "text": "<p>12 hours. We had a customer put hot tea inside while at the peak of Mount Kilimanjaro. The Thermos stayed outside in the snow over night. When he woke up, his tea was still hot.</p>"
+          }
+        },
+        "article_ygWHCV": {
+          "type": "article",
+          "settings": {
+            "title": "Will the Field Thermos fit my cup holder?",
+            "text": "<p>Yep. We designed the Field Thermos to fit almost any cup holder. And we've never met a cup holder that didn't like the Field Thermos.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "category_yRDbdA",
+        "article_VjMMPF",
+        "article_Qzni8j",
+        "article_M4dUz7",
+        "article_ygWHCV"
+      ],
+      "settings": {
+        "enable_sidebar": false,
+        "cta_link_title": "Contact us",
+        "cta_link": "",
+        "cta_style": "link",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_newsletter_8BGBaX": {
+      "type": "section-newsletter",
+      "settings": {
+        "divider": false,
+        "section_width": "contained",
+        "newsletter_bg": "#212121",
+        "newsletter_style": "light",
+        "default_title_color": false,
+        "text_border_color": true,
+        "section_newsletter_title": "GET 10% OFF YOUR FIRST ORDER",
+        "section_newsletter_desc": "<p>Join our email family to receive exclusive offers - <strong>like 10% OFF your first order<br/></strong>(Discount code will be emailed to you. Check your junk mail.)</p>",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "section-bottom-margin": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "17489570774e959c00",
+    "section_announcement_bar_cAfKXA",
+    "section_image_text_banner_39De3E",
+    "9904a28f-6381-41fe-96eb-d4a73d60f0a0",
+    "section_image_with_text_HxH9qx",
+    "section_collection_list_WnmPhK",
+    "product-recommendations",
+    "section_multi_column_images_iLAMfy",
+    "section_image_text_banner_nacHHJ",
+    "section_image_with_text_jj3hyQ",
+    "section_faq_KXUDp7",
+    "section_newsletter_8BGBaX"
+  ]
+}
