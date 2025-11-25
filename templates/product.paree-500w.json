@@ -614,6 +614,58 @@
         "padding_bottom": 30
       }
     },
+    "9904a28f-6381-41fe-96eb-d4a73d60f0a0": {
+      "type": "section-testimonials",
+      "blocks": {
+        "text_TGRkzY": {
+          "type": "text",
+          "settings": {
+            "media": "stars-brand",
+            "svg-code": "",
+            "image_round": true,
+            "text": "<p>The Wildsyde Paree E-Bike is a great fit for me. I love riding my new bike to the tennis courts where parking can sometimes be problematic. It's easy to use and super stylish! I got the titanium gray with red wheels.</p>",
+            "name": "Stephanie Hart",
+            "source": "Verified Buyer"
+          }
+        },
+        "template--16580692508926__9904a28f-6381-41fe-96eb-d4a73d60f0a0-1666784019a14d8867-1": {
+          "type": "text",
+          "settings": {
+            "media": "stars-brand",
+            "svg-code": "",
+            "image_round": true,
+            "text": "<p>I love my new Paree electric bike... I ride the bike every night, so easy to climb those awful hills! I would recommend this bike to anyone who is thinking of purchasing one.</p>",
+            "name": "Leslie Taliaferro",
+            "source": "Verified Buyer"
+          }
+        },
+        "template--16580692508926__9904a28f-6381-41fe-96eb-d4a73d60f0a0-1666784019a14d8867-0": {
+          "type": "text",
+          "settings": {
+            "media": "stars-brand",
+            "svg-code": "",
+            "image_round": true,
+            "text": "<p>This Paree is wonderful! I have baskets on the back for my weekly farmer's market runs! Such a great way to travel and leave the car behind! Thanks Paul...great bike:)</p>",
+            "name": "Ashley",
+            "source": "Verified Buyer"
+          }
+        }
+      },
+      "block_order": [
+        "text_TGRkzY",
+        "template--16580692508926__9904a28f-6381-41fe-96eb-d4a73d60f0a0-1666784019a14d8867-1",
+        "template--16580692508926__9904a28f-6381-41fe-96eb-d4a73d60f0a0-1666784019a14d8867-0"
+      ],
+      "settings": {
+        "title": "CUSTOMER FEEDBACK",
+        "style_desktop": "grid",
+        "style_mobile": "carousel",
+        "link_title": "Shop now",
+        "link": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "section_geometry_specifications_NbqTRF": {
       "type": "section-geometry-specifications",
       "blocks": {
@@ -627,14 +679,22 @@
         "accordion_item_EJMtnL": {
           "type": "accordion_item",
           "settings": {
-            "title": "Geometry",
+            "title": "Specs",
             "content": "<p><strong>Battery Weight: </strong>9lbs (4kg)  <br/><br/><strong>Bicycle Weight:</strong> 54lbs (24.5kg), including Battery  <br/><br/><strong>Charging Time:</strong> 8 hours from empty </p><p><strong>Class 2 Electric Bicycle:</strong> governed at 20mph to meet Class 2 specifications (with 5 speed PAS, and thumb activated throttle) </p><p><strong>Distance/Cruising Range:</strong> 35-50 miles on a single charge, with many riders experiencing even greater distances under optimal conditions </p><p><strong>Max Load:</strong> 300lb/136Kg </p><p><strong>Motor:</strong> 500W 48V latest generation hub gear brushless BAFANG motor producing 65Nm power </p><p><strong>Size Range:</strong> one size (5’ 2”- 6’3”)  <br/><em>For riders around 5’2”, we recommend a standard seat post (non-suspension) for optimal comfort and fit. Please contact us for a swap.</em></p><p><strong>Standover Height: </strong>14” </p>"
+          }
+        },
+        "accordion_item_kAGbGJ": {
+          "type": "accordion_item",
+          "settings": {
+            "title": "Some assembly required",
+            "content": "<p>Wildsyde eBikes come in a box. And some assembly will be required before you get on the road. If you're handy with a wrench you'll be able to handle it on your own inside of an hour. If you a total newb in the home garage, you can take it to your heart eBike shop and they'll sort ya out.</p><p>For the full assembly video <a href=\"https://www.youtube.com/watch?v=pCjWJrB0Ur8&t=45s\" target=\"_blank\" title=\"https://www.youtube.com/watch?v=pCjWJrB0Ur8&t=45s\">click here</a></p>"
           }
         }
       },
       "block_order": [
         "accordion_item_gEnUHx",
-        "accordion_item_EJMtnL"
+        "accordion_item_EJMtnL",
+        "accordion_item_kAGbGJ"
       ],
       "name": "Geometry & Specifications",
       "settings": {
@@ -692,58 +752,6 @@
         "padding_top": 24,
         "padding_bottom": 24,
         "section-bottom-margin": false
-      }
-    },
-    "9904a28f-6381-41fe-96eb-d4a73d60f0a0": {
-      "type": "section-testimonials",
-      "blocks": {
-        "text_TGRkzY": {
-          "type": "text",
-          "settings": {
-            "media": "stars-brand",
-            "svg-code": "",
-            "image_round": true,
-            "text": "<p>The Wildsyde Paree E-Bike is a great fit for me. I love riding my new bike to the tennis courts where parking can sometimes be problematic. It's easy to use and super stylish! I got the titanium gray with red wheels.</p>",
-            "name": "Stephanie Hart",
-            "source": "Verified Buyer"
-          }
-        },
-        "template--16580692508926__9904a28f-6381-41fe-96eb-d4a73d60f0a0-1666784019a14d8867-1": {
-          "type": "text",
-          "settings": {
-            "media": "stars-brand",
-            "svg-code": "",
-            "image_round": true,
-            "text": "<p>I love my new Paree electric bike... I ride the bike every night, so easy to climb those awful hills! I would recommend this bike to anyone who is thinking of purchasing one.</p>",
-            "name": "Leslie Taliaferro",
-            "source": "Verified Buyer"
-          }
-        },
-        "template--16580692508926__9904a28f-6381-41fe-96eb-d4a73d60f0a0-1666784019a14d8867-0": {
-          "type": "text",
-          "settings": {
-            "media": "stars-brand",
-            "svg-code": "",
-            "image_round": true,
-            "text": "<p>This Paree is wonderful! I have baskets on the back for my weekly farmer's market runs! Such a great way to travel and leave the car behind! Thanks Paul...great bike:)</p>",
-            "name": "Ashley",
-            "source": "Verified Buyer"
-          }
-        }
-      },
-      "block_order": [
-        "text_TGRkzY",
-        "template--16580692508926__9904a28f-6381-41fe-96eb-d4a73d60f0a0-1666784019a14d8867-1",
-        "template--16580692508926__9904a28f-6381-41fe-96eb-d4a73d60f0a0-1666784019a14d8867-0"
-      ],
-      "settings": {
-        "title": "CUSTOMER FEEDBACK",
-        "style_desktop": "grid",
-        "style_mobile": "carousel",
-        "link_title": "Shop now",
-        "link": "",
-        "padding_top": 0,
-        "padding_bottom": 0
       }
     },
     "5a818a60-e694-4eac-a33f-5ce701e894b0": {
@@ -864,9 +872,9 @@
     "section_rider_height_qktdTB",
     "section_key_features_gLDH7A",
     "section_all_components_kY97pA",
+    "9904a28f-6381-41fe-96eb-d4a73d60f0a0",
     "section_geometry_specifications_NbqTRF",
     "section_feature_benefits_AkTQUR",
-    "9904a28f-6381-41fe-96eb-d4a73d60f0a0",
     "5a818a60-e694-4eac-a33f-5ce701e894b0",
     "product-recommendations",
     "1756439511148f4dec",
