@@ -199,10 +199,6 @@
             "align": "center",
             "link": ""
           }
-        },
-        "bundler_bundler_target_element_QPEt3E": {
-          "type": "shopify://apps/bundler/blocks/bundler-target-element/7a6ae1b8-3b16-449b-8429-8bb89a62c664",
-          "settings": {}
         }
       },
       "block_order": [
@@ -224,8 +220,7 @@
         "663a3435-b014-41e0-916d-1ed9505f5691",
         "pickup_Ac6Tgw",
         "complementary_products_xiznrY",
-        "image_CQJLEE",
-        "bundler_bundler_target_element_QPEt3E"
+        "image_CQJLEE"
       ],
       "custom_css": [
         ".js-section__product-single .hypervisual__container {margin-top: -60px;}",
@@ -708,9 +703,9 @@
             "media": "stars-brand",
             "svg-code": "",
             "image_round": true,
-            "text": "<p>Buying online was an awesome experience. Quick shipping and came with a hand written note which was nice.</p>",
-            "name": "Tristan Adamson",
-            "source": "Google Review"
+            "text": "<p>The Wildsyde Paree E-Bike is a great fit for me. I love riding my new bike to the tennis courts where parking can sometimes be problematic. It's easy to use and super stylish! I got the titanium gray with red wheels.</p>",
+            "name": "Stephanie Hart",
+            "source": "Verified Buyer"
           }
         },
         "template--16580692508926__9904a28f-6381-41fe-96eb-d4a73d60f0a0-1666784019a14d8867-1": {
@@ -719,9 +714,9 @@
             "media": "stars-brand",
             "svg-code": "",
             "image_round": true,
-            "text": "<p>The quality and sheer coolness of their gear is unmatched. I bought way too much stuff. Will be back to buy more. Highly recommend.</p>",
-            "name": "Ryan Hails",
-            "source": "Google Review"
+            "text": "<p>I love my new Paree electric bike... I ride the bike every night, so easy to climb those awful hills! I would recommend this bike to anyone who is thinking of purchasing one.</p>",
+            "name": "Leslie Taliaferro",
+            "source": "Verified Buyer"
           }
         },
         "template--16580692508926__9904a28f-6381-41fe-96eb-d4a73d60f0a0-1666784019a14d8867-0": {
@@ -730,9 +725,9 @@
             "media": "stars-brand",
             "svg-code": "",
             "image_round": true,
-            "text": "<p>Amazing and genuine customer service. You can tell the Steeltown team is super passionate about everything they do.</p>",
-            "name": "Jess X",
-            "source": "Google Review"
+            "text": "<p>This Paree is wonderful! I have baskets on the back for my weekly farmer's market runs! Such a great way to travel and leave the car behind! Thanks Paul...great bike:)</p>",
+            "name": "Ashley",
+            "source": "Verified Buyer"
           }
         }
       },
@@ -818,15 +813,6 @@
     },
     "1756439511148f4dec": {
       "type": "apps",
-      "blocks": {
-        "bundler_bundler_target_element_88pJaU": {
-          "type": "shopify://apps/bundler/blocks/bundler-target-element/7a6ae1b8-3b16-449b-8429-8bb89a62c664",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "bundler_bundler_target_element_88pJaU"
-      ],
       "settings": {
         "include_margins": true
       }
@@ -838,7 +824,9 @@
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
             "review_data": "sample_data",
-            "max_width": 1200
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
           }
         }
       },
