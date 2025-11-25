@@ -221,6 +221,7 @@
     },
     "section_newsletter_a99iEM": {
       "type": "section-newsletter",
+      "disabled": true,
       "settings": {
         "divider": false,
         "section_width": "contained",
@@ -233,6 +234,23 @@
         "padding_top": 0,
         "padding_bottom": 0,
         "section-bottom-margin": false
+      }
+    },
+    "1764035074eb874650": {
+      "type": "apps",
+      "blocks": {
+        "essential_countdown_timer_app_block_XbkxJr": {
+          "type": "shopify://apps/essential-countdown-timer/blocks/app-block/722378e8-5a70-4eae-aa89-9e44e8e9f6de",
+          "settings": {
+            "id": "cmidwxbso00nl3tjbq53exkt2"
+          }
+        }
+      },
+      "block_order": [
+        "essential_countdown_timer_app_block_XbkxJr"
+      ],
+      "settings": {
+        "include_margins": true
       }
     },
     "0436301d-0018-4b49-8493-36629494c103": {
@@ -725,6 +743,7 @@
     "section-slideshow",
     "ac7829e3-f3f8-4fbb-8aaf-dc6c93046065",
     "section_newsletter_a99iEM",
+    "1764035074eb874650",
     "0436301d-0018-4b49-8493-36629494c103",
     "e7564c21-6be8-45b8-a2ff-9dbd3e39175a",
     "section_collection_list_mQrEmV",
