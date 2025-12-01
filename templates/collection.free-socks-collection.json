@@ -21,6 +21,99 @@
         "overlay_strength": 30
       }
     },
+    "section_image_text_banner_w6knMe": {
+      "type": "section-image-text-banner",
+      "blocks": {
+        "text_G4aTgX": {
+          "type": "text",
+          "settings": {
+            "text": "<p>FREE SOCKS ON CYBER MONDAY</p>",
+            "text_size": 4,
+            "text_width": 40,
+            "text_size_mobile": 1,
+            "text_style": "heading"
+          }
+        },
+        "image_xGPEgw": {
+          "type": "image",
+          "settings": {
+            "inline_image_width": 200,
+            "inline_image_radius": 0
+          }
+        },
+        "text_3YnURX": {
+          "type": "text",
+          "settings": {
+            "text": "<p>As if our Black Friday deals couldn't get any sweeter! Build a shopping cart worth $35 or more and we'll toss ya a pair of our best selling Steeltown Socks <strong>totally FREE</strong></p>",
+            "text_size": 3,
+            "text_width": 55,
+            "text_size_mobile": 1,
+            "text_style": "body"
+          }
+        },
+        "text_L8iyFd": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p><em>No coupon code required. Order minimum value of $35</em></p>",
+            "text_size": 1,
+            "text_width": 40,
+            "text_size_mobile": 3,
+            "text_style": "body"
+          }
+        },
+        "text_eQPrDA": {
+          "type": "text",
+          "settings": {
+            "text": "<p>SHOP NOW</p>",
+            "text_size": 3,
+            "text_width": 40,
+            "text_size_mobile": 2,
+            "text_style": "heading"
+          }
+        },
+        "image_G9QtYf": {
+          "type": "image",
+          "settings": {
+            "inline_image": "shopify://shop_images/Chevron-Arrow-Steeltown.png",
+            "inline_image_width": 50,
+            "inline_image_radius": 0
+          }
+        },
+        "link_cTQhpA": {
+          "type": "link",
+          "disabled": true,
+          "settings": {
+            "link_title": "Shop all",
+            "link": "",
+            "link_style": "c-btn c-btn--hollow"
+          }
+        }
+      },
+      "block_order": [
+        "text_G4aTgX",
+        "image_xGPEgw",
+        "text_3YnURX",
+        "text_L8iyFd",
+        "text_eQPrDA",
+        "image_G9QtYf",
+        "link_cTQhpA"
+      ],
+      "name": "Image and text banner",
+      "settings": {
+        "section_height": "small",
+        "section_height_mobile": "small",
+        "section_width": "contained",
+        "content_alignment": "center",
+        "content_color": "#ffffff",
+        "content_heading_color": false,
+        "bg_color": "rgba(0,0,0,0)",
+        "bg_image": "shopify://shop_images/Gold-Star-Socks-Steeltown-Skate-3.jpg",
+        "overlay_color": "#000000",
+        "overlay_strength": 40,
+        "section-bottom-margin": false
+      }
+    },
     "product-grid": {
       "type": "main-collection-product-grid",
       "blocks": {
@@ -176,6 +269,7 @@
   },
   "order": [
     "banner",
+    "section_image_text_banner_w6knMe",
     "product-grid",
     "section_collection_list_t6BEMt",
     "section_image_with_text_EbyXwN",
