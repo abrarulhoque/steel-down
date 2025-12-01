@@ -222,26 +222,6 @@
         "thumbnails_show_border": false
       }
     },
-    "17489570774e959c00": {
-      "type": "apps",
-      "blocks": {
-        "judge_me_reviews_review_widget_r3JLgg": {
-          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-            "review_data": "sample_data",
-            "max_width": 1200,
-            "show_shop_reviews": false,
-            "empty_state": "empty_widget"
-          }
-        }
-      },
-      "block_order": [
-        "judge_me_reviews_review_widget_r3JLgg"
-      ],
-      "settings": {
-        "include_margins": true
-      }
-    },
     "section_announcement_bar_YcjdUU": {
       "type": "section-announcement-bar",
       "blocks": {
@@ -561,13 +541,14 @@
         },
         "image_NFmd9x": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Socks-ss24-Pack-Landing.jpg",
-            "title": "SS24 3-Pack",
-            "desc": "<p>These are our brand new socks for this spring / summer season. Buy them as a 3-pack and save $5.</p>",
+            "title": "BEST SELLER PACK",
+            "desc": "<p>Classics packed up together and sold for less.</p>",
             "horizontal_align": "left",
             "link_title": "BUY NOW",
-            "link": "https://steeltowngarage.com/products/steeltown-socks-1?variant=40854708420706",
+            "link": "shopify://products/steeltown-socks-1",
             "bg_color_block": "rgba(0,0,0,0)",
             "bg_color_content": "#ffffff",
             "color_text": "#212121",
@@ -676,6 +657,26 @@
         "padding_bottom": 60
       }
     },
+    "17489570774e959c00": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_r3JLgg": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_r3JLgg"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
     "section_newsletter_8BGBaX": {
       "type": "section-newsletter",
       "settings": {
@@ -708,7 +709,6 @@
   },
   "order": [
     "main",
-    "17489570774e959c00",
     "section_announcement_bar_YcjdUU",
     "9904a28f-6381-41fe-96eb-d4a73d60f0a0",
     "section_multi_column_images_mJJGiY",
@@ -716,6 +716,7 @@
     "section_image_text_banner_WTNGiA",
     "section_image_with_text_pXQ4Hq",
     "section_collection_list_WnmPhK",
+    "17489570774e959c00",
     "section_newsletter_8BGBaX",
     "product-recommendations"
   ]
