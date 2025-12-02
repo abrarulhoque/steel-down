@@ -549,7 +549,8 @@
             "description": "",
             "button_label": "Shop Now",
             "link": "shopify://products/motorcycle-riding-glasses",
-            "image": "shopify://shop_images/Steeltown-Motorcycle-Riding-Glasses-Tinted-Smoked-Lansplitter-2.jpg"
+            "image": "shopify://shop_images/Steeltown-Motorcycle-Riding-Glasses-Tinted-Smoked-Lansplitter-2.jpg",
+            "video": "shopify://files/videos/Riding Glasses Yellow Tokyo(1).mov"
           }
         },
         "collection_cmkAV7": {
