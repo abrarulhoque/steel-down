@@ -197,6 +197,17 @@
             "link": "shopify://collections/boots-footwear",
             "image": "shopify://shop_images/Steeltown-Socks-Steeltown-Basketball-3.jpg"
           }
+        },
+        "collection_RWkGyT": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "heading": "Riding Glasses",
+            "description": "",
+            "button_label": "SHOP",
+            "link": "shopify://products/motorcycle-riding-glasses",
+            "video": "shopify://files/videos/Riding Glasses Yellow Tokyo(1).mov"
+          }
         }
       },
       "block_order": [
@@ -213,7 +224,8 @@
         "collection_LrwUBY",
         "collection_8Fdzqp",
         "collection_QH9xxw",
-        "collection_XiRpmT"
+        "collection_XiRpmT",
+        "collection_RWkGyT"
       ],
       "name": "Collection list",
       "settings": {
