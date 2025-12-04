@@ -291,12 +291,12 @@
         "media_RARHeb": {
           "type": "media",
           "settings": {
-            "heading": "FREEWAY FLANNELS",
-            "text": "Our best-selling heavyweight flannels are back in stock!",
+            "heading": "RIDING GLASSES",
+            "text": "Our shatter-proof Riding Glasses cut the glare while night riding!",
             "link_text": "",
-            "link": "shopify://products/freeway-heavy-flannel",
+            "link": "shopify://products/motorcycle-riding-glasses",
             "button_style": "c-btn c-btn--hollow",
-            "image": "shopify://shop_images/Freeway-Flannel-Homepage-Ad-3.jpg",
+            "video": "shopify://files/videos/Riding Glasses Yellow Tokyo(1).mov",
             "alignment": "bottom-left",
             "text_alignment": "left",
             "color_text": "#ffffff",
@@ -348,12 +348,12 @@
         "media_DWmCYq": {
           "type": "media",
           "settings": {
-            "heading": "True Heavyweight",
-            "text": "These aren't your boring shopping mall flannels....",
+            "heading": "Working Class Stiff",
+            "text": "An entire collection that works as hard as you do.",
             "link_text": "",
-            "link": "shopify://products/freeway-heavy-flannel",
+            "link": "shopify://collections/working-class-stiff-collection",
             "button_style": "c-btn c-btn--hollow",
-            "image": "shopify://shop_images/Freeway-Heavy-Flannel-Steeltown-Garage-Black-Mike-2_a16554ad-e94a-4931-a2aa-f0db3cac41b6.jpg",
+            "video": "shopify://files/videos/Working-Class-Stiff-Story-Ad-Plain.mov",
             "alignment": "bottom-left",
             "text_alignment": "left",
             "color_text": "#ffffff",
