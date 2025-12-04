@@ -95,14 +95,14 @@
         "video_CNzJ9n": {
           "type": "video",
           "settings": {
-            "video_link": "https://cdn.shopify.com/videos/c/o/v/fc1590c44f3e4f0a9a4caa80b5ef155d.mp4",
+            "video_link": "https://cdn.shopify.com/videos/c/o/v/cde7b968769c4982b3d6822741c34e19.mp4",
             "yt_link": "",
             "alignment": "center",
-            "title": "BLACK FRIDAY IS LIVE",
-            "text": "<p>GET 25% OFF SITE WIDE FOR A LIMITED TIME</p>",
+            "title": "FREEWAY FLANNELS ARE BACK",
+            "text": "<p>Grab one of our Best-selling heavyweight flannels before they're gone.</p>",
             "link_style": "c-btn c-btn--mono",
-            "link_title": "SHOP THE BEST DEALS",
-            "link": "shopify://collections/best-deals",
+            "link_title": "SHOP FLANNELS",
+            "link": "shopify://products/freeway-heavy-flannel",
             "link_style_2": "c-btn c-btn--primary",
             "link_title_2": "",
             "link_2": "shopify://collections/all"
