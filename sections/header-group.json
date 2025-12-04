@@ -75,7 +75,6 @@
         },
         "539fad8b-91eb-4f52-8e5a-4d3ec8358e38": {
           "type": "announcement",
-          "disabled": true,
           "settings": {
             "icon": "icon-currency-dollar-circle",
             "svg-code": "",
@@ -89,7 +88,6 @@
         "f752cf03-1fbc-4be1-a3cc-171a071687d2",
         "539fad8b-91eb-4f52-8e5a-4d3ec8358e38"
       ],
-      "disabled": true,
       "settings": {
         "divider_top": false,
         "divider_bottom": false,
