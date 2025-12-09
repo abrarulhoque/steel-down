@@ -342,7 +342,7 @@
         "text_yX9zY9": {
           "type": "text",
           "settings": {
-            "image": "shopify://shop_images/Steeltown-Tigers-Crewneck-Retro-Spencer1.jpg",
+            "image": "shopify://shop_images/Sho-Hot-Rod-Steeltown-Tigers-Crew-1.jpg",
             "title": "",
             "sub_title": "",
             "desc": "<ul><li>True to size</li><li>Unisex (SS - 3XL)</li><li>Cotton/Poly Blend</li><li>Wash cold, hang dry</li></ul>",
@@ -353,7 +353,7 @@
         "text_6tn3HA": {
           "type": "text",
           "settings": {
-            "image": "shopify://shop_images/Steeltown-Tigers-Crewneck-Retro-Spencer2.jpg",
+            "image": "shopify://shop_images/Sho-Hot-Rod-Steeltown-Tigers-Crew-2.jpg",
             "title": "",
             "sub_title": "",
             "desc": "<ul><li>Spencer is 6'2ft 185lbs and wears an XL in the picture</li><li>Karli is 5'7ft 110lbs and wears an L in the picture</li><li>Size Guide in pictures above</li></ul>",
@@ -550,9 +550,9 @@
         "content_color": "#ffffff",
         "content_heading_color": false,
         "bg_color": "rgba(0,0,0,0)",
-        "bg_image": "shopify://shop_images/Steeltown-Tigers-Crewneck-Retro-Wide.jpg",
+        "bg_image": "shopify://shop_images/Sho-Hot-Rod-Steeltown-Tigers-Crew-Wide.jpg",
         "overlay_color": "#000000",
-        "overlay_strength": 50,
+        "overlay_strength": 30,
         "section-bottom-margin": false
       }
     },
