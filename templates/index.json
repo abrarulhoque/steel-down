@@ -92,6 +92,21 @@
     "section-slideshow": {
       "type": "section-slideshow",
       "blocks": {
+        "image_aKL9qY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Sho-Hot-Rod-Steeltown-Tigers-Crew-Wide.jpg",
+            "alignment": "left",
+            "title": "Sweater Weather",
+            "text": "<p>Whether you drive around in an open roadster or not, we've got a collection of long sleeves for every occasion.</p>",
+            "link_style": "c-btn c-btn--mono",
+            "link_title": "Shop Sweaters",
+            "link": "shopify://collections/sweaters",
+            "link_style_2": "c-btn c-btn--primary",
+            "link_title_2": "",
+            "link_2": ""
+          }
+        },
         "video_CNzJ9n": {
           "type": "video",
           "settings": {
@@ -107,27 +122,11 @@
             "link_title_2": "",
             "link_2": "shopify://collections/all"
           }
-        },
-        "image_aKL9qY": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/Steeltown-Two-Tees-Sale-Web-Header.jpg",
-            "alignment": "right",
-            "title": "Two TEES for $50",
-            "text": "<p>Get any two of our locally printed graphic tees for just $50 flat. No strings attached.</p>",
-            "link_style": "c-btn c-btn--mono",
-            "link_title": "Shop Sale",
-            "link": "shopify://collections/graphic-tees-at-steeltown-garage-co",
-            "link_style_2": "c-btn c-btn--primary",
-            "link_title_2": "",
-            "link_2": ""
-          }
         }
       },
       "block_order": [
-        "video_CNzJ9n",
-        "image_aKL9qY"
+        "image_aKL9qY",
+        "video_CNzJ9n"
       ],
       "settings": {
         "style": "transparent",
