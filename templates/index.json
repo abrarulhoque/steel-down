@@ -99,7 +99,7 @@
             "alignment": "left",
             "title": "Sweater Weather",
             "text": "<p>Whether you drive around in an open roadster or not, we've got a collection of long sleeves for every occasion.</p>",
-            "link_style": "c-btn c-btn--mono",
+            "link_style": "c-btn c-btn--primary",
             "link_title": "Shop Sweaters",
             "link": "shopify://collections/sweaters",
             "link_style_2": "c-btn c-btn--hollow",
