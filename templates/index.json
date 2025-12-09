@@ -102,9 +102,9 @@
             "link_style": "c-btn c-btn--mono",
             "link_title": "Shop Sweaters",
             "link": "shopify://collections/sweaters",
-            "link_style_2": "c-btn c-btn--primary",
-            "link_title_2": "",
-            "link_2": ""
+            "link_style_2": "c-btn c-btn--hollow",
+            "link_title_2": "Tigers Crewneck",
+            "link_2": "shopify://products/retro-tigers-crewneck-sweater"
           }
         },
         "video_CNzJ9n": {
