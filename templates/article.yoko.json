@@ -1,0 +1,91 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "blocks": {
+        "tags": {
+          "type": "tags",
+          "settings": {}
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "date": {
+          "type": "date",
+          "settings": {}
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        },
+        "meta": {
+          "type": "meta",
+          "settings": {
+            "show_author": false,
+            "show_sharing": true
+          }
+        }
+      },
+      "block_order": [
+        "tags",
+        "title",
+        "date",
+        "content",
+        "meta"
+      ],
+      "settings": {
+        "show_img": true
+      }
+    },
+    "section_blog_rCN4Jk": {
+      "type": "section-blog",
+      "settings": {
+        "title": "MORE FROM THE JOURNAL",
+        "blog": "journal",
+        "post_limit": 2,
+        "grid": 2,
+        "section_width": "large",
+        "divider": false,
+        "link_title": "View all",
+        "link": "",
+        "blog_image_ratio": "16:9",
+        "blog_show_tags": false,
+        "blog_show_date": false,
+        "blog_show_read_more": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_newsletter_PWRDUd": {
+      "type": "section-newsletter",
+      "settings": {
+        "divider": false,
+        "section_width": "contained",
+        "newsletter_bg": "#F2F2F2",
+        "newsletter_style": "dark",
+        "default_title_color": false,
+        "text_border_color": true,
+        "section_newsletter_title": "10% OFF YOUR FIRST ORDER",
+        "section_newsletter_desc": "<p>Join our email family to receive exclusive offers and discounts -<strong>like 10% OFF your first order</strong>(Discount code will be emailed to you. Check your junk mail.)</p>",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "section-bottom-margin": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "section_blog_rCN4Jk",
+    "section_newsletter_PWRDUd"
+  ]
+}
