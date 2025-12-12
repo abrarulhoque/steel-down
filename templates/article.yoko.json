@@ -148,7 +148,7 @@
       ],
       "name": "Image and text banner",
       "settings": {
-        "section_height": "medium",
+        "section_height": "large",
         "section_height_mobile": "medium",
         "section_width": "contained",
         "content_alignment": "center",
@@ -281,58 +281,6 @@
         "padding_bottom": 0,
         "section-bottom-margin": false
       }
-    },
-    "section_custom_xAdhqc": {
-      "type": "section-custom",
-      "blocks": {
-        "text_cXhxrz": {
-          "type": "text",
-          "settings": {
-            "title": "Text",
-            "text": "<p>Promote your brand by using a powerful combination of buttons, custom text, page content and images.</p>",
-            "link_title": "Learn more",
-            "link": "",
-            "align": "center",
-            "width": "1/2"
-          }
-        },
-        "image_y9F44N": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Sho-Hot-Rod-Steeltown-Tigers-Crew-Rollout.jpg",
-            "link": "",
-            "width": "1/1"
-          }
-        },
-        "spacer_PAH8xb": {
-          "type": "spacer",
-          "settings": {
-            "space": "none"
-          }
-        },
-        "button_bPagXd": {
-          "type": "button",
-          "settings": {
-            "title": "Button",
-            "link": "",
-            "color": "primary",
-            "size": "big",
-            "width": "1/3"
-          }
-        }
-      },
-      "block_order": [
-        "text_cXhxrz",
-        "image_y9F44N",
-        "spacer_PAH8xb",
-        "button_bPagXd"
-      ],
-      "name": "Custom content",
-      "settings": {
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "section-bottom-margin": false
-      }
     }
   },
   "order": [
@@ -341,7 +289,6 @@
     "section_image_text_banner_ierHCC",
     "section_product_VrGwpk",
     "section_blog_rCN4Jk",
-    "section_newsletter_PWRDUd",
-    "section_custom_xAdhqc"
+    "section_newsletter_PWRDUd"
   ]
 }
