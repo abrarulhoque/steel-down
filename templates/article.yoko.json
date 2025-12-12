@@ -71,23 +71,11 @@
             "link_title": "",
             "link": ""
           }
-        },
-        "text_jpmgJr": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "title": "",
-            "sub_title": "",
-            "desc": "",
-            "link_title": "",
-            "link": ""
-          }
         }
       },
       "block_order": [
         "text_t9wCgL",
-        "text_VR9CbX",
-        "text_jpmgJr"
+        "text_VR9CbX"
       ],
       "name": "Multicolumn with images",
       "settings": {
@@ -97,7 +85,7 @@
         "link": "",
         "divider": false,
         "grid": 2,
-        "spacing": 4,
+        "spacing": 2,
         "alignment": "center",
         "link_style": "hollow",
         "heading_size": 3,
@@ -116,49 +104,6 @@
         "padding_top": 0,
         "padding_bottom": 0,
         "section-bottom-margin": true
-      }
-    },
-    "section_image_text_banner_ierHCC": {
-      "type": "section-image-text-banner",
-      "blocks": {
-        "text_YR7E4K": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<p>Offer some insight into your brand and history. Use images, text and video to describe your value proposition.</p>",
-            "text_size": 6,
-            "text_width": 65,
-            "text_size_mobile": 3,
-            "text_style": "body"
-          }
-        },
-        "link_KbHQw8": {
-          "type": "link",
-          "disabled": true,
-          "settings": {
-            "link_title": "Shop all",
-            "link": "",
-            "link_style": "c-btn c-btn--hollow"
-          }
-        }
-      },
-      "block_order": [
-        "text_YR7E4K",
-        "link_KbHQw8"
-      ],
-      "name": "Image and text banner",
-      "settings": {
-        "section_height": "large",
-        "section_height_mobile": "medium",
-        "section_width": "contained",
-        "content_alignment": "center",
-        "content_color": "#ffffff",
-        "content_heading_color": false,
-        "bg_color": "rgba(0,0,0,0)",
-        "bg_image": "shopify://shop_images/Sho-Hot-Rod-Steeltown-Tigers-Crew-Rollout.jpg",
-        "overlay_color": "#000000",
-        "overlay_strength": 0,
-        "section-bottom-margin": false
       }
     },
     "section_product_VrGwpk": {
@@ -247,6 +192,65 @@
         "padding_bottom": 0
       }
     },
+    "section_multi_column_images_GfKtH6": {
+      "type": "section-multi-column-images",
+      "blocks": {
+        "text_gdneJj": {
+          "type": "text",
+          "settings": {
+            "image": "shopify://shop_images/Sho-Hot-Rod-Steeltown-Tigers-Crew-Parking.jpg",
+            "title": "",
+            "sub_title": "",
+            "desc": "",
+            "link_title": "",
+            "link": ""
+          }
+        },
+        "text_ndLVhq": {
+          "type": "text",
+          "settings": {
+            "image": "shopify://shop_images/Sho-Hot-Rod-Steeltown-Tigers-Crew-BW.jpg",
+            "title": "",
+            "sub_title": "",
+            "desc": "",
+            "link_title": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_gdneJj",
+        "text_ndLVhq"
+      ],
+      "name": "Multicolumn with images",
+      "settings": {
+        "title": "",
+        "container": "large",
+        "link_title": "Learn more",
+        "link": "",
+        "divider": false,
+        "grid": 2,
+        "spacing": 2,
+        "alignment": "center",
+        "link_style": "hollow",
+        "heading_size": 3,
+        "image_toggle": true,
+        "image_size": 100,
+        "image_padding": 0,
+        "image_ratio": "1:1",
+        "image_fit": false,
+        "bg_color": "rgba(0,0,0,0)",
+        "color_image": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "text_heading_color": false,
+        "text_border_color": true,
+        "grid_mobile": "1",
+        "mobile_layout": "carousel",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "section-bottom-margin": true
+      }
+    },
     "section_blog_rCN4Jk": {
       "type": "section-blog",
       "settings": {
@@ -286,8 +290,8 @@
   "order": [
     "main",
     "section_multi_column_images_hLmRkg",
-    "section_image_text_banner_ierHCC",
     "section_product_VrGwpk",
+    "section_multi_column_images_GfKtH6",
     "section_blog_rCN4Jk",
     "section_newsletter_PWRDUd"
   ]
