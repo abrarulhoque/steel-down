@@ -100,11 +100,26 @@
             "title": "Sweater Weather",
             "text": "<p>Whether you drive around in an open roadster or not, we've got a collection of long sleeves for every occasion.</p>",
             "link_style": "c-btn c-btn--primary",
-            "link_title": "Shop Sweaters",
+            "link_title": "Shop",
             "link": "shopify://collections/sweaters",
             "link_style_2": "c-btn c-btn--hollow",
             "link_title_2": "Tigers Crewneck",
             "link_2": "shopify://products/retro-tigers-crewneck-sweater"
+          }
+        },
+        "image_NFHwV3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Steeltown-Shipyard-Hero.jpg",
+            "alignment": "left",
+            "title": "Heavy Flannels",
+            "text": "<p>Thick enough to blunt the teeth of a freezing wind and rugged enough to shrug off the grime of a twelve-hour shift.</p>",
+            "link_style": "c-btn c-btn--primary",
+            "link_title": "Flannels",
+            "link": "shopify://products/freeway-heavy-flannel",
+            "link_style_2": "c-btn c-btn--hollow",
+            "link_title_2": "All Long sleeves",
+            "link_2": "shopify://collections/long-sleeves"
           }
         },
         "video_CNzJ9n": {
@@ -127,6 +142,7 @@
       },
       "block_order": [
         "image_aKL9qY",
+        "image_NFHwV3",
         "video_CNzJ9n"
       ],
       "settings": {
@@ -143,7 +159,7 @@
         "text_border_color": true,
         "text_bg_color": "#ffffff",
         "overlay_color": "#000000",
-        "overlay_strength": 0,
+        "overlay_strength": 40,
         "section-bottom-margin": false
       }
     },
