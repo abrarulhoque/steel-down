@@ -92,21 +92,6 @@
     "section-slideshow": {
       "type": "section-slideshow",
       "blocks": {
-        "image_aKL9qY": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Sho-Hot-Rod-Steeltown-Tigers-Crew-Wide.jpg",
-            "alignment": "left",
-            "title": "Sweater Weather",
-            "text": "<p>Whether you drive around in an open roadster or not, we've got a collection of long sleeves for every occasion.</p>",
-            "link_style": "c-btn c-btn--primary",
-            "link_title": "Shop",
-            "link": "shopify://collections/sweaters",
-            "link_style_2": "c-btn c-btn--hollow",
-            "link_title_2": "Tigers Crewneck",
-            "link_2": "shopify://products/retro-tigers-crewneck-sweater"
-          }
-        },
         "image_NFHwV3": {
           "type": "image",
           "settings": {
@@ -120,6 +105,21 @@
             "link_style_2": "c-btn c-btn--hollow",
             "link_title_2": "All Long sleeves",
             "link_2": "shopify://collections/long-sleeves"
+          }
+        },
+        "image_aKL9qY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Sho-Hot-Rod-Steeltown-Tigers-Crew-Wide.jpg",
+            "alignment": "left",
+            "title": "Sweater Weather",
+            "text": "<p>Whether you drive around in an open roadster or not, we've got a collection of long sleeves for every occasion.</p>",
+            "link_style": "c-btn c-btn--primary",
+            "link_title": "Shop",
+            "link": "shopify://collections/sweaters",
+            "link_style_2": "c-btn c-btn--hollow",
+            "link_title_2": "Tigers Crewneck",
+            "link_2": "shopify://products/retro-tigers-crewneck-sweater"
           }
         },
         "video_CNzJ9n": {
@@ -141,8 +141,8 @@
         }
       },
       "block_order": [
-        "image_aKL9qY",
         "image_NFHwV3",
+        "image_aKL9qY",
         "video_CNzJ9n"
       ],
       "settings": {
