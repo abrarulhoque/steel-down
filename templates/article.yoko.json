@@ -71,7 +71,7 @@
       "settings": {
         "divider": false,
         "section_width": "contained",
-        "newsletter_bg": "#F2F2F2",
+        "newsletter_bg": "#f2f2f2",
         "newsletter_style": "dark",
         "default_title_color": false,
         "text_border_color": true,
@@ -81,10 +81,97 @@
         "padding_bottom": 0,
         "section-bottom-margin": false
       }
+    },
+    "section_product_VrGwpk": {
+      "type": "section-product",
+      "blocks": {
+        "vendor_b4DfCd": {
+          "type": "vendor",
+          "disabled": true,
+          "settings": {
+            "vendor_size": 2,
+            "vendor_style": "body"
+          }
+        },
+        "title_3DkYaV": {
+          "type": "title",
+          "settings": {
+            "title_size": 3,
+            "title_size_mobile": 3
+          }
+        },
+        "price_BCwzE6": {
+          "type": "price",
+          "disabled": true,
+          "settings": {
+            "price_label_discount": true,
+            "price_label_discount_type": "text",
+            "price_label_discount_color": "#C00000"
+          }
+        },
+        "spacer_LggJT6": {
+          "type": "spacer",
+          "settings": {
+            "top": "small",
+            "bottom": "small",
+            "border": true
+          }
+        },
+        "description_dtWCkg": {
+          "type": "description",
+          "settings": {
+            "desc_text": ""
+          }
+        },
+        "variant_picker_7dW8hw": {
+          "type": "variant_picker",
+          "settings": {
+            "product_variant_style": "swatches-buttons",
+            "popup_enable": false,
+            "popup_trigger": "Size\nGröße\nTaille\nTaglia\nTalla",
+            "popup_label": "Size guide",
+            "popup_content": ""
+          }
+        },
+        "quantity_selector_eNXdpz": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_pBtBEq": {
+          "type": "buy_buttons",
+          "settings": {
+            "enable_payment_button": true
+          }
+        }
+      },
+      "block_order": [
+        "vendor_b4DfCd",
+        "title_3DkYaV",
+        "price_BCwzE6",
+        "spacer_LggJT6",
+        "description_dtWCkg",
+        "variant_picker_7dW8hw",
+        "quantity_selector_eNXdpz",
+        "buy_buttons_pBtBEq"
+      ],
+      "name": "Featured product",
+      "settings": {
+        "featured_product": "retro-tigers-crewneck-sweater",
+        "content_align": "default",
+        "enable_video_looping": false,
+        "product_image_ratio": "1:1",
+        "enable_gallery_arrows": true,
+        "thumbnails_position": "bottom",
+        "thumbnails_ratio": "1:1",
+        "thumbnails_show_border": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
     "main",
+    "section_product_VrGwpk",
     "section_blog_rCN4Jk",
     "section_newsletter_PWRDUd"
   ]
