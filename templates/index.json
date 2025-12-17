@@ -751,6 +751,26 @@
         "padding_bottom": 0,
         "section-bottom-margin": false
       }
+    },
+    "section_blog_98WVkc": {
+      "type": "section-blog",
+      "name": "Blog posts",
+      "settings": {
+        "title": "FROM THE JOURNAL",
+        "blog": "journal",
+        "post_limit": 2,
+        "grid": 2,
+        "section_width": "large",
+        "divider": true,
+        "link_title": "View all",
+        "link": "",
+        "blog_image_ratio": "4:3",
+        "blog_show_tags": false,
+        "blog_show_date": false,
+        "blog_show_read_more": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
@@ -770,6 +790,7 @@
     "section_rich_text_nFraxz",
     "section_collection_HtbeqY",
     "section_collection_YPxYh6",
+    "section_blog_98WVkc",
     "section_recently_viewed_rjNxTQ",
     "deed0c7d-a6b2-434e-8882-2a7cba84c982"
   ]
