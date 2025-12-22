@@ -344,7 +344,7 @@
         "text_cVqzcN": {
           "type": "text",
           "settings": {
-            "image": "shopify://shop_images/Fast-As-Fuck-Pullover-Hoodie-Motorcycle.jpg",
+            "image": "shopify://shop_images/Fast-As-Fuck-Steeltown-Bundle-1.jpg",
             "title": "Heavyweight Cotton",
             "sub_title": "",
             "desc": "<p>Our Fast As Fuck hoodies are a heavy cotton/poly blend perfect for layering and high speed hi jinx.</p>",
@@ -355,7 +355,7 @@
         "text_68JFcV": {
           "type": "text",
           "settings": {
-            "image": "shopify://shop_images/Fast-As-Fuck-Hat-Trucker-Steeltown-Hotrod.jpg",
+            "image": "shopify://shop_images/Fast-As-Fuck-Steeltown-Bundle-2.jpg",
             "title": "Old School Cool",
             "sub_title": "",
             "desc": "<p>There's just something about golden oak leaves and a matching rope on an old school foam trucker. </p>",
@@ -369,7 +369,7 @@
             "image": "shopify://shop_images/Fast-As-Fuck-Hoodie-Motorcycle-Sweater-Steeltown-Sleeve.jpg",
             "title": "",
             "sub_title": "",
-            "desc": "<ul><li>True to size</li><li>Unisex (XS - 3XL)</li><li>Cotton/Poly Blend</li><li>Wash Cold, Hang Dry</li></ul><p></p>",
+            "desc": "",
             "link_title": "",
             "link": ""
           }
@@ -377,10 +377,10 @@
         "text_cbteRD": {
           "type": "text",
           "settings": {
-            "image": "shopify://shop_images/Fast-As-Fuck-Trucker-Karli-1_e611a54b-715c-4df4-921a-4f3cea850ed3.jpg",
+            "image": "shopify://shop_images/Fast-As-Fuck-Steeltown-Bundle-3.jpg",
             "title": "",
             "sub_title": "",
-            "desc": "<ul><li>5 Panel</li><li>Plastic Adjustable Snap</li><li>Size: OSFM - Adult (58cm/22.8\")</li><li>Pre-curved Visor</li></ul>",
+            "desc": "",
             "link_title": "",
             "link": ""
           }
@@ -621,6 +621,56 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "section_announcement_bar_jrq89F": {
+      "type": "section-announcement-bar",
+      "blocks": {
+        "announcement_gVDrVw": {
+          "type": "announcement",
+          "settings": {
+            "icon": "icon-pin",
+            "svg-code": "",
+            "text": "SHIPS FROM COLORADO. ZERO TARIFFS OR IMPORT CHARGES.",
+            "text_link": "",
+            "link": ""
+          }
+        },
+        "announcement_MGUPyP": {
+          "type": "announcement",
+          "disabled": true,
+          "settings": {
+            "icon": "icon-delivery-truck-3",
+            "svg-code": "",
+            "text": "Store updates and announcements",
+            "text_link": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement_gVDrVw",
+        "announcement_MGUPyP"
+      ],
+      "name": "Announcement bar",
+      "settings": {
+        "divider_top": false,
+        "divider_bottom": false,
+        "text_size_desktop": 8,
+        "text_size_mobile": 5,
+        "text_style": "body",
+        "message_color_bg": "#ffffff",
+        "message_color_text": "#C00000",
+        "text_letter_spacing": 0,
+        "text_bold": false,
+        "text_capitalize": false,
+        "close_icon": false,
+        "carousel_desktop": false,
+        "auto_carousel": true,
+        "carousel_speed": 8,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "section-bottom-margin": true
+      }
     }
   },
   "order": [
@@ -633,6 +683,7 @@
     "5a818a60-e694-4eac-a33f-5ce701e894b0",
     "product-recommendations",
     "1756439511148f4dec",
-    "17489570774e959c00"
+    "17489570774e959c00",
+    "section_announcement_bar_jrq89F"
   ]
 }
