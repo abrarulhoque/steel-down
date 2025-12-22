@@ -367,6 +367,7 @@
         "announcement_gVDrVw",
         "announcement_MGUPyP"
       ],
+      "disabled": true,
       "name": "Announcement bar",
       "settings": {
         "divider_top": false,
