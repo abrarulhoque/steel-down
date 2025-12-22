@@ -270,6 +270,115 @@
         "thumbnails_show_border": false
       }
     },
+    "section_announcement_bar_7qfKzN": {
+      "type": "section-announcement-bar",
+      "blocks": {
+        "announcement_DPBYzE": {
+          "type": "announcement",
+          "settings": {
+            "icon": "icon-pin",
+            "svg-code": "",
+            "text": "SHIPS FREE FROM COLORADO. NO TARIFFS OR IMPORT DUTY.",
+            "text_link": "",
+            "link": ""
+          }
+        },
+        "announcement_kr4Mfk": {
+          "type": "announcement",
+          "disabled": true,
+          "settings": {
+            "icon": "icon-delivery-truck-3",
+            "svg-code": "",
+            "text": "Store updates and announcements",
+            "text_link": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement_DPBYzE",
+        "announcement_kr4Mfk"
+      ],
+      "name": "Announcement bar",
+      "settings": {
+        "divider_top": false,
+        "divider_bottom": false,
+        "text_size_desktop": 8,
+        "text_size_mobile": 5,
+        "text_style": "heading",
+        "message_color_bg": "#ffffff",
+        "message_color_text": "#C00000",
+        "text_letter_spacing": 0,
+        "text_bold": false,
+        "text_capitalize": false,
+        "close_icon": false,
+        "carousel_desktop": false,
+        "auto_carousel": true,
+        "carousel_speed": 8,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "section-bottom-margin": true
+      }
+    },
+    "section_multi_column_images_aq8abM": {
+      "type": "section-multi-column-images",
+      "blocks": {
+        "text_QKMKJL": {
+          "type": "text",
+          "settings": {
+            "image": "shopify://shop_images/Working-Class-Stiff-Steeltown-Construction-2.jpg",
+            "title": "",
+            "sub_title": "",
+            "desc": "",
+            "link_title": "",
+            "link": ""
+          }
+        },
+        "text_8J4DQT": {
+          "type": "text",
+          "settings": {
+            "image": "shopify://shop_images/Working-Class-Stiff-Steeltown-Construction-1.jpg",
+            "title": "",
+            "sub_title": "",
+            "desc": "",
+            "link_title": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_QKMKJL",
+        "text_8J4DQT"
+      ],
+      "name": "Multicolumn with images",
+      "settings": {
+        "title": "",
+        "container": "large",
+        "link_title": "Learn more",
+        "link": "",
+        "divider": false,
+        "grid": 2,
+        "spacing": 2,
+        "alignment": "center",
+        "link_style": "hollow",
+        "heading_size": 3,
+        "image_toggle": true,
+        "image_size": 100,
+        "image_padding": 0,
+        "image_ratio": "1:1",
+        "image_fit": false,
+        "bg_color": "rgba(0,0,0,0)",
+        "color_image": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "text_heading_color": false,
+        "text_border_color": true,
+        "grid_mobile": "1",
+        "mobile_layout": "carousel",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "section-bottom-margin": false
+      }
+    },
     "af1e6c23-5338-467c-bee9-b9d9b3d9c22a": {
       "type": "section-image-grid",
       "blocks": {
@@ -500,6 +609,8 @@
   },
   "order": [
     "main",
+    "section_announcement_bar_7qfKzN",
+    "section_multi_column_images_aq8abM",
     "af1e6c23-5338-467c-bee9-b9d9b3d9c22a",
     "9904a28f-6381-41fe-96eb-d4a73d60f0a0",
     "5a818a60-e694-4eac-a33f-5ce701e894b0",
