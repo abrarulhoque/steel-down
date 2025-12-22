@@ -1,0 +1,83 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "section_announcement_bar_DTNVp": {
+      "type": "section-announcement-bar",
+      "disabled": false,
+      "settings": {
+        "divider_top": false,
+        "divider_bottom": false,
+        "text_size_desktop": 8,
+        "text_size_mobile": 5,
+        "text_style": "heading",
+        "message_color_bg": "#ffffff",
+        "message_color_text": "#C00000",
+        "text_letter_spacing": 0,
+        "text_bold": false,
+        "text_capitalize": false,
+        "header-559dbe383be692c91fac156090b80089": null,
+        "close_icon": false,
+        "header-c52883aa4042fb93c2c8a08ce31cdc1a": null,
+        "carousel_desktop": false,
+        "auto_carousel": true,
+        "carousel_speed": 8,
+        "header-5d13ad6c3e298b90bc3c4e0ee3226d7a": null,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "section-bottom-margin": false
+      },
+      "blocks": {
+        "announcement_Bq6a7": {
+          "type": "announcement",
+          "disabled": false,
+          "settings": {
+            "icon": "icon-pin",
+            "svg-code": "",
+            "text": "Ships from COLORADO. zero tariffs or import charges.",
+            "text_link": "",
+            "link": ""
+          }
+        },
+        "announcement_TgeQD": {
+          "type": "announcement",
+          "disabled": true,
+          "settings": {
+            "icon": "icon-delivery-truck-3",
+            "svg-code": "",
+            "text": "Store updates and announcements",
+            "text_link": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement_Bq6a7",
+        "announcement_TgeQD"
+      ],
+      "name": "Announcement bar"
+    }
+  },
+  "context": {
+    "market": "us"
+  },
+  "parent": "product.working-class-bundle.json",
+  "order": [
+    "main",
+    "section_announcement_bar_DTNVp",
+    "af1e6c23-5338-467c-bee9-b9d9b3d9c22a",
+    "9904a28f-6381-41fe-96eb-d4a73d60f0a0",
+    "5a818a60-e694-4eac-a33f-5ce701e894b0",
+    "product-recommendations",
+    "1756439511148f4dec",
+    "17489570774e959c00",
+    "section_newsletter_8BGBaX"
+  ]
+}
