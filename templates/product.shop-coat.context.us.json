@@ -1,0 +1,88 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "section_announcement_bar_Tmy7C": {
+      "type": "section-announcement-bar",
+      "disabled": false,
+      "settings": {
+        "divider_top": false,
+        "divider_bottom": false,
+        "text_size_desktop": 8,
+        "text_size_mobile": 5,
+        "text_style": "heading",
+        "message_color_bg": "#f5f5f5",
+        "message_color_text": "#C00000",
+        "text_letter_spacing": 0,
+        "text_bold": false,
+        "text_capitalize": false,
+        "header-235875371993391e172e082fd510ac13": null,
+        "close_icon": false,
+        "header-a798badbe2cfc684d956ddc181a0e54c": null,
+        "carousel_desktop": false,
+        "auto_carousel": true,
+        "carousel_speed": 8,
+        "header-119c0a0b13ca339c7e68a2904edc1d17": null,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "section-bottom-margin": true
+      },
+      "blocks": {
+        "announcement_JLm8m": {
+          "type": "announcement",
+          "disabled": false,
+          "settings": {
+            "icon": "icon-pin",
+            "svg-code": "",
+            "text": "Ships from COLORADO. zero tariffs or import charges.",
+            "text_link": "",
+            "link": ""
+          }
+        },
+        "announcement_Qyj6m": {
+          "type": "announcement",
+          "disabled": true,
+          "settings": {
+            "icon": "icon-delivery-truck-3",
+            "svg-code": "",
+            "text": "Store updates and announcements",
+            "text_link": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement_JLm8m",
+        "announcement_Qyj6m"
+      ],
+      "name": "Announcement bar"
+    }
+  },
+  "context": {
+    "market": "us"
+  },
+  "parent": "product.shop-coat.json",
+  "order": [
+    "main",
+    "section_announcement_bar_Tmy7C",
+    "section_announcement_bar_YcjdUU",
+    "9904a28f-6381-41fe-96eb-d4a73d60f0a0",
+    "section_image_text_banner_7EB698",
+    "section_rich_text_6A4tTi",
+    "section_multi_column_images_MEeL3w",
+    "section_image_with_text_TgkV6k",
+    "section_multi_column_images_4JmaTQ",
+    "section_faq_KXUDp7",
+    "17489570774e959c00",
+    "section_newsletter_8BGBaX",
+    "product-recommendations",
+    "section_collection_tjkYBi"
+  ]
+}
