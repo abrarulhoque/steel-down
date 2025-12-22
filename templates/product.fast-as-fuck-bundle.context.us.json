@@ -19,20 +19,20 @@
         "text_size_mobile": 5,
         "text_style": "heading",
         "message_color_bg": "#ffffff",
-        "message_color_text": "#C00000",
+        "message_color_text": "#c00000",
         "text_letter_spacing": 0,
         "text_bold": false,
         "text_capitalize": false,
-        "header-246b6f66d8ce4f9d90a664d03d17dace": null,
+        "header-7ec6012c728302bdc4dab48d95007f9a": null,
         "close_icon": false,
-        "header-44bee323982d6851d09c537b3472db46": null,
+        "header-b23b34cfb89d75c7cb33e45debacf032": null,
         "carousel_desktop": false,
         "auto_carousel": true,
         "carousel_speed": 8,
-        "header-3601c2268886bdffe415c8e6e5bb10e8": null,
+        "header-247bb98431a9893928ff9120742e87a3": null,
         "padding_top": 0,
         "padding_bottom": 0,
-        "section-bottom-margin": true
+        "section-bottom-margin": false
       },
       "blocks": {
         "announcement_qfbhG": {
