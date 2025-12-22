@@ -19,17 +19,17 @@
         "text_size_mobile": 5,
         "text_style": "heading",
         "message_color_bg": "#ffffff",
-        "message_color_text": "#C00000",
+        "message_color_text": "#c00000",
         "text_letter_spacing": 0,
         "text_bold": false,
         "text_capitalize": false,
-        "header-559dbe383be692c91fac156090b80089": null,
+        "header-8fac0a35bb67579aff0182a0024288b2": null,
         "close_icon": false,
-        "header-c52883aa4042fb93c2c8a08ce31cdc1a": null,
+        "header-15a58dddc25b7fa000f8106f1024ac0e": null,
         "carousel_desktop": false,
         "auto_carousel": true,
         "carousel_speed": 8,
-        "header-5d13ad6c3e298b90bc3c4e0ee3226d7a": null,
+        "header-4668b5c2e353be4607871538b1360894": null,
         "padding_top": 0,
         "padding_bottom": 0,
         "section-bottom-margin": false
@@ -63,6 +63,73 @@
         "announcement_TgeQD"
       ],
       "name": "Announcement bar"
+    },
+    "section_multi_column_images_ChPwH": {
+      "type": "section-multi-column-images",
+      "disabled": false,
+      "settings": {
+        "title": "",
+        "container": "large",
+        "link_title": "Learn more",
+        "link": "",
+        "divider": false,
+        "header-de05d0af17f49e5aac9247c23d3c62c0": null,
+        "grid": 2,
+        "spacing": 2,
+        "alignment": "center",
+        "link_style": "hollow",
+        "heading_size": 3,
+        "header-12fb6e8f6e2d7e82a0733ef52b79f5f0": null,
+        "image_toggle": true,
+        "image_size": 100,
+        "image_padding": 0,
+        "image_ratio": "1:1",
+        "image_fit": false,
+        "header-37eae071fed9fb8834755dd075ea38da": null,
+        "bg_color": "rgba(0,0,0,0)",
+        "color_image": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "text_heading_color": false,
+        "text_border_color": true,
+        "header-8e871d0fed6975376cdc7648bbba2b48": null,
+        "grid_mobile": "1",
+        "mobile_layout": "carousel",
+        "header-fe5c57b1513825317681cf9d3272d598": null,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "section-bottom-margin": false
+      },
+      "blocks": {
+        "text_xPexX": {
+          "type": "text",
+          "disabled": false,
+          "settings": {
+            "image": "shopify://shop_images/Working-Class-Stiff-Steeltown-Construction-2.jpg",
+            "title": "",
+            "sub_title": "",
+            "desc": "",
+            "link_title": "",
+            "link": ""
+          }
+        },
+        "text_48DPX": {
+          "type": "text",
+          "disabled": false,
+          "settings": {
+            "image": "shopify://shop_images/Working-Class-Stiff-Steeltown-Construction-1.jpg",
+            "title": "",
+            "sub_title": "",
+            "desc": "",
+            "link_title": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_xPexX",
+        "text_48DPX"
+      ],
+      "name": "Multicolumn with images"
     }
   },
   "context": {
@@ -72,6 +139,7 @@
   "order": [
     "main",
     "section_announcement_bar_DTNVp",
+    "section_multi_column_images_ChPwH",
     "af1e6c23-5338-467c-bee9-b9d9b3d9c22a",
     "9904a28f-6381-41fe-96eb-d4a73d60f0a0",
     "5a818a60-e694-4eac-a33f-5ce701e894b0",
