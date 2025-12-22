@@ -338,6 +338,56 @@
         "section-bottom-margin": false
       }
     },
+    "section_announcement_bar_jrq89F": {
+      "type": "section-announcement-bar",
+      "blocks": {
+        "announcement_gVDrVw": {
+          "type": "announcement",
+          "settings": {
+            "icon": "icon-pin",
+            "svg-code": "",
+            "text": "SHIPS FROM COLORADO. ZERO TARIFFS OR IMPORT CHARGES.",
+            "text_link": "",
+            "link": ""
+          }
+        },
+        "announcement_MGUPyP": {
+          "type": "announcement",
+          "disabled": true,
+          "settings": {
+            "icon": "icon-delivery-truck-3",
+            "svg-code": "",
+            "text": "Store updates and announcements",
+            "text_link": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement_gVDrVw",
+        "announcement_MGUPyP"
+      ],
+      "name": "Announcement bar",
+      "settings": {
+        "divider_top": false,
+        "divider_bottom": false,
+        "text_size_desktop": 8,
+        "text_size_mobile": 5,
+        "text_style": "heading",
+        "message_color_bg": "#ffffff",
+        "message_color_text": "#C00000",
+        "text_letter_spacing": 0,
+        "text_bold": false,
+        "text_capitalize": false,
+        "close_icon": false,
+        "carousel_desktop": false,
+        "auto_carousel": true,
+        "carousel_speed": 8,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "section-bottom-margin": false
+      }
+    },
     "section_multi_column_images_GyjpPE": {
       "type": "section-multi-column-images",
       "blocks": {
@@ -621,61 +671,12 @@
       "settings": {
         "include_margins": true
       }
-    },
-    "section_announcement_bar_jrq89F": {
-      "type": "section-announcement-bar",
-      "blocks": {
-        "announcement_gVDrVw": {
-          "type": "announcement",
-          "settings": {
-            "icon": "icon-pin",
-            "svg-code": "",
-            "text": "SHIPS FROM COLORADO. ZERO TARIFFS OR IMPORT CHARGES.",
-            "text_link": "",
-            "link": ""
-          }
-        },
-        "announcement_MGUPyP": {
-          "type": "announcement",
-          "disabled": true,
-          "settings": {
-            "icon": "icon-delivery-truck-3",
-            "svg-code": "",
-            "text": "Store updates and announcements",
-            "text_link": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "announcement_gVDrVw",
-        "announcement_MGUPyP"
-      ],
-      "name": "Announcement bar",
-      "settings": {
-        "divider_top": false,
-        "divider_bottom": false,
-        "text_size_desktop": 8,
-        "text_size_mobile": 5,
-        "text_style": "body",
-        "message_color_bg": "#ffffff",
-        "message_color_text": "#C00000",
-        "text_letter_spacing": 0,
-        "text_bold": false,
-        "text_capitalize": false,
-        "close_icon": false,
-        "carousel_desktop": false,
-        "auto_carousel": true,
-        "carousel_speed": 8,
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "section-bottom-margin": true
-      }
     }
   },
   "order": [
     "main",
     "af1e6c23-5338-467c-bee9-b9d9b3d9c22a",
+    "section_announcement_bar_jrq89F",
     "section_multi_column_images_GyjpPE",
     "section_image_text_banner_f68rDa",
     "9904a28f-6381-41fe-96eb-d4a73d60f0a0",
@@ -683,7 +684,6 @@
     "5a818a60-e694-4eac-a33f-5ce701e894b0",
     "product-recommendations",
     "1756439511148f4dec",
-    "17489570774e959c00",
-    "section_announcement_bar_jrq89F"
+    "17489570774e959c00"
   ]
 }
