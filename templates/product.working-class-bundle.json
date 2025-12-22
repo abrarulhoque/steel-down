@@ -299,6 +299,7 @@
         "announcement_DPBYzE",
         "announcement_kr4Mfk"
       ],
+      "disabled": true,
       "name": "Announcement bar",
       "settings": {
         "divider_top": false,
