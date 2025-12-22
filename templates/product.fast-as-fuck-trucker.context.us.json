@@ -19,17 +19,17 @@
         "text_size_mobile": 5,
         "text_style": "heading",
         "message_color_bg": "#f5f5f5",
-        "message_color_text": "#C00000",
+        "message_color_text": "#c00000",
         "text_letter_spacing": 0,
         "text_bold": false,
         "text_capitalize": false,
-        "header-b5ebffef1aff566ba96b09295ba235d0": null,
+        "header-9268fa31aa373d363c0cc7c473d835ec": null,
         "close_icon": false,
-        "header-6e29f46d5af96919c771904d85fd1678": null,
+        "header-2495100e58b89a4d4d2d7b54d09364ee": null,
         "carousel_desktop": false,
         "auto_carousel": true,
         "carousel_speed": 8,
-        "header-9d4090690cb0070381a247296ea16d3e": null,
+        "header-bef2cb8af79f2dfa71e76e47f36599ee": null,
         "padding_top": 0,
         "padding_bottom": 0,
         "section-bottom-margin": true
@@ -71,6 +71,7 @@
   "parent": "product.fast-as-fuck-trucker.json",
   "order": [
     "main",
+    "section_announcement_bar_LKc6L",
     "section_announcement_bar_YcjdUU",
     "9904a28f-6381-41fe-96eb-d4a73d60f0a0",
     "section_multi_column_images_4JmaTQ",
@@ -80,7 +81,6 @@
     "17489570774e959c00",
     "section_newsletter_8BGBaX",
     "product-recommendations",
-    "section_collection_tjkYBi",
-    "section_announcement_bar_LKc6L"
+    "section_collection_tjkYBi"
   ]
 }
