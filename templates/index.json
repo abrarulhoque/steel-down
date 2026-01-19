@@ -94,6 +94,7 @@
       "blocks": {
         "image_NFHwV3": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Steeltown-Shipyard-Hero.jpg",
             "alignment": "left",
@@ -109,6 +110,7 @@
         },
         "image_aKL9qY": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Sho-Hot-Rod-Steeltown-Tigers-Crew-Wide.jpg",
             "alignment": "left",
@@ -124,16 +126,15 @@
         },
         "video_CNzJ9n": {
           "type": "video",
-          "disabled": true,
           "settings": {
             "video_link": "https://cdn.shopify.com/videos/c/o/v/cde7b968769c4982b3d6822741c34e19.mp4",
             "yt_link": "",
             "alignment": "center",
-            "title": "FREEWAY FLANNELS ARE BACK",
-            "text": "<p>Grab one of our best-selling heavyweight flannels before they're gone.</p>",
+            "title": "GET 50% OFF NOW",
+            "text": "<p>Our Winter \"Buy One Get One Half Off\" sale is live!</p>",
             "link_style": "c-btn c-btn--mono",
-            "link_title": "SHOP FLANNELS",
-            "link": "shopify://products/freeway-heavy-flannel",
+            "link_title": "SHOP BEST SELLERS",
+            "link": "shopify://collections/best-sellers",
             "link_style_2": "c-btn c-btn--primary",
             "link_title_2": "",
             "link_2": "shopify://collections/all"
@@ -147,7 +148,7 @@
       ],
       "settings": {
         "style": "transparent",
-        "title_size": 4,
+        "title_size": 5,
         "autoplay": true,
         "autoplay_speed": 8,
         "nav_style": "solid-brand",
