@@ -15,7 +15,7 @@
   "sections": {
     "section_announcement_bar_zcGkx": {
       "type": "section-announcement-bar",
-      "disabled": false,
+      "disabled": true,
       "settings": {
         "divider_top": false,
         "divider_bottom": false,
@@ -27,13 +27,13 @@
         "text_letter_spacing": 0,
         "text_bold": false,
         "text_capitalize": false,
-        "header-b34a968b099e5ad83912eaa7852c19e9": null,
+        "header-d834cc388b03ee4566c98535a646d95d": null,
         "close_icon": false,
-        "header-4d490f5a9a38eb3b4482f2c7ec5a9241": null,
+        "header-0a7623fb10f06d67184d578c292dc09e": null,
         "carousel_desktop": false,
         "auto_carousel": true,
         "carousel_speed": 8,
-        "header-fb82238db43d02af6835b523a3ec177d": null,
+        "header-911f900753275914f6a2b55daf0b2a93": null,
         "padding_top": 0,
         "padding_bottom": 0,
         "section-bottom-margin": true
@@ -55,11 +55,55 @@
         "announcement_Jtkqy"
       ],
       "name": "Announcement bar"
+    },
+    "section_announcement_bar_aiMmb": {
+      "type": "section-announcement-bar",
+      "disabled": false,
+      "settings": {
+        "divider_top": false,
+        "divider_bottom": false,
+        "text_size_desktop": 6,
+        "text_size_mobile": 2,
+        "text_style": "heading",
+        "message_color_bg": "#f2f2f2",
+        "message_color_text": "#C00000",
+        "text_letter_spacing": 0,
+        "text_bold": false,
+        "text_capitalize": false,
+        "header-58cc5b01ebe151df02318600e3961ec9": null,
+        "close_icon": false,
+        "header-6ed308307cd8315889be4b5606cd0862": null,
+        "carousel_desktop": false,
+        "auto_carousel": true,
+        "carousel_speed": 8,
+        "header-c0c88a14c6767002a2bb57416d0c9912": null,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "section-bottom-margin": true
+      },
+      "blocks": {
+        "announcement_8hgL8": {
+          "type": "announcement",
+          "disabled": false,
+          "settings": {
+            "icon": "none",
+            "svg-code": "",
+            "text": "SHIPPING FROM OUR COLORADO WAREHOUSE. NO TARIFFS",
+            "text_link": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement_8hgL8"
+      ],
+      "name": "Announcement bar"
     }
   },
   "order": [
     "section_announcement_bar_zcGkx",
     "main",
+    "section_announcement_bar_aiMmb",
     "section_announcement_bar_YcjdUU",
     "9904a28f-6381-41fe-96eb-d4a73d60f0a0",
     "5a818a60-e694-4eac-a33f-5ce701e894b0",
