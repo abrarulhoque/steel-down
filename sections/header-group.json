@@ -192,7 +192,7 @@
         "menu": "2019-main-menu",
         "layout": "left",
         "style": "sticky",
-        "link_style": "icon",
+        "link_style": "word",
         "enable_chevrons": false,
         "header_divider": false,
         "header_bg": "#ffffff",
