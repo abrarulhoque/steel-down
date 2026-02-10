@@ -51,75 +51,6 @@
         "section-bottom-margin": true
       }
     },
-    "section_video_wxA7PP": {
-      "type": "section-video",
-      "blocks": {
-        "video_XA9CBJ": {
-          "type": "video",
-          "settings": {
-            "video_url": "https://www.youtube.com/watch?v=k1TTUveQWu0",
-            "image": "shopify://shop_images/SteeltownGarageWorkingClassStiff-KYLEPOOLEMEDIA-035.jpg",
-            "video_title": "Working Class Stiff at Steeltown Garage"
-          }
-        }
-      },
-      "block_order": [
-        "video_XA9CBJ"
-      ],
-      "disabled": true,
-      "name": "Video",
-      "settings": {
-        "title": "",
-        "desc": "",
-        "link_title": "More videos",
-        "link": "",
-        "overlay_strength": 20,
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "section_image_text_banner_TENCKK": {
-      "type": "section-image-text-banner",
-      "blocks": {
-        "text_GGYfBw": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Offer some insight into your brand and history. Use images, text and video to describe your value proposition.</p>",
-            "text_size": 6,
-            "text_width": 65,
-            "text_size_mobile": 3,
-            "text_style": "body"
-          }
-        },
-        "link_yzkVNa": {
-          "type": "link",
-          "settings": {
-            "link_title": "Shop all",
-            "link": "",
-            "link_style": "c-btn c-btn--hollow"
-          }
-        }
-      },
-      "block_order": [
-        "text_GGYfBw",
-        "link_yzkVNa"
-      ],
-      "disabled": true,
-      "name": "Image and text banner",
-      "settings": {
-        "section_height": "medium",
-        "section_height_mobile": "medium",
-        "section_width": "full",
-        "content_alignment": "left",
-        "content_color": "#ffffff",
-        "content_heading_color": false,
-        "bg_color": "rgba(0,0,0,0)",
-        "bg_image": "shopify://shop_images/Steeltown-Shipyard-Hero.jpg",
-        "overlay_color": "#000000",
-        "overlay_strength": 10,
-        "section-bottom-margin": false
-      }
-    },
     "banner": {
       "type": "main-collection-banner",
       "disabled": true,
@@ -312,6 +243,33 @@
         "padding_bottom": 0
       }
     },
+    "section_video_wxA7PP": {
+      "type": "section-video",
+      "blocks": {
+        "video_XA9CBJ": {
+          "type": "video",
+          "settings": {
+            "video_url": "https://www.youtube.com/watch?v=k1TTUveQWu0",
+            "image": "shopify://shop_images/SteeltownGarageWorkingClassStiff-KYLEPOOLEMEDIA-035.jpg",
+            "video_title": "Working Class Stiff at Steeltown Garage"
+          }
+        }
+      },
+      "block_order": [
+        "video_XA9CBJ"
+      ],
+      "disabled": true,
+      "name": "Video",
+      "settings": {
+        "title": "",
+        "desc": "",
+        "link_title": "More videos",
+        "link": "",
+        "overlay_strength": 20,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "section_newsletter_dz34V6": {
       "type": "section-newsletter",
       "name": "Newsletter",
@@ -328,17 +286,71 @@
         "padding_bottom": 0,
         "section-bottom-margin": false
       }
+    },
+    "section_image_with_text_PyzE3d": {
+      "type": "section-image-with-text",
+      "blocks": {
+        "image_fiCbbt": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Working-Class-Stiff-Glasses-Construction.jpg",
+            "title": "Jobsite Safety",
+            "desc": "<p>Our best-selling polycarbonate glasses were originally designed for motorcycle safety. But they are shatter-proof, impact-resistant and fully ANSI and CSA certified so they've become a favourite on the job site as well.</p><p>Extremely lightweight frames make them comfortable for all day wear and the flexible, rubberized stems make them perfect for wearing with helmets, masks and face coverings.</p>",
+            "horizontal_align": "left",
+            "link_title": "Shop Eyewear",
+            "link": "shopify://products/motorcycle-riding-glasses",
+            "bg_color_block": "#f2f2f2",
+            "bg_color_content": "#f2f2f2",
+            "color_text": "#212121",
+            "text_heading_color": false,
+            "text_border_color": true
+          }
+        },
+        "image_HbxMMn": {
+          "type": "image",
+          "settings": {
+            "title": "Image with text",
+            "desc": "<p>Use these blocks to share your brand's story. You can focus on a particular collection, a product detail, or even embed a video.</p>",
+            "horizontal_align": "left",
+            "link_title": "Learn more",
+            "link": "",
+            "bg_color_block": "rgba(0,0,0,0)",
+            "bg_color_content": "#ffffff",
+            "color_text": "#212121",
+            "text_heading_color": false,
+            "text_border_color": true
+          }
+        }
+      },
+      "block_order": [
+        "image_fiCbbt",
+        "image_HbxMMn"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "container": "large",
+        "block_spacing": 2,
+        "image_ratio": "1:1",
+        "block_layout": "1/2",
+        "block_align": "left",
+        "vertical_align": "middle",
+        "heading_size": 3,
+        "link_style": "hollow",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "section-bottom-margin": true
+      }
     }
   },
   "order": [
     "section_slideshow_JDx8bk",
-    "section_video_wxA7PP",
-    "section_image_text_banner_TENCKK",
     "banner",
+    "section_image_with_text_PyzE3d",
     "product-grid",
     "section_image_text_banner_Fkneak",
     "section_image_with_text_EbyXwN",
     "section_testimonials_ecDVNc",
+    "section_video_wxA7PP",
     "section_newsletter_dz34V6"
   ]
 }
