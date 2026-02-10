@@ -134,13 +134,13 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/Working-Class-Stiff-Glasses-Construction.jpg",
-            "title": "Jobsite Safety",
+            "title": "Stylish Job Site Safety",
             "desc": "<p>Our best-selling polycarbonate glasses were originally designed for motorcycle safety. But they are shatter-proof, impact-resistant and fully ANSI and CSA certified so they've become a favourite on the job site as well.</p><p>Extremely lightweight frames make them comfortable for all day wear and the flexible, rubberized stems make them perfect for wearing with helmets, masks and face coverings.</p>",
             "horizontal_align": "left",
             "link_title": "Shop Eyewear",
             "link": "shopify://products/motorcycle-riding-glasses",
-            "bg_color_block": "#f2f2f2",
-            "bg_color_content": "#f2f2f2",
+            "bg_color_block": "#ffffff",
+            "bg_color_content": "#ffffff",
             "color_text": "#212121",
             "text_heading_color": false,
             "text_border_color": true
@@ -199,12 +199,12 @@
         "filter"
       ],
       "settings": {
-        "grid": 3,
+        "grid": 2,
         "grid_mobile": "1",
-        "rows": 7,
+        "rows": 5,
         "show_count": true,
         "sort_enable": true,
-        "filter_style": "sidebar"
+        "filter_style": "drawer"
       }
     },
     "section_image_text_banner_Fkneak": {
