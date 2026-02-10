@@ -14,9 +14,10 @@
       "blocks": {
         "video_D47qM8": {
           "type": "video",
+          "disabled": true,
           "settings": {
-            "video_link": "https://www.youtube.com/watch?v=k1TTUveQWu0",
-            "yt_link": "",
+            "video_link": "",
+            "yt_link": "https://www.youtube.com/watch?v=k1TTUveQWu0",
             "alignment": "left",
             "title": "Video slide",
             "text": "<p>Use these slides to tell the world about your brand. You can use images or background video along with text and links.</p>",
@@ -32,6 +33,7 @@
       "block_order": [
         "video_D47qM8"
       ],
+      "disabled": true,
       "name": "Slideshow",
       "settings": {
         "style": "transparent",
