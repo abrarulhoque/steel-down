@@ -27,13 +27,13 @@
         "text_letter_spacing": 0,
         "text_bold": true,
         "text_capitalize": true,
-        "header-ca17f698e514f23d8763a33e200ea9a8": null,
+        "header-cc50a0b247b38b26cadf51af11bb8242": null,
         "close_icon": false,
-        "header-35f2576baa2cf40362d079ffcaa592ef": null,
+        "header-9cd94ddc57c058bb17e0e26c93c0a226": null,
         "carousel_desktop": false,
         "auto_carousel": true,
         "carousel_speed": 8,
-        "header-a8c03c88f6bc5b576a65915762edea15": null,
+        "header-616d2f0aab2cd19f5abc7b9c1b87591b": null,
         "padding_top": 0,
         "padding_bottom": 0,
         "section-bottom-margin": true
@@ -90,6 +90,26 @@
         "article_ygWHCV",
         "article_Wr6GiT"
       ]
+    },
+    "section_multi_column_images_mJJGiY": {
+      "settings": {},
+      "blocks": {
+        "text_H6UJaW": {
+          "settings": {
+            "title": "ALL DAY, ALL NIGHT"
+          }
+        },
+        "text_dVLDcj": {
+          "settings": {
+            "title": "SUNNY RIDES"
+          }
+        },
+        "text_6LrK7D": {
+          "settings": {
+            "title": "ANTI-GLARE"
+          }
+        }
+      }
     }
   },
   "order": [
@@ -103,6 +123,7 @@
     "product-recommendations",
     "section_multi_column_images_iLAMfy",
     "section_image_text_banner_nacHHJ",
+    "section_image_with_text_6RiEi9",
     "section_faq_KXUDp7",
     "17489570774e959c00",
     "section_newsletter_8BGBaX"
