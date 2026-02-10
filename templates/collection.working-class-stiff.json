@@ -48,7 +48,7 @@
         "text_bg_color": "#ffffff",
         "overlay_color": "#000000",
         "overlay_strength": 30,
-        "section-bottom-margin": true
+        "section-bottom-margin": false
       }
     },
     "banner": {
@@ -61,6 +61,125 @@
         "collection_image_mobile_height": true,
         "overlay_color": "#000000",
         "overlay_strength": 30
+      }
+    },
+    "section_collection_list_xhWr9i": {
+      "type": "section-collection-list",
+      "blocks": {
+        "collection_enHeGz": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "heading": "Heavyweight Hoodies",
+            "description": "Built to take a beating and tested on the job site .",
+            "button_label": "Shop Hoodies",
+            "link": "shopify://products/working-class-stiff-blue-collar-hoodie",
+            "image": "shopify://shop_images/Working-Class-Stiff-Steeltown-Construction-2.jpg"
+          }
+        },
+        "collection_M4gJKe": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "heading": "Cotton Tees",
+            "description": "Our best-selling graphic tee ever. 100% heavyweight cotton. Built for the road.",
+            "button_label": "Shop Tees",
+            "link": "shopify://products/working-class-stiff-tee",
+            "image": "shopify://shop_images/Working-Class-Stiff-Motorcycle-T-Shirt-Steeltown-1.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "collection_enHeGz",
+        "collection_M4gJKe"
+      ],
+      "name": "Collection list",
+      "settings": {
+        "title": "",
+        "desc": "",
+        "divider": false,
+        "heading_alignment": "center",
+        "section_width": "wide",
+        "grid": 2,
+        "spacing": 3,
+        "enable_carousel_desktop": true,
+        "enable_carousel_mobile": true,
+        "title_size": 2,
+        "image_ratio": "3:4",
+        "button_style": "c-btn c-btn--mono",
+        "alignment": "bottom-left",
+        "text_alignment": "left",
+        "visibility_heading": true,
+        "visibility_border": true,
+        "visibility_count": false,
+        "visibility_description": true,
+        "visibility_button": true,
+        "hover_options": "hover-button",
+        "color_text": "#ffffff",
+        "color_overlay": "#000000",
+        "color_overlay_strength": 20,
+        "color_default_heading": false,
+        "color_default_border": true,
+        "link_title": "View all",
+        "link": "",
+        "section_link_style": "link link--arrow",
+        "padding_top": 0,
+        "padding_bottom": 21
+      }
+    },
+    "section_image_with_text_PyzE3d": {
+      "type": "section-image-with-text",
+      "blocks": {
+        "image_fiCbbt": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Working-Class-Stiff-Glasses-Construction.jpg",
+            "title": "Jobsite Safety",
+            "desc": "<p>Our best-selling polycarbonate glasses were originally designed for motorcycle safety. But they are shatter-proof, impact-resistant and fully ANSI and CSA certified so they've become a favourite on the job site as well.</p><p>Extremely lightweight frames make them comfortable for all day wear and the flexible, rubberized stems make them perfect for wearing with helmets, masks and face coverings.</p>",
+            "horizontal_align": "left",
+            "link_title": "Shop Eyewear",
+            "link": "shopify://products/motorcycle-riding-glasses",
+            "bg_color_block": "#f2f2f2",
+            "bg_color_content": "#f2f2f2",
+            "color_text": "#212121",
+            "text_heading_color": false,
+            "text_border_color": true
+          }
+        },
+        "image_HbxMMn": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "title": "Image with text",
+            "desc": "<p>Use these blocks to share your brand's story. You can focus on a particular collection, a product detail, or even embed a video.</p>",
+            "horizontal_align": "left",
+            "link_title": "Learn more",
+            "link": "",
+            "bg_color_block": "rgba(0,0,0,0)",
+            "bg_color_content": "#ffffff",
+            "color_text": "#212121",
+            "text_heading_color": false,
+            "text_border_color": true
+          }
+        }
+      },
+      "block_order": [
+        "image_fiCbbt",
+        "image_HbxMMn"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "container": "large",
+        "block_spacing": 2,
+        "image_ratio": "1:1",
+        "block_layout": "1/2",
+        "block_align": "left",
+        "vertical_align": "middle",
+        "heading_size": 3,
+        "link_style": "hollow",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "section-bottom-margin": true
       }
     },
     "product-grid": {
@@ -137,6 +256,7 @@
         "text_4in66Y",
         "text_cGyiHx"
       ],
+      "disabled": true,
       "name": "Image and text banner",
       "settings": {
         "section_height": "medium",
@@ -235,7 +355,7 @@
       "name": "Testimonials",
       "settings": {
         "title": "Testimonials",
-        "style_desktop": "featured-grid",
+        "style_desktop": "grid",
         "style_mobile": "carousel",
         "link_title": "Shop now",
         "link": "",
@@ -286,65 +406,12 @@
         "padding_bottom": 0,
         "section-bottom-margin": false
       }
-    },
-    "section_image_with_text_PyzE3d": {
-      "type": "section-image-with-text",
-      "blocks": {
-        "image_fiCbbt": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Working-Class-Stiff-Glasses-Construction.jpg",
-            "title": "Jobsite Safety",
-            "desc": "<p>Our best-selling polycarbonate glasses were originally designed for motorcycle safety. But they are shatter-proof, impact-resistant and fully ANSI and CSA certified so they've become a favourite on the job site as well.</p><p>Extremely lightweight frames make them comfortable for all day wear and the flexible, rubberized stems make them perfect for wearing with helmets, masks and face coverings.</p>",
-            "horizontal_align": "left",
-            "link_title": "Shop Eyewear",
-            "link": "shopify://products/motorcycle-riding-glasses",
-            "bg_color_block": "#f2f2f2",
-            "bg_color_content": "#f2f2f2",
-            "color_text": "#212121",
-            "text_heading_color": false,
-            "text_border_color": true
-          }
-        },
-        "image_HbxMMn": {
-          "type": "image",
-          "settings": {
-            "title": "Image with text",
-            "desc": "<p>Use these blocks to share your brand's story. You can focus on a particular collection, a product detail, or even embed a video.</p>",
-            "horizontal_align": "left",
-            "link_title": "Learn more",
-            "link": "",
-            "bg_color_block": "rgba(0,0,0,0)",
-            "bg_color_content": "#ffffff",
-            "color_text": "#212121",
-            "text_heading_color": false,
-            "text_border_color": true
-          }
-        }
-      },
-      "block_order": [
-        "image_fiCbbt",
-        "image_HbxMMn"
-      ],
-      "name": "Image with text",
-      "settings": {
-        "container": "large",
-        "block_spacing": 2,
-        "image_ratio": "1:1",
-        "block_layout": "1/2",
-        "block_align": "left",
-        "vertical_align": "middle",
-        "heading_size": 3,
-        "link_style": "hollow",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "section-bottom-margin": true
-      }
     }
   },
   "order": [
     "section_slideshow_JDx8bk",
     "banner",
+    "section_collection_list_xhWr9i",
     "section_image_with_text_PyzE3d",
     "product-grid",
     "section_image_text_banner_Fkneak",
