@@ -14,18 +14,17 @@
       "blocks": {
         "video_D47qM8": {
           "type": "video",
-          "disabled": true,
           "settings": {
-            "video_link": "",
-            "yt_link": "https://www.youtube.com/watch?v=k1TTUveQWu0",
+            "video_link": "https://cdn.shopify.com/videos/c/o/v/6bf971bd00474eb3ac4adcf6d2503f0a.mp4",
+            "yt_link": "",
             "alignment": "left",
-            "title": "Video slide",
-            "text": "<p>Use these slides to tell the world about your brand. You can use images or background video along with text and links.</p>",
+            "title": "Blue Collar Proud",
+            "text": "<p>We're from a working class town, and we're proud of it. Our Working Class Stiff Collection celebrates our roots with style.</p>",
             "link_style": "c-btn c-btn--hollow",
-            "link_title": "Shop all",
+            "link_title": "",
             "link": "",
             "link_style_2": "c-btn c-btn--primary",
-            "link_title_2": "Shop new",
+            "link_title_2": "",
             "link_2": ""
           }
         }
@@ -33,7 +32,6 @@
       "block_order": [
         "video_D47qM8"
       ],
-      "disabled": true,
       "name": "Slideshow",
       "settings": {
         "style": "transparent",
@@ -44,13 +42,13 @@
         "nav_arrows": false,
         "slideshow_height": "full-screen",
         "slideshow_width": "full",
-        "text_color": "#111111",
+        "text_color": "#ffffff",
         "text_heading_color": false,
         "text_border_color": true,
         "text_bg_color": "#ffffff",
         "overlay_color": "#000000",
-        "overlay_strength": 10,
-        "section-bottom-margin": false
+        "overlay_strength": 30,
+        "section-bottom-margin": true
       }
     },
     "section_video_wxA7PP": {
@@ -68,6 +66,7 @@
       "block_order": [
         "video_XA9CBJ"
       ],
+      "disabled": true,
       "name": "Video",
       "settings": {
         "title": "",
