@@ -114,7 +114,8 @@
     "section_image_with_text_6RiEi9": {
       "settings": {
         "image_ratio": "1:1",
-        "vertical_align": "middle"
+        "vertical_align": "middle",
+        "block_layout": "1/2"
       },
       "blocks": {}
     }
