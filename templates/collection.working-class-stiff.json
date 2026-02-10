@@ -9,6 +9,74 @@
  */
 {
   "sections": {
+    "section_slideshow_JDx8bk": {
+      "type": "section-slideshow",
+      "blocks": {
+        "video_D47qM8": {
+          "type": "video",
+          "settings": {
+            "video_link": "https://www.youtube.com/watch?v=k1TTUveQWu0",
+            "yt_link": "",
+            "alignment": "left",
+            "title": "Video slide",
+            "text": "<p>Use these slides to tell the world about your brand. You can use images or background video along with text and links.</p>",
+            "link_style": "c-btn c-btn--hollow",
+            "link_title": "Shop all",
+            "link": "",
+            "link_style_2": "c-btn c-btn--primary",
+            "link_title_2": "Shop new",
+            "link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "video_D47qM8"
+      ],
+      "name": "Slideshow",
+      "settings": {
+        "style": "transparent",
+        "title_size": 3,
+        "autoplay": true,
+        "autoplay_speed": 8,
+        "nav_style": "solid-brand",
+        "nav_arrows": false,
+        "slideshow_height": "full-screen",
+        "slideshow_width": "full",
+        "text_color": "#111111",
+        "text_heading_color": false,
+        "text_border_color": true,
+        "text_bg_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_strength": 10,
+        "section-bottom-margin": false
+      }
+    },
+    "section_video_wxA7PP": {
+      "type": "section-video",
+      "blocks": {
+        "video_XA9CBJ": {
+          "type": "video",
+          "settings": {
+            "video_url": "https://www.youtube.com/watch?v=k1TTUveQWu0",
+            "image": "shopify://shop_images/SteeltownGarageWorkingClassStiff-KYLEPOOLEMEDIA-035.jpg",
+            "video_title": "Working Class Stiff at Steeltown Garage"
+          }
+        }
+      },
+      "block_order": [
+        "video_XA9CBJ"
+      ],
+      "name": "Video",
+      "settings": {
+        "title": "",
+        "desc": "",
+        "link_title": "More videos",
+        "link": "",
+        "overlay_strength": 20,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "section_image_text_banner_TENCKK": {
       "type": "section-image-text-banner",
       "blocks": {
@@ -243,32 +311,6 @@
         "padding_bottom": 0
       }
     },
-    "section_video_wxA7PP": {
-      "type": "section-video",
-      "blocks": {
-        "video_XA9CBJ": {
-          "type": "video",
-          "settings": {
-            "video_url": "https://www.youtube.com/watch?v=k1TTUveQWu0",
-            "image": "shopify://shop_images/SteeltownGarageWorkingClassStiff-KYLEPOOLEMEDIA-035.jpg",
-            "video_title": "Working Class Stiff at Steeltown Garage"
-          }
-        }
-      },
-      "block_order": [
-        "video_XA9CBJ"
-      ],
-      "name": "Video",
-      "settings": {
-        "title": "",
-        "desc": "",
-        "link_title": "More videos",
-        "link": "",
-        "overlay_strength": 20,
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "section_newsletter_dz34V6": {
       "type": "section-newsletter",
       "name": "Newsletter",
@@ -288,13 +330,14 @@
     }
   },
   "order": [
+    "section_slideshow_JDx8bk",
+    "section_video_wxA7PP",
     "section_image_text_banner_TENCKK",
     "banner",
     "product-grid",
     "section_image_text_banner_Fkneak",
     "section_image_with_text_EbyXwN",
     "section_testimonials_ecDVNc",
-    "section_video_wxA7PP",
     "section_newsletter_dz34V6"
   ]
 }
