@@ -110,6 +110,13 @@
           }
         }
       }
+    },
+    "section_image_with_text_6RiEi9": {
+      "settings": {
+        "image_ratio": "1:1",
+        "vertical_align": "middle"
+      },
+      "blocks": {}
     }
   },
   "order": [
