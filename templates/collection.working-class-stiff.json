@@ -199,7 +199,7 @@
         "filter"
       ],
       "settings": {
-        "grid": 2,
+        "grid": 3,
         "grid_mobile": "1",
         "rows": 5,
         "show_count": true,
