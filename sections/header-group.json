@@ -191,7 +191,7 @@
       "settings": {
         "menu": "2019-main-menu",
         "layout": "left",
-        "style": "sticky",
+        "style": "static",
         "link_style": "word",
         "enable_chevrons": false,
         "header_divider": false,
@@ -200,7 +200,7 @@
         "logo": "shopify://shop_images/Steeltown-Garage-Co-Header-Logo-2021.jpg",
         "header_transparent": false,
         "header_transparent_collection": false,
-        "header_transparent_divider": true,
+        "header_transparent_divider": false,
         "header_transparent_text": "#ffffff",
         "special_link_triggers": "",
         "special_link_color": "#c00000",
