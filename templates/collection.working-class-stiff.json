@@ -199,12 +199,12 @@
         "filter"
       ],
       "settings": {
-        "grid": 3,
+        "grid": 2,
         "grid_mobile": "1",
-        "rows": 5,
+        "rows": 3,
         "show_count": true,
         "sort_enable": true,
-        "filter_style": "drawer"
+        "filter_style": "sidebar"
       }
     },
     "section_image_text_banner_Fkneak": {
