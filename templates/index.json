@@ -148,7 +148,7 @@
       ],
       "settings": {
         "style": "transparent",
-        "title_size": 4,
+        "title_size": 3,
         "autoplay": true,
         "autoplay_speed": 8,
         "nav_style": "solid-brand",
