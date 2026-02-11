@@ -18,8 +18,8 @@
             "video_link": "https://cdn.shopify.com/videos/c/o/v/6bf971bd00474eb3ac4adcf6d2503f0a.mp4",
             "yt_link": "",
             "alignment": "left",
-            "title": "Blue Collar Proud",
-            "text": "<p>We're from a working class town, and we're proud of it. Our Working Class Stiff Collection celebrates our roots with style.</p>",
+            "title": "",
+            "text": "",
             "link_style": "c-btn c-btn--hollow",
             "link_title": "",
             "link": "",
@@ -48,6 +48,18 @@
         "text_bg_color": "#ffffff",
         "overlay_color": "#000000",
         "overlay_strength": 30,
+        "section-bottom-margin": true
+      }
+    },
+    "section_rich_text_tMwTap": {
+      "type": "section-rich-text",
+      "name": "Rich text",
+      "settings": {
+        "full_width": false,
+        "section_title": "BUILT BLUE COLLAR STRONG",
+        "text": "<p><strong>Steeltown was born and raised in a blue collar, rust-belt town. We learned early the spiritual importance of a hard days work and some dirt under our fingernails. </strong></p><p><strong>Our now iconic Working Class Stiff gear is all designed in house and proudly worn all over the world by those who work as hard as they play.</strong></p>",
+        "padding_top": 21,
+        "padding_bottom": 15,
         "section-bottom-margin": true
       }
     },
@@ -266,9 +278,8 @@
         "content_color": "#ffffff",
         "content_heading_color": false,
         "bg_color": "rgba(0,0,0,0)",
-        "bg_image": "shopify://shop_images/Working-Class-Stiff-Motorcycle-T-Shirt-Steeltown-3.jpg",
         "overlay_color": "#000000",
-        "overlay_strength": 50,
+        "overlay_strength": 0,
         "section-bottom-margin": false
       }
     },
@@ -469,6 +480,7 @@
   },
   "order": [
     "section_slideshow_JDx8bk",
+    "section_rich_text_tMwTap",
     "banner",
     "section_collection_list_xhWr9i",
     "section_image_with_text_PyzE3d",
