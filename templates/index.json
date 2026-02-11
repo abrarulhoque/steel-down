@@ -161,7 +161,7 @@
         "text_bg_color": "#ffffff",
         "overlay_color": "#000000",
         "overlay_strength": 40,
-        "section-bottom-margin": false
+        "section-bottom-margin": true
       }
     },
     "section_collection_list_4yXN7Y": {
@@ -236,7 +236,7 @@
         "link_title": "View all",
         "link": "",
         "section_link_style": "link link--arrow",
-        "padding_top": 0,
+        "padding_top": 21,
         "padding_bottom": 60
       }
     },
