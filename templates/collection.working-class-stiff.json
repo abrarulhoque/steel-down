@@ -126,7 +126,7 @@
         "visibility_count": false,
         "visibility_description": true,
         "visibility_button": true,
-        "hover_options": "hover-button",
+        "hover_options": "hover-off",
         "color_text": "#ffffff",
         "color_overlay": "#000000",
         "color_overlay_strength": 20,
