@@ -17,13 +17,13 @@
           "settings": {
             "video_link": "https://cdn.shopify.com/videos/c/o/v/6bf971bd00474eb3ac4adcf6d2503f0a.mp4",
             "yt_link": "",
-            "alignment": "left",
-            "title": "",
+            "alignment": "center",
+            "title": "Work hard | Play Hard",
             "text": "",
             "link_style": "c-btn c-btn--hollow",
             "link_title": "",
             "link": "",
-            "link_style_2": "c-btn c-btn--primary",
+            "link_style_2": "c-btn c-btn--hollow",
             "link_title_2": "",
             "link_2": ""
           }
