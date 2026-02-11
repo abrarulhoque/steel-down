@@ -463,6 +463,7 @@
         "text_EWVPXn",
         "media_DWmCYq"
       ],
+      "disabled": true,
       "settings": {
         "title": "",
         "desc": "",
@@ -848,6 +849,48 @@
         "padding_bottom": 0,
         "section-bottom-margin": false
       }
+    },
+    "section_image_text_banner_JXCH6q": {
+      "type": "section-image-text-banner",
+      "blocks": {
+        "text_iCEmX9": {
+          "type": "text",
+          "settings": {
+            "text": "<p>FREE SHIPPING in North America on orders over $75</p>",
+            "text_size": 7,
+            "text_width": 45,
+            "text_size_mobile": 3,
+            "text_style": "heading"
+          }
+        },
+        "link_pawN8M": {
+          "type": "link",
+          "disabled": true,
+          "settings": {
+            "link_title": "Shop all",
+            "link": "",
+            "link_style": "c-btn c-btn--hollow"
+          }
+        }
+      },
+      "block_order": [
+        "text_iCEmX9",
+        "link_pawN8M"
+      ],
+      "name": "Image and text banner",
+      "settings": {
+        "section_height": "small",
+        "section_height_mobile": "medium",
+        "section_width": "contained",
+        "content_alignment": "left",
+        "content_color": "#ffffff",
+        "content_heading_color": false,
+        "bg_color": "rgba(0,0,0,0)",
+        "bg_image": "shopify://shop_images/Sho-Hot-Rod-Steeltown-Tigers-Crew-Wide.jpg",
+        "overlay_color": "#000000",
+        "overlay_strength": 10,
+        "section-bottom-margin": false
+      }
     }
   },
   "order": [
@@ -861,6 +904,7 @@
     "0436301d-0018-4b49-8493-36629494c103",
     "e7564c21-6be8-45b8-a2ff-9dbd3e39175a",
     "section_collection_list_mQrEmV",
+    "section_image_text_banner_JXCH6q",
     "section_collection_tjeLzb",
     "section_image_text_banner_e7C8EL",
     "section_collection_jPmqkU",
