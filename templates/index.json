@@ -772,6 +772,82 @@
         "padding_bottom": 0,
         "section-bottom-margin": false
       }
+    },
+    "section_collection_list_4yXN7Y": {
+      "type": "section-collection-list",
+      "blocks": {
+        "collection_kxaU3y": {
+          "type": "collection",
+          "settings": {
+            "collection": "fast-as-fuck",
+            "heading": "",
+            "description": "",
+            "button_label": "",
+            "link": "",
+            "image": "shopify://shop_images/Fast-As-Fuck-Steeltown-Bundle-1.jpg"
+          }
+        },
+        "collection_rchT8G": {
+          "type": "collection",
+          "settings": {
+            "collection": "working-class-stiff-collection",
+            "heading": "Working Class",
+            "description": "",
+            "button_label": "",
+            "link": "",
+            "image": "shopify://shop_images/Working-Class-Stiff-Steeltown-Construction-2.jpg"
+          }
+        },
+        "collection_iBigyX": {
+          "type": "collection",
+          "settings": {
+            "collection": "riding",
+            "heading": "Riding Gear",
+            "description": "",
+            "button_label": "",
+            "link": "",
+            "image": "shopify://shop_images/Riding-Glasses-Clear-Steeltown-Garage-Cycles-Landing-1.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "collection_kxaU3y",
+        "collection_rchT8G",
+        "collection_iBigyX"
+      ],
+      "name": "Collection list",
+      "settings": {
+        "title": "",
+        "desc": "",
+        "divider": false,
+        "heading_alignment": "left",
+        "section_width": "wide",
+        "grid": 3,
+        "spacing": 1,
+        "enable_carousel_desktop": true,
+        "enable_carousel_mobile": true,
+        "title_size": 1,
+        "image_ratio": "3:4",
+        "button_style": "c-btn c-btn--hollow",
+        "alignment": "bottom-left",
+        "text_alignment": "left",
+        "visibility_heading": true,
+        "visibility_border": true,
+        "visibility_count": false,
+        "visibility_description": false,
+        "visibility_button": true,
+        "hover_options": "hover-button",
+        "color_text": "#ffffff",
+        "color_overlay": "#000000",
+        "color_overlay_strength": 10,
+        "color_default_heading": false,
+        "color_default_border": true,
+        "link_title": "View all",
+        "link": "",
+        "section_link_style": "link link--arrow",
+        "padding_top": 0,
+        "padding_bottom": 60
+      }
     }
   },
   "order": [
@@ -793,6 +869,7 @@
     "section_collection_YPxYh6",
     "section_blog_98WVkc",
     "section_recently_viewed_rjNxTQ",
-    "deed0c7d-a6b2-434e-8882-2a7cba84c982"
+    "deed0c7d-a6b2-434e-8882-2a7cba84c982",
+    "section_collection_list_4yXN7Y"
   ]
 }
