@@ -406,6 +406,65 @@
         "padding_bottom": 0,
         "section-bottom-margin": false
       }
+    },
+    "section_multi_column_images_WHjLQq": {
+      "type": "section-multi-column-images",
+      "blocks": {
+        "text_Bcq8Kd": {
+          "type": "text",
+          "settings": {
+            "image": "shopify://shop_images/8-Days-A-Week-Steeltown-Web-Thumb_1728x_7f2b520f-d546-4518-bd61-e1903f7d88b4.jpg",
+            "title": "Tunes For Hard Workin'",
+            "sub_title": "Spotify Playlists by Steeltown Garage",
+            "desc": "<p><strong>Wake up. Gulp coffee. Punch in. Bust ass. Sweat. Punch out. Repeat.</strong> A soundtrack for the grind, 8 Days A Week is a gnarly mash of British and Aussie post punk revival that will light a fire inside ya, not necessarily in a good way.</p>",
+            "link_title": "LISTEN NOW",
+            "link": "shopify://blogs/journal/8-days-a-week-a-playlist"
+          }
+        },
+        "text_LLWACG": {
+          "type": "text",
+          "settings": {
+            "image": "shopify://shop_images/SteeltownGarageWorkingClassStiff-This-is-zane-076.jpg",
+            "title": "Introducing: Zane Hussey",
+            "sub_title": "Hard work never looked so good",
+            "desc": "<p>Hair messed up from a hardhat. Dog-tired even though he wouldn't admit it. Steely eyed. Ridiculously chill. Tattooed. And covered in sawdust from the jettison of an old DEWALT mitre saw.</p>",
+            "link_title": "READ MORE",
+            "link": "shopify://blogs/journal/this-is-zane"
+          }
+        }
+      },
+      "block_order": [
+        "text_Bcq8Kd",
+        "text_LLWACG"
+      ],
+      "name": "Multicolumn with images",
+      "settings": {
+        "title": "Living what we preach",
+        "container": "large",
+        "link_title": "Learn more",
+        "link": "",
+        "divider": false,
+        "grid": 2,
+        "spacing": 3,
+        "alignment": "left",
+        "link_style": "hollow",
+        "heading_size": 3,
+        "image_toggle": true,
+        "image_size": 100,
+        "image_padding": 0,
+        "image_ratio": "4:3",
+        "image_fit": false,
+        "bg_color": "rgba(0,0,0,0)",
+        "color_image": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "text_heading_color": false,
+        "text_border_color": true,
+        "grid_mobile": "1",
+        "mobile_layout": "carousel",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "section-bottom-margin": false
+      }
     }
   },
   "order": [
@@ -418,6 +477,7 @@
     "section_image_with_text_EbyXwN",
     "section_testimonials_ecDVNc",
     "section_video_wxA7PP",
-    "section_newsletter_dz34V6"
+    "section_newsletter_dz34V6",
+    "section_multi_column_images_WHjLQq"
   ]
 }
