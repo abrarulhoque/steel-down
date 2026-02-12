@@ -17,9 +17,9 @@
           "settings": {
             "video_link": "https://cdn.shopify.com/videos/c/o/v/6bf971bd00474eb3ac4adcf6d2503f0a.mp4",
             "yt_link": "",
-            "alignment": "center",
-            "title": "Work hard | Play Hard",
-            "text": "",
+            "alignment": "left",
+            "title": "BUILT BLUE COLLAR STRONG",
+            "text": "<p>Steeltown was born and raised in a blue collar, rust-belt town. We learned early the spiritual importance of a hard days work and some dirt under our fingernails. </p><p>Our now iconic Working Class Stiff gear is all designed in house and proudly worn all over the world by those who work as hard as they play.</p>",
             "link_style": "c-btn c-btn--hollow",
             "link_title": "",
             "link": "",
@@ -56,7 +56,7 @@
       "name": "Rich text",
       "settings": {
         "full_width": false,
-        "section_title": "BUILT BLUE COLLAR STRONG",
+        "section_title": "",
         "text": "<p><strong>Steeltown was born and raised in a blue collar, rust-belt town. We learned early the spiritual importance of a hard days work and some dirt under our fingernails. </strong></p><p><strong>Our now iconic Working Class Stiff gear is all designed in house and proudly worn all over the world by those who work as hard as they play.</strong></p>",
         "padding_top": 21,
         "padding_bottom": 15,
