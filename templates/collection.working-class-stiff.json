@@ -53,6 +53,7 @@
     },
     "section_rich_text_tMwTap": {
       "type": "section-rich-text",
+      "disabled": true,
       "name": "Rich text",
       "settings": {
         "full_width": false,
