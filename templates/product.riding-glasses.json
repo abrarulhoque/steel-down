@@ -654,6 +654,44 @@
         "section-bottom-margin": true
       }
     },
+    "section_image_with_text_6RiEi9": {
+      "type": "section-image-with-text",
+      "blocks": {
+        "image_wfDq9x": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Working-Class-Stiff-Glasses-Construction.jpg",
+            "title": "From the Road to the Job Site",
+            "desc": "<p>Our best-selling riding glasses were originally designed for motorcycle safety. But they are shatter-proof, impact-resistant and fully ANSI and CSA certified so they've become a favourite on the job site as well.</p><p>Extremely lightweight frames make them comfortable for all day wear and the flexible, rubberized stems make them perfect for wearing with helmets, masks and face coverings.</p>",
+            "horizontal_align": "left",
+            "link_title": "",
+            "link": "",
+            "bg_color_block": "rgba(0,0,0,0)",
+            "bg_color_content": "#ffffff",
+            "color_text": "#212121",
+            "text_heading_color": false,
+            "text_border_color": true
+          }
+        }
+      },
+      "block_order": [
+        "image_wfDq9x"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "container": "large",
+        "block_spacing": 2,
+        "image_ratio": "4:3",
+        "block_layout": "2/3",
+        "block_align": "left",
+        "vertical_align": "top",
+        "heading_size": 3,
+        "link_style": "hollow",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "section-bottom-margin": false
+      }
+    },
     "section_faq_KXUDp7": {
       "type": "section-faq",
       "blocks": {
@@ -697,6 +735,13 @@
             "title": "Does the STLTWN glasses case come FREE?",
             "text": "<p>Yep. Buy a pair of Riding Glasses and they get delivered in a STLTWN protective glasses sleeve. </p><p>Buy two pairs, get two sleeves.</p><p>Buy three pairs, get three sleeves.</p><p>You get the idea.</p>"
           }
+        },
+        "article_f9aXer": {
+          "type": "article",
+          "settings": {
+            "title": "What are the exact measurements of the glasses?",
+            "text": "<p>Weight: 26.8 gm<br/>Bridge: 10.8 mm<br/>PD: 64 mm<br/>Lens base: 6 curve<br/>Lens size diagonal: 54.5 mm<br/>Lens size vertical: 39.5 mm<br/>Lens thickness: 2.3 mm<br/>Overall length (lens - tip): 153 mm<br/>Overall width (hinge - hinge): 129 mm<br/>Closest point between lens: 17.5 mm</p>"
+          }
         }
       },
       "block_order": [
@@ -705,7 +750,8 @@
         "article_Qzni8j",
         "article_M4dUz7",
         "article_ygWHCV",
-        "article_Wr6GiT"
+        "article_Wr6GiT",
+        "article_f9aXer"
       ],
       "settings": {
         "enable_sidebar": false,
@@ -750,44 +796,6 @@
         "padding_top": 0,
         "padding_bottom": 0,
         "section-bottom-margin": true
-      }
-    },
-    "section_image_with_text_6RiEi9": {
-      "type": "section-image-with-text",
-      "blocks": {
-        "image_wfDq9x": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Working-Class-Stiff-Glasses-Construction.jpg",
-            "title": "From the Road to the Job Site",
-            "desc": "<p>Our best-selling riding glasses were originally designed for motorcycle safety. But they are shatter-proof, impact-resistant and fully ANSI and CSA certified so they've become a favourite on the job site as well.</p><p>Extremely lightweight frames make them comfortable for all day wear and the flexible, rubberized stems make them perfect for wearing with helmets, masks and face coverings.</p>",
-            "horizontal_align": "left",
-            "link_title": "",
-            "link": "",
-            "bg_color_block": "rgba(0,0,0,0)",
-            "bg_color_content": "#ffffff",
-            "color_text": "#212121",
-            "text_heading_color": false,
-            "text_border_color": true
-          }
-        }
-      },
-      "block_order": [
-        "image_wfDq9x"
-      ],
-      "name": "Image with text",
-      "settings": {
-        "container": "large",
-        "block_spacing": 2,
-        "image_ratio": "4:3",
-        "block_layout": "2/3",
-        "block_align": "left",
-        "vertical_align": "top",
-        "heading_size": 3,
-        "link_style": "hollow",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "section-bottom-margin": false
       }
     }
   },
