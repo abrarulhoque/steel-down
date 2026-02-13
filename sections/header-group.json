@@ -217,7 +217,7 @@
         "sidebar_show_view_all_in_submenu": true,
         "sidebar_view_all_style": "outline",
         "sidebar_show_contact_number": false,
-        "sidebar_show_contact_email": true,
+        "sidebar_show_contact_email": false,
         "sidebar_show_social": true,
         "enable_country_selector": true,
         "enable_language_selector": false
