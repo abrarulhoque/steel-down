@@ -144,7 +144,7 @@
         "image_menu_rRhNqh": {
           "type": "image-menu",
           "settings": {
-            "triggers": "SHOP ONLINE",
+            "triggers": "SHOP ONLINE >",
             "layout_width": "wide",
             "layout_alignment": "center",
             "layout_content_priority": "navigation",
