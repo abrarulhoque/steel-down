@@ -115,7 +115,7 @@
         "collection_menu_JPkji3": {
           "type": "collection-menu",
           "settings": {
-            "triggers": "COLLECTIONS",
+            "triggers": "COLLECTIONS >",
             "layout_width": "wide",
             "layout_alignment": "center",
             "layout_content_priority": "additional_content",
