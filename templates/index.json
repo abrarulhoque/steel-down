@@ -24,7 +24,7 @@
             "description": "Hoodies Restocked",
             "button_label": "SHOP NOW",
             "link": "shopify://products/fast-as-fuck-hoodie",
-            "image": "shopify://shop_images/Fast-As-Fuck-Pullover-Hoodie-Motorcycle.jpg"
+            "image": "shopify://shop_images/Fast-As_fuck-final.jpg"
           }
         },
         "collection_ELdXcL": {
@@ -561,6 +561,48 @@
         "padding_bottom": 60
       }
     },
+    "section_image_text_banner_JXCH6q": {
+      "type": "section-image-text-banner",
+      "blocks": {
+        "text_iCEmX9": {
+          "type": "text",
+          "settings": {
+            "text": "<p>FREE SHIPPING in North America on orders over $75</p>",
+            "text_size": 7,
+            "text_width": 45,
+            "text_size_mobile": 3,
+            "text_style": "heading"
+          }
+        },
+        "link_pawN8M": {
+          "type": "link",
+          "disabled": true,
+          "settings": {
+            "link_title": "Shop all",
+            "link": "",
+            "link_style": "c-btn c-btn--hollow"
+          }
+        }
+      },
+      "block_order": [
+        "text_iCEmX9",
+        "link_pawN8M"
+      ],
+      "name": "Image and text banner",
+      "settings": {
+        "section_height": "small",
+        "section_height_mobile": "medium",
+        "section_width": "contained",
+        "content_alignment": "left",
+        "content_color": "#ffffff",
+        "content_heading_color": false,
+        "bg_color": "rgba(0,0,0,0)",
+        "bg_image": "shopify://shop_images/Sho-Hot-Rod-Steeltown-Tigers-Crew-Wide.jpg",
+        "overlay_color": "#000000",
+        "overlay_strength": 10,
+        "section-bottom-margin": false
+      }
+    },
     "section_collection_tjeLzb": {
       "type": "section-collection",
       "blocks": {
@@ -847,48 +889,6 @@
         "map_style": "light",
         "padding_top": 0,
         "padding_bottom": 0,
-        "section-bottom-margin": false
-      }
-    },
-    "section_image_text_banner_JXCH6q": {
-      "type": "section-image-text-banner",
-      "blocks": {
-        "text_iCEmX9": {
-          "type": "text",
-          "settings": {
-            "text": "<p>FREE SHIPPING in North America on orders over $75</p>",
-            "text_size": 7,
-            "text_width": 45,
-            "text_size_mobile": 3,
-            "text_style": "heading"
-          }
-        },
-        "link_pawN8M": {
-          "type": "link",
-          "disabled": true,
-          "settings": {
-            "link_title": "Shop all",
-            "link": "",
-            "link_style": "c-btn c-btn--hollow"
-          }
-        }
-      },
-      "block_order": [
-        "text_iCEmX9",
-        "link_pawN8M"
-      ],
-      "name": "Image and text banner",
-      "settings": {
-        "section_height": "small",
-        "section_height_mobile": "medium",
-        "section_width": "contained",
-        "content_alignment": "left",
-        "content_color": "#ffffff",
-        "content_heading_color": false,
-        "bg_color": "rgba(0,0,0,0)",
-        "bg_image": "shopify://shop_images/Sho-Hot-Rod-Steeltown-Tigers-Crew-Wide.jpg",
-        "overlay_color": "#000000",
-        "overlay_strength": 10,
         "section-bottom-margin": false
       }
     }
