@@ -477,6 +477,94 @@
         "padding_bottom": 0,
         "section-bottom-margin": false
       }
+    },
+    "section_collection_list_XMcqhL": {
+      "type": "section-collection-list",
+      "blocks": {
+        "collection_8aq4PB": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "heading": "Charles from Ohio",
+            "description": "",
+            "button_label": "Buy The Tee",
+            "link": "shopify://products/working-class-stiff-tee",
+            "image": "shopify://shop_images/Working-Class-Stiff-Steeltown-Community-1.jpg"
+          }
+        },
+        "collection_jraPqm": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "heading": "",
+            "description": "",
+            "button_label": "",
+            "link": "",
+            "image": "shopify://shop_images/Working-Class-Stiff-Steeltown-Community-4.jpg"
+          }
+        },
+        "collection_gP3pA3": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "heading": "",
+            "description": "",
+            "button_label": "",
+            "link": "",
+            "image": "shopify://shop_images/Working-Class-Stiff-Steeltown-Community-3.jpg"
+          }
+        },
+        "collection_7HbgEX": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "heading": "",
+            "description": "",
+            "button_label": "",
+            "link": "",
+            "image": "shopify://shop_images/Working-Class-Stiff-Steeltown-Community-2.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "collection_8aq4PB",
+        "collection_jraPqm",
+        "collection_gP3pA3",
+        "collection_7HbgEX"
+      ],
+      "name": "Collection list",
+      "settings": {
+        "title": "The Working Class Community",
+        "desc": "<p>There's an army of Working Class Stiffs out there. And we're stoked every time one of ya snaps a pic or tags us on the socials <strong>#WorkingClassStiff</strong></p>",
+        "divider": false,
+        "heading_alignment": "center",
+        "section_width": "large",
+        "grid": 3,
+        "spacing": 3,
+        "enable_carousel_desktop": true,
+        "enable_carousel_mobile": true,
+        "title_size": 1,
+        "image_ratio": "3:4",
+        "button_style": "c-btn c-btn--hollow",
+        "alignment": "bottom-left",
+        "text_alignment": "left",
+        "visibility_heading": false,
+        "visibility_border": false,
+        "visibility_count": false,
+        "visibility_description": false,
+        "visibility_button": false,
+        "hover_options": "hover-button",
+        "color_text": "#ffffff",
+        "color_overlay": "#000000",
+        "color_overlay_strength": 0,
+        "color_default_heading": false,
+        "color_default_border": true,
+        "link_title": "View all",
+        "link": "",
+        "section_link_style": "link link--arrow",
+        "padding_top": 0,
+        "padding_bottom": 60
+      }
     }
   },
   "order": [
@@ -487,6 +575,7 @@
     "section_image_with_text_PyzE3d",
     "product-grid",
     "section_image_text_banner_Fkneak",
+    "section_collection_list_XMcqhL",
     "section_image_with_text_EbyXwN",
     "section_testimonials_ecDVNc",
     "section_video_wxA7PP",
