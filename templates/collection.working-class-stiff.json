@@ -298,6 +298,24 @@
             "image": "shopify://shop_images/Working-Class-Stiff-Steeltown-Community-1.jpg"
           }
         },
+        "media_VfTbqP": {
+          "type": "media",
+          "settings": {
+            "heading": "",
+            "text": "",
+            "link_text": "",
+            "link": "shopify://products/working-class-stiff-tee",
+            "button_style": "c-btn c-btn--hollow",
+            "image": "shopify://shop_images/Working-Class-Stiff-Steeltown-Community-9.jpg",
+            "alignment": "bottom-left",
+            "text_alignment": "left",
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "color_overlay_strength": 20,
+            "color_default_heading": false,
+            "color_default_border": false
+          }
+        },
         "collection_jraPqm": {
           "type": "collection",
           "settings": {
@@ -327,6 +345,24 @@
             "color_default_border": false
           }
         },
+        "media_zDUdfL": {
+          "type": "media",
+          "settings": {
+            "heading": "",
+            "text": "",
+            "link_text": "",
+            "link": "shopify://products/working-class-stiff-tee",
+            "button_style": "c-btn c-btn--hollow",
+            "image": "shopify://shop_images/Working-Class-Stiff-Steeltown-Community-6.jpg",
+            "alignment": "bottom-left",
+            "text_alignment": "left",
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "color_overlay_strength": 20,
+            "color_default_heading": false,
+            "color_default_border": false
+          }
+        },
         "collection_gP3pA3": {
           "type": "collection",
           "settings": {
@@ -336,6 +372,24 @@
             "button_label": "",
             "link": "shopify://products/working-class-stiff-tee",
             "image": "shopify://shop_images/Working-Class-Stiff-Steeltown-Community-3.jpg"
+          }
+        },
+        "media_KVPbTL": {
+          "type": "media",
+          "settings": {
+            "heading": "",
+            "text": "",
+            "link_text": "",
+            "link": "",
+            "button_style": "c-btn c-btn--hollow",
+            "image": "shopify://shop_images/Working-Class-Stiff-Steeltown-Community-10.jpg",
+            "alignment": "bottom-left",
+            "text_alignment": "left",
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "color_overlay_strength": 20,
+            "color_default_heading": false,
+            "color_default_border": false
           }
         },
         "collection_7HbgEX": {
@@ -348,14 +402,55 @@
             "link": "shopify://products/working-class-stiff-tee",
             "image": "shopify://shop_images/Working-Class-Stiff-Steeltown-Community-2.jpg"
           }
+        },
+        "media_Uz3Nkf": {
+          "type": "media",
+          "settings": {
+            "heading": "",
+            "text": "",
+            "link_text": "",
+            "link": "",
+            "button_style": "c-btn c-btn--hollow",
+            "image": "shopify://shop_images/Working-Class-Stiff-Steeltown-Community-7.jpg",
+            "alignment": "bottom-left",
+            "text_alignment": "left",
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "color_overlay_strength": 20,
+            "color_default_heading": false,
+            "color_default_border": false
+          }
+        },
+        "media_DFdjrG": {
+          "type": "media",
+          "settings": {
+            "heading": "",
+            "text": "",
+            "link_text": "",
+            "link": "",
+            "button_style": "c-btn c-btn--hollow",
+            "image": "shopify://shop_images/Working-Class-Stiff-Steeltown-Community-8.jpg",
+            "alignment": "bottom-left",
+            "text_alignment": "left",
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "color_overlay_strength": 20,
+            "color_default_heading": false,
+            "color_default_border": false
+          }
         }
       },
       "block_order": [
         "collection_8aq4PB",
+        "media_VfTbqP",
         "collection_jraPqm",
         "media_B9xGmV",
+        "media_zDUdfL",
         "collection_gP3pA3",
-        "collection_7HbgEX"
+        "media_KVPbTL",
+        "collection_7HbgEX",
+        "media_Uz3Nkf",
+        "media_DFdjrG"
       ],
       "name": "Collection list",
       "settings": {
