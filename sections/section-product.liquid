@@ -91,7 +91,7 @@
                             {%- unless settings.cart_type == 'page' -%}
                             <product-form notify-on-add>
                             {%- endunless -%}
-                            {% capture 'product_id_attr' %}product-form-{{ section.id }}{% endcapture %}
+                            {% capture product_id_attr %}product-form-{{ section.id }}{% endcapture %}
                             {% form 'product', product, class: "product-form product-form--featured js-product-form", id: product_id_attr %}
 
                                 {%- liquid
@@ -2359,3 +2359,13 @@
     }
 }
 {% endschema %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% capture 'product_id_attr' %}"
+  to: "{% capture product_id_attr %}"
+  position: 4070..4099
+{% endcomment %}

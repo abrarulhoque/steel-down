@@ -36,14 +36,14 @@
 <div id="{{ id }}" style="--background-color: {{ color }}; --text-color: {{ text_color }}" data-type="{{ type }}">
   {%- if current_variant.compare_at_price > current_variant.price -%}
     {%- liquid
-      case type:
-        when 'currency':
+      case type
+        when 'currency'
           assign discount_format_currency = current_variant.compare_at_price | minus: current_variant.price | round | money
           assign text = 'products.product_labels.discount_currency' | t: discount_format_currency: discount_format_currency
-        when 'percentage':
+        when 'percentage'
           assign discount_format_percentage = current_variant.compare_at_price | minus: current_variant.price | times: 100.0 | divided_by: current_variant.compare_at_price | round
           assign text = 'products.product_labels.discount_percentage' | t: discount_format_percentage: discount_format_percentage
-        when 'text':
+        when 'text'
           assign text = 'products.product_labels.discount_text' | t
       endcase
     -%}
@@ -52,3 +52,22 @@
     </div>
   {%- endif -%}
 </div>
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: 'case type:'
+  to: case type
+  position: 1070..1079
+- from: "        when 'currency':"
+  to: "        when 'currency'"
+  position: 1080..1103
+- from: "        when 'percentage':"
+  to: "        when 'percentage'"
+  position: 1352..1377
+- from: "        when 'text':"
+  to: "        when 'text'"
+  position: 1688..1707
+{% endcomment %}

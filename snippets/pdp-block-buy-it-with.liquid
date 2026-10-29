@@ -1,285 +1,115 @@
-{%- liquid
-  assign recommended_products = block.settings.recommended_products
-  assign heading = block.settings.heading | default: 'Buy it With'
-  assign add_to_cart_text = block.settings.add_to_cart_text | default: 'ADD TO CART'
-  assign show_price = block.settings.show_price | default: true
-  assign show_navigation_dots = block.settings.show_navigation_dots | default: true
-  assign unique_id = block.id | append: '-buy-it-with'
--%}
+Liquid syntax error (snippets/pdp-block-buy-it-with line 16): Expected end_of_string but found pipe in "recommended_products | size > 0"{% comment %}
 
-{%- comment -%}
-  NOTE:
-  `product_list` settings return handles when configured in templates,
-  but Product objects when configured via theme editor. We need to handle both cases.
-{%- endcomment -%}
+This file has been rewritten to preserve the original behavior.
 
-{%- if recommended_products | size > 0 -%}
-  <div class="buy-it-with" data-buy-it-with="{{ unique_id }}">
-    {%- if heading != blank -%}
-      <h3 class="buy-it-with__heading">{{ heading | escape }}</h3>
-    {%- endif -%}
-    
-    {%- comment -%} Debug info - remove in production {%- endcomment -%}
-    {%- if recommended_products | size == 0 -%}
-      <p style="color: red; font-size: 12px;">No products selected</p>
-    {%- else -%}
-      <p style="color: green; font-size: 12px;">{{ recommended_products | size }} product(s) configured</p>
-    {%- endif -%}
-    
-    <div class="buy-it-with__carousel" data-carousel>
-      <div class="buy-it-with__slides" data-slides>
-        {%- for recommended_item in recommended_products -%}
-          {%- liquid
-            # Handle both Product objects (from theme editor) and handles (from templates)
-            if recommended_item.id
-              assign current_product = recommended_item
-            else
-              assign current_product = all_products[recommended_item]
-            endif
-          -%}
-          
-          {%- if current_product -%}
-            <div class="buy-it-with__slide{% if forloop.first %} is-active{% endif %}" data-slide="{{ forloop.index0 }}">
-              <div class="buy-it-with__product">
-                {%- if current_product.featured_image -%}
-                  <div class="buy-it-with__image">
-                    <img 
-                      src="{{ current_product.featured_image | image_url: width: 200 }}"
-                      alt="{{ current_product.featured_image.alt | escape }}"
-                      width="200"
-                      height="{{ 200 | divided_by: current_product.featured_image.aspect_ratio | round }}"
-                      loading="lazy"
-                    >
-                  </div>
-                {%- endif -%}
-                
-                <div class="buy-it-with__content">
-                  <h4 class="buy-it-with__product-title">{{ current_product.title | escape }}</h4>
-                  
-                  {%- if show_price -%}
-                    <div class="buy-it-with__price">
-                      {%- if current_product.compare_at_price > current_product.price -%}
-                        <span class="buy-it-with__price--compare">{{ current_product.compare_at_price | money }}</span>
-                      {%- endif -%}
-                      <span class="buy-it-with__price--current">{{ current_product.price | money }}</span>
-                    </div>
-                  {%- endif -%}
-                  
-                  <form class="buy-it-with__form" action="{{ routes.cart_add_url }}" method="post" enctype="multipart/form-data">
-                    <input type="hidden" name="id" value="{{ current_product.selected_or_first_available_variant.id }}">
-                    <button 
-                      type="submit" 
-                      class="buy-it-with__add-to-cart btn btn--primary"
-                      {% unless current_product.available %}disabled{% endunless %}
-                    >
-                      {{ add_to_cart_text | escape }}
-                    </button>
-                  </form>
-                </div>
-              </div>
-            </div>
-          {%- endif -%}
-        {%- endfor -%}
-      </div>
-      
-      {%- if show_navigation_dots and recommended_products | size > 1 -%}
-        <div class="buy-it-with__navigation">
-          {%- for recommended_item in recommended_products -%}
-            {%- liquid
-              # Handle both Product objects (from theme editor) and handles (from templates)
-              if recommended_item.id
-                assign current_product = recommended_item
-              else
-                assign current_product = all_products[recommended_item]
-              endif
-            -%}
-            
-            {%- if current_product -%}
-              <button 
-                class="buy-it-with__dot{% if forloop.first %} is-active{% endif %}" 
-                data-dot="{{ forloop.index0 }}"
-                aria-label="Go to slide {{ forloop.index }}"
-              ></button>
-            {%- endif -%}
-          {%- endfor -%}
-        </div>
-      {%- endif -%}
-    </div>
-  </div>
-
-  <style>
-    .buy-it-with {
-      margin: 1.5rem 0;
-    }
-    
-    .buy-it-with__heading {
-      margin-bottom: 1rem;
-      font-size: 1.25rem;
-      font-weight: 600;
-    }
-    
-    .buy-it-with__carousel {
-      position: relative;
-    }
-    
-    .buy-it-with__slides {
-      overflow: hidden;
-      border-radius: 12px;
-      background-color: #f8f8f8;
-    }
-    
-    .buy-it-with__slide {
-      display: none;
-      padding: 1.5rem;
-    }
-    
-    .buy-it-with__slide.is-active {
-      display: block;
-    }
-    
-    .buy-it-with__product {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-    }
-    
-    .buy-it-with__image {
-      flex-shrink: 0;
-      width: 80px;
-      height: 80px;
-      border-radius: 8px;
-      overflow: hidden;
-      background-color: #fff;
-    }
-    
-    .buy-it-with__image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-    
-    .buy-it-with__content {
-      flex: 1;
-      min-width: 0;
-    }
-    
-    .buy-it-with__product-title {
-      font-size: 1rem;
-      font-weight: 600;
-      margin-bottom: 0.5rem;
-      line-height: 1.3;
-    }
-    
-    .buy-it-with__price {
-      margin-bottom: 0.75rem;
-    }
-    
-    .buy-it-with__price--compare {
-      text-decoration: line-through;
-      color: #666;
-      margin-right: 0.5rem;
-    }
-    
-    .buy-it-with__price--current {
-      font-weight: 600;
-      font-size: 1.1rem;
-    }
-    
-    .buy-it-with__add-to-cart {
-      background-color: #4a9b8f;
-      color: white;
-      border: none;
-      padding: 0.75rem 1.5rem;
-      border-radius: 6px;
-      font-weight: 600;
-      cursor: pointer;
-      transition: background-color 0.2s;
-    }
-    
-    .buy-it-with__add-to-cart:hover {
-      background-color: #3d8276;
-    }
-    
-    .buy-it-with__add-to-cart:disabled {
-      background-color: #ccc;
-      cursor: not-allowed;
-    }
-    
-    .buy-it-with__navigation {
-      display: flex;
-      justify-content: center;
-      gap: 0.5rem;
-      margin-top: 1rem;
-    }
-    
-    .buy-it-with__dot {
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      border: none;
-      background-color: #ddd;
-      cursor: pointer;
-      transition: background-color 0.2s;
-    }
-    
-    .buy-it-with__dot.is-active {
-      background-color: #4a9b8f;
-    }
-    
-    @media screen and (max-width: 767px) {
-      .buy-it-with__product {
-        flex-direction: column;
-        text-align: center;
-        gap: 1rem;
-      }
-      
-      .buy-it-with__image {
-        width: 120px;
-        height: 120px;
-        margin: 0 auto;
-      }
-    }
-  </style>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const carousel = document.querySelector('[data-buy-it-with="{{ unique_id }}"]');
-      if (!carousel) return;
-      
-      const slides = carousel.querySelectorAll('[data-slide]');
-      const dots = carousel.querySelectorAll('[data-dot]');
-      let currentSlide = 0;
-      
-      function showSlide(index) {
-        slides.forEach((slide, i) => {
-          slide.classList.toggle('is-active', i === index);
-        });
-        dots.forEach((dot, i) => {
-          dot.classList.toggle('is-active', i === index);
-        });
-        currentSlide = index;
-      }
-      
-      dots.forEach((dot, index) => {
-        dot.addEventListener('click', () => {
-          showSlide(index);
-        });
-      });
-      
-      // Auto-advance slides every 5 seconds
-      if (slides.length > 1) {
-        setInterval(() => {
-          const nextSlide = (currentSlide + 1) % slides.length;
-          showSlide(nextSlide);
-        }, 5000);
-      }
-    });
-  </script>
-{%- else -%}
-  {%- if heading != blank -%}
-    <div class="buy-it-with">
-      <h3 class="buy-it-with__heading">{{ heading | escape }}</h3>
-      <p style="color: #666; font-style: italic;">Please select products to display in the theme editor.</p>
-    </div>
-  {%- endif -%}
-{%- endif -%}
+---
+Changes:
+- from: "{%- liquid\n  assign recommended_products = block.settings.recommended_products\n
+    \ assign heading = block.settings.heading | default: 'Buy it With'\n  assign add_to_cart_text
+    = block.settings.add_to_cart_text | default: 'ADD TO CART'\n  assign show_price
+    = block.settings.show_price | default: true\n  assign show_navigation_dots = block.settings.show_navigation_dots
+    | default: true\n  assign unique_id = block.id | append: '-buy-it-with'\n-%}\n\n{%-
+    comment -%}\n  NOTE:\n  `product_list` settings return handles when configured
+    in templates,\n  but Product objects when configured via theme editor. We need
+    to handle both cases.\n{%- endcomment -%}\n\n{%- if recommended_products | size
+    > 0 -%}\n  <div class=\"buy-it-with\" data-buy-it-with=\"{{ unique_id }}\">\n
+    \   {%- if heading != blank -%}\n      <h3 class=\"buy-it-with__heading\">{{ heading
+    | escape }}</h3>\n    {%- endif -%}\n    \n    {%- comment -%} Debug info - remove
+    in production {%- endcomment -%}\n    {%- if recommended_products | size == 0
+    -%}\n      <p style=\"color: red; font-size: 12px;\">No products selected</p>\n
+    \   {%- else -%}\n      <p style=\"color: green; font-size: 12px;\">{{ recommended_products
+    | size }} product(s) configured</p>\n    {%- endif -%}\n    \n    <div class=\"buy-it-with__carousel\"
+    data-carousel>\n      <div class=\"buy-it-with__slides\" data-slides>\n        {%-
+    for recommended_item in recommended_products -%}\n          {%- liquid\n            #
+    Handle both Product objects (from theme editor) and handles (from templates)\n
+    \           if recommended_item.id\n              assign current_product = recommended_item\n
+    \           else\n              assign current_product = all_products[recommended_item]\n
+    \           endif\n          -%}\n          \n          {%- if current_product
+    -%}\n            <div class=\"buy-it-with__slide{% if forloop.first %} is-active{%
+    endif %}\" data-slide=\"{{ forloop.index0 }}\">\n              <div class=\"buy-it-with__product\">\n
+    \               {%- if current_product.featured_image -%}\n                  <div
+    class=\"buy-it-with__image\">\n                    <img \n                      src=\"{{
+    current_product.featured_image | image_url: width: 200 }}\"\n                      alt=\"{{
+    current_product.featured_image.alt | escape }}\"\n                      width=\"200\"\n
+    \                     height=\"{{ 200 | divided_by: current_product.featured_image.aspect_ratio
+    | round }}\"\n                      loading=\"lazy\"\n                    >\n
+    \                 </div>\n                {%- endif -%}\n                \n                <div
+    class=\"buy-it-with__content\">\n                  <h4 class=\"buy-it-with__product-title\">{{
+    current_product.title | escape }}</h4>\n                  \n                  {%-
+    if show_price -%}\n                    <div class=\"buy-it-with__price\">\n                      {%-
+    if current_product.compare_at_price > current_product.price -%}\n                        <span
+    class=\"buy-it-with__price--compare\">{{ current_product.compare_at_price | money
+    }}</span>\n                      {%- endif -%}\n                      <span class=\"buy-it-with__price--current\">{{
+    current_product.price | money }}</span>\n                    </div>\n                  {%-
+    endif -%}\n                  \n                  <form class=\"buy-it-with__form\"
+    action=\"{{ routes.cart_add_url }}\" method=\"post\" enctype=\"multipart/form-data\">\n
+    \                   <input type=\"hidden\" name=\"id\" value=\"{{ current_product.selected_or_first_available_variant.id
+    }}\">\n                    <button \n                      type=\"submit\" \n
+    \                     class=\"buy-it-with__add-to-cart btn btn--primary\"\n                      {%
+    unless current_product.available %}disabled{% endunless %}\n                    >\n
+    \                     {{ add_to_cart_text | escape }}\n                    </button>\n
+    \                 </form>\n                </div>\n              </div>\n            </div>\n
+    \         {%- endif -%}\n        {%- endfor -%}\n      </div>\n      \n      {%-
+    if show_navigation_dots and recommended_products | size > 1 -%}\n        <div
+    class=\"buy-it-with__navigation\">\n          {%- for recommended_item in recommended_products
+    -%}\n            {%- liquid\n              # Handle both Product objects (from
+    theme editor) and handles (from templates)\n              if recommended_item.id\n
+    \               assign current_product = recommended_item\n              else\n
+    \               assign current_product = all_products[recommended_item]\n              endif\n
+    \           -%}\n            \n            {%- if current_product -%}\n              <button
+    \n                class=\"buy-it-with__dot{% if forloop.first %} is-active{% endif
+    %}\" \n                data-dot=\"{{ forloop.index0 }}\"\n                aria-label=\"Go
+    to slide {{ forloop.index }}\"\n              ></button>\n            {%- endif
+    -%}\n          {%- endfor -%}\n        </div>\n      {%- endif -%}\n    </div>\n
+    \ </div>\n\n  <style>\n    .buy-it-with {\n      margin: 1.5rem 0;\n    }\n    \n
+    \   .buy-it-with__heading {\n      margin-bottom: 1rem;\n      font-size: 1.25rem;\n
+    \     font-weight: 600;\n    }\n    \n    .buy-it-with__carousel {\n      position:
+    relative;\n    }\n    \n    .buy-it-with__slides {\n      overflow: hidden;\n
+    \     border-radius: 12px;\n      background-color: #f8f8f8;\n    }\n    \n    .buy-it-with__slide
+    {\n      display: none;\n      padding: 1.5rem;\n    }\n    \n    .buy-it-with__slide.is-active
+    {\n      display: block;\n    }\n    \n    .buy-it-with__product {\n      display:
+    flex;\n      align-items: center;\n      gap: 1rem;\n    }\n    \n    .buy-it-with__image
+    {\n      flex-shrink: 0;\n      width: 80px;\n      height: 80px;\n      border-radius:
+    8px;\n      overflow: hidden;\n      background-color: #fff;\n    }\n    \n    .buy-it-with__image
+    img {\n      width: 100%;\n      height: 100%;\n      object-fit: cover;\n    }\n
+    \   \n    .buy-it-with__content {\n      flex: 1;\n      min-width: 0;\n    }\n
+    \   \n    .buy-it-with__product-title {\n      font-size: 1rem;\n      font-weight:
+    600;\n      margin-bottom: 0.5rem;\n      line-height: 1.3;\n    }\n    \n    .buy-it-with__price
+    {\n      margin-bottom: 0.75rem;\n    }\n    \n    .buy-it-with__price--compare
+    {\n      text-decoration: line-through;\n      color: #666;\n      margin-right:
+    0.5rem;\n    }\n    \n    .buy-it-with__price--current {\n      font-weight: 600;\n
+    \     font-size: 1.1rem;\n    }\n    \n    .buy-it-with__add-to-cart {\n      background-color:
+    #4a9b8f;\n      color: white;\n      border: none;\n      padding: 0.75rem 1.5rem;\n
+    \     border-radius: 6px;\n      font-weight: 600;\n      cursor: pointer;\n      transition:
+    background-color 0.2s;\n    }\n    \n    .buy-it-with__add-to-cart:hover {\n      background-color:
+    #3d8276;\n    }\n    \n    .buy-it-with__add-to-cart:disabled {\n      background-color:
+    #ccc;\n      cursor: not-allowed;\n    }\n    \n    .buy-it-with__navigation {\n
+    \     display: flex;\n      justify-content: center;\n      gap: 0.5rem;\n      margin-top:
+    1rem;\n    }\n    \n    .buy-it-with__dot {\n      width: 8px;\n      height:
+    8px;\n      border-radius: 50%;\n      border: none;\n      background-color:
+    #ddd;\n      cursor: pointer;\n      transition: background-color 0.2s;\n    }\n
+    \   \n    .buy-it-with__dot.is-active {\n      background-color: #4a9b8f;\n    }\n
+    \   \n    @media screen and (max-width: 767px) {\n      .buy-it-with__product
+    {\n        flex-direction: column;\n        text-align: center;\n        gap:
+    1rem;\n      }\n      \n      .buy-it-with__image {\n        width: 120px;\n        height:
+    120px;\n        margin: 0 auto;\n      }\n    }\n  </style>\n\n  <script>\n    document.addEventListener('DOMContentLoaded',
+    function() {\n      const carousel = document.querySelector('[data-buy-it-with=\"{{
+    unique_id }}\"]');\n      if (!carousel) return;\n      \n      const slides =
+    carousel.querySelectorAll('[data-slide]');\n      const dots = carousel.querySelectorAll('[data-dot]');\n
+    \     let currentSlide = 0;\n      \n      function showSlide(index) {\n        slides.forEach((slide,
+    i) => {\n          slide.classList.toggle('is-active', i === index);\n        });\n
+    \       dots.forEach((dot, i) => {\n          dot.classList.toggle('is-active',
+    i === index);\n        });\n        currentSlide = index;\n      }\n      \n      dots.forEach((dot,
+    index) => {\n        dot.addEventListener('click', () => {\n          showSlide(index);\n
+    \       });\n      });\n      \n      // Auto-advance slides every 5 seconds\n
+    \     if (slides.length > 1) {\n        setInterval(() => {\n          const nextSlide
+    = (currentSlide + 1) % slides.length;\n          showSlide(nextSlide);\n        },
+    5000);\n      }\n    });\n  </script>\n{%- else -%}\n  {%- if heading != blank
+    -%}\n    <div class=\"buy-it-with\">\n      <h3 class=\"buy-it-with__heading\">{{
+    heading | escape }}</h3>\n      <p style=\"color: #666; font-style: italic;\">Please
+    select products to display in the theme editor.</p>\n    </div>\n  {%- endif -%}\n{%-
+    endif -%}\n"
+  to: 'Liquid syntax error (snippets/pdp-block-buy-it-with line 16): Expected end_of_string
+    but found pipe in "recommended_products | size > 0"'
+  position: 0..136
+{% endcomment %}
